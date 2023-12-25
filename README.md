@@ -3,7 +3,7 @@
 [Bilibili](https://space.bilibili.com/256237451)
 
 </div>
-简体中文丨[**English**](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/blob/main/README-en.md)
+简体中文丨[**English**](https://github.com/LLmion/AtlanAbyss/blob/main/README-en.md)
 
 ## 前言
 这是一个基于Forge制作的Minecraft modpack。
