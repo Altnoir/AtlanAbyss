@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Aug 26, 2023, 7:10:03 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 25, 2023, 10:02:33 PM
 
 #forge:glass/tinted
 - minecraft:tinted_glass
@@ -30,6 +30,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:gears/steel
 
 #forge:plates
+- #forge:plates/desh
+- #forge:plates/iron
 - #forge:plates/copper
 - #forge:plates/gold
 - #forge:plates/iron
@@ -57,6 +59,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/gray
 - minecraft:gray_dye
+- chalk:gray_chalk
 
 #create:stone_types/veridium
 - create:cut_veridium
@@ -75,8 +78,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:veridium_pillar
 - create:veridium
 
+#botania:manasteel_ingots
+- botania:manasteel_ingot
+
 #forge:wires/gold
 - createaddition:gold_wire
+
+#forge:gems/dragonstone
+- #botania:dragonstone_gems
 
 #tconstruct:casts/single_use/blank
 - tconstruct:blank_sand_cast
@@ -104,6 +113,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:white_stained_glass_pane
 - tconstruct:white_clear_stained_glass_pane
 
+#forge:storage_blocks/desh
+- beyond_earth:desh_block
+
 #forge:materials/ultimate
 - tac:ultimate_material
 
@@ -117,11 +129,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:ingots/silver
 - thermal:silver_ingot
 
-#butchercraft:any_cubed_meat_raw
-- butchercraft:cubed_beef
-- butchercraft:cubed_lamb
-- butchercraft:cubed_pork
-
 #tconstruct:slimy_leaves
 - tconstruct:earth_slime_leaves
 - tconstruct:sky_slime_leaves
@@ -133,6 +140,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #tconstruct:casts/multi_use/tool_binding
 - tconstruct:tool_binding_cast
+
+#beyond_earth:compresseds/steel
+- beyond_earth:compressed_steel
 
 #create:crushed_raw_materials
 - create:crushed_raw_iron
@@ -148,6 +158,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:crushed_raw_aluminum
 - create:crushed_raw_uranium
 - create:crushed_raw_nickel
+
+#neapolitan:chimpanzee_ape_mode_items
+- atmospheric:warm_monkey_brush?
+- atmospheric:hot_monkey_brush?
+- atmospheric:scalding_monkey_brush?
+
+#beyond_earth:tanks/steel
+- beyond_earth:steel_tank
+
+#botania:loonium_blacklist
+- botania:lexicon
+- botania:overgrowth_seed
+- botania:black_lotus
+- botania:blacker_lotus
+- #minecraft:music_discs
 
 #functionalstorage:drawer
 - functionalstorage:oak_2
@@ -178,6 +203,72 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - functionalstorage:warped_1
 - functionalstorage:framed_1
 
+#botania:mana_using_items
+- botania:blood_pendant
+- botania:cobble_rod
+- botania:crystal_bow
+- botania:dirt_rod
+- botania:diva_charm
+- botania:divining_rod
+- botania:elementium_axe
+- botania:elementium_boots
+- botania:elementium_chestplate
+- botania:elementium_helmet
+- botania:elementium_hoe
+- botania:elementium_leggings
+- botania:elementium_pickaxe
+- botania:elementium_shears
+- botania:elementium_shovel
+- botania:elementium_sword
+- botania:ender_hand
+- botania:exchange_rod
+- botania:fire_rod
+- botania:flight_tiara
+- botania:flugel_eye
+- botania:glass_pickaxe
+- botania:goddess_charm
+- botania:gravity_rod
+- botania:infinite_fruit
+- botania:invisibility_cloak
+- botania:king_key
+- botania:livingwood_bow
+- botania:loki_ring
+- botania:manasteel_axe
+- botania:manasteel_boots
+- botania:manasteel_chestplate
+- botania:manasteel_helmet
+- botania:manasteel_hoe
+- botania:manasteel_leggings
+- botania:manasteel_pick
+- botania:manasteel_shears
+- botania:manasteel_shovel
+- botania:manasteel_sword
+- botania:manaweave_boots
+- botania:manaweave_chestplate
+- botania:manaweave_helmet
+- botania:manaweave_leggings
+- botania:mining_ring
+- botania:missile_rod
+- botania:rainbow_rod
+- botania:skydirt_rod
+- botania:smelt_rod
+- botania:star_sword
+- botania:super_travel_belt
+- botania:terra_axe
+- botania:terra_pick
+- botania:terra_sword
+- botania:terraform_rod
+- botania:terrasteel_boots
+- botania:terrasteel_chestplate
+- botania:terrasteel_helmet
+- botania:terrasteel_leggings
+- botania:third_eye
+- botania:thunder_sword
+- botania:tornado_rod
+- botania:travel_belt
+- botania:water_ring
+- botania:water_rod
+
 #forge:dusts/constantan
 - thermal:constantan_dust
 
@@ -200,6 +291,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/uranium
 - biggerreactors:uranium_block
 
+#ae2:p2p_attunements/fluid_p2p_tunnel
+- minecraft:bucket
+- minecraft:milk_bucket
+- minecraft:water_bucket
+- minecraft:lava_bucket
+
 #forge:salad_ingredients
 - #forge:salad_ingredients/cabbage
 
@@ -219,27 +316,48 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:cobblestone/deepslate
 - minecraft:cobbled_deepslate
 
-#butchercraft:any_ground_meat_raw
-- butchercraft:ground_beef
-- butchercraft:ground_lamb
-- butchercraft:ground_pork
-
 #railways:internal/dyes/magenta_dyes
 - #c:magenta_dyes?
 - #forge:dyes/magenta?
+
+#ae2:interface
+- ae2:cable_interface
+- ae2:interface
 
 #forge:ingots/pig_iron
 - tconstruct:pig_iron_ingot
 
 #forge:fence_gates
+- twilightforest:twilight_oak_fence_gate
+- twilightforest:canopy_fence_gate
+- twilightforest:mangrove_fence_gate
+- twilightforest:dark_fence_gate
+- twilightforest:time_fence_gate
+- twilightforest:transformation_fence_gate
+- twilightforest:mining_fence_gate
+- twilightforest:sorting_fence_gate
 - ars_nouveau:archwood_fence_gate
 - #forge:fence_gates/wooden
+
+#forge:storage_blocks/carminite
+- twilightforest:carminite_block
 
 #curios:an_focus
 - ars_nouveau:summon_focus
 - ars_nouveau:shapers_focus
 
 #forge:ingots
+- #forge:ingots/desh
+- #forge:ingots/ostrum
+- #forge:ingots/calorite
+- #forge:ingots/steel
+- #forge:ingots/ironwood
+- #forge:ingots/fiery
+- #forge:ingots/knightmetal
+- #forge:ingots/steeleaf
+- #forge:ingots/elementium
+- #forge:ingots/manasteel
+- #forge:ingots/terrasteel
 - biggerreactors:blutonium_ingot
 - biggerreactors:cyanite_ingot
 - biggerreactors:graphite_ingot
@@ -281,6 +399,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #create:create_ingots
 - createaddition:electrum_ingot
 
+#forge:nuggets/terrasteel
+- #botania:terrasteel_nuggets
+
 #forge:crops/nether_wart
 - minecraft:nether_wart
 
@@ -288,6 +409,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:copper_block
 
 #forge:milk/milk
+- minecraft:milk_bucket
 - minecraft:milk_bucket
 
 #minecraft:coals
@@ -297,12 +419,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:casts/multi_use/nugget
 - tconstruct:nugget_cast
 
+#atmospheric:rosewood_logs
+- atmospheric:rosewood_log
+- atmospheric:rosewood
+- atmospheric:stripped_rosewood_log
+- atmospheric:stripped_rosewood
+
+#ae2:quartz_sword
+- ae2:certus_quartz_sword
+- ae2:nether_quartz_sword
+
 #forge:bread/wheat
 - minecraft:bread
+- minecraft:bread
 
-#computercraft:monitor
-- computercraft:monitor_normal
-- computercraft:monitor_advanced
+#forge:bottles
+- #forge:bottles/milk
 
 #forge:dusts/invar
 - thermal:invar_dust
@@ -312,11 +444,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:earth_staff
 - tconstruct:ichor_staff
 
+#regions_unexplored:eucalyptus_logs
+- regions_unexplored:eucalyptus_log
+- regions_unexplored:stripped_eucalyptus_log
+- regions_unexplored:eucalyptus_wood
+- regions_unexplored:stripped_eucalyptus_wood
+
 #forge:plates/constantan
 - thermal:constantan_plate
 
 #forge:ingots/nether_brick
 - minecraft:nether_brick
+
+#forge:pickaxes
+- minecraft:wooden_pickaxe
+- minecraft:stone_pickaxe
+- minecraft:iron_pickaxe
+- minecraft:golden_pickaxe
+- minecraft:diamond_pickaxe
+- minecraft:netherite_pickaxe
 
 #forge:cobblestone/infested
 - minecraft:infested_cobblestone
@@ -339,13 +485,41 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:lead_ore
 - thermal:deepslate_lead_ore
 
+#ae2:glass_cable
+- ae2:white_glass_cable
+- ae2:orange_glass_cable
+- ae2:magenta_glass_cable
+- ae2:light_blue_glass_cable
+- ae2:yellow_glass_cable
+- ae2:lime_glass_cable
+- ae2:pink_glass_cable
+- ae2:gray_glass_cable
+- ae2:light_gray_glass_cable
+- ae2:cyan_glass_cable
+- ae2:purple_glass_cable
+- ae2:blue_glass_cable
+- ae2:brown_glass_cable
+- ae2:green_glass_cable
+- ae2:red_glass_cable
+- ae2:black_glass_cable
+- ae2:fluix_glass_cable
+
+#ae2:quartz_shovel
+- ae2:certus_quartz_shovel
+- ae2:nether_quartz_shovel
+
 #forge:dyes/orange
 - minecraft:orange_dye
+- chalk:orange_chalk
+
+#bookshelf:clocks
+- #forge:clocks
 
 #forge:storage_blocks/invar
 - thermal:invar_block
 
 #forge:rods/iron
+- beyond_earth:iron_stick
 - createaddition:iron_rod
 
 #forge:coins/tin
@@ -357,6 +531,45 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:plates/silver
 - thermal:silver_plate
+
+#regions_unexplored:planks
+- regions_unexplored:alpha_planks
+- regions_unexplored:bamboo_log
+- regions_unexplored:bamboo_log_leaves
+- regions_unexplored:baobab_planks
+- regions_unexplored:blackwood_planks
+- regions_unexplored:cherry_planks
+- regions_unexplored:cherry_planks
+- regions_unexplored:cypress_planks
+- regions_unexplored:dead_planks
+- regions_unexplored:eucalyptus_planks
+- regions_unexplored:joshua_planks
+- regions_unexplored:larch_planks
+- regions_unexplored:maple_planks
+- regions_unexplored:mauve_planks
+- regions_unexplored:palm_planks
+- regions_unexplored:pine_planks
+- regions_unexplored:redwood_planks
+- regions_unexplored:willow_planks
+- regions_unexplored:light_gray_painted_planks
+- regions_unexplored:black_painted_planks
+- regions_unexplored:light_blue_painted_planks
+- regions_unexplored:gray_painted_planks
+- regions_unexplored:brown_painted_planks
+- regions_unexplored:lime_painted_planks
+- regions_unexplored:green_painted_planks
+- regions_unexplored:yellow_painted_planks
+- regions_unexplored:magenta_painted_planks
+- regions_unexplored:blue_painted_planks
+- regions_unexplored:red_painted_planks
+- regions_unexplored:cyan_painted_planks
+- regions_unexplored:white_painted_planks
+- regions_unexplored:purple_painted_planks
+- regions_unexplored:pink_painted_planks
+- regions_unexplored:orange_painted_planks
+
+#beyond_earth:compresseds/desh
+- beyond_earth:compressed_desh
 
 #tconstruct:casts/multi_use/coin
 - tconstruct:coin_cast
@@ -393,6 +606,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:granite_pillar
 - minecraft:granite
 
+#forge:shields
+- minecraft:shield
+
 #forge:pasta/raw_pasta
 - farmersdelight:raw_pasta
 
@@ -403,13 +619,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:white_stained_glass
 - tconstruct:white_clear_stained_glass
 
+#bookshelf:swords
+- #forge:swords
+
 #forge:glass_panes/red
 - minecraft:red_stained_glass_pane
 - tconstruct:red_clear_stained_glass_pane
 
-#curios:armor_rig
-- tac:light_armor
-- tac:medium_steel_armor
+#bookshelf:axes
+- #forge:axes
+
+#botania:mundane_floating_flowers
+- botania:black_floating_flower
+- botania:blue_floating_flower
+- botania:brown_floating_flower
+- botania:cyan_floating_flower
+- botania:gray_floating_flower
+- botania:green_floating_flower
+- botania:light_blue_floating_flower
+- botania:light_gray_floating_flower
+- botania:lime_floating_flower
+- botania:magenta_floating_flower
+- botania:orange_floating_flower
+- botania:pink_floating_flower
+- botania:purple_floating_flower
+- botania:red_floating_flower
+- botania:white_floating_flower
+- botania:yellow_floating_flower
 
 #minecraft:fishes
 - minecraft:cod
@@ -419,6 +655,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:pufferfish
 - minecraft:tropical_fish
 
+#forge:storage_blocks/certus_quartz
+- ae2:quartz_block
+
+#botania:petals/yellow
+- botania:yellow_petal
+- botania:yellow_mushroom
+
 #forge:nuggets/manyullyn
 - tconstruct:manyullyn_nugget
 
@@ -427,6 +670,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/raw_nickel
 - thermal:raw_nickel_block
+
+#upgradednetherite:upgraded_netherite_horse_armor
+- upgradednetherite:gold_upgraded_netherite_horse_armor
+- upgradednetherite:fire_upgraded_netherite_horse_armor
+- upgradednetherite:ender_upgraded_netherite_horse_armor
+- upgradednetherite:water_upgraded_netherite_horse_armor
+- upgradednetherite:wither_upgraded_netherite_horse_armor
+- upgradednetherite:poison_upgraded_netherite_horse_armor
+- upgradednetherite:phantom_upgraded_netherite_horse_armor
+- upgradednetherite:feather_upgraded_netherite_horse_armor
+
+#forge:storage_blocks/raw_ostrum
+- beyond_earth:raw_ostrum_block
+
+#forge:fruits
+- #forge:fruits/strawberry
+- #forge:fruits/banana
+- #forge:fruits/passionfruit
 
 #forge:materials/uncommon
 - tac:uncommon_material
@@ -467,6 +728,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:red_clear_stained_glass_pane
 - tconstruct:black_clear_stained_glass_pane
 
+#twilightforest:kobold_pacification_breads
+- minecraft:bread
+
+#wares:cardboard_box_blacklisted
+- wares:package
+- wares:cardboard_box
+
+#upgradednetherite:upgraded_netherite_bow
+- upgradednetherite:gold_upgraded_netherite_bow
+- upgradednetherite:fire_upgraded_netherite_bow
+- upgradednetherite:ender_upgraded_netherite_bow
+- upgradednetherite:water_upgraded_netherite_bow
+- upgradednetherite:wither_upgraded_netherite_bow
+- upgradednetherite:poison_upgraded_netherite_bow
+- upgradednetherite:phantom_upgraded_netherite_bow
+- upgradednetherite:feather_upgraded_netherite_bow
+
 #curios:hands
 - artifacts:digging_claws
 - artifacts:feral_claws
@@ -481,6 +759,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:sand/colorless
 - minecraft:sand
+- regions_unexplored:quicksand
+- atmospheric:arid_sand
 
 #forge:tools/scythe
 - tconstruct:kama
@@ -492,10 +772,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:raw_materials/iron
 - minecraft:raw_iron
-
-#computercraft:turtle
-- computercraft:turtle_normal
-- computercraft:turtle_advanced
 
 #forge:slimeball/ender
 - tconstruct:ender_slime_ball
@@ -510,6 +786,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:cod
 - minecraft:salmon
 - minecraft:tropical_fish
+
+#quark:wooden_vertical_slabs
+- atmospheric:rosewood_vertical_slab
+- atmospheric:morado_vertical_slab
+- atmospheric:yucca_vertical_slab
+- atmospheric:kousa_vertical_slab
+- atmospheric:aspen_vertical_slab
+- atmospheric:grimwood_vertical_slab
+
+#botania:terrasteel_nuggets
+- botania:terrasteel_nugget
+
+#upgradednetherite:upgraded_netherite_boots
+- upgradednetherite:gold_upgraded_netherite_boots
+- upgradednetherite:fire_upgraded_netherite_boots
+- upgradednetherite:ender_upgraded_netherite_boots
+- upgradednetherite:water_upgraded_netherite_boots
+- upgradednetherite:wither_upgraded_netherite_boots
+- upgradednetherite:poison_upgraded_netherite_boots
+- upgradednetherite:phantom_upgraded_netherite_boots
+- upgradednetherite:feather_upgraded_netherite_boots
+
+#twilightforest:banned_uncraftables
+- twilightforest:giant_log
 
 #forge:ingots/enderium
 - thermal:enderium_ingot
@@ -548,11 +848,53 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:polished_deepslate_wall
 - minecraft:deepslate_tile_wall
 - minecraft:deepslate_brick_wall
+- botania:corporea_brick_wall
+- botania:dreamwood_wall
+- botania:livingrock_bricks_wall
+- botania:livingrock_wall
+- botania:livingwood_wall
+- botania:metamorphic_desert_bricks_wall
+- botania:metamorphic_desert_cobblestone_wall
+- botania:metamorphic_desert_stone_wall
+- botania:metamorphic_forest_bricks_wall
+- botania:metamorphic_forest_cobblestone_wall
+- botania:metamorphic_forest_stone_wall
+- botania:metamorphic_fungal_bricks_wall
+- botania:metamorphic_fungal_cobblestone_wall
+- botania:metamorphic_fungal_stone_wall
+- botania:metamorphic_mesa_bricks_wall
+- botania:metamorphic_mesa_cobblestone_wall
+- botania:metamorphic_mesa_stone_wall
+- botania:metamorphic_mountain_bricks_wall
+- botania:metamorphic_mountain_cobblestone_wall
+- botania:metamorphic_mountain_stone_wall
+- botania:metamorphic_plains_bricks_wall
+- botania:metamorphic_plains_cobblestone_wall
+- botania:metamorphic_plains_stone_wall
+- botania:metamorphic_swamp_bricks_wall
+- botania:metamorphic_swamp_cobblestone_wall
+- botania:metamorphic_swamp_stone_wall
+- botania:metamorphic_taiga_bricks_wall
+- botania:metamorphic_taiga_cobblestone_wall
+- botania:metamorphic_taiga_stone_wall
+- botania:mossy_livingrock_bricks_wall
+- botania:stripped_dreamwood_wall
+- botania:stripped_livingwood_wall
 - #pneumaticcraft:walls
+- neapolitan:chocolate_brick_wall
+- neapolitan:chocolate_tile_wall
 - supplementaries:blackstone_tile_wall
 - supplementaries:ash_bricks_wall
 - supplementaries:lapis_bricks_wall
 - supplementaries:stone_tile_wall
+- atmospheric:arid_sandstone_wall
+- atmospheric:arid_sandstone_brick_wall
+- atmospheric:red_arid_sandstone_wall
+- atmospheric:red_arid_sandstone_brick_wall
+- atmospheric:ivory_travertine_wall
+- atmospheric:peach_travertine_wall
+- atmospheric:persimmon_travertine_wall
+- atmospheric:saffron_travertine_wall
 - create:cut_granite_wall
 - create:polished_cut_granite_wall
 - create:cut_granite_brick_wall
@@ -611,6 +953,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:small_veridium_brick_wall
 - #forge:walls/chocolate
 
+#botania:petals/pink
+- botania:pink_petal
+- botania:pink_mushroom
+
+#forge:dusts/mana
+- #botania:mana_dusts
+
+#ae2:all_fluix
+- ae2:fluix_crystal
+
+#ae2:p2p_attunements/fe_p2p_tunnel
+- ae2:dense_energy_cell
+- ae2:energy_acceptor
+- ae2:energy_cell
+- ae2:creative_energy_cell
+
 #forge:storage_blocks/lead
 - thermal:lead_block
 
@@ -636,12 +994,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #minecraft:creeper_drop_music_discs
 - minecraft:music_disc_pigstep
 - minecraft:music_disc_otherside
+- #twilightforest:tf_music_discs
+- botania:record_gaia_1
+- botania:record_gaia_2
+- neapolitan:music_disc_hullabaloo
 
 #tconstruct:modifiable/melee_or_harvest
 - #tconstruct:modifiable/melee
 - #tconstruct:modifiable/harvest
 
+#forge:ingots/knightmetal
+- twilightforest:knightmetal_ingot
+
 #forge:gems
+- #forge:gems/carminite
+- #forge:gems/dragonstone
+- #forge:gems/mana_diamond
 - ars_nouveau:source_gem
 - #forge:gems/amethyst
 - #forge:gems/diamond
@@ -655,10 +1023,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:gems/sulfur
 - #forge:gems/ruby
 - #forge:gems/sapphire
+- ae2:certus_quartz_crystal
+- ae2:charged_certus_quartz_crystal
+- ae2:fluix_crystal
 
 #minecraft:sand
 - minecraft:sand
 - minecraft:red_sand
+- beyond_earth:moon_sand
+- beyond_earth:mars_sand
+- beyond_earth:venus_sand
+- regions_unexplored:quicksand
+- atmospheric:arid_sand
+- atmospheric:red_arid_sand
 
 #forge:plates/bronze
 - thermal:bronze_plate
@@ -666,18 +1043,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:nuggets/netherite_scrap
 - tconstruct:debris_nugget
 
-#butchercraft:any_lamb_raw
-- butchercraft:lamb_rib
-- butchercraft:lamb_ribs
-- butchercraft:lamb_roast
-- butchercraft:lamb_scraps
-- butchercraft:lamb_stewmeat
-- butchercraft:cubed_lamb
-- butchercraft:ground_lamb
-
 #forge:raw_chicken
 - minecraft:chicken
 - farmersdelight:chicken_cuts
+
+#forge:storage_blocks/terrasteel
+- #botania:terrasteel_blocks
 
 #tconstruct:modifiable/interactable/left
 - tconstruct:crossbow
@@ -685,6 +1056,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:travelers_shield
 - tconstruct:plate_shield
 - #tconstruct:modifiable/interactable/dual
+
+#forge:nuggets/desh
+- beyond_earth:desh_nugget
 
 #forge:berries
 - minecraft:sweet_berries
@@ -712,6 +1086,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/light_gray
 - minecraft:light_gray_dye
+- chalk:light_gray_chalk
 
 #tconstruct:modifiable/ranged/crossbows
 - tconstruct:crossbow
@@ -722,9 +1097,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:milk
 - #forge:milk/milk
 - #forge:milk/milk_bottle
+- #forge:buckets/milk
+- #forge:buckets/milk
+- #forge:bottles/milk
+- minecraft:milk_bucket
 - minecraft:milk_bucket
 
 #forge:ingots/copper
+- minecraft:copper_ingot
 - minecraft:copper_ingot
 - minecraft:copper_ingot
 
@@ -734,6 +1114,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:ores/cobalt
 - tconstruct:cobalt_ore
+
+#immersive_paintings:dye
+- minecraft:white_dye
+- minecraft:orange_dye
+- minecraft:magenta_dye
+- minecraft:light_blue_dye
+- minecraft:yellow_dye
+- minecraft:lime_dye
+- minecraft:pink_dye
+- minecraft:gray_dye
+- minecraft:light_gray_dye
+- minecraft:cyan_dye
+- minecraft:purple_dye
+- minecraft:blue_dye
+- minecraft:brown_dye
+- minecraft:green_dye
+- minecraft:red_dye
+- minecraft:black_dye
 
 #tconstruct:casts/multi_use/broad_axe_head
 - tconstruct:broad_axe_head_cast
@@ -768,10 +1166,40 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:spruce_trapdoor
 - minecraft:crimson_trapdoor
 - minecraft:warped_trapdoor
+- twilightforest:twilight_oak_trapdoor
+- twilightforest:canopy_trapdoor
+- twilightforest:mangrove_trapdoor
+- twilightforest:dark_trapdoor
+- twilightforest:time_trapdoor
+- twilightforest:transformation_trapdoor
+- twilightforest:mining_trapdoor
+- twilightforest:sorting_trapdoor
 - ars_nouveau:archwood_trapdoor
 - tconstruct:greenheart_trapdoor
 - tconstruct:skyroot_trapdoor
 - tconstruct:bloodshroom_trapdoor
+- regions_unexplored:baobab_trapdoor
+- regions_unexplored:blackwood_trapdoor
+- regions_unexplored:cherry_trapdoor
+- regions_unexplored:cherry_trapdoor
+- regions_unexplored:cypress_trapdoor
+- regions_unexplored:dead_trapdoor
+- regions_unexplored:eucalyptus_trapdoor
+- regions_unexplored:joshua_trapdoor
+- regions_unexplored:larch_trapdoor
+- regions_unexplored:maple_trapdoor
+- regions_unexplored:mauve_trapdoor
+- regions_unexplored:palm_trapdoor
+- regions_unexplored:pine_trapdoor
+- regions_unexplored:redwood_trapdoor
+- regions_unexplored:willow_trapdoor
+- regions_unexplored:sculkwood_trapdoor
+- atmospheric:rosewood_trapdoor
+- atmospheric:morado_trapdoor
+- atmospheric:yucca_trapdoor
+- atmospheric:kousa_trapdoor
+- atmospheric:aspen_trapdoor
+- atmospheric:grimwood_trapdoor
 
 #create:valve_handles
 - create:copper_valve_handle
@@ -809,6 +1237,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:light_blue_stained_glass
 - tconstruct:light_blue_clear_stained_glass
 
+#forge:nuggets/elementium
+- #botania:elementium_nuggets
+
 #decorative_blocks:chandeliers
 - decorative_blocks:chandelier
 - decorative_blocks:soul_chandelier
@@ -819,11 +1250,71 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - createaddition:gold_wire
 - createaddition:electrum_wire
 
+#beyond_earth:tanks/calorite
+- beyond_earth:calorite_tank
+
 #forge:ingots/brass
 - create:brass_ingot
 
+#botania:special_floating_flowers
+- botania:floating_agricarnation
+- botania:floating_agricarnation_chibi
+- botania:floating_bellethorn
+- botania:floating_bellethorn_chibi
+- botania:floating_bergamute
+- botania:floating_bubbell
+- botania:floating_bubbell_chibi
+- botania:floating_clayconia
+- botania:floating_clayconia_chibi
+- botania:floating_daffomill
+- botania:floating_dandelifeon
+- botania:floating_dreadthorn
+- botania:floating_endoflame
+- botania:floating_entropinnyum
+- botania:floating_exoflame
+- botania:floating_fallen_kanade
+- botania:floating_gourmaryllis
+- botania:floating_heisei_dream
+- botania:floating_hopperhock
+- botania:floating_hopperhock_chibi
+- botania:floating_hyacidus
+- botania:floating_hydroangeas
+- botania:floating_jaded_amaranthus
+- botania:floating_jiyuulia
+- botania:floating_jiyuulia_chibi
+- botania:floating_kekimurus
+- botania:floating_labellia
+- botania:floating_loonium
+- botania:floating_manastar
+- botania:floating_marimorphosis
+- botania:floating_marimorphosis_chibi
+- botania:floating_medumone
+- botania:floating_munchdew
+- botania:floating_narslimmus
+- botania:floating_orechid
+- botania:floating_orechid_ignem
+- botania:floating_pollidisiac
+- botania:floating_pure_daisy
+- botania:floating_rafflowsia
+- botania:floating_rannuncarpus
+- botania:floating_rannuncarpus_chibi
+- botania:floating_rosa_arcana
+- botania:floating_shulk_me_not
+- botania:floating_solegnolia
+- botania:floating_solegnolia_chibi
+- botania:floating_spectranthemum
+- botania:floating_spectrolus
+- botania:floating_tangleberrie
+- botania:floating_tangleberrie_chibi
+- botania:floating_thermalily
+- botania:floating_tigerseye
+- botania:floating_vinculotus
+
 #forge:coins/electrum
 - thermal:electrum_coin
+
+#beyond_earth:compresseds/ostrum
+- beyond_earth:compressed_ostrum
 
 #forge:storage_blocks/amethyst
 - minecraft:amethyst_block
@@ -841,6 +1332,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:cinnabar_ore
 - thermal:deepslate_cinnabar_ore
 
+#forge:raw_materials/ostrum
+- beyond_earth:raw_ostrum
+
+#botania:terrasteel_ingots
+- botania:terrasteel_ingot
+
 #forge:plates/enderium
 - thermal:enderium_plate
 
@@ -848,11 +1345,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:arrow
 - minecraft:tipped_arrow
 - minecraft:spectral_arrow
+- apotheosis:obsidian_arrow?
+- apotheosis:broadhead_arrow?
+- apotheosis:explosive_arrow?
+- apotheosis:iron_mining_arrow?
+- apotheosis:diamond_mining_arrow?
+- neapolitan:bananarrow
 - supplementaries:rope_arrow
+
+#botania:petals/black
+- botania:black_petal
+- botania:black_mushroom
 
 #pneumaticcraft:walls
 - pneumaticcraft:reinforced_brick_wall
 - pneumaticcraft:compressed_brick_wall
+
+#beyond_earth:tanks/ostrum
+- beyond_earth:ostrum_tank
 
 #forge:foods/fish/cooked
 - minecraft:cooked_cod
@@ -867,10 +1377,40 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_door
 - minecraft:crimson_door
 - minecraft:warped_door
+- twilightforest:twilight_oak_door
+- twilightforest:canopy_door
+- twilightforest:mangrove_door
+- twilightforest:dark_door
+- twilightforest:time_door
+- twilightforest:transformation_door
+- twilightforest:mining_door
+- twilightforest:sorting_door
 - ars_nouveau:archwood_door
 - tconstruct:greenheart_door
 - tconstruct:skyroot_door
 - tconstruct:bloodshroom_door
+- regions_unexplored:baobab_door
+- regions_unexplored:blackwood_door
+- regions_unexplored:cherry_door
+- regions_unexplored:cherry_door
+- regions_unexplored:cypress_door
+- regions_unexplored:dead_door
+- regions_unexplored:eucalyptus_door
+- regions_unexplored:joshua_door
+- regions_unexplored:larch_door
+- regions_unexplored:maple_door
+- regions_unexplored:mauve_door
+- regions_unexplored:palm_door
+- regions_unexplored:pine_door
+- regions_unexplored:redwood_door
+- regions_unexplored:willow_door
+- regions_unexplored:sculkwood_door
+- atmospheric:rosewood_door
+- atmospheric:morado_door
+- atmospheric:yucca_door
+- atmospheric:kousa_door
+- atmospheric:aspen_door
+- atmospheric:grimwood_door
 
 #forge:nuggets/invar
 - thermal:invar_nugget
@@ -880,6 +1420,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:copper_can
 - tconstruct:seared_lantern
 - tconstruct:scorched_lantern
+
+#botania:petals
+- #botania:petals/white
+- #botania:petals/orange
+- #botania:petals/magenta
+- #botania:petals/light_blue
+- #botania:petals/yellow
+- #botania:petals/lime
+- #botania:petals/pink
+- #botania:petals/gray
+- #botania:petals/light_gray
+- #botania:petals/cyan
+- #botania:petals/purple
+- #botania:petals/blue
+- #botania:petals/brown
+- #botania:petals/green
+- #botania:petals/red
+- #botania:petals/black
+
+#ae2:p2p_attunements/light_p2p_tunnel
+- minecraft:torch
+- minecraft:glowstone
 
 #tconstruct:modifiable/interactable
 - #tconstruct:modifiable/interactable/left
@@ -900,6 +1462,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/magenta
 - minecraft:magenta_dye
+- chalk:magenta_chalk
 
 #minecraft:crimson_stems
 - minecraft:crimson_stem
@@ -911,6 +1474,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #minecraft:ignored_by_piglin_babies
 - minecraft:leather
 
+#botania:dreamwood_logs
+- botania:dreamwood_log
+- botania:dreamwood
+- botania:stripped_dreamwood_log
+- botania:stripped_dreamwood
+- #botania:glimmering_dreamwood_logs
+
 #minecraft:stone_tool_materials
 - minecraft:cobblestone
 - minecraft:blackstone
@@ -918,6 +1488,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/cyan
 - minecraft:cyan_dye
+- chalk:cyan_chalk
+
+#regions_unexplored:cypress_logs
+- regions_unexplored:cypress_log
+- regions_unexplored:stripped_cypress_log
+- regions_unexplored:cypress_wood
+- regions_unexplored:stripped_cypress_wood
 
 #ars_nouveau:wilden_drop
 - ars_nouveau:wilden_horn
@@ -950,6 +1527,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:netherite_nugget
 - tconstruct:netherite_nugget
 
+#quark:hedges
+- atmospheric:rosewood_hedge
+- atmospheric:morado_hedge
+- atmospheric:flowering_morado_hedge
+- atmospheric:yucca_hedge
+- atmospheric:kousa_hedge
+- atmospheric:aspen_hedge
+- atmospheric:grimwood_hedge
+
 #tconstruct:casts/empty/table
 - tconstruct:gold_bars
 
@@ -974,6 +1560,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:wool/blue
 - minecraft:blue_wool
 
+#twilightforest:fiery_vial
+- twilightforest:fiery_blood
+- twilightforest:fiery_tears
+
 #forge:crops/rice
 - farmersdelight:rice
 
@@ -985,6 +1575,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/purple
 - minecraft:purple_dye
+- chalk:purple_chalk
+
+#umapyoi:ssr_card_ticket
+- umapyoi:ssr_card_ticket
 
 #supplementaries:fire_sources
 - minecraft:flint_and_steel?
@@ -1006,6 +1600,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:deepslate_redstone_ore
 - create:deepslate_zinc_ore
 
+#chalk:glowing
+- minecraft:glow_ink_sac
+- minecraft:glowstone_dust
+
 #forge:storage_blocks/chocolate
 - neapolitan:chocolate_block?
 - neapolitan:chocolate_bricks?
@@ -1022,12 +1620,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - decorative_blocks:oak_palisade
 - decorative_blocks:crimson_palisade
 
+#bookshelf:shovels
+- #forge:shovels
+
+#regions_unexplored:convertable_to_forest_mud
+- regions_unexplored:forest_dirt
+- regions_unexplored:forest_coarse_dirt
+
 #forge:nuggets/pig_iron
 - tconstruct:pig_iron_nugget
 
 #railways:internal/dyes/gray_dyes
 - #c:gray_dyes?
 - #forge:dyes/gray?
+
+#forge:ingots/terrasteel
+- #botania:terrasteel_ingots
 
 #forge:gems/apatite
 - thermal:apatite
@@ -1037,6 +1645,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/raw_gold
 - minecraft:raw_gold_block
+
+#bookshelf:crossbows
+- #forge:crossbows
 
 #tconstruct:casts/multi_use/broad_blade
 - tconstruct:broad_blade_cast
@@ -1061,6 +1672,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:ruby_dust
 
 #forge:stripped_wood
+- regions_unexplored:stripped_baobab_wood
+- regions_unexplored:stripped_blackwood_wood
+- regions_unexplored:stripped_cherry_wood
+- regions_unexplored:stripped_cypress_wood
+- regions_unexplored:stripped_dead_wood
+- regions_unexplored:stripped_eucalyptus_wood
+- regions_unexplored:stripped_joshua_wood
+- regions_unexplored:stripped_larch_wood
+- regions_unexplored:stripped_maple_wood
+- regions_unexplored:stripped_mauve_wood
+- regions_unexplored:stripped_palm_wood
+- regions_unexplored:stripped_pine_wood
+- regions_unexplored:stripped_redwood_wood
+- regions_unexplored:stripped_willow_wood
 - #create:vanilla_stripped_wood
 - #create:modded_stripped_wood
 
@@ -1068,6 +1693,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:silver_block
 
 #forge:ores/gold
+- beyond_earth:venus_gold_ore
 - #minecraft:gold_ores
 
 #forge:nuggets/all_metal
@@ -1101,6 +1727,51 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:scoria_pillar
 - create:scoria
 
+#domesticationinnovation:pet_beds
+- domesticationinnovation:pet_bed_white
+- domesticationinnovation:pet_bed_orange
+- domesticationinnovation:pet_bed_magenta
+- domesticationinnovation:pet_bed_light_blue
+- domesticationinnovation:pet_bed_yellow
+- domesticationinnovation:pet_bed_lime
+- domesticationinnovation:pet_bed_pink
+- domesticationinnovation:pet_bed_gray
+- domesticationinnovation:pet_bed_light_gray
+- domesticationinnovation:pet_bed_cyan
+- domesticationinnovation:pet_bed_purple
+- domesticationinnovation:pet_bed_blue
+- domesticationinnovation:pet_bed_brown
+- domesticationinnovation:pet_bed_green
+- domesticationinnovation:pet_bed_red
+- domesticationinnovation:pet_bed_black
+
+#botania:lens
+- botania:lens_bounce
+- botania:lens_damage
+- botania:lens_efficiency
+- botania:lens_explosive
+- botania:lens_fire
+- botania:lens_firework
+- botania:lens_flare
+- botania:lens_gravity
+- botania:lens_influence
+- botania:lens_light
+- botania:lens_magnet
+- botania:lens_messenger
+- botania:lens_mine
+- botania:lens_normal
+- botania:lens_paint
+- botania:lens_phantom
+- botania:lens_piston
+- botania:lens_power
+- botania:lens_redirect
+- botania:lens_speed
+- botania:lens_storm
+- botania:lens_time
+- botania:lens_tripwire
+- botania:lens_warp
+- botania:lens_weight
+
 #pneumaticcraft:fluid_tanks
 - pneumaticcraft:small_tank
 - pneumaticcraft:medium_tank
@@ -1109,6 +1780,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:gears/steel
 - thermal:steel_gear
+
+#twilightforest:fences
+- twilightforest:twilight_oak_fence
+- twilightforest:canopy_fence
+- twilightforest:mangrove_fence
+- twilightforest:dark_fence
+- twilightforest:time_fence
+- twilightforest:transformation_fence
+- twilightforest:mining_fence
+- twilightforest:sorting_fence
 
 #forge:nuggets/knightslime
 - tconstruct:knightslime_nugget
@@ -1122,13 +1803,39 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:grain/wheat
 - minecraft:wheat
 
+#forge:nuggets/ostrum
+- beyond_earth:ostrum_nugget
+
+#wares:delivery_boxes
+- wares:cardboard_box
+
 #forge:glass/lime
 - minecraft:lime_stained_glass
 - tconstruct:lime_clear_stained_glass
 
 #forge:chests/wooden
+- twilightforest:twilight_oak_chest
+- twilightforest:canopy_chest
+- twilightforest:mangrove_chest
+- twilightforest:darkwood_chest
+- twilightforest:time_chest
+- twilightforest:transformation_chest
+- twilightforest:mining_chest
+- twilightforest:sorting_chest
 - minecraft:chest
 - minecraft:trapped_chest
+- atmospheric:rosewood_chest
+- atmospheric:rosewood_trapped_chest
+- atmospheric:morado_chest
+- atmospheric:morado_trapped_chest
+- atmospheric:yucca_chest
+- atmospheric:yucca_trapped_chest
+- atmospheric:kousa_chest
+- atmospheric:kousa_trapped_chest
+- atmospheric:aspen_chest
+- atmospheric:aspen_trapped_chest
+- atmospheric:grimwood_chest
+- atmospheric:grimwood_trapped_chest
 
 #ars_nouveau:whirlisprig/denied_drop
 - minecraft:dirt
@@ -1169,6 +1876,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:copper_backtank
 - create:netherite_backtank
 
+#botania:double_mystical_flowers
+- botania:black_double_flower
+- botania:blue_double_flower
+- botania:brown_double_flower
+- botania:cyan_double_flower
+- botania:gray_double_flower
+- botania:green_double_flower
+- botania:light_blue_double_flower
+- botania:light_gray_double_flower
+- botania:lime_double_flower
+- botania:magenta_double_flower
+- botania:orange_double_flower
+- botania:pink_double_flower
+- botania:purple_double_flower
+- botania:red_double_flower
+- botania:white_double_flower
+- botania:yellow_double_flower
+
 #minecraft:carpets
 - minecraft:white_carpet
 - minecraft:orange_carpet
@@ -1194,6 +1919,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:tools/knives
 - #forge:tools/pickaxes
 - #forge:tools/shovels
+- #forge:tools/axes
+- #forge:tools/hoes
+- #forge:tools/pickaxes
+- #forge:tools/shovels
+- #forge:tools/swords
 - #forge:tools/wrench
 - #forge:tools/axes
 - #forge:tools/pickaxes
@@ -1224,6 +1954,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:coins/nickel
 - thermal:nickel_coin
 
+#ae2:blacklisted/annihilation_plane
+
+#forge:gems/fluix
+- ae2:fluix_crystal
+
 #forge:raw_mutton
 - minecraft:mutton
 - farmersdelight:mutton_chops
@@ -1234,6 +1969,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:planks/archwood
 - ars_nouveau:archwood_planks
+
+#forge:paper
+- minecraft:paper
 
 #minecraft:slabs
 - #minecraft:wooden_slabs
@@ -1281,13 +2019,86 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:exposed_cut_copper_slab
 - minecraft:cut_copper_slab
 - minecraft:waxed_oxidized_cut_copper_slab
+- beyond_earth:moon_stone_brick_slab
+- beyond_earth:mars_stone_brick_slab
+- beyond_earth:mercury_stone_brick_slab
+- beyond_earth:venus_sandstone_brick_slab
+- beyond_earth:venus_stone_brick_slab
+- beyond_earth:glacio_stone_brick_slab
+- twilightforest:aurora_slab
+- botania:black_pavement_slab
+- botania:blaze_quartz_slab
+- botania:blue_pavement_slab
+- botania:corporea_brick_slab
+- botania:corporea_slab
+- botania:dark_quartz_slab
+- botania:dreamwood_planks_slab
+- botania:dreamwood_slab
+- botania:elf_quartz_slab
+- botania:green_pavement_slab
+- botania:lavender_quartz_slab
+- botania:livingrock_bricks_slab
+- botania:livingrock_slab
+- botania:livingwood_planks_slab
+- botania:livingwood_slab
+- botania:mana_quartz_slab
+- botania:metamorphic_desert_bricks_slab
+- botania:metamorphic_desert_cobblestone_slab
+- botania:metamorphic_desert_stone_slab
+- botania:metamorphic_forest_bricks_slab
+- botania:metamorphic_forest_cobblestone_slab
+- botania:metamorphic_forest_stone_slab
+- botania:metamorphic_fungal_bricks_slab
+- botania:metamorphic_fungal_cobblestone_slab
+- botania:metamorphic_fungal_stone_slab
+- botania:metamorphic_mesa_bricks_slab
+- botania:metamorphic_mesa_cobblestone_slab
+- botania:metamorphic_mesa_stone_slab
+- botania:metamorphic_mountain_bricks_slab
+- botania:metamorphic_mountain_cobblestone_slab
+- botania:metamorphic_mountain_stone_slab
+- botania:metamorphic_plains_bricks_slab
+- botania:metamorphic_plains_cobblestone_slab
+- botania:metamorphic_plains_stone_slab
+- botania:metamorphic_swamp_bricks_slab
+- botania:metamorphic_swamp_cobblestone_slab
+- botania:metamorphic_swamp_stone_slab
+- botania:metamorphic_taiga_bricks_slab
+- botania:metamorphic_taiga_cobblestone_slab
+- botania:metamorphic_taiga_stone_slab
+- botania:mossy_livingrock_bricks_slab
+- botania:red_pavement_slab
+- botania:red_quartz_slab
+- botania:shimmerrock_slab
+- botania:shimmerwood_planks_slab
+- botania:stripped_dreamwood_slab
+- botania:stripped_livingwood_slab
+- botania:sunny_quartz_slab
+- botania:white_pavement_slab
+- botania:yellow_pavement_slab
 - #pneumaticcraft:slabs
 - ars_nouveau:archwood_slab
+- neapolitan:chocolate_brick_slab
+- neapolitan:chocolate_tile_slab
+- neapolitan:frond_thatch_slab
 - supplementaries:checker_slab
 - supplementaries:stone_tile_slab
 - supplementaries:blackstone_tile_slab
 - supplementaries:ash_bricks_slab
 - supplementaries:lapis_bricks_slab
+- regions_unexplored:chalk_slab
+- atmospheric:arid_sandstone_slab
+- atmospheric:smooth_arid_sandstone_slab
+- atmospheric:cut_arid_sandstone_slab
+- atmospheric:arid_sandstone_brick_slab
+- atmospheric:red_arid_sandstone_slab
+- atmospheric:smooth_red_arid_sandstone_slab
+- atmospheric:cut_red_arid_sandstone_slab
+- atmospheric:red_arid_sandstone_brick_slab
+- atmospheric:ivory_travertine_slab
+- atmospheric:peach_travertine_slab
+- atmospheric:persimmon_travertine_slab
+- atmospheric:saffron_travertine_slab
 - create:cut_granite_slab
 - create:polished_cut_granite_slab
 - create:cut_granite_brick_slab
@@ -1359,6 +2170,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:plates/steel
 - thermal:steel_plate
 
+#botania:petals/gray
+- botania:gray_petal
+- botania:gray_mushroom
+
 #create:casing
 - create:andesite_casing
 - create:brass_casing
@@ -1390,6 +2205,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:ender_congealed_slime
 - tconstruct:blood_congealed_slime
 
+#ae2:p2p_attunements/me_p2p_tunnel
+- #ae2:covered_cable
+- #ae2:covered_dense_cable
+- #ae2:glass_cable
+- #ae2:smart_cable
+- #ae2:smart_dense_cable
+
+#botania:misc_special_flowers
+- botania:manastar
+- botania:pure_daisy
+- botania:bergamute
+
 #tconstruct:modifiable/melee/primary
 - tconstruct:sledge_hammer
 - tconstruct:hand_axe
@@ -1412,6 +2239,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:polished_blackstone_button
 - ars_nouveau:archwood_button
 
+#forge:buckets/lava
+- minecraft:lava_bucket
+
 #parry:excluded_shields
 - #tconstruct:modifiable/held
 
@@ -1424,6 +2254,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:powered_rail
 - minecraft:detector_rail
 - minecraft:activator_rail
+- botania:ghost_rail
 
 #railways:internal/dyes/white_dyes
 - #c:white_dyes?
@@ -1431,6 +2262,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:wool/lime
 - minecraft:lime_wool
+
+#ae2:all_quartz_dust
+- #forge:dusts/certus_quartz
 
 #pneumaticcraft:slabs
 - pneumaticcraft:reinforced_brick_slab
@@ -1467,10 +2301,66 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_pressure_plate
 - minecraft:crimson_pressure_plate
 - minecraft:warped_pressure_plate
+- twilightforest:twilight_oak_pressure_plate
+- twilightforest:canopy_pressure_plate
+- twilightforest:mangrove_pressure_plate
+- twilightforest:dark_pressure_plate
+- twilightforest:time_pressure_plate
+- twilightforest:transformation_pressure_plate
+- twilightforest:mining_pressure_plate
+- twilightforest:sorting_pressure_plate
 - ars_nouveau:archwood_pressure_plate
 - tconstruct:greenheart_pressure_plate
 - tconstruct:skyroot_pressure_plate
 - tconstruct:bloodshroom_pressure_plate
+- regions_unexplored:baobab_pressure_plate
+- regions_unexplored:blackwood_pressure_plate
+- regions_unexplored:cherry_pressure_plate
+- regions_unexplored:cherry_pressure_plate
+- regions_unexplored:cypress_pressure_plate
+- regions_unexplored:dead_pressure_plate
+- regions_unexplored:eucalyptus_pressure_plate
+- regions_unexplored:joshua_pressure_plate
+- regions_unexplored:larch_pressure_plate
+- regions_unexplored:maple_pressure_plate
+- regions_unexplored:mauve_pressure_plate
+- regions_unexplored:palm_pressure_plate
+- regions_unexplored:pine_pressure_plate
+- regions_unexplored:redwood_pressure_plate
+- regions_unexplored:willow_pressure_plate
+- regions_unexplored:sculkwood_pressure_plate
+- atmospheric:rosewood_pressure_plate
+- atmospheric:morado_pressure_plate
+- atmospheric:yucca_pressure_plate
+- atmospheric:kousa_pressure_plate
+- atmospheric:aspen_pressure_plate
+- atmospheric:grimwood_pressure_plate
+
+#ae2:smart_dense_cable
+- ae2:white_smart_dense_cable
+- ae2:orange_smart_dense_cable
+- ae2:magenta_smart_dense_cable
+- ae2:light_blue_smart_dense_cable
+- ae2:yellow_smart_dense_cable
+- ae2:lime_smart_dense_cable
+- ae2:pink_smart_dense_cable
+- ae2:gray_smart_dense_cable
+- ae2:light_gray_smart_dense_cable
+- ae2:cyan_smart_dense_cable
+- ae2:purple_smart_dense_cable
+- ae2:blue_smart_dense_cable
+- ae2:brown_smart_dense_cable
+- ae2:green_smart_dense_cable
+- ae2:red_smart_dense_cable
+- ae2:black_smart_dense_cable
+- ae2:fluix_smart_dense_cable
+
+#botania:petals/purple
+- botania:purple_petal
+- botania:purple_mushroom
+
+#bookshelf:leggings
+- #forge:leggings
 
 #forge:plates/tin
 - thermal:tin_plate
@@ -1479,6 +2369,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:andesite_alloy
 - create:zinc_ingot
 - create:brass_ingot
+
+#forge:bows
+- minecraft:bow
+
+#beyond_earth:engines/desh
+- beyond_earth:desh_engine
 
 #minecraft:gold_ores
 - minecraft:gold_ore
@@ -1499,6 +2395,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:copper_backtank
 - create:netherite_backtank
 
+#botania:petals/green
+- botania:green_petal
+- botania:green_mushroom
+
 #farmersdelight:offhand_equipment
 - minecraft:shield
 - create:extendo_grip?
@@ -1512,6 +2412,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:deepslate
 - #forge:basalt
 
+#forge:hoes
+- minecraft:wooden_hoe
+- minecraft:stone_hoe
+- minecraft:iron_hoe
+- minecraft:golden_hoe
+- minecraft:diamond_hoe
+- minecraft:netherite_hoe
+
 #minecraft:cluster_max_harvestables
 - minecraft:diamond_pickaxe
 - minecraft:golden_pickaxe
@@ -1519,6 +2427,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:netherite_pickaxe
 - minecraft:stone_pickaxe
 - minecraft:wooden_pickaxe
+- botania:manasteel_pick
+- botania:elementium_pickaxe
+- botania:terra_pick
+- botania:glass_pickaxe
 - thermal:flux_drill
 - tconstruct:pickaxe
 - tconstruct:sledge_hammer
@@ -1527,15 +2439,52 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:wool/cyan
 - minecraft:cyan_wool
 
+#upgradednetherite:upgraded_netherite_sword
+- upgradednetherite:gold_upgraded_netherite_sword
+- upgradednetherite:fire_upgraded_netherite_sword
+- upgradednetherite:ender_upgraded_netherite_sword
+- upgradednetherite:water_upgraded_netherite_sword
+- upgradednetherite:wither_upgraded_netherite_sword
+- upgradednetherite:poison_upgraded_netherite_sword
+- upgradednetherite:phantom_upgraded_netherite_sword
+- upgradednetherite:feather_upgraded_netherite_sword
+
+#regions_unexplored:convertable_to_plains_mud
+- regions_unexplored:plains_dirt
+- regions_unexplored:plains_coarse_dirt
+
 #tconstruct:casts/multi_use/tough_handle
 - tconstruct:tough_handle_cast
+
+#forge:ingots/elementium
+- #botania:elementium_ingots
 
 #endersdelight:shulker_loot
 - endersdelight:shulker_filet
 - endersdelight:shulker_mollusk
 
+#forge:crossbows
+- minecraft:crossbow
+
+#twilightforest:twilight_oak_logs
+- twilightforest:twilight_oak_log
+- twilightforest:stripped_twilight_oak_log
+- twilightforest:twilight_oak_wood
+- twilightforest:stripped_twilight_oak_wood
+
+#ae2:p2p_attunements/redstone_p2p_tunnel
+- minecraft:redstone
+- minecraft:repeater
+- minecraft:redstone_lamp
+- minecraft:comparator
+- minecraft:daylight_detector
+- minecraft:redstone_torch
+- minecraft:redstone_block
+- minecraft:lever
+
 #forge:gravel
 - minecraft:gravel
+- regions_unexplored:ash
 
 #forge:armor/gold
 - minecraft:golden_boots
@@ -1543,8 +2492,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:golden_helmet
 - minecraft:golden_leggings
 
+#beyond_earth:engines/ostrum
+- beyond_earth:ostrum_engine
+
 #forge:dyes/black
 - minecraft:black_dye
+- chalk:black_chalk
 
 #tconstruct:casts/multi_use
 - #tconstruct:casts/multi_use/ingot
@@ -1611,6 +2564,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - malum:holy_syrup?
 - malum:unholy_syrup?
 
+#forge:leggings
+- minecraft:leather_leggings
+- minecraft:chainmail_leggings
+- minecraft:iron_leggings
+- minecraft:golden_leggings
+- minecraft:diamond_leggings
+- minecraft:netherite_leggings
+
 #forge:tools/netherite
 - minecraft:netherite_axe
 - minecraft:netherite_hoe
@@ -1629,14 +2590,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:stripped_warped_hyphae
 - decorative_blocks:warped_beam
 
+#botania:magnet_ring_blacklist
+
 #forge:dusts/ender_pearl
 - thermal:ender_pearl_dust
+- ae2:ender_dust
+
+#forge:shovels
+- minecraft:wooden_shovel
+- minecraft:stone_shovel
+- minecraft:iron_shovel
+- minecraft:golden_shovel
+- minecraft:diamond_shovel
+- minecraft:netherite_shovel
 
 #forge:storage_blocks/coal_coke
 - thermal:coal_coke_block
 
 #forge:dyes/blue
 - minecraft:blue_dye
+- chalk:blue_chalk
 
 #forge:storage_blocks/iron
 - minecraft:iron_block
@@ -1659,6 +2632,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:red_seat
 - create:black_seat
 
+#upgradednetherite:upgraded_netherite_leggings
+- upgradednetherite:gold_upgraded_netherite_leggings
+- upgradednetherite:fire_upgraded_netherite_leggings
+- upgradednetherite:ender_upgraded_netherite_leggings
+- upgradednetherite:water_upgraded_netherite_leggings
+- upgradednetherite:wither_upgraded_netherite_leggings
+- upgradednetherite:poison_upgraded_netherite_leggings
+- upgradednetherite:phantom_upgraded_netherite_leggings
+- upgradednetherite:feather_upgraded_netherite_leggings
+
 #forge:tools/pickaxes
 - minecraft:wooden_pickaxe
 - minecraft:stone_pickaxe
@@ -1669,9 +2652,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:wooden_pickaxe
 - minecraft:stone_pickaxe
 - minecraft:iron_pickaxe
+- minecraft:golden_pickaxe
+- minecraft:diamond_pickaxe
+- minecraft:netherite_pickaxe
+- minecraft:wooden_pickaxe
+- minecraft:stone_pickaxe
+- minecraft:iron_pickaxe
 - minecraft:diamond_pickaxe
 - minecraft:golden_pickaxe
 - minecraft:netherite_pickaxe
+
+#ae2:quartz_hoe
+- ae2:certus_quartz_hoe
+- ae2:nether_quartz_hoe
 
 #forge:glass_panes/brown
 - minecraft:brown_stained_glass_pane
@@ -1722,10 +2715,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - createdeco:dusk_brick?
 - createdeco:pearl_brick?
 
-#zetter:paint_sources
-- zetter:paints
-- zetter:palette
-
 #forge:ores/sapphire
 - thermal:sapphire_ore
 - thermal:deepslate_sapphire_ore
@@ -1740,9 +2729,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:wooden_axe
 - minecraft:stone_axe
 - minecraft:iron_axe
+- minecraft:golden_axe
+- minecraft:diamond_axe
+- minecraft:netherite_axe
+- minecraft:wooden_axe
+- minecraft:stone_axe
+- minecraft:iron_axe
 - minecraft:diamond_axe
 - minecraft:golden_axe
 - minecraft:netherite_axe
+
+#regions_unexplored:dead_logs
+- regions_unexplored:dead_log
+- regions_unexplored:stripped_dead_log
+- regions_unexplored:dead_wood
+- regions_unexplored:stripped_dead_wood
+
+#bookshelf:stones
+- #forge:stone
 
 #tconstruct:casts/multi_use/large_plate
 - tconstruct:large_plate_cast
@@ -1755,7 +2759,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - decorative_blocks:dark_oak_beam
 
 #forge:storage_blocks/steel
+- beyond_earth:steel_block
 - thermal:steel_block
+
+#forge:spyglasses
+- minecraft:spyglass
 
 #create:stone_types/limestone
 - create:cut_limestone
@@ -1795,6 +2803,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/lumium
 - thermal:lumium_block
+
+#atmospheric:kousa_logs
+- atmospheric:kousa_log
+- atmospheric:kousa_wood
+- atmospheric:stripped_kousa_log
+- atmospheric:stripped_kousa_wood
 
 #tconstruct:chrysophilite_ores
 - #forge:ores/gold
@@ -1848,6 +2862,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:enderium_nugget
 
 #forge:mushrooms
+- botania:white_mushroom
+- botania:orange_mushroom
+- botania:magenta_mushroom
+- botania:light_blue_mushroom
+- botania:yellow_mushroom
+- botania:lime_mushroom
+- botania:pink_mushroom
+- botania:gray_mushroom
+- botania:light_gray_mushroom
+- botania:cyan_mushroom
+- botania:purple_mushroom
+- botania:blue_mushroom
+- botania:brown_mushroom
+- botania:green_mushroom
+- botania:red_mushroom
+- botania:black_mushroom
 - minecraft:brown_mushroom
 - minecraft:red_mushroom
 
@@ -1888,6 +2918,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:gray_concrete_powder
 - minecraft:light_gray_concrete_powder
 
+#forge:tools/swords
+- minecraft:wooden_sword
+- minecraft:stone_sword
+- minecraft:iron_sword
+- minecraft:golden_sword
+- minecraft:diamond_sword
+- minecraft:netherite_sword
+
 #forge:gears/emerald
 - thermal:emerald_gear
 
@@ -1908,6 +2946,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #minecraft:fences
 - #minecraft:wooden_fences
 - minecraft:nether_brick_fence
+- botania:dreamwood_fence
+- botania:livingwood_fence
 - ars_nouveau:archwood_fence
 
 #minecraft:saplings
@@ -1919,22 +2959,69 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_sapling
 - minecraft:azalea
 - minecraft:flowering_azalea
+- twilightforest:twilight_oak_sapling
+- twilightforest:canopy_sapling
+- twilightforest:mangrove_sapling
+- twilightforest:darkwood_sapling
+- twilightforest:time_sapling
+- twilightforest:transformation_sapling
+- twilightforest:mining_sapling
+- twilightforest:sorting_sapling
+- twilightforest:hollow_oak_sapling
+- twilightforest:rainbow_oak_sapling
 - ars_nouveau:red_archwood_sapling
 - ars_nouveau:blue_archwood_sapling
 - ars_nouveau:green_archwood_sapling
 - ars_nouveau:purple_archwood_sapling
 - #tconstruct:slimy_saplings
+- regions_unexplored:apple_oak_sapling
+- regions_unexplored:flowering_sapling
+- regions_unexplored:silver_birch_sapling
+- regions_unexplored:bamboo_sapling
+- regions_unexplored:baobab_sapling
+- regions_unexplored:blackwood_sapling
+- regions_unexplored:cherry_sapling
+- regions_unexplored:red_cherry_sapling
+- regions_unexplored:pink_cherry_sapling
+- regions_unexplored:white_cherry_sapling
+- regions_unexplored:cypress_sapling
+- regions_unexplored:dead_sapling
+- regions_unexplored:dead_pine_sapling
+- regions_unexplored:eucalyptus_sapling
+- regions_unexplored:joshua_sapling
+- regions_unexplored:golden_larch_sapling
+- regions_unexplored:larch_sapling
+- regions_unexplored:maple_sapling
+- regions_unexplored:red_maple_sapling
+- regions_unexplored:orange_maple_sapling
+- regions_unexplored:mauve_sapling
+- regions_unexplored:palm_sapling
+- regions_unexplored:pine_sapling
+- regions_unexplored:redwood_sapling
+- regions_unexplored:willow_sapling
+- regions_unexplored:alpha_sapling
+- regions_unexplored:cactus_flower
+- regions_unexplored:sculkwood_sapling
+- atmospheric:rosewood_sapling
+- atmospheric:morado_sapling
+- atmospheric:yucca_sapling
+- atmospheric:kousa_sapling
+- atmospheric:aspen_sapling
+- atmospheric:grimwood_sapling
 
 #forge:ores/copper
+- beyond_earth:glacio_copper_ore
 - #minecraft:copper_ores
 
-#butchercraft:any_scrap_meat_raw
-- butchercraft:beef_scraps
-- butchercraft:lamb_scraps
-- butchercraft:pork_scraps
+#forge:storage_blocks/knightmetal
+- twilightforest:knightmetal_block
 
 #forge:coins/lumium
 - thermal:lumium_coin
+
+#botania:petals/cyan
+- botania:cyan_petal
+- botania:cyan_mushroom
 
 #forge:gears/quartz
 - thermal:quartz_gear
@@ -1966,16 +3053,63 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:jungle_fence
 - minecraft:crimson_fence
 - minecraft:warped_fence
+- twilightforest:twilight_oak_fence
+- twilightforest:canopy_fence
+- twilightforest:mangrove_fence
+- twilightforest:dark_fence
+- twilightforest:time_fence
+- twilightforest:transformation_fence
+- twilightforest:mining_fence
+- twilightforest:sorting_fence
+- botania:dreamwood_fence
+- botania:livingwood_fence
 - ars_nouveau:archwood_fence
 - tconstruct:greenheart_fence
 - tconstruct:skyroot_fence
 - tconstruct:bloodshroom_fence
+- regions_unexplored:baobab_fence
+- regions_unexplored:blackwood_fence
+- regions_unexplored:cherry_fence
+- regions_unexplored:cherry_fence
+- regions_unexplored:cypress_fence
+- regions_unexplored:dead_fence
+- regions_unexplored:eucalyptus_fence
+- regions_unexplored:joshua_fence
+- regions_unexplored:larch_fence
+- regions_unexplored:maple_fence
+- regions_unexplored:mauve_fence
+- regions_unexplored:palm_fence
+- regions_unexplored:pine_fence
+- regions_unexplored:redwood_fence
+- regions_unexplored:willow_fence
+- regions_unexplored:sculkwood_fence
+- atmospheric:rosewood_fence
+- atmospheric:morado_fence
+- atmospheric:yucca_fence
+- atmospheric:kousa_fence
+- atmospheric:aspen_fence
+- atmospheric:grimwood_fence
+
+#umapyoi:ssr_uma_ticket
+- umapyoi:ssr_uma_ticket
 
 #forge:gears/gold
 - thermal:gold_gear
 
+#twilightforest:transwood_logs
+- twilightforest:transformation_log
+- twilightforest:stripped_transformation_log
+- twilightforest:transformation_wood
+- twilightforest:stripped_transformation_wood
+
 #forge:obsidian
 - minecraft:obsidian
+
+#bookshelf:spyglasses
+- #forge:spyglasses
+
+#forge:storage_blocks/fiery
+- twilightforest:fiery_block
 
 #tconstruct:modifiable/melee_or_unarmed
 - #tconstruct:modifiable/melee
@@ -2005,6 +3139,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:nether_quartz_ore
 - tconstruct:cobalt_ore
 
+#forge:ingots/steeleaf
+- twilightforest:steeleaf_ingot
+
 #forge:rods/brass
 - createaddition:brass_rod
 
@@ -2029,7 +3166,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:magenta_clear_stained_glass
 
 #forge:ores/coal
+- beyond_earth:venus_coal_ore
+- beyond_earth:glacio_coal_ore
 - #minecraft:coal_ores
+
+#regions_unexplored:larch_logs
+- regions_unexplored:larch_log
+- regions_unexplored:stripped_larch_log
+- regions_unexplored:larch_wood
+- regions_unexplored:stripped_larch_wood
 
 #forge:pasta
 - #forge:pasta/raw_pasta
@@ -2062,13 +3207,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:books/guide
 - #tconstruct:guides
 
-#butchercraft:any_gelatin_provider
-- butchercraft:cow_hide
-- butchercraft:pig_hide
-- butchercraft:sheep_hide
-- minecraft:bone
-- butchercraft:sinew
-
 #minecraft:trapdoors
 - #minecraft:wooden_trapdoors
 - minecraft:iron_trapdoor
@@ -2083,6 +3221,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:raw_materials/nickel
 - thermal:raw_nickel
 
+#forge:ores/calorite
+- beyond_earth:venus_calorite_ore
+
 #forge:ingots/gold
 - minecraft:gold_ingot
 
@@ -2090,13 +3231,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:cyan_stained_glass
 - tconstruct:cyan_clear_stained_glass
 
+#forge:storage_blocks/raw_calorite
+- beyond_earth:raw_calorite_block
+
 #forge:leather
 - minecraft:leather
 
 #forge:glass
+- botania:mana_glass
+- botania:elf_glass
+- botania:bifrost_perm
 - #forge:glass/colorless
 - #forge:stained_glass
 - #forge:glass/tinted
+
+#forge:ores/ironwood
+- twilightforest:raw_ironwood
+
+#forge:mob_buckets
+- minecraft:pufferfish_bucket
+- minecraft:salmon_bucket
+- minecraft:cod_bucket
+- minecraft:tropical_fish_bucket
+- minecraft:axolotl_bucket
 
 #tconstruct:modifiable/armor/leggings
 - tconstruct:travelers_leggings
@@ -2110,6 +3267,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:jungle_boat
 - minecraft:acacia_boat
 - minecraft:dark_oak_boat
+- regions_unexplored:baobab_boat
+- regions_unexplored:blackwood_boat
+- regions_unexplored:cherry_boat
+- regions_unexplored:cypress_boat
+- regions_unexplored:dead_boat
+- regions_unexplored:eucalyptus_boat
+- regions_unexplored:joshua_boat
+- regions_unexplored:larch_boat
+- regions_unexplored:maple_boat
+- regions_unexplored:mauve_boat
+- regions_unexplored:palm_boat
+- regions_unexplored:pine_boat
+- regions_unexplored:redwood_boat
+- regions_unexplored:sculkwood_boat
+- regions_unexplored:willow_boat
+- atmospheric:rosewood_boat
+- atmospheric:morado_boat
+- atmospheric:yucca_boat
+- atmospheric:kousa_boat
+- atmospheric:aspen_boat
+- atmospheric:grimwood_boat
 
 #forge:nuggets/iron
 - minecraft:iron_nugget
@@ -2170,6 +3348,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/brass
 - create:brass_block
 
+#botania:livingwood_logs
+- botania:livingwood_log
+- botania:livingwood
+- botania:stripped_livingwood_log
+- botania:stripped_livingwood
+- #botania:glimmering_livingwood_logs
+
 #forge:crops/potato
 - minecraft:potato
 
@@ -2200,6 +3385,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:gears/netherite
 - thermal:netherite_gear
 
+#botania:terra_pick_blacklist
+- botania:aura_ring
+- botania:aura_ring_greater
+- botania:terrasteel_helmet
+- botania:spark
+
+#atmospheric:yucca_logs
+- atmospheric:yucca_log
+- atmospheric:yucca_wood
+- atmospheric:stripped_yucca_log
+- atmospheric:stripped_yucca_wood
+
 #forge:storage_blocks/andesite_alloy
 - create:andesite_alloy_block
 
@@ -2217,6 +3414,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - biggerreactors:wrench
 - pneumaticcraft:pneumatic_wrench
 - thermal:wrench
+- ae2:certus_quartz_wrench
+- ae2:nether_quartz_wrench
+- ae2:network_tool
+- immersiveengineering:hammer?
 - pipez:wrench
 - create:wrench
 
@@ -2261,6 +3462,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:tin_nugget
 
 #curios:head
+- twilightforest:naga_trophy
+- twilightforest:lich_trophy
+- twilightforest:minoshroom_trophy
+- twilightforest:hydra_trophy
+- twilightforest:knight_phantom_trophy
+- twilightforest:ur_ghast_trophy
+- twilightforest:alpha_yeti_trophy
+- twilightforest:snow_queen_trophy
+- twilightforest:quest_ram_trophy
+- twilightforest:cicada
+- twilightforest:firefly
+- twilightforest:moonworm
+- twilightforest:creeper_skull_candle
+- twilightforest:player_skull_candle
+- twilightforest:skeleton_skull_candle
+- twilightforest:wither_skeleton_skull_candle
+- twilightforest:zombie_skull_candle
+- botania:flight_tiara
+- botania:itemfinder
 - artifacts:night_vision_goggles
 - artifacts:novelty_drinking_hat
 - artifacts:plastic_drinking_hat
@@ -2271,6 +3491,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/queens_slime
 - tconstruct:queens_slime_block
+
+#umapyoi:uma_ticket
+- #umapyoi:common_gacha_item
+- umapyoi:uma_ticket
+- #umapyoi:sr_uma_ticket
+- #umapyoi:ssr_uma_ticket
 
 #forge:storage_blocks/zinc
 - create:zinc_block
@@ -2305,6 +3531,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:ingots/netherite_scrap
 - minecraft:netherite_scrap
 
+#beyond_earth:compresseds/calorite
+- beyond_earth:compressed_calorite
+
 #tconstruct:casts/single_use/tool_binding
 - tconstruct:tool_binding_sand_cast
 - tconstruct:tool_binding_red_sand_cast
@@ -2313,11 +3542,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:gray_stained_glass
 - tconstruct:gray_clear_stained_glass
 
+#beyond_earth:compresseds
+- #beyond_earth:compresseds/steel
+- #beyond_earth:compresseds/desh
+- #beyond_earth:compresseds/ostrum
+- #beyond_earth:compresseds/calorite
+
 #forge:plates/lumium
 - thermal:lumium_plate
 
 #forge:dyes/light_blue
 - minecraft:light_blue_dye
+- chalk:light_blue_chalk
 
 #tconstruct:casts/single_use/rod
 - tconstruct:rod_sand_cast
@@ -2351,17 +3587,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:red_toolbox
 - create:black_toolbox
 
+#forge:ingots/desh
+- beyond_earth:desh_ingot
+
 #forge:bitumen
 - thermal:bitumen
 
-#butchercraft:any_lamb_cooked
-- butchercraft:cooked_lamb_rib
-- butchercraft:cooked_lamb_ribs
-- butchercraft:cooked_lamb_roast
-- butchercraft:cooked_lamb_scraps
-- butchercraft:cooked_lamb_stewmeat
-- butchercraft:cooked_cubed_lamb
-- butchercraft:cooked_ground_lamb
+#ae2:quartz_axe
+- ae2:certus_quartz_axe
+- ae2:nether_quartz_axe
 
 #forge:glass_panes/black
 - minecraft:black_stained_glass_pane
@@ -2379,8 +3613,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - farmersdelight:wild_onions
 - farmersdelight:wild_rice
 
+#neapolitan:chimpanzee_favorites
+- minecraft:stick
+- minecraft:bamboo
+- neapolitan:small_banana_frond
+- neapolitan:banana_frond
+- neapolitan:large_banana_frond
+
 #forge:dyes/pink
 - minecraft:pink_dye
+- chalk:pink_chalk
 
 #minecraft:axolotl_tempt_items
 - minecraft:tropical_fish_bucket
@@ -2406,9 +3648,41 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - supplementaries:hanging_sign_dark_oak
 - supplementaries:hanging_sign_crimson
 - supplementaries:hanging_sign_warped
+- supplementaries:twilightforest/hanging_sign_twilight_oak
+- supplementaries:twilightforest/hanging_sign_canopy
+- supplementaries:twilightforest/hanging_sign_mangrove
+- supplementaries:twilightforest/hanging_sign_dark
+- supplementaries:twilightforest/hanging_sign_time
+- supplementaries:twilightforest/hanging_sign_transformation
+- supplementaries:twilightforest/hanging_sign_mining
+- supplementaries:twilightforest/hanging_sign_sorting
+- supplementaries:botania/hanging_sign_livingwood
+- supplementaries:botania/hanging_sign_dreamwood
 - supplementaries:tconstruct/hanging_sign_greenheart
 - supplementaries:tconstruct/hanging_sign_skyroot
 - supplementaries:tconstruct/hanging_sign_bloodshroom
+- supplementaries:regions_unexplored/hanging_sign_alpha
+- supplementaries:regions_unexplored/hanging_sign_baobab
+- supplementaries:regions_unexplored/hanging_sign_blackwood
+- supplementaries:regions_unexplored/hanging_sign_cherry
+- supplementaries:regions_unexplored/hanging_sign_cypress
+- supplementaries:regions_unexplored/hanging_sign_dead
+- supplementaries:regions_unexplored/hanging_sign_eucalyptus
+- supplementaries:regions_unexplored/hanging_sign_joshua
+- supplementaries:regions_unexplored/hanging_sign_larch
+- supplementaries:regions_unexplored/hanging_sign_maple
+- supplementaries:regions_unexplored/hanging_sign_mauve
+- supplementaries:regions_unexplored/hanging_sign_palm
+- supplementaries:regions_unexplored/hanging_sign_pine
+- supplementaries:regions_unexplored/hanging_sign_redwood
+- supplementaries:regions_unexplored/hanging_sign_willow
+- supplementaries:regions_unexplored/hanging_sign_sculkwood
+- supplementaries:atmospheric/hanging_sign_rosewood
+- supplementaries:atmospheric/hanging_sign_morado
+- supplementaries:atmospheric/hanging_sign_yucca
+- supplementaries:atmospheric/hanging_sign_kousa
+- supplementaries:atmospheric/hanging_sign_aspen
+- supplementaries:atmospheric/hanging_sign_grimwood
 
 #createaddition:spools
 - createaddition:iron_spool
@@ -2513,20 +3787,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - farmersdelight:wheat_dough
 - create:dough
 
+#twilightforest:fence_gates
+- twilightforest:twilight_oak_fence_gate
+- twilightforest:canopy_fence_gate
+- twilightforest:mangrove_fence_gate
+- twilightforest:dark_fence_gate
+- twilightforest:time_fence_gate
+- twilightforest:transformation_fence_gate
+- twilightforest:mining_fence_gate
+- twilightforest:sorting_fence_gate
+
 #forge:stone
-- #pneumaticcraft:reinforced_stone
-- #pneumaticcraft:compressed_stone
+- minecraft:stone
 - minecraft:andesite
 - minecraft:diorite
 - minecraft:granite
-- minecraft:infested_stone
-- minecraft:stone
 - minecraft:polished_andesite
 - minecraft:polished_diorite
 - minecraft:polished_granite
 - minecraft:deepslate
 - minecraft:polished_deepslate
-- minecraft:infested_deepslate
 - minecraft:tuff
 
 #tconstruct:casts/sand
@@ -2570,6 +3850,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:gunpowder
 - minecraft:gunpowder
 
+#regions_unexplored:branches
+- regions_unexplored:acacia_branch
+- regions_unexplored:baobab_branch
+- regions_unexplored:birch_branch
+- regions_unexplored:blackwood_branch
+- regions_unexplored:cherry_branch
+- regions_unexplored:cypress_branch
+- regions_unexplored:dark_oak_branch
+- regions_unexplored:dead_branch
+- regions_unexplored:eucalyptus_branch
+- regions_unexplored:joshua_beard
+- regions_unexplored:jungle_branch
+- regions_unexplored:larch_branch
+- regions_unexplored:maple_branch
+- regions_unexplored:mauve_branch
+- regions_unexplored:oak_branch
+- regions_unexplored:palm_beard
+- regions_unexplored:pine_branch
+- regions_unexplored:redwood_branch
+- regions_unexplored:spruce_branch
+- regions_unexplored:willow_branch
+
 #forge:wool/gray
 - minecraft:gray_wool
 
@@ -2610,6 +3912,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:slimeball/sky
 - tconstruct:sky_slime_ball
 
+#botania:glimmering_livingwood_logs
+- botania:glimmering_livingwood
+- botania:glimmering_livingwood_log
+- botania:glimmering_stripped_livingwood
+- botania:glimmering_stripped_livingwood_log
+
 #forge:ore_rates/sparse
 - minecraft:nether_gold_ore
 
@@ -2624,6 +3932,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:crops/potato
 - #forge:crops/wheat
 - supplementaries:flax
+
+#forge:armor
+- #forge:helmets
+- #forge:chestplates
+- #forge:leggings
+- #forge:boots
 
 #forge:ore_bearing_ground/netherrack
 - minecraft:netherrack
@@ -2648,6 +3962,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:waxed_oxidized_copper_platform
 
 #curios:charm
+- apotheosis:potion_charm?
+- twilightforest:charm_of_life_1
+- twilightforest:charm_of_life_2
+- twilightforest:charm_of_keeping_1
+- twilightforest:charm_of_keeping_2
+- twilightforest:charm_of_keeping_3
+- botania:diva_charm
+- botania:goddess_charm
+- botania:monocle
+- botania:tiny_planet
 - thermal:flux_capacitor
 - thermal:flux_magnet
 - thermal:fluid_reservoir
@@ -2678,6 +4002,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:bow_limb_red_sand_cast
 - tconstruct:bow_grip_red_sand_cast
 
+#quark:boatable_chests
+- atmospheric:rosewood_chest
+- atmospheric:morado_chest
+- atmospheric:yucca_chest
+- atmospheric:kousa_chest
+- atmospheric:aspen_chest
+- atmospheric:grimwood_chest
+
 #tconstruct:autosmelt_blacklist
 
 #tconstruct:modifiable/armor/chestplate
@@ -2698,11 +4030,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:stripped_birch_log
 - minecraft:stripped_birch_wood
 - decorative_blocks:birch_beam
+- regions_unexplored:silver_birch_log_base
 
 #tconstruct:slimy_planks
 - tconstruct:greenheart_planks
 - tconstruct:skyroot_planks
 - tconstruct:bloodshroom_planks
+
+#forge:fruits/strawberry
+- neapolitan:strawberries
+
+#ae2:metal_ingots
+- #forge:ingots/copper?
+- #forge:ingots/tin?
+- #forge:ingots/iron?
+- #forge:ingots/gold?
+- #forge:ingots/brass?
+- #forge:ingots/nickel?
+- #forge:ingots/aluminium?
 
 #forge:storage_blocks/ludicrite
 - biggerreactors:ludicrite_block
@@ -2716,6 +4061,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - createaddition:iron_wire
 - createaddition:electrum_wire
 
+#neapolitan:chimpanzee_snacks
+- neapolitan:banana
+- neapolitan:banana_bunch
+- neapolitan:banana_bread
+- neapolitan:dried_banana
+- neapolitan:bananarrow
+
 #forge:seeds
 - #forge:seeds/cabbage
 - #forge:seeds/rice
@@ -2725,7 +4077,31 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:seeds/melon
 - #forge:seeds/pumpkin
 - #forge:seeds/wheat
+- #forge:seeds/strawberry
 - supplementaries:flax_seeds
+
+#upgradednetherite:upgraded_netherite_pickaxe
+- upgradednetherite:gold_upgraded_netherite_pickaxe
+- upgradednetherite:fire_upgraded_netherite_pickaxe
+- upgradednetherite:ender_upgraded_netherite_pickaxe
+- upgradednetherite:water_upgraded_netherite_pickaxe
+- upgradednetherite:phantom_upgraded_netherite_pickaxe
+- upgradednetherite:feather_upgraded_netherite_pickaxe
+
+#botania:rods
+- botania:dirt_rod
+- botania:skydirt_rod
+- botania:terraform_rod
+- botania:cobble_rod
+- botania:water_rod
+- botania:tornado_rod
+- botania:fire_rod
+- botania:divining_rod
+- botania:smelt_rod
+- botania:exchange_rod
+- botania:rainbow_rod
+- botania:gravity_rod
+- botania:missile_rod
 
 #minecraft:oak_logs
 - minecraft:oak_log
@@ -2742,6 +4118,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - ars_nouveau:source_gem
 
 #forge:ores/lapis
+- beyond_earth:glacio_lapis_ore
 - #minecraft:lapis_ores
 
 #forge:foods/meat/cooked
@@ -2754,9 +4131,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:bread
 - #forge:bread/wheat
 - pneumaticcraft:sourdough_bread
+- #forge:bread/wheat
 
 #curios:belt
-- toms_storage:ts.adv_wireless_terminal
+- botania:knockback_belt
+- botania:speed_up_belt
+- botania:super_travel_belt
+- botania:travel_belt
 - artifacts:antidote_vessel
 - artifacts:cloud_in_a_bottle
 - artifacts:crystal_heart
@@ -2778,7 +4159,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:slimeball/ichor
 - #forge:slimeball/ender
 - #forge:slimeball/blood
-- butchercraft:fat
 
 #pneumaticcraft:doors
 - pneumaticcraft:pneumatic_door
@@ -2839,6 +4219,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - patchouli:guide_book
 - #tconstruct:guides
 
+#beyond_earth:tanks
+- #beyond_earth:tanks/steel
+- #beyond_earth:tanks/desh
+- #beyond_earth:tanks/ostrum
+- #beyond_earth:tanks/calorite
+
 #forge:dusts/niter
 - thermal:niter_dust
 
@@ -2849,10 +4235,36 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:stripped_spruce_wood
 - decorative_blocks:spruce_beam
 
+#regions_unexplored:sculkwood_logs
+- regions_unexplored:sculkwood_log
+- regions_unexplored:sculkwood_log_dark
+- regions_unexplored:sculkwood_log_transition
+
+#regions_unexplored:pine_logs
+- regions_unexplored:pine_log
+- regions_unexplored:pine_log_transition
+- regions_unexplored:stripped_pine_log
+- regions_unexplored:pine_wood
+- regions_unexplored:stripped_pine_wood
+
 #tconstruct:modifiable/unarmed
 - #tconstruct:modifiable/armor/chestplate
 
+#botania:elementium_ingots
+- botania:elementium_ingot
+
+#forge:ores/desh
+- beyond_earth:moon_desh_ore
+
 #forge:fence_gates/wooden
+- twilightforest:twilight_oak_fence_gate
+- twilightforest:canopy_fence_gate
+- twilightforest:mangrove_fence_gate
+- twilightforest:dark_fence_gate
+- twilightforest:time_fence_gate
+- twilightforest:transformation_fence_gate
+- twilightforest:mining_fence_gate
+- twilightforest:sorting_fence_gate
 - ars_nouveau:archwood_fence_gate
 - minecraft:oak_fence_gate
 - minecraft:spruce_fence_gate
@@ -2865,6 +4277,34 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:greenheart_fence_gate
 - tconstruct:skyroot_fence_gate
 - tconstruct:bloodshroom_fence_gate
+- regions_unexplored:baobab_fence_gate
+- regions_unexplored:blackwood_fence_gate
+- regions_unexplored:cherry_fence_gate
+- regions_unexplored:cherry_fence_gate
+- regions_unexplored:cypress_fence_gate
+- regions_unexplored:dead_fence_gate
+- regions_unexplored:eucalyptus_fence_gate
+- regions_unexplored:joshua_fence_gate
+- regions_unexplored:larch_fence_gate
+- regions_unexplored:maple_fence_gate
+- regions_unexplored:mauve_fence_gate
+- regions_unexplored:palm_fence_gate
+- regions_unexplored:pine_fence_gate
+- regions_unexplored:redwood_fence_gate
+- regions_unexplored:willow_fence_gate
+- regions_unexplored:sculkwood_fence_gate
+- atmospheric:rosewood_fence_gate
+- atmospheric:morado_fence_gate
+- atmospheric:yucca_fence_gate
+- atmospheric:kousa_fence_gate
+- atmospheric:aspen_fence_gate
+- atmospheric:grimwood_fence_gate
+
+#regions_unexplored:joshua_logs
+- regions_unexplored:joshua_log
+- regions_unexplored:stripped_joshua_log
+- regions_unexplored:joshua_wood
+- regions_unexplored:stripped_joshua_wood
 
 #forge:ores/uranium
 - biggerreactors:uranium_ore
@@ -2872,6 +4312,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:glass_panes/lime
 - minecraft:lime_stained_glass_pane
 - tconstruct:lime_clear_stained_glass_pane
+
+#botania:runes
+- botania:rune_water
+- botania:rune_fire
+- botania:rune_earth
+- botania:rune_air
+- botania:rune_spring
+- botania:rune_summer
+- botania:rune_autumn
+- botania:rune_winter
+- botania:rune_mana
+- botania:rune_lust
+- botania:rune_gluttony
+- botania:rune_greed
+- botania:rune_sloth
+- botania:rune_wrath
+- botania:rune_envy
+- botania:rune_pride
 
 #sereneseasons:spring_crops
 - farmersdelight:onion
@@ -2891,6 +4349,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:grain/rice
 - minecraft:wheat
 
+#umapyoi:sr_uma_ticket
+- umapyoi:sr_uma_ticket
+
 #forge:ingots/lead
 - thermal:lead_ingot
 
@@ -2903,6 +4364,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:flowering_azalea_leaves
 - minecraft:flowering_azalea
 - supplementaries:wild_flax
+- atmospheric:flowering_morado_leaves
+- atmospheric:yellow_blossoms
 
 #forge:storage_blocks/cobalt
 - tconstruct:cobalt_block
@@ -2910,15 +4373,84 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:vegetables/potato
 - minecraft:potato
 
+#ae2:covered_dense_cable
+- ae2:white_covered_dense_cable
+- ae2:orange_covered_dense_cable
+- ae2:magenta_covered_dense_cable
+- ae2:light_blue_covered_dense_cable
+- ae2:yellow_covered_dense_cable
+- ae2:lime_covered_dense_cable
+- ae2:pink_covered_dense_cable
+- ae2:gray_covered_dense_cable
+- ae2:light_gray_covered_dense_cable
+- ae2:cyan_covered_dense_cable
+- ae2:purple_covered_dense_cable
+- ae2:blue_covered_dense_cable
+- ae2:brown_covered_dense_cable
+- ae2:green_covered_dense_cable
+- ae2:red_covered_dense_cable
+- ae2:black_covered_dense_cable
+- ae2:fluix_covered_dense_cable
+
 #forge:dusts/tin
 - thermal:tin_dust
 
 #forge:dusts/flour
 - pneumaticcraft:wheat_flour
 
+#botania:special_flowers
+- #botania:misc_special_flowers
+- #botania:generating_special_flowers
+- #botania:functional_special_flowers
+
+#forge:seeds/strawberry
+- neapolitan:strawberry_pips
+
 #railways:internal/nuggets/zinc_nuggets
 - #c:nuggets/zinc?
 - #forge:nuggets/zinc?
+
+#twilightforest:wip
+- twilightforest:keepsake_casket
+- twilightforest:cube_of_annihilation
+
+#botania:functional_special_flowers
+- botania:agricarnation
+- botania:agricarnation_chibi
+- botania:bellethorn
+- botania:bellethorn_chibi
+- botania:bubbell
+- botania:bubbell_chibi
+- botania:clayconia
+- botania:clayconia_chibi
+- botania:daffomill
+- botania:dreadthorn
+- botania:exoflame
+- botania:fallen_kanade
+- botania:heisei_dream
+- botania:hopperhock
+- botania:hopperhock_chibi
+- botania:hyacidus
+- botania:jaded_amaranthus
+- botania:jiyuulia
+- botania:jiyuulia_chibi
+- botania:labellia
+- botania:loonium
+- botania:marimorphosis
+- botania:marimorphosis_chibi
+- botania:medumone
+- botania:orechid
+- botania:orechid_ignem
+- botania:pollidisiac
+- botania:rannuncarpus
+- botania:rannuncarpus_chibi
+- botania:solegnolia
+- botania:solegnolia_chibi
+- botania:spectranthemum
+- botania:tangleberrie
+- botania:tangleberrie_chibi
+- botania:tigerseye
+- botania:vinculotus
 
 #minecraft:diamond_ores
 - minecraft:diamond_ore
@@ -2933,6 +4465,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:nuggets/rose_gold
 - thermal:rose_gold_nugget
 - tconstruct:rose_gold_nugget
+
+#forge:storage_blocks/calorite
+- beyond_earth:calorite_block
 
 #forge:glass/silica
 - minecraft:glass
@@ -2972,9 +4507,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/brown
 - minecraft:brown_dye
+- chalk:brown_chalk
 
 #tconstruct:modifiable/unsalvageable
 - tconstruct:dagger
+
+#regions_unexplored:blackwood_logs
+- regions_unexplored:blackwood_log
+- regions_unexplored:stripped_blackwood_log
+- regions_unexplored:blackwood_wood
+- regions_unexplored:stripped_blackwood_wood
 
 #forge:raw_fishes/cod
 - minecraft:cod
@@ -2984,6 +4526,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:lumium_gear
 
 #forge:ores
+- beyond_earth:moon_iron_ore
+- beyond_earth:moon_desh_ore
+- beyond_earth:moon_cheese_ore
+- beyond_earth:moon_ice_shard_ore
+- beyond_earth:mars_iron_ore
+- beyond_earth:mars_ostrum_ore
+- beyond_earth:mars_diamond_ore
+- beyond_earth:mars_ice_shard_ore
+- beyond_earth:mercury_iron_ore
+- beyond_earth:venus_gold_ore
+- beyond_earth:venus_coal_ore
+- beyond_earth:venus_diamond_ore
+- beyond_earth:venus_calorite_ore
+- beyond_earth:glacio_lapis_ore
+- beyond_earth:glacio_ice_shard_ore
+- #forge:ores/ironwood
+- #forge:ores/knightmetal
 - biggerreactors:uranium_ore
 - #forge:ores/coal
 - #forge:ores/copper
@@ -3006,8 +4565,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:ores/ruby
 - #forge:ores/sapphire
 - #forge:ores/cobalt
+- #forge:ores/certus_quartz
 - create:zinc_ore
 - create:deepslate_zinc_ore
+
+#beyond_earth:engines
+- #beyond_earth:engines/steel
+- #beyond_earth:engines/desh
+- #beyond_earth:engines/ostrum
+- #beyond_earth:engines/calorite
 
 #forge:bottles/lingering
 - tconstruct:lingering_bottle
@@ -3061,10 +4627,52 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:travelers_shield
 - tconstruct:plate_shield
 
+#createoreexcavation:drills
+- createoreexcavation:drill
+- createoreexcavation:diamond_drill
+- createoreexcavation:netherite_drill
+
 #curios:curio
+- botania:cosmetic_black_bowtie
+- botania:cosmetic_black_tie
+- botania:cosmetic_red_glasses
+- botania:cosmetic_puffy_scarf
+- botania:cosmetic_engineer_goggles
+- botania:cosmetic_eyepatch
+- botania:cosmetic_wicked_eyepatch
+- botania:cosmetic_red_ribbons
+- botania:cosmetic_pink_flower_bud
+- botania:cosmetic_polka_dotted_bows
+- botania:cosmetic_blue_butterfly
+- botania:cosmetic_cat_ears
+- botania:cosmetic_witch_pin
+- botania:cosmetic_devil_tail
+- botania:cosmetic_kamui_eye
+- botania:cosmetic_googly_eyes
+- botania:cosmetic_four_leaf_clover
+- botania:cosmetic_clock_eye
+- botania:cosmetic_unicorn_horn
+- botania:cosmetic_devil_horns
+- botania:cosmetic_hyper_plus
+- botania:cosmetic_botanist_emblem
+- botania:cosmetic_ancient_mask
+- botania:cosmetic_eerie_mask
+- botania:cosmetic_alien_antenna
+- botania:cosmetic_anaglyph_glasses
+- botania:cosmetic_orange_shades
+- botania:cosmetic_groucho_glasses
+- botania:cosmetic_thick_eyebrows
+- botania:cosmetic_lusitanic_shield
+- botania:cosmetic_tiny_potato_mask
+- botania:cosmetic_questgiver_mark
+- botania:cosmetic_thinking_hand
 - artifacts:whoopee_cushion
 - pneumaticcraft:memory_stick
 - supplementaries:key
+- ae2:wireless_crafting_terminal
+- ae2wtlib:wireless_pattern_encoding_terminal
+- ae2wtlib:wireless_pattern_access_terminal
+- ae2wtlib:wireless_universal_terminal
 
 #forge:storage_blocks/graphite
 - biggerreactors:graphite_block
@@ -3095,8 +4703,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:satchel
 - thermal:potion_quiver
 
+#ae2:all_certus_quartz
+- #forge:gems/certus_quartz
+- ae2:charged_certus_quartz_crystal
+
 #forge:storage_blocks/diamond
 - minecraft:diamond_block
+
+#twilightforest:nyi
+- twilightforest:cinder_furnace
+- twilightforest:cinder_log
+- twilightforest:cinder_wood
+- twilightforest:twilight_portal_miniature_structure
+- twilightforest:naga_courtyard_miniature_structure
+- twilightforest:lich_tower_miniature_structure
+- twilightforest:auroralized_glass
+- twilightforest:slider
+- twilightforest:twisted_stone
+- twilightforest:twisted_stone_pillar
+- twilightforest:ore_meter
 
 #tconstruct:parts
 - tconstruct:pick_head
@@ -3131,6 +4756,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:leather_chestplate
 - minecraft:leather_helmet
 - minecraft:leather_horse_armor
+- twilightforest:fiery_helmet
+- twilightforest:fiery_chestplate
+- twilightforest:fiery_leggings
+- twilightforest:fiery_boots
+- twilightforest:arctic_helmet
+- twilightforest:arctic_chestplate
+- twilightforest:arctic_leggings
+- twilightforest:arctic_boots
+- twilightforest:yeti_helmet
+- twilightforest:yeti_chestplate
+- twilightforest:yeti_leggings
+- twilightforest:yeti_boots
+- botania:ice_pendant
 - pneumaticcraft:compressed_iron_helmet
 - pneumaticcraft:compressed_iron_chestplate
 - pneumaticcraft:compressed_iron_leggings
@@ -3186,6 +4824,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:bottles/splash
 - tconstruct:splash_bottle
 
+#forge:pumpkins
+- minecraft:pumpkin
+- minecraft:pumpkin
+
+#botania:petals/white
+- botania:white_petal
+- botania:white_mushroom
+
 #railways:internal/string
 - #c:string?
 - #forge:string?
@@ -3198,6 +4844,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:magenta_clear_stained_glass_pane
 
 #forge:nuggets
+- #forge:nuggets/desh
+- #forge:nuggets/ostrum
+- #forge:nuggets/calorite
+- #forge:nuggets/steel
+- #forge:nuggets/elementium
+- #forge:nuggets/manasteel
+- #forge:nuggets/terrasteel
 - #forge:nuggets/iron
 - #forge:nuggets/gold
 - #forge:nuggets/copper
@@ -3242,6 +4895,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - ars_nouveau:orange_sbed
 - ars_nouveau:purple_sbed
 
+#forge:storage_blocks/ostrum
+- beyond_earth:ostrum_block
+
 #forge:plates/zinc
 - createaddition:zinc_sheet
 
@@ -3284,6 +4940,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:rods/gold
 - createaddition:gold_rod
+
+#forge:axes
+- minecraft:wooden_axe
+- minecraft:stone_axe
+- minecraft:iron_axe
+- minecraft:golden_axe
+- minecraft:diamond_axe
+- minecraft:netherite_axe
 
 #forge:rods/blaze
 - minecraft:blaze_rod
@@ -3343,6 +5007,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - createaddition:zinc_sheet
 - createaddition:electrum_sheet
 
+#botania:floating_flowers
+- #botania:mundane_floating_flowers
+- #botania:special_floating_flowers
+
 #yuushya:vanilla_wool_carpets
 - minecraft:white_carpet
 - minecraft:orange_carpet
@@ -3366,6 +5034,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:diorite
 - minecraft:diorite
+
+#bookshelf:armor
+- #forge:armor
 
 #tconstruct:modifiable
 - #tconstruct:modifiable/multipart
@@ -3418,6 +5089,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dusts/uranium
 - biggerreactors:uranium_dust
+
+#forge:sugar
+- minecraft:sugar
 
 #forge:glass_panes/green
 - minecraft:green_stained_glass_pane
@@ -3856,6 +5530,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - supplementaries:flag_light_gray?
 - supplementaries:flag_brown?
 
+#upgradednetherite:upgraded_netherite_helmet
+- upgradednetherite:gold_upgraded_netherite_helmet
+- upgradednetherite:fire_upgraded_netherite_helmet
+- upgradednetherite:ender_upgraded_netherite_helmet
+- upgradednetherite:water_upgraded_netherite_helmet
+- upgradednetherite:wither_upgraded_netherite_helmet
+- upgradednetherite:poison_upgraded_netherite_helmet
+- upgradednetherite:phantom_upgraded_netherite_helmet
+- upgradednetherite:feather_upgraded_netherite_helmet
+
 #tconstruct:casts/single_use
 - #tconstruct:casts/single_use/blank
 - #tconstruct:casts/single_use/ingot
@@ -3911,6 +5595,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:chests/trapped
 - minecraft:trapped_chest
+- atmospheric:rosewood_trapped_chest
+- atmospheric:morado_trapped_chest
+- atmospheric:yucca_trapped_chest
+- atmospheric:kousa_trapped_chest
+- atmospheric:aspen_trapped_chest
+- atmospheric:grimwood_trapped_chest
+
+#upgradednetherite:upgraded_netherite_chestplate
+- upgradednetherite:gold_upgraded_netherite_chestplate
+- upgradednetherite:fire_upgraded_netherite_chestplate
+- upgradednetherite:ender_upgraded_netherite_chestplate
+- upgradednetherite:water_upgraded_netherite_chestplate
+- upgradednetherite:wither_upgraded_netherite_chestplate
+- upgradednetherite:poison_upgraded_netherite_chestplate
+- upgradednetherite:phantom_upgraded_netherite_chestplate
+- upgradednetherite:feather_upgraded_netherite_chestplate
 
 #forge:gears/rose_gold
 - thermal:rose_gold_gear
@@ -3919,6 +5619,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:chiller_ball_cast
 - thermal:chiller_ingot_cast
 - thermal:chiller_rod_cast
+
+#beyond_earth:tanks/desh
+- beyond_earth:desh_tank
 
 #tconstruct:scorched_blocks
 - tconstruct:scorched_stone
@@ -3930,7 +5633,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:coins/silver
 - thermal:silver_coin
 
+#forge:storage_blocks/arctic_fur
+- twilightforest:arctic_fur_block
+
 #forge:sandstone
+- beyond_earth:venus_sandstone
 - minecraft:sandstone
 - minecraft:cut_sandstone
 - minecraft:chiseled_sandstone
@@ -3939,6 +5646,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:cut_red_sandstone
 - minecraft:chiseled_red_sandstone
 - minecraft:smooth_red_sandstone
+- atmospheric:arid_sandstone
+- atmospheric:cut_arid_sandstone
+- atmospheric:chiseled_arid_sandstone
+- atmospheric:smooth_arid_sandstone
+- atmospheric:red_arid_sandstone
+- atmospheric:cut_red_arid_sandstone
+- atmospheric:chiseled_red_arid_sandstone
+- atmospheric:smooth_red_arid_sandstone
 
 #forge:glass_panes/colorless
 - minecraft:glass_pane
@@ -3947,11 +5662,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #pneumaticcraft:compressed_stone_bricks
 - pneumaticcraft:compressed_bricks
 
+#forge:fruits/passionfruit
+- atmospheric:passionfruit
+
 #minecraft:piglin_food
 - minecraft:porkchop
 - minecraft:cooked_porkchop
 - nethersdelight:hoglin_loin
 - nethersdelight:hoglin_sirloin
+
+#forge:bottles/milk
+- neapolitan:milk_bottle
 
 #supplementaries:pedestal_downright
 - minecraft:trident?
@@ -3974,8 +5695,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/cinnabar
 - thermal:cinnabar_block
 
+#forge:ingots/calorite
+- beyond_earth:calorite_ingot
+
+#twilightforest:canopy_logs
+- twilightforest:canopy_log
+- twilightforest:stripped_canopy_log
+- twilightforest:canopy_wood
+- twilightforest:stripped_canopy_wood
+
+#forge:storage_blocks/steeleaf
+- twilightforest:steeleaf_block
+
 #forge:gears/enderium
 - thermal:enderium_gear
+
+#forge:gems/carminite
+- twilightforest:carminite
 
 #forge:coins/gold
 - thermal:gold_coin
@@ -4003,7 +5739,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:seared_fancy_bricks
 - tconstruct:seared_triangle_bricks
 
+#regions_unexplored:bamboo_logs
+- regions_unexplored:bamboo_log
+- regions_unexplored:stripped_bamboo_log
+- regions_unexplored:bamboo_log_leaves
+
 #forge:ores/diamond
+- beyond_earth:mars_diamond_ore
+- beyond_earth:venus_diamond_ore
 - #minecraft:diamond_ores
 
 #forge:ingots/manyullyn
@@ -4023,6 +5766,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:copper_door
 - create:train_door
 - create:framed_glass_door
+
+#upgradednetherite:upgraded_netherite_shield
+- upgradednetherite:gold_upgraded_netherite_shield
+- upgradednetherite:fire_upgraded_netherite_shield
+- upgradednetherite:ender_upgraded_netherite_shield
+- upgradednetherite:water_upgraded_netherite_shield
+- upgradednetherite:wither_upgraded_netherite_shield
+- upgradednetherite:poison_upgraded_netherite_shield
+- upgradednetherite:phantom_upgraded_netherite_shield
+- upgradednetherite:feather_upgraded_netherite_shield
+
+#botania:petals/red
+- botania:red_petal
+- botania:red_mushroom
 
 #forge:ingots/knightslime
 - tconstruct:knightslime_ingot
@@ -4054,9 +5811,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:dusts/bronze
 - thermal:bronze_dust
 
-#toms_storage:trims
-- toms_storage:ts.trim
-- toms_storage:ts.painted_trim
+#forge:buckets
+- #forge:buckets/empty
+- #forge:buckets/water
+- #forge:buckets/lava
+- #forge:buckets/milk
+- #forge:buckets/lava
 
 #tconstruct:casts/single_use/gem
 - tconstruct:gem_sand_cast
@@ -4102,9 +5862,38 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_sign
 - minecraft:crimson_sign
 - minecraft:warped_sign
+- twilightforest:twilight_oak_sign
+- twilightforest:canopy_sign
+- twilightforest:mangrove_sign
+- twilightforest:darkwood_sign
+- twilightforest:time_sign
+- twilightforest:transformation_sign
+- twilightforest:mining_sign
+- twilightforest:sorting_sign
 - tconstruct:greenheart_sign
 - tconstruct:skyroot_sign
 - tconstruct:bloodshroom_sign
+- regions_unexplored:baobab_sign
+- regions_unexplored:blackwood_sign
+- regions_unexplored:cherry_sign
+- regions_unexplored:cypress_sign
+- regions_unexplored:dead_sign
+- regions_unexplored:eucalyptus_sign
+- regions_unexplored:joshua_sign
+- regions_unexplored:larch_sign
+- regions_unexplored:maple_sign
+- regions_unexplored:mauve_sign
+- regions_unexplored:palm_sign
+- regions_unexplored:pine_sign
+- regions_unexplored:redwood_sign
+- regions_unexplored:sculkwood_sign
+- regions_unexplored:willow_sign
+- atmospheric:rosewood_sign
+- atmospheric:morado_sign
+- atmospheric:yucca_sign
+- atmospheric:kousa_sign
+- atmospheric:aspen_sign
+- atmospheric:grimwood_sign
 
 #supplementaries:chalk
 - minecraft:quartz?
@@ -4114,12 +5903,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:cooked_beef
 - farmersdelight:beef_patty
 
+#regions_unexplored:willow_logs
+- regions_unexplored:willow_log
+- regions_unexplored:stripped_willow_log
+- regions_unexplored:willow_wood
+- regions_unexplored:stripped_willow_wood
+
 #railways:internal/dyes/lime_dyes
 - #c:lime_dyes?
 - #forge:dyes/lime?
 
+#beyond_earth:engines/steel
+- beyond_earth:steel_engine
+
+#bookshelf:slime_balls
+- #forge:slimeballs
+
 #ars_nouveau:golem/shard
 - minecraft:amethyst_shard
+
+#twilightforest:towerwood
+- twilightforest:towerwood
+- twilightforest:mossy_towerwood
+- twilightforest:cracked_towerwood
+- twilightforest:infested_towerwood
 
 #forge:tools/knives
 - farmersdelight:flint_knife
@@ -4133,6 +5940,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:wither_bones
 - tconstruct:necrotic_bone
+
+#botania:petals/light_gray
+- botania:light_gray_petal
+- botania:light_gray_mushroom
 
 #forge:cobblestone/normal
 - minecraft:cobblestone
@@ -4155,6 +5966,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:wool/red
 - #forge:wool/black
 
+#botania:mini_flowers
+- botania:agricarnation_chibi
+- botania:bellethorn_chibi
+- botania:bubbell_chibi
+- botania:clayconia_chibi
+- botania:hopperhock_chibi
+- botania:jiyuulia_chibi
+- botania:marimorphosis_chibi
+- botania:rannuncarpus_chibi
+- botania:solegnolia_chibi
+- botania:tangleberrie_chibi
+
 #decorative_blocks:supports
 - decorative_blocks:spruce_support
 - decorative_blocks:acacia_support
@@ -4167,6 +5990,36 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:coins/constantan
 - thermal:constantan_coin
+
+#bookshelf:shields
+- #forge:shields
+
+#botania:glimmering_dreamwood_logs
+- botania:glimmering_dreamwood
+- botania:glimmering_dreamwood_log
+- botania:glimmering_stripped_dreamwood
+- botania:glimmering_stripped_dreamwood_log
+
+#forge:boots
+- minecraft:leather_boots
+- minecraft:chainmail_boots
+- minecraft:iron_boots
+- minecraft:golden_boots
+- minecraft:diamond_boots
+- minecraft:netherite_boots
+
+#upgradednetherite:upgraded_netherite_crossbow
+- upgradednetherite:gold_upgraded_netherite_crossbow
+- upgradednetherite:fire_upgraded_netherite_crossbow
+- upgradednetherite:ender_upgraded_netherite_crossbow
+- upgradednetherite:water_upgraded_netherite_crossbow
+- upgradednetherite:wither_upgraded_netherite_crossbow
+- upgradednetherite:poison_upgraded_netherite_crossbow
+- upgradednetherite:phantom_upgraded_netherite_crossbow
+- upgradednetherite:feather_upgraded_netherite_crossbow
+
+#bookshelf:pickaxes
+- #forge:pickaxes
 
 #railways:internal/dyes/black_dyes
 - #c:black_dyes?
@@ -4264,6 +6117,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:smeltery_bricks
 - #tconstruct:seared_blocks
 
+#forge:swords
+- minecraft:wooden_sword
+- minecraft:stone_sword
+- minecraft:iron_sword
+- minecraft:golden_sword
+- minecraft:diamond_sword
+- minecraft:netherite_sword
+
 #forge:storage_blocks/charcoal
 - thermal:charcoal_block
 
@@ -4300,7 +6161,31 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - itemfilters:weak_nbt
 - itemfilters:custom
 
+#botania:terrasteel_blocks
+- botania:terrasteel_block
+
+#atmospheric:aspen_logs
+- atmospheric:aspen_log
+- atmospheric:aspen_wood
+- atmospheric:stripped_aspen_log
+- atmospheric:stripped_aspen_wood
+- atmospheric:watchful_aspen_log
+- atmospheric:watchful_aspen_wood
+- atmospheric:crustose_log
+- atmospheric:crustose_wood
+
 #tconstruct:structure_debug/general
+
+#ae2:all_quartz
+- #forge:gems/quartz
+- #forge:gems/certus_quartz
+- ae2:charged_certus_quartz_crystal
+
+#forge:clocks
+- minecraft:clock
+
+#botania:manasteel_nuggets
+- botania:manasteel_nugget
 
 #forge:nuggets/hepatizon
 - tconstruct:hepatizon_nugget
@@ -4317,11 +6202,41 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:dyes/cyan?
 
 #forge:fences/wooden
+- twilightforest:twilight_oak_fence
+- twilightforest:canopy_fence
+- twilightforest:mangrove_fence
+- twilightforest:dark_fence
+- twilightforest:time_fence
+- twilightforest:transformation_fence
+- twilightforest:mining_fence
+- twilightforest:sorting_fence
 - ars_nouveau:archwood_fence
 - #minecraft:wooden_fences
 - tconstruct:greenheart_fence
 - tconstruct:skyroot_fence
 - tconstruct:bloodshroom_fence
+- regions_unexplored:baobab_fence
+- regions_unexplored:blackwood_fence
+- regions_unexplored:cherry_fence
+- regions_unexplored:cherry_fence
+- regions_unexplored:cypress_fence
+- regions_unexplored:dead_fence
+- regions_unexplored:eucalyptus_fence
+- regions_unexplored:joshua_fence
+- regions_unexplored:larch_fence
+- regions_unexplored:maple_fence
+- regions_unexplored:mauve_fence
+- regions_unexplored:palm_fence
+- regions_unexplored:pine_fence
+- regions_unexplored:redwood_fence
+- regions_unexplored:willow_fence
+- regions_unexplored:sculkwood_fence
+- atmospheric:rosewood_fence
+- atmospheric:morado_fence
+- atmospheric:yucca_fence
+- atmospheric:kousa_fence
+- atmospheric:aspen_fence
+- atmospheric:grimwood_fence
 
 #forge:dusts/emerald
 - thermal:emerald_dust
@@ -4330,7 +6245,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - farmersdelight:tomato_seeds
 - farmersdelight:rice
 
+#bookshelf:mob_buckets
+- #forge:mob_buckets
+
 #forge:storage_blocks
+- #forge:storage_blocks/desh
+- #forge:storage_blocks/ostrum
+- #forge:storage_blocks/calorite
+- #forge:storage_blocks/steel
+- #forge:storage_blocks/fiery
+- #forge:storage_blocks/arctic_fur
+- #forge:storage_blocks/carminite
+- #forge:storage_blocks/ironwood
+- #forge:storage_blocks/knightmetal
+- #forge:storage_blocks/steeleaf
+- #forge:storage_blocks/elementium
+- #forge:storage_blocks/manasteel
+- #forge:storage_blocks/terrasteel
 - #forge:storage_blocks/compressed_iron
 - ars_nouveau:source_gem_block
 - #forge:storage_blocks/amethyst
@@ -4389,6 +6320,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/soulsteel
 - #forge:storage_blocks/knightslime
 - #forge:storage_blocks/raw_cobalt
+- #forge:storage_blocks/certus_quartz
 - create:raw_zinc_block
 - create:zinc_block
 - create:andesite_alloy_block
@@ -4409,6 +6341,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:diamond
 - minecraft:gold_ingot
 - minecraft:iron_ingot
+- #forge:ingots/desh
+- #forge:ingots/ostrum
+- #forge:ingots/calorite
+- #forge:ingots/steel
+- upgradednetherite:gold_upgraded_netherite_ingot
+- upgradednetherite:fire_upgraded_netherite_ingot
+- upgradednetherite:ender_upgraded_netherite_ingot
+- upgradednetherite:water_upgraded_netherite_ingot
+- upgradednetherite:wither_upgraded_netherite_ingot
+- upgradednetherite:poison_upgraded_netherite_ingot
+- upgradednetherite:phantom_upgraded_netherite_ingot
+- upgradednetherite:feather_upgraded_netherite_ingot
+- upgradednetherite:corrupt_upgraded_netherite_ingot
 - ars_nouveau:source_gem
 - #forge:ingots/cobalt
 - #forge:ingots/queens_slime
@@ -4416,19 +6361,63 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:ingots/hepatizon
 - #create:create_ingots
 
+#atmospheric:grimwood_logs
+- atmospheric:grimwood_log
+- atmospheric:grimwood
+- atmospheric:stripped_grimwood_log
+- atmospheric:stripped_grimwood
+
+#neapolitan:chimpanzee_food
+- neapolitan:banana_bunch
+
 #forge:ores/quartz
 - minecraft:nether_quartz_ore
 
 #forge:nuggets/signalum
 - thermal:signalum_nugget
 
+#ae2:smart_cable
+- ae2:white_smart_cable
+- ae2:orange_smart_cable
+- ae2:magenta_smart_cable
+- ae2:light_blue_smart_cable
+- ae2:yellow_smart_cable
+- ae2:lime_smart_cable
+- ae2:pink_smart_cable
+- ae2:gray_smart_cable
+- ae2:light_gray_smart_cable
+- ae2:cyan_smart_cable
+- ae2:purple_smart_cable
+- ae2:blue_smart_cable
+- ae2:brown_smart_cable
+- ae2:green_smart_cable
+- ae2:red_smart_cable
+- ae2:black_smart_cable
+- ae2:fluix_smart_cable
+
 #forge:ingots/brick
 - minecraft:brick
 - supplementaries:ash_brick
 
+#twilightforest:tf_music_discs
+- twilightforest:music_disc_findings
+- twilightforest:music_disc_home
+- twilightforest:music_disc_maker
+- twilightforest:music_disc_motion
+- twilightforest:music_disc_radiance
+- twilightforest:music_disc_steps
+- twilightforest:music_disc_superstitious
+- twilightforest:music_disc_thread
+- twilightforest:music_disc_wayfarer
+
 #minecraft:coal_ores
 - minecraft:coal_ore
 - minecraft:deepslate_coal_ore
+
+#umapyoi:horseshoe
+- umapyoi:horseshoe_gold
+- umapyoi:horseshoe_silver
+- umapyoi:horseshoe_rainbow
 
 #forge:raw_beef
 - minecraft:beef
@@ -4505,12 +6494,94 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:waxed_exposed_cut_copper_stairs
 - minecraft:waxed_cut_copper_stairs
 - minecraft:waxed_oxidized_cut_copper_stairs
+- beyond_earth:moon_stone_brick_stairs
+- beyond_earth:mars_stone_brick_stairs
+- beyond_earth:mercury_stone_brick_stairs
+- beyond_earth:venus_sandstone_brick_stairs
+- beyond_earth:venus_stone_brick_stairs
+- beyond_earth:glacio_stone_brick_stairs
+- twilightforest:castle_brick_stairs
+- twilightforest:worn_castle_brick_stairs
+- twilightforest:cracked_castle_brick_stairs
+- twilightforest:mossy_castle_brick_stairs
+- twilightforest:encased_castle_brick_stairs
+- twilightforest:bold_castle_brick_stairs
+- twilightforest:nagastone_stairs_left
+- twilightforest:nagastone_stairs_right
+- twilightforest:mossy_nagastone_stairs_left
+- twilightforest:mossy_nagastone_stairs_right
+- twilightforest:cracked_nagastone_stairs_left
+- twilightforest:cracked_nagastone_stairs_right
+- botania:black_pavement_stairs
+- botania:blaze_quartz_stairs
+- botania:blue_pavement_stairs
+- botania:corporea_brick_stairs
+- botania:corporea_stairs
+- botania:dark_quartz_stairs
+- botania:dreamwood_planks_stairs
+- botania:dreamwood_stairs
+- botania:elf_quartz_stairs
+- botania:green_pavement_stairs
+- botania:lavender_quartz_stairs
+- botania:livingrock_bricks_stairs
+- botania:livingrock_stairs
+- botania:livingwood_planks_stairs
+- botania:livingwood_stairs
+- botania:mana_quartz_stairs
+- botania:metamorphic_desert_bricks_stairs
+- botania:metamorphic_desert_cobblestone_stairs
+- botania:metamorphic_desert_stone_stairs
+- botania:metamorphic_forest_bricks_stairs
+- botania:metamorphic_forest_cobblestone_stairs
+- botania:metamorphic_forest_stone_stairs
+- botania:metamorphic_fungal_bricks_stairs
+- botania:metamorphic_fungal_cobblestone_stairs
+- botania:metamorphic_fungal_stone_stairs
+- botania:metamorphic_mesa_bricks_stairs
+- botania:metamorphic_mesa_cobblestone_stairs
+- botania:metamorphic_mesa_stone_stairs
+- botania:metamorphic_mountain_bricks_stairs
+- botania:metamorphic_mountain_cobblestone_stairs
+- botania:metamorphic_mountain_stone_stairs
+- botania:metamorphic_plains_bricks_stairs
+- botania:metamorphic_plains_cobblestone_stairs
+- botania:metamorphic_plains_stone_stairs
+- botania:metamorphic_swamp_bricks_stairs
+- botania:metamorphic_swamp_cobblestone_stairs
+- botania:metamorphic_swamp_stone_stairs
+- botania:metamorphic_taiga_bricks_stairs
+- botania:metamorphic_taiga_cobblestone_stairs
+- botania:metamorphic_taiga_stone_stairs
+- botania:mossy_livingrock_bricks_stairs
+- botania:red_pavement_stairs
+- botania:red_quartz_stairs
+- botania:shimmerrock_stairs
+- botania:shimmerwood_planks_stairs
+- botania:stripped_dreamwood_stairs
+- botania:stripped_livingwood_stairs
+- botania:sunny_quartz_stairs
+- botania:white_pavement_stairs
+- botania:yellow_pavement_stairs
 - #pneumaticcraft:stairs
 - ars_nouveau:archwood_stairs
+- neapolitan:chocolate_brick_stairs
+- neapolitan:chocolate_tile_stairs
+- neapolitan:frond_thatch_stairs
 - supplementaries:blackstone_tile_stairs
 - supplementaries:ash_bricks_stairs
 - supplementaries:lapis_bricks_stairs
 - supplementaries:stone_tile_stairs
+- regions_unexplored:chalk_stairs
+- atmospheric:arid_sandstone_stairs
+- atmospheric:smooth_arid_sandstone_stairs
+- atmospheric:arid_sandstone_brick_stairs
+- atmospheric:red_arid_sandstone_stairs
+- atmospheric:smooth_red_arid_sandstone_stairs
+- atmospheric:red_arid_sandstone_brick_stairs
+- atmospheric:ivory_travertine_stairs
+- atmospheric:peach_travertine_stairs
+- atmospheric:persimmon_travertine_stairs
+- atmospheric:saffron_travertine_stairs
 - create:cut_granite_stairs
 - create:polished_cut_granite_stairs
 - create:cut_granite_brick_stairs
@@ -4594,6 +6665,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #minecraft:logs_that_burn
 - #minecraft:crimson_stems
 - #minecraft:warped_stems
+- #twilightforest:logs
 - ars_nouveau:red_archwood_log
 - ars_nouveau:blue_archwood_log
 - ars_nouveau:purple_archwood_log
@@ -4611,12 +6683,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - ars_nouveau:stripped_purple_archwood_log
 - ars_nouveau:stripped_purple_archwood_wood
 - #tconstruct:slimy_logs
+- #regions_unexplored:sculkwood_logs
+- #regions_unexplored:dead_logs
 
 #forge:raw_materials/gold
 - minecraft:raw_gold
 
 #tconstruct:foundry_bricks
 - #tconstruct:scorched_blocks
+
+#forge:ores/ice_shard
+- beyond_earth:moon_ice_shard_ore
+- beyond_earth:mars_ice_shard_ore
+- beyond_earth:glacio_ice_shard_ore
 
 #create:stone_types/andesite
 - create:cut_andesite
@@ -4660,6 +6739,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dusts/sapphire
 - thermal:sapphire_dust
+
+#forge:ores/certus_quartz
+- ae2:quartz_ore
+- ae2:deepslate_quartz_ore
+
+#regions_unexplored:mauve_logs
+- regions_unexplored:mauve_log
+- regions_unexplored:stripped_mauve_log
+- regions_unexplored:mauve_wood
+- regions_unexplored:stripped_mauve_wood
 
 #origins:meat
 - farmersdelight:fried_egg
@@ -4721,6 +6810,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:wooden_shovel
 - minecraft:stone_shovel
 - minecraft:iron_shovel
+- minecraft:golden_shovel
+- minecraft:diamond_shovel
+- minecraft:netherite_shovel
+- minecraft:wooden_shovel
+- minecraft:stone_shovel
+- minecraft:iron_shovel
 - minecraft:diamond_shovel
 - minecraft:golden_shovel
 - minecraft:netherite_shovel
@@ -4728,20 +6823,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #farmersdelight:cabinets
 - #farmersdelight:cabinets/wooden
 
+#forge:storage_blocks/ironwood
+- twilightforest:ironwood_block
+
+#forge:buckets/empty
+- minecraft:bucket
+
 #tconstruct:modifiable/interactable/right
 - #tconstruct:modifiable/one_handed
 - #tconstruct:modifiable/two_handed
 - #tconstruct:modifiable/interactable/dual
 
-#butchercraft:any_pork_cooked
-- butchercraft:cooked_pork_rib
-- butchercraft:cooked_pork_ribs
-- butchercraft:cooked_pork_roast
-- butchercraft:cooked_pork_scraps
-- butchercraft:cooked_pork_stewmeat
-- butchercraft:cooked_cubed_pork
-- butchercraft:cooked_ground_pork
-- butchercraft:cooked_bacon
+#umapyoi:card_ticket
+- #umapyoi:common_gacha_item
+- umapyoi:card_ticket
+- #umapyoi:sr_card_ticket
+- #umapyoi:ssr_card_ticket
 
 #forge:nuggets/queens_slime
 - tconstruct:queens_slime_nugget
@@ -4784,8 +6881,34 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:dynamo_gourmand
 
 #curios:ring
+- botania:aura_ring
+- botania:aura_ring_greater
+- botania:dodge_ring
+- botania:loki_ring
+- botania:magnet_ring
+- botania:magnet_ring_greater
+- botania:mana_ring
+- botania:mana_ring_greater
+- botania:mining_ring
+- botania:odin_ring
+- botania:pixie_ring
+- botania:reach_ring
+- botania:swap_ring
+- botania:thor_ring
+- botania:water_ring
 - ars_nouveau:ring_of_lesser_discount
 - ars_nouveau:ring_of_greater_discount
+
+#twilightforest:darkwood_logs
+- twilightforest:dark_log
+- twilightforest:stripped_dark_log
+- twilightforest:dark_wood
+- twilightforest:stripped_dark_wood
+
+#ae2:illuminated_panel
+- ae2:monitor
+- ae2:semi_dark_monitor
+- ae2:dark_monitor
 
 #minecraft:anvil
 - minecraft:anvil
@@ -4795,9 +6918,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/enderium
 - thermal:enderium_block
 
+#regions_unexplored:maple_logs
+- regions_unexplored:maple_log
+- regions_unexplored:stripped_maple_log
+- regions_unexplored:maple_wood
+- regions_unexplored:stripped_maple_wood
+
 #forge:sand
+- beyond_earth:moon_sand
+- beyond_earth:mars_sand
+- beyond_earth:venus_sand
 - #forge:sand/colorless
 - #forge:sand/red
+
+#neapolitan:hides_chimpanzee_ears
+- #forge:heads
+- savage_and_ravage:griefer_helmet?
+- caverns_and_chasms:sanguine_helmet?
 
 #thermal:rockwool
 - thermal:white_rockwool
@@ -4822,15 +6959,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/yellow
 - minecraft:yellow_dye
+- chalk:yellow_chalk
 
 #forge:materials/rare
 - tac:rare_material
+
+#curios:uma_soul
+- umapyoi:uma_soul
 
 #tconstruct:modifiable/armor/worn
 - #tconstruct:modifiable/armor/boots
 - #tconstruct:modifiable/armor/leggings
 - #tconstruct:modifiable/armor/chestplate
 - #tconstruct:modifiable/armor/helmets
+
+#beyond_earth:engines/calorite
+- beyond_earth:calorite_engine
+
+#ae2:can_remove_color
+- minecraft:water_bucket
+- minecraft:snowball
 
 #minecraft:iron_ores
 - minecraft:iron_ore
@@ -4842,8 +6990,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:tar
 - thermal:tar
 
+#forge:raw_materials/calorite
+- beyond_earth:raw_calorite
+
 #forge:storage_blocks/hepatizon
 - tconstruct:hepatizon_block
+
+#botania:mystical_flowers
+- botania:black_mystical_flower
+- botania:blue_mystical_flower
+- botania:brown_mystical_flower
+- botania:cyan_mystical_flower
+- botania:gray_mystical_flower
+- botania:green_mystical_flower
+- botania:light_blue_mystical_flower
+- botania:light_gray_mystical_flower
+- botania:lime_mystical_flower
+- botania:magenta_mystical_flower
+- botania:orange_mystical_flower
+- botania:pink_mystical_flower
+- botania:purple_mystical_flower
+- botania:red_mystical_flower
+- botania:white_mystical_flower
+- botania:yellow_mystical_flower
 
 #forge:dusts/steel
 - thermal:steel_dust
@@ -4862,6 +7031,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:ingots/zinc
 - create:zinc_ingot
+
+#botania:disposable
+- minecraft:dirt
+- minecraft:sand
+- minecraft:gravel
+- minecraft:cobblestone
+- minecraft:netherrack
 
 #forge:ingots/all_metal
 - createaddition:electrum_ingot
@@ -4895,6 +7071,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:black_stained_glass
 - tconstruct:black_clear_stained_glass
 
+#forge:water
+- minecraft:water_bucket
+
 #forge:gears/lead
 - thermal:lead_gear
 
@@ -4905,6 +7084,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:fences/nether_brick
 - minecraft:nether_brick_fence
 
+#apotheosis:boon_drops
+- #forge:ores_in_ground/stone
+
+#bookshelf:books
+- #forge:books
+
 #supplementaries:blackboard_white
 - #forge:gems/quartz?
 - #forge:dyes/white?
@@ -4913,6 +7098,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:white_dye?
 
 #forge:rods
+- #forge:rods/iron
 - #forge:rods/blaze
 - #forge:rods/wooden
 - createaddition:iron_rod
@@ -4924,16 +7110,32 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:casts/multi_use/gear
 - tconstruct:gear_cast
 
+#ae2:knife
+- ae2:certus_quartz_cutting_knife
+- ae2:nether_quartz_cutting_knife
+
 #forge:ores/iron
+- beyond_earth:mars_iron_ore
+- beyond_earth:mercury_iron_ore
+- beyond_earth:moon_iron_ore
+- beyond_earth:glacio_iron_ore
 - #minecraft:iron_ores
+
+#twilightforest:logs
+- #twilightforest:twilight_oak_logs
+- #twilightforest:canopy_logs
+- #twilightforest:mangrove_logs
+- #twilightforest:darkwood_logs
+- #twilightforest:timewood_logs
+- #twilightforest:transwood_logs
+- #twilightforest:mining_logs
+- #twilightforest:sortwood_logs
+
+#bookshelf:fence_gates
+- #forge:fence_gates
 
 #forge:wires/iron
 - createaddition:iron_wire
-
-#butchercraft:any_ribs_raw
-- butchercraft:beef_ribs
-- butchercraft:lamb_ribs
-- butchercraft:pork_ribs
 
 #minecraft:wooden_stairs
 - minecraft:oak_stairs
@@ -4944,10 +7146,64 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_stairs
 - minecraft:crimson_stairs
 - minecraft:warped_stairs
+- twilightforest:twilight_oak_stairs
+- twilightforest:canopy_stairs
+- twilightforest:mangrove_stairs
+- twilightforest:dark_stairs
+- twilightforest:time_stairs
+- twilightforest:transformation_stairs
+- twilightforest:mining_stairs
+- twilightforest:sorting_stairs
+- botania:dreamwood_planks_stairs
+- botania:dreamwood_stairs
+- botania:livingwood_planks_stairs
+- botania:livingwood_stairs
+- botania:shimmerwood_planks_stairs
+- botania:stripped_dreamwood_stairs
+- botania:stripped_livingwood_stairs
 - ars_nouveau:archwood_stairs
 - tconstruct:greenheart_planks_stairs
 - tconstruct:skyroot_planks_stairs
 - tconstruct:bloodshroom_planks_stairs
+- regions_unexplored:baobab_stairs
+- regions_unexplored:blackwood_stairs
+- regions_unexplored:cherry_stairs
+- regions_unexplored:cherry_stairs
+- regions_unexplored:cypress_stairs
+- regions_unexplored:dead_stairs
+- regions_unexplored:eucalyptus_stairs
+- regions_unexplored:joshua_stairs
+- regions_unexplored:larch_stairs
+- regions_unexplored:maple_stairs
+- regions_unexplored:mauve_stairs
+- regions_unexplored:palm_stairs
+- regions_unexplored:pine_stairs
+- regions_unexplored:redwood_stairs
+- regions_unexplored:willow_stairs
+- regions_unexplored:alpha_stairs
+- regions_unexplored:light_gray_painted_stairs
+- regions_unexplored:black_painted_stairs
+- regions_unexplored:light_blue_painted_stairs
+- regions_unexplored:gray_painted_stairs
+- regions_unexplored:brown_painted_stairs
+- regions_unexplored:lime_painted_stairs
+- regions_unexplored:green_painted_stairs
+- regions_unexplored:yellow_painted_stairs
+- regions_unexplored:magenta_painted_stairs
+- regions_unexplored:blue_painted_stairs
+- regions_unexplored:red_painted_stairs
+- regions_unexplored:cyan_painted_stairs
+- regions_unexplored:white_painted_stairs
+- regions_unexplored:purple_painted_stairs
+- regions_unexplored:pink_painted_stairs
+- regions_unexplored:orange_painted_stairs
+- regions_unexplored:sculkwood_stairs
+- atmospheric:rosewood_stairs
+- atmospheric:morado_stairs
+- atmospheric:yucca_stairs
+- atmospheric:kousa_stairs
+- atmospheric:aspen_stairs
+- atmospheric:grimwood_stairs
 
 #tconstruct:casts/multi_use/small_axe_head
 - tconstruct:small_axe_head_cast
@@ -4967,10 +7223,45 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_button
 - minecraft:crimson_button
 - minecraft:warped_button
+- twilightforest:twilight_oak_button
+- twilightforest:canopy_button
+- twilightforest:mangrove_button
+- twilightforest:dark_button
+- twilightforest:time_button
+- twilightforest:transformation_button
+- twilightforest:mining_button
+- twilightforest:sorting_button
 - ars_nouveau:archwood_button
 - tconstruct:greenheart_button
 - tconstruct:skyroot_button
 - tconstruct:bloodshroom_button
+- regions_unexplored:baobab_button
+- regions_unexplored:blackwood_button
+- regions_unexplored:cherry_button
+- regions_unexplored:cherry_button
+- regions_unexplored:cypress_button
+- regions_unexplored:dead_button
+- regions_unexplored:eucalyptus_button
+- regions_unexplored:joshua_button
+- regions_unexplored:larch_button
+- regions_unexplored:maple_button
+- regions_unexplored:mauve_button
+- regions_unexplored:palm_button
+- regions_unexplored:pine_button
+- regions_unexplored:redwood_button
+- regions_unexplored:willow_button
+- regions_unexplored:sculkwood_button
+- atmospheric:rosewood_button
+- atmospheric:morado_button
+- atmospheric:yucca_button
+- atmospheric:kousa_button
+- atmospheric:aspen_button
+- atmospheric:grimwood_button
+
+#regions_unexplored:prismarite_crystals
+- regions_unexplored:prismarite_cluster
+- regions_unexplored:large_prismarite_cluster
+- regions_unexplored:hanging_prismarite
 
 #tconstruct:patterns/reusable
 - #tconstruct:casts/gold
@@ -4979,11 +7270,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #tconstruct:seared_tanks
 - #tconstruct:scorched_tanks
 
+#ae2:quartz_wrench
+- ae2:certus_quartz_wrench
+- ae2:nether_quartz_wrench
+
 #forge:storage_blocks/quartz
+- botania:dark_quartz
+- botania:mana_quartz
+- botania:blaze_quartz
+- botania:lavender_quartz
+- botania:red_quartz
+- botania:elf_quartz
+- botania:sunny_quartz
 - minecraft:quartz_block
 
 #forge:gears/tin
 - thermal:tin_gear
+
+#umapyoi:common_gacha_item
+- umapyoi:jewel
+- umapyoi:blank_ticket
 
 #tconstruct:modifiable/ranged/bows
 - #tconstruct:modifiable/ranged/longbows
@@ -5000,6 +7306,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/green
 - minecraft:green_dye
+- chalk:green_chalk
+
+#botania:dragonstone_gems
+- botania:dragonstone
 
 #forge:crops/onion
 - farmersdelight:onion
@@ -5020,12 +7330,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #c:nuggets/brass?
 - #forge:nuggets/brass?
 
-#computercraft:wired_modem
-- computercraft:wired_modem
-- computercraft:wired_modem_full
-
 #forge:dyes/lime
 - minecraft:lime_dye
+- chalk:lime_chalk
 
 #forge:dusts/diamond
 - thermal:diamond_dust
@@ -5035,17 +7342,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - nethersdelight:strider_slice
 - nethersdelight:ground_strider
 
-#butchercraft:any_pork_raw
-- butchercraft:pork_rib
-- butchercraft:pork_ribs
-- butchercraft:pork_roast
-- butchercraft:pork_scraps
-- butchercraft:pork_stewmeat
-- butchercraft:cubed_pork
-- butchercraft:ground_pork
-- butchercraft:bacon
-
 #forge:plates/iron
+- beyond_earth:iron_plate
 - thermal:iron_plate
 - create:iron_sheet
 
@@ -5068,8 +7366,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:white_shulker_box
 - minecraft:yellow_shulker_box
 
+#bookshelf:hoes
+- #forge:hoes
+
 #forge:nuggets/lumium
 - thermal:lumium_nugget
+
+#forge:nuggets/calorite
+- beyond_earth:calorite_nugget
 
 #tconstruct:structure_debug/smeltery
 - #tconstruct:structure_debug/general
@@ -5077,6 +7381,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:nuggets/silver
 - thermal:silver_nugget
+
+#bookshelf:bows
+- #forge:bows
 
 #forge:barrels/wooden
 - minecraft:barrel
@@ -5156,7 +7463,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - blue_skies:stripped_cherry_log?
 - byg:stripped_bulbis_stem?
 
+#forge:dusts/certus_quartz
+- ae2:certus_quartz_dust
+- ae2:certus_quartz_dust
+
 #forge:books
+- minecraft:book
+- minecraft:writable_book
+- minecraft:written_book
+- minecraft:enchanted_book
 - #forge:books/guide
 
 #tconstruct:casts/single_use/large_plate
@@ -5165,6 +7480,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/raw_iron
 - minecraft:raw_iron_block
+
+#atmospheric:morado_logs
+- atmospheric:morado_log
+- atmospheric:morado_wood
+- atmospheric:stripped_morado_log
+- atmospheric:stripped_morado_wood
 
 #tconstruct:casts/single_use/nugget
 - tconstruct:nugget_sand_cast
@@ -5179,6 +7500,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:peony
 - minecraft:rose_bush
 - farmersdelight:wild_rice
+- #botania:double_mystical_flowers
+- regions_unexplored:tassel
+- regions_unexplored:tsubaki
+- atmospheric:tall_yucca_flower
 
 #forge:dusts/cyanite
 - biggerreactors:cyanite_dust
@@ -5192,6 +7517,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:bookshelves
 - minecraft:bookshelf
+- atmospheric:rosewood_bookshelf
+- atmospheric:morado_bookshelf
+- atmospheric:yucca_bookshelf
+- atmospheric:kousa_bookshelf
+- atmospheric:aspen_bookshelf
+- atmospheric:grimwood_bookshelf
 
 #create:stone_types/calcite
 - create:cut_calcite
@@ -5239,6 +7570,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:dyes/red
 - #forge:dyes/black
 
+#forge:buckets/water
+- minecraft:water_bucket
+
 #forge:glass_panes/pink
 - minecraft:pink_stained_glass_pane
 - tconstruct:pink_clear_stained_glass_pane
@@ -5254,6 +7588,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:mycelium
 - minecraft:rooted_dirt
 - minecraft:moss_block
+- regions_unexplored:forest_dirt
+- regions_unexplored:forest_grass_block
+- regions_unexplored:forest_coarse_dirt
+- regions_unexplored:forest_mud
+- regions_unexplored:plains_dirt
+- regions_unexplored:plains_grass_block
+- regions_unexplored:plains_coarse_dirt
+- regions_unexplored:plains_mud
+- regions_unexplored:alpha_grass_block
 
 #tconstruct:casts/single_use/small_blade
 - tconstruct:small_blade_sand_cast
@@ -5282,6 +7625,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:shulker_boxes?
 - supplementaries:safe?
 - supplementaries:sack?
+
+#bookshelf:shears
+- #forge:shears
 
 #forge:rods/copper
 - createaddition:copper_rod
@@ -5320,7 +7666,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:egg
 - minecraft:egg
 - minecraft:egg
+- minecraft:egg
 - minecraft:turtle_egg
+
+#regions_unexplored:cherry_logs
+- regions_unexplored:cherry_log
+- regions_unexplored:stripped_cherry_log
+- regions_unexplored:cherry_wood
+- regions_unexplored:stripped_cherry_wood
 
 #tconstruct:casts/multi_use/small_blade
 - tconstruct:small_blade_cast
@@ -5330,11 +7683,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/red
 - minecraft:red_dye
+- chalk:red_chalk
 
 #farmersdelight:serving_containers
 - minecraft:bowl
 - minecraft:glass_bottle
 - minecraft:bucket
+
+#botania:elementium_nuggets
+- botania:elementium_nugget
 
 #railways:internal/dyes/blue_dyes
 - #c:blue_dyes?
@@ -5354,6 +7711,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:coins/signalum
 - thermal:signalum_coin
+
+#beyond_earth:flags
+- beyond_earth:flag
+- #beyond_earth:flags/colors
 
 #forge:dusts/glowstone
 - minecraft:glowstone_dust
@@ -5407,20 +7768,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:horizontal_framed_glass
 - create:vertical_framed_glass
 
+#curios:body
+- botania:balance_cloak
+- botania:holy_cloak
+- botania:invisibility_cloak
+- botania:third_eye
+- botania:unholy_cloak
+
 #forge:vegetables/beetroot
 - minecraft:beetroot
 
-#butchercraft:any_beef_cooked
-- butchercraft:cooked_beef_rib
-- butchercraft:cooked_beef_ribs
-- butchercraft:cooked_beef_roast
-- butchercraft:cooked_beef_scraps
-- butchercraft:cooked_beef_stewmeat
-- butchercraft:cooked_cubed_beef
-- butchercraft:cooked_ground_beef
+#botania:elementium_blocks
+- botania:elementium_block
 
 #forge:ingots/slimesteel
 - tconstruct:slimesteel_ingot
+
+#twilightforest:timewood_logs
+- twilightforest:time_log
+- twilightforest:stripped_time_log
+- twilightforest:time_wood
+- twilightforest:stripped_time_wood
 
 #forge:storage_blocks/cyanite
 - biggerreactors:cyanite_block
@@ -5486,6 +7854,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:green_clear_stained_glass
 - tconstruct:red_clear_stained_glass
 - tconstruct:black_clear_stained_glass
+- regions_unexplored:prismaglass
+
+#twilightforest:arctic_fur
+- twilightforest:arctic_fur
 
 #forge:raw_materials/lead
 - thermal:raw_lead
@@ -5500,14 +7872,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:nuggets/gold
 - minecraft:gold_nugget
 
-#butchercraft:any_beef_raw
-- butchercraft:beef_rib
-- butchercraft:beef_ribs
-- butchercraft:beef_roast
-- butchercraft:beef_scraps
-- butchercraft:beef_stewmeat
-- butchercraft:cubed_beef
-- butchercraft:ground_beef
+#bookshelf:helmets
+- #forge:helmets
 
 #supplementaries:sign_posts
 - supplementaries:sign_post_dark_oak?
@@ -5518,17 +7884,49 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - supplementaries:sign_post_birch?
 - supplementaries:sign_post_crimson?
 - supplementaries:sign_post_warped?
-- supplementaries:tconstruct/sign_post_skyroot
-- supplementaries:tconstruct/sign_post_bloodshroom
-- supplementaries:sign_post_oak
-- supplementaries:sign_post_birch
-- supplementaries:sign_post_crimson
 - supplementaries:sign_post_dark_oak
-- supplementaries:sign_post_spruce
+- supplementaries:atmospheric/sign_post_kousa
+- supplementaries:atmospheric/sign_post_aspen
+- supplementaries:regions_unexplored/sign_post_eucalyptus
 - supplementaries:sign_post_jungle
-- supplementaries:sign_post_acacia
+- supplementaries:twilightforest/sign_post_time
+- supplementaries:tconstruct/sign_post_skyroot
+- supplementaries:atmospheric/sign_post_morado
+- supplementaries:regions_unexplored/sign_post_cypress
+- supplementaries:atmospheric/sign_post_rosewood
+- supplementaries:sign_post_spruce
+- supplementaries:twilightforest/sign_post_dark
+- supplementaries:regions_unexplored/sign_post_cherry
+- supplementaries:atmospheric/sign_post_yucca
 - supplementaries:sign_post_warped
+- supplementaries:regions_unexplored/sign_post_larch
+- supplementaries:regions_unexplored/sign_post_joshua
+- supplementaries:tconstruct/sign_post_bloodshroom
+- supplementaries:botania/sign_post_dreamwood
+- supplementaries:regions_unexplored/sign_post_dead
+- supplementaries:twilightforest/sign_post_sorting
+- supplementaries:sign_post_birch
+- supplementaries:sign_post_acacia
+- supplementaries:regions_unexplored/sign_post_sculkwood
+- supplementaries:regions_unexplored/sign_post_palm
+- supplementaries:regions_unexplored/sign_post_redwood
+- supplementaries:twilightforest/sign_post_mining
+- supplementaries:sign_post_crimson
+- supplementaries:botania/sign_post_livingwood
+- supplementaries:atmospheric/sign_post_grimwood
+- supplementaries:regions_unexplored/sign_post_blackwood
+- supplementaries:regions_unexplored/sign_post_alpha
+- supplementaries:regions_unexplored/sign_post_baobab
+- supplementaries:regions_unexplored/sign_post_willow
+- supplementaries:sign_post_oak
+- supplementaries:twilightforest/sign_post_canopy
+- supplementaries:twilightforest/sign_post_transformation
+- supplementaries:regions_unexplored/sign_post_pine
+- supplementaries:twilightforest/sign_post_twilight_oak
+- supplementaries:regions_unexplored/sign_post_mauve
+- supplementaries:twilightforest/sign_post_mangrove
 - supplementaries:tconstruct/sign_post_greenheart
+- supplementaries:regions_unexplored/sign_post_maple
 
 #tconstruct:casts/single_use/broad_axe_head
 - tconstruct:broad_axe_head_sand_cast
@@ -5550,6 +7948,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:slimeball/earth
 - minecraft:slime_ball
 
+#twilightforest:mangrove_logs
+- twilightforest:mangrove_log
+- twilightforest:stripped_mangrove_log
+- twilightforest:mangrove_wood
+- twilightforest:stripped_mangrove_wood
+
+#drinkit:thick
+- minecraft:mushroom_stew
+- minecraft:suspicious_stew
+
+#upgradednetherite:upgraded_netherite_axe
+- upgradednetherite:gold_upgraded_netherite_axe
+- upgradednetherite:fire_upgraded_netherite_axe
+- upgradednetherite:ender_upgraded_netherite_axe
+- upgradednetherite:water_upgraded_netherite_axe
+- upgradednetherite:wither_upgraded_netherite_axe
+- upgradednetherite:poison_upgraded_netherite_axe
+- upgradednetherite:phantom_upgraded_netherite_axe
+- upgradednetherite:feather_upgraded_netherite_axe
+
+#forge:nuggets/manasteel
+- #botania:manasteel_nuggets
+
 #tconstruct:inventory_blacklist
 - minecraft:shulker_box
 - minecraft:white_shulker_box
@@ -5569,10 +7990,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:red_shulker_box
 - minecraft:black_shulker_box
 
+#twilightforest:sortwood_logs
+- twilightforest:sorting_log
+- twilightforest:stripped_sorting_log
+- twilightforest:sorting_wood
+- twilightforest:stripped_sorting_wood
+
+#forge:ingots/fiery
+- twilightforest:fiery_ingot
+
 #forge:bones
 - minecraft:bone
 
+#bookshelf:chestplates
+- #forge:chestplates
+
+#quark:ladders
+- atmospheric:rosewood_ladder
+- atmospheric:morado_ladder
+- atmospheric:yucca_ladder
+- atmospheric:kousa_ladder
+- atmospheric:aspen_ladder
+- atmospheric:grimwood_ladder
+
 #forge:glass_panes
+- botania:mana_glass_pane
+- botania:elf_glass_pane
+- botania:bifrost_pane
 - #forge:glass_panes/colorless
 - #forge:stained_glass_panes
 - create:tiled_glass_pane
@@ -5666,6 +8110,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:patterns/default
 - tconstruct:pattern
 
+#forge:gems/mana_diamond
+- #botania:mana_diamond_gems
+
 #forge:flour/wheat
 - create:wheat_flour
 
@@ -5694,34 +8141,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:deepslate_lapis_ore
 
 #forge:ingots/steel
+- beyond_earth:steel_ingot
 - thermal:steel_ingot
 
 #forge:storage_blocks/soulsteel
 - tconstruct:soulsteel_block
 
-#butchercraft:any_meat_raw
-- butchercraft:beef_rib
-- butchercraft:beef_ribs
-- butchercraft:beef_roast
-- butchercraft:beef_scraps
-- butchercraft:beef_stewmeat
-- butchercraft:cubed_beef
-- butchercraft:ground_beef
-- butchercraft:pork_rib
-- butchercraft:pork_ribs
-- butchercraft:pork_roast
-- butchercraft:pork_scraps
-- butchercraft:pork_stewmeat
-- butchercraft:cubed_pork
-- butchercraft:ground_pork
-- butchercraft:bacon
-- butchercraft:lamb_rib
-- butchercraft:lamb_ribs
-- butchercraft:lamb_roast
-- butchercraft:lamb_scraps
-- butchercraft:lamb_stewmeat
-- butchercraft:cubed_lamb
-- butchercraft:ground_lamb
+#twilightforest:mining_logs
+- twilightforest:mining_log
+- twilightforest:stripped_mining_log
+- twilightforest:mining_wood
+- twilightforest:stripped_mining_wood
 
 #forge:ingots/signalum
 - thermal:signalum_ingot
@@ -5734,6 +8164,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dusts/signalum
 - thermal:signalum_dust
+
+#quark:big_harvesting_hoes
+- botania:elementium_hoe
 
 #forge:ingots/netherite
 - minecraft:netherite_ingot
@@ -5787,6 +8220,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:glow_lichen
 
 #forge:stripped_logs
+- regions_unexplored:stripped_baobab_log
+- regions_unexplored:stripped_blackwood_log
+- regions_unexplored:stripped_cherry_log
+- regions_unexplored:stripped_cypress_log
+- regions_unexplored:stripped_dead_log
+- regions_unexplored:stripped_eucalyptus_log
+- regions_unexplored:stripped_joshua_log
+- regions_unexplored:stripped_larch_log
+- regions_unexplored:stripped_maple_log
+- regions_unexplored:stripped_mauve_log
+- regions_unexplored:stripped_palm_log
+- regions_unexplored:stripped_pine_log
+- regions_unexplored:stripped_redwood_log
+- regions_unexplored:stripped_willow_log
 - #create:vanilla_stripped_logs
 - #create:modded_stripped_logs
 
@@ -5869,8 +8316,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - potionmaster:calcinatedunobtanium_powder?
 - potionmaster:calcinatednetherite_powder?
 
+#ae2:paint_balls
+- ae2:white_paint_ball
+- ae2:orange_paint_ball
+- ae2:magenta_paint_ball
+- ae2:light_blue_paint_ball
+- ae2:yellow_paint_ball
+- ae2:lime_paint_ball
+- ae2:pink_paint_ball
+- ae2:gray_paint_ball
+- ae2:light_gray_paint_ball
+- ae2:cyan_paint_ball
+- ae2:purple_paint_ball
+- ae2:blue_paint_ball
+- ae2:brown_paint_ball
+- ae2:green_paint_ball
+- ae2:red_paint_ball
+- ae2:black_paint_ball
+
 #forge:fruits/berry
 - ars_nouveau:source_berry
+
+#botania:petals/orange
+- botania:orange_petal
+- botania:orange_mushroom
+
+#forge:ice_cubes
+- neapolitan:ice_cubes
 
 #forge:storage_blocks/electrum
 - thermal:electrum_block
@@ -5878,13 +8350,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/knightslime
 - tconstruct:knightslime_block
 
-#butchercraft:any_roast_raw
-- butchercraft:beef_roast
-- butchercraft:lamb_roast
-- butchercraft:pork_roast
+#forge:fruits/banana
+- neapolitan:banana
 
 #tconstruct:casts/multi_use/wire
 - tconstruct:wire_cast
+
+#forge:chestplates
+- minecraft:leather_chestplate
+- minecraft:chainmail_chestplate
+- minecraft:iron_chestplate
+- minecraft:golden_chestplate
+- minecraft:diamond_chestplate
+- minecraft:netherite_chestplate
+- minecraft:elytra
 
 #forge:armors/boots
 - create:copper_diving_boots
@@ -5917,6 +8396,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/refined_obsidian?
 
 #curios:necklace
+- botania:blood_pendant
+- botania:cloud_pendant
+- botania:ice_pendant
+- botania:lava_pendant
+- botania:super_cloud_pendant
+- botania:super_lava_pendant
 - artifacts:cross_necklace
 - artifacts:flame_pendant
 - artifacts:lucky_scarf
@@ -5932,15 +8417,35 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:coin_sand_cast
 - tconstruct:coin_red_sand_cast
 
+#forge:cheese/cheese
+- beyond_earth:cheese
+
+#forge:compasses
+- minecraft:compass
+
+#curios:uma_suit
+- umapyoi:trainning_suit
+- umapyoi:summer_uniform
+- umapyoi:winter_uniform
+
 #forge:cooked_chicken
 - minecraft:cooked_chicken
 - farmersdelight:cooked_chicken_cuts
 
+#botania:manasteel_blocks
+- botania:manasteel_block
+
 #forge:wool/green
 - minecraft:green_wool
 
+#forge:fishing_rods
+- minecraft:fishing_rod
+
 #forge:storage_blocks/constantan
 - thermal:constantan_block
+
+#forge:ingots/manasteel
+- #botania:manasteel_ingots
 
 #pneumaticcraft:plastic_bricks
 - pneumaticcraft:plastic_brick_white
@@ -5965,9 +8470,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:feathers
 - minecraft:feather
+- twilightforest:raven_feather
+- minecraft:feather
 
 #quark:vertical_slabs
+- #quark:wooden_vertical_slabs
+- neapolitan:chocolate_brick_vertical_slab
+- neapolitan:chocolate_tile_vertical_slab
+- neapolitan:frond_thatch_vertical_slab
+- atmospheric:arid_sandstone_vertical_slab
+- atmospheric:smooth_arid_sandstone_vertical_slab
+- atmospheric:cut_arid_sandstone_vertical_slab
+- atmospheric:arid_sandstone_brick_vertical_slab
+- atmospheric:red_arid_sandstone_vertical_slab
+- atmospheric:smooth_red_arid_sandstone_vertical_slab
+- atmospheric:cut_red_arid_sandstone_vertical_slab
+- atmospheric:red_arid_sandstone_brick_vertical_slab
+- atmospheric:ivory_travertine_vertical_slab
+- atmospheric:peach_travertine_vertical_slab
+- atmospheric:persimmon_travertine_vertical_slab
+- atmospheric:saffron_travertine_vertical_slab
 - #quark:vertical_slabs/chocolate
+
+#forge:dusts/fluix
+- ae2:fluix_dust
 
 #forge:dusts/silver
 - thermal:silver_dust
@@ -5992,11 +8518,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:ingots/cyanite
 - biggerreactors:cyanite_ingot
 
+#forge:storage_blocks/elementium
+- #botania:elementium_blocks
+
 #forge:string
 - minecraft:string
 - minecraft:string
-- butchercraft:sinew
-- butchercraft:leather_scrap
 
 #forge:grain/rice
 - farmersdelight:rice
@@ -6008,6 +8535,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/gunpowder
 - thermal:gunpowder_block
 
+#bookshelf:fishing_rods
+- #forge:fishing_rods
+
 #forge:raw_materials/tin
 - thermal:raw_tin
 
@@ -6015,11 +8545,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:deepslate
 - minecraft:cobbled_deepslate
 
+#botania:petals/light_blue
+- botania:light_blue_petal
+- botania:light_blue_mushroom
+
+#forge:ores/cheese
+- beyond_earth:moon_cheese_ore
+
+#forge:gems/certus_quartz
+- ae2:certus_quartz_crystal
+- ae2:charged_certus_quartz_crystal
+
 #tconstruct:skyroot_logs
 - tconstruct:skyroot_log
 - tconstruct:stripped_skyroot_log
 - tconstruct:skyroot_wood
 - tconstruct:stripped_skyroot_wood
+
+#forge:silicon
+- ae2:silicon
 
 #tconstruct:casts/single_use/bow_limb
 - tconstruct:bow_limb_sand_cast
@@ -6034,13 +8578,67 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:birch_leaves
 - minecraft:azalea_leaves
 - minecraft:flowering_azalea_leaves
+- twilightforest:rainbow_oak_leaves
+- twilightforest:twilight_oak_leaves
+- twilightforest:canopy_leaves
+- twilightforest:mangrove_leaves
+- twilightforest:dark_leaves
+- twilightforest:time_leaves
+- twilightforest:transformation_leaves
+- twilightforest:mining_leaves
+- twilightforest:sorting_leaves
+- twilightforest:thorn_leaves
+- twilightforest:beanstalk_leaves
 - #tconstruct:slimy_leaves
+- regions_unexplored:apple_oak_leaves
+- regions_unexplored:flowering_leaves
+- regions_unexplored:silver_birch_leaves
+- regions_unexplored:bamboo_leaves
+- regions_unexplored:baobab_leaves
+- regions_unexplored:blackwood_leaves
+- regions_unexplored:cherry_leaves
+- regions_unexplored:red_cherry_leaves
+- regions_unexplored:pink_cherry_leaves
+- regions_unexplored:white_cherry_leaves
+- regions_unexplored:cypress_leaves
+- regions_unexplored:dead_leaves
+- regions_unexplored:dead_pine_leaves
+- regions_unexplored:eucalyptus_leaves
+- regions_unexplored:joshua_leaves
+- regions_unexplored:golden_larch_leaves
+- regions_unexplored:larch_leaves
+- regions_unexplored:maple_leaves
+- regions_unexplored:red_maple_leaves
+- regions_unexplored:orange_maple_leaves
+- regions_unexplored:mauve_leaves
+- regions_unexplored:palm_leaves
+- regions_unexplored:pine_leaves
+- regions_unexplored:redwood_leaves
+- regions_unexplored:willow_leaves
+- regions_unexplored:alpha_leaves
+- regions_unexplored:sculkwood_leaves
+- atmospheric:rosewood_leaves
+- atmospheric:morado_leaves
+- atmospheric:flowering_morado_leaves
+- atmospheric:yucca_leaves
+- atmospheric:kousa_leaves
+- atmospheric:aspen_leaves
+- atmospheric:grimwood_leaves
 
 #c:string
 - minecraft:string
 
 #tconstruct:modifiable/ranged
 - #tconstruct:modifiable/ranged/bows
+
+#ae2:p2p_attunements/item_p2p_tunnel
+- ae2:storage_bus
+- ae2:export_bus
+- ae2:import_bus
+- minecraft:hopper
+- minecraft:chest
+- minecraft:trapped_chest
+- #ae2:interface
 
 #create:blaze_burner_fuel/special
 - create:blaze_cake
@@ -6053,20 +8651,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:gray_stained_glass_pane
 - tconstruct:gray_clear_stained_glass_pane
 
+#botania:burst_viewers
+- botania:monocle
+
 #minecraft:acacia_logs
 - minecraft:acacia_log
 - minecraft:acacia_wood
 - minecraft:stripped_acacia_log
 - minecraft:stripped_acacia_wood
 - decorative_blocks:acacia_beam
-
-#butchercraft:any_offal
-- butchercraft:heart
-- butchercraft:lung
-- butchercraft:kidney
-- butchercraft:liver
-- butchercraft:brain
-- butchercraft:tripe
 
 #minecraft:piglin_loved
 - #minecraft:gold_ores
@@ -6092,12 +8685,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:golden_hoe
 - minecraft:raw_gold
 - minecraft:raw_gold_block
+- beyond_earth:venus_gold_ore
+- twilightforest:gold_minotaur_axe
+- twilightforest:charm_of_keeping_3
+- twilightforest:charm_of_life_2
+- twilightforest:lamp_of_cinders
+- upgradednetherite:gold_upgraded_netherite_ingot
+- upgradednetherite:gold_upgraded_netherite_helmet
+- upgradednetherite:gold_upgraded_netherite_chestplate
+- upgradednetherite:gold_upgraded_netherite_leggings
+- upgradednetherite:gold_upgraded_netherite_boots
+- upgradednetherite:gold_upgraded_netherite_horse_armor
+- upgradednetherite:gold_upgraded_netherite_sword
+- upgradednetherite:gold_upgraded_netherite_pickaxe
+- upgradednetherite:gold_upgraded_netherite_shovel
+- upgradednetherite:gold_upgraded_netherite_axe
 - farmersdelight:golden_knife
-- computercraft:computer_advanced
-- computercraft:turtle_advanced
-- computercraft:wireless_modem_advanced
-- computercraft:pocket_computer_advanced
-- computercraft:monitor_advanced
+- botania:alchemy_catalyst
+- botania:diva_charm
+- botania:hourglass
+- botania:mana_pylon
+- botania:monocle
 - artifacts:golden_hook
 - supplementaries:hourglass
 - supplementaries:gold_door
@@ -6115,8 +8723,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #tconstruct:casts/gold
 - nethersdelight:raw_stuffed_hoglin
 - nethersdelight:stuffed_hoglin
+- atmospheric:shimmering_passionfruit
+- atmospheric:shimmering_passionfruit_crate
 - create:golden_sheet
 - create:crushed_raw_gold
+
+#bookshelf:compasses
+- #forge:compasses
 
 #railways:internal/ingots/iron_ingots
 - #c:iron_ingots?
@@ -6127,8 +8740,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:wheat?
 - farmersdelight:straw?
 
+#botania:mana_diamond_gems
+- botania:mana_diamond
+
 #forge:sand/red
 - minecraft:red_sand
+- atmospheric:red_arid_sand
 
 #forge:glass/brown
 - minecraft:brown_stained_glass
@@ -6148,6 +8765,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #minecraft:birch_logs
 - #minecraft:jungle_logs
 - #minecraft:spruce_logs
+- #twilightforest:twilight_oak_logs
+- #twilightforest:canopy_logs
+- #twilightforest:mangrove_logs
+- #twilightforest:timewood_logs
+- #twilightforest:transwood_logs
+- #twilightforest:mining_logs
+- #twilightforest:sortwood_logs
+- #botania:livingwood_logs
+- #botania:dreamwood_logs
 - ars_nouveau:red_archwood_log
 - ars_nouveau:blue_archwood_log
 - ars_nouveau:purple_archwood_log
@@ -6164,11 +8790,36 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - ars_nouveau:stripped_red_archwood_wood
 - ars_nouveau:stripped_purple_archwood_log
 - ars_nouveau:stripped_purple_archwood_wood
+- #regions_unexplored:bamboo_logs
+- regions_unexplored:silver_birch_log_base
+- #regions_unexplored:baobab_logs
+- #regions_unexplored:blackwood_logs
+- #regions_unexplored:cherry_logs
+- #regions_unexplored:cypress_logs
+- #regions_unexplored:eucalyptus_logs
+- #regions_unexplored:joshua_logs
+- #regions_unexplored:larch_logs
+- #regions_unexplored:maple_logs
+- #regions_unexplored:mauve_logs
+- #regions_unexplored:palm_logs
+- #regions_unexplored:pine_logs
+- #regions_unexplored:redwood_logs
+- #regions_unexplored:willow_logs
+- regions_unexplored:alpha_log
+- #atmospheric:rosewood_logs
+- #atmospheric:morado_logs
+- #atmospheric:yucca_logs
+- #atmospheric:aspen_logs
+- #atmospheric:kousa_logs
+- #atmospheric:grimwood_logs
 
 #forge:slabs/chocolate
 - neapolitan:chocolate_brick_slab?
 - neapolitan:chocolate_tile_slab?
 - create_confectionary:chocolate_bricks_slab?
+
+#forge:raw_materials/desh
+- beyond_earth:raw_desh
 
 #supplementaries:blackboard_black
 - minecraft:charcoal?
@@ -6184,9 +8835,34 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:coins/rose_gold
 - thermal:rose_gold_coin
 
+#forge:buckets/milk
+- minecraft:milk_bucket
+
+#umapyoi:sr_card_ticket
+- umapyoi:sr_card_ticket
+
 #forge:glass/light_gray
 - minecraft:light_gray_stained_glass
 - tconstruct:light_gray_clear_stained_glass
+
+#ae2:memory_cards
+- ae2:memory_card_white
+- ae2:memory_card_orange
+- ae2:memory_card_magenta
+- ae2:memory_card_light_blue
+- ae2:memory_card_yellow
+- ae2:memory_card_lime
+- ae2:memory_card_pink
+- ae2:memory_card_gray
+- ae2:memory_card_light_gray
+- ae2:memory_card_cyan
+- ae2:memory_card_purple
+- ae2:memory_card_blue
+- ae2:memory_card_brown
+- ae2:memory_card_green
+- ae2:memory_card_red
+- ae2:memory_card_black
+- ae2:memory_card
 
 #supplementaries:statue_swords
 - minecraft:wooden_sword?
@@ -6201,10 +8877,64 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_slab
 - minecraft:crimson_slab
 - minecraft:warped_slab
+- twilightforest:twilight_oak_slab
+- twilightforest:canopy_slab
+- twilightforest:mangrove_slab
+- twilightforest:dark_slab
+- twilightforest:time_slab
+- twilightforest:transformation_slab
+- twilightforest:mining_slab
+- twilightforest:sorting_slab
+- botania:dreamwood_planks_slab
+- botania:dreamwood_slab
+- botania:livingwood_planks_slab
+- botania:livingwood_slab
+- botania:shimmerwood_planks_slab
+- botania:stripped_dreamwood_slab
+- botania:stripped_livingwood_slab
 - ars_nouveau:archwood_slab
 - tconstruct:greenheart_planks_slab
 - tconstruct:skyroot_planks_slab
 - tconstruct:bloodshroom_planks_slab
+- regions_unexplored:baobab_slab
+- regions_unexplored:blackwood_slab
+- regions_unexplored:cherry_slab
+- regions_unexplored:cherry_slab
+- regions_unexplored:cypress_slab
+- regions_unexplored:dead_slab
+- regions_unexplored:eucalyptus_slab
+- regions_unexplored:joshua_slab
+- regions_unexplored:larch_slab
+- regions_unexplored:maple_slab
+- regions_unexplored:mauve_slab
+- regions_unexplored:palm_slab
+- regions_unexplored:pine_slab
+- regions_unexplored:redwood_slab
+- regions_unexplored:willow_slab
+- regions_unexplored:alpha_slab
+- regions_unexplored:sculkwood_slab
+- regions_unexplored:light_gray_painted_slab
+- regions_unexplored:black_painted_slab
+- regions_unexplored:light_blue_painted_slab
+- regions_unexplored:gray_painted_slab
+- regions_unexplored:brown_painted_slab
+- regions_unexplored:lime_painted_slab
+- regions_unexplored:green_painted_slab
+- regions_unexplored:yellow_painted_slab
+- regions_unexplored:magenta_painted_slab
+- regions_unexplored:blue_painted_slab
+- regions_unexplored:red_painted_slab
+- regions_unexplored:cyan_painted_slab
+- regions_unexplored:white_painted_slab
+- regions_unexplored:purple_painted_slab
+- regions_unexplored:pink_painted_slab
+- regions_unexplored:orange_painted_slab
+- atmospheric:rosewood_slab
+- atmospheric:morado_slab
+- atmospheric:yucca_slab
+- atmospheric:kousa_slab
+- atmospheric:aspen_slab
+- atmospheric:grimwood_slab
 
 #pneumaticcraft:upgrade_components
 - pneumaticcraft:upgrade_matrix
@@ -6230,6 +8960,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dyes/white
 - minecraft:white_dye
+- chalk:white_chalk
 
 #tconstruct:casts/multi_use/hammer_head
 - tconstruct:hammer_head_cast
@@ -6257,6 +8988,37 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - farmersdelight:wild_cabbages
 - farmersdelight:wild_tomatoes
 - farmersdelight:wild_onions
+- #botania:mystical_flowers
+- #botania:special_flowers
+- regions_unexplored:cave_hyssop
+- regions_unexplored:barrel_cactus
+- regions_unexplored:cactus_flower
+- regions_unexplored:blue_lupine
+- regions_unexplored:pink_lupine
+- regions_unexplored:purple_lupine
+- regions_unexplored:red_lupine
+- regions_unexplored:yellow_lupine
+- regions_unexplored:hyssop
+- regions_unexplored:fireweed
+- regions_unexplored:daisy
+- regions_unexplored:felicia_daisy
+- regions_unexplored:waratah
+- regions_unexplored:white_trillium
+- regions_unexplored:poppy_bush
+- regions_unexplored:alpha_rose
+- regions_unexplored:alpha_dandelion
+- regions_unexplored:wilting_trillium
+- regions_unexplored:dorcel
+- regions_unexplored:green_bioshroom
+- regions_unexplored:blue_bioshroom
+- regions_unexplored:pink_bioshroom
+- regions_unexplored:yellow_bioshroom
+- atmospheric:warm_monkey_brush
+- atmospheric:hot_monkey_brush
+- atmospheric:scalding_monkey_brush
+- atmospheric:yucca_flower
+- atmospheric:gilia
+- atmospheric:water_hyacinth
 
 #forge:coins/enderium
 - thermal:enderium_coin
@@ -6292,6 +9054,66 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dusts/redstone
 - minecraft:redstone
+
+#regions_unexplored:logs
+- #regions_unexplored:bamboo_logs
+- regions_unexplored:silver_birch_log_base
+- #regions_unexplored:baobab_logs
+- #regions_unexplored:blackwood_logs
+- #regions_unexplored:cherry_logs
+- #regions_unexplored:cypress_logs
+- #regions_unexplored:dead_logs
+- #regions_unexplored:eucalyptus_logs
+- #regions_unexplored:joshua_logs
+- #regions_unexplored:larch_logs
+- #regions_unexplored:maple_logs
+- #regions_unexplored:mauve_logs
+- #regions_unexplored:palm_logs
+- #regions_unexplored:pine_logs
+- #regions_unexplored:redwood_logs
+- #regions_unexplored:willow_logs
+- regions_unexplored:alpha_log
+- regions_unexplored:saguaro_cactus
+- regions_unexplored:saguaro_cactus_corner
+
+#chalk:chalk
+- chalk:cyan_chalk
+- chalk:orange_chalk
+- chalk:green_chalk
+- chalk:yellow_chalk
+- chalk:magenta_chalk
+- chalk:light_blue_chalk
+- chalk:blue_chalk
+- chalk:light_gray_chalk
+- chalk:purple_chalk
+- chalk:white_chalk
+- chalk:red_chalk
+- chalk:lime_chalk
+- chalk:brown_chalk
+- chalk:gray_chalk
+- chalk:pink_chalk
+- chalk:black_chalk
+
+#forge:ores/knightmetal
+- twilightforest:armor_shard_cluster
+
+#forge:storage_blocks/manasteel
+- #botania:manasteel_blocks
+
+#neapolitan:ice_cream
+- neapolitan:chocolate_ice_cream
+- neapolitan:vanilla_ice_cream
+- neapolitan:strawberry_ice_cream
+- neapolitan:banana_ice_cream
+- neapolitan:mint_ice_cream
+- neapolitan:adzuki_ice_cream
+- neapolitan:neapolitan_ice_cream
+- exquisito:chorus_ice_cream
+- exquisito:jelly_ring_ice_cream
+- exquisito:ether_bulb_ice_cream
+- exquisito:zure_berry_ice_cream
+- exquisito:nightshade_berry_ice_cream
+- exquisito:ether_bulb_ice_cream
 
 #forge:gems/quartz
 - minecraft:quartz
@@ -6332,6 +9154,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:andesite
 - minecraft:andesite
 
+#botania:petals/lime
+- botania:lime_petal
+- botania:lime_mushroom
+
+#botania:petals/magenta
+- botania:magenta_petal
+- botania:magenta_mushroom
+
 #tconstruct:modifiable/embellishment/metal
 - tconstruct:sky_staff
 - tconstruct:earth_staff
@@ -6357,19 +9187,37 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:gears/signalum
 - thermal:signalum_gear
 
+#beyond_earth:flags/colors
+- beyond_earth:flag_blue
+- beyond_earth:flag_brown
+- beyond_earth:flag_cyan
+- beyond_earth:flag_gray
+- beyond_earth:flag_green
+- beyond_earth:flag_light_blue
+- beyond_earth:flag_lime
+- beyond_earth:flag_magenta
+- beyond_earth:flag_orange
+- beyond_earth:flag_pink
+- beyond_earth:flag_purple
+- beyond_earth:flag_red
+- beyond_earth:flag_yellow
+
 #forge:wool/yellow
 - minecraft:yellow_wool
-
-#computercraft:computer
-- computercraft:computer_normal
-- computercraft:computer_advanced
-- computercraft:computer_command
 
 #forge:nuggets/lead
 - thermal:lead_nugget
 
 #tconstruct:fireballs
 - minecraft:fire_charge
+
+#forge:tools/hoes
+- minecraft:wooden_hoe
+- minecraft:stone_hoe
+- minecraft:iron_hoe
+- minecraft:golden_hoe
+- minecraft:diamond_hoe
+- minecraft:netherite_hoe
 
 #pipez:upgrades
 - pipez:basic_upgrade
@@ -6378,36 +9226,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - pipez:ultimate_upgrade
 - pipez:infinity_upgrade
 
-#butchercraft:any_meat_cooked
-- butchercraft:cooked_beef_rib
-- butchercraft:cooked_beef_ribs
-- butchercraft:cooked_beef_roast
-- butchercraft:cooked_beef_scraps
-- butchercraft:cooked_beef_stewmeat
-- butchercraft:cooked_cubed_beef
-- butchercraft:cooked_ground_beef
-- butchercraft:cooked_pork_rib
-- butchercraft:cooked_pork_ribs
-- butchercraft:cooked_pork_roast
-- butchercraft:cooked_pork_scraps
-- butchercraft:cooked_pork_stewmeat
-- butchercraft:cooked_cubed_pork
-- butchercraft:cooked_ground_pork
-- butchercraft:cooked_bacon
-- butchercraft:cooked_lamb_rib
-- butchercraft:cooked_lamb_ribs
-- butchercraft:cooked_lamb_roast
-- butchercraft:cooked_lamb_scraps
-- butchercraft:cooked_lamb_stewmeat
-- butchercraft:cooked_cubed_lamb
-- butchercraft:cooked_ground_lamb
-
 #forge:plates/brass
 - create:brass_sheet
+
+#regions_unexplored:palm_logs
+- regions_unexplored:palm_log
+- regions_unexplored:stripped_palm_log
+- regions_unexplored:palm_wood
+- regions_unexplored:stripped_palm_wood
 
 #tconstruct:modifiable/held
 - #tconstruct:modifiable/interactable/right
 - #tconstruct:modifiable/interactable/left
+
+#wares:agreements
+- wares:sealed_delivery_agreement
+- wares:delivery_agreement
+- wares:completed_delivery_agreement
+- wares:expired_delivery_agreement
 
 #forge:crops/tomato
 - farmersdelight:tomato
@@ -6415,8 +9251,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:slimeball/ichor
 - tconstruct:ichor_slime_ball
 
+#botania:generating_special_flowers
+- botania:dandelifeon
+- botania:endoflame
+- botania:entropinnyum
+- botania:gourmaryllis
+- botania:hydroangeas
+- botania:kekimurus
+- botania:munchdew
+- botania:narslimmus
+- botania:rafflowsia
+- botania:rosa_arcana
+- botania:shulk_me_not
+- botania:spectrolus
+- botania:thermalily
+
 #forge:plates/obsidian
 - create:sturdy_sheet
+
+#forge:storage_blocks/raw_desh
+- beyond_earth:raw_desh_block
 
 #create:stone_types/crimsite
 - create:cut_crimsite
@@ -6441,12 +9295,32 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:casts/multi_use/rod
 - tconstruct:rod_cast
 
+#quark:revertable_chests
+- atmospheric:rosewood_chest
+- atmospheric:morado_chest
+- atmospheric:yucca_chest
+- atmospheric:kousa_chest
+- atmospheric:aspen_chest
+- atmospheric:grimwood_chest
+
 #forge:plates/nickel
 - thermal:nickel_plate
+
+#regions_unexplored:baobab_logs
+- regions_unexplored:baobab_log
+- regions_unexplored:stripped_baobab_log
+- regions_unexplored:baobab_wood
+- regions_unexplored:stripped_baobab_wood
+
+#bookshelf:strings
+- #forge:string
 
 #forge:ores/silver
 - thermal:silver_ore
 - thermal:deepslate_silver_ore
+
+#bookshelf:boots
+- #forge:boots
 
 #forge:ingots/amethyst_bronze
 - tconstruct:amethyst_bronze_ingot
@@ -6456,6 +9330,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:purple_clear_stained_glass_pane
 
 #forge:dusts
+- #forge:dusts/mana
 - biggerreactors:blutonium_dust
 - biggerreactors:cyanite_dust
 - biggerreactors:graphite_dust
@@ -6492,6 +9367,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:dusts/sapphire
 - #forge:dusts/rose_gold
 - #forge:dusts/steel
+- ae2:certus_quartz_dust
+- ae2:ender_dust
+- ae2:fluix_dust
+- ae2:sky_dust
 - createaddition:diamond_grit
 - create:powdered_obsidian
 
@@ -6503,14 +9382,31 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:yellow_stained_glass
 - tconstruct:yellow_clear_stained_glass
 
+#forge:ores/ostrum
+- beyond_earth:mars_ostrum_ore
+
 #forge:nuggets/cobalt
 - tconstruct:cobalt_nugget
 
 #forge:gears/ruby
 - thermal:ruby_gear
 
+#botania:contributor_headflowers
+- #botania:special_flowers
+- botania:daybloom_motif
+- botania:nightshade_motif
+
 #forge:ingots/compressed_iron
 - pneumaticcraft:ingot_iron_compressed
+
+#forge:helmets
+- minecraft:leather_helmet
+- minecraft:chainmail_helmet
+- minecraft:iron_helmet
+- minecraft:golden_helmet
+- minecraft:diamond_helmet
+- minecraft:netherite_helmet
+- minecraft:turtle_helmet
 
 #create:stone_types/asurine
 - create:cut_asurine
@@ -6557,14 +9453,38 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:nuggets/amethyst_bronze
 - tconstruct:amethyst_bronze_nugget
 
+#upgradednetherite:upgraded_netherite_shovel
+- upgradednetherite:gold_upgraded_netherite_shovel
+- upgradednetherite:fire_upgraded_netherite_shovel
+- upgradednetherite:ender_upgraded_netherite_shovel
+- upgradednetherite:water_upgraded_netherite_shovel
+- upgradednetherite:phantom_upgraded_netherite_shovel
+- upgradednetherite:feather_upgraded_netherite_shovel
+
 #forge:barrels
 - #forge:barrels/wooden
+
+#ae2:all_nether_quartz
+- #forge:gems/quartz
+
+#quark:reacharound_able
+- botania:dirt_rod
+- botania:cobble_rod
+- botania:black_hole_talisman
 
 #forge:coal_coke
 - thermal:coal_coke
 
+#forge:buckets/powder_snow
+- minecraft:powder_snow_bucket
+
 #forge:ash
 - supplementaries:ash
+
+#drinkit:drinkable
+- minecraft:mushroom_stew
+- minecraft:beetroot_soup
+- minecraft:suspicious_stew
 
 #pneumaticcraft:reinforced_stone_bricks
 - pneumaticcraft:reinforced_bricks
@@ -6606,20 +9526,46 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:manyullyn_block
 
 #forge:shears
+- botania:manasteel_shears
+- botania:elementium_shears
 - minecraft:shears
 - tconstruct:kama
+
+#botania:semi_disposable
+- minecraft:andesite
+- minecraft:diorite
+- minecraft:granite
+- quark:basalt?
+- quark:jasper?
+- quark:limestone?
+- quark:marble?
+- quark:slate?
 
 #forge:certificates/legendary
 - tac:legendary_certificate
 
+#twilightforest:portal/activator
+- #forge:gems/diamond
+
 #forge:nuggets/steel
+- beyond_earth:steel_nugget
 - thermal:steel_nugget
+
+#botania:mana_dusts
+- botania:mana_powder
 
 #forge:ingots/lumium
 - thermal:lumium_ingot
 
+#botania:petals/blue
+- botania:blue_petal
+- botania:blue_mushroom
+
 #forge:dusts/electrum
 - thermal:electrum_dust
+
+#forge:ingots/ironwood
+- twilightforest:ironwood_ingot
 
 #tconstruct:greenheart_logs
 - tconstruct:greenheart_log
@@ -6651,6 +9597,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:ochrum_pillar
 - create:ochrum
 
+#ae2:covered_cable
+- ae2:white_covered_cable
+- ae2:orange_covered_cable
+- ae2:magenta_covered_cable
+- ae2:light_blue_covered_cable
+- ae2:yellow_covered_cable
+- ae2:lime_covered_cable
+- ae2:pink_covered_cable
+- ae2:gray_covered_cable
+- ae2:light_gray_covered_cable
+- ae2:cyan_covered_cable
+- ae2:purple_covered_cable
+- ae2:blue_covered_cable
+- ae2:brown_covered_cable
+- ae2:green_covered_cable
+- ae2:red_covered_cable
+- ae2:black_covered_cable
+- ae2:fluix_covered_cable
+
+#ae2:quartz_pickaxe
+- ae2:certus_quartz_pickaxe
+- ae2:nether_quartz_pickaxe
+
 #forge:dusts/quartz
 - thermal:quartz_dust
 
@@ -6663,24 +9632,126 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:dark_oak_planks
 - minecraft:crimson_planks
 - minecraft:warped_planks
+- twilightforest:twilight_oak_planks
+- twilightforest:canopy_planks
+- twilightforest:mangrove_planks
+- twilightforest:dark_planks
+- twilightforest:time_planks
+- twilightforest:transformation_planks
+- twilightforest:mining_planks
+- twilightforest:sorting_planks
+- twilightforest:towerwood
+- twilightforest:encased_towerwood
+- twilightforest:cracked_towerwood
+- twilightforest:mossy_towerwood
+- twilightforest:infested_towerwood
+- botania:livingwood_planks
+- botania:mossy_livingwood_planks
+- botania:framed_livingwood
+- botania:pattern_framed_livingwood
+- botania:dreamwood_planks
+- botania:mossy_dreamwood_planks
+- botania:framed_dreamwood
+- botania:pattern_framed_dreamwood
+- botania:shimmerwood_planks
 - ars_nouveau:archwood_planks
 - #tconstruct:slimy_planks
+- regions_unexplored:alpha_planks
+- regions_unexplored:bamboo_log
+- regions_unexplored:stripped_bamboo_log
+- regions_unexplored:bamboo_log_leaves
+- regions_unexplored:baobab_planks
+- regions_unexplored:blackwood_planks
+- regions_unexplored:cherry_planks
+- regions_unexplored:cherry_planks
+- regions_unexplored:cypress_planks
+- regions_unexplored:dead_planks
+- regions_unexplored:eucalyptus_planks
+- regions_unexplored:joshua_planks
+- regions_unexplored:larch_planks
+- regions_unexplored:maple_planks
+- regions_unexplored:mauve_planks
+- regions_unexplored:palm_planks
+- regions_unexplored:pine_planks
+- regions_unexplored:redwood_planks
+- regions_unexplored:willow_planks
+- regions_unexplored:light_gray_painted_planks
+- regions_unexplored:black_painted_planks
+- regions_unexplored:light_blue_painted_planks
+- regions_unexplored:gray_painted_planks
+- regions_unexplored:brown_painted_planks
+- regions_unexplored:lime_painted_planks
+- regions_unexplored:green_painted_planks
+- regions_unexplored:yellow_painted_planks
+- regions_unexplored:magenta_painted_planks
+- regions_unexplored:blue_painted_planks
+- regions_unexplored:red_painted_planks
+- regions_unexplored:cyan_painted_planks
+- regions_unexplored:white_painted_planks
+- regions_unexplored:purple_painted_planks
+- regions_unexplored:pink_painted_planks
+- regions_unexplored:orange_painted_planks
+- regions_unexplored:sculkwood_planks
+- atmospheric:rosewood_planks
+- atmospheric:morado_planks
+- atmospheric:yucca_planks
+- atmospheric:kousa_planks
+- atmospheric:aspen_planks
+- atmospheric:grimwood_planks
+- atmospheric:vertical_rosewood_planks
+- atmospheric:vertical_morado_planks
+- atmospheric:vertical_yucca_planks
+- atmospheric:vertical_kousa_planks
+- atmospheric:vertical_aspen_planks
+- atmospheric:vertical_grimwood_planks
 
 #minecraft:fox_food
 - minecraft:sweet_berries
 - minecraft:glow_berries
+- neapolitan:strawberries
+- neapolitan:white_strawberries
 
 #forge:cobblestone
-- #forge:cobblestone/normal
-- #forge:cobblestone/infested
-- #forge:cobblestone/mossy
-- #forge:cobblestone/deepslate
+- minecraft:cobblestone
+- minecraft:mossy_cobblestone
+- minecraft:cobbled_deepslate
 
 #tconstruct:casts/multi_use/pick_head
 - tconstruct:pick_head_cast
 
 #forge:dusts/sulfur
 - thermal:sulfur_dust
+
+#regions_unexplored:tall_saplings
+- regions_unexplored:tall_acacia_sapling
+- regions_unexplored:tall_baobab_sapling
+- regions_unexplored:tall_birch_sapling
+- regions_unexplored:tall_blackwood_sapling
+- regions_unexplored:tall_cherry_sapling
+- regions_unexplored:tall_red_cherry_sapling
+- regions_unexplored:tall_pink_cherry_sapling
+- regions_unexplored:tall_white_cherry_sapling
+- regions_unexplored:tall_cypress_sapling
+- regions_unexplored:tall_dark_oak_sapling
+- regions_unexplored:tall_dead_sapling
+- regions_unexplored:tall_dead_pine_sapling
+- regions_unexplored:tall_eucalyptus_sapling
+- regions_unexplored:tall_flowering_sapling
+- regions_unexplored:tall_joshua_sapling
+- regions_unexplored:tall_jungle_sapling
+- regions_unexplored:tall_golden_larch_sapling
+- regions_unexplored:tall_larch_sapling
+- regions_unexplored:tall_maple_sapling
+- regions_unexplored:tall_red_maple_sapling
+- regions_unexplored:tall_orange_maple_sapling
+- regions_unexplored:tall_mauve_sapling
+- regions_unexplored:tall_oak_sapling
+- regions_unexplored:tall_palm_sapling
+- regions_unexplored:tall_pine_sapling
+- regions_unexplored:tall_redwood_sapling
+- regions_unexplored:tall_silver_birch_sapling
+- regions_unexplored:tall_spruce_sapling
+- regions_unexplored:tall_willow_sapling
 
 #forge:seeds/tomato
 - farmersdelight:tomato_seeds
@@ -6697,6 +9768,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:scorched_duct
 - tconstruct:scorched_glass
 - tconstruct:scorched_ladder
+
+#apotheosis:spearfishing_drops
+- #minecraft:fishes
 
 #tconstruct:modifiable/one_handed
 - tconstruct:pickaxe
@@ -6720,31 +9794,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:ichor_slime_sling
 - tconstruct:ender_slime_sling
 
+#botania:petals/brown
+- botania:brown_petal
+- botania:brown_mushroom
+
 #farmersdelight:wolf_prey
 - #forge:raw_chicken
 - #forge:raw_mutton
 - minecraft:rabbit
-
-#zetter:frames
-- zetter:acacia_basic_frame
-- zetter:acacia_plated_frame
-- zetter:birch_basic_frame
-- zetter:birch_plated_frame
-- zetter:crimson_basic_frame
-- zetter:crimson_plated_frame
-- zetter:dark_oak_basic_frame
-- zetter:dark_oak_plated_frame
-- zetter:jungle_basic_frame
-- zetter:jungle_plated_frame
-- zetter:oak_basic_frame
-- zetter:oak_plated_frame
-- zetter:spruce_basic_frame
-- zetter:spruce_plated_frame
-- zetter:warped_basic_frame
-- zetter:warped_plated_frame
-- zetter:iron_frame
-- zetter:gold_basic_frame
-- zetter:gold_plated_frame
 
 #tconstruct:casts/multi_use/repair_kit
 - tconstruct:repair_kit_cast
@@ -6781,6 +9838,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #tconstruct:modifiable/melee/primary
 - #tconstruct:modifiable/melee/sword
 
+#twilightforest:banned_uncrafting_ingredients
+- twilightforest:infested_towerwood
+- twilightforest:hollow_oak_sapling
+- twilightforest:time_sapling
+- twilightforest:transformation_sapling
+- twilightforest:mining_sapling
+- twilightforest:sorting_sapling
+
 #decorative_blocks:beams
 - decorative_blocks:spruce_beam
 - decorative_blocks:acacia_beam
@@ -6791,6 +9856,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - decorative_blocks:oak_beam
 - decorative_blocks:crimson_beam
 
+#forge:ingots/ostrum
+- beyond_earth:ostrum_ingot
+
 #forge:materials/epic
 - tac:epic_material
 
@@ -6798,6 +9866,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:prismarine_shard
 
 #forge:fences
+- twilightforest:twilight_oak_fence
+- twilightforest:canopy_fence
+- twilightforest:mangrove_fence
+- twilightforest:dark_fence
+- twilightforest:time_fence
+- twilightforest:transformation_fence
+- twilightforest:mining_fence
+- twilightforest:sorting_fence
 - ars_nouveau:archwood_fence
 - #forge:fences/nether_brick
 - #forge:fences/wooden
@@ -6817,11 +9893,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:iron_sword
 - minecraft:shears
 
+#regions_unexplored:redwood_logs
+- regions_unexplored:redwood_log
+- regions_unexplored:stripped_redwood_log
+- regions_unexplored:redwood_wood
+- regions_unexplored:stripped_redwood_wood
+
 #forge:coins/iron
 - thermal:iron_coin
 
 #forge:storage_blocks/slag
 - thermal:slag_block
+
+#ae2:pattern_provider
+- ae2:cable_pattern_provider
+- ae2:pattern_provider
+
+#forge:plates/desh
+- beyond_earth:desh_plate
 
 #tconstruct:structure_debug/foundry
 - #tconstruct:structure_debug/general

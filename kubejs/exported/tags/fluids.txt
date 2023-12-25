@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Aug 26, 2023, 7:10:03 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 25, 2023, 10:02:33 PM
 
 #tconstruct:molten_manyullyn
 - tconstruct:molten_manyullyn
@@ -15,6 +15,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #minecraft:water
 - minecraft:water
 - minecraft:flowing_water
+- beyond_earth:fuel
+- beyond_earth:flowing_fuel
+- beyond_earth:oil
+- beyond_earth:flowing_oil
 - create:flowing_honey
 - create:honey
 - create:flowing_chocolate
@@ -51,6 +55,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:molten_rose_gold
 - tconstruct:flowing_molten_rose_gold
 
+#forge:molten_fiery
+- #twilightforest:molten_fiery?
+
 #tconstruct:blazing_blood
 - tconstruct:blazing_blood
 - tconstruct:flowing_blazing_blood
@@ -74,8 +81,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:molten_refined_obsidian
 - tconstruct:flowing_molten_refined_obsidian
 
+#beyond_earth:molten_ostrum
+- beyond_earth:molten_ostrum?
+- beyond_earth:flowing_molten_ostrum?
+
 #forge:molten_copper
 - #tconstruct:molten_copper
+
+#beyond_earth:oil
+- beyond_earth:oil
+- beyond_earth:flowing_oil
 
 #tconstruct:earth_slime
 - tconstruct:earth_slime
@@ -110,6 +125,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:molten_silver
 - #tconstruct:molten_silver
 
+#twilightforest:molten_fiery
+- twilightforest:molten_fiery?
+- twilightforest:flowing_molten_fiery?
+
+#forge:oil
+- beyond_earth:oil
+- beyond_earth:flowing_oil
+
 #forge:molten_rose_gold
 - #tconstruct:molten_rose_gold
 
@@ -125,7 +148,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:molten_manyullyn
 - #tconstruct:molten_manyullyn
 
+#twilightforest:fiery_essence
+- twilightforest:fiery_essence?
+- twilightforest:flowing_fiery_essence?
+
 #tconstruct:spilling/metal/cheap
+- #forge:molten_fiery
+- #twilightforest:molten_knightmetal
 - #forge:molten_platinum
 - #forge:molten_tungsten
 - #forge:molten_osmium
@@ -169,6 +198,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #tconstruct:scorched_stone
 
 #tconstruct:tooltips/metal
+- #forge:molten_desh
+- #forge:molten_ostrum
+- #forge:molten_calorite
+- #forge:molten_fiery
+- #forge:molten_knightmetal
 - #forge:molten_iron
 - #forge:molten_gold
 - #forge:molten_copper
@@ -250,6 +284,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:molten_steel
 - tconstruct:flowing_molten_steel
 
+#beyond_earth:molten_desh
+- beyond_earth:molten_desh?
+- beyond_earth:flowing_molten_desh?
+
 #tconstruct:tooltips/slime
 - #forge:magma
 - #tconstruct:blood
@@ -297,6 +335,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create_enchantment_industry:flowing_hyper_experience
 - create_enchantment_industry:hyper_experience
 
+#beyond_earth:molten_calorite
+- beyond_earth:molten_calorite?
+- beyond_earth:flowing_molten_calorite?
+
 #tconstruct:molten_tin
 - tconstruct:molten_tin
 - tconstruct:flowing_molten_tin
@@ -320,6 +362,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:molten_osmium
 - tconstruct:molten_osmium
 - tconstruct:flowing_molten_osmium
+
+#forge:molten_desh
+- #beyond_earth:molten_desh
 
 #tconstruct:molten_refined_glowstone
 - tconstruct:molten_refined_glowstone
@@ -401,6 +446,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:diesel
 - pneumaticcraft:diesel
 
+#ae2:blacklisted/annihilation_plane
+
 #tconstruct:molten_constantan
 - tconstruct:molten_constantan
 - tconstruct:flowing_molten_constantan
@@ -454,6 +501,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:molten_pig_iron
 - tconstruct:flowing_molten_pig_iron
 
+#forge:fuel
+- beyond_earth:fuel
+- beyond_earth:flowing_fuel
+
 #forge:molten_hepatizon
 - #tconstruct:molten_hepatizon
 
@@ -463,6 +514,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:venom
 - tconstruct:venom
 - tconstruct:flowing_venom
+
+#forge:molten_ostrum
+- #beyond_earth:molten_ostrum
 
 #tconstruct:molten_bronze
 - tconstruct:molten_bronze
@@ -474,9 +528,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:tooltips/water
 - #mantle:water
 
+#twilightforest:molten_knightmetal
+- twilightforest:molten_knightmetal?
+- twilightforest:flowing_molten_knightmetal?
+
 #forge:biofuel
 - createaddition:flowing_bioethanol
 - createaddition:bioethanol
+
+#twilightforest:fire_jet_fuel
+- #minecraft:lava
 
 #forge:plantoil
 - pneumaticcraft:vegetable_oil
@@ -566,12 +627,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:lava
 - minecraft:flowing_lava
 
+#forge:molten_knightmetal
+- #twilightforest:molten_knightmetal?
+
 #forge:molten_tungsten
 - #tconstruct:molten_tungsten
 
 #tconstruct:molten_queens_slime
 - tconstruct:molten_queens_slime
 - tconstruct:flowing_molten_queens_slime
+
+#beyond_earth:vehicle_fuel
+- beyond_earth:fuel
+- beyond_earth:flowing_fuel
 
 #forge:molten_refined_obsidian
 - #tconstruct:molten_refined_obsidian
@@ -582,6 +650,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:molten_hepatizon
 - tconstruct:molten_hepatizon
 - tconstruct:flowing_molten_hepatizon
+
+#forge:molten_calorite
+- #beyond_earth:molten_calorite
 
 #decorative_blocks:thatch
 - decorative_blocks:thatch
