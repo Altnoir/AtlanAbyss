@@ -2,8 +2,10 @@
   
 [My Bilibili Homepage](https://space.bilibili.com/256237451)
 
+**Languages/语言:** [中文](README.md) [**English**](README-en.md)
+
 </div>
-简体中文丨[**English**](https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/blob/main/README-en.md)
+
 
 ## Preface
 This is a Minecraft modpack based on Forge production.
