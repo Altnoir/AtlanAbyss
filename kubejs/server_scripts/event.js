@@ -74,6 +74,15 @@ if(item === artifact){
 }
 })
 
+onEvent("server.load", event => {
+  let worldBorder = event.server.getLevel('overworld').worldBorder;
+  let size = worldBorder.getSize();
+
+  if (size >= 59999860) {
+    worldBorder.setSize(96);
+  }
+})
+
 onEvent('block.break', event => {
 let {player, server, level, block} = event;
 function luckSummon(randomSummon) {
