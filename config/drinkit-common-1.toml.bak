@@ -1,0 +1,5 @@
+#The items defined as drinks
+drinkable = ["minecraft:beetroot_soup", "example:another_drinkable"]
+#The items defined as thick drinks
+thick = ["minecraft:suspicious_stew", "example:another_thick"]
+

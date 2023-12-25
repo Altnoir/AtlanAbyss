@@ -160,7 +160,7 @@
     "slimeChunkOverlayRadius": -1,
     "spawnableColumnHeightsOverlayRadius": 40,
     "textPosX": 4,
-    "textPosY": 4,
+    "textPosY": 14,
     "timeDayDivisor": 24000,
     "timeTotalDivisor": 24000
   },

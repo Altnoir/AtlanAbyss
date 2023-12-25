@@ -971,7 +971,7 @@ onEvent('item.registry', event => {
   .color(0xE7FFCB)
   .noBlock()
   
-  for (let i = 0; i < colors.length; i++) {
+  for (let i = 0; i < colors.length; i++)
 	  event.create('number_' + i)
 	  .displayName(`Liquified Logic (${i})`)
 	  .thinTexture(colors[i])
@@ -988,7 +988,7 @@ onEvent('item.registry', event => {
 	  .stillTexture('kubejs:block/matrix_still')
 	  .flowingTexture('kubejs:block/matrix_flow')
 	  .noBlock()
-  }
+	  
   })
   
   // onEvent('item.registry.armor_tiers', event => {

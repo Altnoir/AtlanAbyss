@@ -1,0 +1,80 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§9Cosmodiver\",time:257,url:\"https://music.163.com/song/media/outer/url?id=2104656944.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§9ヘヴンリィ\",time:194,url:\"https://music.163.com/song/media/outer/url?id=2104657878.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§9閃耀\",time:260,url:\"https://music.163.com/song/media/outer/url?id=2104656946.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§9Monodrate\",time:317,url:\"https://music.163.com/song/media/outer/url?id=2104657879.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§9トワイライト\",time:292,url:\"https://music.163.com/song/media/outer/url?id=2104656947.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      }
+    ]
+}
+

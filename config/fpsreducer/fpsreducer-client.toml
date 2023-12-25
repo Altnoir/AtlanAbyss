@@ -23,9 +23,9 @@
 	suppressSound = true
 	#Suppression master volume ratio in inactive (0-100).
 	#Range: 0 ~ 100
-	suppressedVolume = 30
+	suppressedVolume = 50
 	#Enable HUD.
-	hudEnabled = true
+	hudEnabled = false
 	#Reference position of HUD.
 	#Range: 1 ~ 8
 	hudReferencePos = 7

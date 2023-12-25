@@ -1,0 +1,9 @@
+{
+    /* 
+     * Backend mode used by quartz
+     * Automatic will try to use the best available, and fallback as necessary
+     * Default: Automatic
+     * Allowed Values: Vulkan10, OpenGL33, Automatic, 
+     */
+    mode: "Automatic"
+}
