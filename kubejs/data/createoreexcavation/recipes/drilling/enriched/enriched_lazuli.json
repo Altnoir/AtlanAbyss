@@ -1,0 +1,27 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "item": "createoreexcavation:netherite_drill"
+  },
+  "name": "{\"translate\":\"ore.kubejs.enriched_lazuli\"}",
+  "weight": 5,
+  "ticks": 20,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 96,
+  "amountMin": 20.0,
+  "amountMax": 60.0,
+  "output": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "minecraft:lapis_lazuli",
+      "chance": 0.5
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 500
+  }
+}

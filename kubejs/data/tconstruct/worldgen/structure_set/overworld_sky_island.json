@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "tconstruct:end_slime_island",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 14357800,
+    "spacing": 140,
+    "separation": 15,
+    "type": "minecraft:random_spread"
+  }
+}

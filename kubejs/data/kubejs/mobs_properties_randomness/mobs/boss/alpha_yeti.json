@@ -1,0 +1,14 @@
+{
+    "mob_id": "twilightforest:alpha_yeti",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max health for Alpha Yeti",
+            "amount": {
+                "min": 10,
+                "max": 15
+            },
+            "operation": "multiply_total"
+        }
+    ]
+}

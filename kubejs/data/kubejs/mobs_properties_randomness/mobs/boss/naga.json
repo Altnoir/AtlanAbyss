@@ -1,0 +1,11 @@
+{
+    "mob_id": "twilightforest:naga",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max health for Naga",
+            "amount": 300,
+            "operation": "addition"
+        }
+    ]
+}

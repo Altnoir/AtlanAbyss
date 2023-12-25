@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.emerald\"}",
+  "weight": 5,
+  "ticks": 800,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 512,
+  "amountMin": 0.2,
+  "amountMax": 1.0,
+  "output": [
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

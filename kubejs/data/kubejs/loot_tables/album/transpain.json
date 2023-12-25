@@ -1,0 +1,110 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7Oxydlate\",time:302,url:\"https://music.163.com/song/media/outer/url?id=1842562853.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7mirror\",time:239,url:\"https://music.163.com/song/media/outer/url?id=1842562854.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7ガラスアゲハ (Feryquitous JazzRemix)\",time:222,url:\"https://music.163.com/song/media/outer/url?id=1842562855.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7Othello syndrome\",time:256,url:\"https://music.163.com/song/media/outer/url?id=1842562856.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7Drop Role\",time:240,url:\"https://music.163.com/song/media/outer/url?id=1842562857.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7Evil Bubble\",time:268,url:\"https://music.163.com/song/media/outer/url?id=1842562858.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§7Transpain\",time:271,url:\"https://music.163.com/song/media/outer/url?id=1842562859.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      }
+    ]
+}
+

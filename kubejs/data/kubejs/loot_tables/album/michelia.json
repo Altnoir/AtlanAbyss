@@ -1,0 +1,95 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§5ミシュメリア\",time:279,trans_name:\"不幸重叠之花\",url:\"https://music.163.com/song/media/outer/url?id=2046728397.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§5Fragile Utopia\",time:186,url:\"https://music.163.com/song/media/outer/url?id=2046728398.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§5オッドアイ・リリィ\",time:216,trans_name:\"奥黛伊·莉莉\",url:\"https://music.163.com/song/media/outer/url?id=2046733657.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§5Tuliparfeit\",time:229,url:\"https://music.163.com/song/media/outer/url?id=2046733658.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§5逆沙華\",time:297,url:\"https://music.163.com/song/media/outer/url?id=2046728399.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§5Lucid Hallucination\",time:214,url:\"https://music.163.com/song/media/outer/url?id=2046733659.mp3\",vip:0b}}"
+                  }
+                ],
+                "name": "netmusic:music_cd"
+            }                                                                           
+          ]
+      }
+    ]
+}
+

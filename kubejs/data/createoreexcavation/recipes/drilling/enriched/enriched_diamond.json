@@ -1,0 +1,27 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "item": "createoreexcavation:netherite_drill"
+  },
+  "name": "{\"translate\":\"ore.kubejs.enriched_diamond\"}",
+  "weight": 2,
+  "ticks": 80,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 2.0,
+  "amountMax": 4.0,
+  "output": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond",
+      "chance": 0.5
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 500
+  }
+}

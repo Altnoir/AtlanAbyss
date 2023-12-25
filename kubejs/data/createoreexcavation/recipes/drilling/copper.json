@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.copper\"}",
+  "weight": 40,
+  "ticks": 400,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 10.0,
+  "amountMax": 30.0,
+  "output": [
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

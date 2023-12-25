@@ -1,0 +1,115 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": {
+                    "min": {
+                        "min": 1,
+                        "max": 5
+                    },
+                    "max": 5
+                },
+                "max": {
+                    "min": 5,
+                    "max": {
+                        "min": 5,
+                        "max": 20
+                    }
+                }
+            },
+            "entries": [         
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "kubejs:lucky/album"
+                },  
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 6,
+                    "name": "kubejs:lucky/cogwheel"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "kubejs:lucky/create"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 4,
+                    "name": "kubejs:lucky/crushed_raw_ore"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "kubejs:lucky/eat"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "kubejs:lucky/gun"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "kubejs:lucky/gun_plug"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "kubejs:lucky/mechanical"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 4,
+                    "name": "kubejs:lucky/move"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "kubejs:lucky/pipe"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 4,
+                    "name": "kubejs:lucky/power"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 6,
+                    "name": "kubejs:lucky/redstone"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "kubejs:lucky/tools"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "kubejs:lucky/toy"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "kubejs:lucky/uma_card"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "kubejs:lucky/uma_crystal"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 4,
+                    "name": "kubejs:lucky/uma_skill_book"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 6,
+                    "name": "kubejs:lucky/uma_supply_book"
+                }
+                
+            ]
+        }
+    ]
+}

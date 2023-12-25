@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.uranium\"}",
+  "weight": 7,
+  "ticks": 1200,
+  "biomeWhitelist": "kubejs:is_inversia",
+  "stress": 512,
+  "amountMin": 10.0,
+  "amountMax": 30.0,
+  "output": [
+    {
+      "item": "kubejs:raw_uranium"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 500
+  }
+}

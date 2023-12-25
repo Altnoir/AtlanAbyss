@@ -1,0 +1,167 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": {
+                    "min": 1,
+                    "max": 4
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:turntable"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:mechanical_piston"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:sticky_mechanical_piston"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:piston_extension_pole",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:gantry_carriage"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:gantry_shaft",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:mechanical_bearing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:clockwork_bearing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:rope_pulley"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:elevator_pulley"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:cart_assembler"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "create:linear_chassis",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "create:radial_chassis",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 16
+                            }
+                        }
+                    ]
+                    
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:sticker"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:contraption_controls"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:portable_storage_interface"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:sail_frame",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 16
+                            }
+                        }
+                    ]
+                    
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:portable_fluid_interface"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "create:track",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 16,
+                                "max": 32
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

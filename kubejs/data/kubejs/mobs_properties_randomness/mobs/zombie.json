@@ -1,0 +1,117 @@
+{
+    "mob_id": "minecraft:zombie",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "+20hp for Zombies",
+            "amount": {
+                "min": 20,
+                "max": 30
+            },
+            "operation": "addition",
+            "world_whitelist": {
+                "biomes": [
+                    "twilightforest:clearing",
+                    "twilightforest:dark_forest",
+                    "twilightforest:dark_forest_center",
+                    "twilightforest:dense_forest",
+                    "twilightforest:dense_mushroom_forest",
+                    "twilightforest:enchanted_forest",
+                    "twilightforest:final_plateau",
+                    "twilightforest:fire_swamp",
+                    "twilightforest:firefly_forest",
+                    "twilightforest:forest",
+                    "twilightforest:glacier",
+                    "twilightforest:highlands",
+                    "twilightforest:lake",
+                    "twilightforest:mushroom_forest",
+                    "twilightforest:oak_savannah",
+                    "twilightforest:snowy_forest",
+                    "twilightforest:spooky_forest",
+                    "twilightforest:stream",
+                    "twilightforest:swamp",
+                    "twilightforest:thornlands"
+                ]
+            }
+        },
+        {
+            "id": "minecraft:generic.armor",
+            "modifier_name": "Base armor for Zombies",
+            "amount": {
+                "min": 10,
+                "max": 25,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -5,
+                    "normal": 0,
+                    "hard": 5
+                }
+            },
+            "operation": "addition",
+            "world_whitelist": {
+                "biomes": [
+                    "twilightforest:clearing",
+                    "twilightforest:dark_forest",
+                    "twilightforest:dark_forest_center",
+                    "twilightforest:dense_forest",
+                    "twilightforest:dense_mushroom_forest",
+                    "twilightforest:enchanted_forest",
+                    "twilightforest:final_plateau",
+                    "twilightforest:fire_swamp",
+                    "twilightforest:firefly_forest",
+                    "twilightforest:forest",
+                    "twilightforest:glacier",
+                    "twilightforest:highlands",
+                    "twilightforest:lake",
+                    "twilightforest:mushroom_forest",
+                    "twilightforest:oak_savannah",
+                    "twilightforest:snowy_forest",
+                    "twilightforest:spooky_forest",
+                    "twilightforest:stream",
+                    "twilightforest:swamp",
+                    "twilightforest:thornlands"
+                ]
+            }
+        },
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "attack_damage for Zombies",
+            "amount": {
+                "min": 10,
+                "max": 15,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -3,
+                    "normal": 0,
+                    "hard": 10
+                }
+            },
+            "operation": "addition",
+            "world_whitelist": {
+                "biomes": [
+                    "twilightforest:clearing",
+                    "twilightforest:dark_forest",
+                    "twilightforest:dark_forest_center",
+                    "twilightforest:dense_forest",
+                    "twilightforest:dense_mushroom_forest",
+                    "twilightforest:enchanted_forest",
+                    "twilightforest:final_plateau",
+                    "twilightforest:fire_swamp",
+                    "twilightforest:firefly_forest",
+                    "twilightforest:forest",
+                    "twilightforest:glacier",
+                    "twilightforest:highlands",
+                    "twilightforest:lake",
+                    "twilightforest:mushroom_forest",
+                    "twilightforest:oak_savannah",
+                    "twilightforest:snowy_forest",
+                    "twilightforest:spooky_forest",
+                    "twilightforest:stream",
+                    "twilightforest:swamp",
+                    "twilightforest:thornlands"
+                ]
+            }
+            
+        }
+    ]
+}

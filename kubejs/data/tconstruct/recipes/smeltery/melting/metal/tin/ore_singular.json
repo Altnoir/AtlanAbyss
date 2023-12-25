@@ -1,0 +1,30 @@
+{
+  "type": "tconstruct:ore_melting",
+  "rate": "metal",
+  "ingredient": {
+    "type": "forge:difference",
+    "base": {
+      "tag": "forge:ores/tin"
+    },
+    "subtracted": [
+      {
+        "tag": "forge:ore_rates/sparse"
+      },
+      {
+        "tag": "forge:ore_rates/dense"
+      }
+    ]
+  },
+  "result": {
+    "fluid": "tconstruct:molten_tin",
+    "amount": 180
+  },
+  "temperature": 225,
+  "time": 98,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_silver",
+      "amount": 180
+    }
+  ]
+}

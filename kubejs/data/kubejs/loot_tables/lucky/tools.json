@@ -1,0 +1,77 @@
+{
+  "pools": [
+      {
+          "rolls": {
+              "min": 1,
+              "max": 2
+          },
+          "entries": [
+              {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "create:propeller"
+              },
+              {
+                "type": "minecraft:item",
+                "weight": 1,
+                "name": "create:red_sand_paper"
+              },
+              {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "create:wrench"
+              },
+              {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "create:goggles"
+              },
+              {
+                "type": "minecraft:item",
+                "weight": 2,
+                "name": "create:copper_backtank"
+              },
+              {
+                "type": "minecraft:item",
+                "weight": 1,
+                "name": "create:copper_diving_helmet"
+              },
+              {
+                "type": "minecraft:item",
+                "weight": 1,
+                "name": "create:copper_diving_boots"
+              },
+              {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "create:whisk"
+              },
+              {
+                  "type": "minecraft:item",
+                  "weight": 1,
+                  "name": "pneumaticcraft:drill_bit_compressed_iron"
+              },
+              {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "createaddition:capacitor"
+              },
+              {
+                  "type": "minecraft:item",
+                  "weight": 3,
+                  "name": "create:brass_hand"
+              },
+              {
+                  "type": "minecraft:item",
+                  "weight": 1,
+                  "name": "pneumaticcraft:jackhammer"
+              },
+              {
+                  "type": "minecraft:item",
+                  "weight": 1,
+                  "name": "sophisticatedbackpacks:backpack"
+              }
+          ]
+      }
+  ]
+}

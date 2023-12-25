@@ -1,0 +1,14 @@
+{
+    "mob_id": "twilightforest:carminite_ghastling",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for carminite_ghastling",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "operation": "multiply_total"
+        }
+    ]
+}

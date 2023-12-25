@@ -1,0 +1,22 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "item": "createoreexcavation:netherite_drill"
+  },
+  "name": "{\"translate\":\"ore.kubejs.enriched_certus_quartz\"}",
+  "weight": 3,
+  "ticks": 20,
+  "biomeWhitelist": "forge:is_end",
+  "stress": 128,
+  "amountMin": 15.0,
+  "amountMax": 40.0,
+  "output": [
+    {
+      "item": "ae2:certus_quartz_dust"
+    },
+    {
+      "item": "ae2:certus_quartz_dust",
+      "chance": 0.5
+    }
+  ]
+}

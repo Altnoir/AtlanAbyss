@@ -1,0 +1,27 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "item": "createoreexcavation:netherite_drill"
+  },
+  "name": "{\"translate\":\"ore.kubejs.enriched_redstone\"}",
+  "weight": 5,
+  "ticks": 30,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 128,
+  "amountMin": 20.0,
+  "amountMax": 60.0,
+  "output": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:redstone",
+      "chance": 0.5
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 500
+  }
+}

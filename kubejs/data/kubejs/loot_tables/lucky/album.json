@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_transpain"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_indigrotto"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_blurred_mind"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_michelia"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_unity_band"
+                }
+            ]
+        }
+    ]
+}
+

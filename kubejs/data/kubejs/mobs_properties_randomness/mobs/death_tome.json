@@ -1,0 +1,14 @@
+{
+    "mob_id": "twilightforest:death_tome",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for Death Tome",
+            "amount": {
+                "min": 10,
+                "max": 50
+            },
+            "operation": "addition"
+        }
+    ]
+}

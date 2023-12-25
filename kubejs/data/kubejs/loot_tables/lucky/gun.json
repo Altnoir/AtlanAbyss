@@ -1,0 +1,121 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "tac:m1911"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 12,
+                    "name": "tac:glock_17"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 9,
+                    "name": "tac:glock_18"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "tac:db_short"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "tac:m870_classic"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "tac:m1a1_smg"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "tac:micro_uzi"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "tac:m24"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                          "function": "minecraft:set_nbt",
+                          "tag": "{AmmoCount:1}"
+                        }
+                      ],
+                    "name": "tac:rpg7"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 20,
+                    "name": "kubejs:pistol_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 48,
+                                "max": 60
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "kubejs:smg_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 42,
+                                "max": 60
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "kubejs:shotgun_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 36
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "kubejs:rifle_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

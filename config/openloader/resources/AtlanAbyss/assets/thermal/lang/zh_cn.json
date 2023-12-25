@@ -1,0 +1,20 @@
+{
+  "block.thermal.deepslate_lead_ore": "颠倒域铅矿石",
+  "item.thermal.nuke_grenade": "§a核手榴弹",
+  "item.thermal.nuke_grenade.desc": "清理用。",
+  "block.thermal.nuke_tnt": "§a核弹",
+  "entity.thermal.nuke_tnt": "§a核弹",
+  "block.thermal.nuke_tnt.desc": "藏好自己，做好清理。",
+  "entity.thermal.phyto_tnt": "PNT",
+  "subtitles.thermal.block.machine_sawmill": "反应物提取机：嗡嗡",
+  "block.thermal.machine_press": "贸易站",
+	"block.thermal.machine_sawmill": "反应物提取机",
+	"block.thermal.machine_frame": "§b殷钢机器框架",
+	"info.thermal.machine_press.0": "自动把物品交换为硬币，反之亦然。",
+	"info.thermal.machine_press.1": "需要从亚马龙购买一张交易卡。",
+	"info.thermal.machine_press.2": "感谢您的购买!",
+	"info.thermal.machine_sawmill.0": "自动从玻璃罐中提取出反应物。",
+	"info.thermal.machine_sawmill.1": "（不返还玻璃罐）",
+	"info.thermal.machine_sawmill.2": "",
+	"msg.fuelingStation.link": "现在从位置链接"
+}

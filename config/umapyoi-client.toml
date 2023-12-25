@@ -1,0 +1,23 @@
+
+#Client settings
+[client]
+	#Determines whether to render vanilla armor slot's model.
+	#Player's armor won't render after closing this.
+	vanilla_armor_render = false
+	#Uma's selected skill and motivation won't render after closing this.
+	overlay_switch = true
+	#After enabling, some details need to be pressed to display.
+	tooltip_switch = true
+	#Determines whether to render model's hiden parts.
+	#Hiden parts like breasts won't render after closing this.
+	hiden_parts_render = false
+	#Determines whether to render player's elytra after closed vanilla armor render.
+	#Player's elytra won't render after closing this.
+	elytra_render = true
+	#Determining the interval tick between twice ear animation.
+	#Range: > 10
+	ear_animation_interval = 100
+	#Determining the interval tick between twice tail animation.
+	#Range: > 10
+	tail_animation_interval = 200
+

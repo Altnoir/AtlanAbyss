@@ -1,0 +1,44 @@
+{
+    "mob_id": "twilightforest:carminite_golem",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for carminite_golem",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "operation": "multiply_total"
+        },
+        {
+            "id": "minecraft:generic.armor",
+            "modifier_name": "Base armor for carminite_golem",
+            "amount": {
+                "min": 3,
+                "max": 7,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -3,
+                    "normal": 0,
+                    "hard": 3
+                }
+            },
+            "operation": "multiply_total"
+        },
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "attack_damage for carminite_golem",
+            "amount": {
+                "min": 25,
+                "max": 30,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -3,
+                    "normal": 0,
+                    "hard": 15
+                }
+            },
+            "operation": "addition"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": {
+                    "min": 1,
+                    "max": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:hand_crank"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:windmill_bearing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "create:white_sail",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 32
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:water_wheel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:large_water_wheel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:speedometer"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:stressometer"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:empty_blaze_burner"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:steam_engine"
+                }
+            ]
+        }
+    ]
+}
+

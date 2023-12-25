@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.silver\"}",
+  "weight": 14,
+  "ticks": 500,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 8.0,
+  "amountMax": 24.0,
+  "output": [
+    {
+      "item": "thermal:raw_silver"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

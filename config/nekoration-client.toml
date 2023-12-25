@@ -1,0 +1,13 @@
+
+#Painting configuration settings
+[painting]
+	#Whether to cache paintings to this client, and use them for rendering.(Default to true)
+	useImageRendering = true
+	#Whether to simplify the lighting calculation when rendering paintings.(Default to true)
+	simplifyRendering = true
+	#Whether to display debug information at the bottom of paintings.(Default to false)
+	debugMode = false
+	#The maximum undo/redo steps allowed on this client.(Default to 15)
+	#Range: 2 ~ 30
+	maxUndoLimit = 15
+

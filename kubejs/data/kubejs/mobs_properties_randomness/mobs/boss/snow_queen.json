@@ -1,0 +1,11 @@
+{
+    "mob_id": "twilightforest:snow_queen",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max health for Snow Queen",
+            "amount": 1800,
+            "operation": "addition"
+        }
+    ]
+}

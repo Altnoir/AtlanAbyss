@@ -1,0 +1,14 @@
+{
+    "mob_id": "twilightforest:helmet_crab",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for helmet_crab",
+            "amount": {
+                "min": 2,
+                "max": 5
+            },
+            "operation": "multiply_total"
+        }
+    ]
+}

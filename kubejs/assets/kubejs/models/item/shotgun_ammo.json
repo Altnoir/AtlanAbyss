@@ -1,0 +1,7 @@
+{
+	"parent": "kubejs:item/pistol_ammo",
+	"textures": {
+	  "particle": "kubejs:item/shotgun_ammo",
+	  "0": "kubejs:item/shotgun_ammo"
+	}
+  }

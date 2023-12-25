@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.diamond\"}",
+  "weight": 5,
+  "ticks": 1000,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 512,
+  "amountMin": 0.5,
+  "amountMax": 2.0,
+  "output": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

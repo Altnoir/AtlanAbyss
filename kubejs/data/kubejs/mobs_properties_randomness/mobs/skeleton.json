@@ -1,0 +1,142 @@
+{
+    "mob_id": "minecraft:skeleton",
+    "equipment": {
+        "main_hand": {
+            "override": true,
+            "items": [
+                {
+                    "id": "minecraft:bow",
+                    "enchantments": [
+                        {
+                            "id": "minecraft:power",
+                            "level": 20,
+                            "chance": {
+                                "value": 0.5
+                            }
+                        },
+                        {
+                            "id": "minecraft:punch",
+                            "level": 5,
+                            "chance": {
+                                "value": 0.5
+                            }
+                        },
+                        {
+                            "id": "minecraft:flame",
+                            "level": 1,
+                            "chance": {
+                                "value": 0.5
+                            }
+                        }
+                    ],
+                    "world_whitelist": {
+                        "biomes": [
+                            "twilightforest:clearing",
+                            "twilightforest:dark_forest",
+                            "twilightforest:dense_forest",
+                            "twilightforest:dense_mushroom_forest",
+                            "twilightforest:enchanted_forest",
+                            "twilightforest:final_plateau",
+                            "twilightforest:fire_swamp",
+                            "twilightforest:firefly_forest",
+                            "twilightforest:forest",
+                            "twilightforest:glacier",
+                            "twilightforest:highlands",
+                            "twilightforest:lake",
+                            "twilightforest:mushroom_forest",
+                            "twilightforest:oak_savannah",
+                            "twilightforest:snowy_forest",
+                            "twilightforest:spooky_forest",
+                            "twilightforest:stream",
+                            "twilightforest:swamp",
+                            "twilightforest:thornlands"
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "attributes": [
+        {
+            "id": "minecraft:generic.movement_speed",
+            "modifier_name": "Speed Skeleton",
+            "amount": 0.15,
+            "operation": "multiply_base",
+            "world_whitelist": {
+                "biomes": [
+                    "twilightforest:clearing",
+                    "twilightforest:dark_forest",
+                    "twilightforest:dense_forest",
+                    "twilightforest:dense_mushroom_forest",
+                    "twilightforest:enchanted_forest",
+                    "twilightforest:final_plateau",
+                    "twilightforest:fire_swamp",
+                    "twilightforest:firefly_forest",
+                    "twilightforest:forest",
+                    "twilightforest:glacier",
+                    "twilightforest:highlands",
+                    "twilightforest:lake",
+                    "twilightforest:mushroom_forest",
+                    "twilightforest:oak_savannah",
+                    "twilightforest:snowy_forest",
+                    "twilightforest:spooky_forest",
+                    "twilightforest:stream",
+                    "twilightforest:swamp",
+                    "twilightforest:thornlands"
+                ]
+            }
+        },
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "+20hp for Skeleton",
+            "amount": {
+                "min": 10,
+                "max": 20
+            },
+            "operation": "addition",
+            "world_whitelist": {
+                "biomes": [
+                    "twilightforest:clearing",
+                    "twilightforest:dark_forest",
+                    "twilightforest:dense_forest",
+                    "twilightforest:dense_mushroom_forest",
+                    "twilightforest:enchanted_forest",
+                    "twilightforest:final_plateau",
+                    "twilightforest:fire_swamp",
+                    "twilightforest:firefly_forest",
+                    "twilightforest:forest",
+                    "twilightforest:glacier",
+                    "twilightforest:highlands",
+                    "twilightforest:lake",
+                    "twilightforest:mushroom_forest",
+                    "twilightforest:oak_savannah",
+                    "twilightforest:snowy_forest",
+                    "twilightforest:spooky_forest",
+                    "twilightforest:stream",
+                    "twilightforest:swamp",
+                    "twilightforest:thornlands"
+                ]
+            }
+        },
+        {
+            "id": "minecraft:generic.armor",
+            "modifier_name": "Base armor for Skeleton",
+            "amount": {
+                "min": 30,
+                "max": 50,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -10,
+                    "normal": 0,
+                    "hard": 10
+                }
+            },
+            "operation": "addition",
+            "world_whitelist": {
+                "biomes": [
+                    "twilightforest:dark_forest_center"
+                ]
+            }
+        }
+    ]
+}

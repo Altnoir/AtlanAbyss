@@ -1,0 +1,146 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": {
+                    "min": 2,
+                    "max": 4
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:adv_guts_card\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:adv_speed_card\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:adv_stamina_card\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:adv_strength_card\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:adv_wisdom_card\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:sr_agnus_tachyon\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:5,ranking:\"ssr\",support_card:\"umapyoi:guts_master_card\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_nbt",
+                      "tag": "{maxDamage:5,ranking:\"ssr\",support_card:\"umapyoi:speed_master_card\"}"
+                    }
+                  ],
+                  "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:5,ranking:\"ssr\",support_card:\"umapyoi:ssr_agnus_tachyon\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "function": "minecraft:set_nbt",
+                      "tag": "{maxDamage:5,ranking:\"ssr\",support_card:\"umapyoi:ssr_fine_motion\"}"
+                    }
+                  ],
+                  "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:6,ranking:\"ssr\",support_card:\"umapyoi:ssr_kitasan_black\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:5,ranking:\"ssr\",support_card:\"umapyoi:ssr_ks_miracle\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{maxDamage:5,ranking:\"ssr\",support_card:\"umapyoi:ssr_oguri_cap\"}"
+                      }
+                    ],
+                    "name": "umapyoi:support_card"
+                }                                                                         
+              ]
+        }
+    ]
+}
+

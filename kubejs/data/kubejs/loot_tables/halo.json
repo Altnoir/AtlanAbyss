@@ -1,0 +1,175 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821901,display:{Name:'[{\"translate\":\"kubejs.alice.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,11],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,12],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,13],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821902,display:{Name:'[{\"translate\":\"kubejs.azusa.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,14],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,15],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,16],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821903,display:{Name:'[{\"translate\":\"kubejs.shiroko.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,17],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,18],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,19],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821904,display:{Name:'[{\"translate\":\"kubejs.mika.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,20],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,21],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,22],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821905,display:{Name:'[{\"translate\":\"kubejs.yuuka.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,23],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,24],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,25],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821906,display:{Name:'[{\"translate\":\"kubejs.koharu.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,26],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,27],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,28],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821907,display:{Name:'[{\"translate\":\"kubejs.noa.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,29],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,30],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,31],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821908,display:{Name:'[{\"translate\":\"kubejs.midori.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,32],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,33],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,34],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821909,display:{Name:'[{\"translate\":\"kubejs.momoi.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,35],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,36],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,37],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821910,display:{Name:'[{\"translate\":\"kubejs.mari.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,38],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,39],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,40],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821911,display:{Name:'[{\"translate\":\"kubejs.hoshino.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,41],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,42],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,43],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821912,display:{Name:'[{\"translate\":\"kubejs.iroha.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,44],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,45],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,46],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821913,display:{Name:'[{\"translate\":\"kubejs.izuna.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,47],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,48],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,49],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821914,display:{Name:'[{\"translate\":\"kubejs.hanako.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,50],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,51],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,52],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821915,display:{Name:'[{\"translate\":\"kubejs.hasumi.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,53],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,54],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,55],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
+                }
+                
+            ]
+        }
+    ]
+}

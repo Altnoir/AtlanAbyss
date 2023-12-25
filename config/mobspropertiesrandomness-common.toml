@@ -1,0 +1,7 @@
+#If true mob attacks with Tinker tools will use the Tinker attack method. Might have side effects
+"TiCon Attack" = true
+#If true creeper lingering clouds size changes based off creeper explosion radius
+"Better Creeper Lingering" = true
+#If true, all the loaded JSONs will be logged in the mobspropertiesrandomness.log file.
+Debug = false
+

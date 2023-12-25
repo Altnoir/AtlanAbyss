@@ -1,0 +1,14 @@
+{
+  "block.tconstruct.molten_uranium_fluid": "§a熔融铀",
+  "fluid.tconstruct.molten_uranium": "§a熔融铀",
+  "fluid.tconstruct.flowing_molten_uranium": "§a流动的熔融铀",
+  "item.tconstruct.molten_uranium_bucket": "§a熔融铀桶",
+  "material.tconstruct.uranium": "§a铀",
+  "item.tconstruct.necronium_bone": "§a辐射之骨",
+  "material.tconstruct.necronium": "§a辐射之骨",
+  "block.tconstruct.molten_osmium_fluid": "§3熔融锇",
+  "fluid.tconstruct.molten_osmium": "§3熔融锇",
+  "fluid.tconstruct.flowing_molten_osmium": "§3流动的熔融锇",
+  "item.tconstruct.molten_osmium_bucket": "§3熔融锇桶",
+  "material.tconstruct.osmium": "§3锇"
+}

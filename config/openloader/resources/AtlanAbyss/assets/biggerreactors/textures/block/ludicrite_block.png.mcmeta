@@ -1,0 +1,7 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [ "biggerreactors:block/ludicrite_block_ctm" ]
+	}
+}

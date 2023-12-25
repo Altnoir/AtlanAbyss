@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.redstone\"}",
+  "weight": 40,
+  "ticks": 220,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 10.0,
+  "amountMax": 30.0,
+  "output": [
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

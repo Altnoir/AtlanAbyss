@@ -1,0 +1,18 @@
+{
+  "type": "createoreexcavation:extracting",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.oil\"}",
+  "weight": 10,
+  "ticks": 20,
+  "biomeBlacklist": "kubejs:is_oil",
+  "stress": 256,
+  "neverFinite": true,
+  "amountMin": 1.0,
+  "amountMax": 2.0,
+  "output": {
+    "fluid": "thermal:crude_oil",
+    "amount": 10
+  }
+}

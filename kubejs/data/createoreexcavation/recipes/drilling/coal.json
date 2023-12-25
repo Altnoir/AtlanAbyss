@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.coal\"}",
+  "weight": 70,
+  "ticks": 200,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 15.0,
+  "amountMax": 40.0,
+  "output": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

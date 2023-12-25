@@ -1,0 +1,37 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "tconstruct:ore_melting",
+        "rate": "metal",
+        "ingredient": {
+          "type": "forge:difference",
+          "base": {
+            "tag": "forge:ores/lead"
+          },
+          "subtracted": [
+            {
+              "tag": "forge:ore_rates/sparse"
+            },
+            {
+              "tag": "forge:ore_rates/dense"
+            }
+          ]
+        },
+        "result": {
+          "fluid": "tconstruct:molten_lead",
+          "amount": 180
+        },
+        "temperature": 330,
+        "time": 109,
+        "byproducts": [
+          {
+            "fluid": "tconstruct:molten_tungsten",
+            "amount": 180
+          }
+        ]
+      }
+    }
+  ]
+}

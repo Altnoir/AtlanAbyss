@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "inversia:molten_seeps",
+        "inversia:geodeial_caverns",
+        "inversia:crimson_delta",
+        "inversia:glacial_delta",
+        "inversia:obsidian_spirals",
+        "inversia:warped_delta"
+    ]
+  }

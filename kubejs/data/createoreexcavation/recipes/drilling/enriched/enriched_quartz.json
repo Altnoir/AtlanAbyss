@@ -1,0 +1,22 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "item": "createoreexcavation:netherite_drill"
+  },
+  "name": "{\"translate\":\"ore.kubejs.enriched_quartz\"}",
+  "weight": 4,
+  "ticks": 60,
+  "biomeWhitelist": "minecraft:is_nether",
+  "stress": 128,
+  "amountMin": 15.0,
+  "amountMax": 40.0,
+  "output": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "minecraft:quartz",
+      "chance": 0.5
+    }
+  ]
+}

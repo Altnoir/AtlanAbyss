@@ -1,0 +1,11 @@
+{
+    "mob_id": "twilightforest:knight_phantom",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max health for Knight Phantom",
+            "amount": 25,
+            "operation": "multiply_total"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.cobalt\"}",
+  "weight": 12,
+  "ticks": 600,
+  "biomeWhitelist": "minecraft:is_nether",
+  "stress": 512,
+  "amountMin": 2.0,
+  "amountMax": 4.0,
+  "output": [
+    {
+      "item": "tconstruct:raw_cobalt"
+    },
+    {
+      "item": "minecraft:netherrack",
+      "chance": 0.1
+    }
+  ]
+}

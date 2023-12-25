@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.lead\"}",
+  "weight": 20,
+  "ticks": 600,
+  "biomeWhitelist": "kubejs:is_inversia",
+  "stress": 256,
+  "amountMin": 10.0,
+  "amountMax": 40.0,
+  "output": [
+    {
+      "item": "thermal:raw_lead"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

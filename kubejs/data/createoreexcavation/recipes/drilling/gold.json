@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.gold\"}",
+  "weight": 15,
+  "ticks": 600,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 192,
+  "amountMin": 2.0,
+  "amountMax": 4.0,
+  "output": [
+    {
+      "item": "minecraft:raw_gold"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

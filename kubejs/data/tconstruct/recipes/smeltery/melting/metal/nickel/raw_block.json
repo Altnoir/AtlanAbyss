@@ -1,0 +1,26 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "tconstruct:ore_melting",
+        "rate": "metal",
+        "ingredient": {
+          "tag": "forge:storage_blocks/raw_nickel"
+        },
+        "result": {
+          "fluid": "tconstruct:molten_nickel",
+          "amount": 810
+        },
+        "temperature": 950,
+        "time": 389,
+        "byproducts": [
+          {
+            "fluid": "tconstruct:molten_iron",
+            "amount": 810
+          }
+        ]
+      }
+    }
+  ]
+}

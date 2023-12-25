@@ -1,0 +1,22 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.bismuth\"}",
+  "weight": 25,
+  "ticks": 600,
+  "biomeWhitelist": "forge:is_end",
+  "stress": 256,
+  "amountMin": 1.0,
+  "amountMax": 2.0,
+  "output": [
+    {
+      "item": "kubejs:raw_bismuth"
+    },
+    {
+      "item": "minecraft:end_stone",
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.certus_quartz\"}",
+  "weight": 20,
+  "ticks": 200,
+  "biomeWhitelist": "forge:is_end",
+  "stress": 256,
+  "amountMin": 20.0,
+  "amountMax": 50.0,
+  "output": [
+    {
+      "item": "ae2:certus_quartz_dust"
+    },
+    {
+      "item": "minecraft:end_stone",
+      "chance": 0.1
+    }
+  ]
+}

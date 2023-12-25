@@ -1,0 +1,6 @@
+
+#General settings for Inversia
+[common]
+	#Enable default methods of entering / leaving this dimension. Default: true
+	teleporting = true
+

@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.tin\"}",
+  "weight": 18,
+  "ticks": 400,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 8.0,
+  "amountMax": 24.0,
+  "output": [
+    {
+      "item": "thermal:raw_tin"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

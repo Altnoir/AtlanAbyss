@@ -1,0 +1,26 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "recipe": {
+        "type": "tconstruct:ore_melting",
+        "rate": "metal",
+        "ingredient": {
+          "tag": "forge:raw_materials/silver"
+        },
+        "result": {
+          "fluid": "tconstruct:molten_silver",
+          "amount": 90
+        },
+        "temperature": 790,
+        "time": 90,
+        "byproducts": [
+          {
+            "fluid": "tconstruct:molten_platinum",
+            "amount": 90
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.iron\"}",
+  "weight": 30,
+  "ticks": 400,
+  "biomeWhitelist": "forge:is_overworld",
+  "stress": 256,
+  "amountMin": 10.0,
+  "amountMax": 25.0,
+  "output": [
+    {
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

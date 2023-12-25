@@ -1,0 +1,349 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 5
+            },
+            "entries": [  
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:track_signal"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:track_observer"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "railways:track_coupler"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "create:stockpile_switch"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "create:content_observer"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:elevator_pulley"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:brass_tunnel"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:brass_casing",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": {
+                                    "min": 2,
+                                    "max": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "create:railway_casing",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": {
+                                    "min": 1,
+                                    "max": 2
+                                },
+                                "max": {
+                                    "min": 2,
+                                    "max": 3
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:andesite_casing",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },                                      
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:copper_casing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:super_glue"
+                }, 
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "createaddition:spool"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:display_board",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:analog_lever",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:metal_bracket",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "createaddition:straw"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "create:builders_tea",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:placard",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:turntable",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:andesite_scaffolding",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 12,
+                                "max": 18
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "create:copper_scaffolding",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 12,
+                                "max": 18
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:metal_girder",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:industrial_iron_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 16,
+                                "max": 64
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:copycat_step",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "create:copycat_panel",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "create:filter",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "create:mechanical_arm"
+                },               
+                {
+                    "type": "minecraft:item",
+                    "weight": 14,
+                    "name": "create:mechanical_crafter",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": {
+                                    "min": 1,
+                                    "max": {
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "create:controls"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "createaddition:tesla_coil"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "createaddition:modular_accumulator",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                    
+                }
+            ]
+        }
+    ]
+}

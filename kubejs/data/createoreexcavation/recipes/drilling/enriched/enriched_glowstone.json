@@ -1,0 +1,22 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "item": "createoreexcavation:netherite_drill"
+  },
+  "name": "{\"translate\":\"ore.kubejs.enriched_glowstone\"}",
+  "weight": 5,
+  "ticks": 30,
+  "biomeWhitelist": "minecraft:is_nether",
+  "stress": 128,
+  "amountMin": 10.0,
+  "amountMax": 30.0,
+  "output": [
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "chance": 0.5
+    }
+  ]
+}

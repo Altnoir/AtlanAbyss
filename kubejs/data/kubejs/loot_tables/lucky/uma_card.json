@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": {
+                    "min": 1,
+                    "max": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "umapyoi:uma_ticket"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "umapyoi:sr_uma_ticket"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "umapyoi:ssr_uma_ticket"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "umapyoi:card_ticket"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "umapyoi:sr_card_ticket"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "umapyoi:ssr_card_ticket"
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,18 @@
+{
+  "biome.inversia.molten_seeps": "熔渗",
+  "biome.inversia.obsidian_spirals": "黑曜石螺旋",
+  "biome.inversia.geodeial_caverns": "地质洞穴",
+  "biome.inversia.glacial_caverns": "冰川洞穴",
+  "biome.inversia.warped_obsidian": "扭曲黑曜石",
+  
+  "biome.inversia.crimson_delta": "绯红洞穴",
+  "biome.inversia.glacial_delta": "冰川洞穴",
+  "biome.inversia.warped_delta": "扭曲黑曜石",
+
+  "block.minecraft.bedrock.under": " ",
+  "block.minecraft.bedrock.above": " ",
+
+  "block.inversia.blazing_lichen": "炽热地衣",
+
+  "item.inversia.void_berries": "虚空浆果"
+}

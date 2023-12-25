@@ -1,0 +1,11 @@
+{
+    "mob_id": "twilightforest:lich",
+    "attributes": [
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max health for Lich",
+            "amount": 1400,
+            "operation": "addition"
+        }
+    ]
+}

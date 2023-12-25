@@ -1,0 +1,43 @@
+
+[Flavors]
+
+	[Flavors."Basic Flavors"]
+		#Whether to enable the Chorus Fruit flavor.
+		"Chorus Flavor" = true
+
+	[Flavors."Compatible Flavors"]
+
+		[Flavors."Compatible Flavors"."Enlightend Flavors"]
+			#Whether to enable the Jelly Ring flavor.
+			"Jelly Ring Flavor" = true
+			#Whether to enable the Zure Berry flavor.
+			"Zure Berry Flavor" = true
+
+		[Flavors."Compatible Flavors"."Oh The Biomes You'll Go Flavors"]
+			#Whether to enable the Ether Bulb flavor.
+			"Ether Bulb Flavor" = true
+			#Whether to enable the Nightshade Berry flavor.
+			"Nightshade Berry Flavor" = true
+
+[Effects]
+	#Whether to enable the "jelly-spreading" effect when Fuchsia Goo is removed by death or Chocolate Ringling.
+	"Fuchsia Goo Spread" = true
+	#Whether to enable the damage limitation of Space Diving.
+	"Space Diving Limitation" = true
+
+[Compatibility]
+
+	[Compatibility."Global Setting"]
+		#Whether to enable the food modifications for Vanilla and Compatible Mods.
+		"Enable Modifications" = true
+
+	[Compatibility."Specific Settings"]
+		#Whether to enable the modifications for Enlightend.
+		"Enlightend Modification" = true
+		#Whether to enable the modifications for End's Delight.
+		"End's Delight Compatibility" = true
+		#Whether to enable the modifications for Unusual End.
+		"Unusual End Compatibility" = true
+		#Whether to enable the modifications for Oh The Biomes You'll Go.
+		"Oh The Biomes You'll Go Compatibility" = true
+

@@ -1,0 +1,13 @@
+{
+    "name": "beyond_earth:oil_well/oil_well",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "projection": "rigid",
+          "element_type": "empty_pool_element"
+        }
+      }
+    ]
+  }

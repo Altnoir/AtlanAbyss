@@ -1,0 +1,23 @@
+{
+    "mob_id": "twilightforest:giant_miner",
+    "attributes": [
+        {
+            "id": "minecraft:generic.movement_speed",
+            "modifier_name": "Speedy Giant Miner",
+            "amount": 0.3,
+            "operation": "multiply_base"
+        },
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max health for Giant Miner",
+            "amount": 2920,
+            "operation": "addition"
+        },
+        {
+            "id": "minecraft:generic.knockback_resistance",
+            "modifier_name": "knockback_resistance for Giant Miner",
+            "amount": 1,
+            "operation": "addition"
+        }
+    ]
+}
