@@ -1,6 +1,6 @@
 <div align="center">
   
-[Bilibili](https://space.bilibili.com/256237451)
+[个人Bilibili主页](https://space.bilibili.com/256237451)
 
 
 **Languages/语言:** [中文](README.md) [**English**](README-en.md)
