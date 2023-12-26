@@ -288,6 +288,7 @@
     "kubejs.izuna.name":"§e泉奈的光环",
     "kubejs.hanako.name":"§e花子的光环",
     "kubejs.hasumi.name":"§e莲望的光环",
+    "kubejs.purana.name":"§c普拉娜的光环",
 
     "effect.kubejs.alice_powah":"§b爱丽丝之力",
 
@@ -349,6 +350,10 @@
     "tooltip.kubejs.hasumi":"§6虚爆之环",
     "tooltip.kubejs.hasumi1":"§6死亡时触发§e虚空湮灭",
     "tooltip.kubejs.hasumi2":"§6(消耗品)",
+
+    "tooltip.kubejs.purana":"§6幸运之环",
+    "tooltip.kubejs.purana1":"§6waw",
+    "tooltip.kubejs.purana2":"§6awa",
 
     "tooltip.kubejs.turtle_helmet1":"§6受到§e致命§6摔落伤害时，如果",
     "tooltip.kubejs.turtle_helmet2":"§6手持水桶，便自动触发§e落地水",

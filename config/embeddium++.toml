@@ -5,7 +5,7 @@
 		OnlyUpdateOnPositionChange = true
 		DynamicEntityLighting = true
 		#Allowed Values: OFF, SLOW, FAST, FASTEST, REALTIME
-		QualityMode = "REALTIME"
+		QualityMode = "OFF"
 		DynamicTileEntityLighting = true
 
 	#You can configure FPS overlay at the corner

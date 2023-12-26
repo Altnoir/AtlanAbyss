@@ -1,13 +1,13 @@
 // onEvent('recipes', event => {
-// 	let remove = (name) => {
-// 		event.remove({id:name})
-// 	}
+//     let remove = (name) => {
+//         event.remove({ id: name })
+//     }
 //     //存储驱动器
 //     remove('toms_storage:inventory_connector')
-// 	event.shapeless('toms_storage:ts.inventory_connector', [
-// 		'create:brass_casing',
-// 		'create:chute'
-// 	]).id("llmion:ts.inventory_connector")
+//     event.shapeless('toms_storage:ts.inventory_connector', [
+//         'create:brass_casing',
+//         'create:chute'
+//     ]).id("llmion:ts.inventory_connector")
 //     //存储终端
 //     remove('toms_storage:storage_terminal')
 //     event.shaped('toms_storage:ts.storage_terminal', [
@@ -43,15 +43,15 @@
 //         B: 'create:brass_tunnel'
 //     }).id("llmion:ts.trim")
 //     remove('toms_storage:trim_clean')
-//     event.recipes.createSplashing(['toms_storage:ts.trim'], 
-// 	'toms_storage:ts.painted_trim'
-// 	).id("llmion:splashing_trim").processingTime(600)
+//     event.recipes.createSplashing(['toms_storage:ts.trim'],
+//         'toms_storage:ts.painted_trim'
+//     ).id("llmion:splashing_trim").processingTime(600)
 //     //存储线缆
 //     remove('toms_storage:inventory_cable')
-// 	event.shapeless('8x toms_storage:ts.inventory_cable', [
-// 		'create:brass_sheet',
-// 		'thermal:cured_rubber'
-// 	]).id("llmion:ts.inventory_cable")
+//     event.shapeless('8x toms_storage:ts.inventory_cable', [
+//         'create:brass_sheet',
+//         'thermal:cured_rubber'
+//     ]).id("llmion:ts.inventory_cable")
 //     //框架存储线缆
 //     remove('toms_storage:inventory_cable_framed')
 //     event.shaped('toms_storage:ts.inventory_cable_framed', [
@@ -64,10 +64,10 @@
 //     }).id("llmion:ts.inventory_cable_framed")
 //     //存储线缆连接器
 //     remove('toms_storage:inventory_cable_connector')
-// 	event.shapeless('toms_storage:ts.inventory_cable_connector', [
-// 		'toms_storage:ts.inventory_cable',
-// 		'create:chute'
-// 	]).id("llmion:ts.inventory_cable_connector")
+//     event.shapeless('toms_storage:ts.inventory_cable_connector', [
+//         'toms_storage:ts.inventory_cable',
+//         'create:chute'
+//     ]).id("llmion:ts.inventory_cable_connector")
 //     //存储线缆连接器(filtered)
 //     remove('toms_storage:inventory_cable_connector_filtered')
 //     event.shaped('toms_storage:ts.inventory_cable_connector_filtered', [
@@ -81,10 +81,10 @@
 //     }).id("llmion:ts.inventory_cable_connector_filtered")
 //     //存储代理器
 //     remove('toms_storage:inventory_proxy')
-// 	event.shapeless('toms_storage:ts.inventory_proxy', [
-// 		'toms_storage:ts.inventory_connector',
-// 		'create:smart_chute'
-// 	]).id("llmion:ts.inventory_proxy")
+//     event.shapeless('toms_storage:ts.inventory_proxy', [
+//         'toms_storage:ts.inventory_connector',
+//         'create:smart_chute'
+//     ]).id("llmion:ts.inventory_proxy")
 //     //合成终端
 //     remove('toms_storage:crafting_terminal')
 //     event.shaped('toms_storage:ts.crafting_terminal', [
@@ -108,10 +108,10 @@
 //     }).id("llmion:ts.inventory_hopper_basic")
 //     //？
 //     remove('toms_storage:level_emitter')
-// 	event.shapeless('toms_storage:ts.level_emitter', [
-// 		'create:content_observer',
-// 		'toms_storage:ts.inventory_cable'
-// 	]).id("llmion:ts.level_emitter")
+//     event.shapeless('toms_storage:ts.level_emitter', [
+//         'create:content_observer',
+//         'toms_storage:ts.inventory_cable'
+//     ]).id("llmion:ts.level_emitter")
 //     //存储线缆连接器(framed)
 //     remove('toms_storage:inventory_cable_connector_framed')
 //     event.shaped('toms_storage:ts.inventory_cable_connector_framed', [
@@ -134,8 +134,8 @@
 //     }).id("llmion:ts.paint_kit")
 //     //无限终端
 //     remove('toms_storage:wireless_terminal')
-// 	event.shapeless('toms_storage:ts.wireless_terminal', [
-// 		'toms_storage:ts.inventory_connector',
-// 		'create:linked_controller'
-// 	]).id("llmion:ts.wireless_terminal")
+//     event.shapeless('toms_storage:ts.wireless_terminal', [
+//         'toms_storage:ts.inventory_connector',
+//         'create:linked_controller'
+//     ]).id("llmion:ts.wireless_terminal")
 // })

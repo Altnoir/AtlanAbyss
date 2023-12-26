@@ -11,7 +11,7 @@ onEvent('worldgen.add', event => {
     ore.addTarget('minecraft:end_stone', 'kubejs:end_bismuth_ore') //将末地石替换为末地铋矿
 
     ore.count([18, 72])             // 随机生成18到54个矿脉，可以使用单个数字来生成固定数量的方块
-    .squared()                      // 随机地将矿石分散在整个区块中，而不是整整齐齐一列一列的生成
+      .squared()                      // 随机地将矿石分散在整个区块中，而不是整整齐齐一列一列的生成
 
     // 更多可选参数
     ore.size = 11                            // max.矿脉大小
@@ -32,7 +32,7 @@ onEvent('worldgen.add', event => {
     ore.addTarget('minecraft:end_stone', 'ae2:deepslate_quartz_ore') //赛特斯石英矿
 
     ore.count([26, 60])
-    .squared()
+      .squared()
 
     // 更多可选参数
     ore.size = 6
@@ -45,16 +45,16 @@ onEvent('worldgen.add', event => {
   event.addOre(ore => {
     ore.id = 'kubejs:nether_aluminum_ore'
     ore.biomes = '^nether'
-   
+
     ore.addTarget('#forge:netherrack', 'kubejs:nether_aluminum_ore')//下界铝矿
 
     ore.count([8, 16])
-    .squared()
-    .triangleHeight(
-      anchors.aboveBottom(104),    
-      anchors.absolute(128)
-    )		
-  
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(104),
+        anchors.absolute(128)
+      )
+
     ore.size = 6
     ore.worldgenLayer = 'underground_ores'
   });
@@ -66,16 +66,16 @@ onEvent('worldgen.add', event => {
     ore.addTarget('minecraft:deepslate', 'kubejs:inversia_uranium_ore')//颠倒铀矿
 
     ore.count([9, 18])
-    .squared()
-    .triangleHeight(
-      anchors.aboveBottom(188),    
-      anchors.absolute(255)
-    )		
-  
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(188),
+        anchors.absolute(255)
+      )
+
     ore.size = 21
     ore.worldgenLayer = 'underground_ores'
   });
-    
+
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_lead_ore'
     ore.biomes = /^inversia:.*/
@@ -83,12 +83,12 @@ onEvent('worldgen.add', event => {
     ore.addTarget('minecraft:deepslate', 'thermal:deepslate_lead_ore')//颠倒铅矿
 
     ore.count([24, 32])
-    .squared()
-    .triangleHeight(
-      anchors.aboveBottom(180),    
-      anchors.absolute(255)
-    )		
-  
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(180),
+        anchors.absolute(255)
+      )
+
     ore.size = 24
     ore.worldgenLayer = 'underground_ores'
   });
@@ -96,16 +96,16 @@ onEvent('worldgen.add', event => {
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_diamond_ore'
     ore.biomes = /^inversia:.*/
-   
+
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_diamond_ore')//颠倒钻石矿
 
     ore.count([8, 12])
-    .squared()
-    .triangleHeight(
-      anchors.aboveBottom(198),    
-      anchors.absolute(255)
-    )	
-  
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(198),
+        anchors.absolute(255)
+      )
+
     ore.size = 16
     ore.worldgenLayer = 'underground_ores'
   });
@@ -113,36 +113,36 @@ onEvent('worldgen.add', event => {
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_lapis_ore'
     ore.biomes = /^inversia:.*/
-   
+
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_lapis_ore')//颠倒青金石矿
 
     ore.count([12, 24])
-    .squared()
-    .triangleHeight(
-      anchors.aboveBottom(198),    
-      anchors.absolute(255)
-    )	
-  
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(198),
+        anchors.absolute(255)
+      )
+
     ore.size = 8
-    ore.noSurface = 0.9 
+    ore.noSurface = 0.9
     ore.worldgenLayer = 'underground_ores'
   });
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_redstone_ore'
     ore.biomes = /^inversia:.*/
-   
+
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_redstone_ore')//颠倒红石矿
 
     ore.count([16, 32])
-    .squared()
-    .triangleHeight(
-      anchors.aboveBottom(168),    
-      anchors.absolute(255)
-    )	
-  
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(168),
+        anchors.absolute(255)
+      )
+
     ore.size = 12
-    ore.noSurface = 1 
+    ore.noSurface = 1
     ore.worldgenLayer = 'underground_ores'
   });
 })

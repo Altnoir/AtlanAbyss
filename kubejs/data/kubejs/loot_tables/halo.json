@@ -167,6 +167,17 @@
                         }
                     ],
                     "name": "yuushya:wriggle_nightbug"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:11821916,display:{Name:'[{\"translate\":\"kubejs.purana.name\",\"italic\":false}]'},AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,53],Name:\"armor\"},{AttributeName:\"generic.armor_toughness\",Amount:3,Operation:0,Slot:head,UUID:[I;11,19,60,54],Name:\"armorToughness\"},{AttributeName:\"generic.knockback_resistance\",Amount:0.1,Operation:0,Slot:head,UUID:[I;11,19,60,55],Name:\"knockbackResistance\"}]}"
+                        }
+                    ],
+                    "name": "yuushya:wriggle_nightbug"
                 }
                 
             ]

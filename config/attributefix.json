@@ -209,6 +209,17 @@
         "value": 10000000
       }
     },
+    "autoleveling:monster.explosion_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 10000000
+      }
+    },
     "apotheosis:life_steal": {
       "enabled": false,
       "min": {
@@ -360,6 +371,17 @@
       },
       "max": {
         "default": 1024,
+        "value": 10000000
+      }
+    },
+    "autoleveling:monster.projectile_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
         "value": 10000000
       }
     },

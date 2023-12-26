@@ -1,141 +1,141 @@
 onEvent('recipes', event => {
 	//多余的
-	const removeOutput = (name) => event.remove({output:name});
-    const nameOutput = [
-	'pneumaticcraft:pneumatic_wrench',//气动扳手
-	Item.of('patchouli:guide_book', '{"patchouli:book":"pneumaticcraft:book"}'),//pnc手册
-	'pneumaticcraft:ingot_iron_compressed',//压缩铁锭
-	'pneumaticcraft:logistics_configurator',//物流配置器
-	'pneumaticcraft:turbine_rotor',//轮机转子
-	'pneumaticcraft:programming_puzzle',//编程拼图
-	'pneumaticcraft:gps_tool',//定位工具
-	'pneumaticcraft:gps_area_tool',//区域定位工具
-	'pneumaticcraft:remote',//远程终端
-	'pneumaticcraft:programmer',//编程器
-	'pneumaticcraft:security_station',//安全站
-	'pneumaticcraft:programmable_controller',//可编程控制器
-	'pneumaticcraft:tag_workbench',//标签工作台
-	'pneumaticcraft:transfer_gadget',//传输装置
-	'pneumaticcraft:reinforced_chest',//强化箱子
-	'pneumaticcraft:reinforced_chest_kit',//强化箱子升级
-	'pneumaticcraft:smart_chest',//智能箱子
-	'pneumaticcraft:smart_chest_kit',//智能箱子升级
-	'pneumaticcraft:seismic_sensor',//地下石油探测器
-	'pneumaticcraft:crop_support',//作物架
-	'pneumaticcraft:gas_lift',//气举
-	'pneumaticcraft:drill_pipe',//气举钻管
-	'pneumaticcraft:universal_sensor',//万能传感器
-	'pneumaticcraft:stone_base',//石质基座	
-	'pneumaticcraft:cannon_barrel',//炮管
-	'pneumaticcraft:air_cannon',//空气炮
-	'pneumaticcraft:compressed_iron_gear',//压缩铁齿轮
-	'pneumaticcraft:flux_compressor',//通量压缩机
-	'pneumaticcraft:pneumatic_dynamo',//气动能源炉
-	'pneumaticcraft:elevator_frame',//电梯框架
-	'pneumaticcraft:elevator_caller',//电梯呼叫机
-	'pneumaticcraft:elevator_base',//电梯基座
-	'pneumaticcraft:compressed_iron_helmet',//头盔
-	'pneumaticcraft:compressed_iron_chestplate',//胸甲
-	'pneumaticcraft:compressed_iron_leggings',//裤子
-	'pneumaticcraft:compressed_iron_boots',//鞋子
-	'pneumaticcraft:pneumatic_helmet',//气动头盔
-	'pneumaticcraft:pneumatic_chestplate',//气动胸甲
-	'pneumaticcraft:pneumatic_leggings',//气动裤子
-	'pneumaticcraft:pneumatic_boots',//气动鞋子
-	'pneumaticcraft:minigun',//机枪
-	'pneumaticcraft:sentry_turret',//机枪塔
-	'pneumaticcraft:gun_ammo',//机枪弹药
-	'pneumaticcraft:gun_ammo_incendiary',//机枪弹药/烧
-	'pneumaticcraft:gun_ammo_weighted',//机枪弹药/重
-	'pneumaticcraft:gun_ammo_ap',//机枪弹药/破
-	'pneumaticcraft:gun_ammo_explosive',//机枪弹药/炸
-	'pneumaticcraft:gun_ammo_freezing',//机枪弹药/冰
-	//升级
-	'pneumaticcraft:minigun_upgrade',//机枪升级
-	'pneumaticcraft:item_life_upgrade',//寿命升级
-	'pneumaticcraft:armor_upgrade',//护甲升级
-	'pneumaticcraft:inventory_upgrade',//物品栏升级
-	'pneumaticcraft:block_tracker_upgrade',//方块追踪升级
-	'pneumaticcraft:standby_upgrade',//备用升级
-	'pneumaticcraft:search_upgrade',//物品搜寻升级
-	'pneumaticcraft:coordinate_tracker_upgrade',//坐标追踪升级
-	'pneumaticcraft:charging_upgrade',//充气升级
-	'pneumaticcraft:jet_boots_upgrade_1',//喷射鞋升级1
-	'pneumaticcraft:jet_boots_upgrade_2',//喷射鞋升级2
-	'pneumaticcraft:jet_boots_upgrade_3',//喷射鞋升级3
-	'pneumaticcraft:jet_boots_upgrade_4',//喷射鞋升级4
-	'pneumaticcraft:jet_boots_upgrade_5',//喷射鞋升级5
-	'pneumaticcraft:night_vision_upgrade',//夜视升级
-	'pneumaticcraft:scuba_upgrade',//水肺升级
-	'pneumaticcraft:creative_upgrade',//创造升级
-	'pneumaticcraft:jumping_upgrade_1',//跳跃升级1
-	'pneumaticcraft:jumping_upgrade_2',//跳跃升级2
-	'pneumaticcraft:jumping_upgrade_3',//跳跃升级3
-	'pneumaticcraft:jumping_upgrade_4',//跳跃升级4
-	'pneumaticcraft:flippers_upgrade',//脚蹼升级
-	'pneumaticcraft:radiation_shielding_upgrade',//辐射升级
-	'pneumaticcraft:gilded_upgrade',//G升级
-	'pneumaticcraft:ender_visor_upgrade',//EV升级
-	'pneumaticcraft:stomp_upgrade',//S升级
-	'pneumaticcraft:elytra_upgrade',//E升级
-    //物流框架
-	/pneumaticcraft:logistics_frame_/,
-    'pneumaticcraft:logistics_core',
-    'pneumaticcraft:logistics_module',
-    'pneumaticcraft:tag_filter',
-    'pneumaticcraft:classify_filter',
-	//无人机
-	'pneumaticcraft:drone',
-	'pneumaticcraft:logistics_drone',
-	'pneumaticcraft:harvesting_drone',
-	'pneumaticcraft:guard_drone',
-	'pneumaticcraft:collector_drone',
-	//网络程序
-	'pneumaticcraft:diagnostic_subroutine',
-	'pneumaticcraft:network_api',
-	'pneumaticcraft:network_data_storage',
-	'pneumaticcraft:network_io_port',
-	'pneumaticcraft:network_registry',
-	'pneumaticcraft:network_node',
-	//储罐
-	'pneumaticcraft:small_tank',
-	'pneumaticcraft:medium_tank',
-	'pneumaticcraft:large_tank',
-	'pneumaticcraft:huge_tank',
-	//强化石
-	/pneumaticcraft:reinforced_/,
-    ];
-    nameOutput.forEach(removeOutput);
-
-	const removeId = (name) => event.remove({id:name});
-    const nameId = [
-	//爆炸合成
-	'pneumaticcraft:explosion_crafting/wheat_flour',
-	'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-	'pneumaticcraft:explosion_crafting/compressed_iron_block',
-	'pneumaticcraft:pressure_chamber/capacitor',//电容
-    'pneumaticcraft:pressure_chamber/transistor',//晶体管
-	//气动工艺的小麦粉
-	'pneumaticcraft:pressure_chamber/wheat_flour',
-	//瓷砖告示牌
-	'pneumaticcraft:aphorism_tile_reset',
-	'pneumaticcraft:assembly/aphorism_tile',
-	//红石染料
-	'pneumaticcraft:assembly/red_dye',
-	//压缩铁锭
-	'pneumaticcraft:pressure_chamber/compressed_iron_ingot',
-	//轮机扇叶
-	'pneumaticcraft:pressure_chamber/turbine_blade',
-	//亚马龙交易
-	'pneumaticcraft:amadron/emerald_to_oil',
-	'pneumaticcraft:amadron/oil_to_emerald',
-	'pneumaticcraft:amadron/diesel_to_emerald',
-	'pneumaticcraft:amadron/gasoline_to_emerald'
+	const removeOutput = (name) => event.remove({ output: name });
+	const nameOutput = [
+		'pneumaticcraft:pneumatic_wrench',//气动扳手
+		Item.of('patchouli:guide_book', '{"patchouli:book":"pneumaticcraft:book"}'),//pnc手册
+		'pneumaticcraft:ingot_iron_compressed',//压缩铁锭
+		'pneumaticcraft:logistics_configurator',//物流配置器
+		'pneumaticcraft:turbine_rotor',//轮机转子
+		'pneumaticcraft:programming_puzzle',//编程拼图
+		'pneumaticcraft:gps_tool',//定位工具
+		'pneumaticcraft:gps_area_tool',//区域定位工具
+		'pneumaticcraft:remote',//远程终端
+		'pneumaticcraft:programmer',//编程器
+		'pneumaticcraft:security_station',//安全站
+		'pneumaticcraft:programmable_controller',//可编程控制器
+		'pneumaticcraft:tag_workbench',//标签工作台
+		'pneumaticcraft:transfer_gadget',//传输装置
+		'pneumaticcraft:reinforced_chest',//强化箱子
+		'pneumaticcraft:reinforced_chest_kit',//强化箱子升级
+		'pneumaticcraft:smart_chest',//智能箱子
+		'pneumaticcraft:smart_chest_kit',//智能箱子升级
+		'pneumaticcraft:seismic_sensor',//地下石油探测器
+		'pneumaticcraft:crop_support',//作物架
+		'pneumaticcraft:gas_lift',//气举
+		'pneumaticcraft:drill_pipe',//气举钻管
+		'pneumaticcraft:universal_sensor',//万能传感器
+		'pneumaticcraft:stone_base',//石质基座	
+		'pneumaticcraft:cannon_barrel',//炮管
+		'pneumaticcraft:air_cannon',//空气炮
+		'pneumaticcraft:compressed_iron_gear',//压缩铁齿轮
+		'pneumaticcraft:flux_compressor',//通量压缩机
+		'pneumaticcraft:pneumatic_dynamo',//气动能源炉
+		'pneumaticcraft:elevator_frame',//电梯框架
+		'pneumaticcraft:elevator_caller',//电梯呼叫机
+		'pneumaticcraft:elevator_base',//电梯基座
+		'pneumaticcraft:compressed_iron_helmet',//头盔
+		'pneumaticcraft:compressed_iron_chestplate',//胸甲
+		'pneumaticcraft:compressed_iron_leggings',//裤子
+		'pneumaticcraft:compressed_iron_boots',//鞋子
+		'pneumaticcraft:pneumatic_helmet',//气动头盔
+		'pneumaticcraft:pneumatic_chestplate',//气动胸甲
+		'pneumaticcraft:pneumatic_leggings',//气动裤子
+		'pneumaticcraft:pneumatic_boots',//气动鞋子
+		'pneumaticcraft:minigun',//机枪
+		'pneumaticcraft:sentry_turret',//机枪塔
+		'pneumaticcraft:gun_ammo',//机枪弹药
+		'pneumaticcraft:gun_ammo_incendiary',//机枪弹药/烧
+		'pneumaticcraft:gun_ammo_weighted',//机枪弹药/重
+		'pneumaticcraft:gun_ammo_ap',//机枪弹药/破
+		'pneumaticcraft:gun_ammo_explosive',//机枪弹药/炸
+		'pneumaticcraft:gun_ammo_freezing',//机枪弹药/冰
+		//升级
+		'pneumaticcraft:minigun_upgrade',//机枪升级
+		'pneumaticcraft:item_life_upgrade',//寿命升级
+		'pneumaticcraft:armor_upgrade',//护甲升级
+		'pneumaticcraft:inventory_upgrade',//物品栏升级
+		'pneumaticcraft:block_tracker_upgrade',//方块追踪升级
+		'pneumaticcraft:standby_upgrade',//备用升级
+		'pneumaticcraft:search_upgrade',//物品搜寻升级
+		'pneumaticcraft:coordinate_tracker_upgrade',//坐标追踪升级
+		'pneumaticcraft:charging_upgrade',//充气升级
+		'pneumaticcraft:jet_boots_upgrade_1',//喷射鞋升级1
+		'pneumaticcraft:jet_boots_upgrade_2',//喷射鞋升级2
+		'pneumaticcraft:jet_boots_upgrade_3',//喷射鞋升级3
+		'pneumaticcraft:jet_boots_upgrade_4',//喷射鞋升级4
+		'pneumaticcraft:jet_boots_upgrade_5',//喷射鞋升级5
+		'pneumaticcraft:night_vision_upgrade',//夜视升级
+		'pneumaticcraft:scuba_upgrade',//水肺升级
+		'pneumaticcraft:creative_upgrade',//创造升级
+		'pneumaticcraft:jumping_upgrade_1',//跳跃升级1
+		'pneumaticcraft:jumping_upgrade_2',//跳跃升级2
+		'pneumaticcraft:jumping_upgrade_3',//跳跃升级3
+		'pneumaticcraft:jumping_upgrade_4',//跳跃升级4
+		'pneumaticcraft:flippers_upgrade',//脚蹼升级
+		'pneumaticcraft:radiation_shielding_upgrade',//辐射升级
+		'pneumaticcraft:gilded_upgrade',//G升级
+		'pneumaticcraft:ender_visor_upgrade',//EV升级
+		'pneumaticcraft:stomp_upgrade',//S升级
+		'pneumaticcraft:elytra_upgrade',//E升级
+		//物流框架
+		/pneumaticcraft:logistics_frame_/,
+		'pneumaticcraft:logistics_core',
+		'pneumaticcraft:logistics_module',
+		'pneumaticcraft:tag_filter',
+		'pneumaticcraft:classify_filter',
+		//无人机
+		'pneumaticcraft:drone',
+		'pneumaticcraft:logistics_drone',
+		'pneumaticcraft:harvesting_drone',
+		'pneumaticcraft:guard_drone',
+		'pneumaticcraft:collector_drone',
+		//网络程序
+		'pneumaticcraft:diagnostic_subroutine',
+		'pneumaticcraft:network_api',
+		'pneumaticcraft:network_data_storage',
+		'pneumaticcraft:network_io_port',
+		'pneumaticcraft:network_registry',
+		'pneumaticcraft:network_node',
+		//储罐
+		'pneumaticcraft:small_tank',
+		'pneumaticcraft:medium_tank',
+		'pneumaticcraft:large_tank',
+		'pneumaticcraft:huge_tank',
+		//强化石
+		/pneumaticcraft:reinforced_/,
 	];
-    nameId.forEach(removeId);
-    //扬了气动工艺的乙醇和植物油
+	nameOutput.forEach(removeOutput);
+
+	const removeId = (name) => event.remove({ id: name });
+	const nameId = [
+		//爆炸合成
+		'pneumaticcraft:explosion_crafting/wheat_flour',
+		'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+		'pneumaticcraft:explosion_crafting/compressed_iron_block',
+		'pneumaticcraft:pressure_chamber/capacitor',//电容
+		'pneumaticcraft:pressure_chamber/transistor',//晶体管
+		//气动工艺的小麦粉
+		'pneumaticcraft:pressure_chamber/wheat_flour',
+		//瓷砖告示牌
+		'pneumaticcraft:aphorism_tile_reset',
+		'pneumaticcraft:assembly/aphorism_tile',
+		//红石染料
+		'pneumaticcraft:assembly/red_dye',
+		//压缩铁锭
+		'pneumaticcraft:pressure_chamber/compressed_iron_ingot',
+		//轮机扇叶
+		'pneumaticcraft:pressure_chamber/turbine_blade',
+		//亚马龙交易
+		'pneumaticcraft:amadron/emerald_to_oil',
+		'pneumaticcraft:amadron/oil_to_emerald',
+		'pneumaticcraft:amadron/diesel_to_emerald',
+		'pneumaticcraft:amadron/gasoline_to_emerald'
+	];
+	nameId.forEach(removeId);
+	//扬了气动工艺的乙醇和植物油
 	let pncoil = (name) => {
-		event.remove({id:'pneumaticcraft:thermo_plant/' + name})
+		event.remove({ id: 'pneumaticcraft:thermo_plant/' + name })
 	}
 	pncoil('ethanol_from_apple')
 	pncoil('ethanol_from_melon')
@@ -148,8 +148,8 @@ onEvent('recipes', event => {
 
 	//扬了pnc壁灯
 	let colours = (name) => {
-		event.remove({id:'pneumaticcraft:wall_lamp_' + name})
-		event.remove({id:'pneumaticcraft:wall_lamp_inverted_' + name})
+		event.remove({ id: 'pneumaticcraft:wall_lamp_' + name })
+		event.remove({ id: 'pneumaticcraft:wall_lamp_inverted_' + name })
 		//添加pnc壁灯
 		event.shaped('pneumaticcraft:wall_lamp_' + name, [
 			' C ',
@@ -163,8 +163,8 @@ onEvent('recipes', event => {
 			'pneumaticcraft:wall_lamp_' + name
 		]).id("llmion:wall_lamp_inverted_" + name)
 	}
-	colours('white') 
-	colours('orange') 
+	colours('white')
+	colours('orange')
 	colours('magenta')
 	colours('light_blue')
 	colours('yellow')
@@ -182,103 +182,103 @@ onEvent('recipes', event => {
 
 	//通用配方移除
 	let remove = (name) => {
-		event.remove({id:name})
+		event.remove({ id: name })
 	}
-    //酸面团
+	//酸面团
 	remove('pneumaticcraft:sourdough')
 	event.shapeless('pneumaticcraft:sourdough', [
 		'create:wheat_flour',
 		'pneumaticcraft:yeast_culture_bucket'
 	]).id("llmion:sourdough")
-    event.recipes.createFilling('pneumaticcraft:sourdough', [
+	event.recipes.createFilling('pneumaticcraft:sourdough', [
 		'create:wheat_flour',
 		Fluid.of('pneumaticcraft:yeast_culture', 100)
 	]).id("llmion:filling_sourdough")
 
 	remove('pneumaticcraft:heat_pipe');
-	event.stonecutting('4x pneumaticcraft:heat_pipe','pneumaticcraft:compressed_iron_block').id('llmion:heat_pipe');//热管
+	event.stonecutting('4x pneumaticcraft:heat_pipe', 'pneumaticcraft:compressed_iron_block').id('llmion:heat_pipe');//热管
 	remove('pneumaticcraft:kerosene_lamp');
-	event.stonecutting('2x pneumaticcraft:kerosene_lamp','pneumaticcraft:compressed_iron_block').id('llmion:kerosene_lamp');//煤油灯
+	event.stonecutting('2x pneumaticcraft:kerosene_lamp', 'pneumaticcraft:compressed_iron_block').id('llmion:kerosene_lamp');//煤油灯
 	const cibCutting = [
-		{itemId:'pneumaticcraft:display_table',id:'llmion:display_table'},//展示桌
-		{itemId:'pneumaticcraft:spawner_agitator',id:'llmion:spawner_agitator'},//刷怪笼激活器
-	  ];
-	  for (const item of cibCutting) {
-		event.remove({id:item.itemId});
-		event.stonecutting(`${item.itemId}`,'pneumaticcraft:compressed_iron_block').id(item.id);
-	  }
+		{ itemId: 'pneumaticcraft:display_table', id: 'llmion:display_table' },//展示桌
+		{ itemId: 'pneumaticcraft:spawner_agitator', id: 'llmion:spawner_agitator' },//刷怪笼激活器
+	];
+	for (const item of cibCutting) {
+		event.remove({ id: item.itemId });
+		event.stonecutting(`${item.itemId}`, 'pneumaticcraft:compressed_iron_block').id(item.id);
+	}
 	//升级
 	remove('pneumaticcraft:speed_upgrade_from_glycerol');
 	const upCutting = [
-		{itemId:'pneumaticcraft:volume_upgrade',id:'llmion:volume_upgrade'},//容积升级
-		{itemId:'pneumaticcraft:dispenser_upgrade',id:'llmion:dispenser_upgrade'},//发射升级
-		{itemId:'pneumaticcraft:entity_tracker_upgrade',id:'llmion:entity_tracker_upgrade'},//实体追踪升级
-		{itemId:'pneumaticcraft:speed_upgrade',id:'llmion:speed_upgrade'},//速度升级
-		{itemId:'pneumaticcraft:range_upgrade',id:'llmion:range_upgrade'},//范围升级
-		{itemId:'pneumaticcraft:security_upgrade',id:'llmion:security_upgrade'},//安全升级
-		{itemId:'pneumaticcraft:magnet_upgrade',id:'llmion:magnet_upgrade'},//磁铁升级
-	  ];
-	  for (const item of upCutting) {
-		event.remove({id:item.itemId});
-		event.stonecutting(`${item.itemId}`,'pneumaticcraft:upgrade_matrix').id(item.id);
-	  }
+		{ itemId: 'pneumaticcraft:volume_upgrade', id: 'llmion:volume_upgrade' },//容积升级
+		{ itemId: 'pneumaticcraft:dispenser_upgrade', id: 'llmion:dispenser_upgrade' },//发射升级
+		{ itemId: 'pneumaticcraft:entity_tracker_upgrade', id: 'llmion:entity_tracker_upgrade' },//实体追踪升级
+		{ itemId: 'pneumaticcraft:speed_upgrade', id: 'llmion:speed_upgrade' },//速度升级
+		{ itemId: 'pneumaticcraft:range_upgrade', id: 'llmion:range_upgrade' },//范围升级
+		{ itemId: 'pneumaticcraft:security_upgrade', id: 'llmion:security_upgrade' },//安全升级
+		{ itemId: 'pneumaticcraft:magnet_upgrade', id: 'llmion:magnet_upgrade' },//磁铁升级
+	];
+	for (const item of upCutting) {
+		event.remove({ id: item.itemId });
+		event.stonecutting(`${item.itemId}`, 'pneumaticcraft:upgrade_matrix').id(item.id);
+	}
 	//伪装涂覆器
 	remove('pneumaticcraft:camo_applicator')
-    event.shaped('pneumaticcraft:camo_applicator', [
-            'ABC',
-			'CC '
-        ], {
-            A: 'pneumaticcraft:air_canister',
-			B: 'kubejs:pressure_mechanism',
-			C: 'thermal:steel_plate'
-        }).id("llmion:camo_applicator")
+	event.shaped('pneumaticcraft:camo_applicator', [
+		'ABC',
+		'CC '
+	], {
+		A: 'pneumaticcraft:air_canister',
+		B: 'kubejs:pressure_mechanism',
+		C: 'thermal:steel_plate'
+	}).id("llmion:camo_applicator")
 	//压力表	
-    event.shaped('pneumaticcraft:amadron_tablet', [
-            'A A',
-			'ABA',
-			'A A'
-        ], {
-            A: 'pneumaticcraft:plastic',
-			B: 'create:redstone_link'
-        }).id("llmion:amadron_tablet")
+	event.shaped('pneumaticcraft:amadron_tablet', [
+		'A A',
+		'ABA',
+		'A A'
+	], {
+		A: 'pneumaticcraft:plastic',
+		B: 'create:redstone_link'
+	}).id("llmion:amadron_tablet")
 	//压力表	
 	remove('pneumaticcraft:pressure_gauge')
-    event.shaped('pneumaticcraft:pressure_gauge', [
-            'A',
-			'B'
-        ], {
-            A: 'minecraft:clock',
-			B: 'thermal:steel_ingot'
-        }).id("llmion:pressure_gauge")
+	event.shaped('pneumaticcraft:pressure_gauge', [
+		'A',
+		'B'
+	], {
+		A: 'minecraft:clock',
+		B: 'thermal:steel_ingot'
+	}).id("llmion:pressure_gauge")
 	//充气站	
 	remove('pneumaticcraft:charging_station')
-    event.shaped('pneumaticcraft:charging_station', [
-            'A',
-			'B',
-			'C'
-        ], {
-            A: 'pneumaticcraft:pressure_tube',
-			B: 'minecraft:copper_ingot',
-			C: '#pneumaticcraft:slabs'
-        }).id("llmion:charging_station")
-    //压力管道
+	event.shaped('pneumaticcraft:charging_station', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: 'pneumaticcraft:pressure_tube',
+		B: 'minecraft:copper_ingot',
+		C: '#pneumaticcraft:slabs'
+	}).id("llmion:charging_station")
+	//压力管道
 	remove('pneumaticcraft:pressure_tube')
-    event.shaped('4x pneumaticcraft:pressure_tube', [
-            'A',
-			'B',
-			'A'
-        ], {
-            A: 'thermal:steel_plate',
-			B: 'thermal:steel_ingot'
-        }).id("llmion:pressure_tube")
+	event.shaped('4x pneumaticcraft:pressure_tube', [
+		'A',
+		'B',
+		'A'
+	], {
+		A: 'thermal:steel_plate',
+		B: 'thermal:steel_ingot'
+	}).id("llmion:pressure_tube")
 	//散热片
 	remove('pneumaticcraft:heat_sink')
-    event.shaped('pneumaticcraft:heat_sink', [
-            'AAA'
-        ], {
-            A: 'create:copper_sheet'
-        }).id("llmion:heat_sink")
-    //空气罐
+	event.shaped('pneumaticcraft:heat_sink', [
+		'AAA'
+	], {
+		A: 'create:copper_sheet'
+	}).id("llmion:heat_sink")
+	//空气罐
 	remove('pneumaticcraft:air_canister')
 	event.shaped('pneumaticcraft:air_canister', [
 		'A',
@@ -298,16 +298,16 @@ onEvent('recipes', event => {
 	}).id("llmion:reinforced_air_canister")
 	//涡轮炮
 	remove('pneumaticcraft:vortex_cannon')
-    event.recipes.createMechanicalCrafting('pneumaticcraft:vortex_cannon', [
-            'ABCC',
-			'DDEE'
-        ], {
-            A: 'pneumaticcraft:air_canister',
-			B: 'kubejs:pressure_mechanism',
-			C: 'thermal:steel_ingot',
-			D: 'pneumaticcraft:plastic',
-			E: 'thermal:steel_plate'
-        }).id("llmion:vortex_cannon")
+	event.recipes.createMechanicalCrafting('pneumaticcraft:vortex_cannon', [
+		'ABCC',
+		'DDEE'
+	], {
+		A: 'pneumaticcraft:air_canister',
+		B: 'kubejs:pressure_mechanism',
+		C: 'thermal:steel_ingot',
+		D: 'pneumaticcraft:plastic',
+		E: 'thermal:steel_plate'
+	}).id("llmion:vortex_cannon")
 	//气动锤
 	remove('pneumaticcraft:jackhammer')
 	event.recipes.createMechanicalCrafting('pneumaticcraft:jackhammer', [
@@ -355,23 +355,23 @@ onEvent('recipes', event => {
 		'AAA',
 		'ABA',
 		'AAA'
-	  ], {
+	], {
 		A: 'pneumaticcraft:pressure_chamber_wall',
 		B: '#forge:glass'
-	}).id("llmion:pressure_chamber_glass") 
+	}).id("llmion:pressure_chamber_glass")
 	//钢机壳
-    remove('pneumaticcraft:compressed_iron_block_from_ingot')//删除钢块默认配方
-    remove('pneumaticcraft:pressure_chamber/compressed_iron_block')
-    event.custom({
-        type: 'create:item_application',
-        ingredients: [
-            Ingredient.of('pneumaticcraft:compressed_stone').toJson(),
-            Ingredient.of('thermal:steel_ingot').toJson()
-        ],
-        results: [
-            Item.of('pneumaticcraft:compressed_iron_block').toResultJson()
-        ]
-    }).id("llmion:compressed_iron_block")
+	remove('pneumaticcraft:compressed_iron_block_from_ingot')//删除钢块默认配方
+	remove('pneumaticcraft:pressure_chamber/compressed_iron_block')
+	event.custom({
+		type: 'create:item_application',
+		ingredients: [
+			Ingredient.of('pneumaticcraft:compressed_stone').toJson(),
+			Ingredient.of('thermal:steel_ingot').toJson()
+		],
+		results: [
+			Item.of('pneumaticcraft:compressed_iron_block').toResultJson()
+		]
+	}).id("llmion:compressed_iron_block")
 	//万向漏斗
 	remove('pneumaticcraft:omnidirectional_hopper')
 	event.shaped('pneumaticcraft:omnidirectional_hopper', [
@@ -384,7 +384,7 @@ onEvent('recipes', event => {
 	}).id("llmion:omnidirectional_hopper")
 	//液体漏斗
 	remove('pneumaticcraft:liquid_hopper')
-    event.shaped('pneumaticcraft:liquid_hopper', [
+	event.shaped('pneumaticcraft:liquid_hopper', [
 		'A A',
 		'ABA',
 		' A '
@@ -664,151 +664,151 @@ onEvent('recipes', event => {
 	}).id("llmion:pneumatic_door_base")
 	//塑料
 	event.recipes.createCompacting('pneumaticcraft:plastic', [
-		Fluid.of('pneumaticcraft:plastic',1000)
-		]).id("llmion:plastic")
+		Fluid.of('pneumaticcraft:plastic', 1000)
+	]).id("llmion:plastic")
 
 	//人工钻石	
-    remove('pneumaticcraft:pressure_chamber/coal_to_diamond');
-    event.custom({
-	    type: 'pneumaticcraft:pressure_chamber',
-	    inputs: [Ingredient.of('kubejs:compressed_coal_block')],
-	    results: [Item.of('minecraft:diamond')],
-    	pressure: 4.9
-    }).id("llmion:artificial_diamond");
+	remove('pneumaticcraft:pressure_chamber/coal_to_diamond');
+	event.custom({
+		type: 'pneumaticcraft:pressure_chamber',
+		inputs: [Ingredient.of('kubejs:compressed_coal_block')],
+		results: [Item.of('minecraft:diamond')],
+		pressure: 4.9
+	}).id("llmion:artificial_diamond");
 
-    //人工酸	
-    event.custom({
-	    type: 'pneumaticcraft:pressure_chamber',
-	    inputs: [
-    		Ingredient.of('minecraft:fermented_spider_eye'),
-    		Ingredient.of('create:cinder_flour'),
-    		Ingredient.of('minecraft:glistering_melon_slice')
-    	],
-	    results: [Item.of('kubejs:acid')],
-    	pressure: 3.0
-    }).id("llmion:acid");
+	//人工酸	
+	event.custom({
+		type: 'pneumaticcraft:pressure_chamber',
+		inputs: [
+			Ingredient.of('minecraft:fermented_spider_eye'),
+			Ingredient.of('create:cinder_flour'),
+			Ingredient.of('minecraft:glistering_melon_slice')
+		],
+		results: [Item.of('kubejs:acid')],
+		pressure: 3.0
+	}).id("llmion:acid");
 
 	//蚀刻酸
 	remove('pneumaticcraft:pressure_chamber/etching_acid')
-	event.recipes.createMixing(Fluid.of('pneumaticcraft:etching_acid',500), [
-		Fluid.of('pneumaticcraft:plastic',400),
+	event.recipes.createMixing(Fluid.of('pneumaticcraft:etching_acid', 500), [
+		Fluid.of('pneumaticcraft:plastic', 400),
 		'kubejs:acid'
-	  ]).heated().id("llmion:etching_acid")
-    //压缩石
+	]).heated().id("llmion:etching_acid")
+	//压缩石
 	event.recipes.createSequencedAssembly([
 		Item.of('pneumaticcraft:compressed_stone').withChance(0.7),
 		Item.of('minecraft:gravel').withChance(0.3)
-		], 
+	],
 		'minecraft:stone',
 		[
-		event.recipes.createPressing('minecraft:stone', 'minecraft:stone').processingTime(50)
+			event.recipes.createPressing('minecraft:stone', 'minecraft:stone').processingTime(50)
 		]).transitionalItem('minecraft:stone').loops(2).id("llmion:compressed_stone")
 
 	//空PCB
 	remove('pneumaticcraft:pressure_chamber/empty_pcb')
 	event.recipes.createSequencedAssembly([
 		'3x pneumaticcraft:empty_pcb'
-		], 
-		'pneumaticcraft:plastic', 
+	],
+		'pneumaticcraft:plastic',
 		[
 			event.recipes.createFilling('pneumaticcraft:plastic', ['pneumaticcraft:plastic', Fluid.of('tconstruct:molten_copper', 50)]),
 			event.recipes.createFilling('pneumaticcraft:plastic', ['pneumaticcraft:plastic', Fluid.of('tconstruct:molten_gold', 50)]),
 			event.recipes.createCutting('pneumaticcraft:plastic', 'pneumaticcraft:plastic').processingTime(100)
-		]).transitionalItem('pneumaticcraft:plastic').loops(9).id("llmion:empty_pcb")		
+		]).transitionalItem('pneumaticcraft:plastic').loops(9).id("llmion:empty_pcb")
 	//PCB
 	remove('pneumaticcraft:printed_circuit_board')
 	event.recipes.createSequencedAssembly([
-		Item.of('pneumaticcraft:printed_circuit_board').withChance(75/100),
-		Item.of('pneumaticcraft:failed_pcb').withChance(24/100),
-		Item.of('kubejs:circuit_scrap').withChance(1/100)//电路废料
-		], 
-		'pneumaticcraft:unassembled_pcb', 
+		Item.of('pneumaticcraft:printed_circuit_board').withChance(75 / 100),
+		Item.of('pneumaticcraft:failed_pcb').withChance(24 / 100),
+		Item.of('kubejs:circuit_scrap').withChance(1 / 100)//电路废料
+	],
+		'pneumaticcraft:unassembled_pcb',
 		[
-		event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:capacitor']),
-		event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:capacitor']),
-		event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:brass_rod'])
-		]).transitionalItem('pneumaticcraft:unassembled_pcb').loops(5).id("llmion:printed_circuit_board")		
+			event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:capacitor']),
+			event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:capacitor']),
+			event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:brass_rod'])
+		]).transitionalItem('pneumaticcraft:unassembled_pcb').loops(5).id("llmion:printed_circuit_board")
 	//装配平台
 	remove('pneumaticcraft:assembly_platform')
-    event.shaped('pneumaticcraft:assembly_platform', [
-            'ABA',
-			'CDC'
-        ], {
-            A: 'pneumaticcraft:pneumatic_cylinder',
-			B: 'pneumaticcraft:plastic',
-			C: 'thermal:steel_plate',
-			D: 'pneumaticcraft:printed_circuit_board'
-        }).id("llmion:assembly_platform")
+	event.shaped('pneumaticcraft:assembly_platform', [
+		'ABA',
+		'CDC'
+	], {
+		A: 'pneumaticcraft:pneumatic_cylinder',
+		B: 'pneumaticcraft:plastic',
+		C: 'thermal:steel_plate',
+		D: 'pneumaticcraft:printed_circuit_board'
+	}).id("llmion:assembly_platform")
 	//装配导入
 	remove('pneumaticcraft:assembly_io_unit_import')
-    event.shaped('pneumaticcraft:assembly_io_unit_import', [
-            ' AA',
-			' B ',
-			'CDC'
-        ], {
-            A: 'pneumaticcraft:pneumatic_cylinder',
-			B: 'create:mechanical_arm',
-			C: 'thermal:steel_plate',
-			D: 'pneumaticcraft:printed_circuit_board'
-        }).id("llmion:assembly_io_unit_import")
+	event.shaped('pneumaticcraft:assembly_io_unit_import', [
+		' AA',
+		' B ',
+		'CDC'
+	], {
+		A: 'pneumaticcraft:pneumatic_cylinder',
+		B: 'create:mechanical_arm',
+		C: 'thermal:steel_plate',
+		D: 'pneumaticcraft:printed_circuit_board'
+	}).id("llmion:assembly_io_unit_import")
 	//装配导出
 	remove('pneumaticcraft:assembly_io_unit_export')
-    event.shaped('pneumaticcraft:assembly_io_unit_export', [
-            'AA ',
-			' B ',
-			'CDC'
-        ], {
-            A: 'pneumaticcraft:pneumatic_cylinder',
-			B: 'create:mechanical_arm',
-			C: 'thermal:steel_plate',
-			D: 'pneumaticcraft:printed_circuit_board'
-        }).id("llmion:assembly_io_unit_export")
+	event.shaped('pneumaticcraft:assembly_io_unit_export', [
+		'AA ',
+		' B ',
+		'CDC'
+	], {
+		A: 'pneumaticcraft:pneumatic_cylinder',
+		B: 'create:mechanical_arm',
+		C: 'thermal:steel_plate',
+		D: 'pneumaticcraft:printed_circuit_board'
+	}).id("llmion:assembly_io_unit_export")
 	//装配钻头
 	remove('pneumaticcraft:assembly_drill')
-    event.shaped('pneumaticcraft:assembly_drill', [
-            'EAA',
-			' B ',
-			'CDC'
-        ], {
-            A: 'pneumaticcraft:pneumatic_cylinder',
-			B: 'create:mechanical_arm',
-			C: 'thermal:steel_plate',
-			D: 'pneumaticcraft:printed_circuit_board',
-			E: 'pneumaticcraft:drill_bit_diamond'
-        }).id("llmion:assembly_drill")
+	event.shaped('pneumaticcraft:assembly_drill', [
+		'EAA',
+		' B ',
+		'CDC'
+	], {
+		A: 'pneumaticcraft:pneumatic_cylinder',
+		B: 'create:mechanical_arm',
+		C: 'thermal:steel_plate',
+		D: 'pneumaticcraft:printed_circuit_board',
+		E: 'pneumaticcraft:drill_bit_diamond'
+	}).id("llmion:assembly_drill")
 	//装配激光
 	remove('pneumaticcraft:assembly_laser')
-    event.shaped('pneumaticcraft:assembly_laser', [
-            'EAA',
-			' B ',
-			'CDC'
-        ], {
-            A: 'pneumaticcraft:pneumatic_cylinder',
-			B: 'create:mechanical_arm',
-			C: 'thermal:steel_plate',
-			D: 'pneumaticcraft:printed_circuit_board',
-			E: 'create:electron_tube'
-        }).id("llmion:assembly_laser")
+	event.shaped('pneumaticcraft:assembly_laser', [
+		'EAA',
+		' B ',
+		'CDC'
+	], {
+		A: 'pneumaticcraft:pneumatic_cylinder',
+		B: 'create:mechanical_arm',
+		C: 'thermal:steel_plate',
+		D: 'pneumaticcraft:printed_circuit_board',
+		E: 'create:electron_tube'
+	}).id("llmion:assembly_laser")
 	//装配控制台
 	remove('pneumaticcraft:assembly_controller')
-    event.shaped('pneumaticcraft:assembly_controller', [
-            ' A ',
-			' B ',
-			'CDC'
-        ], {
-            A: 'pneumaticcraft:printed_circuit_board',
-			B: 'pneumaticcraft:reinforced_pressure_tube',
-			C: 'thermal:steel_plate',
-			D: 'kubejs:pressure_mechanism'
-        }).id("llmion:assembly_controller")
-	
-    //石油处理
+	event.shaped('pneumaticcraft:assembly_controller', [
+		' A ',
+		' B ',
+		'CDC'
+	], {
+		A: 'pneumaticcraft:printed_circuit_board',
+		B: 'pneumaticcraft:reinforced_pressure_tube',
+		C: 'thermal:steel_plate',
+		D: 'kubejs:pressure_mechanism'
+	}).id("llmion:assembly_controller")
+
+	//石油处理
 	for (let i = 2; i < 5; i++) {
-		event.remove({id:'pneumaticcraft:refinery/oil_'+ i})
+		event.remove({ id: 'pneumaticcraft:refinery/oil_' + i })
 	}
 	function refineryRecipe(output1, amount1, output2, amount2, output3, amount3, output4, amount4, input, iamount, mintemp, id) {
 		const refinery = [];
-	  
+
 		if (output1 && amount1) {
 			refinery.push(Fluid.of(output1, amount1).toJson());
 		}
@@ -821,19 +821,19 @@ onEvent('recipes', event => {
 		if (output4 && amount4) {
 			refinery.push(Fluid.of(output4, amount4).toJson());
 		}
-	  
+
 		event.custom({
-		  type: 'pneumaticcraft:refinery',
-		  input: {
-			type: 'pneumaticcraft:fluid',
-			fluid: input,
-			amount: iamount
-		  },
-		  temperature: {
-			min_temp: mintemp
-		  },
-		  results: refinery
-		}).id('llmion:refinery_'+id);
+			type: 'pneumaticcraft:refinery',
+			input: {
+				type: 'pneumaticcraft:fluid',
+				fluid: input,
+				amount: iamount
+			},
+			temperature: {
+				min_temp: mintemp
+			},
+			results: refinery
+		}).id('llmion:refinery_' + id);
 	}
 	refineryRecipe('thermal:heavy_oil', 4, 'pneumaticcraft:kerosene', 3, 'thermal:light_oil', 2, 'pneumaticcraft:lpg', 1, 'thermal:crude_oil', 10, 373, 'oil_4');
 	refineryRecipe('thermal:heavy_oil', 4, 'pneumaticcraft:kerosene', 4, 'pneumaticcraft:lpg', 1, null, null, 'thermal:crude_oil', 10, 373, 'oil_3');
@@ -841,9 +841,9 @@ onEvent('recipes', event => {
 
 	//热气动加工
 	['kerosene', 'lubricant_from_diesel', 'gasoline', 'lpg', 'plastic_from_lpg', 'salmon_tempura', 'chips', 'yeast_culture'].forEach((id) => {
-		event.remove({id: `pneumaticcraft:thermo_plant/${id}`});
+		event.remove({ id: `pneumaticcraft:thermo_plant/${id}` });
 	});
-	  
+
 	function thermoplantRecipe(input, amount1, output, amount2, mintemp, pressure, id) {
 		event.custom({
 			type: 'pneumaticcraft:thermo_plant',
@@ -861,26 +861,26 @@ onEvent('recipes', event => {
 			},
 			pressure: pressure,
 			exothermic: false
-		}).id('llmion:thermo_plant_'+id);
+		}).id('llmion:thermo_plant_' + id);
 	}
 	thermoplantRecipe('thermal:heavy_oil', 100, 'pneumaticcraft:kerosene', 80, 573, 2.0, 'kerosene');
 	thermoplantRecipe('pneumaticcraft:kerosene', 100, 'thermal:light_oil', 80, 573, 2.0, 'light_oil');
 	thermoplantRecipe('thermal:light_oil', 100, 'pneumaticcraft:lpg', 80, 573, 2.0, 'lpg');
 
 	function createMixingRecipe(output, input, fluid, amount, id) {
-		event.recipes.createMixing(output, 
+		event.recipes.createMixing(output,
 			[input, Fluid.of(fluid, amount)
-		]).heated().id('llmion:'+id);
+			]).heated().id('llmion:' + id);
 	}
-	createMixingRecipe(['thermal:bitumen',Fluid.of('pneumaticcraft:lubricant', 250)], Fluid.of('thermal:redstone', 180), 'thermal:heavy_oil', 250, 'mixing_lubricant');
+	createMixingRecipe(['thermal:bitumen', Fluid.of('pneumaticcraft:lubricant', 250)], Fluid.of('thermal:redstone', 180), 'thermal:heavy_oil', 250, 'mixing_lubricant');
 	createMixingRecipe(Fluid.of('pneumaticcraft:yeast_culture', 250), '#forge:mushrooms', 'minecraft:water', 1000, 'yeast_culture');
 	createMixingRecipe(Fluid.of('pneumaticcraft:plastic', 1000), 'thermal:lightning_charge', 'pneumaticcraft:lpg', 100, 'lpg');
 	createMixingRecipe('pneumaticcraft:salmon_tempura', 'pneumaticcraft:raw_salmon_tempura', 'createaddition:seed_oil', 50, 'salmon_tempura');
 	//薯条
 	event.recipes.createCompacting(
-		'4x pneumaticcraft:chips', 
+		'4x pneumaticcraft:chips',
 		[
-		'minecraft:potato',
-		Fluid.of('createaddition:seed_oil',50)
-	]).heated().id("llmion:chips")
+			'minecraft:potato',
+			Fluid.of('createaddition:seed_oil', 50)
+		]).heated().id("llmion:chips")
 })

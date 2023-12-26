@@ -20,7 +20,8 @@
 		{"predicate":{"custom_model_data":11821912},"model":"yuushya:item/iroha"},
 		{"predicate":{"custom_model_data":11821913},"model":"yuushya:item/izuna"},
 		{"predicate":{"custom_model_data":11821914},"model":"yuushya:item/hanako"},
-		{"predicate":{"custom_model_data":11821915},"model":"yuushya:item/hasumi"}
+		{"predicate":{"custom_model_data":11821915},"model":"yuushya:item/hasumi"},
+		{"predicate":{"custom_model_data":11821916},"model":"yuushya:item/purana"}
 	],
 	"elements": [
 		{

@@ -1,22 +1,22 @@
 onEvent("recipes", event => {
 	let alchemy_mix = (output, catalyst, r1, r2, amount) => {
 		event.recipes.createMixing([
-			Item.of("kubejs:substrate_" + output, amount ? amount : 1), 
+			Item.of("kubejs:substrate_" + output, amount ? amount : 1),
 			"kubejs:substrate_" + catalyst
 		], [
-			"kubejs:substrate_" + catalyst, 
-			"2x kubejs:substrate_" + r1, 
+			"kubejs:substrate_" + catalyst,
+			"2x kubejs:substrate_" + r1,
 			"kubejs:substrate_" + r2]).heated()
 	}
 	let alchemy_smelt = (output, catalyst, r1, r2, amount) => {
 		event.custom({
 			type: 'thermal:smelter',
 			ingredients: [
-			  {value: [Ingredient.of("kubejs:substrate_" + r1).toJson()],count: 2},
-			  {value: [Ingredient.of("kubejs:substrate_" + catalyst).toJson()],count: 1},
-			  {value: [Ingredient.of("kubejs:substrate_" + r2).toJson()],count: 1}
+				{ value: [Ingredient.of("kubejs:substrate_" + r1).toJson()], count: 2 },
+				{ value: [Ingredient.of("kubejs:substrate_" + catalyst).toJson()], count: 1 },
+				{ value: [Ingredient.of("kubejs:substrate_" + r2).toJson()], count: 1 }
 			],
-			result: [	
+			result: [
 				Item.of("kubejs:substrate_" + output, amount ? amount : 1),
 				Item.of("kubejs:substrate_" + catalyst)
 			],
@@ -68,18 +68,18 @@ onEvent("recipes", event => {
 
 	function alchemy(item) {
 		onEvent('block.right_click', event => {
-			if (event.block == 'kubejs:steel_machine' && event.block.up.id == 'kubejs:substrate_chaos' && event.player.getHeldItem(event.hand) == item){
-				if (!event.player.creativeMode){
-					event.player.mainHandItem.count-=1
+			if (event.block == 'kubejs:steel_machine' && event.block.up.id == 'kubejs:substrate_chaos' && event.player.getHeldItem(event.hand) == item) {
+				if (!event.player.creativeMode) {
+					event.player.mainHandItem.count -= 1
 				}
-			event.player.playSound('minecraft:entity.firework_rocket.blast')
-			event.server.runCommandSilent(`execute in ${event.level.dimension} run particle ae2:matter_cannon_fx ${event.block.x} ${event.block.y + 0.5} ${event.block.z}`)
-			event.server.runCommandSilent(`execute in ${event.level.dimension} run particle dust 255 255 255 1 ${event.block.x} ${event.block.y + 0.5} ${event.block.z} .18 .18 .18 .1 128`)
-			event.server.runCommandSilent(`execute in ${event.level.dimension} run particle minecraft:firework ${event.block.x} ${event.block.y + 0.5} ${event.block.z} .1 0 .1 .05 3`)
-			event.server.runCommandSilent(`execute in ${event.level.dimension} run particle minecraft:end_rod ${event.block.x} ${event.block.y + 0.5} ${event.block.z} .1 0 .1 .05 3`)
-			event.server.runCommandSilent(`execute in ${event.level.dimension} run summon minecraft:item ${event.block.x} ${event.block.y + 0.4} ${event.block.z} {Item:{id:"${item}",Count:2}}`)
-			//event.server.runCommandSilent(`execute if data block ${event.block.down.x} ${event.block.down.y} ${event.block.down.z} Items[{Slot:0b,id:"${e.id}"}] run data modify block ${event.block.down.x} ${event.block.down.y} ${event.block.down.z} Items[0].Count set value 2`)
-			}            
+				event.player.playSound('minecraft:entity.firework_rocket.blast')
+				event.server.runCommandSilent(`execute in ${event.level.dimension} run particle ae2:matter_cannon_fx ${event.block.x} ${event.block.y + 0.5} ${event.block.z}`)
+				event.server.runCommandSilent(`execute in ${event.level.dimension} run particle dust 255 255 255 1 ${event.block.x} ${event.block.y + 0.5} ${event.block.z} .18 .18 .18 .1 128`)
+				event.server.runCommandSilent(`execute in ${event.level.dimension} run particle minecraft:firework ${event.block.x} ${event.block.y + 0.5} ${event.block.z} .1 0 .1 .05 3`)
+				event.server.runCommandSilent(`execute in ${event.level.dimension} run particle minecraft:end_rod ${event.block.x} ${event.block.y + 0.5} ${event.block.z} .1 0 .1 .05 3`)
+				event.server.runCommandSilent(`execute in ${event.level.dimension} run summon minecraft:item ${event.block.x} ${event.block.y + 0.4} ${event.block.z} {Item:{id:"${item}",Count:2}}`)
+				//event.server.runCommandSilent(`execute if data block ${event.block.down.x} ${event.block.down.y} ${event.block.down.z} Items[{Slot:0b,id:"${e.id}"}] run data modify block ${event.block.down.x} ${event.block.down.y} ${event.block.down.z} Items[0].Count set value 2`)
+			}
 		})
 	}
 
@@ -131,16 +131,16 @@ onEvent("recipes", event => {
 			Item.of(in4).withChance(0.16),
 			Item.of(in5).withChance(0.16),
 			Item.of(in6).withChance(0.16)
-		], 
-		'kubejs:catalyst_empty', 
-		[
-			event.recipes.createDeploying(s, [s, in1]),
-			event.recipes.createDeploying(s, [s, in2]),
-			event.recipes.createDeploying(s, [s, in3]),
-			event.recipes.createDeploying(s, [s, in4]),
-			event.recipes.createDeploying(s, [s, in5]),
-			event.recipes.createDeploying(s, [s, in6])
-		]).transitionalItem(s).loops(1).id(`llmion:alchemy_${id}`)
+		],
+			'kubejs:catalyst_empty',
+			[
+				event.recipes.createDeploying(s, [s, in1]),
+				event.recipes.createDeploying(s, [s, in2]),
+				event.recipes.createDeploying(s, [s, in3]),
+				event.recipes.createDeploying(s, [s, in4]),
+				event.recipes.createDeploying(s, [s, in5]),
+				event.recipes.createDeploying(s, [s, in6])
+			]).transitionalItem(s).loops(1).id(`llmion:alchemy_${id}`)
 	}
 	catalyst('kubejs:substrate_igneous', 'kubejs:substrate_andesite', 'kubejs:substrate_diorite', 'kubejs:substrate_granite', 'kubejs:substrate_cobblestone', 'kubejs:substrate_basalt', 'kubejs:substrate_limestone', 'igneous');
 	catalyst('kubejs:substrate_herbal', 'kubejs:substrate_red', 'kubejs:substrate_orange', 'kubejs:substrate_yellow', 'kubejs:substrate_green', 'kubejs:substrate_blue', 'kubejs:substrate_magenta', 'herbal');
@@ -148,19 +148,19 @@ onEvent("recipes", event => {
 	catalyst('kubejs:substrate_crystal', 'kubejs:substrate_arcane', 'kubejs:substrate_apatite', 'kubejs:substrate_niter', 'kubejs:substrate_quartz', 'kubejs:substrate_sulfur', 'kubejs:substrate_certus', 'crystal');
 	catalyst('kubejs:substrate_metal', 'kubejs:substrate_zinc', 'kubejs:substrate_copper', 'kubejs:substrate_iron', 'kubejs:substrate_tin', 'kubejs:substrate_gold', 'kubejs:substrate_nickel', 'metal');
 	catalyst('kubejs:substrate_gem', 'kubejs:substrate_cinnabar', 'kubejs:substrate_lapis', 'kubejs:substrate_emerald', 'kubejs:substrate_diamond', 'kubejs:substrate_ruby', 'kubejs:substrate_sapphire', 'gem');
-	    
-	    let b = ('kubejs:chaos_incomplete')
-	    event.recipes.createSequencedAssembly([
-			Item.of('kubejs:substrate_chaos').withChance(0.01),
-			Item.of('kubejs:alchemy_0').withChance(0.03),
-			Item.of('kubejs:substrate_igneous').withChance(0.16),
-			Item.of('kubejs:substrate_herbal').withChance(0.16),
-			Item.of('kubejs:substrate_volatile').withChance(0.16),
-			Item.of('kubejs:substrate_crystal').withChance(0.16),
-			Item.of('kubejs:substrate_metal').withChance(0.16),
-			Item.of('kubejs:substrate_gem').withChance(0.16)
-		], 
-		'kubejs:chaos_empty', 
+
+	let b = ('kubejs:chaos_incomplete')
+	event.recipes.createSequencedAssembly([
+		Item.of('kubejs:substrate_chaos').withChance(0.01),
+		Item.of('kubejs:alchemy_0').withChance(0.03),
+		Item.of('kubejs:substrate_igneous').withChance(0.16),
+		Item.of('kubejs:substrate_herbal').withChance(0.16),
+		Item.of('kubejs:substrate_volatile').withChance(0.16),
+		Item.of('kubejs:substrate_crystal').withChance(0.16),
+		Item.of('kubejs:substrate_metal').withChance(0.16),
+		Item.of('kubejs:substrate_gem').withChance(0.16)
+	],
+		'kubejs:chaos_empty',
 		[
 			event.recipes.createDeploying(b, [b, 'kubejs:substrate_igneous']),
 			event.recipes.createDeploying(b, [b, 'kubejs:substrate_herbal']),

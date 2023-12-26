@@ -30,7 +30,7 @@ onEvent('item.registry', event => {
 			.color(1, c1)
 			.color(2, c2)
 			.parentModel("kubejs:item/profession_card")
-            .texture("kubejs:item/profession_card_0")
+			.texture("kubejs:item/profession_card_0")
 			.displayName(`§7职业铭牌：§f${zhname}`)
 			.unstackable()
 	}
@@ -330,7 +330,7 @@ onEvent('item.registry', event => {
 		simple("石灰岩", "Limestone", CR('limestone', 16), 3, S, 0xA7A89E, 0xC0C2BA)
 		simple("熔渣", "Scoria", CR('scoria', 16), 3, S, 0x2A130C, 0x553427)
 		simple("黑曜石", "Obsidian", MC('obsidian', 1), 8, S, 0x05030A, 0x36234C)
-		
+
 		next_group()
 		entry_cost = 10
 		simple("橡木", "Oak Log", MC('oak_log', 16), 4, S, 0x735932, 0xA88756)
@@ -341,7 +341,7 @@ onEvent('item.registry', event => {
 		simple("深色橡木", "Dark Oak Log", MC('dark_oak_log', 16), 4, S, 0x2C1B0D, 0x422B15)
 		simple("绯红菌柄", "Crimson Stem", MC('crimson_stem', 16), 8, S, 0x442332, 0x7A3852)
 		simple("诡异菌柄", "Warped Stem", MC('warped_stem', 16), 8, S, 0x3E1E2D, 0x347776)
-		
+
 		next_group()
 		entry_cost = 10
 		simple("铁锭", "Iron Ingot", MC('iron_ingot', 8), 16, S, 0xA6A6A6, 0xD5D5D5)
@@ -350,11 +350,11 @@ onEvent('item.registry', event => {
 		simple("镍锭", "Nickel Ingot", TE('nickel_ingot', 8), 32, S, 0x977756, 0xE4D196)
 		simple("锡锭", "Tin Ingot", TE('tin_ingot', 8), 32, S, 0x314F6F, 0x6C8998)
 		simple("金锭", "Gold Ingot", MC('gold_ingot', 8), 48, S, 0xD99413, 0xFAF25E)
-		
+
 		simple("安山合金", "Andesite Alloy", CR('andesite_alloy', 16), 8, S, 0x505050, 0x878787)
 		simple("黄铜锭", "Brass Ingot", CR('brass_ingot', 8), 48, S, 0x6F3C2D, 0xFCF085)
 		simple("殷钢锭", "Invar Ingot", TE('invar_ingot', 4), 64, S, 0x406D6C, 0xC3CAC1)
-		
+
 		entry_cost = 10
 		simple("煤炭", "Coal", MC('coal', 16), 4, S, 0x1C1C1E, 0x383D45)
 		simple("燧石", "Flint", MC('flint', 16), 4, S, 0x3C3B3B, 0xA6A6A6)
@@ -368,16 +368,16 @@ onEvent('item.registry', event => {
 		simple("赛特斯石英", "Certus Quartz", AE2('certus_quartz_crystal', 8), 24, S, 0x91C5FC, 0xA7CBCF)
 		simple("福鲁伊克斯石英", "Fluix Quartz", AE2('fluix_crystal', 8), 32, S, 0x8F5CCB, 0xFC7ED4)
 		simple("硫化橡胶", "Cured Rubber", TE('cured_rubber', 6), 16, S, 0x3D363C, 0x594F55)
-		
+
 		next_group()
 		entry_cost = 10
 		simple("脚手架", "Scaffolding", MC('scaffolding', 16), 2, S, 0x7F5F41, 0xDDC683)
 		simple("羊毛", "Wool", MC('white_wool', 1), 8, S, 0xBEC4C5, 0xE4E4E4)
 		simple("海绵", "Sponge", MC('sponge', 1), 16, S, 0x8F8234, 0xCDCF4A)
 		simple("蜘蛛网", "Cobweb", MC('cobweb', 1), 16, S, 0xC2CCCF, 0xFCFCFC)
-		
+
 		row += 4
-		
+
 		next_group()
 		entry_cost = 10
 		simple("稻米", "Rice", FD('rice_bag', 1), 4, S, 0x9F7653, 0xCEC6BC)
@@ -386,7 +386,7 @@ onEvent('item.registry', event => {
 		simple("苹果", "Apple", MC('apple', 8), 12, S, 0x9C1017, 0xFF1C2B)
 		simple("藤蔓", "Vines", MC('vine', 4), 7, S, 0x317B10, 0x183D08)
 		simple("树木肥料", "Tree Fertilizer", CR('tree_fertilizer', 1), 8, S, 0xCF8469, 0x71933A)
-		
+
 		next_group()
 		entry_cost = 10
 		simple("抹灰", "Daub", SP('daub', 16), 5, S, 0xBFBAAA, 0xCBC8B6)
@@ -394,12 +394,12 @@ onEvent('item.registry', event => {
 		simple("铜砖块", "Copper Shingles", CR('copper_shingles', 16), 3, S, 0xB5654B, 0xE4BB79)
 		simple("焦黑石头", "Seared Stone", TC('seared_stone', 16), 32, S, 0x393734, 0x59534F)
 		simple("焦灼石", "Scorched Stone", TC('scorched_stone', 16), 32, S, 0x382C25, 0x4C3F37)
-		
+
 		simple("灯笼", "Lantern", MC('lantern', 1), 1, S, 0x484F64, 0xF6C765)
 		simple("铜灯笼", "Copper Lantern", SP('copper_lantern', 1), 1, S, 0xB36535, 0xF3B154)
 		simple("黄铜灯笼", "Brass Lantern", SP('brass_lantern', 1), 1, S, 0xA47C37, 0xFAEACF)
 		simple("绯红灯笼", "Crimson Lantern", SP('crimson_lantern', 1), 1, S, 0x9C0E2C, 0xE7EB56)
-		
+
 		next_group()
 		entry_cost = 10
 		simple("黏液球", "Slime Ball", MC('slime_ball', 4), 24, S, 0x4F7E48, 0x8AD480)
@@ -417,7 +417,7 @@ onEvent('item.registry', event => {
 		simple("骨头", "Bone", MC('bone', 4), 8, S, 0xC9C4A3, 0xC9C4A3)
 		simple("海晶碎片", "Prismarine Shard", MC('prismarine_shard', 4), 16, S, 0x2F6355, 0x8FC0AA)
 		simple("海晶砂粒", "Prismarine Crystals", MC('prismarine_crystals', 4), 24, S, 0x71A296, 0xDCE6D9)
-		
+
 		entry_cost = 10
 		simple("幻翼膜", "Phantom Membrane", MC('phantom_membrane', 1), 48, S, 0x6E506B, 0xC1B79F)
 		simple("烈焰蛋糕", "Blaze Cake", CR('blaze_cake', 1), 16, S, 0x834141, 0xFCE083)

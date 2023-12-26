@@ -5,7 +5,7 @@
 	[client.sounds]
 		#Show your ammunition as numbers, reloading timer, weapon icon, and fire mode all on the HUD.
 		#Range: 0.0 ~ 1.0
-		weaponsVolume = 1.0
+		weaponsVolume = 0.5
 		#If true, a sound will play when you successfully hit a headshot on a entity with a gun
 		playSoundWhenHeadshot = true
 		#The sound to play when a headshot occurs
@@ -99,7 +99,7 @@
 		#Configuration for HUD additions
 		[client.weaponGui.weaponTypeIcon]
 			#Display the weapon type Icon on your HUD.
-			showWeaponIcon = true
+			showWeaponIcon = false
 			#Size of the weapon type Icon on your HUD
 			#Range: 0.01 ~ 4.0
 			weaponIconSize = 1.0
@@ -127,7 +127,7 @@
 		#Configuration for HUD additions
 		[client.weaponGui.weaponAmmoCounter]
 			#Display the amount of ammunition your weapon holds and can hold on your HUD.
-			showWeaponAmmoCounter = true
+			showWeaponAmmoCounter = false
 			#Size of the weapon ammunition counter on your HUD
 			#Range: 0.01 ~ 4.0
 			weaponAmmoCounterSize = 1.0
@@ -141,7 +141,7 @@
 		#Configuration for HUD reloading timer bar
 		[client.weaponGui.weaponReloadTimer]
 			#Display the amount of ammunition your weapon holds and can hold on your HUD.
-			showWeaponAmmoCounter = true
+			showWeaponAmmoCounter = false
 			#Size of the weapon ammunition counter on your HUD
 			#Range: 0.01 ~ 4.0
 			weaponAmmoCounterSize = 1.0

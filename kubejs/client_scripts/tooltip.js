@@ -17,9 +17,9 @@ onEvent('item.tooltip', tooltip => {
 
     ore(['create:zinc_ore', 'create:deepslate_zinc_ore'], -63, 70, "主世界")
 
-    ore(['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'],  136, 256, "主世界")
-    ore(['minecraft:iron_ore', 'minecraft:deepslate_iron_ore'],  1, 64, "主世界")
-    ore(['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore'],  -32, 32, "主世界")
+    ore(['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'], 136, 256, "主世界")
+    ore(['minecraft:iron_ore', 'minecraft:deepslate_iron_ore'], 1, 64, "主世界")
+    ore(['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore'], -32, 32, "主世界")
     ore(['minecraft:gold_ore', 'minecraft:deepslate_gold_ore'], 80, 384, "主世界")
     ore(['minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore'], -144, 16, "主世界")
     ore(['minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore'], -64, 15, "主世界")
@@ -54,7 +54,7 @@ onEvent('item.tooltip', tooltip => {
     //         text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)));
     //     }
     // })
-    
+
     tooltip.addAdvanced('yuushya:wriggle_nightbug', (item, advanced, text) => {
         let cmData = item.nbt?.CustomModelData;
         if (cmData === 11821901) {
@@ -259,6 +259,20 @@ onEvent('item.tooltip', tooltip => {
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.hasumi1'));
                 text.add(8, Text.translate('tooltip.kubejs.hasumi2'));
+                text.add(9, Text.of(' '));
+            }
+        }
+        if (cmData === 11821916) {
+            if (!tooltip.shift) {
+                text.add(2, Text.translate('tooltip.kubejs.shift'));
+            } else {
+                text.add(2, Text.translate('tooltip.kubejs.shifton'));
+                text.add(3, Text.of(' '));
+                text.add(4, Text.translate('tooltip.kubejs.purana'));
+                text.add(5, Text.of(' '));
+                text.add(6, Text.translate('tooltip.kubejs.head'));
+                text.add(7, Text.translate('tooltip.kubejs.purana1'));
+                text.add(8, Text.translate('tooltip.kubejs.purana2'));
                 text.add(9, Text.of(' '));
             }
         }
