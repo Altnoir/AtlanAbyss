@@ -14,4 +14,4 @@ This is also my first time to contact the Depth modification modpack.
 From the beginning, I did not know any programming language, and I learned to do it slowly.  
 Later， I learned JavaScript in order to use kubejs well. 
 Then， because the demand was becoming more and more special, I learned datapack. 
-Later， kubejs and datapack could not meet the demand, and I even began to learn Java, and I started to do mods from scratch.
+Later...
