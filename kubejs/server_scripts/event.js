@@ -461,31 +461,53 @@ onEvent('entity.death', event => { // 跟你爆了
   }
 })
 
-// onEvent('entity.spawned', event => {
-//   let { entity } = event;
-//   let { x, z } = entity;
+onEvent('entity.spawned', event => {
+  let { entity, level, server } = event;
+  let { x, z } = entity;
 
-//   if (entity.monster && entity.isLiving()) {
-//     let health = entity.getMaxHealth();
+  function monsterSpawn(health, multiple, radius, length, circle) {
+    let r0 = radius - length;
 
-//     for (let i = 1; i <= 10; i++) {
-//       let r1 = 16 + 32 * i;
-//       let r2 = r1 + 32;
-//       let newHealth = Math.floor(health + 10 * i);
+    server.scheduleInTicks(1, () => {
+      for (let i = 1; i <= 320; i++) {
+        let r1 = r0 + length * i;
+        let r2 = r1 + length;
 
-//       if (x >= r1 || x <= -r1 || z >= r1 || z <= -r1) {
-//         if (x < r2 || x > -r2 || z < r2 || z > -r2) {
-//           entity.mergeFullNBT(`{Attributes:[{Name:"generic.max_health",Base:${newHealth}}]}`);
-//           entity.setHealth(newHealth);
-//         }
-//       }
-//     }
-//   }
+        let newHealth = Math.floor(health + (health * multiple * i));
 
-//   if (entity.type == 'touhou_little_maid:fairy') {
-//     event.cancel()
-//   }
-// })
+        let innerRing = circle ? (x * x + z * z >= r1 * r1) : (x >= r1 || x <= -r1 || z >= r1 || z <= -r1);
+        let outerRing = circle ? (x * x + z * z <= r2 * r2) : (x < r2 || x > -r2 || z < r2 || z > -r2);
+
+        if (innerRing && outerRing) {
+          entity.mergeFullNBT(`{Attributes:[{Name:"generic.max_health",Base:${newHealth}}]}`);
+          entity.heal(newHealth);
+        }
+      }
+    });
+  }
+
+  if (!entity.isPlayer() && entity.monster && entity.isLiving()) {
+    let health = entity.getMaxHealth();
+
+    //monsterSpawn(生命值, 倍率, 初始半径, 每隔多少半径强化一次，false为方形半径true为圆形半径);
+    if (level.dimension === 'minecraft:the_nether') {
+      monsterSpawn(health, 0.2, 16, 16, false);
+    }
+    if (level.dimension === 'inversia:inversiadim') {
+      monsterSpawn(health, 0.4, 192, 64, false);
+    }
+    if (level.dimension === 'twilightforest:twilight_forest') {
+      monsterSpawn(health, 0.5, 96, 32, true);
+    }
+  }
+
+
+
+  //给了ban了
+  if (entity.type == 'touhou_little_maid:fairy') {
+    event.cancel()
+  }
+})
 
 
 

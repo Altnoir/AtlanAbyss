@@ -588,10 +588,6 @@ onEvent('rei.group', (event) => {
 	event.groupItems('llmion:rei_groups/glyph', "魔符",
 		/ars_nouveau:glyph_/
 	);
-	//玻璃机壳
-	event.groupItems('llmion:rei_groups/create_crystal_clear', "玻璃机壳",
-		[/create_crystal_clear:/, 'create_crystal_clear:steel_glass_casing', 'create_crystal_clear:steel_tinted_glass_casing']
-	);
 	//锭
 	event.groupItems('llmion:rei_groups/ingots', "锭",
 		[/^thermal:.*_ingot$/]
@@ -607,14 +603,6 @@ onEvent('rei.group', (event) => {
 	//板
 	event.groupItems('llmion:rei_groups/plates', "板",
 		'#forge:plates'
-	);
-	//齿轮
-	event.groupItems('llmion:rei_groups/gears', "齿轮",
-		'#forge:gears'
-	);
-	//币
-	event.groupItems('llmion:rei_groups/coins', "币",
-		'#forge:coins'
 	);
 	//背包升级
 	event.groupItems('llmion:rei_groups/back_upgrade', "背包升级",
@@ -655,6 +643,26 @@ onEvent('rei.group', (event) => {
 	//tac皮肤
 	event.groupItems('llmion:rei_groups/tac_skin', "枪械皮肤",
 		/^tac:skin_?./
+	);
+	//粉笔
+	event.groupItems('llmion:rei_groups/chalk', "粉笔",
+	    '#chalk:chalk'
+	);
+	//宠物床
+	event.groupItems('llmion:rei_groups/pet_beds', "宠物床",
+		'#domesticationinnovation:pet_beds'
+	);
+	//交易卡
+	event.groupItems('llmion:rei_groups/trade_card', "交易卡",
+	    /^kubejs:trade_card_?./
+	);
+	//炼金混合物"
+	event.groupItems('llmion:rei_groups/alchemy_substrate', "炼金混合物",
+		'#llmion:alchemy_substrate'
+	);
+	//反应物
+	event.groupItems('llmion:rei_groups/substrates', "反应物",
+		'#kubejs:substrates'
 	);
 	//流体
 	const Fluid = [
