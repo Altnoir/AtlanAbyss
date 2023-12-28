@@ -1,5 +1,6 @@
 /.history
 /.curseclient
+/crash-reports
 /defaultconfigs
 /lightspeed-cache
 /logs
@@ -21,3 +22,6 @@
 /rocknroller
 /ldlib
 /multiblocked
+
+/config/roughlyenoughitems
+/config/worldedit

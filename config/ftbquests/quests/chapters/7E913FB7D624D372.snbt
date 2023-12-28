@@ -229,6 +229,7 @@
 			shape: "hexagon"
 			description: ["使用锄头类工具破坏树叶有75%的概率会掉落线"]
 			dependencies: ["36943F6B7F336DF2"]
+			hide: true
 			id: "519403A46F37EB4D"
 			tasks: [{
 				id: "11BCC48D58B08B5B"
@@ -249,6 +250,7 @@
 			shape: "hexagon"
 			description: ["使用抽屉以更好的存储单一重复的物品"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
 			id: "16CCDD21E5E15818"
 			tasks: [
 				{
@@ -281,6 +283,7 @@
 			shape: "hexagon"
 			description: ["东西太多装不下？试试做个背包！"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
 			id: "13627E6F08A8CB2D"
 			tasks: [{
 				id: "55645D91BE8BACC9"
@@ -316,10 +319,12 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 4.0d
 			y: -1.5d
 			shape: "hexagon"
 			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
 			id: "5A7F67F2BD3327F6"
 			tasks: [
 				{
