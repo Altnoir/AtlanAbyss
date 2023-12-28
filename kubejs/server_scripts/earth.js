@@ -9,4 +9,4 @@ onEvent('recipes', event => {
     remove('beyond_earth:steel_ingot_blasting')
     remove('beyond_earth:iron_plate')
     remove('beyond_earth:iron_stick')
-})
+});

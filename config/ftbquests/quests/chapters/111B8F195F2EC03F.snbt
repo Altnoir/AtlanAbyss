@@ -1,0 +1,405 @@
+{
+	id: "111B8F195F2EC03F"
+	group: "62B0CA2D682AC9D6"
+	order_index: 1
+	filename: "111B8F195F2EC03F"
+	title: "自然与魔法"
+	icon: {
+		id: "botania:lexicon"
+		Count: 1b
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["5D059C7F1A64ABB9"]
+			hide: true
+			id: "5A6B03E76B3807D3"
+			tasks: [{
+				id: "5C2D7DA3E1F48C63"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["5A6B03E76B3807D3"]
+			id: "6A63D947959AAB77"
+			tasks: [{
+				id: "555D472205C8CF82"
+				type: "item"
+				item: "botania:lexicon"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["5A6B03E76B3807D3"]
+			id: "0FD46CB5A854B716"
+			tasks: [{
+				id: "5A59F3890E0E1513"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["43E93D9FC2ED3F4D"]
+			hide: true
+			id: "3F1BC198BA9B6A45"
+			tasks: [{
+				id: "4EC236C3788181D8"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 1.5d
+			shape: "hexagon"
+			description: ["一把会飞的扫帚！不觉得很酷吗？作为一个魔法少女我可觉得太酷了，很符合我对魔法世界的想象！"]
+			dependencies: ["381E536079E75588"]
+			id: "15BE2DDEA1BB9D43"
+			tasks: [
+				{
+					id: "67B7A6DF04F60615"
+					type: "item"
+					item: "majobroom:broom_item"
+				}
+				{
+					id: "2F35167F31989A85"
+					type: "item"
+					item: {
+						id: "majobroom:majo_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "288EC08F51D59004"
+					type: "item"
+					item: {
+						id: "majobroom:majo_cloth"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "30AC967C3F836215"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "P点掉落改动"
+			icon: "touhou_little_maid:power_point"
+			disable_toast: true
+			x: 5.5d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"移除了妖精女仆生物"
+				"但是，手持博丽的御币时击杀任意生物可掉落P点"
+			]
+			dependencies: ["0FFF68D8B91B8A70"]
+			id: "6CC3920A8B0C1B39"
+			tasks: [{
+				id: "5E5243CA26ED8136"
+				type: "item"
+				item: {
+					id: "touhou_little_maid:hakurei_gohei"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5B67A8B7E288A7AF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			dependencies: ["0FD46CB5A854B716"]
+			id: "369202E8265D6C29"
+			tasks: [{
+				id: "43DB87DB8899A3D0"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			dependencies: ["0FD46CB5A854B716"]
+			id: "404B700E4ABCA47D"
+			tasks: [{
+				id: "26D12D36A9BDAE67"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: [
+				"369202E8265D6C29"
+				"404B700E4ABCA47D"
+			]
+			id: "0FFF68D8B91B8A70"
+			tasks: [{
+				id: "54E85FC0B73736F2"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["404B700E4ABCA47D"]
+			id: "36BFC4B7AE75FDCD"
+			tasks: [{
+				id: "497505A7C7573980"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			dependencies: ["404B700E4ABCA47D"]
+			id: "0471E925290C0E5C"
+			tasks: [{
+				id: "34D00AD113B88FF7"
+				type: "item"
+				item: "botania:hydroangeas"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["61635A022660E8DD"]
+			id: "381E536079E75588"
+			tasks: [{
+				id: "6DBBC09457D503CD"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["61635A022660E8DD"]
+			id: "6FBD76A2F0D639BF"
+			tasks: [{
+				id: "1A648AC27BF07D7D"
+				type: "item"
+				item: "ars_creo:starbuncle_wheel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "61635A022660E8DD"
+			tasks: [{
+				id: "53D8659639246133"
+				type: "item"
+				item: "ars_nouveau:enchanting_apparatus"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "59590B7C0407D529"
+			tasks: [{
+				id: "364773923450B540"
+				type: "item"
+				item: "ars_nouveau:arcane_core"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "1992B0BD1955E547"
+			tasks: [{
+				id: "4FC00F7165B90657"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "7232CA6AF91F3845"
+			tasks: [{
+				id: "40402662D7D5648B"
+				type: "item"
+				item: "ars_nouveau:relay"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			dependencies: ["7232CA6AF91F3845"]
+			id: "23CCCD104B8F1588"
+			tasks: [{
+				id: "45D7224DAAA26F16"
+				type: "item"
+				item: "ars_nouveau:relay_splitter"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 8.0d
+			dependencies: ["7232CA6AF91F3845"]
+			id: "77D83AFD76179A72"
+			tasks: [{
+				id: "6A936008651E3AF5"
+				type: "item"
+				item: "ars_nouveau:relay_deposit"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.5d
+			dependencies: ["7232CA6AF91F3845"]
+			id: "62FB541771E79A4E"
+			tasks: [{
+				id: "6266E735798F7580"
+				type: "item"
+				item: "ars_nouveau:relay_collector"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 8.0d
+			dependencies: ["7232CA6AF91F3845"]
+			id: "3A682B2C93F75583"
+			tasks: [{
+				id: "16B1E7EA8A2CA08D"
+				type: "item"
+				item: "ars_nouveau:relay_warp"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "6C6215BC890BD22A"
+			tasks: [{
+				id: "1B38F94833546030"
+				type: "item"
+				item: "ars_nouveau:arcane_pedestal"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			dependencies: ["6C6215BC890BD22A"]
+			id: "1418B6EDC4D32AAD"
+			tasks: [{
+				id: "336BF98AD48653B9"
+				type: "item"
+				item: "ars_nouveau:ritual_brazier"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "14739AB768F307AC"
+			tasks: [{
+				id: "5D0132D1D84897F9"
+				type: "item"
+				item: "ars_nouveau:source_jar"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			dependencies: ["14739AB768F307AC"]
+			id: "0BDA249418AE163D"
+			tasks: [{
+				id: "4CF5536C59753445"
+				type: "item"
+				item: "ars_nouveau:agronomic_sourcelink"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["14739AB768F307AC"]
+			id: "2049D4BE91AC0B9C"
+			tasks: [{
+				id: "57699C36C005305A"
+				type: "item"
+				item: "ars_nouveau:volcanic_sourcelink"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			dependencies: ["14739AB768F307AC"]
+			id: "0727A8B854E3C9C2"
+			tasks: [{
+				id: "1D4C9B19C5461BC0"
+				type: "item"
+				item: "ars_nouveau:alchemical_sourcelink"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.5d
+			dependencies: ["14739AB768F307AC"]
+			id: "6279DE8B5FB1A7C6"
+			tasks: [{
+				id: "538253E97FB6B72E"
+				type: "item"
+				item: "ars_nouveau:vitalic_sourcelink"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			dependencies: ["14739AB768F307AC"]
+			id: "02A6D2405AD1595A"
+			tasks: [{
+				id: "1B14EB5BB81FB384"
+				type: "item"
+				item: "ars_nouveau:mycelial_sourcelink"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["3F1BC198BA9B6A45"]
+			id: "06E0053A9632DFAA"
+			tasks: [{
+				id: "2F49E43854EF3046"
+				type: "item"
+				item: "ars_nouveau:worn_notebook"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

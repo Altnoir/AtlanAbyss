@@ -34,13 +34,13 @@
 	#Configure max Entity distance
 	[EmbeddiumPlus.entity_distance_limit]
 		#Value is squared, default was 64^2 (or 64x64)
-		maxHorizontalDistance = 4096
+		maxHorizontalDistance = 16384
 		#Turn on this feature
 		Enable = true
 		#Example: "minecraft:bat" for specific entity or "alexmobs:*" for all mod specific entities
 		entityWhitelist = []
 		#Value is raw
-		maxVerticalDistance = 32
+		maxVerticalDistance = 64
 
 	#Section deprecated and removed soon (in favor of rework)
 	[EmbeddiumPlus.true_darkness]

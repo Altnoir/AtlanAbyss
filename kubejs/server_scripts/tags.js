@@ -155,6 +155,7 @@ onEvent('tags.items', event => {
 
 
 
+
 	//加！
 	const tagToAdd = [
 		//信标激活物品添加
@@ -253,6 +254,10 @@ onEvent('tags.items', event => {
 	thick('kubejs:borer_tear_soup')
 	thick('kubejs:thousand_plant_stew')
 })
+
+
+
+
 
 onEvent('tags.blocks', event => {
 	//信标激活方块移除

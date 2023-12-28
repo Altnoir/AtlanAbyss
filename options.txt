@@ -29,15 +29,15 @@ simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:3
 particles:0
-maxFps:150
+maxFps:160
 difficulty:2
 graphicsMode:1
 ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","create_central_kitchen:create_styled","file/[1.18]MASA全家桶汉化包.zip","file/XeKr 原版红石显示1.18.zip","file/Create Immersive Aircrafts Resource Pack 1.18.2 - 1.2.zip","file/MC Connected CTM v1.2.3-1.18.2.zip","file/Glass Panes CTM Fix v1.0-1.18.zip","resources/AtlanAbyss","resources/AtlanAbyss-Music"]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","create_central_kitchen:create_styled","file/[1.18]MASA全家桶汉化包.zip","file/XeKr 原版红石显示1.18.zip","file/Create Immersive Aircrafts Resource Pack 1.18.2 - 1.2.zip","file/MC Connected CTM v1.2.3-1.18.2.zip","file/Glass Panes CTM Fix v1.0-1.18.zip","resources/AtlanAbyss","resources/AtlanAbyss-Music","file/ldlib","file/multiblocked"]
+incompatibleResourcePacks:["file/ldlib","file/multiblocked"]
 lastServer:
 lang:zh_cn
 soundDevice:
@@ -131,9 +131,6 @@ key_key.modernfix.config:key.keyboard.unknown
 key_placebo.toggleTrails:key.keyboard.unknown
 key_key.corpse.death_history:key.keyboard.l
 key_placebo.toggleWings:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.unknown
-key_iris.keybind.toggleShaders:key.keyboard.k
-key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.zoomin:key.keyboard.keypad.add
 key_key.centerzoom:key.keyboard.keypad.5
 key_key.zoomout:key.keyboard.keypad.subtract
@@ -143,8 +140,11 @@ key_key.rollright:key.keyboard.keypad.9
 key_key.point:key.keyboard.keypad.multiply
 key_key.startStop:key.keyboard.keypad.divide
 key_key.clearPoint:key.keyboard.delete
-key_chunkloaders.keys.open_screen:key.keyboard.semicolon
+key_iris.keybind.reload:key.keyboard.unknown
+key_iris.keybind.toggleShaders:key.keyboard.k
+key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.botania_corporea_request:key.keyboard.unknown
+key_chunkloaders.keys.open_screen:key.keyboard.semicolon
 key_key.ftbquests.quests:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.immersive_aircraft.multi_control_left:key.keyboard.a
@@ -245,11 +245,11 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
-key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_key.cofh.mode_change_increment:key.keyboard.z
 key_key.cofh.mode_change_decrement:key.keyboard.unknown
 key_key.up:key.keyboard.space
@@ -271,7 +271,7 @@ key_pneumaticcraft.armor.upgrade.block_tracker.module.hackables:key.keyboard.unk
 key_pneumaticcraft.armor.upgrade.block_tracker.module.inventories:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker.module.end_portal:key.keyboard.unknown
 soundCategory_master:0.50993377
-soundCategory_music:0.25821596
+soundCategory_music:0.15727699
 soundCategory_record:0.5046948
 soundCategory_weather:1.0
 soundCategory_block:1.0

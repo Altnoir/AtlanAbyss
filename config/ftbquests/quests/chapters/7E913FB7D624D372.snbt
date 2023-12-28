@@ -1,15 +1,15 @@
 {
 	id: "7E913FB7D624D372"
-	group: ""
+	group: "62B0CA2D682AC9D6"
 	order_index: 0
 	filename: "7E913FB7D624D372"
-	title: "如何开始？"
+	title: "一切的开始"
 	icon: "minecraft:grass_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "整合包介绍"
+			title: "前言"
 			icon: "minecraft:grass_block"
 			x: 0.0d
 			y: 0.0d
@@ -27,75 +27,10 @@
 			}]
 		}
 		{
-			title: "访问下界"
-			icon: "minecraft:netherrack"
-			x: 2.0d
-			y: 0.0d
-			description: ["使用黑曜石搭建地狱门，并且点燃它"]
-			dependencies: ["44572D4F990F380B"]
-			hide: true
-			id: "72DDE02C635DBC64"
-			tasks: [{
-				id: "57C85803B4809C47"
-				type: "advancement"
-				advancement: "minecraft:story/enter_the_nether"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "292CFDCE2EAC47B3"
-				type: "xp"
-				xp: 25
-			}]
-		}
-		{
-			title: "访问末地"
-			icon: "minecraft:end_stone"
-			x: 7.0d
-			y: 0.0d
-			description: ["集齐12个末影之眼并且找到末地传送门"]
-			dependencies: ["72DDE02C635DBC64"]
-			hide: true
-			id: "7CE0A6917E0DA584"
-			tasks: [{
-				id: "75C3A7197DB0C418"
-				type: "advancement"
-				advancement: "minecraft:story/enter_the_end"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "1875B2F3145967D9"
-				type: "xp"
-				xp: 50
-			}]
-		}
-		{
-			title: "访问颠倒之域"
-			icon: "minecraft:amethyst_block"
-			x: 10.0d
-			y: 0.0d
-			description: [
-				"方法一：\\n站在主世界的基岩上方吃掉紫颂果，返回则是头顶基岩吃掉紫颂果"
-				"方法二：\\n在下界想个法子一直往上飞，返回则是往下"
-			]
-			dependencies: ["7CE0A6917E0DA584"]
-			hide: true
-			id: "5A8FCD8DE3F2E463"
-			tasks: [{
-				id: "592B0EE495EC6526"
-				type: "dimension"
-				icon: "minecraft:amethyst_block"
-				dimension: "inversia:inversiadim"
-			}]
-			rewards: [{
-				id: "41DC2769E2683D9B"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 0.0d
-			y: 2.0d
+			x: 6.5d
+			y: 2.5d
 			description: ["因为是休闲向的科技包，所以对于前期来说几乎可以当作原版生存来玩，并且机械动力本体的物品配方都没有经过魔改哦。"]
+			dependencies: ["58D3EC802A6FBD27"]
 			id: "41985FBE709E5F94"
 			tasks: [{
 				id: "50234BB013D42B1A"
@@ -109,16 +44,13 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 2.0d
+			x: 7.5d
+			y: 6.0d
 			description: [
 				"首先需要找到至少一个烈焰人刷怪笼(一般的下界要塞)"
 				"然后使用空的烈焰人燃烧室对着刷怪笼右键，即可捕获烈焰人\\n注:刷怪笼可以无限捕获烈焰人"
 			]
-			dependencies: [
-				"41985FBE709E5F94"
-				"72DDE02C635DBC64"
-			]
+			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "2B26826B86BCA145"
 			tasks: [{
@@ -134,10 +66,9 @@
 		}
 		{
 			x: 4.0d
-			y: 2.0d
+			y: 5.0d
 			description: ["从这里开始逐渐会出现魔改的内容"]
-			dependencies: ["2B26826B86BCA145"]
-			hide: true
+			dependencies: ["4C2C16BA5796BFD0"]
 			id: "3671DBBFABCD1B71"
 			tasks: [{
 				id: "2BFFB61E4BD27ADC"
@@ -151,15 +82,14 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 2.5d
+			x: 2.0d
+			y: 5.0d
 			description: [
 				"使用精炼厂处理石油"
 				"精炼厂输出端需放置在控制器的上方"
 				"在输出端周围放置羊毛可降低热量的散发"
 			]
 			dependencies: ["3671DBBFABCD1B71"]
-			hide: true
 			id: "53351BAE32FDCD6A"
 			tasks: [
 				{
@@ -180,8 +110,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 1.5d
+			x: 3.0d
+			y: 5.5d
 			description: [
 				"在沙漠地区你可能会发现沥青沙，经过处理便可获得石油"
 				"如果实在找不到野生石油，你也可以通过血人工合成石油"
@@ -200,12 +130,12 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 2.0d
+			x: 0.0d
+			y: 7.0d
 			description: ["从你破坏的第一颗树开始……到应力时代的嗡嗡作响……再到压力时代的气体泄漏，你已经历许多。现在，开启你最伟大的探索吧：从早期工业革命到信息时代！"]
 			dependencies: [
-				"0BC087D2D6933F9C"
-				"53351BAE32FDCD6A"
+				"3909A2788335AB22"
+				"4172CB4FD4825D49"
 			]
 			id: "04B534A53F398C7A"
 			tasks: [{
@@ -220,13 +150,9 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 2.0d
-			dependencies: [
-				"04B534A53F398C7A"
-				"5A8FCD8DE3F2E463"
-			]
-			hide: true
+			x: 1.0d
+			y: 8.0d
+			dependencies: ["04B534A53F398C7A"]
 			id: "11F6435C17265B4A"
 			tasks: [{
 				id: "680F64E363DDE326"
@@ -243,12 +169,13 @@
 			title: "未唤醒的石头？"
 			icon: "molten_geodes:dormant_crimsite"
 			x: 2.0d
-			y: -2.0d
+			y: 1.5d
+			shape: "hexagon"
 			description: [
 				"你也许会在下界或颠倒之域发现一些不像晶洞的晶洞，这种晶洞內有少数未唤醒的石头，分别是“未唤醒的皓蓝石”，“未唤醒的辉绿岩”，“未唤醒的绯红岩”，“未唤醒的赭金砂”\\n你可以通过在这种石头的上方放置TNT来唤醒它！"
 				"唤醒之后只需在它附近放置岩浆源即可产出对应的石头。"
 			]
-			dependencies: ["72DDE02C635DBC64"]
+			dependencies: ["137563E84BDBF0CC"]
 			hide: true
 			id: "62AB989F18B1E671"
 			tasks: [{
@@ -260,6 +187,500 @@
 				id: "69570CECF251D1C9"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			title: "获取原木"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["44572D4F990F380B"]
+			id: "36943F6B7F336DF2"
+			tasks: [{
+				id: "01A9395D86710A6A"
+				type: "item"
+				title: "Any #minecraft:logs"
+				icon: "minecraft:oak_log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["36943F6B7F336DF2"]
+			id: "5BC3A59AAD6CEDBE"
+			tasks: [{
+				id: "1AC44A870C872BC1"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			title: "树叶掉落物改动"
+			icon: "minecraft:oak_leaves"
+			disable_toast: true
+			x: 2.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["使用锄头类工具破坏树叶有75%的概率会掉落线"]
+			dependencies: ["36943F6B7F336DF2"]
+			id: "519403A46F37EB4D"
+			tasks: [{
+				id: "11BCC48D58B08B5B"
+				type: "checkmark"
+				title: "确定"
+			}]
+			rewards: [{
+				id: "40354BFA3013BF57"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "抽屉！"
+			disable_toast: true
+			x: 5.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["使用抽屉以更好的存储单一重复的物品"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			id: "16CCDD21E5E15818"
+			tasks: [
+				{
+					id: "38E1DDC63273AFDA"
+					type: "item"
+					item: "functionalstorage:oak_1"
+				}
+				{
+					id: "429FC15D45835DAD"
+					type: "item"
+					item: "minecraft:barrel"
+				}
+				{
+					id: "06F0D724EEF03112"
+					type: "item"
+					item: "minecraft:chest"
+				}
+			]
+			rewards: [{
+				id: "67B138EB935F62D4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "精妙背包"
+			disable_toast: true
+			x: 5.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["东西太多装不下？试试做个背包！"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			id: "13627E6F08A8CB2D"
+			tasks: [{
+				id: "55645D91BE8BACC9"
+				type: "item"
+				title: "任意背包"
+				icon: {
+					id: "sophisticatedbackpacks:backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 27
+						upgradeSlots: 1
+						contentsUuid: [I;
+							-1844206996
+							-664973661
+							-1977918144
+							737068954
+						]
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "curios:back"
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "41B399335485DFBA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			id: "5A7F67F2BD3327F6"
+			tasks: [
+				{
+					id: "786D1ACE3AEF6757"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "05350053C833C26A"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2D2B3279340E6BA8"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "46C44AAD4B965498"
+					type: "item"
+					item: {
+						id: "minecraft:stone_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			id: "58D3EC802A6FBD27"
+			tasks: [{
+				id: "30F97086984C186C"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			dependencies: ["41985FBE709E5F94"]
+			id: "0F1CD1C8804008B7"
+			tasks: [{
+				id: "4FE9B462C0797FE0"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.0d
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "4C2C16BA5796BFD0"
+			tasks: [{
+				id: "7F7ABA73E1D85FA9"
+				type: "item"
+				item: "thermal:steel_ingot"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "0D3B950AFB6E6BC2"
+			tasks: [{
+				id: "6E3DECA4C3BC0660"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["0BB8CB7E2D58A3DB"]
+			id: "101644FFFD0476B7"
+			tasks: [{
+				id: "01E27DFB90BAD145"
+				type: "item"
+				item: "thermal:lightning_charge"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			dependencies: ["0D3B950AFB6E6BC2"]
+			id: "0BB8CB7E2D58A3DB"
+			tasks: [{
+				id: "40F1D4E0B5565FDB"
+				type: "item"
+				item: "thermal:blitz_rod"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
+			id: "1F5A77E77CE7A69A"
+			tasks: [
+				{
+					id: "62FA00DB0D2212D3"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "7DB8FF2FE6037F04"
+					type: "item"
+					item: "create:large_water_wheel"
+				}
+				{
+					id: "601A28C002EED9A8"
+					type: "item"
+					item: "create:hand_crank"
+				}
+			]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
+			id: "7026D208C4850E52"
+			tasks: [{
+				id: "6FF9D4C6E66E893A"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: 3.0d
+			shape: "hexagon"
+			description: ["担心周围刷怪但是懒得插火把？试试这个"]
+			dependencies: ["7026D208C4850E52"]
+			id: "1430F7FB3DADD2C5"
+			tasks: [{
+				id: "007F5D3361B0A49E"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+			rewards: [{
+				id: "0912000C2343F8DD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 6.5d
+			y: 6.0d
+			dependencies: ["0D3B950AFB6E6BC2"]
+			hide: true
+			id: "14A8E7E37136FB5C"
+			tasks: [{
+				id: "1FF2B98F37958438"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.0d
+			dependencies: ["0D3B950AFB6E6BC2"]
+			hide: true
+			id: "32F577B605FC8D35"
+			tasks: [{
+				id: "6C621F86344023B9"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			title: "下界合金再生"
+			icon: "kubejs:eviltwisting_ingot"
+			disable_toast: true
+			x: 7.5d
+			y: 3.0d
+			shape: "hexagon"
+			description: ["你可以通过合成恶魔缠绕锭来使下界合金再生"]
+			dependencies: ["32F577B605FC8D35"]
+			id: "5CBFBFC9BDCDFA57"
+			tasks: [{
+				id: "7341D8E93B12B56C"
+				type: "item"
+				item: "kubejs:eviltwisting_ingot"
+			}]
+			rewards: [{
+				id: "61D92FD6BA1D4486"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "区块加载器"
+			disable_toast: true
+			x: 4.5d
+			y: 4.0d
+			shape: "hexagon"
+			description: ["使用区块加载器来保持你的工作区区块常加载"]
+			dependencies: ["3671DBBFABCD1B71"]
+			hide: true
+			id: "0DC2728FDA93D63E"
+			tasks: [{
+				id: "3B82812670E74944"
+				type: "item"
+				item: "chunkloaders:basic_chunk_loader"
+			}]
+			rewards: [{
+				id: "11AFFAA1A0FE71F4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["3671DBBFABCD1B71"]
+			hide: true
+			id: "082B263CE25C5598"
+			tasks: [{
+				id: "2EEED77BE5C992DA"
+				type: "item"
+				item: "createoreexcavation:vein_finder"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			dependencies: [
+				"0BC087D2D6933F9C"
+				"53351BAE32FDCD6A"
+				"101644FFFD0476B7"
+			]
+			id: "3909A2788335AB22"
+			tasks: [{
+				id: "7506E9BEABEB8369"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["137563E84BDBF0CC"]
+			id: "4172CB4FD4825D49"
+			tasks: [{
+				id: "43007E4A52F24896"
+				type: "item"
+				item: "kubejs:aluminum_ingot"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.0d
+			dependencies: [
+				"32F577B605FC8D35"
+				"2B26826B86BCA145"
+			]
+			id: "4786752F32FF31C0"
+			tasks: [{
+				id: "31D45CDCD5158D44"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.5d
+			shape: "rsquare"
+			dependencies: ["14A8E7E37136FB5C"]
+			id: "5D059C7F1A64ABB9"
+			tasks: [{
+				id: "0C84183C7A0C3F89"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+		}
+		{
+			title: "“这是什么?喝一口”"
+			disable_toast: true
+			x: 4.0d
+			y: 8.0d
+			shape: "hexagon"
+			description: ["核反应堆的产出物"]
+			dependencies: ["11F6435C17265B4A"]
+			id: "3F8D442510D58D22"
+			tasks: [{
+				id: "522E4431E0C0077F"
+				type: "item"
+				item: "biggerreactors:cyanite_ingot"
+			}]
+			rewards: [{
+				id: "2A43E3406022812C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["4E12320C5CF0FE7B"]
+			id: "137563E84BDBF0CC"
+			tasks: [{
+				id: "58F4DD7542190121"
+				type: "item"
+				item: "minecraft:netherrack"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["58D3EC802A6FBD27"]
+			id: "4E12320C5CF0FE7B"
+			tasks: [{
+				id: "0A2AEAC21A142A25"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 7.5d
+			shape: "rsquare"
+			dependencies: ["14A8E7E37136FB5C"]
+			id: "43E93D9FC2ED3F4D"
+			tasks: [{
+				id: "023B963A1AA50DCF"
+				type: "item"
+				item: "ars_nouveau:green_archwood_sapling"
 			}]
 		}
 	]

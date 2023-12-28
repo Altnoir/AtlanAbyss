@@ -1,0 +1,5 @@
+{
+	"block.ars_creo.starbuncle_wheel": "星宝石轮",
+	"ars_creo.page.starbuncle_wheel": "为机械动力提供应力，在星宝石轮前放置一个金块以增加转速。",
+	"ars_creo.page.behaviors": "Ars Creo为来自Ars Nouveau的方块提供了特殊的动态装置行为，包括法术炮塔和魔源罐。基本法术炮塔-在相互作用时对装置发射法术。定时法术炮塔-在间隔时间内发射一个法术。附魔法术炮塔-每到达一个新的方块就发射一个魔咒。魔源罐-可以被一个装置上的炮塔消耗。"
+}

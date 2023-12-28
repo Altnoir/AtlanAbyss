@@ -10,7 +10,6 @@ onEvent('recipes', event => {
   remove('ae2:inscriber/ender_dust')
   event.recipes.create.milling(['thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("llmion:milling_ender_pearl")
 
-
   event.recipes.createCrushing([
     'ae2:certus_quartz_crystal',
     '4x ae2:certus_quartz_dust',

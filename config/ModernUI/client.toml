@@ -11,7 +11,7 @@
 	backgroundColor = ["#99000000"]
 	#Add blur effect to GUI background when opened, it is incompatible with OptiFine's FXAA shader and some mods.
 	#Disable this if you run into a problem or are on low-end PCs
-	blurEffect = true
+	blurEffect = false
 	#The strength for two-pass gaussian convolution blur effect.
 	#samples/pixel = ((radius * 2) + 1) * 2, sigma = radius / 2.
 	#Range: 2 ~ 18
