@@ -1,0 +1,13 @@
+{
+    "type": "stonecutting",
+    "conditions": [
+        {
+            "type": "forge:false"
+        }
+    ],
+    "ingredient": {
+        "item": "minecraft:bamboo_block"
+    },
+    "result": "yuushya:raw_bamboo",
+    "count": 1
+}

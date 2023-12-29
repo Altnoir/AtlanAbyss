@@ -1,0 +1,27 @@
+{
+    "type": "crafting_shaped",
+    "conditions": [
+        {
+            "type": "forge:false"
+        }
+    ],
+    "pattern": [
+        "###",
+        "&/&",
+        "&&&"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:wooden_slabs"
+        },
+        "/": {
+            "item": "minecraft:gold_ingot"
+        },
+        "&": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+		"item": "chimes:iron_gong"
+	}
+}

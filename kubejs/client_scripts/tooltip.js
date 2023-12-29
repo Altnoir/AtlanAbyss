@@ -1,44 +1,51 @@
 onEvent('item.tooltip', tooltip => {
-    let ore = (id, y1, y2, dim) => tooltip.add(id, [`§o§7生成高度：Y= §6${y1} §7至 §6${y2}`, `§7生成维度：§6${dim}`])
-    ore(['thermal:cinnabar_ore', 'thermal:deepslate_cinnabar_ore'], -16, 48, "主世界")
-    ore(['thermal:niter_ore', 'thermal:deepslate_niter_ore'], -16, 64, "主世界")
-    ore(['thermal:nickel_ore', 'thermal:deepslate_nickel_ore'], -40, 120, "主世界")
-    ore(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore'], -144, 16, "主世界")
-    ore(['thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'], -144, 16, "主世界")
-    ore(['thermal:silver_ore', 'thermal:deepslate_silver_ore'], -60, 40, "主世界")
-    ore(['thermal:apatite_ore', 'thermal:deepslate_apatite_ore'], -16, 96, "主世界")
-    ore(['thermal:sulfur_ore', 'thermal:deepslate_sulfur_ore'], -16, 32, "主世界")
-    ore(['thermal:tin_ore', 'thermal:deepslate_tin_ore'], -20, 60, "主世界")
-    ore('kubejs:nether_aluminum_ore', 104, 128, "下界")
-    ore('thermal:deepslate_lead_ore', 180, 255, "颠倒之域")
-    ore('kubejs:inversia_uranium_ore', 188, 255, "颠倒之域")
-    ore('kubejs:end_bismuth_ore', 0, 255, "末地")
-    ore('ae2:deepslate_quartz_ore', 0, 255, "末地")
+    let ore = (id, y, dim) => tooltip.addAdvanced(
+        id, (item, advanced, text) => {
+            if (!tooltip.shift) {
+                text.add(1, Text.translate('tooltip.kubejs.shift'));
+            } else {
+                text.add(1, Text.translate('tooltip.kubejs.shifton'));
+                text.add(2, Text.translate('tooltip.kubejs.' + y));
+                text.add(3, Text.translate('tooltip.kubejs.' + dim));
+            }
+        })
+    ore(['thermal:cinnabar_ore', 'thermal:deepslate_cinnabar_ore'], 'cinnabar_y', 'overworld')
+    ore(['thermal:niter_ore', 'thermal:deepslate_niter_ore'], 'niter_y', 'overworld')
+    ore(['thermal:nickel_ore', 'thermal:deepslate_nickel_ore'], 'nickel_y', 'overworld')
+    ore(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore'], 'ruby_y', 'overworld')
+    ore(['thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'], 'sapphire_y', 'overworld')
+    ore(['thermal:silver_ore', 'thermal:deepslate_silver_ore'], 'silver_y', 'overworld')
+    ore(['thermal:apatite_ore', 'thermal:deepslate_apatite_ore'], 'apatite_y', 'overworld')
+    ore(['thermal:sulfur_ore', 'thermal:deepslate_sulfur_ore'], 'sulfur_y', 'overworld')
+    ore(['thermal:tin_ore', 'thermal:deepslate_tin_ore'], 'tin_y', 'overworld')
+    ore('kubejs:nether_aluminum_ore', 'aluminum_y', 'the_nether')
+    ore('thermal:deepslate_lead_ore', 'lead_y', 'inversiadim')
+    ore('kubejs:inversia_uranium_ore', 'uranium_y', 'inversiadim')
+    ore('kubejs:end_bismuth_ore', 'bismuth_y', 'the_end')
+    ore('ae2:deepslate_quartz_ore', 'quartz_y', 'the_end')
+    ore(['create:zinc_ore', 'create:deepslate_zinc_ore'], 'zinc_y', 'overworld')
 
-    ore(['create:zinc_ore', 'create:deepslate_zinc_ore'], -63, 70, "主世界")
+    ore(['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'], 'coal_y', 'overworld')
+    ore(['minecraft:iron_ore', 'minecraft:deepslate_iron_ore'], 'iron_y', 'overworld')
+    ore(['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore'], 'lapis_y', 'overworld')
+    ore(['minecraft:gold_ore', 'minecraft:deepslate_gold_ore'], 'gold_y', 'overworld')
+    ore(['minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore'], 'diamond_y', 'overworld')
+    ore(['minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore'], 'redstone_y', 'overworld')
+    ore(['minecraft:copper_ore', 'minecraft:deepslate_copper_ore'], 'copper_y', 'overworld')
+    ore(['minecraft:emerald_ore', 'minecraft:deepslate_emerald_ore'], 'emerald_y', 'overworld')
 
-    ore(['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'], 136, 256, "主世界")
-    ore(['minecraft:iron_ore', 'minecraft:deepslate_iron_ore'], 1, 64, "主世界")
-    ore(['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore'], -32, 32, "主世界")
-    ore(['minecraft:gold_ore', 'minecraft:deepslate_gold_ore'], 80, 384, "主世界")
-    ore(['minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore'], -144, 16, "主世界")
-    ore(['minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore'], -64, 15, "主世界")
-    ore(['minecraft:copper_ore', 'minecraft:deepslate_copper_ore'], -16, 112, "主世界")
-    ore(['minecraft:emerald_ore', 'minecraft:deepslate_emerald_ore'], -16, 480, "主世界")
+    const mixedHerb = ['gg', 'ggg', 'rg', 'bg', 'yg', 'br', 'yr', 'bgg', 'ygg', 'brg', 'yrg'];
 
-    tooltip.add('nethersdelight:propelplant_cane', '§6使用小刀破坏枪药草茎获得');
-
-    tooltip.add('kubejs:mixed_herb_gg', '§6可恢复适量生命值');
-    tooltip.add('kubejs:mixed_herb_ggg', '§6可恢复大量生命值');
-    tooltip.add('kubejs:mixed_herb_rg', '§6可恢复大量生命值');
-    tooltip.add('kubejs:mixed_herb_bg', '§6可清除体内所有毒素，恢复少量生命值');
-    tooltip.add('kubejs:mixed_herb_yg', '§6可暂时提升生命上限，恢复少量生命值');
-    tooltip.add('kubejs:mixed_herb_br', '§6不可单独食用');
-    tooltip.add('kubejs:mixed_herb_yr', '§6不可单独食用');
-    tooltip.add('kubejs:mixed_herb_bgg', '§6可清除体内所有毒素，恢复适量生命值');
-    tooltip.add('kubejs:mixed_herb_ygg', '§6可暂时提升生命上限，恢复适量生命值');
-    tooltip.add('kubejs:mixed_herb_brg', '§6可清除体内所有毒素，恢复大量生命值');
-    tooltip.add('kubejs:mixed_herb_yrg', '§6可暂时提升生命上限，恢复大量生命值');
+    mixedHerb.forEach(color => {
+        tooltip.addAdvanced('kubejs:mixed_herb_' + color, (item, advanced, text) => {
+            if (!tooltip.shift) {
+                text.add(1, Text.translate('tooltip.kubejs.shift'));
+            } else {
+                text.add(1, Text.translate('tooltip.kubejs.shifton'));
+                text.add(2, Text.translate('tooltip.kubejs.mixed_herb_' + color));
+            }
+        })
+    })
 
     global.substrates[0].forEach(e => tooltip.add(e.id, [`§8类型： §7火成`]));
     global.substrates[1].forEach(e => tooltip.add(e.id, [`§8类型： §7草本`]));
@@ -288,7 +295,6 @@ onEvent('item.tooltip', tooltip => {
             text.add(4, Text.translate('tooltip.kubejs.turtle_helmet1'));
             text.add(5, Text.translate('tooltip.kubejs.turtle_helmet2'));
             text.add(6, Text.translate('tooltip.kubejs.turtle_helmet3'));
-            text.add(7, Text.of(' '));
         }
     })
 })

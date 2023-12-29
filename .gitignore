@@ -23,5 +23,6 @@
 /ldlib
 /multiblocked
 
-/config/roughlyenoughitems
-/config/worldedit
+config/roughlyenoughitems
+config/worldedit
+config/bocchud

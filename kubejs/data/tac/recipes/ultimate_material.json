@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "thermal:signalum_block"
+        },
+        "B": {
+            "item": "kubejs:charged_soulsteel_ingot"
+        },
+        "C": {
+            "item": "tac:legendary_material"
+        }
+    },
+    "result": {
+        "item": "tac:ultimate_material"
+    }
+}

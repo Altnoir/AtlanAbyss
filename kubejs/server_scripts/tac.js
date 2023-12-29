@@ -4,7 +4,6 @@ onEvent('recipes', event => {
 	}
 	remove('tac:762x25')
 
-
 	//马格南
 	remove('tac:deagle_357')
 	event.custom({
@@ -30,61 +29,61 @@ onEvent('recipes', event => {
 
 
 
-	//绿材料
-	remove('tac:uncommon_material')
-	event.shaped('tac:uncommon_material', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: 'thermal:cured_rubber',
-		B: 'create:iron_sheet',
-		C: 'minecraft:iron_ingot'
-	}).id("llmion:uncommon_material")
-	//蓝材料
-	remove('tac:rare_material')
-	event.shaped('tac:rare_material', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: 'thermal:steel_plate',
-		B: 'thermal:steel_ingot',
-		C: 'tac:uncommon_material'
-	}).id("llmion:rare_material")
-	//紫材料
-	remove('tac:epic_material')
-	event.shaped('tac:epic_material', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: 'minecraft:amethyst_shard',
-		B: 'minecraft:obsidian',
-		C: 'tac:rare_material'
-	}).id("llmion:epic_material")
-	//黄材料
-	remove('tac:legendary_material')
-	event.shaped('tac:legendary_material', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: 'kubejs:platinum_nugget',
-		B: 'kubejs:aluminum_ingot',
-		C: 'tac:epic_material'
-	}).id("llmion:legendary_material")
-	//红材料
-	remove('tac:ultimate_material')
-	event.shaped('tac:ultimate_material', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: 'thermal:signalum_block',
-		B: 'kubejs:charged_soulsteel_ingot',
-		C: 'tac:legendary_material'
-	}).id("llmion:ultimate_material")
+	// //绿材料
+	// remove('tac:uncommon_material')
+	// event.shaped('tac:uncommon_material', [
+	// 	'ABA',
+	// 	'BCB',
+	// 	'ABA'
+	// ], {
+	// 	A: 'thermal:cured_rubber',
+	// 	B: 'create:iron_sheet',
+	// 	C: 'minecraft:iron_ingot'
+	// }).id("llmion:uncommon_material")
+	// //蓝材料
+	// remove('tac:rare_material')
+	// event.shaped('tac:rare_material', [
+	// 	'ABA',
+	// 	'BCB',
+	// 	'ABA'
+	// ], {
+	// 	A: 'thermal:steel_plate',
+	// 	B: 'thermal:steel_ingot',
+	// 	C: 'tac:uncommon_material'
+	// }).id("llmion:rare_material")
+	// //紫材料
+	// remove('tac:epic_material')
+	// event.shaped('tac:epic_material', [
+	// 	'ABA',
+	// 	'BCB',
+	// 	'ABA'
+	// ], {
+	// 	A: 'minecraft:amethyst_shard',
+	// 	B: 'minecraft:obsidian',
+	// 	C: 'tac:rare_material'
+	// }).id("llmion:epic_material")
+	// //黄材料
+	// remove('tac:legendary_material')
+	// event.shaped('tac:legendary_material', [
+	// 	'ABA',
+	// 	'BCB',
+	// 	'ABA'
+	// ], {
+	// 	A: 'kubejs:platinum_nugget',
+	// 	B: 'kubejs:aluminum_ingot',
+	// 	C: 'tac:epic_material'
+	// }).id("llmion:legendary_material")
+	// //红材料
+	// remove('tac:ultimate_material')
+	// event.shaped('tac:ultimate_material', [
+	// 	'ABA',
+	// 	'BCB',
+	// 	'ABA'
+	// ], {
+	// 	A: 'thermal:signalum_block',
+	// 	B: 'kubejs:charged_soulsteel_ingot',
+	// 	C: 'tac:legendary_material'
+	// }).id("llmion:ultimate_material")
 
 	remove('tac:9mm_round')
 	remove('tac:round45')

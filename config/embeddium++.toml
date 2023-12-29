@@ -22,9 +22,9 @@
 		maxVerticalDistance = 32
 
 	[EmbeddiumPlus.Misc]
-		RenderFog = true
+		RenderFog = false
 		HideJEI = false
-		CloudHeight = 128
+		CloudHeight = 192
 		#Allowed Values: OFF, FAST, FANCY
 		ChunkFadeInQuality = "FANCY"
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN

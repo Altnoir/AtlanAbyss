@@ -268,9 +268,6 @@ onEvent('rei.hide.items', event => {
 		'biggerreactors:reactor_computer_port',//电脑端口
 		'biggerreactors:turbine_computer_port',
 		'biggerreactors:heat_exchanger_computer_port',
-		//railways
-		/^railways:.*incomplete_conductor_cap/,
-		/^railways:track_incomplete/,
 		//tac
 		'tac:round45',
 		'tac:ae50',
@@ -607,10 +604,6 @@ onEvent('rei.group', (event) => {
 	//背包升级
 	event.groupItems('llmion:rei_groups/back_upgrade', "背包升级",
 		[/^sophisticatedbackpacks:.*_upgrade/, 'sophisticatedbackpacks:upgrade_base']
-	);
-	//列车帽
-	event.groupItems('llmion:rei_groups/conductor_caps', "列车长帽",
-		'#railways:conductor_caps'
 	);
 	//铸模
 	event.groupItems('llmion:rei_groups/casts', "铸模",

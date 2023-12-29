@@ -158,6 +158,8 @@ onEvent('tags.items', event => {
 
 	//加！
 	const tagToAdd = [
+		//光环
+		['llmion:halos', 'yuushya:wriggle_nightbug'],
 		//信标激活物品添加
 		['minecraft:beacon_payment_items', 'kubejs:aluminium_alloy_ingot'],
 		//替身是个好东西之生物质

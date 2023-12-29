@@ -1,0 +1,13 @@
+{
+    "type": "stonecutting",
+    "conditions": [
+        {
+            "type": "forge:false"
+        }
+    ],
+    "ingredient": {
+        "item": "minecraft:cherry_log"
+    },
+    "result": "yuushya:raw_cherry_wood",
+    "count": 1
+}

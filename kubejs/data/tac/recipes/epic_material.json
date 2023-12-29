@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "B": {
+            "item": "minecraft:obsidian"
+        },
+        "C": {
+            "item": "tac:rare_material"
+        }
+    },
+    "result": {
+        "item": "tac:epic_material"
+    }
+}

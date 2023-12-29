@@ -1,0 +1,8 @@
+{
+  "type": "create:milling",
+  "conditions": [
+    {
+      "type": "forge:false"
+    }
+  ]
+}

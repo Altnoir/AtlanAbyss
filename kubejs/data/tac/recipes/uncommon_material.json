@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "thermal:cured_rubber"
+        },
+        "B": {
+            "item": "create:iron_sheet"
+        },
+        "C": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "tac:uncommon_material"
+    }
+}

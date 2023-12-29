@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "kubejs:platinum_nugget"
+        },
+        "B": {
+            "item": "kubejs:aluminum_ingot"
+        },
+        "C": {
+            "item": "tac:epic_material"
+        }
+    },
+    "result": {
+        "item": "tac:legendary_material"
+    }
+}

@@ -1,6 +1,6 @@
 // priority: 404
 
-onEvent("lootjs", (event) => {
+onEvent("lootjs", event => {
   //溺尸击杀苦力怕掉落神秘唱片(改成数据包了)
   //溺尸击杀铁傀儡掉落鹦鹉螺壳(改成数据包了)
   //溺尸击杀鸡掉落海洋之心，概率为25%(改成数据包了)
@@ -12,6 +12,9 @@ onEvent("lootjs", (event) => {
   event
     .addLootTypeModifier(LootType.CHEST)
     .replaceLoot('twilightforest:red_thread', 'botania:red_string');
+  event
+    .addLootTypeModifier(LootType.CHEST)
+    .removeLoot('beyond_earth:steel_ingot');
   //锄头打树叶概率掉线
   event
     .addBlockLootModifier('#minecraft:leaves')
@@ -138,9 +141,6 @@ onEvent('entity.spawned', event => {
     //monsterSpawn(生命值, 倍率, 初始半径, 每隔多少半径强化一次，false为方形半径true为圆形半径);
     if (level.dimension === 'minecraft:the_nether') {
       monsterSpawn(health, 0.2, 16, 16, false);
-    }
-    if (level.dimension === 'inversia:inversiadim') {
-      monsterSpawn(health, 0.4, 192, 64, false);
     }
     if (level.dimension === 'twilightforest:twilight_forest') {
       monsterSpawn(health, 0.5, 96, 32, true);
@@ -325,10 +325,10 @@ onEvent('entity.hurt', event => {
       });
     }
     if (cmData === 11821908) { // 破伤
-      let minDamage = Math.min(damage * 5, health - damage - 1);
+      let damage6 = damage * 5;
       if (health >= maxHealth * 0.9) {
         server.scheduleInTicks(1, () => {
-          entity.attack(source, minDamage);
+          entity.attack(source, damage6);
         })
       }
     }
