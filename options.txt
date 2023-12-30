@@ -20,7 +20,7 @@ toggleSprint:false
 darkMojangStudiosBackground:true
 hideLightningFlashes:false
 mouseSensitivity:0.403755868544601
-fov:0.125
+fov:-0.25
 screenEffectScale:1.0
 fovEffectScale:1.0
 gamma:1.0
@@ -131,6 +131,7 @@ key_key.entityculling.toggle:key.keyboard.unknown
 key_key.modernfix.config:key.keyboard.unknown
 key_placebo.toggleTrails:key.keyboard.unknown
 key_key.corpse.death_history:key.keyboard.l
+key_placebo.toggleWings:key.keyboard.unknown
 key_key.zoomin:key.keyboard.keypad.add
 key_key.centerzoom:key.keyboard.keypad.5
 key_key.zoomout:key.keyboard.keypad.subtract
@@ -140,7 +141,6 @@ key_key.rollright:key.keyboard.keypad.9
 key_key.point:key.keyboard.keypad.multiply
 key_key.startStop:key.keyboard.keypad.divide
 key_key.clearPoint:key.keyboard.delete
-key_placebo.toggleWings:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
@@ -148,16 +148,6 @@ key_key.botania_corporea_request:key.keyboard.unknown
 key_chunkloaders.keys.open_screen:key.keyboard.semicolon
 key_key.ftbquests.quests:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
-key_key.immersive_aircraft.multi_control_left:key.keyboard.a
-key_key.immersive_aircraft.multi_control_right:key.keyboard.d
-key_key.immersive_aircraft.multi_control_forward:key.keyboard.w
-key_key.immersive_aircraft.multi_control_backward:key.keyboard.s
-key_key.immersive_aircraft.multi_control_up:key.keyboard.space
-key_key.immersive_aircraft.multi_control_down:key.keyboard.left.shift
-key_key.immersive_aircraft.multi_control_pull:key.keyboard.s
-key_key.immersive_aircraft.multi_control_push:key.keyboard.w
-key_key.immersive_aircraft.multi_dismount:key.keyboard.r
-key_key.immersive_aircraft.multi_boost:key.keyboard.b
 key_key.ars_nouveau.open_book:key.keyboard.c
 key_key.ars_nouveau.selection_hud:key.keyboard.v
 key_key.ars_nouveau.previous_slot:key.keyboard.z
@@ -172,6 +162,16 @@ key_key.ars_nouveau.qc7:key.keyboard.unknown
 key_key.ars_nouveau.qc8:key.keyboard.unknown
 key_key.ars_nouveau.qc9:key.keyboard.unknown
 key_key.ars_nouveau.qc10:key.keyboard.unknown
+key_key.immersive_aircraft.multi_control_left:key.keyboard.a
+key_key.immersive_aircraft.multi_control_right:key.keyboard.d
+key_key.immersive_aircraft.multi_control_forward:key.keyboard.w
+key_key.immersive_aircraft.multi_control_backward:key.keyboard.s
+key_key.immersive_aircraft.multi_control_up:key.keyboard.space
+key_key.immersive_aircraft.multi_control_down:key.keyboard.left.shift
+key_key.immersive_aircraft.multi_control_pull:key.keyboard.s
+key_key.immersive_aircraft.multi_control_push:key.keyboard.w
+key_key.immersive_aircraft.multi_dismount:key.keyboard.r
+key_key.immersive_aircraft.multi_boost:key.keyboard.b
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
@@ -272,7 +272,7 @@ key_pneumaticcraft.armor.upgrade.block_tracker.module.hackables:key.keyboard.unk
 key_pneumaticcraft.armor.upgrade.block_tracker.module.inventories:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker.module.end_portal:key.keyboard.unknown
 soundCategory_master:0.5033113
-soundCategory_music:0.2535211
+soundCategory_music:0.056338027
 soundCategory_record:0.5046948
 soundCategory_weather:1.0
 soundCategory_block:1.0
