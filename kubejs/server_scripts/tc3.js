@@ -155,17 +155,37 @@ onEvent('recipes', event => {
   oreMelting('create:crushed_raw_nickel', 'tconstruct:molten_nickel', 90, 950, 97, 'tconstruct:molten_iron', 90, 'crushed_nickel')
 
   //粘液种子
-  event.shapeless('tconstruct:earth_slime_grass_seeds', ['botania:grass_seeds', 'minecraft:slime_ball']).id("llmion:earth_slime_grass_seeds")//绿种子
-  event.shapeless('tconstruct:sky_slime_grass_seeds', ['botania:grass_seeds', 'tconstruct:sky_slime_ball']).id("llmion:sky_slime_grass_seeds")//蓝种子
-  event.shapeless('tconstruct:blood_slime_grass_seeds', ['botania:grass_seeds', 'tconstruct:blood_slime_ball']).id("llmion:blood_slime_grass_seeds")//红种子
-  event.shapeless('tconstruct:ender_slime_grass_seeds', ['botania:grass_seeds', 'tconstruct:ender_slime_ball']).id("llmion:ender_slime_grass_seeds")//紫种子
+  event.shapeless('tconstruct:earth_slime_grass_seeds', [
+    'botania:grass_seeds',
+    'minecraft:slime_ball'
+  ]).id("llmion:earth_slime_grass_seeds")//绿种子
+  event.shapeless('tconstruct:sky_slime_grass_seeds', [
+    'botania:grass_seeds',
+    'tconstruct:sky_slime_ball'
+  ]).id("llmion:sky_slime_grass_seeds")//蓝种子
+  event.shapeless('tconstruct:blood_slime_grass_seeds', [
+    'botania:grass_seeds',
+    'tconstruct:blood_slime_ball'
+  ]).id("llmion:blood_slime_grass_seeds")//红种子
+  event.shapeless('tconstruct:ender_slime_grass_seeds', [
+    'botania:grass_seeds',
+    'tconstruct:ender_slime_ball'
+  ]).id("llmion:ender_slime_grass_seeds")//紫种子
   //树苗
-  event.recipes.botania.mana_infusion('tconstruct:earth_slime_sapling', 'ars_nouveau:green_archwood_sapling',
-    120, 'minecraft:amethyst_block').id("llmion:earth_slime_sapling")
-  event.recipes.botania.mana_infusion('tconstruct:sky_slime_sapling', 'ars_nouveau:blue_archwood_sapling',
-    120, 'minecraft:amethyst_block').id("llmion:sky_slime_sapling")
-  event.recipes.botania.mana_infusion('tconstruct:ender_slime_sapling', 'ars_nouveau:purple_archwood_sapling',
-    120, 'minecraft:amethyst_block').id("llmion:ender_slime_sapling")
-  event.recipes.botania.mana_infusion('tconstruct:blood_slime_sapling', 'ars_nouveau:red_archwood_sapling',
-    120, 'minecraft:amethyst_block').id("llmion:blood_slime_sapling")
+  event.recipes.botania.mana_infusion('tconstruct:earth_slime_sapling',
+    'ars_nouveau:green_archwood_sapling',
+    120,
+    'minecraft:amethyst_block').id("llmion:earth_slime_sapling")
+  event.recipes.botania.mana_infusion('tconstruct:sky_slime_sapling',
+    'ars_nouveau:blue_archwood_sapling',
+    120,
+    'minecraft:amethyst_block').id("llmion:sky_slime_sapling")
+  event.recipes.botania.mana_infusion('tconstruct:ender_slime_sapling',
+    'ars_nouveau:purple_archwood_sapling',
+    120,
+    'minecraft:amethyst_block').id("llmion:ender_slime_sapling")
+  event.recipes.botania.mana_infusion('tconstruct:blood_slime_sapling',
+    'ars_nouveau:red_archwood_sapling',
+    120,
+    'minecraft:amethyst_block').id("llmion:blood_slime_sapling")
 })

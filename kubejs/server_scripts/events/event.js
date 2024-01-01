@@ -1,5 +1,4 @@
 // priority: 404
-
 onEvent("lootjs", event => {
   //溺尸击杀苦力怕掉落神秘唱片(改成数据包了)
   //溺尸击杀铁傀儡掉落鹦鹉螺壳(改成数据包了)
@@ -146,7 +145,10 @@ onEvent('entity.spawned', event => {
       monsterSpawn(health, 0.5, 96, 32, true);
     }
   }
+})
 
+onEvent('entity.check_spawn', event => {
+  let { entity } = event;
   //给了ban了
   if (entity.type == 'touhou_little_maid:fairy') {
     event.cancel()
@@ -204,7 +206,7 @@ onEvent('entity.hurt', event => {
     event.cancel();
   }
 
-  if (entity.isLiving() && source.type == 'fall' && entity.headArmorItem === 'minecraft:turtle_helmet' && damage >= health * 3 / 4) {
+  if (entity.isLiving() && source.type == 'fall' && damage >= health * 3 / 4) {
     if (entity.mainHandItem === 'minecraft:water_bucket') {
       entity.mainHandItem.count--;
       fallWater();

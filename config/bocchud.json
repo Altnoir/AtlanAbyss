@@ -117,7 +117,7 @@
     "useFontShadow": false,
     "useTextBackground": true,
     "mainRenderingToggle": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": "J"
       }

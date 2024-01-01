@@ -1,0 +1,51 @@
+onEvent('fluid.registry', event => {
+    //氧化铝溶液
+    event.create('alumina_solution')
+        .thinTexture(0xFEDEC8)
+        .bucketColor(0xFEDEC8)
+        .displayName('Alumina Solution')
+        .noBlock()
+    //细沙
+    event.create('fine_sand')
+        .displayName('Fine Sand')
+        .stillTexture('kubejs:block/fine_sand')
+        .flowingTexture('kubejs:block/fine_sand')
+        .bucketColor(0xE3DBB0)
+        .noBlock()
+    //熔融钚
+    event.create('molten_plutonium')
+        .displayName('Molten Plutonium')
+        .stillTexture('kubejs:block/molten_plutonium_still')
+        .flowingTexture('kubejs:block/molten_plutonium_flowing')
+        .bucketColor(0x253F51)
+        .noBlock()
+    //液态逻辑
+    let colors = [0xCBE827, 0xAEE827, 0x68E827, 0x27E86E, 0x27E8B1, 0x27DEE8, 0x27B5E8, 0x2798E8, 0x2778E8, 0x2748E8]
+    event.create('raw_logic')
+        .displayName(`Liquified Logic (Unprocessed)`)
+        .thinTexture(0xE7FFCB)
+        .bucketColor(0xE7FFCB)
+        .stillTexture('kubejs:block/number_still')
+        .flowingTexture('kubejs:block/number_flow')
+        .color(0xE7FFCB)
+        .noBlock()
+
+    for (let i = 0; i < colors.length; i++)
+        event.create('number_' + i)
+            .displayName(`Liquified Logic (${i})`)
+            .thinTexture(colors[i])
+            .bucketColor(colors[i])
+            .stillTexture('kubejs:block/number_still')
+            .flowingTexture('kubejs:block/number_flow')
+            .color(colors[i])
+            .noBlock()
+
+    event.create('matrix')
+        .displayName(`Liquified Computation Matrix`)
+        .thinTexture(colors[0])
+        .bucketColor(colors[0])
+        .stillTexture('kubejs:block/matrix_still')
+        .flowingTexture('kubejs:block/matrix_flow')
+        .noBlock()
+
+})
