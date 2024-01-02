@@ -60,6 +60,10 @@ onEvent('item.registry', event => {
 	event.create('mass_scrap').displayName('Mass Scrap');
 	event.create('misery_scrap').displayName('Misery Scrap');
 	event.create('void_scrap').displayName('Void Scrap');
+	//光环扭蛋
+	event.create('halo_gashapon').displayName('Halo Gashapon');
+	//世界神符
+	event.create('world_rune').displayName('World Rune');
 
 	event.create('incomplete_core_container', 'create:sequenced_assembly').displayName('Incomplete Core Container');
 	event.create('uranium_core').displayName('Uranium Core');

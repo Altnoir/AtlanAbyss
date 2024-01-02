@@ -34,7 +34,7 @@ const Minecraft = java('net.minecraft.client.Minecraft');
 onEvent('item.right_click', event => {
   let { player, server, level, item } = event;
 
-  lootbag('minecraft:diamond', 'kubejs:halo')//光环
+  lootbag('kubejs:halo_gashapon', 'kubejs:halo')//光环
   lootbag('kubejs:treasure_box', 'kubejs:treasure_box')//宝藏袋
   lootbag('kubejs:album_transpain', 'kubejs:album/transpain')//专辑
   lootbag('kubejs:album_indigrotto', 'kubejs:album/indigrotto')//专辑
@@ -59,7 +59,7 @@ onEvent('item.right_click', event => {
 
 
 
-  let artifact = 'minecraft:iron_ingot';
+  let artifact = 'kubejs:world_rune';
 
   if (item === artifact) {
     let worldBorder = event.getLevel().worldBorder;

@@ -1,0 +1,236 @@
+
+["The Graveyard - Corrupted Champion Config"]
+
+	["The Graveyard - Corrupted Champion Config".corruptedChampion]
+		#Range: 1.0 ~ 1024.0
+		healthInCastingPhase = 400.0
+		isBossSummonableItem = ["item.minecraft.debug_stick"]
+		#Range: 1 ~ 100
+		maxAmountSkullsInShootSkullSpell = 5
+		#Range: 0 ~ 100
+		maxSummonedMobs = 30
+		#Range: 0 ~ 100000
+		ghoulSpawnTimerInFight = 6000
+		#Range: 1.0 ~ 2048.0
+		damageHuntingPhaseAddition = 40.0
+		#Range: 1 ~ 100000
+		cooldownTeleportPlayerAndHeal = 600
+		#Range: 0 ~ 100000
+		durationHuntingPhase = 800
+		#Range: 0 ~ 100000
+		durationHealingSpell = 700
+		#Range: 1.0 ~ 1024.0
+		healthInHuntingPhase = 200.0
+		#Range: 1 ~ 100
+		maxGroupSizeSummonedMobs = 5
+		#Range: 1 ~ 100000
+		cooldownLevitationSpell = 400
+		#Range: 1 ~ 100000
+		cooldownCorpseSpell = 400
+		#Range: 0.0 ~ 20.0
+		armorToughness = 14.0
+		isMultiphaseFight = true
+		#Range: 0.0 ~ 30.0
+		armor = 18.0
+		#Range: 0 ~ 100000
+		durationLevitationSpell = 150
+		#Range: 1.0 ~ 2048.0
+		damageCastingPhase = 30.0
+		isInvulnerableDuringSpells = true
+		#Range: 0 ~ 100000
+		durationFallingCorpseSpell = 400
+		isBloodCollectableEntity = ["entity.minecraft.villager"]
+		summoningNeedsStaffFragments = true
+		#Range: -64 ~ 100000
+		playerTeleportYOffset = -15
+		#Range: 0.0 ~ 1024.0
+		speedInHuntPhase = 0.15
+
+["The Graveyard - Particle Config"]
+
+	["The Graveyard - Particle Config".particle]
+		generate = true
+		#Range: 1 ~ 500
+		frequency = 50
+
+["The Graveyard - Mob Spawning Config"]
+
+	["The Graveyard - Mob Spawning Config".acolyte]
+		canBurnInSunlight = false
+		canBeWithered = true
+		enabled = false
+
+	["The Graveyard - Mob Spawning Config".corruptedVindicator]
+		canBurnInSunlight = true
+		canBeWithered = true
+		enabled = false
+
+	["The Graveyard - Mob Spawning Config".revenant]
+		#Range: 1 ~ 100
+		maxGroupSizeRevenant = 8
+		canBurnInSunlight = true
+		#Range: 0 ~ 100
+		weight = 25
+		blacklist = ["minecraft:flower_forest", "minecraft:mushroom_fields"]
+		canBeWithered = true
+		whitelist = ["minecraft:snowy_plains", "minecraft:frozen_peaks", "minecraft:snowy_slopes", "minecraft:ice_spikes", "minecraft:snowy_taiga", "minecraft:windswept_gravelly_hills", "minecraft:jagged_peaks"]
+		enabled = true
+		#Range: 1 ~ 100
+		minGroupSizeRevenant = 5
+		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+
+	["The Graveyard - Mob Spawning Config".wraith]
+		canBurnInSunlight = true
+		canBeWithered = false
+		enabled = false
+
+	["The Graveyard - Mob Spawning Config".skeleton_creeper]
+		#Range: 1 ~ 100
+		minGroupSizeSkeletonCreeper = 1
+		canBurnInSunlight = true
+		#Range: 1 ~ 100
+		maxGroupSizeSkeletonCreeper = 4
+		#Range: 0 ~ 100
+		weight = 25
+		blacklist = ["minecraft:flower_forest", "minecraft:mushroom_fields"]
+		canBeWithered = true
+		whitelist = ["#taiga", "#extreme_hills", "#jungle", "#mesa", "#plains", "#savanna", "#icy", "#beach", "#forest", "#desert", "#swamp", "#underground", "#mountain"]
+		enabled = true
+		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+
+	["The Graveyard - Mob Spawning Config".corruptedPillager]
+		canBurnInSunlight = true
+		canBeWithered = true
+		enabled = false
+
+	["The Graveyard - Mob Spawning Config".ghoul]
+		canBurnInSunlight = true
+		#Range: 1 ~ 100
+		minGroupSizeGhoul = 2
+		#Range: 0 ~ 100
+		weight = 25
+		blacklist = ["minecraft:flower_forest", "minecraft:mushroom_fields"]
+		#Range: 1 ~ 100
+		maxGroupSizeGhoul = 5
+		canBeWithered = true
+		whitelist = ["minecraft:old_growth_spruce_taiga", "minecraft:swamp", "minecraft:old_growth_pine_taiga", "minecraft:jungle", "minecraft:forest", "minecraft:bamboo_jungle", "minecraft:taiga", "minecraft:dark_forest"]
+		enabled = true
+		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+
+	["The Graveyard - Mob Spawning Config".reaper]
+		canBurnInSunlight = true
+		canBeWithered = true
+		enabled = false
+
+	["The Graveyard - Mob Spawning Config".nightmare]
+		#Range: 1 ~ 100
+		minGroupSizeNightmare = 1
+		canBurnInSunlight = false
+		#Range: 0 ~ 100
+		weight = 10
+		blacklist = ["minecraft:flower_forest", "minecraft:mushroom_fields"]
+		canBeWithered = false
+		whitelist = ["#taiga", "#extreme_hills", "#jungle", "#mesa", "#plains", "#savanna", "#icy", "#beach", "#forest", "#desert", "#swamp", "#underground", "#mountain"]
+		enabled = true
+		#Range: 1 ~ 100
+		maxGroupSizeNightmare = 1
+		modWhitelist = ["#minecraft", "#graveyard_biomes"]
+
+["The Graveyard - Horde Config"]
+
+	["The Graveyard - Horde Config".horde]
+		#Range: 0 ~ 1000
+		mobSpawnAttempts = 40
+		#Range: 1 ~ 1000000
+		ticksUntilSpawnHorde = 24000
+		#Range: 1 ~ 1000000
+		additionalRandomizedTicks = 1200
+		generate = true
+
+# Welcome to The Graveyard Config!Welcome to The Graveyard Config! 
+# 
+#Structures: 
+# Enable or disable structure spawns. 
+# 
+#Mobs: 
+#Configure spawning weight and group size of the spawn (ghoul, revenant, reaper, nightmare, skeleton creeper). 
+# Configure if mobs burn in sunlight and/or if mobs are affected by the wither effect. 
+# 
+#Additional: 
+#Configure graveyard fog particles rising from moss and set the chance of spawning them (higher numbers = lower chance of spawning). 
+# Configure if hordes of graveyard mobs can spawn and set their size and frequency. 
+# Configure if urns have a double chest inventory. 
+# Configure if the wither skeleton spawner in the large graveyard will be replaced by a skeleton spawner. 
+# 
+#Configure if boss music plays during the fight against the Corrupted Champion. 
+# 
+#
+#
+#Music: 
+#
+#Incarnated Evil by Rotch Gwylt (Official The Graveyard Soundtrack). 
+# 
+["The Graveyard - Structures Config"]
+
+	["The Graveyard - Structures Config".smallGrave]
+		generate = true
+
+	["The Graveyard - Structures Config".smallMountainGraveyard]
+		generate = true
+
+	["The Graveyard - Structures Config".smallSavannaGrave]
+		generate = true
+
+	["The Graveyard - Structures Config".crypt]
+		generate = true
+
+	["The Graveyard - Structures Config".hauntedHouse]
+		generate = true
+
+	["The Graveyard - Structures Config".lichPrison]
+		generate = true
+
+	["The Graveyard - Structures Config".mediumGraveyard]
+		generate = true
+
+	["The Graveyard - Structures Config".smallGraveyard]
+		generate = true
+
+	["The Graveyard - Structures Config".smallDesertGraveyard]
+		generate = true
+
+	["The Graveyard - Structures Config".giantMushroom]
+		generate = true
+
+	["The Graveyard - Structures Config".smallDesertGrave]
+		generate = true
+
+	["The Graveyard - Structures Config".altar]
+		generate = true
+
+	["The Graveyard - Structures Config".largeGraveyard]
+		generate = true
+
+	["The Graveyard - Structures Config".ruins]
+		generate = true
+
+	["The Graveyard - Structures Config".mushroomGrave]
+		generate = true
+
+	["The Graveyard - Structures Config".deadTree]
+		generate = true
+
+	["The Graveyard - Structures Config".memorialTree]
+		generate = true
+
+["The Graveyard - Additional Config"]
+
+	["The Graveyard - Additional Config".urn]
+		urnHasDoubleInventory = true
+
+	["The Graveyard - Additional Config".spawner]
+		disableWitherSkeletonSpawner = false
+
+	["The Graveyard - Additional Config".bossMusic]
+		enableBossMusic = true
+
