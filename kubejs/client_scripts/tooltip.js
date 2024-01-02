@@ -9,30 +9,48 @@ onEvent('item.tooltip', tooltip => {
                 text.add(3, Text.translate('tooltip.kubejs.' + dim));
             }
         })
-    ore(['thermal:cinnabar_ore', 'thermal:deepslate_cinnabar_ore'], 'cinnabar_y', 'overworld')
-    ore(['thermal:niter_ore', 'thermal:deepslate_niter_ore'], 'niter_y', 'overworld')
-    ore(['thermal:nickel_ore', 'thermal:deepslate_nickel_ore'], 'nickel_y', 'overworld')
-    ore(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore'], 'ruby_y', 'overworld')
-    ore(['thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'], 'sapphire_y', 'overworld')
-    ore(['thermal:silver_ore', 'thermal:deepslate_silver_ore'], 'silver_y', 'overworld')
-    ore(['thermal:apatite_ore', 'thermal:deepslate_apatite_ore'], 'apatite_y', 'overworld')
-    ore(['thermal:sulfur_ore', 'thermal:deepslate_sulfur_ore'], 'sulfur_y', 'overworld')
-    ore(['thermal:tin_ore', 'thermal:deepslate_tin_ore'], 'tin_y', 'overworld')
+    ore('thermal:cinnabar_ore', 'cinnabar_y', 'overworld')
+    ore('thermal:niter_ore', 'niter_y', 'overworld')
+    ore('thermal:nickel_ore', 'nickel_y', 'overworld')
+    ore('thermal:ruby_ore', 'ruby_y', 'overworld')
+    ore('thermal:sapphire_ore', 'sapphire_y', 'overworld')
+    ore('thermal:silver_ore', 'silver_y', 'overworld')
+    ore('thermal:apatite_ore', 'apatite_y', 'overworld')
+    ore('thermal:sulfur_ore', 'sulfur_y', 'overworld')
+    ore('thermal:tin_ore', 'tin_y', 'overworld')
+    ore('thermal:deepslate_cinnabar_ore', 'cinnabar_y', 'overworld')
+    ore('thermal:deepslate_niter_ore', 'niter_y', 'overworld')
+    ore('thermal:deepslate_nickel_ore', 'nickel_y', 'overworld')
+    ore('thermal:deepslate_ruby_ore', 'ruby_y', 'overworld')
+    ore('thermal:deepslate_sapphire_ore', 'sapphire_y', 'overworld')
+    ore('thermal:deepslate_silver_ore', 'silver_y', 'overworld')
+    ore('thermal:deepslate_apatite_ore', 'apatite_y', 'overworld')
+    ore('thermal:deepslate_sulfur_ore', 'sulfur_y', 'overworld')
+    ore('thermal:deepslate_tin_ore', 'tin_y', 'overworld')
     ore('kubejs:nether_aluminum_ore', 'aluminum_y', 'the_nether')
     ore('thermal:deepslate_lead_ore', 'lead_y', 'inversiadim')
     ore('kubejs:inversia_uranium_ore', 'uranium_y', 'inversiadim')
     ore('kubejs:end_bismuth_ore', 'bismuth_y', 'the_end')
     ore('ae2:deepslate_quartz_ore', 'quartz_y', 'the_end')
-    ore(['create:zinc_ore', 'create:deepslate_zinc_ore'], 'zinc_y', 'overworld')
+    ore('create:zinc_ore', 'zinc_y', 'overworld')
+    ore('create:deepslate_zinc_ore', 'zinc_y', 'overworld')
 
-    ore(['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'], 'coal_y', 'overworld')
-    ore(['minecraft:iron_ore', 'minecraft:deepslate_iron_ore'], 'iron_y', 'overworld')
-    ore(['minecraft:lapis_ore', 'minecraft:deepslate_lapis_ore'], 'lapis_y', 'overworld')
-    ore(['minecraft:gold_ore', 'minecraft:deepslate_gold_ore'], 'gold_y', 'overworld')
-    ore(['minecraft:diamond_ore', 'minecraft:deepslate_diamond_ore'], 'diamond_y', 'overworld')
-    ore(['minecraft:redstone_ore', 'minecraft:deepslate_redstone_ore'], 'redstone_y', 'overworld')
-    ore(['minecraft:copper_ore', 'minecraft:deepslate_copper_ore'], 'copper_y', 'overworld')
-    ore(['minecraft:emerald_ore', 'minecraft:deepslate_emerald_ore'], 'emerald_y', 'overworld')
+    ore('minecraft:coal_ore', 'coal_y', 'overworld')
+    ore('minecraft:iron_ore', 'iron_y', 'overworld')
+    ore('minecraft:lapis_ore', 'lapis_y', 'overworld')
+    ore('minecraft:gold_ore', 'gold_y', 'overworld')
+    ore('minecraft:diamond_ore', 'diamond_y', 'overworld')
+    ore('minecraft:redstone_ore', 'redstone_y', 'overworld')
+    ore('minecraft:copper_ore', 'copper_y', 'overworld')
+    ore('minecraft:emerald_ore', 'emerald_y', 'overworld')
+    ore('minecraft:deepslate_coal_ore', 'coal_y', 'overworld')
+    ore('minecraft:deepslate_iron_ore', 'iron_y', 'overworld')
+    ore('minecraft:deepslate_lapis_ore', 'lapis_y', 'overworld')
+    ore('minecraft:deepslate_gold_ore', 'gold_y', 'overworld')
+    ore('minecraft:deepslate_diamond_ore', 'diamond_y', 'overworld')
+    ore('minecraft:deepslate_redstone_ore', 'redstone_y', 'overworld')
+    ore('minecraft:deepslate_copper_ore', 'copper_y', 'overworld')
+    ore('minecraft:deepslate_emerald_ore', 'emerald_y', 'overworld')
 
     const mixedHerb = ['gg', 'ggg', 'rg', 'bg', 'yg', 'br', 'yr', 'bgg', 'ygg', 'brg', 'yrg'];
 
@@ -46,21 +64,6 @@ onEvent('item.tooltip', tooltip => {
             }
         })
     })
-
-    global.substrates[0].forEach(e => tooltip.add(e.id, [`§8类型： §7火成`]));
-    global.substrates[1].forEach(e => tooltip.add(e.id, [`§8类型： §7草本`]));
-    global.substrates[2].forEach(e => tooltip.add(e.id, [`§8类型： §7不稳定`]));
-    global.substrates[3].forEach(e => tooltip.add(e.id, [`§8类型： §7晶化`]));
-    global.substrates[4].forEach(e => tooltip.add(e.id, [`§8类型： §7金属`]));
-    global.substrates[5].forEach(e => tooltip.add(e.id, [`§8类型： §7宝石`]));
-    global.substrates[6].forEach(e => tooltip.add(e.id, [`§8类型： §7催化剂`]));
-
-    // NBT查看工具
-    // tooltip.addAdvanced(Ingredient.all, (item, advanced, text) => {
-    //     if (tooltip.shift && item.nbt) {
-    //         text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)));
-    //     }
-    // })
 
     tooltip.addAdvanced('yuushya:wriggle_nightbug', (item, advanced, text) => {
         let cmData = item.nbt?.CustomModelData;
@@ -282,19 +285,6 @@ onEvent('item.tooltip', tooltip => {
                 text.add(8, Text.translate('tooltip.kubejs.purana2'));
                 text.add(9, Text.of(' '));
             }
-        }
-    })
-
-    tooltip.addAdvanced('minecraft:turtle_helmet', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.of(' '));
-            text.add(3, Text.translate('tooltip.kubejs.head'));
-            text.add(4, Text.translate('tooltip.kubejs.turtle_helmet1'));
-            text.add(5, Text.translate('tooltip.kubejs.turtle_helmet2'));
-            text.add(6, Text.translate('tooltip.kubejs.turtle_helmet3'));
         }
     })
 })

@@ -33,7 +33,7 @@
 	#Master volume multiplier on window minimized, 1 = same as master volume inactive.
 	#This value will be no greater than master volume inactive.
 	#Range: 0.0 ~ 1.0
-	masterVolumeMinimized = 0.5
+	masterVolumeMinimized = 0.3499999940395355
 
 #Tooltip Config
 [tooltip]

@@ -34,24 +34,26 @@ const Minecraft = java('net.minecraft.client.Minecraft');
 onEvent('item.right_click', event => {
   let { player, server, level, item } = event;
 
-  lootbag('kubejs:halo_gashapon', 'kubejs:halo')//光环
-  lootbag('kubejs:treasure_box', 'kubejs:treasure_box')//宝藏袋
-  lootbag('kubejs:album_transpain', 'kubejs:album/transpain')//专辑
-  lootbag('kubejs:album_indigrotto', 'kubejs:album/indigrotto')//专辑
-  lootbag('kubejs:album_blurred_mind', 'kubejs:album/blurred_mind')//专辑
-  lootbag('kubejs:album_michelia', 'kubejs:album/michelia')//专辑
-  lootbag('kubejs:album_redraw', 'kubejs:album/redraw')//专辑
-  lootbag('kubejs:album_nacollection4', 'kubejs:album/nacollection4')//专辑
-  lootbag('kubejs:album_unity_band', 'kubejs:album/unity_band')//专辑
+  lootbag('kubejs:halo_gashapon', 'kubejs:halo', true)//光环
+  lootbag('kubejs:treasure_box', 'kubejs:treasure_box', false)//宝藏袋
+  lootbag('kubejs:album_transpain', 'kubejs:album/transpain', true)//专辑
+  lootbag('kubejs:album_indigrotto', 'kubejs:album/indigrotto', true)//专辑
+  lootbag('kubejs:album_blurred_mind', 'kubejs:album/blurred_mind', true)//专辑
+  lootbag('kubejs:album_michelia', 'kubejs:album/michelia', true)//专辑
+  lootbag('kubejs:album_redraw', 'kubejs:album/redraw', true)//专辑
+  lootbag('kubejs:album_nacollection4', 'kubejs:album/nacollection4', true)//专辑
+  lootbag('kubejs:album_unity_band', 'kubejs:album/unity_band', true)//专辑
 
-  function lootbag(lootbag, lootable) {
+  function lootbag(lootbag, lootable, activation) {
     if (item === lootbag) {
       event.cancel();
       player.swingArm(event.hand);
       server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${player.x} ${player.y} ${player.z} loot ${lootable}`);
       player.playSound('minecraft:block.enchantment_table.use');
-      player.playSound('minecraft:entity.player.levelup');
-      Minecraft.getInstance().gameRenderer.displayItemActivation(lootbag);
+      if (activation) {
+        Minecraft.getInstance().gameRenderer.displayItemActivation(lootbag);
+        player.playSound('minecraft:entity.player.levelup');
+      }
       player.addItemCooldown(lootbag, 20);
       item.count--;
     }

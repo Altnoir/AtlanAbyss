@@ -93,15 +93,6 @@ function alchemyRecipes(event) {
 		result: [{ item: 'kubejs:catalyst_empty' }]
 	})
 
-	event.custom({
-		type: 'thermal:crystallizer',
-		ingredients: [
-			{ item: 'minecraft:sand' },
-			{ fluid: 'tconstruct:molten_obsidian', amount: 100 }
-		],
-		result: [{ item: 'kubejs:chaos_empty' }]
-	})
-
 	function catalyst(out, in1, in2, in3, in4, in5, in6, id) {
 		let s = ('kubejs:catalyst_incomplete')
 		event.recipes.createSequencedAssembly([

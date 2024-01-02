@@ -802,6 +802,6 @@ onEvent('rei.hide.fluids', event => {
 });
 
 onEvent('rei.information', event => {
-	event.add('biggerreactors:cyanite_ingot', 'Waste', ['可通过裂变反应堆的产出获得。']);
-	event.add('kubejs:osmium_scrap', 'Osmium Scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
+	event.addItem('biggerreactors:cyanite_ingot', 'Waste', ['可通过裂变反应堆的产出获得。']);
+	event.addItem('kubejs:osmium_scrap', 'Osmium Scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
 })

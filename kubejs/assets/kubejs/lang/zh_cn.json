@@ -399,10 +399,6 @@
     "tooltip.kubejs.purana1":"§6waw",
     "tooltip.kubejs.purana2":"§6awa",
 
-    "tooltip.kubejs.turtle_helmet1":"§6受到§e致命§6摔落伤害时，如果",
-    "tooltip.kubejs.turtle_helmet2":"§6手持水桶，便自动触发§e落地水",
-    "tooltip.kubejs.turtle_helmet3":"§6(消耗水桶)",
-
     "gateways.wither_skeleton_gate":"凋零骷髅传送门",
     "gateways.wither_skeleton_gate_large":"[大型]凋零骷髅传送门",
     "gateways.wither_skeleton_gate_small":"[小型]凋零骷髅传送门",
