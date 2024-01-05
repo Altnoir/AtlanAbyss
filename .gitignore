@@ -23,8 +23,8 @@
 /rocknroller
 /ldlib
 /multiblocked
-/knownkeys.txt
 
-config/roughlyenoughitems
-config/worldedit
-config/bocchud
+config/roughlyenoughitems/
+config/worldedit/
+config/bocchud/
+knownkeys.txt
