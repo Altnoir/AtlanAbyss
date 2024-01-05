@@ -1,0 +1,29 @@
+{
+    "type": "kitchenkarrot:brewing_barrel",
+    "content": {
+        "recipe": [
+            {
+                "item": "minecraft:melon_slice"
+            },
+            {
+                "item": "minecraft:melon_slice"
+            },
+            {
+                "item": "minecraft:wheat"
+            },
+            {
+                "item": "minecraft:wheat"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            }
+        ],
+        "craftingtime": 6000
+    },
+    "result": {
+        "item": "kitchenkarrot:iced_melon_lager"
+    }
+}

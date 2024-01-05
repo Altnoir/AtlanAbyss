@@ -1,0 +1,43 @@
+{
+    "type": "kitchenkarrot:cocktail",
+    "author": "kitchenkarrot",
+    "content": {
+        "recipe": [
+            {
+                "item": "kitchenkarrot:rum_base"
+            },
+            {
+                "item": "kitchenkarrot:vodka_base"
+            },
+            {
+                "item": "kitchenkarrot:acorn_wine_base"
+            },
+            {
+                "item": "kitchenkarrot:mead_base"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            }
+        ],
+        "craftingtime": 120,
+        "hunger": 1,
+        "saturation": 1,
+        "effect": [
+            {
+                "id": "minecraft:nausea",
+                "lvl": 1,
+                "duration": 600
+            },
+            {
+                "id": "minecraft:speed",
+                "lvl": 2,
+                "duration": 4800
+            },
+            {
+                "id": "minecraft:jump_boost",
+                "lvl": 2,
+                "duration": 4800
+            }
+        ]
+    }
+}

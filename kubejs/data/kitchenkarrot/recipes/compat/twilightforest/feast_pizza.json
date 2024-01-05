@@ -1,0 +1,49 @@
+{
+  "type":"forge:conditional",
+  "recipes":[
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid":"twilightforest"
+        }
+      ],
+      "recipe":{
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "121",
+          "333",
+          "444"
+        ],
+        "key": {
+          "1": {
+            "tag": "forge:milk"
+          },
+          "2": {
+            "tag": "forge:cooking_oil"
+          },
+          "3": [
+            {
+            "item": "twilightforest:raw_venison"
+            },
+            {
+              "item": "twilightforest:cooked_venison"
+            },
+            {
+              "item": "twilightforest:raw_meef"
+            },
+            {
+              "item": "twilightforest:cooked_meef"
+            }
+          ],
+          "4": {
+            "tag": "forge:bread"
+          }
+        },
+        "result": {
+          "item": "kitchenkarrot:feast_pizza"
+        }
+      }
+    }
+  ]
+}

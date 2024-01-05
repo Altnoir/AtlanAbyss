@@ -158,10 +158,10 @@ onEvent('recipes', event => {
 			A: 'thermal:steel_plate',
 			B: 'minecraft:sea_lantern',
 			C: 'minecraft:' + name + '_dye'
-		}).id("llmion:wall_lamp_" + name)
+		}).id("atlanabyss:wall_lamp_" + name)
 		event.shapeless('pneumaticcraft:wall_lamp_inverted_' + name, [
 			'pneumaticcraft:wall_lamp_' + name
-		]).id("llmion:wall_lamp_inverted_" + name)
+		]).id("atlanabyss:wall_lamp_inverted_" + name)
 	}
 	colours('white')
 	colours('orange')
@@ -189,19 +189,19 @@ onEvent('recipes', event => {
 	event.shapeless('pneumaticcraft:sourdough', [
 		'create:wheat_flour',
 		'pneumaticcraft:yeast_culture_bucket'
-	]).id("llmion:sourdough")
+	]).id("atlanabyss:sourdough")
 	event.recipes.createFilling('pneumaticcraft:sourdough', [
 		'create:wheat_flour',
 		Fluid.of('pneumaticcraft:yeast_culture', 100)
-	]).id("llmion:filling_sourdough")
+	]).id("atlanabyss:filling_sourdough")
 
 	remove('pneumaticcraft:heat_pipe');
-	event.stonecutting('4x pneumaticcraft:heat_pipe', 'pneumaticcraft:compressed_iron_block').id('llmion:heat_pipe');//热管
+	event.stonecutting('4x pneumaticcraft:heat_pipe', 'pneumaticcraft:compressed_iron_block').id('atlanabyss:heat_pipe');//热管
 	remove('pneumaticcraft:kerosene_lamp');
-	event.stonecutting('2x pneumaticcraft:kerosene_lamp', 'pneumaticcraft:compressed_iron_block').id('llmion:kerosene_lamp');//煤油灯
+	event.stonecutting('2x pneumaticcraft:kerosene_lamp', 'pneumaticcraft:compressed_iron_block').id('atlanabyss:kerosene_lamp');//煤油灯
 	const cibCutting = [
-		{ itemId: 'pneumaticcraft:display_table', id: 'llmion:display_table' },//展示桌
-		{ itemId: 'pneumaticcraft:spawner_agitator', id: 'llmion:spawner_agitator' },//刷怪笼激活器
+		{ itemId: 'pneumaticcraft:display_table', id: 'atlanabyss:display_table' },//展示桌
+		{ itemId: 'pneumaticcraft:spawner_agitator', id: 'atlanabyss:spawner_agitator' },//刷怪笼激活器
 	];
 	for (const item of cibCutting) {
 		event.remove({ id: item.itemId });
@@ -210,13 +210,13 @@ onEvent('recipes', event => {
 	//升级
 	remove('pneumaticcraft:speed_upgrade_from_glycerol');
 	const upCutting = [
-		{ itemId: 'pneumaticcraft:volume_upgrade', id: 'llmion:volume_upgrade' },//容积升级
-		{ itemId: 'pneumaticcraft:dispenser_upgrade', id: 'llmion:dispenser_upgrade' },//发射升级
-		{ itemId: 'pneumaticcraft:entity_tracker_upgrade', id: 'llmion:entity_tracker_upgrade' },//实体追踪升级
-		{ itemId: 'pneumaticcraft:speed_upgrade', id: 'llmion:speed_upgrade' },//速度升级
-		{ itemId: 'pneumaticcraft:range_upgrade', id: 'llmion:range_upgrade' },//范围升级
-		{ itemId: 'pneumaticcraft:security_upgrade', id: 'llmion:security_upgrade' },//安全升级
-		{ itemId: 'pneumaticcraft:magnet_upgrade', id: 'llmion:magnet_upgrade' },//磁铁升级
+		{ itemId: 'pneumaticcraft:volume_upgrade', id: 'atlanabyss:volume_upgrade' },//容积升级
+		{ itemId: 'pneumaticcraft:dispenser_upgrade', id: 'atlanabyss:dispenser_upgrade' },//发射升级
+		{ itemId: 'pneumaticcraft:entity_tracker_upgrade', id: 'atlanabyss:entity_tracker_upgrade' },//实体追踪升级
+		{ itemId: 'pneumaticcraft:speed_upgrade', id: 'atlanabyss:speed_upgrade' },//速度升级
+		{ itemId: 'pneumaticcraft:range_upgrade', id: 'atlanabyss:range_upgrade' },//范围升级
+		{ itemId: 'pneumaticcraft:security_upgrade', id: 'atlanabyss:security_upgrade' },//安全升级
+		{ itemId: 'pneumaticcraft:magnet_upgrade', id: 'atlanabyss:magnet_upgrade' },//磁铁升级
 	];
 	for (const item of upCutting) {
 		event.remove({ id: item.itemId });
@@ -231,7 +231,7 @@ onEvent('recipes', event => {
 		A: 'pneumaticcraft:air_canister',
 		B: 'kubejs:pressure_mechanism',
 		C: 'thermal:steel_plate'
-	}).id("llmion:camo_applicator")
+	}).id("atlanabyss:camo_applicator")
 	//压力表	
 	event.shaped('pneumaticcraft:amadron_tablet', [
 		'A A',
@@ -240,7 +240,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:plastic',
 		B: 'create:redstone_link'
-	}).id("llmion:amadron_tablet")
+	}).id("atlanabyss:amadron_tablet")
 	//压力表	
 	remove('pneumaticcraft:pressure_gauge')
 	event.shaped('pneumaticcraft:pressure_gauge', [
@@ -249,7 +249,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'minecraft:clock',
 		B: 'thermal:steel_ingot'
-	}).id("llmion:pressure_gauge")
+	}).id("atlanabyss:pressure_gauge")
 	//充气站	
 	remove('pneumaticcraft:charging_station')
 	event.shaped('pneumaticcraft:charging_station', [
@@ -260,7 +260,7 @@ onEvent('recipes', event => {
 		A: 'pneumaticcraft:pressure_tube',
 		B: 'minecraft:copper_ingot',
 		C: '#pneumaticcraft:slabs'
-	}).id("llmion:charging_station")
+	}).id("atlanabyss:charging_station")
 	//压力管道
 	remove('pneumaticcraft:pressure_tube')
 	event.shaped('4x pneumaticcraft:pressure_tube', [
@@ -270,14 +270,14 @@ onEvent('recipes', event => {
 	], {
 		A: 'thermal:steel_plate',
 		B: 'thermal:steel_ingot'
-	}).id("llmion:pressure_tube")
+	}).id("atlanabyss:pressure_tube")
 	//散热片
 	remove('pneumaticcraft:heat_sink')
 	event.shaped('pneumaticcraft:heat_sink', [
 		'AAA'
 	], {
 		A: 'create:copper_sheet'
-	}).id("llmion:heat_sink")
+	}).id("atlanabyss:heat_sink")
 	//空气罐
 	remove('pneumaticcraft:air_canister')
 	event.shaped('pneumaticcraft:air_canister', [
@@ -286,7 +286,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'minecraft:redstone',
 		B: 'pneumaticcraft:pressure_tube'
-	}).id("llmion:air_canister")
+	}).id("atlanabyss:air_canister")
 	//强化空气罐
 	remove('pneumaticcraft:reinforced_air_canister')
 	event.shaped('pneumaticcraft:reinforced_air_canister', [
@@ -295,7 +295,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:advanced_pressure_tube',
 		B: 'pneumaticcraft:air_canister'
-	}).id("llmion:reinforced_air_canister")
+	}).id("atlanabyss:reinforced_air_canister")
 	//涡轮炮
 	remove('pneumaticcraft:vortex_cannon')
 	event.recipes.createMechanicalCrafting('pneumaticcraft:vortex_cannon', [
@@ -307,7 +307,7 @@ onEvent('recipes', event => {
 		C: 'thermal:steel_ingot',
 		D: 'pneumaticcraft:plastic',
 		E: 'thermal:steel_plate'
-	}).id("llmion:vortex_cannon")
+	}).id("atlanabyss:vortex_cannon")
 	//气动锤
 	remove('pneumaticcraft:jackhammer')
 	event.recipes.createMechanicalCrafting('pneumaticcraft:jackhammer', [
@@ -322,7 +322,7 @@ onEvent('recipes', event => {
 		C: 'kubejs:pressure_mechanism',
 		D: 'thermal:steel_ingot',
 		E: 'pneumaticcraft:pneumatic_cylinder'
-	}).id("llmion:jackhammer")
+	}).id("atlanabyss:jackhammer")
 	//压力室墙壁
 	remove('pneumaticcraft:pressure_chamber_wall')
 	event.shaped('8x pneumaticcraft:pressure_chamber_wall', [
@@ -332,7 +332,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:compressed_stone',
 		B: 'pneumaticcraft:compressed_iron_block'
-	}).id("llmion:pressure_chamber_wall")
+	}).id("atlanabyss:pressure_chamber_wall")
 	//压力室气阀
 	remove('pneumaticcraft:pressure_chamber_valve')
 	remove('pneumaticcraft:pressure_chamber_valve_x1')
@@ -340,13 +340,13 @@ onEvent('recipes', event => {
 	event.shapeless('pneumaticcraft:pressure_chamber_valve', [
 		'pneumaticcraft:pressure_chamber_wall',
 		'pneumaticcraft:pressure_tube'
-	]).id("llmion:pressure_chamber_valve")
+	]).id("atlanabyss:pressure_chamber_valve")
 	//压力室接口
 	remove('pneumaticcraft:pressure_chamber_interface')
 	event.shapeless('pneumaticcraft:pressure_chamber_interface', [
 		'pneumaticcraft:pressure_chamber_wall',
 		'minecraft:barrel'
-	]).id("llmion:pressure_chamber_interface")
+	]).id("atlanabyss:pressure_chamber_interface")
 	//压力室玻璃
 	remove('pneumaticcraft:pressure_chamber_glass')
 	remove('pneumaticcraft:pressure_chamber_glass_x1')
@@ -358,7 +358,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:pressure_chamber_wall',
 		B: '#forge:glass'
-	}).id("llmion:pressure_chamber_glass")
+	}).id("atlanabyss:pressure_chamber_glass")
 	//钢机壳
 	remove('pneumaticcraft:compressed_iron_block_from_ingot')//删除钢块默认配方
 	remove('pneumaticcraft:pressure_chamber/compressed_iron_block')
@@ -371,7 +371,7 @@ onEvent('recipes', event => {
 		results: [
 			Item.of('pneumaticcraft:compressed_iron_block').toResultJson()
 		]
-	}).id("llmion:compressed_iron_block")
+	}).id("atlanabyss:compressed_iron_block")
 	//万向漏斗
 	remove('pneumaticcraft:omnidirectional_hopper')
 	event.shaped('pneumaticcraft:omnidirectional_hopper', [
@@ -381,7 +381,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'thermal:steel_ingot',
 		B: '#forge:chests/wooden'
-	}).id("llmion:omnidirectional_hopper")
+	}).id("atlanabyss:omnidirectional_hopper")
 	//液体漏斗
 	remove('pneumaticcraft:liquid_hopper')
 	event.shaped('pneumaticcraft:liquid_hopper', [
@@ -391,7 +391,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'thermal:steel_ingot',
 		B: 'create:fluid_tank'
-	}).id("llmion:liquid_hopper")
+	}).id("atlanabyss:liquid_hopper")
 	//空气压缩机
 	remove('pneumaticcraft:air_compressor')
 	event.shaped('pneumaticcraft:air_compressor', [
@@ -402,7 +402,7 @@ onEvent('recipes', event => {
 		A: 'minecraft:copper_ingot',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'kubejs:pressure_mechanism'
-	}).id("llmion:air_compressor")
+	}).id("atlanabyss:air_compressor")
 	//热力压缩机
 	remove('pneumaticcraft:thermal_compressor')
 	event.shaped('pneumaticcraft:thermal_compressor', [
@@ -412,7 +412,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'create:copper_sheet',
 		B: 'pneumaticcraft:air_compressor'
-	}).id("llmion:thermal_compressor")
+	}).id("atlanabyss:thermal_compressor")
 	//高级空气压缩机
 	remove('pneumaticcraft:advanced_air_compressor')
 	event.shaped('pneumaticcraft:advanced_air_compressor', [
@@ -421,7 +421,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:advanced_pressure_tube',
 		B: 'pneumaticcraft:air_compressor'
-	}).id("llmion:advanced_air_compressor")
+	}).id("atlanabyss:advanced_air_compressor")
 	//静电压缩机
 	remove('pneumaticcraft:electrostatic_compressor')
 	event.shaped('pneumaticcraft:electrostatic_compressor', [
@@ -430,7 +430,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'minecraft:copper_ingot',
 		B: 'pneumaticcraft:advanced_air_compressor'
-	}).id("llmion:electrostatic_compressor")
+	}).id("atlanabyss:electrostatic_compressor")
 	//液体压缩机
 	remove('pneumaticcraft:liquid_compressor')
 	event.shaped('pneumaticcraft:liquid_compressor', [
@@ -441,7 +441,7 @@ onEvent('recipes', event => {
 		A: 'create:fluid_tank',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'kubejs:pressure_mechanism'
-	}).id("llmion:liquid_compressor")
+	}).id("atlanabyss:liquid_compressor")
 	//高级液体压缩机
 	remove('pneumaticcraft:advanced_liquid_compressor')
 	event.shaped('pneumaticcraft:advanced_liquid_compressor', [
@@ -450,7 +450,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:advanced_pressure_tube',
 		B: 'pneumaticcraft:liquid_compressor'
-	}).id("llmion:advanced_liquid_compressor")
+	}).id("atlanabyss:advanced_liquid_compressor")
 	//压力缸
 	remove('pneumaticcraft:pneumatic_cylinder')
 	event.shaped('pneumaticcraft:pneumatic_cylinder', [
@@ -461,7 +461,7 @@ onEvent('recipes', event => {
 		A: 'create:shaft',
 		B: 'thermal:steel_plate',
 		C: 'pneumaticcraft:plastic'
-	}).id("llmion:pneumatic_cylinder")
+	}).id("atlanabyss:pneumatic_cylinder")
 	//紫外线灯箱
 	remove('pneumaticcraft:uv_light_box')
 	event.shaped('pneumaticcraft:uv_light_box', [
@@ -472,7 +472,7 @@ onEvent('recipes', event => {
 		A: 'create:rose_quartz_lamp',
 		B: 'pneumaticcraft:pcb_blueprint',
 		C: 'pneumaticcraft:compressed_iron_block'
-	}).id("llmion:uv_light_box")
+	}).id("atlanabyss:uv_light_box")
 	//玩家接口
 	remove('pneumaticcraft:aerial_interface')
 	event.shaped('pneumaticcraft:aerial_interface', [
@@ -485,7 +485,7 @@ onEvent('recipes', event => {
 		C: 'create:electron_tube',
 		D: 'kubejs:pressure_mechanism',
 		E: 'pneumaticcraft:advanced_pressure_tube'
-	}).id("llmion:aerial_interface")
+	}).id("atlanabyss:aerial_interface")
 	//涡轮管
 	remove('pneumaticcraft:vortex_tube')
 	event.shaped('pneumaticcraft:vortex_tube', [
@@ -496,7 +496,7 @@ onEvent('recipes', event => {
 		A: 'thermal:steel_ingot',
 		B: 'minecraft:gold_ingot',
 		C: 'pneumaticcraft:pressure_tube'
-	}).id("llmion:vortex_tube")
+	}).id("atlanabyss:vortex_tube")
 	//精炼控制器
 	remove('pneumaticcraft:refinery')
 	event.shaped('pneumaticcraft:refinery', [
@@ -507,7 +507,7 @@ onEvent('recipes', event => {
 		A: 'minecraft:redstone',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'kubejs:pressure_mechanism'
-	}).id("llmion:refinery")
+	}).id("atlanabyss:refinery")
 	//精炼输出端
 	remove('pneumaticcraft:refinery_output')
 	event.shaped('pneumaticcraft:refinery_output', [
@@ -516,7 +516,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'thermal:steel_ingot',
 		B: 'pneumaticcraft:compressed_iron_block'
-	}).id("llmion:refinery_output")
+	}).id("atlanabyss:refinery_output")
 	//热气动加工机
 	remove('pneumaticcraft:thermopneumatic_processing_plant')
 	event.shaped('pneumaticcraft:thermopneumatic_processing_plant', [
@@ -527,7 +527,7 @@ onEvent('recipes', event => {
 		A: 'pneumaticcraft:pressure_tube',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'kubejs:pressure_mechanism'
-	}).id("llmion:thermopneumatic_processing_plant")
+	}).id("atlanabyss:thermopneumatic_processing_plant")
 	//热气动加工机
 	remove('pneumaticcraft:fluid_mixer')
 	event.shaped('pneumaticcraft:fluid_mixer', [
@@ -538,7 +538,7 @@ onEvent('recipes', event => {
 		A: 'kubejs:pressure_mechanism',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'create:whisk'
-	}).id("llmion:fluid_mixer")
+	}).id("atlanabyss:fluid_mixer")
 	//蚀刻器
 	remove('pneumaticcraft:etching_tank')
 	event.shaped('pneumaticcraft:etching_tank', [
@@ -549,7 +549,7 @@ onEvent('recipes', event => {
 		A: 'minecraft:barrel',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'kubejs:pressure_mechanism'
-	}).id("llmion:etching_tank")
+	}).id("atlanabyss:etching_tank")
 	//真空泵
 	remove('pneumaticcraft:vacuum_pump')
 	event.shaped('pneumaticcraft:vacuum_pump', [
@@ -558,7 +558,7 @@ onEvent('recipes', event => {
 		A: 'create:propeller',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'pneumaticcraft:pressure_tube'
-	}).id("llmion:vacuum_pump")
+	}).id("atlanabyss:vacuum_pump")
 	//真空陷阱
 	remove('pneumaticcraft:vacuum_trap')
 	event.shaped('pneumaticcraft:vacuum_trap', [
@@ -567,7 +567,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'minecraft:ender_eye',
 		B: 'pneumaticcraft:vacuum_pump'
-	}).id("llmion:vacuum_trap")
+	}).id("atlanabyss:vacuum_trap")
 	//刷怪笼核心外壳
 	remove('pneumaticcraft:spawner_core_shell')
 	event.shaped('pneumaticcraft:spawner_core_shell', [
@@ -576,7 +576,7 @@ onEvent('recipes', event => {
 		' A '
 	], {
 		A: 'pneumaticcraft:pressure_chamber_glass'
-	}).id("llmion:spawner_core_shell")
+	}).id("atlanabyss:spawner_core_shell")
 	//刷怪笼抽取器
 	remove('pneumaticcraft:spawner_extractor')
 	event.shaped('pneumaticcraft:spawner_extractor', [
@@ -587,7 +587,7 @@ onEvent('recipes', event => {
 		A: 'pneumaticcraft:pressure_tube',
 		B: 'pneumaticcraft:compressed_iron_block',
 		C: 'pneumaticcraft:spawner_agitator'
-	}).id("llmion:spawner_extractor")
+	}).id("atlanabyss:spawner_extractor")
 	//气动刷怪笼
 	remove('pneumaticcraft:pressurized_spawner')
 	event.shaped('pneumaticcraft:pressurized_spawner', [
@@ -597,7 +597,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:advanced_pressure_tube',
 		B: 'pneumaticcraft:empty_spawner'
-	}).id("llmion:pressurized_spawner")
+	}).id("atlanabyss:pressurized_spawner")
 	//管道跨接点
 	remove('pneumaticcraft:tube_junction')
 	event.shaped('pneumaticcraft:tube_junction', [
@@ -607,43 +607,43 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:pressure_tube',
 		B: 'pneumaticcraft:compressed_iron_block'
-	}).id("llmion:tube_junction")
+	}).id("atlanabyss:tube_junction")
 	//安全管道模块
 	remove('pneumaticcraft:safety_tube_module')
 	event.shapeless('4x pneumaticcraft:safety_tube_module', [
 		'thermal:steel_plate',
 		'minecraft:lever'
-	]).id("llmion:afety_tube_module")
+	]).id("atlanabyss:afety_tube_module")
 	//压力表管道模块
 	remove('pneumaticcraft:pressure_gauge_module')
 	event.shapeless('pneumaticcraft:pressure_gauge_module', [
 		'thermal:steel_plate',
 		'pneumaticcraft:pressure_gauge_module'
-	]).id("llmion:pressure_gauge_module")
+	]).id("atlanabyss:pressure_gauge_module")
 	//流量检测管道模块
 	remove('pneumaticcraft:flow_detector_module')
 	event.shapeless('pneumaticcraft:flow_detector_module', [
 		'thermal:steel_plate',
 		'minecraft:redstone'
-	]).id("llmion:flow_detector_module")
+	]).id("atlanabyss:flow_detector_module")
 	//空气栅管道模块
 	remove('pneumaticcraft:air_grate_module')
 	event.shapeless('pneumaticcraft:air_grate_module', [
 		'thermal:steel_plate',
 		'minecraft:iron_bars'
-	]).id("llmion:air_grate_module")
+	]).id("atlanabyss:air_grate_module")
 	//充气模块
 	remove('pneumaticcraft:charging_module')
 	event.shapeless('pneumaticcraft:charging_module', [
 		'pneumaticcraft:pressure_tube',
 		'pneumaticcraft:charging_station'
-	]).id("llmion:charging_module")
+	]).id("atlanabyss:charging_module")
 	//红石模块
 	remove('pneumaticcraft:redstone_module')
 	event.shapeless('pneumaticcraft:redstone_module', [
 		'pneumaticcraft:pressure_tube',
 		'minecraft:redstone'
-	]).id("llmion:redstone_module")
+	]).id("atlanabyss:redstone_module")
 	//气动门
 	remove('pneumaticcraft:pneumatic_door')
 	event.shaped('2x pneumaticcraft:pneumatic_door', [
@@ -652,7 +652,7 @@ onEvent('recipes', event => {
 		'AA'
 	], {
 		A: 'thermal:steel_ingot'
-	}).id("llmion:pneumatic_door")
+	}).id("atlanabyss:pneumatic_door")
 	//气动门基座
 	remove('pneumaticcraft:pneumatic_door_base')
 	event.shaped('pneumaticcraft:pneumatic_door_base', [
@@ -661,11 +661,11 @@ onEvent('recipes', event => {
 	], {
 		A: 'pneumaticcraft:pneumatic_cylinder',
 		B: 'pneumaticcraft:compressed_iron_block'
-	}).id("llmion:pneumatic_door_base")
+	}).id("atlanabyss:pneumatic_door_base")
 	//塑料
 	event.recipes.createCompacting('pneumaticcraft:plastic', [
 		Fluid.of('pneumaticcraft:plastic', 1000)
-	]).id("llmion:plastic")
+	]).id("atlanabyss:plastic")
 
 	//人工钻石	
 	remove('pneumaticcraft:pressure_chamber/coal_to_diamond');
@@ -674,7 +674,7 @@ onEvent('recipes', event => {
 		inputs: [Ingredient.of('kubejs:compressed_coal_block')],
 		results: [Item.of('minecraft:diamond')],
 		pressure: 4.9
-	}).id("llmion:artificial_diamond");
+	}).id("atlanabyss:artificial_diamond");
 
 	//人工酸	
 	event.custom({
@@ -686,14 +686,14 @@ onEvent('recipes', event => {
 		],
 		results: [Item.of('kubejs:acid')],
 		pressure: 3.0
-	}).id("llmion:acid");
+	}).id("atlanabyss:acid");
 
 	//蚀刻酸
 	remove('pneumaticcraft:pressure_chamber/etching_acid')
 	event.recipes.createMixing(Fluid.of('pneumaticcraft:etching_acid', 500), [
 		Fluid.of('pneumaticcraft:plastic', 400),
 		'kubejs:acid'
-	]).heated().id("llmion:etching_acid")
+	]).heated().id("atlanabyss:etching_acid")
 	//压缩石
 	event.recipes.createSequencedAssembly([
 		Item.of('pneumaticcraft:compressed_stone').withChance(0.7),
@@ -702,7 +702,7 @@ onEvent('recipes', event => {
 		'minecraft:stone',
 		[
 			event.recipes.createPressing('minecraft:stone', 'minecraft:stone').processingTime(50)
-		]).transitionalItem('minecraft:stone').loops(2).id("llmion:compressed_stone")
+		]).transitionalItem('minecraft:stone').loops(2).id("atlanabyss:compressed_stone")
 
 	//空PCB
 	remove('pneumaticcraft:pressure_chamber/empty_pcb')
@@ -714,7 +714,7 @@ onEvent('recipes', event => {
 			event.recipes.createFilling('pneumaticcraft:plastic', ['pneumaticcraft:plastic', Fluid.of('tconstruct:molten_copper', 50)]),
 			event.recipes.createFilling('pneumaticcraft:plastic', ['pneumaticcraft:plastic', Fluid.of('tconstruct:molten_gold', 50)]),
 			event.recipes.createCutting('pneumaticcraft:plastic', 'pneumaticcraft:plastic').processingTime(100)
-		]).transitionalItem('pneumaticcraft:plastic').loops(9).id("llmion:empty_pcb")
+		]).transitionalItem('pneumaticcraft:plastic').loops(9).id("atlanabyss:empty_pcb")
 	//PCB
 	remove('pneumaticcraft:printed_circuit_board')
 	event.recipes.createSequencedAssembly([
@@ -727,7 +727,7 @@ onEvent('recipes', event => {
 			event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:capacitor']),
 			event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:capacitor']),
 			event.recipes.createDeploying('pneumaticcraft:unassembled_pcb', ['pneumaticcraft:unassembled_pcb', 'createaddition:brass_rod'])
-		]).transitionalItem('pneumaticcraft:unassembled_pcb').loops(5).id("llmion:printed_circuit_board")
+		]).transitionalItem('pneumaticcraft:unassembled_pcb').loops(5).id("atlanabyss:printed_circuit_board")
 	//装配平台
 	remove('pneumaticcraft:assembly_platform')
 	event.shaped('pneumaticcraft:assembly_platform', [
@@ -738,7 +738,7 @@ onEvent('recipes', event => {
 		B: 'pneumaticcraft:plastic',
 		C: 'thermal:steel_plate',
 		D: 'pneumaticcraft:printed_circuit_board'
-	}).id("llmion:assembly_platform")
+	}).id("atlanabyss:assembly_platform")
 	//装配导入
 	remove('pneumaticcraft:assembly_io_unit_import')
 	event.shaped('pneumaticcraft:assembly_io_unit_import', [
@@ -750,7 +750,7 @@ onEvent('recipes', event => {
 		B: 'create:mechanical_arm',
 		C: 'thermal:steel_plate',
 		D: 'pneumaticcraft:printed_circuit_board'
-	}).id("llmion:assembly_io_unit_import")
+	}).id("atlanabyss:assembly_io_unit_import")
 	//装配导出
 	remove('pneumaticcraft:assembly_io_unit_export')
 	event.shaped('pneumaticcraft:assembly_io_unit_export', [
@@ -762,7 +762,7 @@ onEvent('recipes', event => {
 		B: 'create:mechanical_arm',
 		C: 'thermal:steel_plate',
 		D: 'pneumaticcraft:printed_circuit_board'
-	}).id("llmion:assembly_io_unit_export")
+	}).id("atlanabyss:assembly_io_unit_export")
 	//装配钻头
 	remove('pneumaticcraft:assembly_drill')
 	event.shaped('pneumaticcraft:assembly_drill', [
@@ -775,7 +775,7 @@ onEvent('recipes', event => {
 		C: 'thermal:steel_plate',
 		D: 'pneumaticcraft:printed_circuit_board',
 		E: 'pneumaticcraft:drill_bit_diamond'
-	}).id("llmion:assembly_drill")
+	}).id("atlanabyss:assembly_drill")
 	//装配激光
 	remove('pneumaticcraft:assembly_laser')
 	event.shaped('pneumaticcraft:assembly_laser', [
@@ -788,7 +788,7 @@ onEvent('recipes', event => {
 		C: 'thermal:steel_plate',
 		D: 'pneumaticcraft:printed_circuit_board',
 		E: 'create:electron_tube'
-	}).id("llmion:assembly_laser")
+	}).id("atlanabyss:assembly_laser")
 	//装配控制台
 	remove('pneumaticcraft:assembly_controller')
 	event.shaped('pneumaticcraft:assembly_controller', [
@@ -800,7 +800,7 @@ onEvent('recipes', event => {
 		B: 'pneumaticcraft:reinforced_pressure_tube',
 		C: 'thermal:steel_plate',
 		D: 'kubejs:pressure_mechanism'
-	}).id("llmion:assembly_controller")
+	}).id("atlanabyss:assembly_controller")
 
 	//石油处理
 	for (let i = 2; i < 5; i++) {
@@ -833,7 +833,7 @@ onEvent('recipes', event => {
 				min_temp: mintemp
 			},
 			results: refinery
-		}).id('llmion:refinery_' + id);
+		}).id('atlanabyss:refinery_' + id);
 	}
 	refineryRecipe('thermal:heavy_oil', 4, 'pneumaticcraft:kerosene', 3, 'thermal:light_oil', 2, 'pneumaticcraft:lpg', 1, 'thermal:crude_oil', 10, 373, 'oil_4');
 	refineryRecipe('thermal:heavy_oil', 4, 'pneumaticcraft:kerosene', 4, 'pneumaticcraft:lpg', 1, null, null, 'thermal:crude_oil', 10, 373, 'oil_3');
@@ -861,7 +861,7 @@ onEvent('recipes', event => {
 			},
 			pressure: pressure,
 			exothermic: false
-		}).id('llmion:thermo_plant_' + id);
+		}).id('atlanabyss:thermo_plant_' + id);
 	}
 	thermoplantRecipe('thermal:heavy_oil', 100, 'pneumaticcraft:kerosene', 80, 573, 2.0, 'kerosene');
 	thermoplantRecipe('pneumaticcraft:kerosene', 100, 'thermal:light_oil', 80, 573, 2.0, 'light_oil');
@@ -870,7 +870,7 @@ onEvent('recipes', event => {
 	function createMixingRecipe(output, input, fluid, amount, id) {
 		event.recipes.createMixing(output,
 			[input, Fluid.of(fluid, amount)
-			]).heated().id('llmion:' + id);
+			]).heated().id('atlanabyss:' + id);
 	}
 	createMixingRecipe(['thermal:bitumen', Fluid.of('pneumaticcraft:lubricant', 250)], Fluid.of('thermal:redstone', 180), 'thermal:heavy_oil', 250, 'mixing_lubricant');
 	createMixingRecipe(Fluid.of('pneumaticcraft:yeast_culture', 250), '#forge:mushrooms', 'minecraft:water', 1000, 'yeast_culture');
@@ -882,5 +882,5 @@ onEvent('recipes', event => {
 		[
 			'minecraft:potato',
 			Fluid.of('createaddition:seed_oil', 50)
-		]).heated().id("llmion:chips")
+		]).heated().id("atlanabyss:chips")
 })

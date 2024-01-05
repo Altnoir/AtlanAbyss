@@ -133,7 +133,7 @@ onEvent('recipes', event => {
   ], {
     A: 'create:iron_sheet',
     B: 'minecraft:lapis_lazuli'
-  }).id("llmion:thermal_wrench")
+  }).id("atlanabyss:thermal_wrench")
   //扩展通量线圈
   remove('thermal:augments/rf_coil_augment')
   event.shaped('thermal:rf_coil_augment', [
@@ -144,7 +144,7 @@ onEvent('recipes', event => {
     A: 'thermal:silver_plate',
     B: 'thermal:rf_coil',
     C: 'create:golden_sheet'
-  }).id("llmion:rf_coil_augment")
+  }).id("atlanabyss:rf_coil_augment")
   //稳态通量线圈
   remove('thermal:augments/rf_coil_storage_augment')
   event.shaped('thermal:rf_coil_storage_augment', [
@@ -155,7 +155,7 @@ onEvent('recipes', event => {
     A: 'thermal:silver_plate',
     B: 'thermal:rf_coil',
     C: 'create:golden_sheet'
-  }).id("llmion:rf_coil_storage_augment")
+  }).id("atlanabyss:rf_coil_storage_augment")
   //强导通量线圈
   remove('thermal:augments/rf_coil_xfer_augment')
   event.shaped('thermal:rf_coil_xfer_augment', [
@@ -166,7 +166,7 @@ onEvent('recipes', event => {
     A: 'thermal:silver_plate',
     B: 'thermal:rf_coil',
     C: 'create:golden_sheet'
-  }).id("llmion:rf_coil_xfer_augment")
+  }).id("atlanabyss:rf_coil_xfer_augment")
   //液槽扩容升级
   remove('thermal:augments/fluid_tank_augment')
   event.shaped('thermal:fluid_tank_augment', [
@@ -176,7 +176,7 @@ onEvent('recipes', event => {
   ], {
     A: 'create:iron_sheet',
     B: '#thermal:glass/hardened'
-  }).id("llmion:fluid_tank_augment")
+  }).id("atlanabyss:fluid_tank_augment")
   //流体过滤规则
   remove('thermal:augments/fluid_filter_augment')
   event.shaped('thermal:fluid_filter_augment', [
@@ -186,7 +186,7 @@ onEvent('recipes', event => {
   ], {
     A: 'create:copper_nugget',
     B: 'thermal:signalum_ingot'
-  }).id("llmion:fluid_filter_augment")
+  }).id("atlanabyss:fluid_filter_augment")
   //径向范围扩展
   remove('thermal:augments/area_radius_augment')
   event.shaped('thermal:area_radius_augment', [
@@ -196,7 +196,7 @@ onEvent('recipes', event => {
   ], {
     A: 'thermal:tin_plate',
     B: 'thermal:redstone_servo'
-  }).id("llmion:area_radius_augment")
+  }).id("atlanabyss:area_radius_augment")
   //通量链接升级
   remove('thermal:augments/machine_speed_augment')
   event.shaped('thermal:machine_speed_augment', [
@@ -207,7 +207,7 @@ onEvent('recipes', event => {
     A: 'thermal:electrum_plate',
     B: 'thermal:rf_coil',
     C: 'thermal:lead_plate'
-  }).id("llmion:machine_speed_augment")
+  }).id("atlanabyss:machine_speed_augment")
   //多环泵注升级
   remove('thermal:augments/dynamo_fuel_augment')
   event.shaped('thermal:dynamo_fuel_augment', [
@@ -218,7 +218,7 @@ onEvent('recipes', event => {
     A: 'thermal:lumium_plate',
     B: '#thermal:glass/hardened',
     C: 'thermal:lead_plate'
-  }).id("llmion:dynamo_fuel_augment")
+  }).id("atlanabyss:dynamo_fuel_augment")
   //辅助反应升级
   remove('thermal:augments/dynamo_output_augment')
   event.shaped('thermal:dynamo_output_augment', [
@@ -229,7 +229,7 @@ onEvent('recipes', event => {
     A: 'thermal:signalum_plate',
     B: '#thermal:glass/hardened',
     C: 'thermal:silver_plate'
-  }).id("llmion:dynamo_output_augment")
+  }).id("atlanabyss:dynamo_output_augment")
   //通量效率升级
   remove('thermal:augments/machine_efficiency_augment')
   event.shaped('thermal:machine_efficiency_augment', [
@@ -240,7 +240,7 @@ onEvent('recipes', event => {
     A: 'thermal:lumium_plate',
     B: 'thermal:rf_coil',
     C: 'thermal:nickel_plate'
-  }).id("llmion:machine_efficiency_augment")
+  }).id("atlanabyss:machine_efficiency_augment")
   //辅助筛取升级
   remove('thermal:augments/machine_output_augment')
   event.shaped('thermal:machine_output_augment', [
@@ -251,7 +251,7 @@ onEvent('recipes', event => {
     A: '#forge:plates/brass',
     B: 'thermal:redstone_servo',
     C: 'thermal:invar_plate'
-  }).id("llmion:machine_output_augment")
+  }).id("atlanabyss:machine_output_augment")
   //媒触回收升级
   remove('thermal:augments/machine_catalyst_augment')
   event.shaped('thermal:machine_catalyst_augment', [
@@ -262,7 +262,7 @@ onEvent('recipes', event => {
     A: 'thermal:lead_plate',
     B: 'thermal:redstone_servo',
     C: 'thermal:constantan_plate'
-  }).id("llmion:machine_catalyst_augment")
+  }).id("atlanabyss:machine_catalyst_augment")
   //强效炼药升级
   remove('thermal:augments/potion_amplifier_augment')
   event.shaped('thermal:potion_amplifier_augment', [
@@ -273,7 +273,7 @@ onEvent('recipes', event => {
     A: 'create:brass_sheet',
     B: '#thermal:glass/hardened',
     C: 'thermal:signalum_plate'
-  }).id("llmion:potion_amplifier_augment")
+  }).id("atlanabyss:potion_amplifier_augment")
   //长效炼药升级
   remove('thermal:augments/potion_duration_augment')
   event.shaped('thermal:potion_duration_augment', [
@@ -284,7 +284,7 @@ onEvent('recipes', event => {
     A: 'create:brass_sheet',
     B: '#thermal:glass/hardened',
     C: 'thermal:lumium_plate'
-  }).id("llmion:potion_duration_augment")
+  }).id("atlanabyss:potion_duration_augment")
   //循环处理升级
   remove('thermal:augments/machine_cycle_augment')
   event.shaped('thermal:machine_cycle_augment', [
@@ -295,7 +295,7 @@ onEvent('recipes', event => {
     A: 'thermal:constantan_plate',
     B: 'thermal:redstone_servo',
     C: 'thermal:silver_plate'
-  }).id("llmion:machine_cycle_augment")
+  }).id("atlanabyss:machine_cycle_augment")
 
   //硬化整合组件
   remove('thermal:augments/upgrade_augment_1')
@@ -308,7 +308,7 @@ onEvent('recipes', event => {
     B: 'minecraft:glass',
     C: 'minecraft:redstone',
     D: 'kubejs:aluminum_nugget'
-  }).id("llmion:upgrade_augment_1")
+  }).id("atlanabyss:upgrade_augment_1")
   //强化整合组件
   remove('thermal:augments/upgrade_augment_2')
   event.shaped('thermal:upgrade_augment_2', [
@@ -320,7 +320,7 @@ onEvent('recipes', event => {
     B: 'minecraft:quartz',
     C: 'thermal:electrum_nugget',
     D: 'thermal:upgrade_augment_1'
-  }).id("llmion:upgrade_augment_2")
+  }).id("atlanabyss:upgrade_augment_2")
   //谐振整合组件
   remove('thermal:augments/upgrade_augment_3')
   event.shaped('thermal:upgrade_augment_3', [
@@ -332,7 +332,7 @@ onEvent('recipes', event => {
     B: '#thermal:glass/hardened',
     C: 'thermal:lumium_nugget',
     D: 'thermal:upgrade_augment_2'
-  }).id("llmion:upgrade_augment_3")
+  }).id("atlanabyss:upgrade_augment_3")
 
   //遥控起爆器
   remove('thermal:tools/detonator')
@@ -342,16 +342,16 @@ onEvent('recipes', event => {
   ], {
     A: 'thermal:silver_plate',
     B: 'minecraft:redstone_torch'
-  }).id("llmion:thermal_detonator")
+  }).id("atlanabyss:thermal_detonator")
 
   //瀑冰弹→冰
   remove('thermal:ice_charge/ice_from_water_bucket')
   event.recipes.createSplashing(['minecraft:ice'],
     'thermal:ice_charge'
-  ).id("llmion:splashing_ice_charge").processingTime(600)
+  ).id("atlanabyss:splashing_ice_charge").processingTime(600)
   //瀑冰弹→黑曜石
   remove('thermal:ice_charge/obsidian_from_lava_bucket')
-  event.blasting('minecraft:obsidian', 'thermal:ice_charge').id("llmion:obsidian_from_ice_charge")
+  event.blasting('minecraft:obsidian', 'thermal:ice_charge').id("atlanabyss:obsidian_from_ice_charge")
 
   //铝
   event.shaped('kubejs:aluminum_block', [
@@ -360,36 +360,36 @@ onEvent('recipes', event => {
     'AAA'
   ], {
     A: 'kubejs:aluminum_ingot'
-  }).id("llmion:aluminum_block_from_ingot")
+  }).id("atlanabyss:aluminum_block_from_ingot")
   event.shapeless('9x kubejs:aluminum_ingot', [
     'kubejs:aluminum_block',
-  ]).id("llmion:aluminum_ingot_from_block")
+  ]).id("atlanabyss:aluminum_ingot_from_block")
   event.shaped('kubejs:aluminum_ingot', [
     'AAA',
     'AAA',
     'AAA'
   ], {
     A: 'kubejs:aluminum_nugget'
-  }).id("llmion:aluminum_nugget_from_nugget")
+  }).id("atlanabyss:aluminum_nugget_from_nugget")
   event.shapeless('9x kubejs:aluminum_nugget', [
     'kubejs:aluminum_ingot',
-  ]).id("llmion:aluminum_nugget_from_ingot")
+  ]).id("atlanabyss:aluminum_nugget_from_ingot")
   event.shaped('kubejs:raw_aluminum_block', [
     'AAA',
     'AAA',
     'AAA'
   ], {
     A: 'kubejs:raw_aluminum'
-  }).id("llmion:raw_aluminum_block_from_raw")
+  }).id("atlanabyss:raw_aluminum_block_from_raw")
   event.shapeless('9x kubejs:raw_aluminum', [
     'kubejs:raw_aluminum_block',
-  ]).id("llmion:raw_aluminum_from_block")
+  ]).id("atlanabyss:raw_aluminum_from_block")
 
   //机械合金炉
   function createAlloy(output, input, id) {
     event.recipes.createMixing(output,
       input,
-    ).heated().id('llmion:' + id);
+    ).heated().id('atlanabyss:' + id);
   }
   createAlloy('2x thermal:electrum_ingot', ['minecraft:gold_ingot', 'thermal:silver_ingot'], 'mixing_electrum_ingot')//琥珀金
   createAlloy('2x thermal:invar_ingot', ['minecraft:iron_ingot', 'thermal:nickel_ingot'], 'mixing_invar_ingot')//镍钢锭
@@ -418,7 +418,7 @@ onEvent('recipes', event => {
       Item.of('tconstruct:rose_gold_ingot', 4).toResultJson()
     ],
     energy: 3200
-  }).id("llmion:rose_gold_ingot")
+  }).id("atlanabyss:rose_gold_ingot")
   //下界合金！
   event.custom({
     type: 'thermal:smelter',
@@ -440,21 +440,21 @@ onEvent('recipes', event => {
       Item.of('minecraft:netherite_ingot').toResultJson()
     ],
     energy: 12000
-  }).id("llmion:smelter_netherite_ingot")
+  }).id("atlanabyss:smelter_netherite_ingot")
   //木炭杂酚油
   event.recipes.createCompacting([
     'minecraft:charcoal',
     Fluid.of('thermal:creosote', 144)
   ],
     '#minecraft:logs'
-  ).heated().id("llmion:pyrolyzer_logs")
+  ).heated().id("atlanabyss:pyrolyzer_logs")
   //焦炭杂酚油
   event.recipes.createCompacting([
     'thermal:coal_coke',
     Fluid.of('thermal:creosote', 288)
   ],
     'minecraft:coal'
-  ).heated().id("llmion:pyrolyzer_coal")
+  ).heated().id("atlanabyss:pyrolyzer_coal")
   //沥青重油
   event.recipes.createCompacting([
     '2x thermal:coal_coke',
@@ -462,22 +462,22 @@ onEvent('recipes', event => {
     Fluid.of('thermal:light_oil', 50)
   ],
     'thermal:bitumen'
-  ).heated().id("llmion:pyrolyzer_bitumen")
+  ).heated().id("atlanabyss:pyrolyzer_bitumen")
 
   //人工石油
   event.recipes.createMixing(Fluid.of('thermal:crude_oil', 50), [
     '#create_enchantment_industry:ink_ingredient',
     Fluid.of('tconstruct:blood', 500)
-  ]).superheated().id("llmion:oil_from_black_dye")
+  ]).superheated().id("atlanabyss:oil_from_black_dye")
   event.recipes.createMixing(Fluid.of('thermal:crude_oil', 500), [
     'thermal:bitumen',
     Fluid.of('tconstruct:blood', 500)
-  ]).superheated().id("llmion:oil_from_bitumen")
+  ]).superheated().id("atlanabyss:oil_from_bitumen")
   //精炼油
   event.recipes.createMixing(Fluid.of('thermal:refined_fuel', 100), [
     Fluid.of('thermal:light_oil', 50),
     Fluid.of('tconstruct:blazing_blood', 50)
-  ]).heated().id("llmion:refined_fuel")
+  ]).heated().id("atlanabyss:refined_fuel")
   remove('createaddition:liquid_burning/compat/thermal/refined_fuel')
   event.custom({
     type: 'createaddition:liquid_burning',
@@ -487,7 +487,7 @@ onEvent('recipes', event => {
     },
     burnTime: 120000,
     superheated: true,
-  }).id("llmion:liquid_burning_refined_fuel")
+  }).id("atlanabyss:liquid_burning_refined_fuel")
 
   //机械熔岩炉
   const superheated = [
@@ -498,7 +498,7 @@ onEvent('recipes', event => {
   for (const sh of superheated) {
     event.recipes.createMixing(Fluid.of(`${sh.output}`, sh.count),
       `minecraft:${sh.input}`
-    ).superheated().id(`llmion:superheated_${sh.input}`)
+    ).superheated().id(`atlanabyss:superheated_${sh.input}`)
   }
   const heated = [
     { input: 'glowstone_dust', output: 'thermal:glowstone', count: 250 },
@@ -509,7 +509,7 @@ onEvent('recipes', event => {
   for (const h of heated) {
     event.recipes.createMixing(Fluid.of(`${h.output}`, h.count),
       `minecraft:${h.input}`
-    ).heated().id(`llmion:heated_${h.input}`)
+    ).heated().id(`atlanabyss:heated_${h.input}`)
   }
   //机动冷冻
   remove('thermal:earth_charge/sulfur_dust_from_sulfur')
@@ -526,7 +526,7 @@ onEvent('recipes', event => {
   for (const c of chiller) {
     event.recipes.createCompacting(`${c.output}`, [
       Fluid.of(`${c.input}`, c.count)
-    ]).id(`llmion:compacting_${c.id}`)
+    ]).id(`atlanabyss:compacting_${c.id}`)
   }
 
   //魔力灌注
@@ -539,13 +539,13 @@ onEvent('recipes', event => {
     count: 1,
     source: 500,
     pedestalItems: []
-  }).id("llmion:blizz_rod")
+  }).id("atlanabyss:blizz_rod")
 
   //钢锭
   event.recipes.createMixing('thermal:steel_ingot', [
     'minecraft:iron_ingot',
     'thermal:coal_coke'
-  ]).heated().id("llmion:steel_ingot")
+  ]).heated().id("atlanabyss:steel_ingot")
 
   //机器框架
   remove('thermal:machine_frame')
@@ -557,7 +557,7 @@ onEvent('recipes', event => {
     A: 'thermal:invar_plate',
     B: 'kubejs:thermal_mechanism',
     C: 'minecraft:glass'
-  }).id("llmion:machine_frame")
+  }).id("atlanabyss:machine_frame")
   //钢制机器框架
   event.shaped('kubejs:steel_machine', [
     'ACA',
@@ -567,7 +567,7 @@ onEvent('recipes', event => {
     A: 'thermal:steel_ingot',
     B: 'kubejs:pressure_mechanism',
     C: 'minecraft:glass'
-  }).id("llmion:steel_machine_frame")
+  }).id("atlanabyss:steel_machine_frame")
 
   //机器
   const machines = [
@@ -587,7 +587,7 @@ onEvent('recipes', event => {
     event.smithing(`thermal:${machine.output}`,
       'thermal:machine_frame',
       `${machine.input}`
-    ).id(`llmion:${machine.output}`)
+    ).id(`atlanabyss:${machine.output}`)
   }
   //树汁提取
   event.shaped('thermal:device_tree_extractor', [
@@ -598,7 +598,7 @@ onEvent('recipes', event => {
     A: 'supplementaries:faucet',
     B: 'create:andesite_casing',
     C: 'minecraft:bucket'
-  }).id("llmion:device_tree_extractor")
+  }).id("atlanabyss:device_tree_extractor")
   //水产捕捞
   event.shaped('thermal:device_fisher', [
     'A',
@@ -608,7 +608,7 @@ onEvent('recipes', event => {
     A: 'minecraft:bucket',
     B: 'create:andesite_casing',
     C: 'minecraft:barrel'
-  }).id("llmion:device_fisher")
+  }).id("atlanabyss:device_fisher")
   //批量堆肥
   event.shaped('thermal:device_composter', [
     'A',
@@ -618,7 +618,7 @@ onEvent('recipes', event => {
     A: 'create:electron_tube',
     B: 'create:andesite_casing',
     C: 'minecraft:composter'
-  }).id("llmion:device_composter")
+  }).id("atlanabyss:device_composter")
   //工匠工作台
   event.shaped('thermal:tinker_bench', [
     'AB',
@@ -628,12 +628,12 @@ onEvent('recipes', event => {
     A: '#forge:wires',
     B: 'minecraft:glass_bottle',
     C: 'create:andesite_casing'
-  }).id("llmion:tinker_bench")
+  }).id("atlanabyss:tinker_bench")
   //能量灌注
   event.shapeless('thermal:charge_bench', [
     'thermal:electrum_block',
     'kubejs:thermal_mechanism'
-  ]).id("llmion:charge_bench")
+  ]).id("atlanabyss:charge_bench")
 
   //造石机
   function rockGen(adjacent, output, id) {
@@ -643,7 +643,7 @@ onEvent('recipes', event => {
       result: {
         item: output
       }
-    }).id('llmion:rock_gen_' + id)
+    }).id('atlanabyss:rock_gen_' + id)
   }
   rockGen('create:honey', 'create:limestone', 'limestone')
   rockGen('create_enchantment_industry:ink', 'minecraft:blackstone', 'blackstone')
@@ -657,7 +657,7 @@ onEvent('recipes', event => {
       result: {
         item: output
       }
-    }).id('llmion:rock_gen_' + id)
+    }).id('atlanabyss:rock_gen_' + id)
   }
   rockGen2('minecraft:water', 'minecraft:calcite', 'minecraft:diorite', 'diorite')
   rockGen2('minecraft:water', 'minecraft:tuff', 'minecraft:andesite', 'andesite')
@@ -669,11 +669,11 @@ onEvent('recipes', event => {
   event.recipes.createEmptying([
     'kubejs:dry_oil_sand',
     Fluid.of('thermal:crude_oil', 1000)
-  ], 'thermal:oil_sand').id("llmion:oil_sand")
+  ], 'thermal:oil_sand').id("atlanabyss:oil_sand")
   event.recipes.createEmptying([
     'kubejs:dry_oil_red_sand',
     Fluid.of('thermal:crude_oil', 1000)
-  ], 'thermal:oil_red_sand').id("llmion:oill_red_sand")
+  ], 'thermal:oil_red_sand').id("atlanabyss:oill_red_sand")
   //粉碎干沥青沙
   const CrushingOilSand = [
     { input: 'dry_oil_sand', output: 'sand' },//沙
@@ -685,7 +685,7 @@ onEvent('recipes', event => {
       'thermal:bitumen',
       Item.of(('thermal:niter'), 3).withChance(.50),
     ], `kubejs:${cos.input}`)
-      .processingTime(50).id(`llmion:crushing_${cos.input}`)
+      .processingTime(50).id(`atlanabyss:crushing_${cos.input}`)
   }
 
   //树汁提取
@@ -710,7 +710,7 @@ onEvent('recipes', event => {
         fluid: `${te.fluid}`,
         amount: te.amo
       }
-    }).id(`llmion:tree_extractor_${te.id}`)
+    }).id(`atlanabyss:tree_extractor_${te.id}`)
   }
 
   //兼容
@@ -739,7 +739,7 @@ onEvent('recipes', event => {
         chance: 0.2
       }
     ],
-  }).id("llmion:pulverizer_tuff_recycle")
+  }).id("atlanabyss:pulverizer_tuff_recycle")
   event.custom({
     type: 'thermal:pulverizer_recycle',
     ingredient: {
@@ -763,7 +763,7 @@ onEvent('recipes', event => {
         chance: 0.2
       }
     ],
-  }).id("llmion:pulverizer_tuff")
+  }).id("atlanabyss:pulverizer_tuff")
 
   remove('thermal:machines/smelter/smelter_raw_gold')
   event.custom({
@@ -783,7 +783,7 @@ onEvent('recipes', event => {
       }
     ],
     experience: 0.1
-  }).id("llmion:smelter_raw_gold")
+  }).id("atlanabyss:smelter_raw_gold")
   remove('thermal:machines/smelter/smelter_raw_nickel')
   event.custom({
     type: "thermal:smelter",
@@ -802,7 +802,7 @@ onEvent('recipes', event => {
       }
     ],
     experience: 0.1
-  }).id("llmion:smelter_raw_nickel")
+  }).id("atlanabyss:smelter_raw_nickel")
 
   //有机灌注器
   function insolatorRecipe(ingredient, result, energy, water, id) {
@@ -812,7 +812,7 @@ onEvent('recipes', event => {
       result: result,
       energy_mod: energy,
       water_mod: water
-    }).id("llmion:insolator_" + id)
+    }).id("atlanabyss:insolator_" + id)
   }
   insolatorRecipe('minecraft:tube_coral_block', [
     { item: 'minecraft:tube_coral_block', chance: 1.5 },
@@ -873,7 +873,7 @@ onEvent('recipes', event => {
     energy_mod: 2.0,
     min_chance: 0.02,
     use_chance: 0.02
-  }).id("llmion:insolator_catalyst_herbal")//灌注器
+  }).id("atlanabyss:insolator_catalyst_herbal")//灌注器
   event.custom({
     type: 'thermal:pulverizer_catalyst',
     ingredient: {
@@ -884,7 +884,7 @@ onEvent('recipes', event => {
     energy_mod: 2.0,
     min_chance: 0.02,
     use_chance: 0.02
-  }).id("llmion:pulverizer_catalyst_igneous")//粉碎机
+  }).id("atlanabyss:pulverizer_catalyst_igneous")//粉碎机
   event.custom({
     type: 'thermal:smelter_catalyst',
     ingredient: {
@@ -895,7 +895,7 @@ onEvent('recipes', event => {
     energy_mod: 4.0,
     min_chance: 0.02,
     use_chance: 0.02
-  }).id("llmion:smelter_catalyst_gem")//感应炉
+  }).id("atlanabyss:smelter_catalyst_gem")//感应炉
 
   //核弹	
   event.shaped('thermal:nuke_tnt', [
@@ -905,7 +905,7 @@ onEvent('recipes', event => {
   ], {
     A: 'minecraft:gunpowder',
     B: 'biggerreactors:uranium_dust'
-  }).id("llmion:nuke_tnt")
+  }).id("atlanabyss:nuke_tnt")
 
   event.shaped('4x thermal:nuke_grenade', [
     'ABA',
@@ -915,7 +915,7 @@ onEvent('recipes', event => {
     A: 'minecraft:gunpowder',
     B: 'biggerreactors:uranium_dust',
     C: 'thermal:lead_ingot'
-  }).id("llmion:nuke_grenade")
+  }).id("atlanabyss:nuke_grenade")
   //PNT
   event.shaped('thermal:phyto_tnt', [
     'ABA',
@@ -924,7 +924,7 @@ onEvent('recipes', event => {
   ], {
     A: 'minecraft:gunpowder',
     B: 'thermal:phytogro'
-  }).id("llmion:phyto_tnt")
+  }).id("atlanabyss:phyto_tnt")
 
   event.shaped('4x thermal:phyto_grenade', [
     'ABA',
@@ -934,5 +934,5 @@ onEvent('recipes', event => {
     A: 'minecraft:gunpowder',
     B: 'thermal:phytogro',
     C: 'minecraft:iron_ingot'
-  }).id("llmion:phyto_grenade")
+  }).id("atlanabyss:phyto_grenade")
 })

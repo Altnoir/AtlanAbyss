@@ -1,5 +1,58 @@
 [
   {
+    "checksum": 1154298034,
+    "version": "1.0.0",
+    "upload_time": 1704195972290,
+    "name": "tlm.skadi_f_tlm.name",
+    "author": [
+      "映白L"
+    ],
+    "desc": "tlm.skadi_f_tlm.desc",
+    "file_name": "skadi_f_tlm-1.0.0.zip",
+    "file_size": 2032024,
+    "url": "/file/skadi_f_tlm-1.0.0.zip",
+    "type": [
+      "maid",
+      "sound"
+    ],
+    "language": {
+      "en_us": {
+        "tlm.skadi_f_tlm.name": "Skadi Model & Sound Pack",
+        "tlm.skadi_f_tlm.desc": "It is recommended to reduce the maid sound frequency to below 20"
+      },
+      "zh_cn": {
+        "tlm.skadi_f_tlm.name": "斯卡蒂模型声音包",
+        "tlm.skadi_f_tlm.desc": "建议将女仆声音频率减少至20以下。"
+      }
+    }
+  },
+  {
+    "checksum": 2616402532,
+    "version": "1.3.0",
+    "upload_time": 1704195972287,
+    "name": "tlm.sakura_maid.name",
+    "author": [
+      "Xuanyue Sann"
+    ],
+    "desc": "tlm.sakura_maid.desc",
+    "file_name": "sakura_maid-1.3.0.zip",
+    "file_size": 401104,
+    "url": "/file/sakura_maid-1.3.0.zip",
+    "type": [
+      "maid"
+    ],
+    "language": {
+      "en_us": {
+        "tlm.sakura_maid.name": "Sakura Maid Pack",
+        "tlm.sakura_maid.desc": "Xuanyue sann's collection of model exercises"
+      },
+      "zh_cn": {
+        "tlm.sakura_maid.name": "Sakura Maid 模型包",
+        "tlm.sakura_maid.desc": "玄月桑的模型练习集"
+      }
+    }
+  },
+  {
     "checksum": 2779935561,
     "version": "1.1.0",
     "upload_time": 1704174296410,
@@ -1688,32 +1741,6 @@
       "zh_cn": {
         "tlm.shiratsuyu_class.name": "白露型舰娘模型",
         "tlm.shiratsuyu_class.desc": "白露型舰娘模型，由 @Tenshi_Akuma 制作"
-      }
-    }
-  },
-  {
-    "checksum": 2088055068,
-    "version": "1.2.0",
-    "upload_time": 1630683152735,
-    "name": "tlm.sakura_maid.name",
-    "author": [
-      "Xuanyue Sann"
-    ],
-    "desc": "tlm.sakura_maid.desc",
-    "file_name": "sakura_maid-1.2.0.zip",
-    "file_size": 384204,
-    "url": "/file/sakura_maid-1.2.0.zip",
-    "type": [
-      "maid"
-    ],
-    "language": {
-      "en_us": {
-        "tlm.sakura_maid.name": "Sakura Maid Pack",
-        "tlm.sakura_maid.desc": "Xuanyue sann's collection of model exercises"
-      },
-      "zh_cn": {
-        "tlm.sakura_maid.name": "Sakura Maid 模型包",
-        "tlm.sakura_maid.desc": "玄月桑的模型练习集"
       }
     }
   },

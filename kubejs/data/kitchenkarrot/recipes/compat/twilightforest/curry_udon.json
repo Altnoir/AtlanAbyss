@@ -1,0 +1,53 @@
+{
+  "type":"forge:conditional",
+  "recipes":[
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid":"twilightforest"
+        }
+      ],
+      "recipe":{
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:potato"
+          },
+          {
+            "item": "minecraft:carrot"
+          },
+          {
+            "item": "minecraft:wheat"
+          },
+          {
+            "item": "minecraft:wheat"
+          },
+          [
+            {
+              "item": "twilightforest:cooked_venison"
+            },
+            {
+              "item": "twilightforest:cooked_meef"
+            }
+          ],
+          {
+            "tag": "forge:cooking_oil"
+          },
+          {
+            "tag": "forge:salt"
+          },
+          {
+            "item": "kitchenkarrot:carrot_spices"
+          },
+          {
+            "item": "minecraft:bowl"
+          }
+        ],
+        "result": {
+          "item": "kitchenkarrot:curry_udon"
+        }
+      }
+    }
+  ]
+}

@@ -1,56 +1,56 @@
 onEvent('item.tooltip', tooltip => {
-    let ore = (id, y, dim) => tooltip.addAdvanced(
-        id, (item, advanced, text) => {
-            if (!tooltip.shift) {
-                text.add(1, Text.translate('tooltip.kubejs.shift'));
-            } else {
-                text.add(1, Text.translate('tooltip.kubejs.shifton'));
-                text.add(2, Text.translate('tooltip.kubejs.' + y));
-                text.add(3, Text.translate('tooltip.kubejs.' + dim));
-            }
-        })
-    ore('thermal:cinnabar_ore', 'cinnabar_y', 'overworld')
-    ore('thermal:niter_ore', 'niter_y', 'overworld')
-    ore('thermal:nickel_ore', 'nickel_y', 'overworld')
-    ore('thermal:ruby_ore', 'ruby_y', 'overworld')
-    ore('thermal:sapphire_ore', 'sapphire_y', 'overworld')
-    ore('thermal:silver_ore', 'silver_y', 'overworld')
-    ore('thermal:apatite_ore', 'apatite_y', 'overworld')
-    ore('thermal:sulfur_ore', 'sulfur_y', 'overworld')
-    ore('thermal:tin_ore', 'tin_y', 'overworld')
-    ore('thermal:deepslate_cinnabar_ore', 'cinnabar_y', 'overworld')
-    ore('thermal:deepslate_niter_ore', 'niter_y', 'overworld')
-    ore('thermal:deepslate_nickel_ore', 'nickel_y', 'overworld')
-    ore('thermal:deepslate_ruby_ore', 'ruby_y', 'overworld')
-    ore('thermal:deepslate_sapphire_ore', 'sapphire_y', 'overworld')
-    ore('thermal:deepslate_silver_ore', 'silver_y', 'overworld')
-    ore('thermal:deepslate_apatite_ore', 'apatite_y', 'overworld')
-    ore('thermal:deepslate_sulfur_ore', 'sulfur_y', 'overworld')
-    ore('thermal:deepslate_tin_ore', 'tin_y', 'overworld')
-    ore('kubejs:nether_aluminum_ore', 'aluminum_y', 'the_nether')
-    ore('thermal:deepslate_lead_ore', 'lead_y', 'inversiadim')
-    ore('kubejs:inversia_uranium_ore', 'uranium_y', 'inversiadim')
-    ore('kubejs:end_bismuth_ore', 'bismuth_y', 'the_end')
-    ore('ae2:deepslate_quartz_ore', 'quartz_y', 'the_end')
-    ore('create:zinc_ore', 'zinc_y', 'overworld')
-    ore('create:deepslate_zinc_ore', 'zinc_y', 'overworld')
+    const oretip = [
+        ['kubejs:nether_aluminum_ore', 'tooltip.kubejs.aluminum_y', 'tooltip.kubejs.the_nether'],
+        ['thermal:deepslate_lead_ore', 'tooltip.kubejs.lead_y', 'tooltip.kubejs.inversiadim'],
+        ['kubejs:inversia_uranium_ore', 'tooltip.kubejs.uranium_y', 'tooltip.kubejs.inversiadim'],
+        ['kubejs:end_bismuth_ore', 'tooltip.kubejs.bismuth_y', 'tooltip.kubejs.the_end'],
+        ['ae2:deepslate_quartz_ore', 'tooltip.kubejs.quartz_y', 'tooltip.kubejs.the_end']
+    ]
 
-    ore('minecraft:coal_ore', 'coal_y', 'overworld')
-    ore('minecraft:iron_ore', 'iron_y', 'overworld')
-    ore('minecraft:lapis_ore', 'lapis_y', 'overworld')
-    ore('minecraft:gold_ore', 'gold_y', 'overworld')
-    ore('minecraft:diamond_ore', 'diamond_y', 'overworld')
-    ore('minecraft:redstone_ore', 'redstone_y', 'overworld')
-    ore('minecraft:copper_ore', 'copper_y', 'overworld')
-    ore('minecraft:emerald_ore', 'emerald_y', 'overworld')
-    ore('minecraft:deepslate_coal_ore', 'coal_y', 'overworld')
-    ore('minecraft:deepslate_iron_ore', 'iron_y', 'overworld')
-    ore('minecraft:deepslate_lapis_ore', 'lapis_y', 'overworld')
-    ore('minecraft:deepslate_gold_ore', 'gold_y', 'overworld')
-    ore('minecraft:deepslate_diamond_ore', 'diamond_y', 'overworld')
-    ore('minecraft:deepslate_redstone_ore', 'redstone_y', 'overworld')
-    ore('minecraft:deepslate_copper_ore', 'copper_y', 'overworld')
-    ore('minecraft:deepslate_emerald_ore', 'emerald_y', 'overworld')
+    oretip.forEach(e => {
+        tooltip.addAdvanced(e[0], (item, advanced, text) => {
+            text.add(1, Text.translate(e[1]));
+            text.add(2, Text.translate(e[2]));
+        })
+    })
+
+    // ore('minecraft:coal_ore', 'tooltip.kubejs.coal_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:iron_ore', 'tooltip.kubejs.iron_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:lapis_ore', 'tooltip.kubejs.lapis_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:gold_ore', 'tooltip.kubejs.gold_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:diamond_ore', 'tooltip.kubejs.diamond_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:redstone_ore', 'tooltip.kubejs.redstone_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:copper_ore', 'tooltip.kubejs.copper_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:emerald_ore', 'tooltip.kubejs.emerald_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_coal_ore', 'tooltip.kubejs.coal_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_iron_ore', 'tooltip.kubejs.iron_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_lapis_ore', 'tooltip.kubejs.lapis_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_gold_ore', 'tooltip.kubejs.gold_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_diamond_ore', 'tooltip.kubejs.diamond_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_redstone_ore', 'tooltip.kubejs.redstone_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_copper_ore', 'tooltip.kubejs.copper_y', 'tooltip.kubejs.overworld')
+    // ore('minecraft:deepslate_emerald_ore', 'tooltip.kubejs.emerald_y', 'tooltip.kubejs.overworld')
+
+    // ore('thermal:cinnabar_ore', 'tooltip.kubejs.cinnabar_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:niter_ore', 'tooltip.kubejs.niter_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:nickel_ore', 'tooltip.kubejs.nickel_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:ruby_ore', 'tooltip.kubejs.ruby_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:sapphire_ore', 'tooltip.kubejs.sapphire_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:silver_ore', 'tooltip.kubejs.silver_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:apatite_ore', 'tooltip.kubejs.apatite_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:sulfur_ore', 'tooltip.kubejs.sulfur_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:tin_ore', 'tooltip.kubejs.tin_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_cinnabar_ore', 'tooltip.kubejs.cinnabar_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_niter_ore', 'tooltip.kubejs.niter_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_nickel_ore', 'tooltip.kubejs.nickel_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_ruby_ore', 'tooltip.kubejs.ruby_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_sapphire_ore', 'tooltip.kubejs.sapphire_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_silver_ore', 'tooltip.kubejs.silver_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_apatite_ore', 'tooltip.kubejs.apatite_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_sulfur_ore', 'tooltip.kubejs.sulfur_y', 'tooltip.kubejs.overworld')
+    // ore('thermal:deepslate_tin_ore', 'tooltip.kubejs.tin_y', 'tooltip.kubejs.overworld')
+    // ore('create:zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
+    // ore('create:deepslate_zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
 
     const mixedHerb = ['gg', 'ggg', 'rg', 'bg', 'yg', 'br', 'yr', 'bgg', 'ygg', 'brg', 'yrg'];
 

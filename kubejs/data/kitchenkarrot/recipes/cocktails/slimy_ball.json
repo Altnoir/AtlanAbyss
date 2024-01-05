@@ -1,0 +1,33 @@
+{
+    "type": "kitchenkarrot:cocktail",
+    "author": "kitchenkarrot",
+    "content": {
+        "recipe": [
+            {
+                "item": "kitchenkarrot:mead_base"
+            },
+            {
+                "item": "kitchenkarrot:mead_base"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "tag": "forge:slimeballs"
+            }
+        ],
+        "craftingtime": 100,
+        "hunger": 3,
+        "saturation": 0,
+        "effect": [
+            {
+                "id": "minecraft:jump_boost",
+                "lvl": 8,
+                "duration": 4800
+            }
+        ]
+    }
+}

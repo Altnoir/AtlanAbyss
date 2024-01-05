@@ -1,0 +1,34 @@
+{
+  "type":"forge:conditional",
+  "recipes":[
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid":"ars_nouveau"
+        }
+      ],
+
+    "recipe":{
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:bowl"
+        },
+        {
+          "item": "kitchenkarrot:grilled_wheatmeal"
+        },
+        {
+          "tag": "forge:milk"
+        },
+        {
+          "item": "ars_nouveau:source_berry"
+        }
+      ],
+      "result": {
+        "item": "kitchenkarrot:fruit_cereal_porridge"
+      }
+    }
+  }
+  ]
+}

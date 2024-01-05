@@ -3,6 +3,8 @@ onEvent('tags.items', event => {
 	const tagsToRemove = [
 		//信标激活物品移除
 		['minecraft:beacon_payment_items', 'ars_nouveau:source_gem'],
+		//冰块
+		['forge:ice_cubes', 'kitchenkarrot:ice_cubes'],
 		//火药块
 		['forge:storage_blocks/gunpowder', 'thermal:gunpowder_block'],
 		//多余的巧克力棒
@@ -159,7 +161,7 @@ onEvent('tags.items', event => {
 	//加！
 	const tagToAdd = [
 		//光环
-		['llmion:halos', 'yuushya:wriggle_nightbug'],
+		['atlanabyss:halos', 'yuushya:wriggle_nightbug'],
 		//信标激活物品添加
 		['minecraft:beacon_payment_items', 'kubejs:aluminium_alloy_ingot'],
 		//替身是个好东西之生物质
@@ -218,7 +220,7 @@ onEvent('tags.items', event => {
 	}
 
 	//原木标签
-	event.add('llmion:unstripped_wood', [
+	event.add('atlanabyss:unstripped_wood', [
 		'minecraft:oak_log', 'minecraft:oak_wood',
 		'minecraft:spruce_log', 'minecraft:spruce_wood',
 		'minecraft:birch_log', 'minecraft:birch_wood',
@@ -228,7 +230,7 @@ onEvent('tags.items', event => {
 		'minecraft:crimson_stem', 'minecraft:crimson_hyphae',
 		'minecraft:warped_stem', 'minecraft:warped_hyphae'
 	]);
-	event.add('llmion:vanilla_saplings', [
+	event.add('atlanabyss:vanilla_saplings', [
 		'minecraft:oak_sapling', 'minecraft:spruce_sapling',
 		'minecraft:birch_sapling', 'minecraft:jungle_sapling',
 		'minecraft:acacia_sapling', 'minecraft:dark_oak_sapling',
@@ -289,5 +291,5 @@ onEvent('tags.fluids', event => {
 	event.remove('forge:potion', 'cofh_core:potion')//药水
 	event.add('forge:ethanol', 'createaddition:bioethanol')//乙醇
 	event.add('forge:molten_plutonium', 'kubejs:molten_plutonium')//钚
-	event.add('llmion:water', 'minecraft:water')//原版水
+	event.add('atlanabyss:water', 'minecraft:water')//原版水
 })

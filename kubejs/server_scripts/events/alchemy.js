@@ -113,7 +113,7 @@ function alchemyRecipes(event) {
 				event.recipes.createDeploying(s, [s, in4]),
 				event.recipes.createDeploying(s, [s, in5]),
 				event.recipes.createDeploying(s, [s, in6])
-			]).transitionalItem(s).loops(1).id(`llmion:alchemy_${id}`)
+			]).transitionalItem(s).loops(1).id(`atlanabyss:alchemy_${id}`)
 	}
 	catalyst('kubejs:substrate_igneous', 'kubejs:substrate_andesite', 'kubejs:substrate_diorite', 'kubejs:substrate_granite', 'kubejs:substrate_cobblestone', 'kubejs:substrate_basalt', 'kubejs:substrate_limestone', 'igneous');
 	catalyst('kubejs:substrate_herbal', 'kubejs:substrate_red', 'kubejs:substrate_orange', 'kubejs:substrate_yellow', 'kubejs:substrate_green', 'kubejs:substrate_blue', 'kubejs:substrate_magenta', 'herbal');

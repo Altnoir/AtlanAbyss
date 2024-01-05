@@ -1,0 +1,33 @@
+{
+    "type": "kitchenkarrot:cocktail",
+    "author": "kitchenkarrot",
+    "content": {
+        "recipe": [
+            {
+                "item": "kitchenkarrot:vodka_base"
+            },
+            {
+                "item": "kitchenkarrot:vodka_base"
+            },
+            {
+                "item": "kitchenkarrot:vodka_base"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "item": "kitchenkarrot:carrot_spices"
+            }
+        ],
+        "craftingtime": 100,
+        "hunger": 3,
+        "saturation": 0.5,
+        "effect": [
+            {
+                "id": "minecraft:strength",
+                "lvl": 2,
+                "duration": 4800
+            }
+        ]
+    }
+}

@@ -289,6 +289,8 @@ onEvent('rei.hide.items', event => {
 		'pipez:wrench',
 		//neapolitan
 		'neapolitan:milk_bottle',
+		//kitchenkarrot
+		'kitchenkarrot:ice_cubes',
 		//twilightforest
 		'twilightforest:uncrafting_table',
 		//黑紫方块
@@ -365,296 +367,296 @@ onEvent('rei.group', (event) => {
 		const item = Item.of(id);
 		const { namespace, path } = Utils.id(item.id);
 		event.groupSameItem(
-			`llmion:rei_groups/${namespace}/${path}`,
+			`atlanabyss:rei_groups/${namespace}/${path}`,
 			item.getName(),
 			item
 		);
 	});
 	//刷怪蛋
-	event.groupItems(`llmion:rei_groups/spawn_eggs`, `刷怪蛋`,
+	event.groupItems(`atlanabyss:rei_groups/spawn_eggs`, `刷怪蛋`,
 		/.*spawn_egg/
 	);
 	//桶
-	event.groupItems('llmion:rei_groups/buckets', "各种桶",
+	event.groupItems('atlanabyss:rei_groups/buckets', "各种桶",
 		/.*_bucket/
 	);
 	//粗矿
-	event.groupItems('llmion:rei_groups/raw_materials', "粗矿",
+	event.groupItems('atlanabyss:rei_groups/raw_materials', "粗矿",
 		'#forge:raw_materials'
 	);
 	//羊毛
-	event.groupItems('llmion:rei_groups/wool', "羊毛",
+	event.groupItems('atlanabyss:rei_groups/wool', "羊毛",
 		'#minecraft:wool'
 	);
 	//石棉
-	event.groupItems('llmion:rei_groups/rockwool', "石棉",
+	event.groupItems('atlanabyss:rei_groups/rockwool', "石棉",
 		'#thermal:rockwool'
 	);
 	//地毯
-	event.groupItems('llmion:rei_groups/carpets', "地毯",
+	event.groupItems('atlanabyss:rei_groups/carpets', "地毯",
 		'#minecraft:carpets'
 	);
 	//染色玻璃
-	event.groupItems('llmion:rei_groups/stained_glass', "染色玻璃",
+	event.groupItems('atlanabyss:rei_groups/stained_glass', "染色玻璃",
 		'#forge:stained_glass'
 	);
 	//染色玻璃板
-	event.groupItems('llmion:rei_groups/stained_glass_panes', "染色玻璃板",
+	event.groupItems('atlanabyss:rei_groups/stained_glass_panes', "染色玻璃板",
 		'#forge:stained_glass_panes'
 	);
 	//陶瓦
-	event.groupItems('llmion:rei_groups/terracotta', "陶瓦",
+	event.groupItems('atlanabyss:rei_groups/terracotta', "陶瓦",
 		'#minecraft:terracotta'
 	);
 	//带釉陶瓦
-	event.groupItems('llmion:rei_groups/glazed_terracotta', "带釉陶瓦",
+	event.groupItems('atlanabyss:rei_groups/glazed_terracotta', "带釉陶瓦",
 		/.*_glazed_terracotta$/
 	);
 	//混凝土
-	event.groupItems('llmion:rei_groups/concrete', "混凝土",
+	event.groupItems('atlanabyss:rei_groups/concrete', "混凝土",
 		'#forge:concrete'
 	);
 	//混凝土粉末
-	event.groupItems('llmion:rei_groups/concrete_powders', "混凝土粉末",
+	event.groupItems('atlanabyss:rei_groups/concrete_powders', "混凝土粉末",
 		'#forge:concrete_powders'
 	);
 	//潜影盒
-	event.groupItems('llmion:rei_groups/shulker_boxes', "潜影盒",
+	event.groupItems('atlanabyss:rei_groups/shulker_boxes', "潜影盒",
 		'#forge:shulker_boxes'
 	);
 	//木按钮
-	event.groupItems('llmion:rei_groups/wooden_buttons', "木按钮",
+	event.groupItems('atlanabyss:rei_groups/wooden_buttons', "木按钮",
 		'#minecraft:wooden_buttons'
 	);
 	//木压力板
-	event.groupItems('llmion:rei_groups/wooden_pressure_plates', "木压力板",
+	event.groupItems('atlanabyss:rei_groups/wooden_pressure_plates', "木压力板",
 		['#minecraft:wooden_pressure_plates']
 	);
 	//木门
-	event.groupItems('llmion:rei_groups/wooden_doors', "木门",
+	event.groupItems('atlanabyss:rei_groups/wooden_doors', "木门",
 		'#minecraft:wooden_doors'
 	);
 	//木活板门
-	event.groupItems('llmion:rei_groups/wooden_trapdoors', "木活板门",
+	event.groupItems('atlanabyss:rei_groups/wooden_trapdoors', "木活板门",
 		'#minecraft:wooden_trapdoors'
 	);
 	//木栅栏门
-	event.groupItems('llmion:rei_groups/wooden_fence_gates', "木栅栏门",
+	event.groupItems('atlanabyss:rei_groups/wooden_fence_gates', "木栅栏门",
 		'#forge:fence_gates/wooden'
 	);
 	//木栅栏
-	event.groupItems('llmion:rei_groups/wooden_fence', "木栅栏",
+	event.groupItems('atlanabyss:rei_groups/wooden_fence', "木栅栏",
 		'#forge:fences/wooden'
 	);
 	//船
-	event.groupItems('llmion:rei_groups/boats', "船",
+	event.groupItems('atlanabyss:rei_groups/boats', "船",
 		['#minecraft:boats']
 	);
 	//床
-	event.groupItems('llmion:rei_groups/beds', "床",
+	event.groupItems('atlanabyss:rei_groups/beds', "床",
 		'#minecraft:beds'
 	);
 	//旗帜
-	event.groupItems('llmion:rei_groups/banners', "旗帜",
+	event.groupItems('atlanabyss:rei_groups/banners', "旗帜",
 		'#minecraft:banners'
 	);
 	//蜡烛
-	event.groupItems('llmion:rei_groups/candles', "蜡烛",
+	event.groupItems('atlanabyss:rei_groups/candles', "蜡烛",
 		'#minecraft:candles'
 	);
 	//唱片
-	event.groupItems('llmion:rei_groups/music_discs', "唱片",
+	event.groupItems('atlanabyss:rei_groups/music_discs', "唱片",
 		'#minecraft:music_discs'
 	);
 	//墙
-	event.groupItems('llmion:rei_groups/wall', "墙",
+	event.groupItems('atlanabyss:rei_groups/wall', "墙",
 		/.*_wall$/
 	);
 	//工具箱
-	event.groupItems('llmion:rei_groups/toolboxes', "工具箱",
+	event.groupItems('atlanabyss:rei_groups/toolboxes', "工具箱",
 		'#create:toolboxes'
 	);
 	//阀门
-	event.groupItems('llmion:rei_groups/valve_handles', "阀门",
+	event.groupItems('atlanabyss:rei_groups/valve_handles', "阀门",
 		'#create:valve_handles'
 	);
 	//坐垫
-	event.groupItems('llmion:rei_groups/seats', "坐垫",
+	event.groupItems('atlanabyss:rei_groups/seats', "坐垫",
 		'#create:seats'
 	);
 	//书架
-	event.groupItems('llmion:rei_groups/bookshelves', "书架",
+	event.groupItems('atlanabyss:rei_groups/bookshelves', "书架",
 		'#forge:bookshelves'
 	);
 	//剑
-	event.groupItems('llmion:rei_groups/sword', "剑",
+	event.groupItems('atlanabyss:rei_groups/sword', "剑",
 		[/.*_sword$/]
 	);
 	//锹
-	event.groupItems('llmion:rei_groups/shovel', "锹",
+	event.groupItems('atlanabyss:rei_groups/shovel', "锹",
 		/.*_shovel$/
 	);
 	//镐
-	event.groupItems('llmion:rei_groups/pickaxe', "锹",
+	event.groupItems('atlanabyss:rei_groups/pickaxe', "锹",
 		[/.*_pickaxe$/]
 	);
 	//斧
-	event.groupItems('llmion:rei_groups/axe', "斧",
+	event.groupItems('atlanabyss:rei_groups/axe', "斧",
 		/.*_axe$/
 	);
 	//锄
-	event.groupItems('llmion:rei_groups/hoe', "锄",
+	event.groupItems('atlanabyss:rei_groups/hoe', "锄",
 		/.*_hoe$/
 	);
 	//头盔
-	event.groupItems('llmion:rei_groups/helmet', "头盔",
+	event.groupItems('atlanabyss:rei_groups/helmet', "头盔",
 		[/.*_helmet$/]
 	);
 	//胸甲
-	event.groupItems('llmion:rei_groups/chestplate', "胸甲",
+	event.groupItems('atlanabyss:rei_groups/chestplate', "胸甲",
 		[/.*_chestplate$/]
 	);
 	//护腿
-	event.groupItems('llmion:rei_groups/leggings', "护腿",
+	event.groupItems('atlanabyss:rei_groups/leggings', "护腿",
 		[/.*_leggings$/]
 	);
 	//鞋子
-	event.groupItems('llmion:rei_groups/boots', "鞋子",
+	event.groupItems('atlanabyss:rei_groups/boots', "鞋子",
 		/.*_boots$/
 	);
 	//告示牌
-	event.groupItems('llmion:rei_groups/signs', "告示牌",
+	event.groupItems('atlanabyss:rei_groups/signs', "告示牌",
 		['#minecraft:signs']
 	);
 	//粗布告示牌
-	event.groupItems('llmion:rei_groups/canvas_signs', "粗布告示牌",
+	event.groupItems('atlanabyss:rei_groups/canvas_signs', "粗布告示牌",
 		'#farmersdelight:canvas_signs'
 	);
 	//挂牌
-	event.groupItems('llmion:rei_groups/hanging_signs', "挂牌",
+	event.groupItems('atlanabyss:rei_groups/hanging_signs', "挂牌",
 		'#supplementaries:hanging_signs'
 	);
 	//路标
-	event.groupItems('llmion:rei_groups/sign_posts', "路标",
+	event.groupItems('atlanabyss:rei_groups/sign_posts', "路标",
 		'#supplementaries:sign_posts'
 	);
 	//橱柜
-	event.groupItems('llmion:rei_groups/cabinets', "橱柜",
+	event.groupItems('atlanabyss:rei_groups/cabinets', "橱柜",
 		'#farmersdelight:cabinets/wooden'
 	);
 	//横旗
-	event.groupItems('llmion:rei_groups/flags', "横旗",
+	event.groupItems('atlanabyss:rei_groups/flags', "横旗",
 		'#supplementaries:flags'
 	);
 	//蜡烛烛台
-	event.groupItems('llmion:rei_groups/candle_holders', "蜡烛烛台",
+	event.groupItems('atlanabyss:rei_groups/candle_holders', "蜡烛烛台",
 		'#supplementaries:candle_holders'
 	);
 	//礼物盒
-	event.groupItems('llmion:rei_groups/presents', "礼物盒",
+	event.groupItems('atlanabyss:rei_groups/presents', "礼物盒",
 		'#supplementaries:presents'
 	);
 	//陷阱礼物盒
-	event.groupItems('llmion:rei_groups/trapped_presents', "陷阱礼物盒",
+	event.groupItems('atlanabyss:rei_groups/trapped_presents', "陷阱礼物盒",
 		/^supplementaries:trapped_present.*/
 	);
 	//抽屉
-	event.groupItems('llmion:rei_groups/drawers', "抽屉",
+	event.groupItems('atlanabyss:rei_groups/drawers', "抽屉",
 		'#functionalstorage:drawer'
 	);
 	//塑料砖块
-	event.groupItems('llmion:rei_groups/plastic_bricks', "塑料砖块",
+	event.groupItems('atlanabyss:rei_groups/plastic_bricks', "塑料砖块",
 		'#pneumaticcraft:plastic_bricks'
 	);
 	//平滑塑料砖块
-	event.groupItems('llmion:rei_groups/smooth_plastic_bricks', "平滑塑料砖块",
+	event.groupItems('atlanabyss:rei_groups/smooth_plastic_bricks', "平滑塑料砖块",
 		'#pneumaticcraft:smooth_plastic_bricks'
 	);
 	//壁灯
-	event.groupItems('llmion:rei_groups/wall_lamps', "壁灯",
+	event.groupItems('atlanabyss:rei_groups/wall_lamps', "壁灯",
 		'#pneumaticcraft:wall_lamps'
 	);
 	//壁灯（信号反转）
-	event.groupItems('llmion:rei_groups/wall_lamps_inverted', "壁灯（信号反转）",
+	event.groupItems('atlanabyss:rei_groups/wall_lamps_inverted', "壁灯（信号反转）",
 		'#pneumaticcraft:wall_lamps_inverted'
 	);
-	event.groupItems('llmion:rei_groups/knives', "刀",
+	event.groupItems('atlanabyss:rei_groups/knives', "刀",
 		'#forge:tools/knives'
 	);
 	//魔符
-	event.groupItems('llmion:rei_groups/glyph', "魔符",
+	event.groupItems('atlanabyss:rei_groups/glyph', "魔符",
 		/ars_nouveau:glyph_/
 	);
 	//锭
-	event.groupItems('llmion:rei_groups/ingots', "锭",
+	event.groupItems('atlanabyss:rei_groups/ingots', "锭",
 		[/^thermal:.*_ingot$/]
 	);
 	//粒
-	event.groupItems('llmion:rei_groups/nuggets', "粒",
+	event.groupItems('atlanabyss:rei_groups/nuggets', "粒",
 		[/^thermal:.*_nugget$/]
 	);
 	//粉
-	event.groupItems('llmion:rei_groups/dusts', "粉",
+	event.groupItems('atlanabyss:rei_groups/dusts', "粉",
 		[/^thermal:.*_dust$/]
 	);
 	//板
-	event.groupItems('llmion:rei_groups/plates', "板",
+	event.groupItems('atlanabyss:rei_groups/plates', "板",
 		'#forge:plates'
 	);
 	//背包升级
-	event.groupItems('llmion:rei_groups/back_upgrade', "背包升级",
+	event.groupItems('atlanabyss:rei_groups/back_upgrade', "背包升级",
 		[/^sophisticatedbackpacks:.*_upgrade/, 'sophisticatedbackpacks:upgrade_base']
 	);
 	//铸模
-	event.groupItems('llmion:rei_groups/casts', "铸模",
+	event.groupItems('atlanabyss:rei_groups/casts', "铸模",
 		['#tconstruct:casts/single_use', '#tconstruct:casts/multi_use']
 	);
 	//浮空花
-	event.groupItems('llmion:rei_groups/floating_flowers', "浮空花",
+	event.groupItems('atlanabyss:rei_groups/floating_flowers', "浮空花",
 		'#botania:floating_flowers'
 	);
 	//花药台
-	event.groupItems('llmion:rei_groups/apothecary', "花药台",
+	event.groupItems('atlanabyss:rei_groups/apothecary', "花药台",
 		/^botania:apothecary/
 	);
 	//神秘花
-	event.groupItems('llmion:rei_groups/mystical_flowers', "神秘花",
+	event.groupItems('atlanabyss:rei_groups/mystical_flowers', "神秘花",
 		'#botania:mystical_flowers'
 	);
 	//荧光花
-	event.groupItems('llmion:rei_groups/shiny_flower', "荧光花",
+	event.groupItems('atlanabyss:rei_groups/shiny_flower', "荧光花",
 		/^botania:.*shiny_flower$/
 	);
 	//染色球
-	event.groupItems('llmion:rei_groups/paint_ball', "染色球",
+	event.groupItems('atlanabyss:rei_groups/paint_ball', "染色球",
 		/^ae2:.*paint_ball$/
 	);
 	//手册
-	event.groupItems('llmion:rei_groups/guide', "手册",
+	event.groupItems('atlanabyss:rei_groups/guide', "手册",
 		'#forge:books/guide'
 	);
 	//tac皮肤
-	event.groupItems('llmion:rei_groups/tac_skin', "枪械皮肤",
+	event.groupItems('atlanabyss:rei_groups/tac_skin', "枪械皮肤",
 		/^tac:skin_?./
 	);
 	//粉笔
-	event.groupItems('llmion:rei_groups/chalk', "粉笔",
+	event.groupItems('atlanabyss:rei_groups/chalk', "粉笔",
 	    '#chalk:chalk'
 	);
 	//宠物床
-	event.groupItems('llmion:rei_groups/pet_beds', "宠物床",
+	event.groupItems('atlanabyss:rei_groups/pet_beds', "宠物床",
 		'#domesticationinnovation:pet_beds'
 	);
 	//交易卡
-	event.groupItems('llmion:rei_groups/trade_card', "交易卡",
+	event.groupItems('atlanabyss:rei_groups/trade_card', "交易卡",
 	    /^kubejs:trade_card_?./
 	);
 	//炼金混合物"
-	event.groupItems('llmion:rei_groups/alchemy_substrate', "炼金混合物",
-		'#llmion:alchemy_substrate'
+	event.groupItems('atlanabyss:rei_groups/alchemy_substrate', "炼金混合物",
+		'#atlanabyss:alchemy_substrate'
 	);
 	//反应物
-	event.groupItems('llmion:rei_groups/substrates', "反应物",
+	event.groupItems('atlanabyss:rei_groups/substrates', "反应物",
 		'#kubejs:substrates'
 	);
 	//流体
@@ -773,7 +775,7 @@ onEvent('rei.group', (event) => {
 		'kubejs:matrix',
 	];
 	event.groupFluids(
-		`llmion:rei_groups/fluid`,
+		`atlanabyss:rei_groups/fluid`,
 		"流体",
 		Fluid
 	);

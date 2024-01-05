@@ -10,6 +10,17 @@
 // 	})
 // })
 
+const CustomPortalBuilder = java('net.kyrptonaught.customportalapi.api.CustomPortalBuilder')
+
+onEvent('postinit', () => {
+	CustomPortalBuilder.beginPortal()
+	['frameBlock(net.minecraft.resources.ResourceLocation)'](new ResourceLocation('kubejs', 'bismuth_block'))
+		.destDimID(new ResourceLocation('inversia', 'inversiadim'))
+		.tintColor(60, 120, 240)
+		.lightWithWater()
+		.registerPortal();
+});
+
 onEvent('mob_effect.registry', event => {
 	event.create('alice_powah', 'basic')
 })

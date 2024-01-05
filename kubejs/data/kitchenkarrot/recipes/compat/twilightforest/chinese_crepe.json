@@ -1,0 +1,42 @@
+{
+  "type":"forge:conditional",
+  "recipes":[
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid":"twilightforest"
+        }
+      ],
+      "recipe":{
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:bread"
+          },
+          {
+            "tag": "forge:salt"
+          },
+          {
+            "tag": "forge:cooking_oil"
+          },
+          {
+            "item": "kitchenkarrot:carrot_spices"
+          },
+          [
+            {
+              "item": "twilightforest:cooked_venison"
+            },
+            {
+              "item": "twilightforest:cooked_meef"
+            }
+          ]
+        ],
+        "result": {
+          "item": "kitchenkarrot:chinese_crepe",
+          "count": 2
+        }
+      }
+    }
+  ]
+}

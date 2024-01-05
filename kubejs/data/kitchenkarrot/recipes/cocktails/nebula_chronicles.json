@@ -1,0 +1,33 @@
+{
+    "type": "kitchenkarrot:cocktail",
+    "author": "kitchenkarrot",
+    "content": {
+        "recipe": [
+            {
+                "item": "kitchenkarrot:acorn_wine_base"
+            },
+            {
+                "item": "kitchenkarrot:mead_base"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "item": "minecraft:gold_nugget"
+            },
+            {
+                "item": "minecraft:iron_nugget"
+            }
+        ],
+        "craftingtime": 140,
+        "hunger": 4,
+        "saturation": 0.3,
+        "effect": [
+            {
+                "id": "minecraft:resistance",
+                "lvl": 0,
+                "duration": 4800
+            }
+        ]
+    }
+}

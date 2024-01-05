@@ -1,0 +1,33 @@
+{
+    "type": "kitchenkarrot:cocktail",
+    "author": "kitchenkarrot",
+    "content": {
+        "recipe": [
+            {
+                "item": "kitchenkarrot:rum_base"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "tag": "forge:ice_cubes"
+            },
+            {
+                "item": "kitchenkarrot:carrot_spices"
+            },
+            {
+                "tag": "minecraft:leaves"
+            }
+        ],
+        "craftingtime": 110,
+        "hunger": 4,
+        "saturation": 0.3,
+        "effect": [
+            {
+                "id": "minecraft:invisibility",
+                "lvl": 0,
+                "duration": 4800
+            }
+        ]
+    }
+}

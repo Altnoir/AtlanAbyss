@@ -30,7 +30,7 @@ function trading(event) {
             },
             level: level,
             maxStock: 1
-        }).id('llmion:amadron_' + id);
+        }).id('atlanabyss:amadron_' + id);
     }
 
     global.trades.forEach(element => {

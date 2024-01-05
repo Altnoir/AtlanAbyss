@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:false"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_sapling"
+    }
+  ],
+  "results": [
+    {
+      "tag": "forge:nuts/acorn",
+      "count": 1
+    },
+    {
+      "tag": "forge:nuts/acorn",
+      "count": 1,
+      "chance": 0.5
+    }
+  ],
+  "processingTime": 50
+}

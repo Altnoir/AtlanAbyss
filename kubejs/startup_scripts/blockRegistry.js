@@ -208,7 +208,7 @@ onEvent('block.registry', event => {
             .renderType("cutout")
             .item(e => e.color(0, 0x394867).color(1, 0x072348))
             .tagBlock("minecraft:mineable/pickaxe")
-            .tagItem("llmion:alchemy_substrate")
+            .tagItem("atlanabyss:alchemy_substrate")
 
     event.create(`alchemy_0`)
         .material("glass")
@@ -221,7 +221,7 @@ onEvent('block.registry', event => {
         .renderType("cutout")
         .item(e => e.color(0, 0x394867).color(1, 0x072348))
         .tagBlock("minecraft:mineable/pickaxe")
-        .tagItem("llmion:alchemy_substrate")
+        .tagItem("atlanabyss:alchemy_substrate")
 
     global.substrates = []
     global.substrate_mapping = {}
