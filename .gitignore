@@ -20,6 +20,7 @@
 /XaeroWaypoints
 /XaeroWaypoints_BACKUP032021
 /XaeroWorldMap
+/knownkeys.txt
 /rocknroller
 /ldlib
 /multiblocked
@@ -27,4 +28,3 @@
 config/roughlyenoughitems/
 config/worldedit/
 config/bocchud/
-knownkeys.txt
