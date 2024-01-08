@@ -764,27 +764,6 @@
 				item: "artifacts:whoopee_cushion"
 			}]
 		}
-		{
-			title: "客户端刷新"
-			icon: "minecraft:grass_block"
-			disable_toast: true
-			x: 6.0d
-			y: -1.5d
-			can_repeat: true
-			id: "476992C26EC61BFF"
-			tasks: [{
-				id: "30DEE724AEB6FF03"
-				type: "checkmark"
-				title: "刷新客户端"
-			}]
-			rewards: [{
-				id: "5D0D1726758BCDC8"
-				type: "command"
-				auto: "enabled"
-				command: "/kubejs reload client_scripts"
-				player_command: true
-			}]
-		}
 	]
 	quest_links: [ ]
 }

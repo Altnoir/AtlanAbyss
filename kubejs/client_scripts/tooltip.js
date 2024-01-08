@@ -1,18 +1,24 @@
 onEvent('item.tooltip', tooltip => {
-    const oretip = [
-        ['kubejs:nether_aluminum_ore', 'tooltip.kubejs.aluminum_y', 'tooltip.kubejs.the_nether'],
-        ['thermal:deepslate_lead_ore', 'tooltip.kubejs.lead_y', 'tooltip.kubejs.inversiadim'],
-        ['kubejs:inversia_uranium_ore', 'tooltip.kubejs.uranium_y', 'tooltip.kubejs.inversiadim'],
-        ['kubejs:end_bismuth_ore', 'tooltip.kubejs.bismuth_y', 'tooltip.kubejs.the_end'],
-        ['ae2:deepslate_quartz_ore', 'tooltip.kubejs.quartz_y', 'tooltip.kubejs.the_end']
-    ]
-
-    oretip.forEach(e => {
-        tooltip.addAdvanced(e[0], (item, advanced, text) => {
-            text.add(1, Text.translate(e[1]));
-            text.add(2, Text.translate(e[2]));
-        })
-    })
+    tooltip.addAdvanced('kubejs:nether_aluminum_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.aluminum_y'));
+        text.add(2, Text.translate('tooltip.kubejs.the_nether'));
+    });
+    tooltip.addAdvanced('thermal:deepslate_lead_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.lead_y'));
+        text.add(2, Text.translate('tooltip.kubejs.inversiadim'));
+    });
+    tooltip.addAdvanced('kubejs:inversia_uranium_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.uranium_y'));
+        text.add(2, Text.translate('tooltip.kubejs.inversiadim'));
+    });
+    tooltip.addAdvanced('kubejs:end_bismuth_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.bismuth_y'));
+        text.add(2, Text.translate('tooltip.kubejs.the_end'));
+    });
+    tooltip.addAdvanced('ae2:deepslate_quartz_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.quartz_y'));
+        text.add(2, Text.translate('tooltip.kubejs.the_end'));
+    });
 
     // ore('minecraft:coal_ore', 'tooltip.kubejs.coal_y', 'tooltip.kubejs.overworld')
     // ore('minecraft:iron_ore', 'tooltip.kubejs.iron_y', 'tooltip.kubejs.overworld')
@@ -52,19 +58,99 @@ onEvent('item.tooltip', tooltip => {
     // ore('create:zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
     // ore('create:deepslate_zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
 
-    const mixedHerb = ['gg', 'ggg', 'rg', 'bg', 'yg', 'br', 'yr', 'bgg', 'ygg', 'brg', 'yrg'];
-
-    mixedHerb.forEach(color => {
-        tooltip.addAdvanced('kubejs:mixed_herb_' + color, (item, advanced, text) => {
-            if (!tooltip.shift) {
-                text.add(1, Text.translate('tooltip.kubejs.shift'));
-            } else {
-                text.add(1, Text.translate('tooltip.kubejs.shifton'));
-                text.add(2, Text.translate('tooltip.kubejs.mixed_herb_' + color));
-            }
-        })
+    tooltip.addAdvanced('kubejs:mixed_herb_gg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_gg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_ggg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_ggg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_rg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_rg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_bg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_bg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_yg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_br', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_br'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_yr', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yr'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_bgg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_bgg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_ygg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_ygg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_brg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_brg'));
+        }
+    })
+    tooltip.addAdvanced('kubejs:mixed_herb_yrg', (item, advanced, text) => {
+        if (!tooltip.shift) {
+            text.add(1, Text.translate('tooltip.kubejs.shift'));
+        } else {
+            text.add(1, Text.translate('tooltip.kubejs.shifton'));
+            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yrg'));
+        }
     })
 
+
+
+
+    //光环物品描述
     tooltip.addAdvanced('yuushya:wriggle_nightbug', (item, advanced, text) => {
         let cmData = item.nbt?.CustomModelData;
         if (cmData === 11821901) {

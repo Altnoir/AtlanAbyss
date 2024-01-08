@@ -22,13 +22,13 @@
 		maxVerticalDistance = 32
 
 	[EmbeddiumPlus.Misc]
-		RenderFog = false
+		RenderFog = true
 		HideJEI = false
-		CloudHeight = 192
+		CloudHeight = 128
 		#Allowed Values: OFF, FAST, FANCY
 		ChunkFadeInQuality = "FANCY"
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
-		BorderlessFullscreen = "WINDOWED"
+		BorderlessFullscreen = "FULLSCREEN"
 		ExtendedServerViewDistance = true
 
 	#Configure max Entity distance

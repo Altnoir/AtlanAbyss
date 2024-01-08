@@ -203,7 +203,7 @@
     "infoRotationYaw": false,
     "infoServerTPS": true,
     "infoSlimeChunk": false,
-    "infoSpeed": true,
+    "infoSpeed": false,
     "infoSpeedAxis": false,
     "infoSpeedHV": false,
     "infoSprinting": false,

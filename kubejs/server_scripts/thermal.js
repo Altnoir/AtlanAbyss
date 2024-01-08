@@ -558,16 +558,6 @@ onEvent('recipes', event => {
     B: 'kubejs:thermal_mechanism',
     C: 'minecraft:glass'
   }).id("atlanabyss:machine_frame")
-  //钢制机器框架
-  event.shaped('kubejs:steel_machine', [
-    'ACA',
-    'CBC',
-    'ACA'
-  ], {
-    A: 'thermal:steel_ingot',
-    B: 'kubejs:pressure_mechanism',
-    C: 'minecraft:glass'
-  }).id("atlanabyss:steel_machine_frame")
 
   //机器
   const machines = [

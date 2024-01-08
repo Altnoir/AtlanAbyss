@@ -43,6 +43,26 @@ onEvent('block.registry', event => {
         .displayName('Nether Aluminum Pre');
     //末地铋矿
     event.create('end_bismuth_ore')
+        .randomTick((callback) => {
+            let { random, block } = callback;
+
+            if (random.nextInt(15) > 1) return;
+
+            const allFacing = ['north', 'south', 'east', 'west', 'up', 'down'];
+            let i = 0, { length } = allFacing;
+
+            for (i; i < length; i++) {
+                let blockFacing = allFacing[Utils.getRandom().nextInt(6 - i)];
+                let spreadBlock = block[blockFacing]
+
+                if (spreadBlock.id == 'minecraft:end_stone') {
+                    spreadBlock.set('kubejs:end_bismuth_ore');
+                    break;
+                } else {
+                    allFacing.splice(allFacing.indexOf(blockFacing), 1)
+                }
+            }
+        })
         .material('deepslate')
         .hardness(6.0)
         .tagBlock('minecraft:mineable/pickaxe')
@@ -180,20 +200,6 @@ onEvent('block.registry', event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .item(e => e.rarity(RARITY_RARE))
         .displayName('Lucky Block');
-    //钢制机械框架
-    event.create('steel_machine')
-        .material('lantern')
-        .hardness(3.0)
-        .box(0, 0, 0, .25, 1, 1, false)
-        .box(.75, 0, 0, 1, 1, 1, false)
-        .box(.25, 0, 0, .75, 1, .25, false)
-        .box(.25, 0, .75, .75, 1, 1, false)
-        .tagBlock('create:wrench_pickup')
-        .tagBlock('minecraft:mineable/pickaxe')
-        .displayName('Steel Machine Frame')
-        .item(e => e.rarity(RARITY_RARE))
-        .notSolid()
-        .renderType('cutout');
 
     //炼金
     for (let i = 0; i < 12; i++)

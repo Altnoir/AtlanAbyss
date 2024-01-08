@@ -123,13 +123,13 @@
 		#If true, recipes using slime crystals will ignore the other geode configs, useful if you add other ways to get the slime crystals. When false (default), recipes using slime crystals will be substituted for an alternative if the geode is disabled.
 		forceRecipes = false
 		#If true, earthslime geodes generate deep in the world as another way to get slime
-		earth = true
+		earth = false
 		#If true, skyslime geodes generate above amethyst as another way to get skyslime
-		sky = true
+		sky = false
 		#If true, ichor geodes generate high in the nether. Strongly encouraged to keep enabled even if you disable the other geodes, as ichor crystals have some unique recipes and the fallbacks kinda suck for gameplay.
-		ichor = true
+		ichor = false
 		#If true, enderslime geodes generate as additional islands in the end
-		ender = true
+		ender = false
 
 #Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]

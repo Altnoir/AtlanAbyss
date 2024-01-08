@@ -401,7 +401,7 @@ onEvent('recipes', event => {
 	//棉花
 	milling([
 		'2x minecraft:string',
-		Item.of('3x minecraft:string').withChance(0.5),
+		Item.of('5x minecraft:string').withChance(0.5),
 		Item.of('minecraft:feather').withChance(0.25),
 		Item.of('kubejs:cottons_seed').withChance(0.25)
 	],

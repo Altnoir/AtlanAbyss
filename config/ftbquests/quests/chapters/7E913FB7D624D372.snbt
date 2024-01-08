@@ -13,7 +13,7 @@
 			icon: "minecraft:grass_block"
 			x: 0.0d
 			y: 0.0d
-			description: ["这是个休闲养老类的科技整合包，主要内容都集中在机械动力，您可以完全无视任务引导，根据自己实践摸索一步一步玩。"]
+			description: ["这是个休闲养老类的科技整合包，主要内容有枪械，建筑，赛马娘，女仆，科技等，当然您也可以完全无视掉入门引导，因为这并不是必须完成的。"]
 			id: "44572D4F990F380B"
 			tasks: [{
 				id: "016D1C71B4245A2B"
@@ -193,7 +193,9 @@
 			title: "获取原木"
 			x: 2.0d
 			y: 0.0d
+			description: ["尽管整合包有许多内容可以探索，但在之前，您至少需要『获得木头』"]
 			dependencies: ["44572D4F990F380B"]
+			hide: true
 			id: "36943F6B7F336DF2"
 			tasks: [{
 				id: "01A9395D86710A6A"
@@ -208,16 +210,29 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "549A622D1A3FBB4A"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			title: "制作工作台"
 			x: 4.0d
 			y: 0.0d
+			description: ["在接下来的探险中，您也许会遇见某些不能仅靠自身背包合成的物品，这时候你就不得不制作出一个工作台了。"]
 			dependencies: ["36943F6B7F336DF2"]
+			hide: true
 			id: "5BC3A59AAD6CEDBE"
 			tasks: [{
 				id: "1AC44A870C872BC1"
 				type: "item"
 				item: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "08E78C10C9FEFB72"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -227,7 +242,7 @@
 			x: 2.0d
 			y: -1.5d
 			shape: "hexagon"
-			description: ["使用锄头类工具破坏树叶有75%的概率会掉落线"]
+			description: ["很可惜，在当前的Forge版无法使用原版的刷线机特性，但别灰心，为了弥补这个问题，您可以使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
 			dependencies: ["36943F6B7F336DF2"]
 			hide: true
 			id: "519403A46F37EB4D"
@@ -248,7 +263,7 @@
 			x: 5.0d
 			y: -1.0d
 			shape: "hexagon"
-			description: ["使用抽屉以更好的存储单一重复的物品"]
+			description: ["想找个东西存一存身上的物品？您或许可以考虑使用箱子，木桶，又或是抽屉。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "16CCDD21E5E15818"
@@ -281,7 +296,7 @@
 			x: 5.5d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["东西太多装不下？试试做个背包！"]
+			description: ["想存储身上的物品但又想四处探险？您可以考虑制作一个背包！"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "13627E6F08A8CB2D"
@@ -323,6 +338,7 @@
 			x: 4.0d
 			y: -1.5d
 			shape: "hexagon"
+			description: ["或许您需要准备一些工具？"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "5A7F67F2BD3327F6"
@@ -372,16 +388,29 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "4366A4C1A2A159F7"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			title: "Fe铁"
 			x: 5.5d
 			y: 1.5d
+			description: ["不管是用传统的熔炉冶炼，还是通过四处搜刮获取，铁都是本游戏里最为重要的资源。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
 			id: "58D3EC802A6FBD27"
 			tasks: [{
 				id: "30F97086984C186C"
 				type: "item"
 				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "5B284BB6716ABCCB"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -601,6 +630,11 @@
 				type: "item"
 				item: "kubejs:aluminum_ingot"
 			}]
+			rewards: [{
+				id: "52DDB273ED948BA9"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 7.5d
@@ -654,9 +688,16 @@
 			dependencies: ["4E12320C5CF0FE7B"]
 			id: "137563E84BDBF0CC"
 			tasks: [{
-				id: "58F4DD7542190121"
-				type: "item"
-				item: "minecraft:netherrack"
+				id: "2B5DEA529A5A582C"
+				type: "dimension"
+				title: "“我们需要更深入一些”"
+				icon: "minecraft:netherrack"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "52F6808675871D03"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -675,6 +716,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "79D152B8E2B1BE1B"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 7.5d
@@ -686,6 +732,30 @@
 				id: "023B963A1AA50DCF"
 				type: "item"
 				item: "ars_nouveau:green_archwood_sapling"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"在破坏草时你也许会发现，除了会掉落原版的小麦种子以外，还会有棉花种子。"
+				"没错，为了弥补刷线机不能用的问题我不仅仅是只给树叶添加新特性，也添加了新作物！"
+				"种植棉花，获取无限的线！"
+			]
+			dependencies: ["36943F6B7F336DF2"]
+			hide: true
+			id: "566C1EA56C28BAEC"
+			tasks: [{
+				id: "0D909AE204627D9F"
+				type: "item"
+				item: "kubejs:cottons_seed"
+			}]
+			rewards: [{
+				id: "08825931D148892D"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

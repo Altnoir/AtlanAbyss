@@ -482,6 +482,11 @@ onEvent('recipes', event => {
   alchemyRecipes(event)
   trading(event)
 })
+onEvent('player.logged_in', event => {
+  event.server.scheduleInTicks(40, () => {
+    event.player.runCommandSilent('kubejs reload client_scripts');
+  })
+})
 
 
 

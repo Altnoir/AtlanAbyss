@@ -1,3 +1,4 @@
+//本来是打算整个自定义盔甲做光环头盔的，但该死的Kubejs没办法自定义盔甲模型，已经废弃了（光环换成了其他头戴物品改模）
 // onEvent('item.registry.armor_tiers', event => {
 // 	event.add('halo', tier => {
 // 		tier.durabilityMultiplier = 40 //耐久倍率,基础值为靴子13, 护腿15, 胸甲16, 头盔11
@@ -10,16 +11,19 @@
 // 	})
 // })
 
-const CustomPortalBuilder = java('net.kyrptonaught.customportalapi.api.CustomPortalBuilder')
+//本来是给自定义传送门写的，但效果实在是不太理想，已经废弃了（启用需要前置customportalapi）
+// const CustomPortalBuilder = java('net.kyrptonaught.customportalapi.api.CustomPortalBuilder')
 
-onEvent('postinit', () => {
-	CustomPortalBuilder.beginPortal()
-	['frameBlock(net.minecraft.resources.ResourceLocation)'](new ResourceLocation('kubejs', 'bismuth_block'))
-		.destDimID(new ResourceLocation('inversia', 'inversiadim'))
-		.tintColor(60, 120, 240)
-		.lightWithWater()
-		.registerPortal();
-});
+// onEvent('postinit', () => {
+// 	CustomPortalBuilder.beginPortal()
+// 	['frameBlock(net.minecraft.resources.ResourceLocation)'](new ResourceLocation('kubejs', 'bismuth_block'))
+// 		.destDimID(new ResourceLocation('inversia', 'inversiadim'))
+// 		.tintColor(60, 120, 240)
+// 		.lightWithWater()
+// 		.flatPortal()
+// 		.onlyLightInOverworld()
+// 		.registerPortal();
+// });
 
 onEvent('mob_effect.registry', event => {
 	event.create('alice_powah', 'basic')

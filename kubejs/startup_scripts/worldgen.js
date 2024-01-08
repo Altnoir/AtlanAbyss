@@ -14,10 +14,10 @@ onEvent('worldgen.add', event => {
       .squared()                      // 随机地将矿石分散在整个区块中，而不是整整齐齐一列一列的生成
 
     // 更多可选参数
-    ore.size = 11                            // max.矿脉大小
-    ore.noSurface = 0.5                      // 如果矿石暴露在空气中，将有概率放弃
-    ore.worldgenLayer = 'underground_ores'   // 矿石应该在哪个生成步骤生成(见下文)
-    ore.chance = 0					               	// 如果!= 0并且未设置count，则每个区块有1/n的机会生成矿石
+    ore.size = 3                            // max.矿脉大小
+    ore.noSurface = 1                       // 如果矿石暴露在空气中，将有概率放弃
+    ore.worldgenLayer = 'underground_ores'  // 矿石应该按哪个生成步骤生成
+    ore.chance = 0					                // 如果不等于0并且未设置count，则每个区块有1/n的机会生成矿石
   });
 
   event.addOre(ore => {
@@ -31,14 +31,12 @@ onEvent('worldgen.add', event => {
     }
     ore.addTarget('minecraft:end_stone', 'ae2:deepslate_quartz_ore') //赛特斯石英矿
 
-    ore.count([26, 60])
+    ore.count([32, 88])
       .squared()
 
-    // 更多可选参数
-    ore.size = 6
+    ore.size = 9
     ore.noSurface = 1
     ore.worldgenLayer = 'underground_ores'
-    ore.chance = 0
   });
 
   const { anchors } = event
@@ -72,7 +70,7 @@ onEvent('worldgen.add', event => {
         anchors.absolute(255)
       )
 
-    ore.size = 21
+    ore.size = 15
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -106,7 +104,7 @@ onEvent('worldgen.add', event => {
         anchors.absolute(255)
       )
 
-    ore.size = 16
+    ore.size = 11
     ore.worldgenLayer = 'underground_ores'
   });
 

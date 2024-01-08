@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "customportalapi:block/customportalblock",
-    "portal": "customportalapi:block/customportalblock"
+    "particle": "customportalapi:block/custom_portal_block",
+    "portal": "customportalapi:block/custom_portal_block"
   },
   "elements": [
     {
