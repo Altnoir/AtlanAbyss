@@ -51,8 +51,12 @@ onEvent('item.right_click', event => {
       server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${player.x} ${player.y} ${player.z} loot ${lootable}`);
       player.playSound('minecraft:block.enchantment_table.use');
       if (activation) {
+        if (lootbag === 'kubejs:halo_gashapon') {
+          player.playSound('kubejs:ciallo')
+        } else {
+          player.playSound('minecraft:entity.player.levelup');
+        }
         Minecraft.getInstance().gameRenderer.displayItemActivation(lootbag);
-        player.playSound('minecraft:entity.player.levelup');
       }
       player.addItemCooldown(lootbag, 20);
       item.count--;

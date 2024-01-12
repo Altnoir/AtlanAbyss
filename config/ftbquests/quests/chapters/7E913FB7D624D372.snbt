@@ -29,8 +29,9 @@
 		{
 			x: 6.5d
 			y: 2.5d
-			description: ["因为是休闲向的科技包，所以对于前期来说几乎可以当作原版生存来玩，并且机械动力本体的物品配方都没有经过魔改哦。"]
+			description: ["到这里你已逐渐步入主线了，接下来请搓出您的第一个人造合金：安山合金。"]
 			dependencies: ["58D3EC802A6FBD27"]
+			hide: true
 			id: "41985FBE709E5F94"
 			tasks: [{
 				id: "50234BB013D42B1A"
@@ -38,36 +39,45 @@
 				item: "create:andesite_alloy"
 			}]
 			rewards: [{
-				id: "69A040A9AB655B5D"
+				id: "15E543EA63D482A5"
 				type: "xp"
-				xp: 50
+				xp: 10
 			}]
 		}
 		{
+			title: "烈焰人燃烧室"
 			x: 7.5d
 			y: 6.0d
 			description: [
-				"首先需要找到至少一个烈焰人刷怪笼(一般的下界要塞)"
-				"然后使用空的烈焰人燃烧室对着刷怪笼右键，即可捕获烈焰人\\n注:刷怪笼可以无限捕获烈焰人"
+				"在您进入下界时，可以提前做个空的烈焰人燃烧室，当您在下界探险时，务必多留意烈焰人，当遇见烈焰人时您可以手持空的烈焰人燃烧室对着烈焰人右击便可进行捕获。"
+				"温馨提示：烈焰人刷怪笼具有无限的烈焰人。"
 			]
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "2B26826B86BCA145"
-			tasks: [{
-				id: "40022291572678D5"
-				type: "item"
-				item: "create:empty_blaze_burner"
-			}]
+			tasks: [
+				{
+					id: "40022291572678D5"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "75E15B0F4439A4B1"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
 			rewards: [{
-				id: "5023C910A6F6A077"
+				id: "0407149776EA3F57"
 				type: "xp"
-				xp: 50
+				xp: 10
 			}]
 		}
 		{
+			title: "压力时代！"
 			x: 4.0d
 			y: 5.0d
-			description: ["从这里开始逐渐会出现魔改的内容"]
+			description: ["机械之力您已见证过了，那么，气体之力呢？"]
 			dependencies: ["4C2C16BA5796BFD0"]
 			id: "3671DBBFABCD1B71"
 			tasks: [{
@@ -76,9 +86,9 @@
 				item: "pneumaticcraft:compressed_iron_block"
 			}]
 			rewards: [{
-				id: "68D11AED40A75ACD"
+				id: "303AC93B10D99233"
 				type: "xp"
-				xp: 50
+				xp: 10
 			}]
 		}
 		{
@@ -104,9 +114,9 @@
 				}
 			]
 			rewards: [{
-				id: "1C2373D4C03E3987"
+				id: "2CB31A58C159B3C6"
 				type: "xp"
-				xp: 50
+				xp: 10
 			}]
 		}
 		{
@@ -124,12 +134,13 @@
 				item: "thermal:crude_oil_bucket"
 			}]
 			rewards: [{
-				id: "3A894F4811494DE3"
+				id: "67A4C146FBE5E2F0"
 				type: "xp"
-				xp: 50
+				xp: 10
 			}]
 		}
 		{
+			title: "电力时代！"
 			x: 0.0d
 			y: 7.0d
 			description: ["从你破坏的第一颗树开始……到应力时代的嗡嗡作响……再到压力时代的气体泄漏，你已经历许多。现在，开启你最伟大的探索吧：从早期工业革命到信息时代！"]
@@ -236,7 +247,7 @@
 			}]
 		}
 		{
-			title: "树叶掉落物改动"
+			title: "锄树叶"
 			icon: "minecraft:oak_leaves"
 			disable_toast: true
 			x: 2.0d
@@ -258,7 +269,7 @@
 			}]
 		}
 		{
-			title: "抽屉！"
+			title: "固定容器"
 			disable_toast: true
 			x: 5.0d
 			y: -1.0d
@@ -291,7 +302,7 @@
 			}]
 		}
 		{
-			title: "精妙背包"
+			title: "移动容器"
 			disable_toast: true
 			x: 5.5d
 			y: 0.0d
@@ -334,6 +345,7 @@
 			}]
 		}
 		{
+			title: "新手初始装"
 			disable_toast: true
 			x: 4.0d
 			y: -1.5d
@@ -414,19 +426,35 @@
 			}]
 		}
 		{
+			title: "应力时代！"
 			x: 6.5d
 			y: 4.0d
+			description: [
+				"与普通的合成方法不同，安山机壳的合成方法是需要在世界中交互获得。"
+				"您需要手持安山合金，对着已经去皮的任意原木进行右击便可合成安山机壳。"
+				"温馨提示：这一过程后面可通过机械手代替。"
+			]
 			dependencies: ["41985FBE709E5F94"]
+			hide: true
 			id: "0F1CD1C8804008B7"
 			tasks: [{
 				id: "4FE9B462C0797FE0"
 				type: "item"
 				item: "create:andesite_casing"
 			}]
+			rewards: [{
+				id: "2F559B5D9D794000"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 5.5d
 			y: 5.0d
+			description: [
+				"钢，一种碳与铁的合金，比铁更为坚固可靠。"
+				"您需要提前把煤炭处理为焦炭，并把焦炭与铁加热混合搅拌即可获得。"
+			]
 			dependencies: ["0F1CD1C8804008B7"]
 			id: "4C2C16BA5796BFD0"
 			tasks: [{
@@ -434,16 +462,31 @@
 				type: "item"
 				item: "thermal:steel_ingot"
 			}]
+			rewards: [{
+				id: "01DFDCFC35A2C235"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 6.5d
 			y: 5.0d
+			description: [
+				"您的金属处理第一站。"
+				"温馨提示：在鼠标指针指着某些物品时，可以按住W查看思索教学。"
+			]
 			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
 			id: "0D3B950AFB6E6BC2"
 			tasks: [{
 				id: "6E3DECA4C3BC0660"
 				type: "item"
 				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "63306E64694A76AA"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -456,6 +499,11 @@
 				type: "item"
 				item: "thermal:lightning_charge"
 			}]
+			rewards: [{
+				id: "6E0C4E1114A727F2"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 5.5d
@@ -467,11 +515,18 @@
 				type: "item"
 				item: "thermal:blitz_rod"
 			}]
+			rewards: [{
+				id: "47D6871E7BDC4A9E"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			disable_toast: true
 			x: 5.5d
 			y: 4.0d
 			shape: "hexagon"
+			description: ["水车，大水车和曲柄，机械动力的来源，当然还有风车和蒸汽引擎。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			hide: true
 			id: "1F5A77E77CE7A69A"
@@ -492,12 +547,18 @@
 					item: "create:hand_crank"
 				}
 			]
+			rewards: [{
+				id: "1D957DDB75759BFE"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
 			x: 5.5d
 			y: 3.0d
 			shape: "hexagon"
+			description: ["小巧好用的磨粉机。"]
 			dependencies: ["0F1CD1C8804008B7"]
 			hide: true
 			id: "7026D208C4850E52"
@@ -506,20 +567,36 @@
 				type: "item"
 				item: "create:millstone"
 			}]
+			rewards: [{
+				id: "7AD78382C0D954CB"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
 			x: 4.5d
 			y: 3.0d
 			shape: "hexagon"
-			description: ["担心周围刷怪但是懒得插火把？试试这个"]
+			description: [
+				"不像让家周围刷怪但又不想一个一个插火把？您需要：超级火把！"
+				"但又想让周围更亮一些？您还需要：野火灯笼！"
+			]
 			dependencies: ["7026D208C4850E52"]
+			hide: true
 			id: "1430F7FB3DADD2C5"
-			tasks: [{
-				id: "007F5D3361B0A49E"
-				type: "item"
-				item: "torchmaster:megatorch"
-			}]
+			tasks: [
+				{
+					id: "007F5D3361B0A49E"
+					type: "item"
+					item: "torchmaster:megatorch"
+				}
+				{
+					id: "54F857D891205C25"
+					type: "item"
+					item: "torchmaster:feral_flare_lantern"
+				}
+			]
 			rewards: [{
 				id: "0912000C2343F8DD"
 				type: "xp"
@@ -537,10 +614,16 @@
 				type: "item"
 				item: "create:encased_fan"
 			}]
+			rewards: [{
+				id: "1F7186064AE34426"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 7.5d
 			y: 4.0d
+			description: ["动力搅拌器是一种拥有多种功能的动力机械，如一些特殊的混合搅拌功能，自动炼药的功能和无序合成的功能。"]
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "32F577B605FC8D35"
@@ -549,15 +632,20 @@
 				type: "item"
 				item: "create:mechanical_mixer"
 			}]
+			rewards: [{
+				id: "26C7CE5F72A1046D"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			title: "下界合金再生"
+			title: "可再生的下界合金！"
 			icon: "kubejs:eviltwisting_ingot"
 			disable_toast: true
 			x: 7.5d
 			y: 3.0d
 			shape: "hexagon"
-			description: ["你可以通过合成恶魔缠绕锭来使下界合金再生"]
+			description: ["现在，你可以通过生产噩梦缠怨锭来人工合成下界合金，进行简单粉碎处理有一半的概率可获得下界合金碎片，而当您进入电力时代之后，便可用感应炉直接合成出下界合金锭！"]
 			dependencies: ["32F577B605FC8D35"]
 			id: "5CBFBFC9BDCDFA57"
 			tasks: [{
@@ -577,7 +665,7 @@
 			x: 4.5d
 			y: 4.0d
 			shape: "hexagon"
-			description: ["使用区块加载器来保持你的工作区区块常加载"]
+			description: ["在游戏里，当玩家离一个区域太远之后，那个区域的区块便会卸载掉（出生点区块除外），所以如果您有很重要的建筑不想要让它卸载，也许您可以试试：区块加载器！"]
 			dependencies: ["3671DBBFABCD1B71"]
 			hide: true
 			id: "0DC2728FDA93D63E"
@@ -596,6 +684,10 @@
 			disable_toast: true
 			x: 3.5d
 			y: 4.0d
+			description: [
+				"在这个世界上，遍布都是资源，可惜以您的肉眼是无法观测的，如果您想要知道，探矿杖是您的不二之选！"
+				"温馨提示：油田也能探。"
+			]
 			dependencies: ["3671DBBFABCD1B71"]
 			hide: true
 			id: "082B263CE25C5598"
@@ -604,6 +696,18 @@
 				type: "item"
 				item: "createoreexcavation:vein_finder"
 			}]
+			rewards: [
+				{
+					id: "193C30026B0599AB"
+					type: "item"
+					item: "createoreexcavation:drilling_machine"
+				}
+				{
+					id: "4B8F2C8045CD7B11"
+					type: "item"
+					item: "createoreexcavation:extractor"
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -619,11 +723,17 @@
 				type: "item"
 				item: "pneumaticcraft:plastic"
 			}]
+			rewards: [{
+				id: "78FEE0A977C0D359"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 0.0d
 			y: 4.0d
 			dependencies: ["137563E84BDBF0CC"]
+			hide: true
 			id: "4172CB4FD4825D49"
 			tasks: [{
 				id: "43007E4A52F24896"
@@ -639,6 +749,7 @@
 		{
 			x: 7.5d
 			y: 5.0d
+			description: ["一种能完美模仿玩家右击和左击行为的动力机械！"]
 			dependencies: [
 				"32F577B605FC8D35"
 				"2B26826B86BCA145"
@@ -648,6 +759,11 @@
 				id: "31D45CDCD5158D44"
 				type: "item"
 				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "76AC6B13F34955FA"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -660,6 +776,11 @@
 				id: "0C84183C7A0C3F89"
 				type: "item"
 				item: "botania:fertilizer"
+			}]
+			rewards: [{
+				id: "09FC37D3817E84FA"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -686,12 +807,12 @@
 			x: 2.0d
 			y: 2.5d
 			dependencies: ["4E12320C5CF0FE7B"]
+			hide: true
 			id: "137563E84BDBF0CC"
 			tasks: [{
 				id: "2B5DEA529A5A582C"
 				type: "dimension"
 				title: "“我们需要更深入一些”"
-				icon: "minecraft:netherrack"
 				dimension: "minecraft:the_nether"
 			}]
 			rewards: [{
@@ -701,20 +822,17 @@
 			}]
 		}
 		{
+			title: "搭建下界传送门"
+			icon: "minecraft:obsidian"
 			x: 4.0d
 			y: 1.5d
+			description: ["你可以选择用传统的钻石镐挖掘黑曜石搭建传送门，也可以选择用岩浆桶浇筑传送门，根据你的偏好决定。"]
 			dependencies: ["58D3EC802A6FBD27"]
+			hide: true
 			id: "4E12320C5CF0FE7B"
 			tasks: [{
-				id: "0A2AEAC21A142A25"
-				type: "item"
-				item: {
-					id: "minecraft:flint_and_steel"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "5F8439575D62E3EC"
+				type: "checkmark"
 			}]
 			rewards: [{
 				id: "79D152B8E2B1BE1B"
@@ -733,8 +851,14 @@
 				type: "item"
 				item: "ars_nouveau:green_archwood_sapling"
 			}]
+			rewards: [{
+				id: "4CD17E91F38A2C9B"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			title: "种棉花"
 			disable_toast: true
 			x: 3.0d
 			y: -1.5d
@@ -757,6 +881,60 @@
 				type: "xp"
 				xp: 10
 			}]
+		}
+		{
+			title: "一些说明书"
+			x: 1.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["今天您看书了吗？"]
+			dependencies: ["36943F6B7F336DF2"]
+			hide: true
+			id: "457F93059BD28394"
+			tasks: [{
+				id: "35C678F3E2232228"
+				type: "item"
+				item: "minecraft:book"
+			}]
+			rewards: [
+				{
+					id: "6AE656A746DDA0CC"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+						}
+					}
+				}
+				{
+					id: "4BC8C11FA6792674"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "umapyoi:trainers_manual"
+						}
+					}
+				}
+				{
+					id: "4F03670E97797663"
+					type: "item"
+					item: "alexsmobs:animal_dictionary"
+				}
+				{
+					id: "3ECD597C4236D228"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+				{
+					id: "560E0D1CFCFB49D0"
+					type: "item"
+					item: "ftbquests:book"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

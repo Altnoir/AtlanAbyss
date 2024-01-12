@@ -1,0 +1,10 @@
+{
+    "ciallo": {
+        "sounds": [
+            {
+                "name": "kubejs:ciallo",
+                "type": "file"
+            }
+        ]
+    }
+}

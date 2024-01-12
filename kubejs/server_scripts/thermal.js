@@ -344,6 +344,17 @@ onEvent('recipes', event => {
     B: 'minecraft:redstone_torch'
   }).id("atlanabyss:thermal_detonator")
 
+  //磁铁
+  remove('thermal:flux_magnet')
+  event.shaped('thermal:flux_magnet', [
+    'A A',
+    'B B',
+    'BBB'
+  ], {
+    A: 'minecraft:redstone',
+    B: 'thermal:steel_ingot'
+  }).id("atlanabyss:flux_magnet")
+
   //瀑冰弹→冰
   remove('thermal:ice_charge/ice_from_water_bucket')
   event.recipes.createSplashing(['minecraft:ice'],

@@ -12,6 +12,7 @@ onEvent('recipes', event => {
 		milling,
 		crushing,
 		pressing,
+		item_application,
 		sequenced_assembly,
 		mechanical_crafting
 	} = event.recipes.create;
@@ -169,6 +170,15 @@ onEvent('recipes', event => {
 		A: 'ars_nouveau:magebloom_fiber',
 		B: 'botania:mana_pearl'
 	}).id('atlanabyss:majo_cloth');
+
+	//墓园
+	remove('graveyard:ossuary')
+	remove('graveyard:dark_iron_ingot')
+	item_application(
+		'graveyard:dark_iron_block', [
+		'minecraft:iron_block',
+		'graveyard:corruption'
+	]).id('atlanabyss:item_application_dark_iron_block')
 
 
 	//传送门珍珠
@@ -428,23 +438,23 @@ onEvent('recipes', event => {
 	}).id("atlanabyss:crate_from_cotton")
 
 	//混合药草
-	event.shapeless('kubejs:mixed_herb_gg', ['minecraft:fern', 'minecraft:fern']).id("atlanabyss:mixed_herb_gg")//绿+绿
-	event.shapeless('kubejs:mixed_herb_ggg', ['kubejs:mixed_herb_gg', 'minecraft:fern']).id("atlanabyss:mixed_herb_ggg")//绿+绿+绿
-	event.shapeless('kubejs:mixed_herb_rg', ['minecraft:fern', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_rg")//红+绿
-	event.shapeless('kubejs:mixed_herb_bg', ['minecraft:fern', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_bg")//蓝+绿
-	event.shapeless('kubejs:mixed_herb_yg', ['minecraft:fern', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yg")//黄+绿
-	event.shapeless('kubejs:mixed_herb_br', ['minecraft:crimson_roots', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_br")//蓝+红
-	event.shapeless('kubejs:mixed_herb_yr', ['minecraft:crimson_roots', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yr")//黄+红
-	event.shapeless('kubejs:mixed_herb_bgg', ['kubejs:mixed_herb_gg', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_bgg_from_gg")//蓝+绿+绿
-	event.shapeless('kubejs:mixed_herb_ygg', ['kubejs:mixed_herb_gg', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_ygg_from_gg")//黄+绿+绿
-	event.shapeless('kubejs:mixed_herb_bgg', ['kubejs:mixed_herb_bg', 'minecraft:fern']).id("atlanabyss:mixed_herb_bgg_from_bg")//蓝+绿+绿
-	event.shapeless('kubejs:mixed_herb_ygg', ['kubejs:mixed_herb_yg', 'minecraft:fern']).id("atlanabyss:mixed_herb_ygg_from_yg")//黄+绿+绿
-	event.shapeless('kubejs:mixed_herb_brg', ['kubejs:mixed_herb_rg', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_brg_from_rg")//蓝+红+绿
-	event.shapeless('kubejs:mixed_herb_brg', ['kubejs:mixed_herb_bg', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_brg_from_bg")//蓝+红+绿
-	event.shapeless('kubejs:mixed_herb_brg', ['kubejs:mixed_herb_br', 'minecraft:fern']).id("atlanabyss:mixed_herb_brg_from_br")//蓝+红+绿
-	event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_rg', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yrg_from_rg")//黄+红+绿
-	event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_yg', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_yrg_from_yg")//黄+红+绿
-	event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_yr', 'minecraft:fern']).id("atlanabyss:mixed_herb_yrg_from_yr")//黄+红+绿
+	// event.shapeless('kubejs:mixed_herb_gg', ['minecraft:fern', 'minecraft:fern']).id("atlanabyss:mixed_herb_gg")//绿+绿
+	// event.shapeless('kubejs:mixed_herb_ggg', ['kubejs:mixed_herb_gg', 'minecraft:fern']).id("atlanabyss:mixed_herb_ggg")//绿+绿+绿
+	// event.shapeless('kubejs:mixed_herb_rg', ['minecraft:fern', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_rg")//红+绿
+	// event.shapeless('kubejs:mixed_herb_bg', ['minecraft:fern', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_bg")//蓝+绿
+	// event.shapeless('kubejs:mixed_herb_yg', ['minecraft:fern', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yg")//黄+绿
+	// event.shapeless('kubejs:mixed_herb_br', ['minecraft:crimson_roots', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_br")//蓝+红
+	// event.shapeless('kubejs:mixed_herb_yr', ['minecraft:crimson_roots', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yr")//黄+红
+	// event.shapeless('kubejs:mixed_herb_bgg', ['kubejs:mixed_herb_gg', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_bgg_from_gg")//蓝+绿+绿
+	// event.shapeless('kubejs:mixed_herb_ygg', ['kubejs:mixed_herb_gg', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_ygg_from_gg")//黄+绿+绿
+	// event.shapeless('kubejs:mixed_herb_bgg', ['kubejs:mixed_herb_bg', 'minecraft:fern']).id("atlanabyss:mixed_herb_bgg_from_bg")//蓝+绿+绿
+	// event.shapeless('kubejs:mixed_herb_ygg', ['kubejs:mixed_herb_yg', 'minecraft:fern']).id("atlanabyss:mixed_herb_ygg_from_yg")//黄+绿+绿
+	// event.shapeless('kubejs:mixed_herb_brg', ['kubejs:mixed_herb_rg', 'minecraft:blue_orchid']).id("atlanabyss:mixed_herb_brg_from_rg")//蓝+红+绿
+	// event.shapeless('kubejs:mixed_herb_brg', ['kubejs:mixed_herb_bg', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_brg_from_bg")//蓝+红+绿
+	// event.shapeless('kubejs:mixed_herb_brg', ['kubejs:mixed_herb_br', 'minecraft:fern']).id("atlanabyss:mixed_herb_brg_from_br")//蓝+红+绿
+	// event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_rg', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yrg_from_rg")//黄+红+绿
+	// event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_yg', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_yrg_from_yg")//黄+红+绿
+	// event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_yr', 'minecraft:fern']).id("atlanabyss:mixed_herb_yrg_from_yr")//黄+红+绿
 	//钻石粉
 	crushing(['thermal:diamond_dust'], 'minecraft:diamond').id("atlanabyss:crushing_diamond")
 	//锯末
@@ -1447,22 +1457,12 @@ onEvent('recipes', event => {
 		Fluid.of('tconstruct:molten_osmium', 360)
 	]).id("atlanabyss:osmium_casing")
 
-	function itemApplication(block, item, results, id) {
-		event.custom({
-			type: 'create:item_application',
-			ingredients: [
-				Ingredient.of(block).toJson(),
-				Ingredient.of(item).toJson()
-			],
-			results: [
-				Item.of(results).toResultJson()
-			]
-		}).id('atlanabyss:item_application_' + id)
-	}
-
 	//反应堆外壳
 	remove('biggerreactors:crafting/reactor/reactor_casing')
-	itemApplication('kubejs:osmium_casing', 'kubejs:zirconium_alloy_ingot', 'biggerreactors:reactor_casing', 'reactor_casing')
+	item_application('biggerreactors:reactor_casing', [
+		'kubejs:osmium_casing',
+		'kubejs:zirconium_alloy_ingot'
+	]).id("atlanabyss:item_application_reactor_casing")
 
 	//反应堆玻璃
 	remove('biggerreactors:crafting/reactor/reactor_glass')
@@ -1553,7 +1553,10 @@ onEvent('recipes', event => {
 
 	//涡轮机外壳
 	remove('biggerreactors:crafting/turbine/turbine_casing')
-	itemApplication('kubejs:osmium_casing', 'kubejs:aluminium_alloy_ingot', 'biggerreactors:turbine_casing', 'turbine_casing')
+	item_application('biggerreactors:turbine_casing', [
+		'kubejs:osmium_casing',
+		'kubejs:aluminium_alloy_ingot'
+	]).id("atlanabyss:item_application_turbine_casing")
 
 	//涡轮机玻璃
 	remove('biggerreactors:crafting/turbine/turbine_glass')
@@ -1648,7 +1651,10 @@ onEvent('recipes', event => {
 
 	//热交换器外壳
 	remove('biggerreactors:crafting/heat_exchanger/casing')
-	itemApplication('kubejs:osmium_casing', 'kubejs:lutetium_ingot', 'biggerreactors:heat_exchanger_casing', 'heat_exchanger_casing')
+	item_application('biggerreactors:heat_exchanger_casing', [
+		'kubejs:osmium_casing',
+		'kubejs:lutetium_ingot'
+	]).id("atlanabyss:item_application_heat_exchanger_casing")
 
 	//热交换器玻璃
 	remove('biggerreactors:crafting/heat_exchanger/glass')
@@ -1872,8 +1878,14 @@ onEvent('recipes', event => {
 	}
 
 	//机壳
-	itemApplication('create:andesite_casing', 'create:shadow_steel', 'create:shadow_steel_casing', 'shadow_steel_casing')
-	itemApplication('create:andesite_casing', 'create:refined_radiance', 'create:refined_radiance_casing', 'refined_radiance_casing')
+	item_application('create:shadow_steel_casing', [
+		'create:andesite_casing',
+		'create:shadow_steel'
+	]).id("atlanabyss:item_application_shadow_steel_casing")
+	item_application('create:refined_radiance_casing', [
+		'create:andesite_casing',
+		'create:refined_radiance'
+	]).id("atlanabyss:item_application_refined_radiance_casing")
 
 	//铋晶体
 	remove('yuushya:bismuth_crystal')

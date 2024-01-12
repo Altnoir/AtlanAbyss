@@ -25,6 +25,8 @@
 // 		.registerPortal();
 // });
 
+
+
 onEvent('mob_effect.registry', event => {
 	event.create('alice_powah', 'basic')
 })

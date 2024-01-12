@@ -66,7 +66,10 @@
 			y: 1.5d
 			shape: "hexagon"
 			description: ["一把会飞的扫帚！不觉得很酷吗？作为一个魔法少女我可觉得太酷了，很符合我对魔法世界的想象！"]
-			dependencies: ["381E536079E75588"]
+			dependencies: [
+				"381E536079E75588"
+				"369202E8265D6C29"
+			]
 			id: "15BE2DDEA1BB9D43"
 			tasks: [
 				{

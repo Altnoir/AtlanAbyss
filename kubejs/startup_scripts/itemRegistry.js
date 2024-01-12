@@ -109,95 +109,95 @@ onEvent('item.registry', event => {
 	event.create('magnum_shell', 'create:sequenced_assembly').displayName('Magnum Shell');
 
 	//混合药草
-	event.create('mixed_herb_gg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.effect('minecraft:instant_health', 20, 1, 1)//二级瞬间治疗
-	}).displayName('Mixed Herb (G+G)');//绿+绿
+	// event.create('mixed_herb_gg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.effect('minecraft:instant_health', 20, 1, 1)//二级瞬间治疗
+	// }).displayName('Mixed Herb (G+G)');//绿+绿
 
-	event.create('mixed_herb_ggg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
-	}).displayName('Mixed Herb (G+G+G)');//绿+绿+绿
+	// event.create('mixed_herb_ggg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
+	// }).displayName('Mixed Herb (G+G+G)');//绿+绿+绿
 
-	event.create('mixed_herb_rg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
-	}).displayName('Mixed Herb (R+G)');//红+绿
+	// event.create('mixed_herb_rg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
+	// }).displayName('Mixed Herb (R+G)');//红+绿
 
-	event.create('mixed_herb_bg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.removeEffect('minecraft:poison')//移除中毒
-			.removeEffect('minecraft:wither')//移除凋零
-			.removeEffect('minecraft:nausea')//移除反胃
-			.removeEffect('minecraft:levitationa')//移除漂浮
-			.removeEffect('minecraft:blindness')//移除失明
-			.removeEffect('minecraft:mining_fatigue')//移除挖掘疲劳
-			.removeEffect('minecraft:weakness')//移除虚弱
-			.effect('minecraft:instant_health', 20, 0, 1)//一级瞬间治疗
-	}).displayName('Mixed Herb (B+G)');//蓝+绿
+	// event.create('mixed_herb_bg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.removeEffect('minecraft:poison')//移除中毒
+	// 		.removeEffect('minecraft:wither')//移除凋零
+	// 		.removeEffect('minecraft:nausea')//移除反胃
+	// 		.removeEffect('minecraft:levitationa')//移除漂浮
+	// 		.removeEffect('minecraft:blindness')//移除失明
+	// 		.removeEffect('minecraft:mining_fatigue')//移除挖掘疲劳
+	// 		.removeEffect('minecraft:weakness')//移除虚弱
+	// 		.effect('minecraft:instant_health', 20, 0, 1)//一级瞬间治疗
+	// }).displayName('Mixed Herb (B+G)');//蓝+绿
 
-	event.create('mixed_herb_yg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.effect('minecraft:health_boost', 4800, 1, 1)//二级生命提升
-			.effect('minecraft:instant_health', 20, 0, 1)//一级瞬间治疗
-	}).displayName('Mixed Herb (Y+G)');//黄+绿
+	// event.create('mixed_herb_yg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.effect('minecraft:health_boost', 4800, 1, 1)//二级生命提升
+	// 		.effect('minecraft:instant_health', 20, 0, 1)//一级瞬间治疗
+	// }).displayName('Mixed Herb (Y+G)');//黄+绿
 
-	event.create('mixed_herb_br').displayName('Mixed Herb (B+R)');//蓝+红
-	event.create('mixed_herb_yr').displayName('Mixed Herb (Y+R)');//黄+红
+	// event.create('mixed_herb_br').displayName('Mixed Herb (B+R)');//蓝+红
+	// event.create('mixed_herb_yr').displayName('Mixed Herb (Y+R)');//黄+红
 
-	event.create('mixed_herb_bgg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.removeEffect('minecraft:poison')//移除中毒
-			.removeEffect('minecraft:wither')//移除凋零
-			.removeEffect('minecraft:nausea')//移除反胃
-			.removeEffect('minecraft:levitationa')//移除漂浮
-			.removeEffect('minecraft:blindness')//移除失明
-			.removeEffect('minecraft:mining_fatigue')//移除挖掘疲劳
-			.removeEffect('minecraft:weakness')//移除虚弱
-			.effect('minecraft:instant_health', 20, 1, 1)//二级瞬间治疗
-	}).displayName('Mixed Herb (B+G+G)');//蓝+绿+绿
+	// event.create('mixed_herb_bgg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.removeEffect('minecraft:poison')//移除中毒
+	// 		.removeEffect('minecraft:wither')//移除凋零
+	// 		.removeEffect('minecraft:nausea')//移除反胃
+	// 		.removeEffect('minecraft:levitationa')//移除漂浮
+	// 		.removeEffect('minecraft:blindness')//移除失明
+	// 		.removeEffect('minecraft:mining_fatigue')//移除挖掘疲劳
+	// 		.removeEffect('minecraft:weakness')//移除虚弱
+	// 		.effect('minecraft:instant_health', 20, 1, 1)//二级瞬间治疗
+	// }).displayName('Mixed Herb (B+G+G)');//蓝+绿+绿
 
-	event.create('mixed_herb_ygg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.effect('minecraft:health_boost', 9600, 2, 1)//三级生命提升
-			.effect('minecraft:instant_health', 20, 1, 1)//二级瞬间治疗
-	}).displayName('Mixed Herb (Y+G+G)');//黄+绿+绿
+	// event.create('mixed_herb_ygg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.effect('minecraft:health_boost', 9600, 2, 1)//三级生命提升
+	// 		.effect('minecraft:instant_health', 20, 1, 1)//二级瞬间治疗
+	// }).displayName('Mixed Herb (Y+G+G)');//黄+绿+绿
 
-	event.create('mixed_herb_brg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.removeEffect('minecraft:poison')//移除中毒
-			.removeEffect('minecraft:wither')//移除凋零
-			.removeEffect('minecraft:nausea')//移除反胃
-			.removeEffect('minecraft:levitationa')//移除漂浮
-			.removeEffect('minecraft:blindness')//移除失明
-			.removeEffect('minecraft:mining_fatigue')//移除挖掘疲劳
-			.removeEffect('minecraft:weakness')//移除虚弱
-			.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
-	}).displayName('Mixed Herb (B+R+G)');//蓝+红+绿
+	// event.create('mixed_herb_brg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.removeEffect('minecraft:poison')//移除中毒
+	// 		.removeEffect('minecraft:wither')//移除凋零
+	// 		.removeEffect('minecraft:nausea')//移除反胃
+	// 		.removeEffect('minecraft:levitationa')//移除漂浮
+	// 		.removeEffect('minecraft:blindness')//移除失明
+	// 		.removeEffect('minecraft:mining_fatigue')//移除挖掘疲劳
+	// 		.removeEffect('minecraft:weakness')//移除虚弱
+	// 		.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
+	// }).displayName('Mixed Herb (B+R+G)');//蓝+红+绿
 
-	event.create('mixed_herb_yrg').unstackable().food((food) => {
-		food.hunger(0)
-			.fastToEat(true)
-			.alwaysEdible(true)
-			.effect('minecraft:health_boost', 9600, 2, 1)//三级生命提升
-			.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
-	}).displayName('Mixed Herb (Y+R+G)');//黄+红+绿
+	// event.create('mixed_herb_yrg').unstackable().food((food) => {
+	// 	food.hunger(0)
+	// 		.fastToEat(true)
+	// 		.alwaysEdible(true)
+	// 		.effect('minecraft:health_boost', 9600, 2, 1)//三级生命提升
+	// 		.effect('minecraft:instant_health', 20, 4, 1)//五级瞬间治疗
+	// }).displayName('Mixed Herb (Y+R+G)');//黄+红+绿
 
 	//   event.create('canfood_empty').displayName('Empty canfood');
 	//   //罐头

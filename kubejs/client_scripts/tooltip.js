@@ -58,94 +58,96 @@ onEvent('item.tooltip', tooltip => {
     // ore('create:zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
     // ore('create:deepslate_zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
 
-    tooltip.addAdvanced('kubejs:mixed_herb_gg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_gg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_ggg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_ggg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_rg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_rg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_bg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_bg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_yg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_br', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_br'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_yr', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yr'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_bgg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_bgg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_ygg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_ygg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_brg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_brg'));
-        }
-    })
-    tooltip.addAdvanced('kubejs:mixed_herb_yrg', (item, advanced, text) => {
-        if (!tooltip.shift) {
-            text.add(1, Text.translate('tooltip.kubejs.shift'));
-        } else {
-            text.add(1, Text.translate('tooltip.kubejs.shifton'));
-            text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yrg'));
-        }
-    })
+
+    
+    // tooltip.addAdvanced('kubejs:mixed_herb_gg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_gg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_ggg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_ggg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_rg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_rg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_bg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_bg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_yg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_br', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_br'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_yr', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yr'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_bgg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_bgg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_ygg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_ygg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_brg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_brg'));
+    //     }
+    // })
+    // tooltip.addAdvanced('kubejs:mixed_herb_yrg', (item, advanced, text) => {
+    //     if (!tooltip.shift) {
+    //         text.add(1, Text.translate('tooltip.kubejs.shift'));
+    //     } else {
+    //         text.add(1, Text.translate('tooltip.kubejs.shifton'));
+    //         text.add(2, Text.translate('tooltip.kubejs.mixed_herb_yrg'));
+    //     }
+    // })
 
 
 
