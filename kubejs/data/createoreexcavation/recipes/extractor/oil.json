@@ -4,7 +4,7 @@
     "tag": "createoreexcavation:drills"
   },
   "name": "{\"translate\":\"ore.kubejs.oil\"}",
-  "weight": 10,
+  "weight": 100,
   "ticks": 20,
   "biomeBlacklist": "kubejs:is_oil",
   "stress": 256,

@@ -2,9 +2,9 @@
     "ciallo": {
         "sounds": [
             {
-                "name": "kubejs:ciallo",
-                "type": "file"
+                "name": "kubejs:ciallo"
             }
-        ]
+        ],
+        "subtitle": "subtitle.kubejs.ciallo"
     }
 }

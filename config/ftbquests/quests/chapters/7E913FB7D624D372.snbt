@@ -77,8 +77,12 @@
 			title: "压力时代！"
 			x: 4.0d
 			y: 5.0d
-			description: ["机械之力您已见证过了，那么，气体之力呢？"]
+			description: [
+				"更强更硬的金属机壳，并且具有导热属性。"
+				"在初期，您或许需要使用辊压机反复辊压石头以获取压缩石。"
+			]
 			dependencies: ["4C2C16BA5796BFD0"]
+			hide: true
 			id: "3671DBBFABCD1B71"
 			tasks: [{
 				id: "2BFFB61E4BD27ADC"
@@ -92,12 +96,12 @@
 			}]
 		}
 		{
+			title: "石油精炼"
 			x: 2.0d
 			y: 5.0d
 			description: [
-				"使用精炼厂处理石油"
-				"精炼厂输出端需放置在控制器的上方"
-				"在输出端周围放置羊毛可降低热量的散发"
+				"加工石油的必备套件。"
+				"使用热管给控制器传热以更快速的升温，升温速度根据发热方块决定，比如：高温液体，岩浆块，烈焰人燃烧室，火炉，篝火，烈焰网甚至是火把都是发热方块。"
 			]
 			dependencies: ["3671DBBFABCD1B71"]
 			id: "53351BAE32FDCD6A"
@@ -111,6 +115,12 @@
 					id: "64AA7E7AB4E74908"
 					type: "item"
 					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+				{
+					id: "34EB4BEDA3D16165"
+					type: "item"
+					item: "pneumaticcraft:heat_pipe"
 				}
 			]
 			rewards: [{
@@ -120,12 +130,10 @@
 			}]
 		}
 		{
+			title: "石油，哪里有石油？"
 			x: 3.0d
 			y: 5.5d
-			description: [
-				"在沙漠地区你可能会发现沥青沙，经过处理便可获得石油"
-				"如果实在找不到野生石油，你也可以通过血人工合成石油"
-			]
+			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，又或许实在找不到沙漠而打算使用血液人工合成石油，但这些并不是最优选择，您需要探矿杖，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
 			dependencies: ["3671DBBFABCD1B71"]
 			id: "0BC087D2D6933F9C"
 			tasks: [{
@@ -143,11 +151,12 @@
 			title: "电力时代！"
 			x: 0.0d
 			y: 7.0d
-			description: ["从你破坏的第一颗树开始……到应力时代的嗡嗡作响……再到压力时代的气体泄漏，你已经历许多。现在，开启你最伟大的探索吧：从早期工业革命到信息时代！"]
+			description: ["从您破坏的第一颗原木开始......到应力时代的嗡嗡作响......再到压力时代的气体泄漏，你已经历许多。现在，开启你最伟大的探索吧：从早期生产力的革命到浩瀚星宇！"]
 			dependencies: [
 				"3909A2788335AB22"
 				"4172CB4FD4825D49"
 			]
+			hide: true
 			id: "04B534A53F398C7A"
 			tasks: [{
 				id: "0E3CCC035533C713"
@@ -456,6 +465,7 @@
 				"您需要提前把煤炭处理为焦炭，并把焦炭与铁加热混合搅拌即可获得。"
 			]
 			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
 			id: "4C2C16BA5796BFD0"
 			tasks: [{
 				id: "7F7ABA73E1D85FA9"
@@ -492,7 +502,9 @@
 		{
 			x: 4.0d
 			y: 6.0d
+			description: ["一种能召唤闪电的催化物，合成塑料的必备配料。"]
 			dependencies: ["0BB8CB7E2D58A3DB"]
+			hide: true
 			id: "101644FFFD0476B7"
 			tasks: [{
 				id: "01E27DFB90BAD145"
@@ -508,7 +520,9 @@
 		{
 			x: 5.5d
 			y: 6.0d
+			description: ["使用分液池从沙子中过滤出细沙，并使用辊压机压缩细沙获得。"]
 			dependencies: ["0D3B950AFB6E6BC2"]
+			hide: true
 			id: "0BB8CB7E2D58A3DB"
 			tasks: [{
 				id: "40F1D4E0B5565FDB"
@@ -647,6 +661,7 @@
 			shape: "hexagon"
 			description: ["现在，你可以通过生产噩梦缠怨锭来人工合成下界合金，进行简单粉碎处理有一半的概率可获得下界合金碎片，而当您进入电力时代之后，便可用感应炉直接合成出下界合金锭！"]
 			dependencies: ["32F577B605FC8D35"]
+			hide: true
 			id: "5CBFBFC9BDCDFA57"
 			tasks: [{
 				id: "7341D8E93B12B56C"
@@ -717,6 +732,7 @@
 				"53351BAE32FDCD6A"
 				"101644FFFD0476B7"
 			]
+			hide: true
 			id: "3909A2788335AB22"
 			tasks: [{
 				id: "7506E9BEABEB8369"
@@ -732,6 +748,7 @@
 		{
 			x: 0.0d
 			y: 4.0d
+			description: ["一种又轻又软的金属。"]
 			dependencies: ["137563E84BDBF0CC"]
 			hide: true
 			id: "4172CB4FD4825D49"
@@ -771,6 +788,7 @@
 			y: 7.5d
 			shape: "rsquare"
 			dependencies: ["14A8E7E37136FB5C"]
+			hide: true
 			id: "5D059C7F1A64ABB9"
 			tasks: [{
 				id: "0C84183C7A0C3F89"
@@ -845,6 +863,7 @@
 			y: 7.5d
 			shape: "rsquare"
 			dependencies: ["14A8E7E37136FB5C"]
+			hide: true
 			id: "43E93D9FC2ED3F4D"
 			tasks: [{
 				id: "023B963A1AA50DCF"

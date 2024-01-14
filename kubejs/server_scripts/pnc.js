@@ -802,6 +802,14 @@ onEvent('recipes', event => {
 		D: 'kubejs:pressure_mechanism'
 	}).id("atlanabyss:assembly_controller")
 
+	//发热方块
+	event.custom({
+		"type": "pneumaticcraft:heat_properties",
+		"block": 'kubejs:plutonium_block',
+		"temperature": 2273,
+		"thermalResistance": 10
+	}).id("atlanabyss:heat_properties_plutonium_block")
+
 	//石油处理
 	for (let i = 2; i < 5; i++) {
 		event.remove({ id: 'pneumaticcraft:refinery/oil_' + i })

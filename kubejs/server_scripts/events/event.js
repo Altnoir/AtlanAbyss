@@ -52,7 +52,7 @@ onEvent('item.right_click', event => {
       player.playSound('minecraft:block.enchantment_table.use');
       if (activation) {
         if (lootbag === 'kubejs:halo_gashapon') {
-          player.playSound('kubejs:ciallo')
+          server.runCommandSilent(`/playsound kubejs:ciallo voice @a ${player.x} ${player.y} ${player.z} 1 1`)
         } else {
           player.playSound('minecraft:entity.player.levelup');
         }
