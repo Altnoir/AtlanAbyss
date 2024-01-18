@@ -25,10 +25,15 @@
 // 		.registerPortal();
 // });
 
-
+onEvent('botania.brews.registry', event => {
+	event.create('alicepowah')
+		.cost(5000)
+		.effect('kubejs:alice_powah', 480 * 20, 0, false, false)
+		.noIncense();
+})
 
 onEvent('mob_effect.registry', event => {
-	event.create('alice_powah', 'basic')
+	event.create('alice_powah')
 })
 
 onEvent('item.modification', event => {

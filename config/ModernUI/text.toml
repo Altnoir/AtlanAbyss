@@ -47,8 +47,8 @@
 	#you can disable this option for compatibility, but this will decrease performance a bit.
 	#Modern UI will use another cache strategy if this is disabled.
 	useComponentCache = true
-	#Allow text layout to be computed from non-main threads.
-	#Otherwise, block on current thread.
+	#Allow text layout to be computed from background threads, which may lead to inconsistency issues.
+	#Otherwise, block the current thread and wait for main thread.
 	allowAsyncLayout = true
 	#See CSS line-break property, https://developer.mozilla.org/en-US/docs/Web/CSS/line-break
 	#Allowed Values: AUTO, LOOSE, NORMAL, STRICT

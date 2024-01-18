@@ -333,11 +333,9 @@ onEvent('entity.hurt', event => {
       });
     }
     if (cmData === 11821908) { // 破伤
-      let damage6 = damage * 5;
       if (health >= maxHealth * 0.9) {
-        server.scheduleInTicks(1, () => {
-          entity.attack(source, damage6);
-        })
+        entity.attack(source, damage * 8);
+        event.cancel();
       }
     }
     if (cmData === 11821909) { // 斩杀
@@ -359,6 +357,7 @@ onEvent('entity.hurt', event => {
       for (let entities of entityList) {
         entities.attack(source, damage / 2);
       }
+      event.cancel();
     }
     if (cmData === 11821911) { // 流血
       let bleeding = entityEffect.getActive('apotheosis:bleeding');
@@ -396,6 +395,10 @@ onEvent('entity.hurt', event => {
         let weLevel = Math.min(wea, 4);
         entityEffect.add('minecraft:weakness', weTime, weLevel);
       }
+    }
+    if (cmData === 11821916) { // 幸运
+      entity.attack(source, Math.max(0.5, damage * health / 64));
+      event.cancel();
     }
   }
 })

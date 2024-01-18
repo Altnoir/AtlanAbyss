@@ -9,9 +9,6 @@
 	#The item that can NTR maid
 	#Use the registered name of the item directly or write tag name with # as prefix
 	MaidNtrItem = "minecraft:structure_void"
-	#The max range of maid home mode
-	#Range: 3 ~ 64
-	MaidHomeRange = 8
 	#Maid can switch models freely
 	MaidChangeModel = true
 	#The maximum number of maids the player own
@@ -19,6 +16,18 @@
 	OwnerMaxMaidNum = 2147483647
 	#The entity that the maid will not hurt when in ranged attack
 	MaidRangedAttackIgnore = []
+	#The max range of maid work mode
+	#Range: 3 ~ 64
+	MaidWorkRange = 12
+	#The max range of maid idle mode
+	#Range: 3 ~ 32
+	MaidIdleRange = 6
+	#The max range of maid sleep mode
+	#Range: 3 ~ 32
+	MaidSleepRange = 6
+	#The max range of maid's Non-Home mode
+	#Range: 3 ~ 32
+	MaidNonHomeRange = 8
 
 [chair]
 	#Chair can switch models freely
@@ -49,6 +58,8 @@
 	ShrineLampMaxRange = 6
 	#Give the Memorizable Gensokyo book item for player first join
 	GivePatchouliBook = true
+	#The following biome do not spawn maid fairy
+	MaidFairyBlacklistBiome = ["minecraft:the_void", "minecraft:mushroom_fields"]
 
 [vanilla]
 	#Whether to replace the vanilla slime model with the yukkuri.

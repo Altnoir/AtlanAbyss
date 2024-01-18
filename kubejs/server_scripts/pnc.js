@@ -804,7 +804,7 @@ onEvent('recipes', event => {
 
 	//发热方块
 	event.custom({
-		"type": "pneumaticcraft:heat_properties",
+		"type": 'pneumaticcraft:heat_properties',
 		"block": 'kubejs:plutonium_block',
 		"temperature": 2273,
 		"thermalResistance": 10

@@ -59,7 +59,7 @@ onEvent('item.tooltip', tooltip => {
     // ore('create:deepslate_zinc_ore', 'tooltip.kubejs.zinc_y', 'tooltip.kubejs.overworld')
 
 
-    
+
     // tooltip.addAdvanced('kubejs:mixed_herb_gg', (item, advanced, text) => {
     //     if (!tooltip.shift) {
     //         text.add(1, Text.translate('tooltip.kubejs.shift'));
@@ -288,7 +288,8 @@ onEvent('item.tooltip', tooltip => {
                 text.add(5, Text.of(' '));
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.mari1'));
-                text.add(8, Text.of(' '));
+                text.add(8, Text.translate('tooltip.kubejs.mari2'));
+                text.add(9, Text.of(' '));
             }
         }
         if (cmData === 11821911) {
@@ -371,7 +372,8 @@ onEvent('item.tooltip', tooltip => {
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.purana1'));
                 text.add(8, Text.translate('tooltip.kubejs.purana2'));
-                text.add(9, Text.of(' '));
+                text.add(9, Text.translate('tooltip.kubejs.purana3'));
+                text.add(10, Text.of(' '));
             }
         }
     })

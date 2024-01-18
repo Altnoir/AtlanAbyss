@@ -25,8 +25,14 @@
 				type: "item"
 				item: "botania:apothecary_default"
 			}]
+			rewards: [{
+				id: "4C0011AE59D576EF"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			disable_toast: true
 			x: -2.0d
 			y: 0.0d
 			dependencies: ["5A6B03E76B3807D3"]
@@ -35,6 +41,11 @@
 				id: "555D472205C8CF82"
 				type: "item"
 				item: "botania:lexicon"
+			}]
+			rewards: [{
+				id: "146F600BEFFE53F5"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -46,6 +57,11 @@
 				id: "5A59F3890E0E1513"
 				type: "item"
 				item: "botania:pure_daisy"
+			}]
+			rewards: [{
+				id: "3F43648CFE525DA0"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -59,13 +75,18 @@
 				type: "item"
 				item: "ars_nouveau:imbuement_chamber"
 			}]
+			rewards: [{
+				id: "0C129AE0A3FD2743"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
 			x: 4.0d
 			y: 1.5d
 			shape: "hexagon"
-			description: ["一把会飞的扫帚！不觉得很酷吗？作为一个魔法少女我可觉得太酷了，很符合我对魔法世界的想象！"]
+			description: ["一把会飞的扫帚！不觉得很酷吗？"]
 			dependencies: [
 				"381E536079E75588"
 				"369202E8265D6C29"
@@ -113,22 +134,13 @@
 			x: 5.5d
 			y: -1.5d
 			shape: "hexagon"
-			description: [
-				"移除了妖精女仆生物"
-				"但是，手持博丽的御币时击杀任意生物可掉落P点"
-			]
+			description: ["本整合包虽然移除了妖精女仆的生成，但你可以通过魔力池转换经验瓶以获得相应的P点。"]
 			dependencies: ["0FFF68D8B91B8A70"]
 			id: "6CC3920A8B0C1B39"
 			tasks: [{
-				id: "5E5243CA26ED8136"
+				id: "2350CF369489A7D8"
 				type: "item"
-				item: {
-					id: "touhou_little_maid:hakurei_gohei"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "touhou_little_maid:power_point"
 			}]
 			rewards: [{
 				id: "5B67A8B7E288A7AF"
@@ -146,6 +158,11 @@
 				type: "item"
 				item: "botania:mana_pool"
 			}]
+			rewards: [{
+				id: "1191162F600702ED"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 4.0d
@@ -156,6 +173,11 @@
 				id: "26D12D36A9BDAE67"
 				type: "item"
 				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "55D171CB32988214"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -171,8 +193,14 @@
 				type: "item"
 				item: "botania:alchemy_catalyst"
 			}]
+			rewards: [{
+				id: "554DF64C55B7688D"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			disable_toast: true
 			x: 3.5d
 			y: -1.5d
 			dependencies: ["404B700E4ABCA47D"]
@@ -182,8 +210,14 @@
 				type: "item"
 				item: "botania:endoflame"
 			}]
+			rewards: [{
+				id: "5AB5E2F88ECF9922"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			disable_toast: true
 			x: 4.5d
 			y: -1.5d
 			dependencies: ["404B700E4ABCA47D"]
@@ -192,6 +226,11 @@
 				id: "34D00AD113B88FF7"
 				type: "item"
 				item: "botania:hydroangeas"
+			}]
+			rewards: [{
+				id: "7BEACB1EB1714F0B"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -204,6 +243,11 @@
 				type: "item"
 				item: "ars_nouveau:magebloom_crop"
 			}]
+			rewards: [{
+				id: "5F5FF1F2F508361A"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 2.5d
@@ -214,6 +258,11 @@
 				id: "1A648AC27BF07D7D"
 				type: "item"
 				item: "ars_creo:starbuncle_wheel"
+			}]
+			rewards: [{
+				id: "3830C2031B36FBA1"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -226,6 +275,11 @@
 				type: "item"
 				item: "ars_nouveau:enchanting_apparatus"
 			}]
+			rewards: [{
+				id: "2DE9560B4DE456F6"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 0.0d
@@ -236,6 +290,11 @@
 				id: "364773923450B540"
 				type: "item"
 				item: "ars_nouveau:arcane_core"
+			}]
+			rewards: [{
+				id: "05980D1EA0B557D0"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -248,6 +307,11 @@
 				type: "item"
 				item: "ars_nouveau:scribes_table"
 			}]
+			rewards: [{
+				id: "25A13A418237C200"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 0.0d
@@ -258,6 +322,11 @@
 				id: "40402662D7D5648B"
 				type: "item"
 				item: "ars_nouveau:relay"
+			}]
+			rewards: [{
+				id: "05920F19A9CCED55"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -270,6 +339,11 @@
 				type: "item"
 				item: "ars_nouveau:relay_splitter"
 			}]
+			rewards: [{
+				id: "3F59A61404899734"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 0.5d
@@ -280,6 +354,11 @@
 				id: "6A936008651E3AF5"
 				type: "item"
 				item: "ars_nouveau:relay_deposit"
+			}]
+			rewards: [{
+				id: "1D4253E3AD4BF30F"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -292,6 +371,11 @@
 				type: "item"
 				item: "ars_nouveau:relay_collector"
 			}]
+			rewards: [{
+				id: "448E622D5D7F6D6A"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -0.5d
@@ -302,6 +386,11 @@
 				id: "16B1E7EA8A2CA08D"
 				type: "item"
 				item: "ars_nouveau:relay_warp"
+			}]
+			rewards: [{
+				id: "6783A128DAFAEEEC"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -314,6 +403,11 @@
 				type: "item"
 				item: "ars_nouveau:arcane_pedestal"
 			}]
+			rewards: [{
+				id: "434D87F010E078BB"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 2.5d
@@ -324,6 +418,11 @@
 				id: "336BF98AD48653B9"
 				type: "item"
 				item: "ars_nouveau:ritual_brazier"
+			}]
+			rewards: [{
+				id: "7C147B363D967537"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -336,6 +435,11 @@
 				type: "item"
 				item: "ars_nouveau:source_jar"
 			}]
+			rewards: [{
+				id: "21A1A54923AC22C3"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 6.0d
@@ -346,6 +450,11 @@
 				id: "4CF5536C59753445"
 				type: "item"
 				item: "ars_nouveau:agronomic_sourcelink"
+			}]
+			rewards: [{
+				id: "6DB255634353C9AF"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -358,6 +467,11 @@
 				type: "item"
 				item: "ars_nouveau:volcanic_sourcelink"
 			}]
+			rewards: [{
+				id: "78529DE2EFD3ECC9"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 5.5d
@@ -368,6 +482,11 @@
 				id: "1D4C9B19C5461BC0"
 				type: "item"
 				item: "ars_nouveau:alchemical_sourcelink"
+			}]
+			rewards: [{
+				id: "7F8C576414E9A52E"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -380,6 +499,11 @@
 				type: "item"
 				item: "ars_nouveau:vitalic_sourcelink"
 			}]
+			rewards: [{
+				id: "251B285106070681"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 4.5d
@@ -391,8 +515,14 @@
 				type: "item"
 				item: "ars_nouveau:mycelial_sourcelink"
 			}]
+			rewards: [{
+				id: "25C53B688D4F4071"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
+			disable_toast: true
 			x: -2.0d
 			y: 4.5d
 			dependencies: ["3F1BC198BA9B6A45"]
@@ -401,6 +531,54 @@
 				id: "2F49E43854EF3046"
 				type: "item"
 				item: "ars_nouveau:worn_notebook"
+			}]
+			rewards: [{
+				id: "4FBFD62FC7E816A7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			dependencies: ["5764D7F29A9A31E0"]
+			id: "176873F1E61B607A"
+			tasks: [{
+				id: "459ACB47AC116779"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+			rewards: [{
+				id: "59E95D9FB545B722"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			dependencies: ["0FFF68D8B91B8A70"]
+			id: "5764D7F29A9A31E0"
+			tasks: [{
+				id: "0081763FC92938EC"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [{
+				id: "5BD5328E181464CB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.5d
+			dependencies: ["176873F1E61B607A"]
+			id: "5D1503960882D059"
+			tasks: [{
+				id: "5D026616E7B32315"
+				type: "item"
+				item: "botania:terrasteel_ingot"
 			}]
 		}
 	]

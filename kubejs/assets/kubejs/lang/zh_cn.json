@@ -334,6 +334,7 @@
     "kubejs.purana.name":"§c普拉娜的光环",
 
     "effect.kubejs.alice_powah":"§b爱丽丝之力",
+    "kubejs.brew.alicepowah":"爱丽丝之力",
 
     "tooltip.kubejs.shift":"§8按住 [§7Shift§8] 以显示概要",
     "tooltip.kubejs.shifton":"§8按住 [§fShift§8] 以显示概要",
@@ -366,7 +367,7 @@
 
     "tooltip.kubejs.midori":"§6破伤之环",
     "tooltip.kubejs.midori1":"§6如果被攻击者的当前生命值高于§e90%§6，则",
-    "tooltip.kubejs.midori2":"§6使§e枪械攻击§6提高§e六倍§6伤害",
+    "tooltip.kubejs.midori2":"§6使§e枪械攻击§6提高§e八倍§6伤害",
 
     "tooltip.kubejs.momoi":"§6处决之环",
     "tooltip.kubejs.momoi1":"§6如果被攻击者的当前生命值低于§e1/3§6，则",
@@ -374,6 +375,7 @@
 
     "tooltip.kubejs.mari":"§6横扫之环",
     "tooltip.kubejs.mari1":"§6使§e枪械攻击§6造成范围伤害",
+    "tooltip.kubejs.mari2":"§6但伤害减半",
 
     "tooltip.kubejs.hoshino":"§6灾难之环",
     "tooltip.kubejs.hoshino1":"§6使§e枪械攻击§6额外造成§e流血§6效果",
@@ -395,8 +397,9 @@
     "tooltip.kubejs.hasumi2":"§6(消耗品)",
 
     "tooltip.kubejs.purana":"§6幸运之环",
-    "tooltip.kubejs.purana1":"§6waw",
-    "tooltip.kubejs.purana2":"§6awa",
+    "tooltip.kubejs.purana1":"§6被攻击者血量越多",
+    "tooltip.kubejs.purana2":"§e枪械攻击§6伤害越高",
+    "tooltip.kubejs.purana3":"§6反之亦然",
 
     "subtitle.kubejs.ciallo":"Ciallo～(∠・ω< )⌒☆",
 
