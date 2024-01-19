@@ -48,10 +48,10 @@
                     "weight": 1,
                     "functions": [
                         {
-                          "function": "minecraft:set_nbt",
-                          "tag": "{AmmoCount:1}"
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoCount:1}"
                         }
-                      ],
+                    ],
                     "name": "tac:rpg7"
                 }
             ]

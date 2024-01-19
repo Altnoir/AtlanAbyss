@@ -1887,6 +1887,7 @@ onEvent('recipes', event => {
 		'create:refined_radiance'
 	]).id("atlanabyss:item_application_refined_radiance_casing")
 
+
 	//铋晶体
 	remove('yuushya:bismuth_crystal')
 	event.custom({

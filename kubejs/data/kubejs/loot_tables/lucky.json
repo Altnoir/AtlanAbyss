@@ -17,12 +17,17 @@
                     }
                 }
             },
-            "entries": [         
+            "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
                     "name": "kubejs:lucky/album"
-                },  
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "kubejs:lucky/artifacts"
+                },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 6,
@@ -95,20 +100,24 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 3,
+                    "weight": 2,
                     "name": "kubejs:lucky/uma_crystal"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 4,
+                    "weight": 1,
                     "name": "kubejs:lucky/uma_skill_book"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 6,
+                    "weight": 1,
                     "name": "kubejs:lucky/uma_supply_book"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "kubejs:lucky/uma_support_card"
                 }
-                
             ]
         }
     ]

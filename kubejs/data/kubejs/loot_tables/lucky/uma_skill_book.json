@@ -1,139 +1,138 @@
 {
-    "pools": [
-        {
-            "rolls": {
-                "min": 1,
-                "max": {
-                    "min": 1,
-                    "max": {
-                        "min": 1,
-                        "max": 2
-                    }
-                }
-            },
-            "entries": [    
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:last_leg\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_nbt",
-                      "tag": "{skill:\"umapyoi:heart_and_soul\"}"
-                    }
-                  ],
-                  "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:deep_breaths\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_nbt",
-                      "tag": "{skill:\"umapyoi:cooldown\"}"
-                    }
-                  ],
-                  "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:low_health_heal\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:adv_low_health_heal\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:low_health_buff\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:adv_low_health_buff\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:nutritional_supplements\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_nbt",
-                      "tag": "{skill:\"umapyoi:big_eater\"}"
-                    }
-                  ],
-                  "name": "umapyoi:skill_book"
-                },
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                      {
-                        "function": "minecraft:set_nbt",
-                        "tag": "{skill:\"umapyoi:serene\"}"
-                      }
-                    ],
-                    "name": "umapyoi:skill_book"
-                },
-                {
-                  "type": "minecraft:item",
-                  "functions": [
-                    {
-                      "function": "minecraft:set_nbt",
-                      "tag": "{skill:\"umapyoi:steel_will\"}"
-                    }
-                  ],
-                  "name": "umapyoi:skill_book"
-                }                                                                          
-              ]
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": {
+          "min": 1,
+          "max": {
+            "min": 1,
+            "max": 2
+          }
         }
-    ]
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:last_leg\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:heart_and_soul\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:deep_breaths\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:cooldown\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:low_health_heal\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:adv_low_health_heal\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:low_health_buff\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:adv_low_health_buff\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:nutritional_supplements\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:big_eater\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:serene\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:steel_will\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        }
+      ]
+    }
+  ]
 }
-

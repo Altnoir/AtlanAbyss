@@ -5,7 +5,7 @@
                 "min": 1,
                 "max": 5
             },
-            "entries": [  
+            "entries": [
                 {
                     "type": "minecraft:item",
                     "weight": 1,
@@ -91,7 +91,7 @@
                             }
                         }
                     ]
-                },                                      
+                },
                 {
                     "type": "minecraft:item",
                     "weight": 3,
@@ -101,7 +101,7 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:super_glue"
-                }, 
+                },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
@@ -297,7 +297,7 @@
                     "type": "minecraft:item",
                     "weight": 6,
                     "name": "create:mechanical_arm"
-                },               
+                },
                 {
                     "type": "minecraft:item",
                     "weight": 14,
@@ -341,7 +341,6 @@
                             }
                         }
                     ]
-                    
                 }
             ]
         }

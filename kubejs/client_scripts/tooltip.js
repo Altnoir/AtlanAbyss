@@ -149,6 +149,12 @@ onEvent('item.tooltip', tooltip => {
     //     }
     // })
 
+    //NBT工具
+    // tooltip.addAdvanced(Ingredient.all, (item, advanced, text) => {
+    //     if (tooltip.ctrl && item.nbt) {
+    //         text.add(Text.of('NBT: ').append(Text.prettyPrintNbt(item.nbt)))
+    //     }
+    // })
 
 
 

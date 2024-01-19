@@ -955,6 +955,26 @@
 				}
 			]
 		}
+		{
+			title: "愛するあなたと世界の果てまで行きましょう！"
+			x: 0.0d
+			y: 12.0d
+			description: ["与心爱的你走向世界尽头！"]
+			dependencies: ["04B534A53F398C7A"]
+			hide: true
+			id: "28670C1E02245523"
+			tasks: [{
+				id: "2A68778D3CEFF75A"
+				type: "dimension"
+				icon: "beyond_earth:permafrost"
+				dimension: "beyond_earth:glacio"
+			}]
+			rewards: [{
+				id: "76B4C53FC9CBF379"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }

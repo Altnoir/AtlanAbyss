@@ -1,95 +1,94 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cApricot\",time:203,url:\"https://music.163.com/song/media/outer/url?id=2098204790.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cApricot\",time:203,url:\"https://music.163.com/song/media/outer/url?id=2098204790.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cペンと林檎とわたし\",time:235,trans_name:\"画笔与苹果与我\",url:\"https://music.163.com/song/media/outer/url?id=2098200618.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cペンと林檎とわたし\",time:235,trans_name:\"画笔与苹果与我\",url:\"https://music.163.com/song/media/outer/url?id=2098200618.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cハートレス・トリコロール\",time:178,url:\"https://music.163.com/song/media/outer/url?id=2098204791.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cハートレス・トリコロール\",time:178,url:\"https://music.163.com/song/media/outer/url?id=2098204791.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cストレンジレッド\",time:200,url:\"https://music.163.com/song/media/outer/url?id=2098204792.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cストレンジレッド\",time:200,url:\"https://music.163.com/song/media/outer/url?id=2098204792.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cUntitled Sky\",time:240,url:\"https://music.163.com/song/media/outer/url?id=2098200619.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§cUntitled Sky\",time:240,url:\"https://music.163.com/song/media/outer/url?id=2098200619.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§c雷花\",time:207,url:\"https://music.163.com/song/media/outer/url?id=2098204793.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      }
-    ]
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§c雷花\",time:207,url:\"https://music.163.com/song/media/outer/url?id=2098204793.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
 }
-

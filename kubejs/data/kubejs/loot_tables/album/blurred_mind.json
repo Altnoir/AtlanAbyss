@@ -1,95 +1,94 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3ペトリコール\",time:209,trans_name:\"湿土气味\",url:\"https://music.163.com/song/media/outer/url?id=1990969313.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3ペトリコール\",time:209,trans_name:\"湿土气味\",url:\"https://music.163.com/song/media/outer/url?id=1990969313.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3秒針とソーダフロート\",time:197,trans_name:\"秒针与漂浮苏打\",url:\"https://music.163.com/song/media/outer/url?id=1990969314.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3秒針とソーダフロート\",time:197,trans_name:\"秒针与漂浮苏打\",url:\"https://music.163.com/song/media/outer/url?id=1990969314.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3無言の鳥籠\",time:217,trans_name:\"无言的鸟笼\",url:\"https://music.163.com/song/media/outer/url?id=1990969315.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3無言の鳥籠\",time:217,trans_name:\"无言的鸟笼\",url:\"https://music.163.com/song/media/outer/url?id=1990969315.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3シュガーレス・レイン\",time:236,trans_name:\"无糖雨\",url:\"https://music.163.com/song/media/outer/url?id=1990969316.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3シュガーレス・レイン\",time:236,trans_name:\"无糖雨\",url:\"https://music.163.com/song/media/outer/url?id=1990969316.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3ココロメソッド\",time:260,trans_name:\"心灵公式\",url:\"https://music.163.com/song/media/outer/url?id=1990969317.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3ココロメソッド\",time:260,trans_name:\"心灵公式\",url:\"https://music.163.com/song/media/outer/url?id=1990969317.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
             {
-                "type": "minecraft:item",
-                "functions": [
-                  {
-                    "function": "minecraft:set_nbt",
-                    "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3ミントブルー・ガール（2022 Edition）\",time:286,trans_name:\"薄荷蓝女孩\",url:\"https://music.163.com/song/media/outer/url?id=1990966421.mp3\",vip:0b}}"
-                  }
-                ],
-                "name": "netmusic:music_cd"
-            }                                                                           
-          ]
-      }
-    ]
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§3ミントブルー・ガール（2022 Edition）\",time:286,trans_name:\"薄荷蓝女孩\",url:\"https://music.163.com/song/media/outer/url?id=1990966421.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
 }
-

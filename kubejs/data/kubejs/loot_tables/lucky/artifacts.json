@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": {
+                    "min": 1,
+                    "max": 3
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "name": "artifacts:artifacts",
+                    "expand": true
+                }
+            ]
+        }
+    ]
+}
