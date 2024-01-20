@@ -46,7 +46,6 @@ onEvent('item.right_click', event => {
 
   function lootbag(lootbag, lootable, activation) {
     if (item === lootbag) {
-      event.cancel();
       player.swingArm(event.hand);
       server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${player.x} ${player.y} ${player.z} loot ${lootable}`);
       player.playSound('minecraft:block.enchantment_table.use');
@@ -81,11 +80,11 @@ onEvent('item.right_click', event => {
         let count = item.count;
         add(count * 2);
         player.mainHandItem.count -= count;
-        player.addItemCooldown(artifact, 100);
+        player.addItemCooldown(artifact, 80);
       } else {
         add(2);
         player.mainHandItem.count -= 1;
-        player.addItemCooldown(artifact, 100);
+        player.addItemCooldown(artifact, 80);
       }
     } else {
       server.tell('§b地图已经扩到最大了');
@@ -334,7 +333,7 @@ onEvent('entity.hurt', event => {
     }
     if (cmData === 11821908) { // 破伤
       if (health >= maxHealth * 0.9) {
-        entity.attack(source, damage * 8);
+        entity.attack(source, damage * 10);
         event.cancel();
       }
     }
@@ -374,15 +373,16 @@ onEvent('entity.hurt', event => {
     if (cmData === 11821912) { // 赌徒
       let random = () => Utils.random.nextInt(6); // 0-5
       let randomList = [random(), random()]
-      server.scheduleInTicks(1, () => {
-        if (randomList[0] === 0) {
-          if (randomList[1] === 0 || randomList[1] === 2 || randomList[1] === 4) {
-            entity.attack(source, damage * 19);
-          } else {
-            actual.attack(source, damage * 19);
-          }
+
+      if (randomList[0] === 0) {
+        if (randomList[1] === 0 || randomList[1] === 2 || randomList[1] === 4) {
+          entity.attack(source, damage * 88);
+        } else {
+          actual.attack(source, damage * 88);
         }
-      })
+      }
+      event.cancel();
+
     }
     if (cmData === 11821913) { // 虚弱
       let weakness = entityEffect.getActive('minecraft:weakness');
@@ -397,7 +397,16 @@ onEvent('entity.hurt', event => {
       }
     }
     if (cmData === 11821916) { // 幸运
-      entity.attack(source, Math.max(0.5, damage * health / 64));
+      let wobs = level.worldBorder.getSize() / 96;
+      let alice = actualEffect.getActive('kubejs:alice_powah');
+
+      if (alice != null) {
+        entity.attack(source, Math.max(0.5, damage * health / 32));
+      } else if (level.worldBorder.getSize() > 59999800) {
+        entity.attack(source, damage + wobs * 8);
+      } else {
+        entity.attack(source, damage + 8);
+      }
       event.cancel();
     }
   }

@@ -13,12 +13,6 @@ function musicRecipes(event) {
       id: "atlanabyss:music_cd_16"
     },
     {
-      url: "https://music.163.com/song/media/outer/url?id=2010586266.mp3",
-      name: "その日入った新人より使えないダメバイトのエレジー",
-      time_second: 28,
-      id: "atlanabyss:music_cd_17"
-    },
-    {
       url: "https://music.163.com/song/media/outer/url?id=2010586262.mp3",
       name: "陰キャの果て",
       time_second: 66,
@@ -282,8 +276,9 @@ function musicRecipes(event) {
       name: "Tomorrowland",
       time_second: 172,
       id: "atlanabyss:music_cd_61"
-    }
+    },
   ];
+
   //唱片
   for (const music of musics) {
     event.custom({
@@ -299,6 +294,77 @@ function musicRecipes(event) {
         id: 'netmusic:music_cd',
         amount: 1,
         nbt: `{NetMusicSongInfo:{name:'${music.name}',time:${music.time_second},url:'${music.url}'}}`
+      },
+      level: 4,
+      maxStock: 1
+    }).id(music.id);
+  }
+
+  const newMusics = [
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"榊原ゆい\"],name:\"愛しさと感謝の気持ち\",time:342,trans_name:\"献予你的爱意与谢意\",url:\"https://music.163.com/song/media/outer/url?id=473403183.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_1"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"KOTOKO\"],name:\"恋ひ恋ふ縁\",time:237,trans_name:\"以恋结缘\",url:\"https://music.163.com/song/media/outer/url?id=473403182.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_2"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"井ノ原智\"],name:\"恋ひ恋ふ縁 (Title Version)\",time:235,url:\"https://music.163.com/song/media/outer/url?id=473403127.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_3"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"花鳥風月\",time:187,url:\"https://music.163.com/song/media/outer/url?id=473403139.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_4"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"ひとときの安息\",time:183,url:\"https://music.163.com/song/media/outer/url?id=473403143.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_5"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"くつろぎの間\",time:163,url:\"https://music.163.com/song/media/outer/url?id=473403144.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_6"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"本日は晴天なり\",time:327,trans_name:\"今日万里无云\",url:\"https://music.163.com/song/media/outer/url?id=473403145.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_7"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"井ノ原智\"],name:\"良日\",time:185,url:\"https://music.163.com/song/media/outer/url?id=473403151.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_8"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"ゆずひこ\"],name:\"とおりゃんせ～甘美風来 <Instrument Version>\",time:156,url:\"https://music.163.com/song/media/outer/url?id=473403158.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_9"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"ゆずひこ\"],name:\"とおりゃんせ～甘美風来 <Quiet Version>\",time:99,url:\"https://music.163.com/song/media/outer/url?id=473403164.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_10"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"恋ひ恋ふ縁＜Koto Version＞\",time:215,url:\"https://music.163.com/song/media/outer/url?id=473403170.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_11"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"恋ひ恋ふ縁＜Piano Version＞\",time:157,url:\"https://music.163.com/song/media/outer/url?id=473403174.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_12"
+    }
+  ];
+
+  for (const music of newMusics) {
+    event.custom({
+      type: 'pneumaticcraft:amadron',
+      static: false,
+      input: {
+        type: 'ITEM',
+        id: 'minecraft:emerald',
+        amount: 15
+      },
+      output: {
+        type: 'ITEM',
+        id: 'netmusic:music_cd',
+        amount: 1,
+        nbt: music.nbt
       },
       level: 3,
       maxStock: 1

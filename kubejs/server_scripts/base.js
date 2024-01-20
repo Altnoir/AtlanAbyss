@@ -72,6 +72,8 @@ onEvent('recipes', event => {
 		D: 'minecraft:stick'
 	}).id("atlanabyss:vein_finder")
 
+	compacting('kubejs:world_rune', '64x minecraft:cobblestone').id("atlanabyss:compacting_world_rune")
+
 
 	//修复了原版宝石矿能烧的BUG
 	let blastingAndSmelting = (name) => {

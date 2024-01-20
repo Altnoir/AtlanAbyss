@@ -20,11 +20,20 @@
 				type: "checkmark"
 				title: "确定"
 			}]
-			rewards: [{
-				id: "4707B9175C24D799"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "49442A1524C21A32"
+					type: "item"
+					item: "minecraft:grass_block"
+					count: 16
+				}
+				{
+					id: "6FDEEDA9F0B38A56"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 8
+				}
+			]
 		}
 		{
 			x: 6.5d
@@ -170,7 +179,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -1.0d
 			y: 8.0d
 			dependencies: ["04B534A53F398C7A"]
 			id: "11F6435C17265B4A"
@@ -619,7 +628,7 @@
 		}
 		{
 			x: 6.5d
-			y: 6.0d
+			y: 7.0d
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "14A8E7E37136FB5C"
@@ -804,7 +813,7 @@
 		{
 			title: "“这是什么?喝一口”"
 			disable_toast: true
-			x: 4.0d
+			x: -4.0d
 			y: 8.0d
 			shape: "hexagon"
 			description: ["核反应堆的产出物"]
@@ -971,6 +980,26 @@
 			}]
 			rewards: [{
 				id: "76B4C53FC9CBF379"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 6.5d
+			y: 6.0d
+			description: [
+				"世界神符：一种能扩大世界边界的功能性道具，右键使用，每次使用扩大2格边界，当有多个世界神符时可以蹲下一次性全部使用。"
+				"（临时配方）"
+			]
+			dependencies: ["0D3B950AFB6E6BC2"]
+			id: "1DDF4590B03EC6D4"
+			tasks: [{
+				id: "736E2C60FAC89ADE"
+				type: "item"
+				item: "kubejs:world_rune"
+			}]
+			rewards: [{
+				id: "305FDA3C03A86DFE"
 				type: "xp"
 				xp: 10
 			}]

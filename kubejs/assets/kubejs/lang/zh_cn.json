@@ -343,7 +343,8 @@
     "tooltip.kubejs.alice":"§6毁灭之环",
     "tooltip.kubejs.alice1":"§6使§e枪械攻击§6额外造成§e破甲§6效果",
     "tooltip.kubejs.alice2":"§6(可叠加)",
-    "tooltip.kubejs.alice3":"§6当穿戴者拥有§e爱丽丝之力§6时，则......",
+    "tooltip.kubejs.alice3":"§6当穿戴者拥有§e爱丽丝之力§6时，则",
+    "tooltip.kubejs.alice4":"§6自动锁头",
 
     "tooltip.kubejs.azusa":"§6雷霆之环",
     "tooltip.kubejs.azusa1":"§6使§e枪械攻击§6概率触发§e雷击§6，并且",
@@ -353,7 +354,7 @@
     "tooltip.kubejs.shiroko1":"§6使§e枪械攻击§6额外造成§e爆炸",
 
     "tooltip.kubejs.mika":"§6狂风之环",
-    "tooltip.kubejs.mika1":"§e枪械攻击§6可使被攻击者§e†升天†",
+    "tooltip.kubejs.mika1":"§e枪械攻击§6可使受击者§e†升天†",
 
     "tooltip.kubejs.yuuka":"§6庇佑之环",
     "tooltip.kubejs.yuuka1":"§6使§e枪械攻击§6能为穿戴者提供§e护盾",
@@ -363,15 +364,15 @@
     "tooltip.kubejs.koharu2":"§6潜行状态下，使治疗变为§e范围§6，但治疗量固定",
 
     "tooltip.kubejs.noa":"§6转移之环",
-    "tooltip.kubejs.noa1":"§6使§e枪械攻击§6能与被攻击者§e互换位置",
+    "tooltip.kubejs.noa1":"§6使§e枪械攻击§6能与受击者§e互换位置",
 
     "tooltip.kubejs.midori":"§6破伤之环",
-    "tooltip.kubejs.midori1":"§6如果被攻击者的当前生命值高于§e90%§6，则",
-    "tooltip.kubejs.midori2":"§6使§e枪械攻击§6提高§e八倍§6伤害",
+    "tooltip.kubejs.midori1":"§6如果受击者的当前生命值高于§e90%§6，则",
+    "tooltip.kubejs.midori2":"§6使§e枪械攻击§6提高§e10倍§6伤害",
 
     "tooltip.kubejs.momoi":"§6处决之环",
-    "tooltip.kubejs.momoi1":"§6如果被攻击者的当前生命值低于§e1/3§6，则",
-    "tooltip.kubejs.momoi2":"§6使§e枪械攻击§6能直接§e斩杀§6被攻击者",
+    "tooltip.kubejs.momoi1":"§6如果受击者的当前生命值低于§e1/3§6，则",
+    "tooltip.kubejs.momoi2":"§6使§e枪械攻击§6能直接§e斩杀§6受击者",
 
     "tooltip.kubejs.mari":"§6横扫之环",
     "tooltip.kubejs.mari1":"§6使§e枪械攻击§6造成范围伤害",
@@ -382,8 +383,8 @@
     "tooltip.kubejs.hoshino2":"§6(可叠加)",
 
     "tooltip.kubejs.iroha":"§6赌徒之环",
-    "tooltip.kubejs.iroha1":"§6使§e枪械攻击§6有§e1/6§6概率，在被攻击者或",
-    "tooltip.kubejs.iroha2":"§6穿戴者之间触发§e二十倍§6伤害",
+    "tooltip.kubejs.iroha1":"§6使§e枪械攻击§6有§e1/6§6概率，在受击者或",
+    "tooltip.kubejs.iroha2":"§6穿戴者之间触发§e88倍§6伤害",
 
     "tooltip.kubejs.izuna":"§6致虚之环",
     "tooltip.kubejs.izuna1":"§6使§e枪械攻击§6能造成§e虚弱§6效果",
@@ -397,9 +398,8 @@
     "tooltip.kubejs.hasumi2":"§6(消耗品)",
 
     "tooltip.kubejs.purana":"§6幸运之环",
-    "tooltip.kubejs.purana1":"§6被攻击者血量越多",
-    "tooltip.kubejs.purana2":"§e枪械攻击§6伤害越高",
-    "tooltip.kubejs.purana3":"§6反之亦然",
+    "tooltip.kubejs.purana1":"§6世界边界越大，§e枪械攻击§6伤害越高",
+    "tooltip.kubejs.purana2":"§6根据受击者血量造成伤害",
 
     "subtitle.kubejs.ciallo":"Ciallo～(∠・ω< )⌒☆",
 

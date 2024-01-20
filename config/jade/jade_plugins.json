@@ -10,7 +10,7 @@
     "jukebox": true,
     "horse_stat": true,
     "brewing_stand": true,
-    "animal_owner": false,
+    "animal_owner": true,
     "note_block": true,
     "inventory": true,
     "beehive": true,
@@ -48,9 +48,9 @@
   "jade": {
     "block_states": false,
     "entity_armor": true,
-    "registry_name": true,
+    "registry_name": false,
     "item_mod_name": false,
-    "mod_name": true,
+    "mod_name": false,
     "entity_hp": true
   }
 }
