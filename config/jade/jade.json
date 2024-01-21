@@ -3,7 +3,7 @@
     "displayTooltip": true,
     "displayBlocks": true,
     "displayEntities": true,
-    "displayMode": "LITE",
+    "displayMode": "TOGGLE",
     "hideFromDebug": true,
     "iconMode": "TOP",
     "enableTextToSpeech": false,

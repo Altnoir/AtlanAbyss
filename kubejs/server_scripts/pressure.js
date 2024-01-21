@@ -3,9 +3,14 @@ onEvent('recipes', event => {
 		mixing,
 		cutting,
 		filling,
+		emptying,
+		splashing,
 		compacting,
 		deploying,
+		milling,
+		crushing,
 		pressing,
+		item_application,
 		sequenced_assembly,
 		mechanical_crafting
 	} = event.recipes.create;
@@ -739,7 +744,7 @@ onEvent('recipes', event => {
 		[
 			deploying(pcb, [pcb, 'createaddition:capacitor']),
 			deploying(pcb, [pcb, 'createaddition:capacitor']),
-			deploying(pcb, [pcb, 'createaddition:brass_rod'])
+			deploying(pcb, [pcb, 'createaddition:gold_rod'])
 		]).transitionalItem(pcb).loops(5).id("atlanabyss:printed_circuit_board")
 	//装配平台
 	remove('pneumaticcraft:assembly_platform')

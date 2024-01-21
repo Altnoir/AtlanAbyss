@@ -1,16 +1,36 @@
 onEvent('recipes', event => {
+  let {
+    mixing,
+    cutting,
+    filling,
+    emptying,
+    splashing,
+    compacting,
+    deploying,
+    milling,
+    crushing,
+    pressing,
+    item_application,
+    sequenced_assembly,
+    mechanical_crafting
+  } = event.recipes.create;
+
   let remove = (name) => {
     event.remove({ id: name })
   }
+  //谐振仓
+  remove('ae2:network/blocks/energy_vibration_chamber')
+  //充能器
+  remove('ae2:network/blocks/crystal_processing_charger')
   //粉碎石英矿
   remove('create:compat/ae2/crushing/deepslate_quartz_ore')
   remove('create:compat/ae2/crushing/quartz_ore')
   //末影粉
   remove('create:compat/ae2/milling/ender_pearl')
   remove('ae2:inscriber/ender_dust')
-  event.recipes.create.milling(['thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
+  milling(['thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
 
-  event.recipes.createCrushing([
+  crushing([
     'ae2:certus_quartz_crystal',
     '4x ae2:certus_quartz_dust',
     Item.of('ae2:certus_quartz_dust').withChance(0.5),
@@ -19,13 +39,13 @@ onEvent('recipes', event => {
   ], 'ae2:deepslate_quartz_ore').id("atlanabyss:crushing_certus_quartz_ore")
   //陨石粉
   remove('create:compat/ae2/milling/sky_stone_block')
-  event.recipes.createCrushing([
+  crushing([
     'ae2:sky_dust',
     Item.of('ae2:sky_stone_block').withChance(0.5)
   ], 'ae2:sky_stone_block').id("atlanabyss:crushing_sky_stone_block")
   //陨石
   remove('ae2:blasting/sky_stone_block')
-  event.recipes.createFilling(
+  filling(
     'ae2:sky_stone_block',
     [
       'ae2:sky_dust',
@@ -38,8 +58,8 @@ onEvent('recipes', event => {
   event.stonecutting('ae2:silicon_press', 'kubejs:circuit_scrap').id('atlanabyss:silicon_press');
   //种子生长
   let grow = (to, from, via, id) => {
-    event.recipes.createSequencedAssembly([to], from, [
-      event.recipes.createFilling(via, [via, Fluid.of("minecraft:water", 500)]),
+    sequenced_assembly([to], from, [
+      filling(via, [via, Fluid.of("minecraft:water", 500)]),
     ]).transitionalItem(via)
       .loops(4)
       .id('atlanabyss:' + id)
@@ -128,10 +148,42 @@ onEvent('recipes', event => {
     energy: 3600
   }).id("atlanabyss:smelter_quartz_glass")
   //电路废料额外
-  event.recipes.create.milling([
+  milling([
     Item.of('kubejs:circuit_scrap').withChance(6 / 9),
     Item.of('pneumaticcraft:failed_pcb').withChance(3 / 9),
   ],
     'pneumaticcraft:printed_circuit_board'
   ).id("atlanabyss:circuit_scrap")
+
+  //ME控制器
+  remove('ae2:network/blocks/controller')
+  event.shaped('ae2:controller', [
+    'AAA',
+    'ABA',
+    'AAA'
+  ], {
+    A: 'kubejs:computer_mechanism',
+    B: 'ae2:fluix_crystal'
+  }).id('atlanabyss:ae_controller');
+
+  remove('ae2:network/blocks/inscribers')
+  remove('ae2:network/blocks/storage_drive')
+  remove('ae2:network/parts/panels_semi_dark_monitor')
+  remove('ae2:network/crafting/cpu_crafting_unit')
+  remove('ae2:network/blocks/energy_energy_cell')
+  event.stonecutting(
+    'ae2:inscriber',
+    'ae2:controller').id('atlanabyss:ae_inscriber');//压印器
+  event.stonecutting(
+    'ae2:drive',
+    'ae2:controller').id('atlanabyss:ae_drive');//驱动器
+  event.stonecutting(
+    '8x ae2:semi_dark_monitor',
+    'ae2:controller').id('atlanabyss:semi_dark_monitor');//照明面板
+  event.stonecutting(
+    'ae2:crafting_unit',
+    'ae2:controller').id('atlanabyss:ae_crafting_unit');//合成单元
+  event.stonecutting(
+    'ae2:energy_cell',
+    'ae2:controller').id('atlanabyss:ae_energy_cell');//能源单元
 })

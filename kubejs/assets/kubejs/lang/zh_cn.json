@@ -66,8 +66,10 @@
     "item.kubejs.vibration_mechanism": "震动构件",
     "item.kubejs.incomplete_pressure_mechanism": "压力构件(未完成)",
     "item.kubejs.pressure_mechanism": "压力构件",
-    "item.kubejs.incomplete_thermal_mechanism": "热力构件(未完成)",
-    "item.kubejs.thermal_mechanism": "热力构件",
+    "item.kubejs.incomplete_thermal_mechanism": "电力构件(未完成)",
+    "item.kubejs.thermal_mechanism": "电力构件",
+    "item.kubejs.incomplete_computer_mechanism": "算力构件(未完成)",
+    "item.kubejs.computer_mechanism": "算力构件",
 
     "item.kubejs.album_transpain": "《专辑》§7Transpain",
     "item.kubejs.album_indigrotto": "《专辑》§1Indigrotto",

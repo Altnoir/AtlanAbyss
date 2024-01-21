@@ -285,6 +285,8 @@ onEvent('rei.hide.items', event => {
 		'tac:bullet68',
 		//ae2
 		'ae2:ender_dust',
+		'ae2:vibration_chamber',
+		'ae2:charger',
 		//pipez
 		'pipez:wrench',
 		//neapolitan

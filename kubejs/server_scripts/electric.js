@@ -1,4 +1,20 @@
 onEvent('recipes', event => {
+  let {
+    mixing,
+    cutting,
+    filling,
+    emptying,
+    splashing,
+    compacting,
+    deploying,
+    milling,
+    crushing,
+    pressing,
+    item_application,
+    sequenced_assembly,
+    mechanical_crafting
+  } = event.recipes.create;
+  
   let remove = (name) => {
     event.remove({ id: name })
   }
@@ -357,7 +373,7 @@ onEvent('recipes', event => {
 
   //瀑冰弹→冰
   remove('thermal:ice_charge/ice_from_water_bucket')
-  event.recipes.createSplashing(['minecraft:ice'],
+  splashing(['minecraft:ice'],
     'thermal:ice_charge'
   ).id("atlanabyss:splashing_ice_charge").processingTime(600)
   //瀑冰弹→黑曜石
@@ -396,15 +412,21 @@ onEvent('recipes', event => {
     'kubejs:raw_aluminum_block',
   ]).id("atlanabyss:raw_aluminum_from_block")
 
-  //机械合金炉
-  function createAlloy(output, input, id) {
-    event.recipes.createMixing(output,
-      input,
-    ).heated().id('atlanabyss:' + id);
-  }
-  createAlloy('2x thermal:electrum_ingot', ['minecraft:gold_ingot', 'thermal:silver_ingot'], 'mixing_electrum_ingot')//琥珀金
-  createAlloy('2x thermal:invar_ingot', ['minecraft:iron_ingot', 'thermal:nickel_ingot'], 'mixing_invar_ingot')//镍钢锭
-  createAlloy('2x thermal:constantan_ingot', ['minecraft:copper_ingot', 'thermal:nickel_ingot'], 'mixing_constantan_ingot')//康铜锭
+  //琥珀金
+  mixing('2x thermal:electrum_ingot', [
+    'minecraft:gold_ingot',
+    'thermal:silver_ingot'
+  ]).heated().id('atlanabyss:mixing_electrum_ingot');
+  //镍钢锭
+  mixing('2x thermal:invar_ingot', [
+    'minecraft:iron_ingot',
+    'thermal:nickel_ingot'
+  ]).heated().id('atlanabyss:mixing_invar_ingot');
+  //康铜锭
+  mixing('2x thermal:constantan_ingot', [
+    'minecraft:copper_ingot',
+    'thermal:nickel_ingot'
+  ]).heated().id('atlanabyss:mixing_constantan_ingot');
 
   //玫瑰金锭
   remove('thermal:machines/smelter/smelter_alloy_rose_gold')
@@ -453,21 +475,21 @@ onEvent('recipes', event => {
     energy: 12000
   }).id("atlanabyss:smelter_netherite_ingot")
   //木炭杂酚油
-  event.recipes.createCompacting([
+  compacting([
     'minecraft:charcoal',
     Fluid.of('thermal:creosote', 144)
   ],
     '#minecraft:logs'
   ).heated().id("atlanabyss:pyrolyzer_logs")
   //焦炭杂酚油
-  event.recipes.createCompacting([
+  compacting([
     'thermal:coal_coke',
     Fluid.of('thermal:creosote', 288)
   ],
     'minecraft:coal'
   ).heated().id("atlanabyss:pyrolyzer_coal")
   //沥青重油
-  event.recipes.createCompacting([
+  compacting([
     '2x thermal:coal_coke',
     'thermal:tar',
     Fluid.of('thermal:light_oil', 50)
@@ -476,16 +498,16 @@ onEvent('recipes', event => {
   ).heated().id("atlanabyss:pyrolyzer_bitumen")
 
   //人工石油
-  event.recipes.createMixing(Fluid.of('thermal:crude_oil', 50), [
+  mixing(Fluid.of('thermal:crude_oil', 50), [
     '#create_enchantment_industry:ink_ingredient',
     Fluid.of('tconstruct:blood', 500)
   ]).superheated().id("atlanabyss:oil_from_black_dye")
-  event.recipes.createMixing(Fluid.of('thermal:crude_oil', 500), [
+  mixing(Fluid.of('thermal:crude_oil', 500), [
     'thermal:bitumen',
     Fluid.of('tconstruct:blood', 500)
   ]).superheated().id("atlanabyss:oil_from_bitumen")
   //精炼油
-  event.recipes.createMixing(Fluid.of('thermal:refined_fuel', 100), [
+  mixing(Fluid.of('thermal:refined_fuel', 100), [
     Fluid.of('thermal:light_oil', 50),
     Fluid.of('tconstruct:blazing_blood', 50)
   ]).heated().id("atlanabyss:refined_fuel")
@@ -507,7 +529,7 @@ onEvent('recipes', event => {
     { input: 'ender_pearl', output: 'thermal:ender', count: 250 }
   ];
   for (const sh of superheated) {
-    event.recipes.createMixing(Fluid.of(`${sh.output}`, sh.count),
+    mixing(Fluid.of(`${sh.output}`, sh.count),
       `minecraft:${sh.input}`
     ).superheated().id(`atlanabyss:superheated_${sh.input}`)
   }
@@ -518,7 +540,7 @@ onEvent('recipes', event => {
     { input: 'redstone_block', output: 'thermal:redstone', count: 900 }
   ];
   for (const h of heated) {
-    event.recipes.createMixing(Fluid.of(`${h.output}`, h.count),
+    mixing(Fluid.of(`${h.output}`, h.count),
       `minecraft:${h.input}`
     ).heated().id(`atlanabyss:heated_${h.input}`)
   }
@@ -535,7 +557,7 @@ onEvent('recipes', event => {
     { output: 'thermal:blitz_rod', input: 'kubejs:fine_sand', count: 50, id: 'blitz_rod' },//狂风沙尘
   ];
   for (const c of chiller) {
-    event.recipes.createCompacting(`${c.output}`, [
+    compacting(`${c.output}`, [
       Fluid.of(`${c.input}`, c.count)
     ]).id(`atlanabyss:compacting_${c.id}`)
   }
@@ -553,7 +575,7 @@ onEvent('recipes', event => {
   }).id("atlanabyss:blizz_rod")
 
   //钢锭
-  event.recipes.createMixing('thermal:steel_ingot', [
+  mixing('thermal:steel_ingot', [
     'minecraft:iron_ingot',
     'thermal:coal_coke'
   ]).heated().id("atlanabyss:steel_ingot")
@@ -667,11 +689,11 @@ onEvent('recipes', event => {
   //倒出石油
   remove('thermal:machines/centrifuge/centrifuge_oil_sand')
   remove('thermal:machines/centrifuge/centrifuge_oil_red_sand')
-  event.recipes.createEmptying([
+  emptying([
     'kubejs:dry_oil_sand',
     Fluid.of('thermal:crude_oil', 1000)
   ], 'thermal:oil_sand').id("atlanabyss:oil_sand")
-  event.recipes.createEmptying([
+  emptying([
     'kubejs:dry_oil_red_sand',
     Fluid.of('thermal:crude_oil', 1000)
   ], 'thermal:oil_red_sand').id("atlanabyss:oill_red_sand")
@@ -681,7 +703,7 @@ onEvent('recipes', event => {
     { input: 'dry_oil_red_sand', output: 'red_sand' },//红沙
   ];
   for (const cos of CrushingOilSand) {
-    event.recipes.createCrushing([
+    crushing([
       `minecraft:${cos.output}`,
       'thermal:bitumen',
       Item.of(('thermal:niter'), 3).withChance(.50),

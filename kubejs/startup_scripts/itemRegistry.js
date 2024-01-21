@@ -81,6 +81,8 @@ onEvent('item.registry', event => {
 	event.create('pressure_mechanism').displayName('Pressure Mechanism').rarity(RARITY_RARE);
 	event.create('incomplete_thermal_mechanism', 'create:sequenced_assembly').displayName('Incomplete Thermal Mechanism');
 	event.create('thermal_mechanism').displayName('Thermal Mechanism').rarity(RARITY_RARE);
+	event.create('incomplete_computer_mechanism', 'create:sequenced_assembly').displayName('Incomplete Computer Mechanism');
+	event.create('computer_mechanism').displayName('Computer Mechanism').rarity(RARITY_RARE);
 
 	event.create('album_transpain').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_indigrotto').displayName('Album').rarity(RARITY_RARE).unstackable();

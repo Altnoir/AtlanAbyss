@@ -226,13 +226,25 @@ onEvent('recipes', event => {
 		event.shaped(output, ['A', 'B'], { A: a, B: b }).id('atlanabyss:' + id)
 	}
 	electronTube('kubejs:candy_electron_tube', 'kubejs:polished_candy_quartz', 'kubejs:osmium_sheet', 'candy_electron_tube')
-	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'thermal:lead_plate', 'sulfur_electron_tube')
+	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'thermal:steel_plate', 'sulfur_electron_tube')
 	electronTube('kubejs:charged_electron_tube', 'kubejs:polished_charged_certus_quartz', 'thermal:silver_plate', 'charged_certus_electron_tube')
 	//电子管额外配方
-	createDeploying('create:polished_rose_quartz', Item.of('create:electron_tube').withChance(0.9), 'minecraft:iron_nugget', 'electron_tube')
-	createDeploying('kubejs:polished_candy_quartz', Item.of('kubejs:candy_electron_tube').withChance(0.9), 'kubejs:osmium_nugget', 'candy_electron_tube')
-	createDeploying('kubejs:polished_sulfur', Item.of('kubejs:sulfur_electron_tube').withChance(0.9), 'thermal:lead_nugget', 'sulfur_electron_tube')
-	createDeploying('kubejs:polished_charged_certus_quartz', Item.of('kubejs:charged_electron_tube').withChance(0.9), 'thermal:silver_nugget', 'charged_certus_electron_tube')
+	deploying(Item.of('create:electron_tube').withChance(0.9), [
+		'create:polished_rose_quartz',
+		'minecraft:iron_nugget'
+	]).id('atlanabyss:deploying_electron_tube')
+	deploying(Item.of('kubejs:candy_electron_tube').withChance(0.9), [
+		'kubejs:polished_candy_quartz',
+		'kubejs:osmium_nugget'
+	]).id('atlanabyss:deploying_candy_electron_tube')
+	deploying(Item.of('kubejs:sulfur_electron_tube').withChance(0.9), [
+		'kubejs:polished_sulfur',
+		'thermal:steel_nugget'
+	]).id('atlanabyss:deploying_sulfur_electron_tube')
+	deploying(Item.of('kubejs:charged_electron_tube').withChance(0.9), [
+		'kubejs:polished_charged_certus_quartz',
+		'thermal:silver_nugget'
+	]).id('atlanabyss:deploying_charged_certus_electron_tube')
 
 	//方块小镇自动化
 	remove('yuushya:stone/yellow_worn_concrete')
@@ -493,12 +505,50 @@ onEvent('recipes', event => {
 	milling('thermal:niter_dust', 'thermal:niter').id("atlanabyss:milling_niter")
 	milling('thermal:sulfur_dust', 'thermal:sulfur').id("atlanabyss:milling_sulfur")
 
+	//唱片
+	remove('netmusic:music_cd')
+	event.shaped('2x netmusic:music_cd', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: 'thermal:cured_rubber',
+		B: '#forge:dyes/pink'
+	}).id("atlanabyss:music_cd")
+
 	//胡萝卜厨房
 	remove('kitchenkarrot:ice_cubes_1')
 	remove('kitchenkarrot:ice_cubes_4')
 	remove('kitchenkarrot:ice_cubes_8')
 	remove('kitchenkarrot:acorn_from_stonecutting')
 	remove('kitchenkarrot:birch_sap')
+	remove('kitchenkarrot:empty_can')
+	remove('kitchenkarrot:knife')
+	remove('kitchenkarrot:shaker')
+	//空罐头
+	event.shaped('4x kitchenkarrot:empty_can', [
+		'S S',
+		' S '
+	], {
+		S: 'kubejs:aluminum_sheet'
+	}).id("atlanabyss:empty_can")
+	//餐刀
+	event.shaped('kitchenkarrot:knife', [
+		'A',
+		'B'
+	], {
+		A: 'create:iron_sheet',
+		B: 'minecraft:iron_nugget'
+	}).id("atlanabyss:kitchenkarrot_knife")
+	//摇酒壶
+	event.shaped('kitchenkarrot:shaker', [
+		'A',
+		'B'
+	], {
+		A: 'create:iron_sheet',
+		B: 'minecraft:bucket'
+	}).id("atlanabyss:kitchenkarrot_shaker")
+
 	splashing('kitchenkarrot:acorn', 'minecraft:oak_leaves').id("atlanabyss:splashing_oak_leaves")
 	splashing('kitchenkarrot:milk', 'farmersdelight:milk_bottle').id("atlanabyss:splashing_milk_bottle")
 	splashing('kitchenkarrot:water', Item.of('minecraft:potion', '{Potion:"minecraft:water"}')).id("atlanabyss:splashing_water_potion")
@@ -937,14 +987,23 @@ onEvent('recipes', event => {
 	createHaunting('thermal:basalz_powder', 'thermal:earth_charge', 'earth_charge')//裂岩弹
 	createHaunting('minecraft:blaze_powder', 'minecraft:fire_charge', 'fire_charge')//火焰弹
 
-	function createDeploying(input, output, deploy, id) {
-		deploying(output, [input, deploy]).id('atlanabyss:deploying_' + id)
-	}
 	//管道升级
-	createDeploying('pneumaticcraft:printed_circuit_board', 'pipez:basic_upgrade', 'thermal:nickel_nugget', 'basic_upgrade')//基础管道升级
-	createDeploying('pipez:basic_upgrade', 'pipez:improved_upgrade', 'thermal:steel_nugget', 'improved_upgrade')//进阶管道升级
-	createDeploying('pipez:improved_upgrade', 'pipez:advanced_upgrade', 'thermal:electrum_nugget', 'advanced_upgrade')//高级管道升级
-	createDeploying('pipez:advanced_upgrade', 'pipez:ultimate_upgrade', 'thermal:signalum_nugget', 'ultimate_upgrade')//终极管道升级
+	deploying('pipez:basic_upgrade', [
+		'pneumaticcraft:printed_circuit_board',
+		'thermal:nickel_nugget'
+	]).id('atlanabyss:deploying_basic_upgrade')//基础管道升级
+	deploying('pipez:improved_upgrade', [
+		'pipez:basic_upgrade',
+		'thermal:steel_nugget'
+	]).id('atlanabyss:deploying_improved_upgrade')//进阶管道升级
+	deploying('pipez:advanced_upgrade', [
+		'pipez:improved_upgrade',
+		'thermal:electrum_nugget'
+	]).id('atlanabyss:deploying_advanced_upgrade')//高级管道升级
+	deploying('pipez:ultimate_upgrade', [
+		'pipez:advanced_upgrade',
+		'thermal:signalum_nugget'
+	]).id('atlanabyss:deploying_ultimate_upgrade')//终极管道升级
 
 	//过滤器目标工具
 	event.shaped('pipez:filter_destination_tool', [
@@ -983,18 +1042,29 @@ onEvent('recipes', event => {
 			deploying(pm, [pm, 'create:shaft']),
 			deploying(pm, [pm, 'create:powdered_obsidian'])
 		]).transitionalItem(pm).loops(5).id("atlanabyss:pressure_mechanism")
-	//热力部件
+	//电力部件
 	let tm = ('kubejs:incomplete_thermal_mechanism')
 	sequenced_assembly([
 		'kubejs:thermal_mechanism'
 	],
 		'kubejs:aluminum_sheet',
 		[
-			deploying(tm, [tm, 'thermal:rf_coil']),
-			deploying(tm, [tm, 'thermal:redstone_servo']),
 			deploying(tm, [tm, 'pneumaticcraft:plastic']),
+			deploying(tm, [tm, 'kubejs:sulfur_electron_tube']),
 			filling(tm, [tm, Fluid.of('pneumaticcraft:lubricant', 125)])
 		]).transitionalItem(tm).loops(5).id("atlanabyss:thermal_mechanism")
+	//算力构件
+	let cm = ('kubejs:incomplete_computer_mechanism')
+	sequenced_assembly([
+		'kubejs:computer_mechanism'
+	],
+		'kubejs:charged_constantan_sheet',
+		[
+			deploying(cm, [cm, 'pneumaticcraft:printed_circuit_board']),
+			deploying(cm, [cm, 'kubejs:charged_electron_tube']),
+			deploying(cm, [cm, 'ae2:sky_dust']),
+		]).transitionalItem(cm).loops(5).id("atlanabyss:computer_mechanism")
+
 	//压缩煤块
 	let o = ('minecraft:obsidian')
 	sequenced_assembly([
@@ -1273,7 +1343,7 @@ onEvent('recipes', event => {
 		'kubejs:osmium_scrap',
 		[
 			filling(oc, [oc, Fluid.of('tconstruct:molten_platinum', 125)]),
-			filling(oc, [oc, Fluid.of('tconstruct:molten_tungsten', 25)]),
+			pressing(oc, oc).processingTime(100),
 			pressing(oc, oc).processingTime(100),
 			pressing(oc, oc).processingTime(100),
 			filling(oc, [oc, Fluid.of('minecraft:water', 250)]),
@@ -1336,7 +1406,7 @@ onEvent('recipes', event => {
 		'thermal:lead_plate',
 		[
 			deploying(uc, [uc, 'thermal:cured_rubber']),
-			deploying(uc, [uc, 'pneumaticcraft:printed_circuit_board']),
+			deploying(uc, [uc, 'kubejs:tungsten_ingot']),
 			filling(uc, [uc, Fluid.of('tconstruct:molten_uranium', 125)])
 		]).transitionalItem(uc).loops(1).id("atlanabyss:uranium_core")
 	//铀燃料棒
@@ -1368,7 +1438,7 @@ onEvent('recipes', event => {
 		'thermal:lead_plate',
 		[
 			deploying(pc, [pc, 'pneumaticcraft:heat_sink']),
-			deploying(pc, [pc, 'pneumaticcraft:printed_circuit_board']),
+			deploying(pc, [pc, 'kubejs:tungsten_ingot']),
 			filling(pc, [pc, Fluid.of('kubejs:molten_plutonium', 80)])
 		]).transitionalItem(pc).loops(1).id("atlanabyss:plutonium_core")
 	//钚燃料棒
@@ -1451,6 +1521,44 @@ onEvent('recipes', event => {
 			count: 2
 		}
 	}).id("atlanabyss:graphite_rod")
+
+	//电动马达
+	remove('createaddition:mechanical_crafting/electric_motor')
+	mechanical_crafting('createaddition:electric_motor', [
+		' ABA ',
+		'ABCBA',
+		' ADA '
+	], {
+		A: 'create:brass_sheet',
+		B: 'createaddition:copper_spool',
+		C: 'create:shaft',
+		D: 'create:precision_mechanism'
+	}).id("atlanabyss:electric_motor")
+	//交流发电机
+	remove('createaddition:mechanical_crafting/alternator')
+	mechanical_crafting('createaddition:alternator', [
+		' ABA ',
+		'ABCBA',
+		' ADA '
+	], {
+		A: 'thermal:steel_plate',
+		B: 'createaddition:copper_spool',
+		C: 'create:shaft',
+		D: 'createaddition:capacitor'
+	}).id("atlanabyss:alternator")
+	//电池
+	remove('createaddition:crafting/modular_accumulator_gold')
+	remove('createaddition:crafting/modular_accumulator_electrum')
+	remove('createaddition:crafting/accumulator_conversion')
+	event.shaped('3x createaddition:modular_accumulator', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: 'create:copper_sheet',
+		B: 'create:brass_block',
+		C: 'createaddition:zinc_sheet'
+	}).id("atlanabyss:modular_accumulator")
 
 
 	//镀锇机壳
