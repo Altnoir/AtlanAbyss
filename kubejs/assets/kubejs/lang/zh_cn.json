@@ -8,6 +8,10 @@
     "item.kubejs.aluminum_dust": "铝粉",
     "item.kubejs.rose_quartz_sheet": "玫瑰石英板",
 
+    "item.kubejs.meteosteel_ingot": "陨钢锭",
+    "item.kubejs.meteosteel_nugget": "陨钢粒",
+    "item.kubejs.meteosteel_sheet": "陨钢板",
+
     "item.kubejs.candy_quartz": "糖果石英",
     "item.kubejs.polished_candy_quartz": "磨制糖果石英",
     "item.kubejs.polished_sulfur": "磨制硫磺",

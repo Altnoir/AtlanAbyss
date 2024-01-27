@@ -179,7 +179,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: 1.0d
 			y: 8.0d
 			dependencies: ["04B534A53F398C7A"]
 			id: "11F6435C17265B4A"
@@ -813,7 +813,7 @@
 		{
 			title: "“这是什么?喝一口”"
 			disable_toast: true
-			x: -4.0d
+			x: 4.0d
 			y: 8.0d
 			shape: "hexagon"
 			description: ["核反应堆的产出物"]
@@ -1000,6 +1000,143 @@
 			}]
 			rewards: [{
 				id: "305FDA3C03A86DFE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["31C9BD74CDB26F64"]
+			id: "662E241FAA46E381"
+			tasks: [{
+				id: "3A30F3DAC6C2A936"
+				type: "item"
+				item: "ae2:deepslate_quartz_ore"
+			}]
+			rewards: [{
+				id: "0F3069DC8EF394D4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: " 进入末地"
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["137563E84BDBF0CC"]
+			hide: true
+			id: "31C9BD74CDB26F64"
+			tasks: [{
+				id: "02A8F47BE70987F9"
+				type: "dimension"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "6136C2559A9D4D6B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			dependencies: ["091F01B16A12EAF2"]
+			id: "61CDC9A969C09267"
+			tasks: [{
+				id: "1E9C221A2397303F"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+			rewards: [{
+				id: "69466015DAA1A8F0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["04B534A53F398C7A"]
+			hide: true
+			id: "091F01B16A12EAF2"
+			tasks: [{
+				id: "7CC2C8326C36236F"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "286AED8A9B39BB15"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.0d
+			dependencies: ["04B534A53F398C7A"]
+			hide: true
+			id: "6B34E94A9216E5F5"
+			tasks: [{
+				id: "62314F934C92271F"
+				type: "item"
+				item: "createaddition:modular_accumulator"
+			}]
+			rewards: [{
+				id: "3B1B2B3AFC97FE60"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			dependencies: [
+				"662E241FAA46E381"
+				"61CDC9A969C09267"
+			]
+			id: "77AACF5ABE3BB465"
+			tasks: [{
+				id: "29B51CD87C1A0106"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+			rewards: [{
+				id: "56C50C382F8D0C84"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "算力时代！"
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["688C5FEF6695C5A4"]
+			id: "147EA282B12BBF98"
+			tasks: [{
+				id: "1AC1F47FA587D83B"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "124C8BE6C766652C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["77AACF5ABE3BB465"]
+			id: "688C5FEF6695C5A4"
+			tasks: [{
+				id: "14718E4776803989"
+				type: "item"
+				item: "kubejs:charged_electron_tube"
+			}]
+			rewards: [{
+				id: "55092C8BA7726356"
 				type: "xp"
 				xp: 10
 			}]

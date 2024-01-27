@@ -28,7 +28,7 @@
 	[embeddiumplus.performance]
 		#Toggles JREI item rendering until searching
 		#Increases performance a little bit and cleans your screen when you don't want to use it
-		hideJREI = false
+		hideJREI = true
 		#Toggles FastChest feature
 		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
 		fastChests = false
@@ -86,6 +86,14 @@
 		#Toggle if Entities should have dynamic lights
 		onEntities = true
 		updateOnlyOnPositionChange = true
+
+	[embeddiumplus.others]
+		#Configure if borderless fullscreen option should be attached to F11 or replace vanilla fullscreen
+		#Allowed Values: ATTACH, REPLACE, OFF
+		borderlessAttachModeOnF11 = "REPLACE"
+		#Toggles fast language reload
+		#Embeddedt points it maybe cause troubles to JEI, so ¿why not add it as a toggleable option?
+		fastLanguageReload = true
 
 	[embeddiumplus.quality]
 		#Chunks fade in speed

@@ -14,7 +14,7 @@ onEvent('recipes', event => {
     sequenced_assembly,
     mechanical_crafting
   } = event.recipes.create;
-  
+
   let remove = (name) => {
     event.remove({ id: name })
   }
@@ -397,7 +397,7 @@ onEvent('recipes', event => {
     'AAA'
   ], {
     A: 'kubejs:aluminum_nugget'
-  }).id("atlanabyss:aluminum_nugget_from_nugget")
+  }).id("atlanabyss:aluminum_ingot_from_nugget")
   event.shapeless('9x kubejs:aluminum_nugget', [
     'kubejs:aluminum_ingot',
   ]).id("atlanabyss:aluminum_nugget_from_ingot")
@@ -456,18 +456,8 @@ onEvent('recipes', event => {
   event.custom({
     type: 'thermal:smelter',
     ingredients: [
-      {
-        value: [
-          Ingredient.of('thermal:basalz_rod').toJson()
-        ],
-        count: 1
-      },
-      {
-        value: [
-          Ingredient.of('kubejs:eviltwisting_ingot').toJson()
-        ],
-        count: 2
-      }
+      Item.of('kubejs:eviltwisting_ingot', 2).toResultJson(),
+      Ingredient.of('thermal:basalz_rod').toJson()
     ],
     result: [
       Item.of('minecraft:netherite_ingot').toResultJson()
@@ -790,7 +780,7 @@ onEvent('recipes', event => {
 
   remove('thermal:machines/smelter/smelter_raw_gold')
   event.custom({
-    type: "thermal:smelter",
+    type: 'thermal:smelter',
     ingredient: {
       tag: 'forge:raw_materials/gold'
     },
@@ -809,7 +799,7 @@ onEvent('recipes', event => {
   }).id("atlanabyss:smelter_raw_gold")
   remove('thermal:machines/smelter/smelter_raw_nickel')
   event.custom({
-    type: "thermal:smelter",
+    type: 'thermal:smelter',
     ingredient: {
       tag: 'forge:raw_materials/nickel'
     },

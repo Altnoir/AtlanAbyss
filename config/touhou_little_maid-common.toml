@@ -28,6 +28,15 @@
 	#The max range of maid's Non-Home mode
 	#Range: 3 ~ 32
 	MaidNonHomeRange = 8
+	#The max number of animals around when the maid breeds animals
+	#Range: 6 ~ 65536
+	FeedAnimalMaxNumber = 50
+	#Maid can only play gomoku with her owner
+	MaidGomokuOwnerLimit = true
+	#These items cannot be placed in the maid backpack
+	MaidBackpackBlackList = []
+	#The entity that the maid will not recognize as targets for attack
+	MaidAttackIgnore = []
 
 [chair]
 	#Chair can switch models freely

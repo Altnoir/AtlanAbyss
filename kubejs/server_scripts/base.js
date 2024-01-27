@@ -947,26 +947,78 @@ onEvent('recipes', event => {
 	], '#create:stone_types/ochrum').id("atlanabyss:milling_ochrum")
 
 	//压板
-	function createPressing(input, output, id) {
-		pressing(output, input).id('atlanabyss:pressing_' + id)
-	}
-	createPressing('thermal:steel_ingot', 'thermal:steel_plate', 'steel_sheet')//钢板
-	createPressing('thermal:tin_ingot', 'thermal:tin_plate', 'tin_sheet')//锡板
-	createPressing('thermal:lead_ingot', 'thermal:lead_plate', 'lead_sheet')//铅板
-	createPressing('thermal:silver_ingot', 'thermal:silver_plate', 'silver_sheet')//银板
-	createPressing('thermal:nickel_ingot', 'thermal:nickel_plate', 'nickel_sheet')//镍板
-	createPressing('thermal:electrum_ingot', 'thermal:electrum_plate', 'electrum_sheet')//琥珀金板
-	createPressing('thermal:invar_ingot', 'thermal:invar_plate', 'invar_sheet')//殷钢板
-	createPressing('thermal:constantan_ingot', 'thermal:constantan_plate', 'constantan_sheet')//康铜板
-	createPressing('thermal:signalum_ingot', 'thermal:signalum_plate', 'signalum_sheet')//信素板
-	createPressing('thermal:lumium_ingot', 'thermal:lumium_plate', 'lumium_sheet')//流明板
-	createPressing('thermal:enderium_ingot', 'thermal:enderium_plate', 'enderium_sheet')//末影板
-	createPressing('kubejs:aluminum_ingot', 'kubejs:aluminum_sheet', 'aluminum_sheet')//铝板
-	createPressing('create:polished_rose_quartz', 'kubejs:rose_quartz_sheet', 'rose_quartz_sheet')//玫瑰石英板
-	createPressing('kubejs:charged_constantan_ingot', 'kubejs:charged_constantan_sheet', 'charged_constantan_sheet')//充能康铜板
-	createPressing('kubejs:bismuth_ingot', 'kubejs:bismuth_sheet', 'bismuth_sheet')//铋板
-	createPressing('kubejs:osmium_ingot', 'kubejs:osmium_sheet', 'osmium_sheet')//锇板
-	createPressing('beyond_earth:desh_ingot', 'beyond_earth:desh_plate', 'desh_plate')//戴斯板
+	pressing(
+		'thermal:steel_plate',
+		'thermal:steel_ingot'
+	).id('atlanabyss:pressing_steel_sheet')//钢板
+	pressing(
+		'kubejs:meteosteel_sheet',
+		'kubejs:meteosteel_ingot'
+	).id('atlanabyss:pressing_meteosteel_sheet')//陨钢板
+	pressing(
+		'thermal:tin_plate',
+		'thermal:tin_ingot'
+	).id('atlanabyss:pressing_tin_sheet')//锡板
+	pressing(
+		'thermal:lead_plate',
+		'thermal:lead_ingot'
+	).id('atlanabyss:pressing_lead_sheet')//铅板
+	pressing(
+		'thermal:silver_plate',
+		'thermal:silver_ingot'
+	).id('atlanabyss:pressing_silver_sheet')//银板
+	pressing(
+		'thermal:nickel_plate',
+		'thermal:nickel_ingot'
+	).id('atlanabyss:pressing_nickel_sheet')//镍板
+	pressing(
+		'thermal:electrum_plate',
+		'thermal:electrum_ingot'
+	).id('atlanabyss:pressing_electrum_sheet')//琥珀金板
+	pressing(
+		'thermal:invar_plate',
+		'thermal:invar_ingot'
+	).id('atlanabyss:pressing_invar_sheet')//殷钢板
+	pressing(
+		'thermal:constantan_plate',
+		'thermal:constantan_ingot'
+	).id('atlanabyss:pressing_constantan_sheet')//康铜板
+	pressing(
+		'thermal:signalum_plate',
+		'thermal:signalum_ingot'
+	).id('atlanabyss:pressing_signalum_shee')//信素板
+	pressing(
+		'thermal:lumium_plate',
+		'thermal:lumium_ingot'
+	).id('atlanabyss:pressing_lumium_sheet')//流明板
+	pressing(
+		'thermal:enderium_plate',
+		'thermal:enderium_ingot'
+	).id('atlanabyss:pressing_enderium_sheet')//末影板
+	pressing(
+		'kubejs:aluminum_sheet',
+		'kubejs:aluminum_ingot'
+	).id('atlanabyss:pressing_aluminum_sheet')//铝板
+	pressing(
+		'kubejs:rose_quartz_sheet',
+		'create:polished_rose_quartz'
+	).id('atlanabyss:pressing_rose_quartz_sheet')//玫瑰石英板
+	pressing(
+		'kubejs:charged_constantan_sheet',
+		'kubejs:charged_constantan_ingot'
+	).id('atlanabyss:pressing_charged_constantan_sheet')//充能康铜板
+	pressing(
+		'kubejs:bismuth_sheet',
+		'kubejs:bismuth_ingot'
+	).id('atlanabyss:pressing_bismuth_sheet')//铋板
+	pressing(
+		'kubejs:osmium_sheet',
+		'kubejs:osmium_ingot'
+	).id('atlanabyss:pressing_osmium_sheet')//锇板
+	pressing(
+		'beyond_earth:desh_plate',
+		'beyond_earth:desh_ingot'
+	).id('atlanabyss:pressing_desh_plate')//戴斯板
 
 	//缠魂
 	function createHaunting(input, output, id) {
@@ -1036,34 +1088,67 @@ onEvent('recipes', event => {
 		Item.of('create:powdered_obsidian').withChance(0.07),
 		Item.of('create:shaft').withChance(0.03)
 	],
-		'thermal:steel_plate',
-		[
-			deploying(pm, [pm, 'pneumaticcraft:compressed_stone']),
-			deploying(pm, [pm, 'create:shaft']),
-			deploying(pm, [pm, 'create:powdered_obsidian'])
-		]).transitionalItem(pm).loops(5).id("atlanabyss:pressure_mechanism")
+		'thermal:steel_plate', [
+		deploying(pm, [pm, 'pneumaticcraft:compressed_stone']),
+		deploying(pm, [pm, 'create:shaft']),
+		deploying(pm, [pm, 'create:powdered_obsidian'])
+	]).transitionalItem(pm).loops(5).id("atlanabyss:pressure_mechanism")
 	//电力部件
 	let tm = ('kubejs:incomplete_thermal_mechanism')
 	sequenced_assembly([
 		'kubejs:thermal_mechanism'
 	],
-		'kubejs:aluminum_sheet',
-		[
-			deploying(tm, [tm, 'pneumaticcraft:plastic']),
-			deploying(tm, [tm, 'kubejs:sulfur_electron_tube']),
-			filling(tm, [tm, Fluid.of('pneumaticcraft:lubricant', 125)])
-		]).transitionalItem(tm).loops(5).id("atlanabyss:thermal_mechanism")
+		'kubejs:aluminum_sheet', [
+		deploying(tm, [tm, 'pneumaticcraft:plastic']),
+		deploying(tm, [tm, 'kubejs:sulfur_electron_tube']),
+		filling(tm, [tm, Fluid.of('minecraft:water', 500)])
+	]).transitionalItem(tm).loops(5).id("atlanabyss:thermal_mechanism")
 	//算力构件
 	let cm = ('kubejs:incomplete_computer_mechanism')
 	sequenced_assembly([
 		'kubejs:computer_mechanism'
 	],
-		'kubejs:charged_constantan_sheet',
-		[
-			deploying(cm, [cm, 'pneumaticcraft:printed_circuit_board']),
-			deploying(cm, [cm, 'kubejs:charged_electron_tube']),
-			deploying(cm, [cm, 'ae2:sky_dust']),
-		]).transitionalItem(cm).loops(5).id("atlanabyss:computer_mechanism")
+		'kubejs:meteosteel_sheet', [
+		deploying(cm, [cm, 'pneumaticcraft:printed_circuit_board']),
+		deploying(cm, [cm, 'kubejs:charged_electron_tube']),
+		filling(tm, [tm, Fluid.of('pneumaticcraft:lubricant', 125)])
+	]).transitionalItem(cm).loops(5).id("atlanabyss:computer_mechanism")
+
+	//陨钢锭
+	event.custom({
+		type: 'thermal:smelter',
+		ingredients: [
+			Item.of('minecraft:iron_ingot', 3).toResultJson(),
+			Item.of('thermal:coal_coke', 2).toResultJson(),
+			Item.of('ae2:sky_dust', 5).toResultJson()
+		],
+		result: [
+			Item.of('kubejs:meteosteel_ingot', 2).toResultJson()
+		],
+		energy: 20000
+	}).id("atlanabyss:smelter_meteosteel_ingot")
+	event.custom({
+		type: 'thermal:smelter',
+		ingredients: [
+			Item.of('thermal:steel_ingot', 3).toResultJson(),
+			Item.of('ae2:sky_dust', 5).toResultJson()
+		],
+		result: [
+			Item.of('kubejs:meteosteel_ingot', 2).toResultJson()
+		],
+		energy: 20000
+	}).id("atlanabyss:smelter_meteosteel_ingot_by_steel")
+	//陨钢粒
+	event.shaped('kubejs:meteosteel_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:meteosteel_nugget'
+	}).id("atlanabyss:meteosteel_ingot_from_nugget")
+	event.shapeless('9x kubejs:meteosteel_nugget', [
+		'kubejs:meteosteel_ingot'
+	]).id("atlanabyss:meteosteel_nugget_from_ingot")
 
 	//压缩煤块
 	let o = ('minecraft:obsidian')

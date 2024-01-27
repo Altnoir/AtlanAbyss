@@ -287,6 +287,7 @@ onEvent('rei.hide.items', event => {
 		'ae2:ender_dust',
 		'ae2:vibration_chamber',
 		'ae2:charger',
+		'ae2:silicon_press',
 		//pipez
 		'pipez:wrench',
 		//neapolitan

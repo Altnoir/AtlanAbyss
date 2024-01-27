@@ -10,6 +10,7 @@ onEvent('item.registry', event => {
 
 	event.create('aluminum_ingot').displayName('Aluminum Ingot');
 	event.create('aluminium_alloy_ingot').displayName('Aluminium Alloy Ingot');
+	event.create('meteosteel_ingot').displayName('Meteosteel Ingot');
 	event.create('osmium_ingot').displayName('Osmium Ingot');
 	event.create('uranium_ingot').displayName('Uranium Ingot');
 	event.create('plutonium_ingot').displayName('Plutonium Ingot');
@@ -32,6 +33,7 @@ onEvent('item.registry', event => {
 	event.create('virgin_ingot').displayName('Virgin Ingot');
 
 	event.create('aluminum_nugget').displayName('Aluminum Nugget');
+	event.create('meteosteel_nugget').displayName('Meteosteel Nugget');
 	event.create('osmium_nugget').displayName('Osmium Nugget');
 	event.create('plutonium_nugget').displayName('Plutonium Nugget');
 	event.create('platinum_nugget').displayName('Platinum Nugget');
@@ -41,6 +43,7 @@ onEvent('item.registry', event => {
 
 	event.create('rose_quartz_sheet').displayName('Rose Quartz Sheet');
 	event.create('aluminum_sheet').displayName('Aluminum Sheet');
+	event.create('meteosteel_sheet').displayName('Meteosteel Sheet');
 	event.create('osmium_sheet').displayName('Osmium Sheet');
 	event.create('charged_constantan_sheet').displayName('Charged Constantan Sheet').rarity(RARITY_RARE);
 	event.create('bismuth_sheet').displayName('Bismuth Sheet');
