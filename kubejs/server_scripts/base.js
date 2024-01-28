@@ -16,6 +16,11 @@ onEvent('recipes', event => {
 		sequenced_assembly,
 		mechanical_crafting
 	} = event.recipes.create;
+	let {
+		elven_trade,
+		mana_infusion,
+		pure_daisy
+	} = event.recipes.botania;
 	//扬了一些默认配方
 	let remove = (name) => {
 		event.remove({ id: name })
@@ -868,11 +873,13 @@ onEvent('recipes', event => {
 		'kubejs:glacier_ice_cream', 'neapolitan:mint_ice_cream', 'kubejs:phytochemical_ice_cream'
 	]).id("atlanabyss:refreshing_ice_cream")
 
-	event.recipes.botania.elven_trade(['twilightforest:ice_bomb'], 'minecraft:blue_ice').id("atlanabyss:ice_bomb")
-	event.recipes.botania.elven_trade(['twilightforest:ice_bow'], 'minecraft:bow').id("atlanabyss:ice_bow")
-	event.recipes.botania.elven_trade(['twilightforest:ice_sword'], 'minecraft:diamond_sword').id("atlanabyss:ice_sword")
+	remove('botania:elven_trade/pixie_dust')
+	elven_trade(['botania:pixie_dust'], 'botania:mana_powder').id("atlanabyss:elven_trade_pixie_dust")
+	elven_trade(['twilightforest:ice_bomb'], 'minecraft:blue_ice').id("atlanabyss:elven_trade_ice_bomb")
+	elven_trade(['twilightforest:ice_bow'], 'minecraft:bow').id("atlanabyss:elven_trade_ice_bow")
+	elven_trade(['twilightforest:ice_sword'], 'minecraft:diamond_sword').id("atlanabyss:elven_trade_ice_sword")
 
-	event.recipes.botania.mana_infusion(
+	mana_infusion(
 		'2x touhou_little_maid:power_point',
 		'minecraft:experience_bottle', 240,
 		'botania:alchemy_catalyst'
@@ -1018,7 +1025,7 @@ onEvent('recipes', event => {
 	pressing(
 		'beyond_earth:desh_plate',
 		'beyond_earth:desh_ingot'
-	).id('atlanabyss:pressing_desh_plate')//戴斯板
+	).id('atlanabyss:pressing_desh_sheet')//戴斯板
 
 	//缠魂
 	function createHaunting(input, output, id) {
@@ -1111,8 +1118,19 @@ onEvent('recipes', event => {
 		'kubejs:meteosteel_sheet', [
 		deploying(cm, [cm, 'pneumaticcraft:printed_circuit_board']),
 		deploying(cm, [cm, 'kubejs:charged_electron_tube']),
-		filling(tm, [tm, Fluid.of('pneumaticcraft:lubricant', 125)])
+		filling(tm, [tm, Fluid.of('pneumaticcraft:lubricant', 100)])
 	]).transitionalItem(cm).loops(5).id("atlanabyss:computer_mechanism")
+	//引力构件
+	let gm = ('kubejs:incomplete_gravitation_mechanism')
+	sequenced_assembly([
+		'kubejs:gravitation_mechanism'
+	],
+		'kubejs:magbismuth_sheet', [
+		deploying(gm, [gm, 'ae2:cell_component_4k']),
+		deploying(gm, [gm, 'kubejs:candy_electron_tube']),
+		filling(gm, [gm, Fluid.of('tconstruct:ender_slime', 50)]),
+		deploying(gm, [gm, 'minecraft:honeycomb_block']).keepHeldItem(true)
+	]).transitionalItem(gm).loops(5).id("atlanabyss:gravitation_mechanism")
 
 	//陨钢锭
 	event.custom({
@@ -1149,6 +1167,43 @@ onEvent('recipes', event => {
 	event.shapeless('9x kubejs:meteosteel_nugget', [
 		'kubejs:meteosteel_ingot'
 	]).id("atlanabyss:meteosteel_nugget_from_ingot")
+
+	//神铋锭
+	event.custom({
+		type: 'thermal:smelter',
+		ingredients: [
+			{
+				value: [
+					{ item: 'kubejs:bismuth_ingot' }
+				],
+				count: 3
+			},
+			{
+				value: [
+					{ item: 'kubejs:aluminum_ingot' },
+					{ item: 'kubejs:aluminum_dust' }
+				],
+				count: 1
+			},
+			{
+				value: [
+					{ item: 'botania:pixie_dust' }
+				],
+				count: 5
+			}
+		],
+		result: [
+			Item.of('kubejs:magbismuth_ingot', 1).toResultJson()
+		],
+		energy: 24000
+	}).id("atlanabyss:smelter_magbismuth_ingot")
+	//神铋板
+	pressing(
+		'kubejs:magbismuth_sheet',
+		'kubejs:magbismuth_ingot'
+	).id("atlanabyss:pressing_magbismuth_sheet")
+
+
 
 	//压缩煤块
 	let o = ('minecraft:obsidian')
@@ -1284,7 +1339,18 @@ onEvent('recipes', event => {
 	mixing('kubejs:bismuth_ingot', [
 		'kubejs:raw_bismuth',
 		'minecraft:chorus_fruit'
-	]).heated().id("atlanabyss:bismuth_ingot")
+	]).heated().id("atlanabyss:mixing_bismuth_ingot")
+	event.custom({
+		type: 'thermal:smelter',
+		ingredients: [
+			Ingredient.of('kubejs:raw_bismuth').toJson(),
+			Ingredient.of('minecraft:chorus_fruit').toJson()
+		],
+		result: [
+			Item.of('kubejs:bismuth_ingot', 1).toResultJson()
+		],
+		energy: 4800
+	}).id("atlanabyss:smelter_bismuth_ingot")
 	event.shapeless('9x kubejs:bismuth_ingot', ['kubejs:bismuth_block']).id("atlanabyss:bismuth_ingot_from_block")
 	//铋块
 	event.shaped('kubejs:bismuth_block', [
@@ -1465,6 +1531,36 @@ onEvent('recipes', event => {
 		],
 		energy_mod: 0.5
 	}).id("atlanabyss:pulverizer_uranium_dust");
+	event.custom({
+		type: 'thermal:pulverizer',
+		ingredient: {
+			tag: 'forge:raw_materials/uranium'
+		},
+		result: [
+			{
+				item: 'biggerreactors:uranium_dust',
+				chance: 1.5
+			}
+		],
+		experience: 0.1
+	}).id("atlanabyss:pulverizer_raw_uranium")
+	event.custom({
+		type: 'thermal:pulverizer',
+		ingredient: {
+			tag: 'forge:ores/uranium'
+		},
+		result: [
+			{
+				item: 'biggerreactors:uranium_dust',
+				chance: 3.5
+			},
+			{
+				item: 'minecraft:gravel',
+				chance: 0.2
+			}
+		],
+		experience: 0.5
+	}).id("atlanabyss:pulverizer_uranium_ore")
 	//铀块
 	remove('biggerreactors:crafting/uranium_block')
 	remove('biggerreactors:crafting/uranium_ingot')
@@ -1949,19 +2045,19 @@ onEvent('recipes', event => {
 	remove('ars_nouveau:manipulation_essence_to_cascading_sapling')
 	remove('ars_nouveau:manipulation_essence_to_blazin_sapling')
 	remove('ars_nouveau:manipulation_essence_to_vexing_sapling')
-	event.recipes.botania.mana_infusion('ars_nouveau:blue_archwood_sapling', 'ars_nouveau:green_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:blue_archwood_sapling")
-	event.recipes.botania.mana_infusion('ars_nouveau:purple_archwood_sapling', 'ars_nouveau:blue_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:purple_archwood_sapling")
-	event.recipes.botania.mana_infusion('ars_nouveau:red_archwood_sapling', 'ars_nouveau:purple_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:red_archwood_sapling")
-	event.recipes.botania.mana_infusion('ars_nouveau:green_archwood_sapling', 'ars_nouveau:red_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:mana_infusion_green_archwood_sapling")
+	mana_infusion('ars_nouveau:blue_archwood_sapling', 'ars_nouveau:green_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:blue_archwood_sapling")
+	mana_infusion('ars_nouveau:purple_archwood_sapling', 'ars_nouveau:blue_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:purple_archwood_sapling")
+	mana_infusion('ars_nouveau:red_archwood_sapling', 'ars_nouveau:purple_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:red_archwood_sapling")
+	mana_infusion('ars_nouveau:green_archwood_sapling', 'ars_nouveau:red_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:mana_infusion_green_archwood_sapling")
 	//活石
 	remove('botania:pure_daisy/livingrock')
-	event.recipes.botania.pure_daisy('botania:livingrock', 'minecraft:calcite', 30).id("atlanabyss:livingrock")
+	pure_daisy('botania:livingrock', 'minecraft:calcite', 30).id("atlanabyss:livingrock")
 	//活木
 	remove('botania:pure_daisy/livingwood')
-	event.recipes.botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:green_archwood_log', 30).id("atlanabyss:livingwood_by_green")
-	event.recipes.botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:blue_archwood_log', 30).id("atlanabyss:livingwood_by_blue")
-	event.recipes.botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:purple_archwood_log', 30).id("atlanabyss:livingwood_by_purple")
-	event.recipes.botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:red_archwood_log', 30).id("atlanabyss:livingwood_by_red")
+	pure_daisy('botania:livingwood_log', 'ars_nouveau:green_archwood_log', 30).id("atlanabyss:livingwood_by_green")
+	pure_daisy('botania:livingwood_log', 'ars_nouveau:blue_archwood_log', 30).id("atlanabyss:livingwood_by_blue")
+	pure_daisy('botania:livingwood_log', 'ars_nouveau:purple_archwood_log', 30).id("atlanabyss:livingwood_by_purple")
+	pure_daisy('botania:livingwood_log', 'ars_nouveau:red_archwood_log', 30).id("atlanabyss:livingwood_by_red")
 
 
 	let types = ["three", "eight", "plus", "minus", "multiply", "divide"]

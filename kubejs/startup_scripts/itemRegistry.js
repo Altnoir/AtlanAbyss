@@ -11,6 +11,7 @@ onEvent('item.registry', event => {
 	event.create('aluminum_ingot').displayName('Aluminum Ingot');
 	event.create('aluminium_alloy_ingot').displayName('Aluminium Alloy Ingot');
 	event.create('meteosteel_ingot').displayName('Meteosteel Ingot');
+	event.create('magbismuth_ingot').displayName('Magbismuth Ingot');
 	event.create('osmium_ingot').displayName('Osmium Ingot');
 	event.create('uranium_ingot').displayName('Uranium Ingot');
 	event.create('plutonium_ingot').displayName('Plutonium Ingot');
@@ -44,6 +45,7 @@ onEvent('item.registry', event => {
 	event.create('rose_quartz_sheet').displayName('Rose Quartz Sheet');
 	event.create('aluminum_sheet').displayName('Aluminum Sheet');
 	event.create('meteosteel_sheet').displayName('Meteosteel Sheet');
+	event.create('magbismuth_sheet').displayName('Magbismuth Sheet');
 	event.create('osmium_sheet').displayName('Osmium Sheet');
 	event.create('charged_constantan_sheet').displayName('Charged Constantan Sheet').rarity(RARITY_RARE);
 	event.create('bismuth_sheet').displayName('Bismuth Sheet');
@@ -79,13 +81,15 @@ onEvent('item.registry', event => {
 	event.create('charged_electron_tube').displayName('Charged Electron Tube');
 
 	event.create('incomplete_vibration_mechanim', 'create:sequenced_assembly').displayName('Incomplete Vibration Mechanim');
-	event.create('vibration_mechanism').displayName('Vibration Mechanism').rarity(RARITY_RARE);
+	event.create('vibration_mechanism').displayName('Vibration Mechanism');
 	event.create('incomplete_pressure_mechanism', 'create:sequenced_assembly').displayName('Incomplete Pressure Mechanism');
-	event.create('pressure_mechanism').displayName('Pressure Mechanism').rarity(RARITY_RARE);
+	event.create('pressure_mechanism').displayName('Pressure Mechanism').rarity(RARITY_COMMON);
 	event.create('incomplete_thermal_mechanism', 'create:sequenced_assembly').displayName('Incomplete Thermal Mechanism');
 	event.create('thermal_mechanism').displayName('Thermal Mechanism').rarity(RARITY_RARE);
 	event.create('incomplete_computer_mechanism', 'create:sequenced_assembly').displayName('Incomplete Computer Mechanism');
-	event.create('computer_mechanism').displayName('Computer Mechanism').rarity(RARITY_RARE);
+	event.create('computer_mechanism').displayName('Computer Mechanism').rarity(RARITY_EPIC);
+	event.create('incomplete_gravitation_mechanism', 'create:sequenced_assembly').displayName('Incomplete Gravitation Mechanism');
+	event.create('gravitation_mechanism').displayName('Gravitation Mechanism').rarity(RARITY_EPIC);
 
 	event.create('album_transpain').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_indigrotto').displayName('Album').rarity(RARITY_RARE).unstackable();

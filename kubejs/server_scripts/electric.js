@@ -817,6 +817,68 @@ onEvent('recipes', event => {
     experience: 0.1
   }).id("atlanabyss:smelter_raw_nickel")
 
+  //铝
+  event.custom({
+    type: 'thermal:pulverizer',
+    ingredient: {
+      tag: 'forge:ores/aluminum'
+    },
+    result: [
+      {
+        item: 'kubejs:aluminum_dust',
+        chance: 2.0
+      },
+      {
+        item: 'minecraft:netherrack',
+        chance: 0.2
+      }
+    ],
+    experience: 0.5
+  }).id("atlanabyss:pulverizer_aluminum_ore")
+  event.custom({
+    type: 'thermal:pulverizer',
+    ingredient: {
+      tag: 'forge:raw_materials/aluminum'
+    },
+    result: [
+      {
+        item: 'kubejs:aluminum_dust',
+        chance: 1.25
+      },
+      {
+        item: 'thermal:netherite_dust',
+        chance: 0.01
+      }
+    ],
+    experience: 0.1
+  }).id("atlanabyss:pulverizer_raw_aluminum")
+  event.custom({
+    type: 'thermal:pulverizer',
+    ingredient: {
+      tag: 'forge:ingots/aluminum'
+    },
+    result: [
+      {
+        item: 'kubejs:aluminum_dust',
+        count: 1
+      }
+    ],
+    energy_mod: 0.5
+  }).id("atlanabyss:pulverizer_aluminum_ingot_to_dust")
+  event.custom({
+    type: 'thermal:pulverizer',
+    ingredient: {
+      tag: 'forge:plates/aluminum'
+    },
+    result: [
+      {
+        item: 'kubejs:aluminum_dust',
+        count: 1
+      }
+    ],
+    energy_mod: 0.5
+  }).id("atlanabyss:pulverizer_aluminum_plate_to_dust")
+
   //有机灌注器
   function insolatorRecipe(ingredient, result, energy, water, id) {
     event.custom({
