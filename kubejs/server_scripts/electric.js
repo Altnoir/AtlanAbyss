@@ -140,6 +140,30 @@ onEvent('recipes', event => {
   remove('thermal:dynamo_disenchantment')
   remove('thermal:dynamo_compression')
   remove('thermal:dynamo_magmatic')
+
+  //压缩能源炉
+  event.shaped('thermal:dynamo_compression', [
+    ' A ',
+    'BCB',
+    'BDB'
+  ], {
+    A: 'thermal:rf_coil',
+    B: 'create:brass_sheet',
+    C: 'createaddition:capacitor',
+    D: 'kubejs:thermal_mechanism'
+  }).id("atlanabyss:dynamo_compression")
+  //热力能源炉
+  event.shaped('thermal:dynamo_magmatic', [
+    ' A ',
+    'BCB',
+    'BDB'
+  ], {
+    A: 'thermal:rf_coil',
+    B: 'thermal:invar_plate',
+    C: 'createaddition:capacitor',
+    D: 'kubejs:thermal_mechanism'
+  }).id("atlanabyss:dynamo_magmatic")
+
   //扳手
   remove('thermal:tools/wrench')
   event.shaped('thermal:wrench', [
@@ -595,12 +619,14 @@ onEvent('recipes', event => {
     { input: 'minecraft:dragon_breath', output: 'device_potion_diffuser' },//药水雾化
     { input: 'minecraft:crafting_table', output: 'machine_crafter' },//序列装配台
     { input: 'minecraft:amethyst_block', output: 'machine_crystallizer' },//结晶器
+    { input: 'thermal:electrum_block', output: 'charge_bench' },//能量灌注机
+    { input: 'minecraft:emerald', output: 'machine_press' },//贸易站
   ];
   for (const machine of machines) {
     event.smithing(`thermal:${machine.output}`,
       'thermal:machine_frame',
       `${machine.input}`
-    ).id(`atlanabyss:${machine.output}`)
+    ).id(`atlanabyss:smithing_${machine.output}`)
   }
   //树汁提取
   event.shaped('thermal:device_tree_extractor', [
@@ -642,11 +668,6 @@ onEvent('recipes', event => {
     B: 'minecraft:glass_bottle',
     C: 'create:andesite_casing'
   }).id("atlanabyss:tinker_bench")
-  //能量灌注
-  event.shapeless('thermal:charge_bench', [
-    'thermal:electrum_block',
-    'kubejs:thermal_mechanism'
-  ]).id("atlanabyss:charge_bench")
 
   //造石机
   function rockGen(adjacent, output, id) {

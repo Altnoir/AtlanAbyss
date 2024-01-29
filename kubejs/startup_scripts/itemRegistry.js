@@ -56,8 +56,6 @@ onEvent('item.registry', event => {
 	event.create('rough_sand').displayName('Rough Sand');
 	event.create('sand_ball').displayName('Sand Ball');
 	event.create('silicon_compound').displayName('Silicon Compound');
-	event.create('incomplete_bismuth_circuit', 'create:sequenced_assembly').displayName('Incomplete Bismuth Circuit');
-	event.create('bismuth_circuit').displayName('Bismuth Circuit');
 	event.create('osmium_scrap').displayName('Osmium Scrap');
 	event.create('osmium_compound', 'create:sequenced_assembly').displayName('Osmium Compound');
 	event.create('organic_scrap').displayName('Organic Scrap');

@@ -1360,17 +1360,6 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:bismuth_ingot'
 	}).id("atlanabyss:bismuth_block")
-	//铋处理器
-	let bc = ('kubejs:incomplete_bismuth_circuit')
-	sequenced_assembly([
-		'kubejs:bismuth_circuit'
-	],
-		'kubejs:bismuth_sheet',
-		[
-			cutting(bc, bc).processingTime(100),
-			deploying(bc, [bc, 'thermal:signalum_nugget']),
-			pressing(bc, bc).processingTime(100)
-		]).transitionalItem(bc).loops(8).id("atlanabyss:bismuth_circuit")
 
 	//水晶矩阵锭
 	mixing(
