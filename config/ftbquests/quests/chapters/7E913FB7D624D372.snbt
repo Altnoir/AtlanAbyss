@@ -195,30 +195,6 @@
 			}]
 		}
 		{
-			title: "未唤醒的石头？"
-			icon: "molten_geodes:dormant_crimsite"
-			x: 2.0d
-			y: 1.5d
-			shape: "hexagon"
-			description: [
-				"你也许会在下界或颠倒之域发现一些不像晶洞的晶洞，这种晶洞內有少数未唤醒的石头，分别是“未唤醒的皓蓝石”，“未唤醒的辉绿岩”，“未唤醒的绯红岩”，“未唤醒的赭金砂”\\n你可以通过在这种石头的上方放置TNT来唤醒它！"
-				"唤醒之后只需在它附近放置岩浆源即可产出对应的石头。"
-			]
-			dependencies: ["137563E84BDBF0CC"]
-			hide: true
-			id: "62AB989F18B1E671"
-			tasks: [{
-				id: "2BE89D444928EDED"
-				type: "checkmark"
-				title: "未唤醒的石头？"
-			}]
-			rewards: [{
-				id: "69570CECF251D1C9"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
 			title: "获取原木"
 			x: 2.0d
 			y: 0.0d
@@ -686,7 +662,7 @@
 		{
 			title: "区块加载器"
 			disable_toast: true
-			x: 4.5d
+			x: 5.0d
 			y: 4.0d
 			shape: "hexagon"
 			description: ["在游戏里，当玩家离一个区域太远之后，那个区域的区块便会卸载掉（出生点区块除外），所以如果您有很重要的建筑不想要让它卸载，也许您可以试试：区块加载器！"]
@@ -706,8 +682,9 @@
 		}
 		{
 			disable_toast: true
-			x: 3.5d
+			x: 3.0d
 			y: 4.0d
+			shape: "hexagon"
 			description: [
 				"在这个世界上，遍布都是资源，可惜以您的肉眼是无法观测的，如果您想要知道，探矿杖是您的不二之选！"
 				"温馨提示：油田也能探。"
@@ -755,7 +732,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 1.0d
 			y: 4.0d
 			description: ["一种又轻又软的金属。"]
 			dependencies: ["137563E84BDBF0CC"]
@@ -974,13 +951,14 @@
 			tasks: [{
 				id: "2A68778D3CEFF75A"
 				type: "dimension"
+				title: "前往霜原星"
 				icon: "beyond_earth:permafrost"
 				dimension: "beyond_earth:glacio"
 			}]
 			rewards: [{
-				id: "76B4C53FC9CBF379"
-				type: "xp"
-				xp: 10
+				id: "0DE74D7551518443"
+				type: "item"
+				item: "beyond_earth:glacio_globe"
 			}]
 		}
 		{
@@ -1153,9 +1131,9 @@
 				item: "beyond_earth:nasa_workbench"
 			}]
 			rewards: [{
-				id: "6BDA15614B351490"
-				type: "xp"
-				xp: 10
+				id: "1026F3994489C6CF"
+				type: "item"
+				item: "beyond_earth:earth_globe"
 			}]
 		}
 		{
@@ -1407,6 +1385,11 @@
 				type: "item"
 				item: "kubejs:candy_electron_tube"
 			}]
+			rewards: [{
+				id: "0789975A3961A0AB"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -2.0d
@@ -1417,6 +1400,11 @@
 				id: "27CA6E90A641B353"
 				type: "item"
 				item: "kubejs:gravitation_mechanism"
+			}]
+			rewards: [{
+				id: "1172CEB5F06F9C8A"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -1429,6 +1417,8 @@
 			tasks: [{
 				id: "484231C754E25BFA"
 				type: "dimension"
+				title: "登上月球"
+				icon: "beyond_earth:moon_stone"
 				dimension: "beyond_earth:moon"
 			}]
 			rewards: [{
@@ -1447,6 +1437,8 @@
 			tasks: [{
 				id: "3DD2C056D65BF518"
 				type: "dimension"
+				title: "抵达火星"
+				icon: "beyond_earth:mars_stone"
 				dimension: "beyond_earth:mars"
 			}]
 			rewards: [{
@@ -1465,6 +1457,8 @@
 			tasks: [{
 				id: "75A1F53D81AFE270"
 				type: "dimension"
+				title: "飞往水星"
+				icon: "beyond_earth:mercury_stone"
 				dimension: "beyond_earth:mercury"
 			}]
 			rewards: [{
@@ -1483,6 +1477,8 @@
 			tasks: [{
 				id: "26D2D23B2921E150"
 				type: "dimension"
+				title: "着陆金星"
+				icon: "beyond_earth:venus_stone"
 				dimension: "beyond_earth:venus"
 			}]
 			rewards: [{
@@ -1885,7 +1881,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 3.0d
 			y: 7.0d
 			shape: "hexagon"
 			dependencies: ["3909A2788335AB22"]
@@ -1895,6 +1891,82 @@
 				id: "712597DC1932ABA7"
 				type: "item"
 				item: "pneumaticcraft:amadron_tablet"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["30A0CDCD1B7CE208"]
+			hide: true
+			id: "780E7334812E5863"
+			tasks: [
+				{
+					id: "13A3AC882A74B6EF"
+					type: "item"
+					item: {
+						id: "entangled:block"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "69EE843240BAAA5A"
+					type: "item"
+					item: {
+						id: "entangled:item"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "5400574C98A4605D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			hide: true
+			id: "0D77BEE452563508"
+			tasks: [
+				{
+					id: "7A16F9C3F7B63362"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "2FF509F420B8BA94"
+					type: "item"
+					item: "enderstorage:ender_tank"
+				}
+			]
+			rewards: [{
+				id: "23671D930D266F8F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["3671DBBFABCD1B71"]
+			hide: true
+			id: "6CD725A11ABEF296"
+			tasks: [{
+				id: "3359A264F57FDABD"
+				type: "item"
+				item: "itemcollectors:basic_collector"
+			}]
+			rewards: [{
+				id: "385F347EE599AB01"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

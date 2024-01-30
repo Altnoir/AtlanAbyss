@@ -1,0 +1,3 @@
+#List of affix that'll be make compatible with guns
+gun_compatibe_affix = ["apotheosis:glacial", "apotheosis:infernal", "apotheosis:intricate", "apotheosis:lacerating", "apotheosis:shredding", "apotheosis:vampiric"]
+

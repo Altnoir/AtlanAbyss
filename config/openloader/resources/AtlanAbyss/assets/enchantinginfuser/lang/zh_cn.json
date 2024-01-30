@@ -1,0 +1,17 @@
+{
+  "block.enchantinginfuser.enchanting_infuser": "附魔灌注台",
+  "block.enchantinginfuser.advanced_enchanting_infuser": "高级附魔灌注台",
+  "block.enchantinginfuser.description.choose": "允许选择附魔。",
+  "block.enchantinginfuser.description.chooseAndModify": "允许选择附魔，以及修改和移除现有的附魔。",
+  "block.enchantinginfuser.description.repair": "也可以用等级修复物品。",
+  "gui.enchantinginfuser.tooltip.enchanting_power": "%s / %s 附魔力量",
+  "gui.enchantinginfuser.tooltip.enchanting_power.hint": "在灌注台周围放置书架形成一个正方形，最多可以有两层。并且不要忘记填满角落！",
+  "gui.enchantinginfuser.tooltip.durability": "耐久度：%s",
+  "gui.enchantinginfuser.tooltip.change": "%s -> %s",
+  "gui.enchantinginfuser.tooltip.points": "获得经验点数",
+  "gui.enchantinginfuser.tooltip.required_enchanting_power": "当前附魔力量：%s / %s",
+  "gui.enchantinginfuser.tooltip.unknown_enchantment": "这个附魔对于附魔力量如此之小的灌注台来说太强大了。",
+  "gui.enchantinginfuser.tooltip.lowPower1": "进一步提高这个附魔的等级需要一个附魔力量更大的灌注台。",
+  "gui.enchantinginfuser.tooltip.lowPower2": "修改这个附魔的等级需要一个附魔力量更大的灌注台。",
+  "gui.enchantinginfuser.tooltip.incompatible": "这个附魔与以下附魔不兼容：%s"
+}
