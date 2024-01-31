@@ -503,7 +503,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 6.0d
 			y: 6.0d
 			description: ["使用分液池从沙子中过滤出细沙，并使用辊压机压缩细沙获得。"]
 			dependencies: ["0D3B950AFB6E6BC2"]
@@ -662,8 +662,8 @@
 		{
 			title: "区块加载器"
 			disable_toast: true
-			x: 5.0d
-			y: 4.0d
+			x: 4.5d
+			y: 3.0d
 			shape: "hexagon"
 			description: ["在游戏里，当玩家离一个区域太远之后，那个区域的区块便会卸载掉（出生点区块除外），所以如果您有很重要的建筑不想要让它卸载，也许您可以试试：区块加载器！"]
 			dependencies: ["3671DBBFABCD1B71"]
@@ -1892,6 +1892,11 @@
 				type: "item"
 				item: "pneumaticcraft:amadron_tablet"
 			}]
+			rewards: [{
+				id: "2FF9E80F6F216C1E"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -1.0d
@@ -1952,8 +1957,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 4.0d
+			x: 3.5d
+			y: 3.0d
 			shape: "hexagon"
 			dependencies: ["3671DBBFABCD1B71"]
 			hide: true
@@ -1965,6 +1970,24 @@
 			}]
 			rewards: [{
 				id: "385F347EE599AB01"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["3671DBBFABCD1B71"]
+			hide: true
+			id: "1965261AE4F1DCD3"
+			tasks: [{
+				id: "1DD38BDF51518B8A"
+				type: "item"
+				item: "tac:workbench"
+			}]
+			rewards: [{
+				id: "263F3CB687026EBD"
 				type: "xp"
 				xp: 10
 			}]

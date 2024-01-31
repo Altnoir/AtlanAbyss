@@ -20,22 +20,226 @@ onEvent('recipes', event => {
 		}).id('atlanabyss:tac_workbench_' + item.replace(":", "_"))
 	}
 
+	//手枪
+	tacRecipes('tac:m1911', [
+		['#forge:materials/uncommon', 1]
+	]);
+	tacRecipes('tac:glock_17', [
+		['#forge:materials/rare', 1],
+	]);
+	tacRecipes('tac:sti2011', [
+		['#forge:materials/rare', 2],
+	]);
+	tacRecipes('tac:m92fs', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/rare', 1],
+	]);
 	tacRecipes('tac:deagle_357', [
-		['#forge:materials/ultimate', 16],
-	])
-	tacRecipes('tac:colt_python', [
-		['#forge:materials/ultimate', 8],
-		['#forge:materials/legendary', 3]
-	])
+		['#forge:materials/ultimate', 16]
+	]);
+	tacRecipes('tac:glock_18', [
+		['#forge:materials/rare', 3],
+	]);
+	tacRecipes('tac:cz75', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/rare', 1],
+	]);
+	tacRecipes('tac:cz75_auto', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/rare', 3],
+	]);
+	tacRecipes('tac:mk23', [
+		['#forge:materials/uncommon', 1],
+		['#forge:materials/rare', 2],
+	]);
+	tacRecipes('tac:tti_g34', [
+		['#forge:materials/uncommon', 3],
+		['#forge:materials/rare', 1],
+	]);
 	tacRecipes('tac:timeless_50', [
 		['#forge:materials/ultimate', 4],
 		['#forge:materials/legendary', 16]
-	])
+	]);
+	tacRecipes('tac:colt_python', [
+		['#forge:materials/ultimate', 8],
+		['#forge:materials/legendary', 3]
+	]);
+	tacRecipes('tac:tec_9', [
+		['#forge:materials/uncommon', 1],
+		['#forge:materials/rare', 2],
+	]);
+	//冲锋枪
+	tacRecipes('tac:vector45', [
+		['#forge:materials/uncommon', 1],
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 1],
+	]);
+	tacRecipes('tac:micro_uzi', [
+		['#forge:materials/rare', 1],
+	]);
+	tacRecipes('tac:m1a1_smg', [
+		['#forge:materials/uncommon', 5]
+	]);
+	tacRecipes('tac:hk_mp5a5', [
+		['#forge:materials/rare', 5]
+	]);
+	tacRecipes('tac:mp7', [
+		['#forge:materials/uncommon', 3],
+		['#forge:materials/rare', 2],
+		['#forge:materials/epic', 1],
+	]);
+	tacRecipes('tac:mp9', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/epic', 1],
+	]);
+	tacRecipes('tac:udp_9', [
+		['#forge:materials/rare', 1],
+		['#forge:materials/epic', 1],
+	]);
+	tacRecipes('tac:p90', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 1],
+	]);
+	tacRecipes('tac:uzi', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/rare', 1],
+	]);
+	//步枪
+	tacRecipes('tac:ak47', [
+		['#forge:materials/uncommon', 5],
+		['#forge:materials/rare', 3],
+	]);
+	tacRecipes('tac:m4', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/rare', 5],
+	]);
+	tacRecipes('tac:m4', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 2]
+	]);
+	tacRecipes('tac:qbz_95', [
+		['#forge:materials/uncommon', 2],
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 1]
+	]);
+	tacRecipes('tac:mk14', [
+		['#forge:materials/rare', 5],
+		['#forge:materials/epic', 3]
+	]);
+	tacRecipes('tac:hk416_a5', [
+		['#forge:materials/rare', 5],
+		['#forge:materials/epic', 2]
+	]);
+	tacRecipes('tac:type81_x', [
+		['#forge:materials/uncommon', 5],
+		['#forge:materials/rare', 3]
+	]);
+	tacRecipes('tac:fn_fal', [
+		['#forge:materials/uncommon', 6],
+		['#forge:materials/rare', 2]
+	]);
+	tacRecipes('tac:sig_mcx_spear', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 3]
+	]);
+	tacRecipes('tac:sks_tactical', [
+		['#forge:materials/uncommon', 3],
+		['#forge:materials/rare', 6]
+	]);
+	tacRecipes('tac:qbz_191', [
+		['#forge:materials/uncommon', 3],
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 1]
+	]);
+	tacRecipes('tac:m16a4', [
+		['#forge:materials/rare', 5],
+		['#forge:materials/epic', 2]
+	]);
+	tacRecipes('tac:scar_h', [
+		['#forge:materials/rare', 6],
+		['#forge:materials/epic', 2]
+	]);
+	tacRecipes('tac:scar_l', [
+		['#forge:materials/rare', 5],
+		['#forge:materials/epic', 1]
+	]);
+	tacRecipes('tac:mk47', [
+		['#forge:materials/uncommon', 3],
+		['#forge:materials/rare', 4],
+		['#forge:materials/epic', 1]
+	]);
+	tacRecipes('tac:spr15', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 1]
+	]);
+	tacRecipes('tac:mk18_mod1', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 2]
+	]);
+	tacRecipes('tac:hk_g3', [
+		['#forge:materials/rare', 2],
+		['#forge:materials/epic', 2],
+		['#forge:materials/legendary', 1]
+	]);
+	//狙击枪
+	tacRecipes('tac:m24', [
+		['#forge:materials/rare', 9]
+	]);
+	tacRecipes('tac:ai_awp', [
+		['#forge:materials/rare', 8],
+		['#forge:materials/epic', 5]
+	]);
+	tacRecipes('tac:scar_mk20', [
+		['#forge:materials/rare', 9],
+		['#forge:materials/epic', 2]
+	]);
+	tacRecipes('tac:mrad', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 8],
+		['#forge:materials/legendary', 2]
+	]);
+	tacRecipes('tac:m82a2', [
+		['#forge:materials/epic', 6],
+		['#forge:materials/legendary', 6],
+		['#forge:materials/ultimate', 2],
+	]);
+	//霰弹枪
+	tacRecipes('tac:db_short', [
+		['#forge:materials/uncommon', 5]
+	]);
+	tacRecipes('tac:m870_classic', [
+		['#forge:materials/uncommon', 6],
+		['#forge:materials/rare', 1]
+	]);
+	tacRecipes('tac:m1014', [
+		['#forge:materials/rare', 3],
+		['#forge:materials/epic', 1]
+	]);
+	tacRecipes('tac:aa_12', [
+		['#forge:materials/epic', 3],
+		['#forge:materials/legendary', 3]
+	]);
+	//重型武器
 	tacRecipes('tac:m60', [
+		['#forge:materials/epic', 18],
+		['#forge:materials/legendary', 12],
 		['#forge:materials/ultimate', 1],
-		['#forge:materials/legendary', 10],
-		['#forge:materials/epic', 20],
-	])
+	]);
+	tacRecipes('tac:dp28', [
+		['#forge:materials/rare', 12]
+	]);
+	tacRecipes('tac:rpk', [
+		['#forge:materials/uncommon', 3],
+		['#forge:materials/rare', 10]
+	]);
+	tacRecipes('tac:rpg7', [
+		['#forge:materials/rare', 15],
+		['#forge:materials/legendary', 3]
+	]);
+	tacRecipes('tac:m249', [
+		['#forge:materials/epic', 8],
+		['#forge:materials/legendary', 5]
+	]);
 
 	// //绿材料
 	// remove('tac:uncommon_material')
@@ -200,4 +404,24 @@ onEvent('recipes', event => {
 		A: 'minecraft:tnt',
 		B: 'createaddition:iron_rod'
 	}).id("atlanabyss:rpg7_missile")
+
+	//枪械工作台
+	remove('tac:workbench')
+	event.shaped('tac:workbench', [
+		'A',
+		'B'
+	], {
+		A: '#forge:stripped_logs',
+		B: 'pneumaticcraft:display_table'
+	}).id("atlanabyss:tac_workbench")
+
+	//扭蛋
+	event.shaped('kubejs:halo_gashapon', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: 'ae2:certus_quartz_crystal',
+		B: 'tac:ultimate_material'
+	}).id("atlanabyss:halo_gashapon")
 })

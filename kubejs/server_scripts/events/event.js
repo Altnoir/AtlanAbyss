@@ -416,15 +416,16 @@ onEvent('entity.hurt', event => {
       }
     }
     if (cmData === 11821916) { // 幸运
-      let wobs = level.worldBorder.getSize() / 96;
+      let worldSize = level.worldBorder.getSize();
+      let ws = worldSize / 96;
       let alice = actualEffect.getActive('kubejs:alice_powah');
 
       if (alice != null) {
         entity.attack(source, Math.max(0.5, damage * health / 32));
-      } else if (level.worldBorder.getSize() > 59999800) {
-        entity.attack(source, damage + wobs * 8);
+      } else if (worldSize > 59999800) {
+        entity.kill();
       } else {
-        entity.attack(source, damage + 8);
+        entity.attack(source, damage + ws * 8);
       }
       event.cancel();
     }

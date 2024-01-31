@@ -388,6 +388,38 @@ onEvent('recipes', event => {
 		B: 'thermal:enderium_block'
 	}).id("atlanabyss:ultimate_chunk_loader")
 
+	//传送石碑
+	//传送粉
+	remove('waystones:warp_dust')
+	event.shapeless('2x waystones:warp_dust', [
+		'thermal:ender_pearl_dust',
+		'botania:mana_powder'
+	]).id("atlanabyss:waystone_warp_dust")
+	//传送石
+	remove('waystones:warp_stone')
+	mana_infusion(
+		'waystones:warp_stone',
+		'waystones:warp_dust', 240
+	).id("atlanabyss:waystones_warp_stone")
+	//返回卷轴
+	remove('waystones:return_scroll')
+	event.shapeless('3x waystones:return_scroll', [
+		'ars_nouveau:blank_parchment',
+		'botania:mana_powder'
+	]).id("atlanabyss:waystone_return_scroll")
+	//绑定卷轴
+	remove('waystones:bound_scroll')
+	event.shapeless('3x waystones:bound_scroll', [
+		'ars_nouveau:blank_parchment',
+		'thermal:ender_pearl_dust'
+	]).id("atlanabyss:waystone_bound_scroll")
+	//传送卷轴
+	remove('waystones:warp_scroll')
+	event.shapeless('3x waystones:warp_scroll', [
+		'ars_nouveau:blank_parchment',
+		'waystones:warp_dust'
+	]).id("atlanabyss:waystone_warp_scroll")
+
 	//物品收集器
 	//基础
 	remove('itemcollectors:basic_collector')

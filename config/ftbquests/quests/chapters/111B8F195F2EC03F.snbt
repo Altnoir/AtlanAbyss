@@ -84,7 +84,7 @@
 		}
 		{
 			disable_toast: true
-			x: 4.0d
+			x: 3.5d
 			y: 1.5d
 			shape: "hexagon"
 			description: ["一把会飞的扫帚！不觉得很酷吗？"]
@@ -590,6 +590,60 @@
 				id: "5D026616E7B32315"
 				type: "item"
 				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "49BA741EDD3BD4E0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["41DCA36A2F09C523"]
+			hide: true
+			id: "311FF8EB13D08D2D"
+			tasks: [{
+				id: "78522AB3E9B59B05"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "41DCA36A2F09C523"
+			tasks: [{
+				id: "7C095EC265507BAE"
+				type: "item"
+				item: "waystones:warp_dust"
+			}]
+			rewards: [{
+				id: "79747C31EE8BA3E1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["41DCA36A2F09C523"]
+			hide: true
+			id: "72345E661D191FB1"
+			tasks: [{
+				id: "75E97BA4EC9B43B5"
+				type: "item"
+				item: "waystones:warp_plate"
+			}]
+			rewards: [{
+				id: "3732F196D4303CCE"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

@@ -14,7 +14,7 @@ function trading(event) {
         })
     }
 
-    let amadron = (input, inAmount, output, level, id) => {
+    let amadron = (input, inAmount, output, level, maxStock, id) => {
         event.custom({
             type: 'pneumaticcraft:amadron',
             static: false,
@@ -29,7 +29,7 @@ function trading(event) {
                 amount: 1
             },
             level: level,
-            maxStock: 1
+            maxStock: maxStock
         }).id('atlanabyss:amadron_' + id);
     }
 
@@ -39,7 +39,7 @@ function trading(event) {
         if (global.transactions[element])
             global.transactions[element].forEach(transaction => {
                 trade('kubejs:trade_card_' + element, transaction.in, transaction.out)
-                amadron('thermal:silver_coin', next() + 10, 'kubejs:trade_card_' + element, 3, 'trade_card_' + element)
+                amadron('thermal:silver_coin', next() + 10, 'kubejs:trade_card_' + element, 3, 1, 'trade_card_' + element)
             })
     });
 
@@ -47,7 +47,9 @@ function trading(event) {
         if (global.transactions[element])
             global.transactions[element].forEach(transaction => {
                 trade('kubejs:profession_card_' + element, transaction.in, transaction.out)
-                amadron('minecraft:emerald', next() + 5, 'kubejs:profession_card_' + element, 1, 'profession_card_' + element)
+                amadron('minecraft:emerald', next() + 5, 'kubejs:profession_card_' + element, 1, 1, 'profession_card_' + element)
             })
     });
+
+    amadron('thermal:gold_coin', 8, 'kubejs:halo_gashapon', 2, 500, 'halo_gashapon');
 }
