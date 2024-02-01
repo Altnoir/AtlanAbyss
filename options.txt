@@ -36,7 +36,7 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","create_central_kitchen:create_styled","file/[1.18]MASA全家桶汉化包.zip","file/Create Immersive Aircrafts Resource Pack 1.18.2 - 1.2.zip","file/XeKr 原版红石显示1.18.zip","file/MC Connected CTM v1.2.3-1.18.2.zip","file/Glass Panes CTM Fix v1.0-1.18.zip","resources/AtlanAbyss","resources/AtlanAbyss-Music","file/ldlib","file/multiblocked"]
+resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","create_central_kitchen:create_styled","file/[1.18]MASA全家桶汉化包.zip","file/XeKr 原版红石显示1.18.zip","file/MC Connected CTM v1.2.3-1.18.2.zip","file/Glass Panes CTM Fix v1.0-1.18.zip","resources/AtlanAbyss","resources/AtlanAbyss-Music","file/ldlib","file/multiblocked"]
 incompatibleResourcePacks:["file/ldlib","file/multiblocked"]
 lastServer:
 lang:zh_cn
@@ -188,12 +188,12 @@ key_pneumaticcraft.boots.jet_boots:key.keyboard.unknown
 key_key.beyond_earth.rocket_start:key.keyboard.space
 key_key.modernui.openCenter:key.keyboard.k:CONTROL
 key_key.modernui.zoom:key.keyboard.c
-key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.inventoryhud.toggle:key.keyboard.unknown
 key_key.inventoryhud.openconfig:key.keyboard.p
 key_key.inventoryhud.togglepot:key.keyboard.unknown
 key_key.inventoryhud.togglearm:key.keyboard.unknown
 key_key.inventoryhud.toggleall:key.keyboard.unknown
+key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.presencefootsteps.settings:key.keyboard.f10
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.equal

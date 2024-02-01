@@ -107,12 +107,14 @@ onEvent('item.registry', event => {
 	event.create('shotgun_ammo').maxStackSize(30).displayName('Shotgun Ammo');
 	event.create('rifle_ammo').maxStackSize(60).displayName('Rifle Ammo');
 	event.create('smg_ammo').maxStackSize(60).displayName('SMG Ammo');
+	event.create('sniper_ammo').maxStackSize(30).displayName('Sniper Ammo');
 	event.create('magnum_ammo').maxStackSize(10).displayName('Magnum Ammo');
 
 	event.create('pistol_shell', 'create:sequenced_assembly').displayName('Pistol Shell');
 	event.create('shotgun_shell', 'create:sequenced_assembly').displayName('Shotgun Shell');
 	event.create('rifle_shell', 'create:sequenced_assembly').displayName('Rifle Shell');
 	event.create('smg_shell', 'create:sequenced_assembly').displayName('SMG Shell');
+	event.create('sniper_shell', 'create:sequenced_assembly').displayName('Sniper Shell');
 	event.create('magnum_shell', 'create:sequenced_assembly').displayName('Magnum Shell');
 
 	//混合药草

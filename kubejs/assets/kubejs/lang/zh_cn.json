@@ -107,12 +107,14 @@
     "item.kubejs.shotgun_ammo": "霰弹枪子弹",
     "item.kubejs.rifle_ammo": "步枪子弹",
     "item.kubejs.smg_ammo": "冲锋枪子弹",
+    "item.kubejs.sniper_ammo": "大口径步枪子弹",
     "item.kubejs.magnum_ammo": "§e马格南子弹",
 
     "item.kubejs.pistol_shell": "手枪弹壳",
     "item.kubejs.shotgun_shell": "霰弹枪弹壳",
     "item.kubejs.rifle_shell": "步枪弹壳",
     "item.kubejs.smg_shell": "冲锋枪弹壳",
+    "item.kubejs.sniper_shell": "大口径步枪弹壳",
     "item.kubejs.magnum_shell": "§e马格南弹壳",
 
     "item.kubejs.mixed_herb_gg": "混合草药（§2G§r+§2G§r）",

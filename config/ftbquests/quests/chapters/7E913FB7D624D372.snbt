@@ -603,8 +603,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 6.0d
+			x: 8.5d
+			y: 5.0d
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "14A8E7E37136FB5C"
@@ -768,8 +768,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 5.5d
+			x: 9.5d
+			y: 4.5d
 			shape: "rsquare"
 			dependencies: ["14A8E7E37136FB5C"]
 			hide: true
@@ -844,8 +844,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 6.5d
+			x: 9.5d
+			y: 5.5d
 			shape: "rsquare"
 			dependencies: ["14A8E7E37136FB5C"]
 			hide: true
@@ -962,13 +962,12 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 5.0d
-			description: [
-				"世界神符：一种能扩大世界边界的功能性道具，右键使用，每次使用扩大2格边界，当有多个世界神符时可以蹲下一次性全部使用。"
-				"（临时配方）"
-			]
-			dependencies: ["0D3B950AFB6E6BC2"]
+			x: 5.5d
+			y: 8.0d
+			shape: "hexagon"
+			description: ["世界神符：一种能扩大世界边界的功能性道具，右键使用，每次使用扩大2格边界，当有多个世界神符时可以蹲下一次性全部使用。"]
+			dependencies: ["4786752F32FF31C0"]
+			hide: true
 			id: "1DDF4590B03EC6D4"
 			tasks: [{
 				id: "736E2C60FAC89ADE"
@@ -1990,6 +1989,69 @@
 				id: "263F3CB687026EBD"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			x: 4.5d
+			y: 8.0d
+			shape: "hexagon"
+			dependencies: ["4786752F32FF31C0"]
+			hide: true
+			id: "736880DB591C8A0A"
+			tasks: [{
+				id: "6746146993782451"
+				type: "item"
+				item: "kubejs:compressed_coal_block"
+			}]
+			rewards: [{
+				id: "76F72BA8351140C0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			shape: "hexagon"
+			dependencies: ["4786752F32FF31C0"]
+			hide: true
+			id: "5BD88AB862216AA1"
+			tasks: [
+				{
+					id: "5FA1AA5FE91C38F8"
+					type: "item"
+					item: "kubejs:substrate_igneous"
+				}
+				{
+					id: "38E60F0E2A51CDCD"
+					type: "item"
+					item: "kubejs:substrate_herbal"
+				}
+				{
+					id: "452738BA1A04020C"
+					type: "item"
+					item: "kubejs:substrate_volatile"
+				}
+				{
+					id: "667D652F424FEC88"
+					type: "item"
+					item: "kubejs:substrate_crystal"
+				}
+				{
+					id: "6B305E0FCC696BEB"
+					type: "item"
+					item: "kubejs:substrate_metal"
+				}
+				{
+					id: "2EA2B01D8E0579F5"
+					type: "item"
+					item: "kubejs:substrate_gem"
+				}
+			]
+			rewards: [{
+				id: "4ED18D8B2CA8E52C"
+				type: "item"
+				item: "kubejs:alchemy_0"
 			}]
 		}
 	]

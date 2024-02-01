@@ -77,7 +77,26 @@ onEvent('recipes', event => {
 		D: 'minecraft:stick'
 	}).id("atlanabyss:vein_finder")
 
-	compacting('kubejs:world_rune', '64x minecraft:cobblestone').id("atlanabyss:compacting_world_rune")
+	let ipi = 'minecraft:iron_nugget';
+	sequenced_assembly('kubejs:mass_scrap',
+		'#forge:nuggets/iron', [
+		deploying(ipi, [ipi, '#forge:cobblestone'])
+	]).transitionalItem(ipi).loops(16).id("atlanabyss:mass_scrap")
+
+	event.shaped('kubejs:planetary_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:mass_scrap'
+	}).id("atlanabyss:planetary_ingot")
+
+	event.shaped('kubejs:world_rune', [
+		'AA',
+		'AA'
+	], {
+		A: 'kubejs:planetary_ingot'
+	}).id("atlanabyss:world_rune")
 
 
 	//修复了原版宝石矿能烧的BUG

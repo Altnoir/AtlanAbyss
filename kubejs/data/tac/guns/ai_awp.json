@@ -34,7 +34,7 @@
         "preReloadPauseTicks": 0
     },
     "projectile": {
-        "item": "kubejs:rifle_ammo",
+        "item": "kubejs:sniper_ammo",
         "visible": false,
         "gravity": true,
         "damage": 40.5,
