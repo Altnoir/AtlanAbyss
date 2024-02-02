@@ -696,8 +696,7 @@ onEvent('recipes', event => {
 		type: 'pneumaticcraft:pressure_chamber',
 		inputs: [
 			Ingredient.of('minecraft:fermented_spider_eye'),
-			Ingredient.of('create:cinder_flour'),
-			Ingredient.of('minecraft:glistering_melon_slice')
+			Ingredient.of('create:cinder_flour')
 		],
 		results: [Item.of('kubejs:acid')],
 		pressure: 3.0

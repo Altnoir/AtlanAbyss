@@ -330,18 +330,18 @@ onEvent('recipes', event => {
 	//子弹
 	let pa = ('kubejs:pistol_shell')
 	sequenced_assembly([
-		'30x kubejs:pistol_ammo'
+		'10x kubejs:pistol_ammo'
 	],
 		'create:copper_sheet',
 		[
 			cutting(pa, pa),
 			deploying(pa, [pa, 'minecraft:gunpowder']),
 			pressing(pa, pa),
-		]).transitionalItem(pa).loops(3).id("atlanabyss:pistol_ammo")//手枪子弹
+		]).transitionalItem(pa).loops(1).id("atlanabyss:pistol_ammo")//手枪子弹
 
 	let sa = ('kubejs:shotgun_shell')
 	sequenced_assembly([
-		'6x kubejs:shotgun_ammo'
+		'2x kubejs:shotgun_ammo'
 	],
 		'create:brass_sheet',
 		[
@@ -350,46 +350,44 @@ onEvent('recipes', event => {
 			deploying(sa, [sa, 'minecraft:gunpowder']),
 			deploying(sa, [sa, 'thermal:steel_nugget']),
 			pressing(sa, sa),
-		]).transitionalItem(sa).loops(5).id("atlanabyss:shotgun_ammo")//霰弹枪子弹
+		]).transitionalItem(sa).loops(2).id("atlanabyss:shotgun_ammo")//霰弹枪子弹
 
 	let ra = ('kubejs:rifle_shell')
 	sequenced_assembly([
 		'10x kubejs:rifle_ammo'
 	],
-		'thermal:steel_plate',
+		'thermal:constantan_plate',
 		[
 			cutting(ra, ra),
-			deploying(ra, [ra, 'tconstruct:efln_ball']),
+			deploying(ra, [ra, 'minecraft:gunpowder']),
 			pressing(ra, ra),
 		]).transitionalItem(ra).loops(3).id("atlanabyss:rifle_ammo")//步枪子弹
 
 	let smg = ('kubejs:smg_shell')
 	sequenced_assembly([
-		'30x kubejs:smg_ammo'
+		'10x kubejs:smg_ammo'
 	],
 		'thermal:nickel_plate',
 		[
 			cutting(smg, smg,),
 			deploying(smg, [smg, 'minecraft:gunpowder']),
-			deploying(smg, [smg, 'minecraft:gunpowder']),
 			pressing(smg, smg),
-		]).transitionalItem(smg).loops(3).id("atlanabyss:smg_ammo")//冲锋枪子弹
+		]).transitionalItem(smg).loops(1).id("atlanabyss:smg_ammo")//冲锋枪子弹
 
 	let sna = ('kubejs:sniper_shell')
 	sequenced_assembly([
 		'5x kubejs:sniper_ammo'
 	],
-		'thermal:constantan_plate',
+		'thermal:steel_plate',
 		[
 			cutting(sna, sna,),
-			deploying(sna, [sna, 'tconstruct:efln_ball']),
 			deploying(sna, [sna, 'tconstruct:efln_ball']),
 			pressing(sna, sna),
 		]).transitionalItem(sna).loops(3).id("atlanabyss:sniper_ammo")//狙击枪子弹
 
 	let ma = ('kubejs:magnum_shell')
 	sequenced_assembly([
-		'3x kubejs:magnum_ammo'
+		'kubejs:magnum_ammo'
 	],
 		'kubejs:charged_constantan_sheet',
 		[
@@ -398,7 +396,7 @@ onEvent('recipes', event => {
 			deploying(ma, [ma, 'biggerreactors:uranium_dust']),
 			pressing(ma, ma),
 			pressing(ma, ma),
-		]).transitionalItem(ma).loops(10).id("atlanabyss:magnum_ammo")//马格南子弹
+		]).transitionalItem(ma).loops(5).id("atlanabyss:magnum_ammo")//马格南子弹
 
 	//手雷
 	remove('tac:light_grenade')

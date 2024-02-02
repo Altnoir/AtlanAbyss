@@ -374,7 +374,7 @@
     "tooltip.kubejs.yuuka1":"§6使§e枪械攻击§6能为穿戴者提供§e护盾",
 
     "tooltip.kubejs.koharu":"§6治愈之环",
-    "tooltip.kubejs.koharu1":"§6使§e枪械攻击§6的一半伤害转为§e治疗§6效果并提供给穿戴者",
+    "tooltip.kubejs.koharu1":"§6使§e枪械攻击§6的一半伤害转为给穿戴者提供§e治疗§6效果",
     "tooltip.kubejs.koharu2":"§6潜行状态下，使治疗变为§e范围§6，但治疗量固定",
 
     "tooltip.kubejs.noa":"§6转移之环",

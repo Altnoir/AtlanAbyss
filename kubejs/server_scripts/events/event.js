@@ -92,16 +92,16 @@ onEvent('item.right_click', event => {
   }
 })
 
-// onEvent("server.load", event => {
-//   let { server } = event;
+onEvent("server.load", event => {
+  let { server } = event;
 
-//   let worldBorder = server.getLevel('overworld').worldBorder;
-//   let size = worldBorder.getSize();
+  let worldBorder = server.getLevel('overworld').worldBorder;
+  let size = worldBorder.getSize();
 
-//   if (size >= 59999860) {
-//     worldBorder.setSize(96);
-//   }
-// })
+  if (size >= 59999860) {
+    worldBorder.setSize(96);
+  }
+})
 
 // function worldBorderSet(event) {
 //   let { player, level } = event;

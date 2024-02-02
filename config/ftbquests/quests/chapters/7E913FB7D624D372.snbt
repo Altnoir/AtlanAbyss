@@ -662,8 +662,8 @@
 		{
 			title: "区块加载器"
 			disable_toast: true
-			x: 4.5d
-			y: 3.0d
+			x: 4.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: ["在游戏里，当玩家离一个区域太远之后，那个区域的区块便会卸载掉（出生点区块除外），所以如果您有很重要的建筑不想要让它卸载，也许您可以试试：区块加载器！"]
 			dependencies: ["3671DBBFABCD1B71"]
@@ -682,7 +682,7 @@
 		}
 		{
 			disable_toast: true
-			x: 3.0d
+			x: 2.0d
 			y: 4.0d
 			shape: "hexagon"
 			description: [
@@ -1120,6 +1120,7 @@
 			}]
 		}
 		{
+			title: "太空时代！"
 			x: -2.0d
 			y: 0.0d
 			dependencies: ["30A0CDCD1B7CE208"]
@@ -1956,8 +1957,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 3.0d
+			x: 3.0d
+			y: 4.0d
 			shape: "hexagon"
 			dependencies: ["3671DBBFABCD1B71"]
 			hide: true
@@ -2052,6 +2053,24 @@
 				id: "4ED18D8B2CA8E52C"
 				type: "item"
 				item: "kubejs:alchemy_0"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["1965261AE4F1DCD3"]
+			hide: true
+			id: "523BA795DBF7D9DE"
+			tasks: [{
+				id: "4EDBC5377E31E0FA"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
+			rewards: [{
+				id: "5F9802220229A71F"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
