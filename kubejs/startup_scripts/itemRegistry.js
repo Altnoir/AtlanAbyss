@@ -222,6 +222,12 @@ onEvent('item.registry', event => {
 	// }).displayName('Canfood');
 	//   event.create('canfood_sealed').displayName('sealed canfood');
 
+	event.create('purin').food((food) => {
+		food.hunger(4)
+			.saturation(1.0)
+			.alwaysEdible(true)
+	}).displayName('Purin');//布丁
+
 	event.create('hydra_piece').food((food) => {
 		food.hunger(9)
 			.saturation(2.0)
@@ -268,13 +274,11 @@ onEvent('item.registry', event => {
 	event.create('torchberry_cookie').food((food) => {
 		food.hunger(2)
 			.saturation(0.2)
-			.meat()
 	}).displayName('Torchberry Cookie');//火炬浆果曲奇
 
 	event.create('chocolate_wafer').food((food) => {
 		food.hunger(8)
 			.saturation(0.6)
-			.meat()
 	}).displayName('Chocolate Wafer');//巧克力夹心薄饼
 
 	event.create('meef_wrap').food((food) => {
@@ -282,7 +286,6 @@ onEvent('item.registry', event => {
 			.saturation(0.8)
 			.effect('minecraft:strength', 1200, 0, 1)//力量
 			.effect('minecraft:regeneration', 1200, 0, 1)//生命恢复
-			.meat()
 	}).displayName('Meef Wrap');//米诺陶卷
 
 	event.create('experiment_113').food((food) => {
@@ -356,7 +359,6 @@ onEvent('item.registry', event => {
 	event.create('berry_stick').food((food) => {
 		food.hunger(4)
 			.saturation(0.2)
-			.meat()
 	}).displayName('Berry Stick');//浆果串
 
 	//碗装食物
@@ -366,14 +368,12 @@ onEvent('item.registry', event => {
 			.effect('minecraft:glowing', 3600, 0, 1)//发光
 			.effect('minecraft:night_vision', 3600, 0, 1)//夜视
 			.effect('farmersdelight:comfort', 1200, 0, 1)//舒坦
-			.meat()
 	}).displayName('Glowstew');//荧光煲
 
 	event.create('mushgloom_sauce').maxStackSize(16).food((food) => {
 		food.hunger(5)
 			.saturation(0.4)
 			.effect('minecraft:glowing', 200, 0, 1)//发光
-			.meat()
 	}).displayName('Mushgloom Sauce');//荧光蘑菇酱
 
 	event.create('glow_venison_rib_with_pasta').maxStackSize(16).food((food) => {
@@ -381,7 +381,6 @@ onEvent('item.registry', event => {
 			.saturation(0.7)
 			.effect('minecraft:glowing', 200, 0, 1)//发光
 			.effect('farmersdelight:nourishment', 6000, 0, 1)//滋养
-			.meat()
 	}).displayName('Glow Venison Rib with Pasta');//荧光浇汁鹿排配意面
 
 	event.create('mushgloom_meef_pasta').maxStackSize(16).food((food) => {
@@ -391,14 +390,12 @@ onEvent('item.registry', event => {
 			.effect('minecraft:strength', 1200, 1, 1)//力量2
 			.effect('minecraft:regeneration', 1200, 1, 1)//生命恢复2
 			.effect('farmersdelight:nourishment', 3600, 0, 1)//滋养
-			.meat()
 	}).displayName('Mushgloom Meef Pasta');//荧光米诺陶意面
 
 	event.create('fried_insect').maxStackSize(16).food((food) => {
 		food.hunger(10)
 			.saturation(0.61)
 			.effect('farmersdelight:nourishment', 6000, 0, 1)//滋养
-			.meat()
 	}).displayName('Fried Insect');//小炒肥虫
 
 	event.create('ghast_brain_salad').maxStackSize(16).food((food) => {
@@ -412,14 +409,12 @@ onEvent('item.registry', event => {
 			.effect('minecraft:poison', 2400, 0, 1)//中毒
 			.effect('minecraft:blindness', 2400, 0, 0.5)//50%失明
 			.effect('minecraft:weakness', 200, 0, 0.5)//50%虚弱
-			.meat()
 	}).displayName('Ghast Brain Salad');//恶魂脑沙拉
 
 	event.create('borer_tear_soup').maxStackSize(16).food((food) => {
 		food.hunger(6)
 			.saturation(0.5)
-			.effect('minecraft:saturation', 10, 0, 1)//饱和
-			.meat()
+			.effect('minecraft:saturation', 10, 0, 1)//饱和	
 	}).displayName('Borer Tear Soup');//蛀虫精华甜菜汤
 
 	event.create('thousand_plant_stew').maxStackSize(16).food((food) => {
@@ -427,21 +422,18 @@ onEvent('item.registry', event => {
 			.saturation(0.61)
 			.effect('minecraft:health_boost', 600, 1, 1)//生命提升2
 			.effect('minecraft:nausea', 300, 0, 0.1)//反胃
-			.meat()
 	}).displayName('Thousand Plant Stew');//万草煲
 
 	event.create('grilled_ghast').maxStackSize(16).food((food) => {
 		food.hunger(10)
 			.saturation(0.72)
 			.effect('farmersdelight:nourishment', 6000, 0, 1)//滋养
-			.meat()
 	}).displayName('Grilled Ghast');//炽烤恶魂肉
 
 	event.create('lily_chicken').maxStackSize(16).food((food) => {
 		food.hunger(16)
 			.saturation(0.875)
 			.effect('farmersdelight:nourishment', 6000, 0, 1)//滋养
-			.meat()
 	}).displayName('Plate of Lily Chicken');//荷花鸡
 
 	event.create('fiery_snakes').maxStackSize(16).food((food) => {
@@ -451,7 +443,6 @@ onEvent('item.registry', event => {
 			.effect('farmersdelight:comfort', 6000, 0, 1)//舒坦
 			.effect('minecraft:strength', 6000, 1, 1)//力量2
 			.effect('minecraft:regeneration', 400, 1, 1)//生命恢复2
-			.meat()
 	}).displayName('Plate of Fiery Snakes');//炽汁蛇宴
 
 	event.create('glacier_ice_cream').maxStackSize(16).food((food) => {
@@ -459,7 +450,6 @@ onEvent('item.registry', event => {
 			.saturation(0.5)
 			.effect('minecraft:fire_resistance', 7200, 0, 1)//防火
 			.effect('minecraft:slowness', 60, 2, 1)//缓慢3
-			.meat()
 	}).displayName('Glacier Ice Cream');//冰川冰淇淋
 
 	event.create('phytochemical_ice_cream').maxStackSize(16).food((food) => {
@@ -467,7 +457,6 @@ onEvent('item.registry', event => {
 			.saturation(0.5)
 			.effect('minecraft:health_boost', 1800, 1, 1)//生命提升2
 			.effect('minecraft:slowness', 60, 2, 1)//缓慢3
-			.meat()
 	}).displayName('Phytochemical Ice Cream');//植物素冰淇淋
 
 	event.create('torchberry_ice_cream').maxStackSize(16).food((food) => {
@@ -475,7 +464,6 @@ onEvent('item.registry', event => {
 			.saturation(0.5)
 			.effect('minecraft:glowing', 1800, 0, 1)//发光
 			.effect('minecraft:slowness', 60, 2, 1)//缓慢3
-			.meat()
 	}).displayName('Torchberry Ice Cream');//火炬浆果冰淇淋
 
 	event.create('aurora_ice_cream').maxStackSize(16).food((food) => {
@@ -484,7 +472,6 @@ onEvent('item.registry', event => {
 			.effect('minecraft:speed', 1800, 2, 1)//速度3
 			.effect('minecraft:jump_boost', 1800, 1, 1)//跳跃提升2
 			.effect('minecraft:slowness', 60, 2, 1)//缓慢3
-			.meat()
 	}).displayName('Aurora Ice Cream');//极光冰淇淋
 
 	event.create('twilight_ice_cream').maxStackSize(16).food((food) => {
@@ -494,7 +481,6 @@ onEvent('item.registry', event => {
 			.effect('neapolitan:sugar_rush', 900, 0, 1)//能量冲击
 			.effect('minecraft:instant_health', 1, 0, 1)//瞬间治疗
 			.effect('minecraft:slowness', 60, 2, 1)//缓慢3
-			.meat()
 	}).displayName('Twilight Ice Cream');//暮色冰淇淋
 
 	event.create('rainbow_ice_cream').maxStackSize(16).food((food) => {
@@ -504,7 +490,6 @@ onEvent('item.registry', event => {
 			.effect('minecraft:jump_boost', 600, 1, 1)//跳跃提升2
 			.effect('neapolitan:harmony', 600, 0, 1)//和谐
 			.effect('neapolitan:agility', 600, 0, 1)//灵活
-			.meat()
 	}).displayName('Rainbow Ice Cream');//彩虹冰淇淋
 
 	event.create('refreshing_ice_cream').maxStackSize(16).food((food) => {
@@ -514,7 +499,6 @@ onEvent('item.registry', event => {
 			.effect('minecraft:health_boost', 600, 1, 1)//生命提升2
 			.effect('neapolitan:berserking', 600, 0, 1)//狂暴
 			.effect('minecraft:slowness', 60, 2, 1)//缓慢3
-			.meat()
 	}).displayName('Refreshing Ice Cream');//清爽冰淇淋
 
 	//饮料
@@ -523,7 +507,6 @@ onEvent('item.registry', event => {
 			.saturation(0.25)
 			.alwaysEdible(true)
 			.effect('minecraft:regeneration', 100, 1, 1)//生命恢复2
-			.meat()
 	}).displayName('Thorn Rose Tea');//荆棘玫瑰茶
 
 	event.create('torchberry_juice').maxStackSize(16).food((food) => {
@@ -532,7 +515,6 @@ onEvent('item.registry', event => {
 			.alwaysEdible(true)
 			.effect('minecraft:glowing', 200, 0, 1)//发光
 			.effect('minecraft:regeneration', 100, 1, 1)//生命恢复2
-			.meat()
 	}).displayName('Torchberry Juice');//火炬浆果汁
 
 	event.create('phytochemical_juice').maxStackSize(16).food((food) => {
@@ -541,7 +523,6 @@ onEvent('item.registry', event => {
 			.alwaysEdible(true)
 			.effect('minecraft:health_boost', 600, 1, 1)//生命提升2
 			.effect('minecraft:regeneration', 100, 1, 1)//生命恢复2
-			.meat()
 	}).displayName('Phytochemical Juice');//植物素汁
 
 	event.create('glacier_ice_tea').maxStackSize(16).food((food) => {
@@ -550,7 +531,6 @@ onEvent('item.registry', event => {
 			.alwaysEdible(true)
 			.effect('minecraft:fire_resistance', 7200, 0, 1)//防火
 			.effect('minecraft:regeneration', 100, 1, 1)//生命恢复2
-			.meat()
 	}).displayName('Glacier Ice Tea');//冰川冰茶
 
 	event.create('twilight_spring').maxStackSize(16).food((food) => {
@@ -558,7 +538,6 @@ onEvent('item.registry', event => {
 			.saturation(0)
 			.alwaysEdible(true)
 			.effect('minecraft:resistance', 1200, 1, 1)//抗性提升2
-			.meat()
 	}).displayName('Twilight Spring™');//暮色山泉™
 
 	event.create('tear_drink').maxStackSize(16).food((food) => {
@@ -567,7 +546,6 @@ onEvent('item.registry', event => {
 			.alwaysEdible(true)
 			.effect('minecraft:fire_resistance', 24000, 0, 1)//防火
 			.effect('minecraft:weakness', 1200, 0, 1)//虚弱
-			.meat()
 	}).displayName('Tear Drink');//盈泪之饮
 
 

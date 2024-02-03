@@ -412,9 +412,10 @@
     "tooltip.kubejs.hasumi2":"§6(消耗品)",
 
     "tooltip.kubejs.purana":"§6幸运之环",
-    "tooltip.kubejs.purana1":"§6世界边界越大，§e枪械攻击§6伤害越高",
-    "tooltip.kubejs.purana2":"§6根据受击者血量造成伤害",
-
+    "tooltip.kubejs.purana1":"§6使§e枪械攻击§6根据受击者血量造成伤害",
+    "tooltip.kubejs.purana2":"§6根据世界边界大小造成伤害",
+ 
+    "item.kubejs.purin": "布丁",
     "subtitle.kubejs.ciallo":"Ciallo～(∠・ω< )⌒☆",
 
     "gateways.wither_skeleton_gate":"凋零骷髅传送门",

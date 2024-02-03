@@ -695,6 +695,24 @@ onEvent('recipes', event => {
 		A: 'kubejs:cotton'
 	}).id("atlanabyss:crate_from_cotton")
 
+	//布丁
+	event.shaped('2x kubejs:purin', [
+		'AA',
+		'BC'
+	], {
+		A: 'minecraft:sugar',
+		B: 'minecraft:egg',
+		C: '#forge:milk'
+	}).id("atlanabyss:purin")
+	event.shaped('2x kubejs:purin', [
+		'AA',
+		'CB'
+	], {
+		A: 'minecraft:sugar',
+		B: 'minecraft:egg',
+		C: '#forge:milk'
+	}).id("atlanabyss:purin2")
+
 	//混合药草
 	// event.shapeless('kubejs:mixed_herb_gg', ['minecraft:fern', 'minecraft:fern']).id("atlanabyss:mixed_herb_gg")//绿+绿
 	// event.shapeless('kubejs:mixed_herb_ggg', ['kubejs:mixed_herb_gg', 'minecraft:fern']).id("atlanabyss:mixed_herb_ggg")//绿+绿+绿
