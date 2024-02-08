@@ -224,7 +224,7 @@ onEvent('item.registry', event => {
 
 	event.create('purin').food((food) => {
 		food.hunger(4)
-			.saturation(1.0)
+			.saturation(1.5)
 			.alwaysEdible(true)
 	}).displayName('Purin');//布丁
 

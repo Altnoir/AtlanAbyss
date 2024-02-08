@@ -16,16 +16,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:mechanical_piston"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:sticky_mechanical_piston"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 4,
                     "name": "create:piston_extension_pole",
                     "functions": [
@@ -60,27 +50,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:mechanical_bearing"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:clockwork_bearing"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:rope_pulley"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
                     "name": "create:elevator_pulley"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:cart_assembler"
                 },
                 {
                     "type": "minecraft:item",
@@ -122,11 +92,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:portable_storage_interface"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 3,
                     "name": "create:sail_frame",
                     "functions": [
@@ -138,11 +103,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:portable_fluid_interface"
                 },
                 {
                     "type": "minecraft:item",

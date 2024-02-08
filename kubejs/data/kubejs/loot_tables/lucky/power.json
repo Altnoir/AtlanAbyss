@@ -19,11 +19,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "create:windmill_bearing"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 6,
                     "name": "create:white_sail",
                     "functions": [

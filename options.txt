@@ -108,6 +108,9 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_key.zume.zoom:key.keyboard.c
+key_key.zume.zoom_in:key.keyboard.equal
+key_key.zume.zoom_out:key.keyboard.minus
 key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.tac.reload:key.keyboard.t
 key_key.tac.unload:key.keyboard.t:ALT
@@ -246,11 +249,11 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
-key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_key.cofh.mode_change_increment:key.keyboard.z
 key_key.cofh.mode_change_decrement:key.keyboard.unknown
 key_key.up:key.keyboard.space

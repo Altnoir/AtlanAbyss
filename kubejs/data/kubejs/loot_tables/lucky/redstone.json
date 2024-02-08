@@ -186,16 +186,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:daylight_detector"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:tripwire_hook"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "minecraft:redstone_lamp",
                     "functions": [
