@@ -114,56 +114,57 @@ onEvent('item.right_click', event => {
 //   worldBorder.setCenter(x, z);
 // }
 
-onEvent('entity.spawned', event => {
-  let { entity, level, server } = event;
-  let { x, z } = entity;
+// onEvent('entity.spawned', event => {
+//   let { entity, level, server } = event;
+//   let { x, z } = entity;
 
-  //oldMonsterSpawn(生命值, 倍率, 初始半径, 每隔多少半径强化一次，false为方形半径true为圆形半径);
-  // function oldMonsterSpawn(health, multiple, radius, length, circle) {
+//   //oldMonsterSpawn(生命值, 倍率, 初始半径, 每隔多少半径强化一次，false为方形半径true为圆形半径);
+//   // function oldMonsterSpawn(health, multiple, radius, length, circle) {
 
-  //   let r0 = radius - length;
+//   //   let r0 = radius - length;
 
-  //     for (let i = 1; i <= 320; i++) {
-  //       let r1 = r0 + length * i;
-  //       let r2 = r1 + length;
+//   //     for (let i = 1; i <= 320; i++) {
+//   //       let r1 = r0 + length * i;
+//   //       let r2 = r1 + length;
 
-  //       let newHealth = Math.floor(health + (health * multiple * i)); // 血量计算公式
+//   //       let newHealth = Math.floor(health + (health * multiple * i)); // 血量计算公式
 
-  //       let distance = Math.hypot(x, z); // 半径
-  //       let innerRing = circle ? (distance >= r1) : (x >= r1 || x <= -r1 || z >= r1 || z <= -r1);
-  //       let outerRing = circle ? (distance <= r2) : (x < r2 || x > -r2 || z < r2 || z > -r2);
+//   //       let distance = Math.hypot(x, z); // 半径
+//   //       let innerRing = circle ? (distance >= r1) : (x >= r1 || x <= -r1 || z >= r1 || z <= -r1);
+//   //       let outerRing = circle ? (distance <= r2) : (x < r2 || x > -r2 || z < r2 || z > -r2);
 
-  //       if (innerRing && outerRing) {
-  //         entity.mergeFullNBT(`{Attributes:[{Name:"generic.max_health",Base:${newHealth}}]}`);
-  //         entity.heal(newHealth);
-  //       }
-  //     }
-  // }
+//   //       if (innerRing && outerRing) {
+//   //         entity.mergeFullNBT(`{Attributes:[{Name:"generic.max_health",Base:${newHealth}}]}`);
+//   //         entity.heal(newHealth);
+//   //       }
+//   //     }
+//   // }
 
-  //monsterSpawn(生命值, 倍率, 每隔多少距离强化一次);
-  function monsterSpawn(health, multiple, length) {
-    let distance = Math.hypot(x, z); // 计算怪物离中心的距离
-    let coefficient = Math.floor(distance / length); // 计算离中心有多少个距离
-    let newHealth = Math.floor(health + (health * multiple * coefficient)); // 根据系数计算生命值
-    let minHealth = Math.min(Number.MAX_VALUE - health, newHealth)
+//   //monsterSpawn(生命值, 倍率, 每隔多少距离强化一次);
+//   function monsterSpawn(health, multiple, length) {
+//     let distance = Math.hypot(x, z); // 计算怪物离中心的距离
+//     let coefficient = Math.floor(distance / length); // 计算离中心有多少个距离
+//     let newHealth = Math.floor(health + (health * multiple * coefficient)); // 根据系数计算生命值
+//     let minHealth = Math.min(Number.MAX_VALUE - health, newHealth)
 
-    entity.mergeFullNBT(`{Attributes:[{Name:"generic.max_health",Base:${minHealth}}]}`);
-    entity.heal(minHealth);
-  }
+//     entity.mergeFullNBT(`{Attributes:[{Name:"generic.max_health",Base:${minHealth}}]}`);
+//     entity.heal(minHealth);
+//     event.cancel();
+//   }
 
-  if (!entity.isPlayer() && entity.monster && entity.isLiving()) {
-    server.scheduleInTicks(1, () => {
-      let health = entity.getMaxHealth();
+//   if (!entity.isPlayer() && entity.monster && entity.isLiving()) {
+//     server.scheduleInTicks(1, () => {
+//       let health = entity.getMaxHealth();
 
-      if (level.dimension === 'minecraft:the_nether') {
-        monsterSpawn(health, 0.3, 16);
-      }
-      if (level.dimension === 'twilightforest:twilight_forest') {
-        monsterSpawn(health, 1.0, 32);
-      }
-    });
-  }
-})
+//       if (level.dimension === 'minecraft:the_nether') {
+//         monsterSpawn(health, 0.3, 16);
+//       }
+//       if (level.dimension === 'twilightforest:twilight_forest') {
+//         monsterSpawn(health, 1.0, 32);
+//       }
+//     });
+//   }
+// })
 
 onEvent('entity.check_spawn', event => {
   let { entity } = event;
