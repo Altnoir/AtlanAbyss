@@ -127,11 +127,7 @@ onEvent('recipes', event => {
       },
       {
         value: [Ingredient.of('thermal:quartz_dust').toJson()],
-        count: 1
-      },
-      {
-        value: [Ingredient.of('thermal:quartz_dust').toJson()],
-        count: 1
+        count: 2
       }
     ],
     result: [

@@ -22,6 +22,9 @@ onEvent('recipes', event => {
 		elven_trade,
 		mana_infusion
 	} = event.recipes.botania;
+	let {
+		smelter
+	} = event.recipes.thermal;
 	//扬了一些默认配方
 	let remove = (name) => {
 		event.remove({ id: name })
@@ -78,12 +81,29 @@ onEvent('recipes', event => {
 		D: 'minecraft:stick'
 	}).id("atlanabyss:vein_finder")
 
+	//有机碎片
+	let dci = 'minecraft:dirt';
+	sequenced_assembly('kubejs:organic_scrap',
+		'#minecraft:dirt', [
+		deploying(dci, [dci, '#createaddition:plants']),
+		deploying(dci, [dci, '#minecraft:flowers']),
+		pressing(dci, dci)
+	]).transitionalItem(dci).loops(1).id("atlanabyss:organic_scrap")
+	//质量碎片
 	let ipi = 'minecraft:iron_nugget';
 	sequenced_assembly('kubejs:mass_scrap',
 		'#forge:nuggets/iron', [
 		deploying(ipi, [ipi, '#forge:cobblestone'])
 	]).transitionalItem(ipi).loops(16).id("atlanabyss:mass_scrap")
-
+	//叶绿锭
+	event.shaped('kubejs:chlorophyll_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:organic_scrap'
+	}).id("atlanabyss:chlorophyll_ingot")
+	//行星锭
 	event.shaped('kubejs:planetary_ingot', [
 		'AAA',
 		'AAA',
@@ -139,6 +159,37 @@ onEvent('recipes', event => {
 
 	remove('create:mixing/dough_by_mixing')
 
+	//安山合金
+	remove('create:crafting/materials/andesite_alloy_from_zinc')
+	remove('create:crafting/materials/andesite_alloy')
+	event.shaped('create:andesite_alloy', [
+		'BA',
+		'AB'
+	], {
+		A: 'minecraft:andesite',
+		B: 'minecraft:moss_block'
+	}).id('atlanabyss:andesite_alloy');
+
+	remove('create:mixing/andesite_alloy_from_zinc')
+	remove('create:mixing/andesite_alloy')
+	mixing('create:andesite_alloy', [
+		'minecraft:andesite', 'minecraft:moss_block'
+	]).id('atlanabyss:mixing_andesite_alloy');
+	mixing('16x create:andesite_alloy', [
+		'minecraft:andesite', 'kubejs:chlorophyll_ingot'
+	]).id('atlanabyss:mixing_andesite_alloy_x');
+
+	remove('thermal:compat/create/smelter_create_alloy_andesite_alloy')
+	smelter('create:andesite_alloy', [
+		'minecraft:moss_block', 'minecraft:andesite'
+	]).energy(3200).id('atlanabyss:smelter_andesite_alloy');
+	smelter('16x create:andesite_alloy', [
+		'kubejs:chlorophyll_ingot', 'minecraft:andesite'
+	]).energy(3200).id('atlanabyss:smelter_andesite_alloy_x');
+
+	remove('tconstruct:compat/create/andesite_alloy_iron')
+	remove('tconstruct:compat/create/andesite_alloy_zinc')
+
 	//钻石粉
 	remove('createaddition:crushing/diamond')
 
@@ -186,7 +237,6 @@ onEvent('recipes', event => {
 	], {
 		A: 'ars_nouveau:magebloom_fiber',
 		B: 'botania:mana_pearl'
-
 	}).id('atlanabyss:majo_hat');
 
 	event.shaped('majobroom:majo_cloth', [

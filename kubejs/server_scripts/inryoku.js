@@ -54,4 +54,18 @@ onEvent('recipes', event => {
         D: 'kubejs:gravitation_mechanism',
         E: 'kubejs:computation_matrix'
     }).id('atlanabyss:mechanical_crafting_nasa_workbench')
+
+    //航空燃油
+    remove('beyond_earth:fuel_refining/fuel_from_oil')
+    event.custom({
+        "type": "beyond_earth:fuel_refinery",
+        "input": {
+            "name": "thermal:refined_fuel",
+            "amount": 2
+        },
+        "output": {
+            "name": "beyond_earth:fuel",
+            "amount": 1
+        }
+    }).id('atlanabyss:rocket_fuel_refinery')
 })
