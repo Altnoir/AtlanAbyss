@@ -109,8 +109,8 @@ key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.zume.zoom:key.keyboard.c
-key_key.zume.zoom_in:key.keyboard.equal
-key_key.zume.zoom_out:key.keyboard.minus
+key_key.zume.zoom_in:key.keyboard.unknown
+key_key.zume.zoom_out:key.keyboard.unknown
 key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.tac.reload:key.keyboard.t
 key_key.tac.unload:key.keyboard.t:ALT
@@ -124,7 +124,7 @@ key_key.tac.openArmorAmmoPack:key.keyboard.unknown
 key_key.tac.armor_repairing:key.keyboard.unknown
 key_key.tac.more_info_hold:key.keyboard.left.shift
 key_key.ae2.wireless_terminal:key.keyboard.unknown
-key_key.ae2.portable_item_cell:key.keyboard.unknown
+key_key.ae2.portable_item_cell:key.mouse.left
 key_key.ae2.portable_fluid_cell:key.keyboard.unknown
 key_key.ae2.wireless_pattern_encoding_terminal:key.keyboard.unknown
 key_key.ae2.wireless_pattern_access_terminal:key.keyboard.unknown
@@ -148,8 +148,8 @@ key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.botania_corporea_request:key.keyboard.unknown
-key_chunkloaders.keys.open_screen:key.keyboard.semicolon
 key_key.ftbquests.quests:key.keyboard.unknown
+key_chunkloaders.keys.open_screen:key.keyboard.semicolon
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.immersive_aircraft.multi_control_left:key.keyboard.a
 key_key.immersive_aircraft.multi_control_right:key.keyboard.d
@@ -249,11 +249,11 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
+key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.cofh.mode_change_increment:key.keyboard.z
 key_key.cofh.mode_change_decrement:key.keyboard.unknown
 key_key.up:key.keyboard.space
@@ -274,6 +274,10 @@ key_pneumaticcraft.armor.upgrade.block_tracker.module.fluids:key.keyboard.unknow
 key_pneumaticcraft.armor.upgrade.block_tracker.module.hackables:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker.module.inventories:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker.module.end_portal:key.keyboard.unknown
+key_key.toolbelt.open:key.keyboard.left.control
+key_key.toolbelt.cycle.left:key.keyboard.unknown
+key_key.toolbelt.cycle.right:key.keyboard.unknown
+key_key.toolbelt.slot:key.keyboard.unknown
 soundCategory_master:0.5033113
 soundCategory_music:0.2535211
 soundCategory_record:0.5046948
