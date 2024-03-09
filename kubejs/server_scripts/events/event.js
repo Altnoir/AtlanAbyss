@@ -92,6 +92,18 @@ onEvent('item.right_click', event => {
   }
 })
 
+//苔藓块合成
+onEvent('block.right_click', event => {
+  let { player, block } = event;
+
+  if (block.up != 'minecraft:water') return;
+  if (block.id != 'minecraft:grass_block') {
+    return;
+  } else if (player.mainHandItem == 'minecraft:bone_meal' || player.offHandItem == 'minecraft:bone_meal') {
+    block.set('minecraft:moss_block')
+  }
+})
+
 // onEvent("server.load", event => {
 //   let { server } = event;
 
