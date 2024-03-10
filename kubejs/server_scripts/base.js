@@ -1587,6 +1587,17 @@ onEvent('recipes', event => {
 		]
 	).heated().id("atlanabyss:tar_coal_aluminium_chip")
 
+	//石英粉
+	remove('thermal:earth_charge/quartz_from_quartz_block')
+	remove('thermal:earth_charge/quartz_dust_from_quartz')
+
+	milling(Item.of('thermal:quartz_dust').withChance(0.75),
+		'minecraft:quartz'
+	).id("atlanabyss:milling_quartz")
+
+	milling(['3x thermal:quartz_dust', Item.of('thermal:quartz_dust').withChance(0.75)
+	], '#forge:storage_blocks/quartz').id("atlanabyss:milling_quartz_blocks")
+
 	//铝化合物
 	event.shapeless('kubejs:aluminum_compound', [
 		'kubejs:aluminium_chip',
