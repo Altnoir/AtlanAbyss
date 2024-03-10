@@ -2099,6 +2099,49 @@
 				xp: 10
 			}]
 		}
+		{
+			title: "颠倒之域"
+			x: 1.0d
+			y: 1.5d
+			description: [
+				"颠倒之域：夹在在主世界与下界之间的维度"
+				"进入方法：\\n1.在主世界的基岩上方食用紫颂果\\n2.在下界往上超过360格"
+			]
+			dependencies: ["31C9BD74CDB26F64"]
+			hide: true
+			id: "7DE7DA29AEE73C26"
+			tasks: [{
+				id: "1A5C2BBC58D64D5F"
+				type: "dimension"
+				icon: "minecraft:amethyst_block"
+				dimension: "inversia:inversiadim"
+			}]
+			rewards: [{
+				id: "45723380B323ADEA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			description: [
+				"恩赐之石：颠倒之域的特产品"
+				"使用带时运的稿子挖掘深板岩可便有概率获得"
+			]
+			dependencies: ["7DE7DA29AEE73C26"]
+			id: "7C08BB663A3B8249"
+			tasks: [{
+				id: "5204DC608219AC5E"
+				type: "item"
+				item: "kubejs:divine_ore"
+			}]
+			rewards: [{
+				id: "3200D1DFA7F4410E"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }

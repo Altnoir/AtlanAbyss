@@ -1526,8 +1526,8 @@ onEvent('recipes', event => {
 		'minecraft:obsidian',
 		[
 			deploying(o, [o, 'minecraft:coal']),
-			pressing(o, o).processingTime(100)
-		]).transitionalItem(o).loops(80).id("atlanabyss:compressed_coal_block")
+			pressing(o, o)
+		]).transitionalItem(o).loops(42).id("atlanabyss:compressed_coal_block")
 
 	//恩赐之石
 	crushing([
