@@ -35,12 +35,14 @@
 	#This does not affect text rendering in GUI.
 	#This option only applies to TrueType fonts.
 	useTextShadersInWorld = true
-	#For DEFAULT_FONT and UNIFORM_FONT, should we keep some bitmap providers of them?
-	#Ignore All: Equivalent to Force Unicode Font.
+	#For "minecraft:default" font, should we keep some glyph providers of them?
+	#Ignore All: Only use Modern UI typeface list.
 	#Keep ASCII: Include minecraft:font/ascii.png, minecraft:font/accented.png, minecraft:font/nonlatin_european.png
-	#Keep Other: Include providers in minecraft:font/default.json other than Keep ASCII and Unicode font.
+	#Keep Other: Include providers other than ASCII and Unicode font.
 	#Keep All: Include all except Unicode font.
-	#Allowed Values: IGNORE_ALL, KEEP_ASCII, KEEP_OTHER, KEEP_ALL
+	#Only Include: Only include providers that specified by defaultFontRuleSet.
+	#Only Exclude: Only exclude providers that specified by defaultFontRuleSet.
+	#Allowed Values: IGNORE_ALL, KEEP_ASCII, KEEP_OTHER, KEEP_ALL, ONLY_INCLUDE, ONLY_EXCLUDE
 	defaultFontBehavior = "IGNORE_ALL"
 	#Whether to use text component object as hash key to lookup in layout cache.
 	#If you find that Modern UI text rendering is not compatible with some mods,
@@ -69,4 +71,11 @@
 	#Otherwise, it uses nearest-neighbor or bilinear sampling based on texel density.
 	#This option only applies to TrueType fonts.
 	allowSDFTextIn2D = true
+	#Used when defaultFontBehavior is either ONLY_INCLUDE or ONLY_EXCLUDE.
+	#This specifies a set of regular expressions to match the glyph provider name.
+	#For bitmap providers, this is the texture path without 'textures/'.
+	#For TTF providers, this is the TTF file path without 'font/'.
+	#For space providers, this is "font_name / minecraft:space",
+	#where font_name is font definition path without 'font/'.
+	defaultFontRuleSet = ["^minecraft:font\\/(nonlatin_european|accented|ascii|element_ideographs|cjk_punctuations|ellipsis|2em_dash)\\.png$", "^minecraft:default \\/ minecraft:space$"]
 

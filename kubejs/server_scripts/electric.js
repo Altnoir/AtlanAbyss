@@ -993,6 +993,24 @@ onEvent('recipes', event => {
     use_chance: 0.02
   }).id("atlanabyss:smelter_catalyst_gem")//感应炉
 
+  //修复
+  remove('thermal:compat/create/pulverizer_create_zinc_ore')
+  event.recipes.thermal.pulverizer([
+    Item.of('create:crushed_raw_zinc', 2),
+    Item.of('minecraft:gravel').withChance(.2),
+  ], 'create:zinc_ore'
+  ).experience(0.2)
+  event.recipes.thermal.pulverizer([
+    Item.of('create:crushed_raw_zinc', 2),
+    Item.of('minecraft:gravel').withChance(.2),
+  ], 'create:deepslate_zinc_ore'
+  ).experience(0.2)
+
+  // {
+  //   "type": "thermal:flag",
+  //   "flag": "mod_create"
+  // }
+
   //核弹	
   event.shaped('thermal:nuke_tnt', [
     'ABA',

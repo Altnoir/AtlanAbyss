@@ -29,18 +29,19 @@
 	*/
 	"zoomSmoothnessMs": 150,
 	/* 
-	   Smoothing animation progress will be raised to this exponent for easing. Higher numbers will feel faster.
-	   It is recommended to also increase `zoomSmoothnessMs` when increasing this.
-	   Set to `1` to disable.
-	   DEFAULT: `4`
+	   The algorithm responsible easing animations.
+	   You should probably leave this at the default if you don't understand what it does.
+	   OPTIONS: `LINEAR`, `QUADRATIC`, `QUARTIC`, `QUINTIC`
+	   DEFAULT: `QUART`
 	*/
-	"easingExponent": 4,
+	"animationEasingMethod": "QUARTIC",
 	/* 
-	   Zoom percentage will be squared before being applied if `true`.
-	   Makes differences in FOV more uniform. You should probably keep this on if you don't understand what it does.
-	   DEFAULT: `true`
+	   The algorithm responsible for making differences in FOV more uniform.
+	   You should probably leave this at the default if you don't understand what it does.
+	   OPTIONS: `LINEAR`, `QUADRATIC`, `QUARTIC`, `QUINTIC`
+	   DEFAULT: `QUADRATIC`
 	*/
-	"useQuadratic": true,
+	"zoomEasingMethod": "QUADRATIC",
 	/* 
 	   Default starting zoom percentage.
 	   DEFAULT: `0.5`
@@ -52,13 +53,26 @@
 	*/
 	"toggleMode": false,
 	/* 
-	   Maximum zoom FOV.
-	   DEFAULT: `60.0`
-	*/
-	"maxFOV": 60.0,
-	/* 
 	   Minimum zoom FOV.
 	   DEFAULT: `1.0`
 	*/
-	"minFOV": 1.0
+	"minFOV": 1.0,
+	/* 
+	   Maximum third-person zoom distance (in blocks).
+	   Set to `0.0` to disable third-person zoom.
+	   DEFAULT: `15.0`
+	*/
+	"maxThirdPersonZoomDistance": 15.0,
+	/* 
+	   Minimum third-person zoom distance (in blocks).
+	   Set to `0.0` to mimic vanilla.
+	   DEFAULT: `0.5`
+	*/
+	"minThirdPersonZoomDistance": 0.5,
+	/* 
+	   If `true`, the mod will be disabled (on some platforms, key binds will still show in game options; they won't do anything if this is set to `true`).
+	   Requires re-launch to take effect.
+	   DEFAULT: `false`
+	*/
+	"disable": false
 }

@@ -348,6 +348,42 @@ function musicRecipes(event) {
     {
       nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"Angel Note\"],name:\"恋ひ恋ふ縁＜Piano Version＞\",time:157,url:\"https://music.163.com/song/media/outer/url?id=473403174.mp3\"}}",
       id: "atlanabyss:senrenbanka_music_12"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Angel Note\",\"日の当たる场所\"],name:\"sweet treasure<instrument Version>\",time:209,url:\"https://music.163.com/song/media/outer/url?id=34324507.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_13"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\"],name:\"恋せよ乙女！<Piano Version>\",time:168,url:\"https://music.163.com/song/media/outer/url?id=34324519.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_14"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"神代あみ\"],name:\"Re:Start ～君とまた出逢えて～\",time:245,url:\"https://music.163.com/song/media/outer/url?id=34324528.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_15"
+    },
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"sweet treasure\",time:273,url:\"https://music.163.com/song/media/outer/url?id=29724906.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_16"
+    }
+    ,
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"§eレイル・ロマネスク ハチロクver\",time:264,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459691556.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_17"
+    }
+    ,
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"中恵光城\"],name:\"§eレイル・ロマネスク\",time:262,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459692474.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_18"
+    }
+    ,
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§eこれくらいで\",time:214,trans_name:\"就这样\",url:\"https://music.163.com/song/media/outer/url?id=1350447904.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_19"
+    }
+    ,
+    {
+      nbt: "{NetMusicSongInfo:{artists:[\"Sad Keyboard Guy\",\"AKA\"],name:\"§eLullaby For an Android (feat. AKA)\",time:307,url:\"https://music.163.com/song/media/outer/url?id=1911878867.mp3\"}}",
+      id: "atlanabyss:senrenbanka_music_20"
     }
   ];
 
