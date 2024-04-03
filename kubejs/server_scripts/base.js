@@ -1814,6 +1814,18 @@ onEvent('recipes', event => {
 			cutting(oc, oc).processingTime(100)
 		]).transitionalItem(oc).loops(8).id("atlanabyss:osmium_ingot")
 
+	//锇粒
+	event.shaped('kubejs:osmium_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:osmium_nugget'
+	}).id("atlanabyss:osmium_ingot_from_nugget")
+	event.shapeless('9x kubejs:osmium_nugget', [
+		'kubejs:osmium_ingot'
+	]).id("atlanabyss:osmium_nugget_from_ingot")
+
 	//蓝晶
 	remove('biggerreactors:crafting/uranium_to_cyanite')
 	remove('thermal:machine/biggerreactors/pulverizer_mod_cyanite_ingot')

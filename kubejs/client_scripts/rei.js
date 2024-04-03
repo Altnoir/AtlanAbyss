@@ -283,6 +283,7 @@ onEvent('rei.hide.items', event => {
 		'tac:50bmg',
 		'tac:lapua338',
 		'tac:bullet68',
+		'tac:b_magnum',
 		//ae2
 		'ae2:ender_dust',
 		'ae2:vibration_chamber',
@@ -644,7 +645,7 @@ onEvent('rei.group', (event) => {
 	);
 	//粉笔
 	event.groupItems('atlanabyss:rei_groups/chalk', "粉笔",
-	    '#chalk:chalk'
+		'#chalk:chalk'
 	);
 	//宠物床
 	event.groupItems('atlanabyss:rei_groups/pet_beds', "宠物床",
@@ -652,7 +653,7 @@ onEvent('rei.group', (event) => {
 	);
 	//交易卡
 	event.groupItems('atlanabyss:rei_groups/trade_card', "交易卡",
-	    /^kubejs:trade_card_?./
+		/^kubejs:trade_card_?./
 	);
 	//炼金混合物"
 	event.groupItems('atlanabyss:rei_groups/alchemy_substrate', "炼金混合物",

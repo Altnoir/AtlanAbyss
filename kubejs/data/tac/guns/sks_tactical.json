@@ -1,9 +1,10 @@
 {
     "general": {
-        "auto": false,
-        "rate": 400,
+        "auto": true,
+        "rate": 600,
         "rateSelector": [
-            1
+            1,
+            2
         ],
         "gripType": "tac:two_handed_ak47",
         "recoilAngle": 6.25,
@@ -30,9 +31,9 @@
         "additionalReloadEmptyMagTimer": 15,
         "openBolt": false,
         "maxAdditionalAmmoPerOC": [
-            3,
-            6,
-            10
+            7,
+            14,
+            25
         ]
     },
     "projectile": {
