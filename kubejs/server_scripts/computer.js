@@ -162,7 +162,7 @@ onEvent('recipes', event => {
     'AAA'
   ], {
     A: 'kubejs:computer_mechanism',
-    B: 'ae2:fluix_crystal'
+    B: 'ae2:fluix_block'
   }).id('atlanabyss:ae_controller');
 
   remove('ae2:network/blocks/inscribers')

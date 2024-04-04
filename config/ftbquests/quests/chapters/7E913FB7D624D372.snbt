@@ -2142,6 +2142,90 @@
 				xp: 10
 			}]
 		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "399B746233C77AFD"
+			tasks: [
+				{
+					id: "4DC4FD95522FD753"
+					type: "item"
+					item: "netmusic:music_player"
+				}
+				{
+					id: "1FB7AE3305D8BE0D"
+					type: "item"
+					item: "netmusic:cd_burner"
+				}
+			]
+			rewards: [{
+				id: "61AEA73CD530DCDB"
+				type: "item"
+				item: "netmusic:music_cd"
+				count: 16
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
+			id: "27A398EC39DC9F94"
+			tasks: [{
+				id: "610F1FC0C1ACE44A"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+			rewards: [{
+				id: "261480EFADE0DBBB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
+			id: "27BBEB65EE647E74"
+			tasks: [{
+				id: "09DD98EAEF3FB5AD"
+				type: "item"
+				item: "thermal:device_fisher"
+			}]
+			rewards: [{
+				id: "31357061B57271E6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.5d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
+			id: "6892758DB79A96E5"
+			tasks: [{
+				id: "45B89C69B09DB81F"
+				type: "item"
+				item: "thermal:device_composter"
+			}]
+			rewards: [{
+				id: "455257609316B517"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }
