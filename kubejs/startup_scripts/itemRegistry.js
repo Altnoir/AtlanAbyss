@@ -1,7 +1,7 @@
 onEvent('item.registry', event => {
 	//物品
-	event.create('candy_quartz').displayName('Candy Quartz');
-	event.create('polished_candy_quartz').displayName('Polished Candy Quartz');
+	event.create('candy_crystal').displayName('Candy Crystal');
+	event.create('polished_candy_crystal').displayName('Polished Candy Crystal');
 	event.create('polished_sulfur').displayName('Polished Sulfur');
 	event.create('polished_charged_certus_quartz').displayName('Polished Certus Quartz');
 	event.create('raw_aluminum').displayName('Raw Aluminum');

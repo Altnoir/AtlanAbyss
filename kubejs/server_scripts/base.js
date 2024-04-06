@@ -445,33 +445,8 @@ onEvent('recipes', event => {
 		S: 'create:iron_sheet'
 	}).id("atlanabyss:aircraft_improved_landing_gear")
 
-	//传送门珍珠
-	function gateRecipe(a, b, id) {
-		event.custom({
-			type: 'gateways:gate_recipe',
-			group: 'gateways',
-			pattern: ['BBB', 'BAB', 'BBB'],
-			key: { A: { item: a }, B: { item: b } },
-			result: { item: 'gateways:gate_pearl' },
-			gateway: 'gateways:' + id
-		}).id("atlanabyss:" + id)
-	}
-	function gateRecipeSmall(a, b, id) {
-		event.custom({
-			type: 'gateways:gate_recipe',
-			group: 'gateways',
-			pattern: [' B ', 'BAB', ' B '],
-			key: { A: { item: a }, B: { item: b } },
-			result: { item: 'gateways:gate_pearl' },
-			gateway: 'gateways:' + id
-		}).id("atlanabyss:" + id)
-	}
-	gateRecipe('twilightforest:naga_scale', 'minecraft:rotten_flesh', 'zombie_gate_ultra')
-	gateRecipe('minecraft:ender_eye', 'tconstruct:necrotic_bone', 'wither_skeleton_gate')
-	gateRecipe('minecraft:nether_star', 'tconstruct:necrotic_bone', 'wither_skeleton_gate_large')
-	gateRecipeSmall('minecraft:ender_pearl', 'tconstruct:necrotic_bone', 'wither_skeleton_gate_small')
 	//糖果石英
-	event.shapeless('kubejs:candy_quartz', ['ars_nouveau:source_gem', '8x minecraft:sugar']).id("atlanabyss:candy_quartz")
+	event.shapeless('kubejs:candy_crystal', ['ars_nouveau:source_gem', '8x minecraft:sugar']).id("atlanabyss:candy_crystal")
 	//打磨
 	function polishing(input, output, id) {
 		event.custom({
@@ -480,14 +455,14 @@ onEvent('recipes', event => {
 			results: [{ item: output }]
 		}).id("atlanabyss:" + id)
 	}
-	polishing('kubejs:candy_quartz', 'kubejs:polished_candy_quartz', 'polishing_candy_quartz')
+	polishing('kubejs:candy_crystal', 'kubejs:polished_candy_crystal', 'polishing_candy_crystal')
 	polishing('thermal:sulfur', 'kubejs:polished_sulfur', 'polishing_sulfur')
 	polishing('ae2:charged_certus_quartz_crystal', 'kubejs:polished_charged_certus_quartz', 'polishing_certus_quartz')
 	//更多电子管
 	function electronTube(output, a, b, id) {
 		event.shaped(output, ['A', 'B'], { A: a, B: b }).id('atlanabyss:' + id)
 	}
-	electronTube('kubejs:candy_electron_tube', 'kubejs:polished_candy_quartz', 'kubejs:osmium_sheet', 'candy_electron_tube')
+	electronTube('kubejs:candy_electron_tube', 'kubejs:polished_candy_crystal', 'kubejs:osmium_sheet', 'candy_electron_tube')
 	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'thermal:steel_plate', 'sulfur_electron_tube')
 	electronTube('kubejs:charged_electron_tube', 'kubejs:polished_charged_certus_quartz', 'thermal:silver_plate', 'charged_certus_electron_tube')
 	//电子管额外配方
@@ -496,7 +471,7 @@ onEvent('recipes', event => {
 		'minecraft:iron_nugget'
 	]).id('atlanabyss:deploying_electron_tube')
 	deploying(Item.of('kubejs:candy_electron_tube').withChance(0.9), [
-		'kubejs:polished_candy_quartz',
+		'kubejs:polished_candy_crystal',
 		'kubejs:osmium_nugget'
 	]).id('atlanabyss:deploying_candy_electron_tube')
 	deploying(Item.of('kubejs:sulfur_electron_tube').withChance(0.9), [

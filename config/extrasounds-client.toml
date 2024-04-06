@@ -1,0 +1,32 @@
+
+#Sound categories
+[Sounds]
+	#Master Sounds
+	#Range: 0.0 ~ 2.0
+	master = 0.5
+	#Inventory Sounds
+	#Range: 0.0 ~ 2.0
+	inventory = 1.0
+	#Action Sounds
+	#Range: 0.0 ~ 2.0
+	action = 1.0
+	#Chat Sounds
+	#Range: 0.0 ~ 2.0
+	chat = 1.0
+	#Chat mention Sounds
+	#Range: 0.0 ~ 2.0
+	chat_mention = 1.0
+	#Effects Sounds
+	#Range: 0.0 ~ 2.0
+	effects = 1.0
+	#Hotbar Sounds
+	#Range: 0.0 ~ 2.0
+	hotbar = 1.0
+	#Typing Sounds
+	#Range: 0.0 ~ 2.0
+	typing = 1.0
+	#Item drop Sounds
+	item_drop = true
+	#Empty hotbar Sounds
+	empty_hotbar = true
+

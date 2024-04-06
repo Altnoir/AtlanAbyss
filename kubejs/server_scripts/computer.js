@@ -97,6 +97,7 @@ onEvent('recipes', event => {
   ]).id('atlanabyss:splash_memory_card')
 
 
+
   //石英纤维
   remove('ae2:network/parts/quartz_fiber_part')
   event.custom({
@@ -236,4 +237,16 @@ onEvent('recipes', event => {
     filling(plp, [plp, Fluid.of('thermal:redstone', 100)]),
     deploying(plp, [plp, 'ae2:printed_silicon'])
   ]).transitionalItem(plp).loops(1).id('atlanabyss:logic_processor')
+
+  //福鲁伊克斯珍珠
+  remove('ae2:misc/fluixpearl')
+  event.shaped('ae2:fluix_pearl', [
+    'ABA',
+    'BCB',
+    'ABA'
+  ], {
+    A: 'ae2:fluix_dust',
+    B: 'ae2:fluix_crystal',
+    C: 'waystones:warp_stone'
+  }).id('atlanabyss:ae_fluix_pearl');
 })

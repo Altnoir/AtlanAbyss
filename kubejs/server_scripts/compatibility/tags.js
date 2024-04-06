@@ -257,6 +257,17 @@ onEvent('tags.items', event => {
 	thick('kubejs:mushgloom_sauce')
 	thick('kubejs:borer_tear_soup')
 	thick('kubejs:thousand_plant_stew')
+
+	global.trades.forEach(element => {
+		event.get('forge:trade_cards').add(`kubejs:trade_card_${element}`)
+	});
+
+	global.professions.forEach(element => {
+		event.get('forge:profession_cards').add(`kubejs:profession_card_${element}`)
+	});
+
+	event.get('thermal:crafting/dies').add('#forge:trade_cards')
+	event.get('thermal:crafting/dies').add('#forge:profession_cards')
 })
 
 

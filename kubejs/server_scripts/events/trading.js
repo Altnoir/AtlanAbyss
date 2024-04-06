@@ -1,17 +1,21 @@
 function trading(event) {
     let trade = (card_id, ingredient, output) => {
-        event.custom({
-            type: 'thermal:press',
-            ingredients: [
-                Item.of(ingredient).toResultJson(),
-                Ingredient.of(card_id).toJson(),
-            ],
-            result: [
-                Item.of(output).toResultJson(),
+        // event.custom({
+        //     type: 'thermal:press',
+        //     ingredients: [
+        //         Item.of(ingredient).toResultJson(),
+        //         Ingredient.of(card_id).toJson(),
+        //     ],
+        //     result: [
+        //         Item.of(output).toResultJson(),
 
-            ],
-            energy: 1000
-        })
+        //     ],
+        //     energy: 1000
+        // })
+        event.recipes.thermal.press(output, [
+            ingredient,
+            card_id,
+        ]).energy(1000)
     }
 
     let amadron = (input, inAmount, output, level, maxStock, id) => {

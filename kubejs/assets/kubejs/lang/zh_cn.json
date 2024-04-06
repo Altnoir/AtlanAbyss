@@ -14,8 +14,8 @@
     "item.kubejs.magbismuth_ingot": "§4神铋锭",
     "item.kubejs.magbismuth_sheet": "§4神铋板",
 
-    "item.kubejs.candy_quartz": "糖果石英",
-    "item.kubejs.polished_candy_quartz": "磨制糖果石英",
+    "item.kubejs.candy_crystal": "糖果水晶",
+    "item.kubejs.polished_candy_crystal": "磨制糖果水晶",
     "item.kubejs.polished_sulfur": "磨制硫磺",
     "item.kubejs.polished_charged_certus_quartz": "磨制充能赛特斯石英",
     "item.kubejs.candy_electron_tube": "糖果电子管",
@@ -409,7 +409,8 @@
 
     "tooltip.kubejs.hasumi":"§6虚爆之环",
     "tooltip.kubejs.hasumi1":"§6死亡时触发§e虚空湮灭",
-    "tooltip.kubejs.hasumi2":"§6(消耗品)",
+    "tooltip.kubejs.hasumi2":"§6Tips：破坏力极强",
+    "tooltip.kubejs.hasumi3":"§6(消耗品)",
 
     "tooltip.kubejs.purana":"§6幸运之环",
     "tooltip.kubejs.purana1":"§6使§e枪械攻击§6根据受击者血量造成伤害",

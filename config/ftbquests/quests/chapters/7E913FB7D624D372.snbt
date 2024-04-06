@@ -1042,31 +1042,20 @@
 			dependencies: ["04B534A53F398C7A"]
 			hide: true
 			id: "091F01B16A12EAF2"
-			tasks: [{
-				id: "7CC2C8326C36236F"
-				type: "item"
-				item: "createaddition:alternator"
-			}]
+			tasks: [
+				{
+					id: "7CC2C8326C36236F"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "2D0B387458DA1171"
+					type: "item"
+					item: "createaddition:modular_accumulator"
+				}
+			]
 			rewards: [{
 				id: "286AED8A9B39BB15"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -1.0d
-			y: 8.0d
-			shape: "hexagon"
-			dependencies: ["04B534A53F398C7A"]
-			hide: true
-			id: "6B34E94A9216E5F5"
-			tasks: [{
-				id: "62314F934C92271F"
-				type: "item"
-				item: "createaddition:modular_accumulator"
-			}]
-			rewards: [{
-				id: "3B1B2B3AFC97FE60"
 				type: "xp"
 				xp: 10
 			}]
@@ -1495,7 +1484,7 @@
 		{
 			x: -3.0d
 			y: 7.0d
-			dependencies: ["04B534A53F398C7A"]
+			dependencies: ["786FDB466081FCC6"]
 			hide: true
 			id: "3411A6B26CA383EA"
 			tasks: [{
@@ -2222,6 +2211,41 @@
 			}]
 			rewards: [{
 				id: "455257609316B517"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 7.0d
+			description: ["锇，在这个世界中极为罕见的高密度金属，不过，在守卫者的体内似乎含有微量的锇碎片？"]
+			dependencies: ["04B534A53F398C7A"]
+			hide: true
+			id: "786FDB466081FCC6"
+			tasks: [{
+				id: "0106A6D9A695CA70"
+				type: "item"
+				item: "kubejs:osmium_scrap"
+			}]
+			rewards: [{
+				id: "280E2FA9A5C45BD1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.0d
+			dependencies: ["786FDB466081FCC6"]
+			id: "1E39344709EC4874"
+			tasks: [{
+				id: "1FFBCABEDA66166A"
+				type: "item"
+				item: "pipez:universal_pipe"
+			}]
+			rewards: [{
+				id: "678F9870EC5B236D"
 				type: "xp"
 				xp: 10
 			}]
