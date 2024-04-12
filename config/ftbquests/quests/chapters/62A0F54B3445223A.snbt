@@ -1,0 +1,1050 @@
+{
+	id: "62A0F54B3445223A"
+	group: "62B0CA2D682AC9D6"
+	order_index: 2
+	filename: "62A0F54B3445223A"
+	title: "火铳之力量"
+	icon: {
+		id: "tac:deagle_357"
+		Count: 1b
+		tag: {
+			AmmoCount: 7
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["62ABD67CFC26F88E"]
+			hide: true
+			size: 1.5d
+			id: "4DA61F4D53EDC6AD"
+			tasks: [{
+				id: "50B3A59E599AC5A0"
+				type: "item"
+				item: "tac:workbench"
+			}]
+			rewards: [{
+				id: "00145F6A2BF70942"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 2.5d
+			dependencies: ["4DA61F4D53EDC6AD"]
+			hide: true
+			id: "0FE3B58E65864060"
+			tasks: [{
+				id: "108BC150BE8369AF"
+				type: "item"
+				item: "tac:uncommon_material"
+			}]
+			rewards: [{
+				id: "58933BC554071BAA"
+				type: "xp"
+				xp: 20
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["0FE3B58E65864060"]
+			hide: true
+			id: "1FC2394DF84DD49D"
+			tasks: [{
+				id: "060394B1D014C495"
+				type: "item"
+				item: "tac:rare_material"
+			}]
+			rewards: [{
+				id: "7F84AAE907DC9101"
+				type: "xp"
+				xp: 30
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -6.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			hide: true
+			id: "0D06561B8C9D82E3"
+			tasks: [{
+				id: "7D1E26CF7FAADEE0"
+				type: "item"
+				item: "tac:epic_material"
+			}]
+			rewards: [{
+				id: "5B8F81C66E2D9EA7"
+				type: "xp"
+				xp: 40
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			hide: true
+			id: "0EC352B6A657D98C"
+			tasks: [{
+				id: "4D074B500E0AF2AD"
+				type: "item"
+				item: "tac:legendary_material"
+			}]
+			rewards: [{
+				id: "5C0659A6619B9174"
+				type: "xp"
+				xp: 50
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 2.5d
+			dependencies: ["0EC352B6A657D98C"]
+			hide: true
+			id: "52730CF66109C799"
+			tasks: [{
+				id: "07E8D34F863A427F"
+				type: "item"
+				item: "tac:ultimate_material"
+			}]
+			rewards: [{
+				id: "36873C991F115625"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 6.5d
+			dependencies: ["52730CF66109C799"]
+			hide: true
+			id: "48775D208B988239"
+			tasks: [{
+				id: "21FB196B8AAD31B5"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
+			rewards: [{
+				id: "76B64C51D09DF8BB"
+				type: "xp"
+				xp: 200
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			dependencies: ["0FE3B58E65864060"]
+			id: "4009A19EF7F002A7"
+			tasks: [{
+				id: "2D3FB7218CFB935A"
+				type: "item"
+				item: {
+					id: "tac:m1911"
+					Count: 1b
+					tag: {
+						AmmoCount: 7
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			dependencies: [
+				"51118EFF5866B6D3"
+				"0FE3B58E65864060"
+			]
+			id: "72C1540C6FE71F52"
+			tasks: [{
+				id: "2455109C8B31875F"
+				type: "item"
+				item: {
+					id: "tac:m1a1_smg"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			dependencies: ["0FE3B58E65864060"]
+			id: "57AE6F6BF0BB09C4"
+			tasks: [{
+				id: "74C2D8E531B3495A"
+				type: "item"
+				item: {
+					id: "tac:db_short"
+					Count: 1b
+					tag: {
+						AmmoCount: 2
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "47EE499FA5F04BDA"
+			tasks: [{
+				id: "3EAB2CC79165AF01"
+				type: "item"
+				item: {
+					id: "tac:mk23"
+					Count: 1b
+					tag: {
+						AmmoCount: 12
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -6.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "14222520AEA3A18C"
+			tasks: [{
+				id: "62E50F795F616D9C"
+				type: "item"
+				item: {
+					id: "tac:sti2011"
+					Count: 1b
+					tag: {
+						AmmoCount: 9
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "417B16712615348D"
+			tasks: [{
+				id: "53B2DC4128D823EE"
+				type: "item"
+				item: {
+					id: "tac:cz75_auto"
+					Count: 1b
+					tag: {
+						AmmoCount: 16
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "18474B34DED3F842"
+			tasks: [{
+				id: "690D63205655E019"
+				type: "item"
+				item: {
+					id: "tac:cz75"
+					Count: 1b
+					tag: {
+						AmmoCount: 16
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "7C129E98D4A181D6"
+			tasks: [{
+				id: "67DC61461999A4F4"
+				type: "item"
+				item: {
+					id: "tac:tti_g34"
+					Count: 1b
+					tag: {
+						AmmoCount: 23
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "7C984650C7E5B64D"
+			tasks: [{
+				id: "4DFC3C7568732356"
+				type: "item"
+				item: {
+					id: "tac:glock_18"
+					Count: 1b
+					tag: {
+						AmmoCount: 17
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "0C94D62C481E614B"
+			tasks: [{
+				id: "0224278AC48C084C"
+				type: "item"
+				item: {
+					id: "tac:m92fs"
+					Count: 1b
+					tag: {
+						AmmoCount: 15
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "36F9DF3694519F7C"
+			tasks: [{
+				id: "745ECE797C66430A"
+				type: "item"
+				item: {
+					id: "tac:tec_9"
+					Count: 1b
+					tag: {
+						AmmoCount: 10
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "7E12A5AE569D4056"
+			tasks: [{
+				id: "3C5BC342C89A40FA"
+				type: "item"
+				item: {
+					id: "tac:glock_17"
+					Count: 1b
+					tag: {
+						AmmoCount: 17
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "472112FA1FA4BDBF"
+			tasks: [{
+				id: "6F6CCDA306C41D85"
+				type: "item"
+				item: {
+					id: "tac:ak47"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "60FEFFF01540CD03"
+			tasks: [{
+				id: "4404221670A9ACE0"
+				type: "item"
+				item: {
+					id: "tac:sks_tactical"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			dependencies: ["0FE3B58E65864060"]
+			id: "0A9CAF6555C791D9"
+			tasks: [{
+				id: "0C83F90FB82037D2"
+				type: "item"
+				item: {
+					id: "tac:type81_x"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "3B99B675B3A7915B"
+			tasks: [{
+				id: "66DBADF455DEC20C"
+				type: "item"
+				item: {
+					id: "tac:rpk"
+					Count: 1b
+					tag: {
+						AmmoCount: 40
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "1842F12F1BD61CF3"
+			tasks: [{
+				id: "0F3B24663748FD37"
+				type: "item"
+				item: {
+					id: "tac:fn_fal"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			dependencies: ["0FE3B58E65864060"]
+			id: "1E258211E28ADAC4"
+			tasks: [{
+				id: "073B2408B84047EB"
+				type: "item"
+				item: {
+					id: "tac:dp28"
+					Count: 1b
+					tag: {
+						AmmoCount: 50
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "5EE083CF542BA7BE"
+			tasks: [{
+				id: "2F3869A356A82F82"
+				type: "item"
+				item: {
+					id: "tac:m870_classic"
+					Count: 1b
+					tag: {
+						AmmoCount: 6
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.0d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "52E92061F6B94980"
+			tasks: [{
+				id: "09506895747D2342"
+				type: "item"
+				item: {
+					id: "tac:hk_mp5a5"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "7DC38C73BF70766F"
+			tasks: [{
+				id: "6B28D744CCDEF872"
+				type: "item"
+				item: {
+					id: "tac:uzi"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -5.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "7CD95EB1B7FC2FD2"
+			tasks: [{
+				id: "705784CA4C09DD8A"
+				type: "item"
+				item: {
+					id: "tac:micro_uzi"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "5D6D51DF3B2381BA"
+			tasks: [{
+				id: "2870308350C7639A"
+				type: "item"
+				item: {
+					id: "tac:m24"
+					Count: 1b
+					tag: {
+						AmmoCount: 5
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "38611B73F204DCBA"
+			tasks: [{
+				id: "7EE684C8A6107CCC"
+				type: "item"
+				item: {
+					id: "tac:sig_mcx_spear"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -9.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "187D7DBB76EC7FD7"
+			tasks: [{
+				id: "31E4CA02E6F72F53"
+				type: "item"
+				item: {
+					id: "tac:mk47"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "17F7471E1A1B989F"
+			tasks: [{
+				id: "096EAE020E415D36"
+				type: "item"
+				item: {
+					id: "tac:hk416_a5"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -9.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "3E4F3FC04BCA021B"
+			tasks: [{
+				id: "1E434ECC9F44B323"
+				type: "item"
+				item: {
+					id: "tac:qbz_95"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -11.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "611780D0E4C576EB"
+			tasks: [{
+				id: "69EC79D6E08CA2BC"
+				type: "item"
+				item: {
+					id: "tac:mk14"
+					Count: 1b
+					tag: {
+						AmmoCount: 10
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -9.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "49987CCF17F0C38C"
+			tasks: [{
+				id: "088EF98ADE5097A2"
+				type: "item"
+				item: {
+					id: "tac:m4"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "3755B1BE701FB537"
+			tasks: [{
+				id: "3CA02BD35BDB62D0"
+				type: "item"
+				item: {
+					id: "tac:m16a4"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			dependencies: ["52730CF66109C799"]
+			id: "61F96035763CD592"
+			tasks: [{
+				id: "2818BFD518C2B686"
+				type: "item"
+				item: {
+					id: "tac:scar_h"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "329C89DF77A06CCB"
+			tasks: [{
+				id: "49BAEBD30243C0B6"
+				type: "item"
+				item: {
+					id: "tac:mk18_mod1"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -11.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "4537DBD70E33D32B"
+			tasks: [{
+				id: "1ABB452EB8DB75CF"
+				type: "item"
+				item: {
+					id: "tac:spr15"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -9.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "5896276367AC6808"
+			tasks: [{
+				id: "20D1D04F8C74D73F"
+				type: "item"
+				item: {
+					id: "tac:qbz_191"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -9.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "7F9BC8D4E3B0A18E"
+			tasks: [{
+				id: "4D113A8DF8A7EE50"
+				type: "item"
+				item: {
+					id: "tac:scar_l"
+					Count: 1b
+					tag: {
+						AmmoCount: 30
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.5d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "5A87E76A7EC7FB37"
+			tasks: [{
+				id: "773C7EA05579D622"
+				type: "item"
+				item: {
+					id: "tac:scar_mk20"
+					Count: 1b
+					tag: {
+						AmmoCount: 10
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -9.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "63A796196AF87C17"
+			tasks: [{
+				id: "32F51C364CDE1696"
+				type: "item"
+				item: {
+					id: "tac:m1014"
+					Count: 1b
+					tag: {
+						AmmoCount: 8
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "62DF913A0927CAF3"
+			tasks: [{
+				id: "3F12BC3D21957013"
+				type: "item"
+				item: {
+					id: "tac:p90"
+					Count: 1b
+					tag: {
+						AmmoCount: 50
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "27331009D3B6ADCB"
+			tasks: [{
+				id: "2D55BC9973501846"
+				type: "item"
+				item: {
+					id: "tac:udp_9"
+					Count: 1b
+					tag: {
+						AmmoCount: 22
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "5D233AA5091F6461"
+			tasks: [{
+				id: "73AA15DF3D19B9D6"
+				type: "item"
+				item: {
+					id: "tac:mp7"
+					Count: 1b
+					tag: {
+						AmmoCount: 40
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.5d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "5C36640A6460855D"
+			tasks: [{
+				id: "6A83C41666364C98"
+				type: "item"
+				item: {
+					id: "tac:vector45"
+					Count: 1b
+					tag: {
+						AmmoCount: 24
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "601E5B0F32C4AEFF"
+			tasks: [{
+				id: "35D97B11B65C0CE0"
+				type: "item"
+				item: {
+					id: "tac:mp9"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -11.0d
+			dependencies: ["0D06561B8C9D82E3"]
+			id: "0191C64564617E62"
+			tasks: [{
+				id: "591A9232A5D2799A"
+				type: "item"
+				item: {
+					id: "tac:ai_awp"
+					Count: 1b
+					tag: {
+						AmmoCount: 5
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "15AEE005F5FB241B"
+			tasks: [{
+				id: "2824B05701AC1E14"
+				type: "item"
+				item: {
+					id: "tac:hk_g3"
+					Count: 1b
+					tag: {
+						AmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "143D00C9BF767F3A"
+			tasks: [{
+				id: "34DEA546468DDA10"
+				type: "item"
+				item: {
+					id: "tac:m249"
+					Count: 1b
+					tag: {
+						AmmoCount: 100
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["1FC2394DF84DD49D"]
+			id: "0BB0EECAED834F3C"
+			tasks: [{
+				id: "026CEA5F86AFE2BE"
+				type: "item"
+				item: {
+					id: "tac:rpg7"
+					Count: 1b
+					tag: {
+						AmmoCount: 1
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 3.5d
+			dependencies: ["52730CF66109C799"]
+			id: "0550D6DE9BCC6FAD"
+			tasks: [{
+				id: "675279853C16DE88"
+				type: "item"
+				item: {
+					id: "tac:aa_12"
+					Count: 1b
+					tag: {
+						AmmoCount: 10
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -4.0d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "753F3B411D7A4C75"
+			tasks: [{
+				id: "0A7925F98407B519"
+				type: "item"
+				item: {
+					id: "tac:mrad"
+					Count: 1b
+					tag: {
+						AmmoCount: 5
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.5d
+			dependencies: ["52730CF66109C799"]
+			id: "38D69D991BC2EC30"
+			tasks: [{
+				id: "109E794E0B4DE849"
+				type: "item"
+				item: {
+					id: "tac:deagle_357"
+					Count: 1b
+					tag: {
+						AmmoCount: 7
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "2C1FF8E41A4B3788"
+			tasks: [{
+				id: "67595190594BA7F8"
+				type: "item"
+				item: {
+					id: "tac:timeless_50"
+					Count: 1b
+					tag: {
+						AmmoCount: 7
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			dependencies: ["0EC352B6A657D98C"]
+			id: "0AF6ED07752B61A2"
+			tasks: [{
+				id: "5467E9517BCBDB26"
+				type: "item"
+				item: {
+					id: "tac:colt_python"
+					Count: 1b
+					tag: {
+						AmmoCount: 6
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			dependencies: ["52730CF66109C799"]
+			id: "1732F8B4D2A76A41"
+			tasks: [{
+				id: "2B4A26AF8839096A"
+				type: "item"
+				item: {
+					id: "tac:m60"
+					Count: 1b
+					tag: {
+						AmmoCount: 100
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			dependencies: ["52730CF66109C799"]
+			id: "4B90161291BC84C5"
+			tasks: [{
+				id: "34FD6B1EB275A686"
+				type: "item"
+				item: {
+					id: "tac:m82a2"
+					Count: 1b
+					tag: {
+						AmmoCount: 5
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,7 +1,7 @@
 {
     "general": {
         "boltAction": true,
-        "rate": 200,
+        "rate": 400,
         "rateSelector": [
             1
         ],
@@ -36,7 +36,7 @@
     "projectile": {
         "item": "kubejs:rifle_ammo",
         "visible": false,
-        "damage": 21.5,
+        "damage": 122.0,
         "armorIgnore": 1,
         "critical": 0.0,
         "criticalDamage": 1.0,

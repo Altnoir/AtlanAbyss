@@ -30,6 +30,17 @@ onEvent('block.registry', event => {
         .item((seedItem) => {
             seedItem.texture("kubejs:item/cottons_seed")
         })
+    //下界硫矿
+    event.create('nether_sulfur_ore')
+        .material('nether_ore')
+        .hardness(3.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_stone_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/sulfur')
+        .tagBlock('forge:ores_in_ground/netherrack')
+        .requiresTool(true)
+        .displayName('Nether Sulfur Pre');
     //下界铝矿
     event.create('nether_aluminum_ore')
         .material('nether_ore')
@@ -200,6 +211,24 @@ onEvent('block.registry', event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .item(e => e.rarity(RARITY_RARE))
         .displayName('Lucky Block');
+
+    //机器
+    let registerMachine = (name, layer) => {
+        let id = name.toLowerCase() + "_machine"
+        event.create(id)
+            .model("kubejs:block/machine/" + id)
+            .material("lantern")
+            .hardness(3.0)
+            .displayName(name + " Machine")
+            .notSolid()
+            .renderType(layer)
+            .tagBlock("create:wrench_pickup")
+            .tagBlock("minecraft:mineable/pickaxe")
+    }
+    registerMachine("Andesite", "solid")
+    registerMachine("Brass", "translucent")
+    registerMachine("Copper", "cutout")
+
 
     //炼金
     for (let i = 0; i < 12; i++)

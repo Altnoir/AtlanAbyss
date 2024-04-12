@@ -1,7 +1,7 @@
 {
     "general": {
         "auto": true,
-        "rate": 900,
+        "rate": 1200,
         "rateSelector": [
             2,
             1
@@ -28,16 +28,16 @@
         "reloadMagTimer": 32,
         "additionalReloadEmptyMagTimer": 10,
         "maxAdditionalAmmoPerOC": [
-            5,
             10,
-            20
+            20,
+            30
         ],
         "preReloadPauseTicks": 0
     },
     "projectile": {
         "item": "kubejs:smg_ammo",
         "visible": false,
-        "damage": 5.5,
+        "damage": 19.5,
         "armorIgnore": 0.0,
         "critical": 0.0,
         "criticalDamage": 0.625,

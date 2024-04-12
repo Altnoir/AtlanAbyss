@@ -7,10 +7,10 @@
     ],
     "key": {
         "A": {
-            "item": "kubejs:platinum_nugget"
+            "item": "kubejs:aluminum_sheet"
         },
         "B": {
-            "item": "kubejs:aluminum_ingot"
+            "item": "kubejs:osmium_sheet"
         },
         "C": {
             "item": "tac:epic_material"

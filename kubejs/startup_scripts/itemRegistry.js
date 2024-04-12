@@ -577,5 +577,6 @@ onEvent('item.registry', event => {
 	event.create('missingno').displayName('error')
 	event.create('computation_matrix').parentModel("kubejs:item/computation_matrix").displayName('Computation Matrix').rarity(RARITY_UNCOMMON).unstackable()
 
+	event.create('sponge_gemmule').displayName('Sponge Gemmule')
 	event.create('cotton').displayName('Cotton')
 })

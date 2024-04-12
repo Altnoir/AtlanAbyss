@@ -24,7 +24,7 @@
     },
     "reloads": {
         "magFed": true,
-        "maxAmmo": 20,
+        "maxAmmo": 30,
         "reloadMagTimer": 42,
         "additionalReloadEmptyMagTimer": 18,
         "preReloadPauseTicks": 5
@@ -32,7 +32,7 @@
     "projectile": {
         "item": "kubejs:rifle_ammo",
         "visible": false,
-        "damage": 9,
+        "damage": 48,
         "armorIgnore": 1.1,
         "critical": 0.00,
         "criticalDamage": 0.75,

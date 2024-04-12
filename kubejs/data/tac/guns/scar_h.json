@@ -1,13 +1,15 @@
 {
     "general": {
         "auto": true,
-        "rate": 600,
+        "rate": 750,
+        "burstRate": 15,
         "rateSelector": [
             1,
-            2
+            2,
+            3
         ],
         "gripType": "tac:two_handed_ak47",
-        "recoilAngle": 3.15,
+        "recoilAngle": 6.3,
         "horizontalRecoilAngle": 1.5,
         "recoilKick": 1.95,
         "recoilAdsReduction": 0.25,
@@ -23,9 +25,9 @@
         "movementInaccuracy": 0.75
     },
     "projectile": {
-        "item": "kubejs:rifle_ammo",
+        "item": "kubejs:sniper_ammo",
         "visible": false,
-        "damage": 13.75,
+        "damage": 110.0,
         "armorIgnore": 1,
         "critical": 0.00,
         "criticalDamage": 0.75,
@@ -45,9 +47,9 @@
         "reloadMagTimer": 33,
         "additionalReloadEmptyMagTimer": 16,
         "maxAdditionalAmmoPerOC": [
-            3,
-            6,
-            10
+            10,
+            20,
+            35
         ],
         "preReloadPauseTicks": 0
     },

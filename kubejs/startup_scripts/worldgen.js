@@ -39,7 +39,24 @@ onEvent('worldgen.add', event => {
     ore.worldgenLayer = 'underground_ores'
   });
 
-  const { anchors } = event
+  const { anchors } = event;
+  event.addOre(ore => {
+    ore.id = 'kubejs:nether_sulfur_ore'
+    ore.biomes = '^nether'
+
+    ore.addTarget('#forge:netherrack', 'kubejs:nether_sulfur_ore')//下界硫矿
+
+    ore.count([16, 27])
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(16),
+        anchors.absolute(48)
+      )
+
+    ore.size = 10
+    ore.worldgenLayer = 'underground_ores'
+  });
+
   event.addOre(ore => {
     ore.id = 'kubejs:nether_aluminum_ore'
     ore.biomes = '^nether'

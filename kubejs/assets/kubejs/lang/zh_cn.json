@@ -228,10 +228,12 @@
     "item.kubejs.number_9_bucket": "超流体逻辑桶（9）",
     "item.kubejs.matrix_bucket": "§d液态智能矩阵桶",
 
+    "item.kubejs.sponge_gemmule": "海绵芽球",
     "item.kubejs.cotton": "棉花",
     "item.kubejs.cottons_seed": "棉花种子",
     "block.kubejs.cottons": "棉花",
     
+    "block.kubejs.nether_sulfur_ore": "下界硫矿石",
     "block.kubejs.nether_aluminum_ore": "下界铝矿石",
     "block.kubejs.end_bismuth_ore": "§d末地铋矿石",
     "block.kubejs.inversia_uranium_ore": "§a颠倒域铀矿石",
@@ -251,6 +253,10 @@
     "block.kubejs.plutonium_block": "§b钚块",
     "block.kubejs.compressed_coal_block": "压缩煤块",
     "block.kubejs.lucky_block": "幸运方块",
+
+    "block.kubejs.andesite_machine": "安山机器",
+    "block.kubejs.brass_machine": "黄铜机器",
+    "block.kubejs.copper_machine": "铜机器",
 
     "item.kubejs.catalyst_incomplete": "催化剂(未完成)",
     "item.kubejs.chaos_incomplete": "化學劑(未完成)",

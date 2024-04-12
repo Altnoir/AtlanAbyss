@@ -35,225 +35,230 @@ onEvent('recipes', event => {
 		}).id('atlanabyss:tac_workbench_' + item.replace(":", "_"))
 	}
 
+	//普通级
 	//手枪
 	tacRecipes('tac:m1911', [
 		['#forge:materials/uncommon', 1]
 	]);
-	tacRecipes('tac:glock_17', [
-		['#forge:materials/rare', 1],
-	]);
-	tacRecipes('tac:sti2011', [
-		['#forge:materials/rare', 2],
-	]);
-	tacRecipes('tac:m92fs', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/rare', 1],
-	]);
-	tacRecipes('tac:deagle_357', [
-		['#forge:materials/ultimate', 16]
-	]);
-	tacRecipes('tac:glock_18', [
-		['#forge:materials/rare', 3],
-	]);
-	tacRecipes('tac:cz75', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/rare', 1],
-	]);
-	tacRecipes('tac:cz75_auto', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/rare', 3],
-	]);
-	tacRecipes('tac:mk23', [
-		['#forge:materials/uncommon', 1],
-		['#forge:materials/rare', 2],
-	]);
-	tacRecipes('tac:tti_g34', [
-		['#forge:materials/uncommon', 3],
-		['#forge:materials/rare', 1],
-	]);
-	tacRecipes('tac:timeless_50', [
-		['#forge:materials/ultimate', 4],
-		['#forge:materials/legendary', 16]
-	]);
-	tacRecipes('tac:colt_python', [
-		['#forge:materials/ultimate', 8],
-		['#forge:materials/legendary', 3]
-	]);
-	tacRecipes('tac:tec_9', [
-		['#forge:materials/uncommon', 1],
-		['#forge:materials/rare', 2],
-	]);
 	//冲锋枪
-	tacRecipes('tac:vector45', [
-		['#forge:materials/uncommon', 1],
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 1],
-	]);
-	tacRecipes('tac:micro_uzi', [
-		['#forge:materials/rare', 1],
-	]);
 	tacRecipes('tac:m1a1_smg', [
-		['#forge:materials/uncommon', 5]
-	]);
-	tacRecipes('tac:hk_mp5a5', [
-		['#forge:materials/rare', 5]
-	]);
-	tacRecipes('tac:mp7', [
-		['#forge:materials/uncommon', 3],
-		['#forge:materials/rare', 2],
-		['#forge:materials/epic', 1],
-	]);
-	tacRecipes('tac:mp9', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/epic', 1],
-	]);
-	tacRecipes('tac:udp_9', [
-		['#forge:materials/rare', 1],
-		['#forge:materials/epic', 1],
-	]);
-	tacRecipes('tac:p90', [
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 1],
-	]);
-	tacRecipes('tac:uzi', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/rare', 1],
+		['#forge:materials/uncommon', 2]
 	]);
 	//步枪
-	tacRecipes('tac:ak47', [
-		['#forge:materials/uncommon', 5],
-		['#forge:materials/rare', 3],
-	]);
-	tacRecipes('tac:m4', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/rare', 5],
-	]);
-	tacRecipes('tac:m4', [
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 2]
-	]);
-	tacRecipes('tac:qbz_95', [
-		['#forge:materials/uncommon', 2],
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 1]
-	]);
-	tacRecipes('tac:mk14', [
-		['#forge:materials/rare', 5],
-		['#forge:materials/epic', 3]
-	]);
-	tacRecipes('tac:hk416_a5', [
-		['#forge:materials/rare', 5],
-		['#forge:materials/epic', 2]
-	]);
 	tacRecipes('tac:type81_x', [
-		['#forge:materials/uncommon', 5],
-		['#forge:materials/rare', 3]
-	]);
-	tacRecipes('tac:fn_fal', [
-		['#forge:materials/uncommon', 6],
-		['#forge:materials/rare', 2]
-	]);
-	tacRecipes('tac:sig_mcx_spear', [
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 3]
-	]);
-	tacRecipes('tac:sks_tactical', [
-		['#forge:materials/uncommon', 3],
-		['#forge:materials/rare', 6]
-	]);
-	tacRecipes('tac:qbz_191', [
-		['#forge:materials/uncommon', 3],
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 1]
-	]);
-	tacRecipes('tac:m16a4', [
-		['#forge:materials/rare', 5],
-		['#forge:materials/epic', 2]
-	]);
-	tacRecipes('tac:scar_h', [
-		['#forge:materials/rare', 6],
-		['#forge:materials/epic', 2]
-	]);
-	tacRecipes('tac:scar_l', [
-		['#forge:materials/rare', 5],
-		['#forge:materials/epic', 1]
-	]);
-	tacRecipes('tac:mk47', [
-		['#forge:materials/uncommon', 3],
-		['#forge:materials/rare', 4],
-		['#forge:materials/epic', 1]
-	]);
-	tacRecipes('tac:spr15', [
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 1]
-	]);
-	tacRecipes('tac:mk18_mod1', [
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 2]
-	]);
-	tacRecipes('tac:hk_g3', [
-		['#forge:materials/rare', 2],
-		['#forge:materials/epic', 2],
-		['#forge:materials/legendary', 1]
-	]);
-	//狙击枪
-	tacRecipes('tac:m24', [
-		['#forge:materials/rare', 9]
-	]);
-	tacRecipes('tac:ai_awp', [
-		['#forge:materials/rare', 8],
-		['#forge:materials/epic', 5]
-	]);
-	tacRecipes('tac:scar_mk20', [
-		['#forge:materials/rare', 9],
-		['#forge:materials/epic', 2]
-	]);
-	tacRecipes('tac:mrad', [
-		['#forge:materials/rare', 3],
-		['#forge:materials/epic', 8],
-		['#forge:materials/legendary', 2]
-	]);
-	tacRecipes('tac:m82a2', [
-		['#forge:materials/epic', 6],
-		['#forge:materials/legendary', 6],
-		['#forge:materials/ultimate', 2],
+		['#forge:materials/uncommon', 3]
 	]);
 	//霰弹枪
 	tacRecipes('tac:db_short', [
-		['#forge:materials/uncommon', 5]
+		['#forge:materials/uncommon', 2]
 	]);
-	tacRecipes('tac:m870_classic', [
-		['#forge:materials/uncommon', 6],
-		['#forge:materials/rare', 1]
+	//重型武器
+	tacRecipes('tac:dp28', [
+		['#forge:materials/uncommon', 4]
 	]);
-	tacRecipes('tac:m1014', [
+
+	//稀有级
+	//手枪
+	tacRecipes('tac:glock_17', [
+		['#forge:materials/rare', 1],
+	]);
+	tacRecipes('tac:cz75', [
+		['#forge:materials/rare', 1],
+		['#forge:dyes/white', 1]
+	]);
+	tacRecipes('tac:m92fs', [
+		['#forge:materials/rare', 1],
+		['#forge:nuggets/gold', 3],
+	]);
+	tacRecipes('tac:mk23', [
+		['#forge:materials/rare', 1],
+		['#forge:gems/amethyst', 1],
+	]);
+	//冲锋枪
+	tacRecipes('tac:micro_uzi', [
+		['#forge:materials/rare', 2]
+	]);
+	tacRecipes('tac:uzi', [
+		['#forge:materials/rare', 2],
+		['#forge:rods/iron', 1]
+	]);
+	tacRecipes('tac:hk_mp5a5', [
+		['#forge:materials/rare', 2],
+		['#forge:plates/tin', 1]
+	]);
+	//步枪
+	tacRecipes('tac:ak47', [
+		['#forge:materials/rare', 3]
+	]);
+	tacRecipes('tac:fn_fal', [
 		['#forge:materials/rare', 3],
+		['#atlanabyss:flint', 2]
+	]);
+	tacRecipes('tac:m16a4', [
+		['#forge:materials/rare', 3]
+	]);
+	tacRecipes('tac:sks_tactical', [
+		['#forge:materials/rare', 3],
+		['#forge:gems/sulfur', 1]
+	]);
+	//霰弹枪
+	tacRecipes('tac:m870_classic', [
+		['#forge:materials/rare', 3]
+	]);
+	//狙击枪
+	tacRecipes('tac:m24', [
+		['#forge:materials/rare', 2],
+		['#forge:nuggets/zinc', 5]
+	]);
+	//重型武器
+	tacRecipes('tac:rpk', [
+		['#forge:materials/rare', 4],
+		['#forge:rods/iron', 2]
+	]);
+	tacRecipes('tac:rpg7', [
+		['#forge:materials/rare', 5]
+	]);
+
+	//史诗级
+	//手枪
+	tacRecipes('tac:sti2011', [
 		['#forge:materials/epic', 1]
 	]);
-	tacRecipes('tac:aa_12', [
+	tacRecipes('tac:tti_g34', [
+		['#forge:materials/epic', 1],
+		['#forge:nuggets/brass', 4]
+	]);
+	tacRecipes('tac:cz75_auto', [
+		['#forge:materials/epic', 1],
+		['#forge:dyes/white', 1]
+	]);
+	tacRecipes('tac:glock_18', [
+		['#forge:materials/epic', 1],
+		['#forge:dyes/yellow', 1]
+	]);
+	tacRecipes('tac:tec_9', [
+		['#forge:materials/epic', 1],
+		['#forge:gems/quartz', 1]
+	]);
+	//冲锋枪
+	tacRecipes('tac:mp9', [
+		['#forge:materials/epic', 2],
+	]);
+	tacRecipes('tac:p90', [
+		['#forge:materials/epic', 2],
+		['#atlanabyss:item_vault', 1]
+	]);
+	//步枪
+	tacRecipes('tac:m4', [
+		['#forge:materials/epic', 3]
+	]);
+	tacRecipes('tac:qbz_95', [
 		['#forge:materials/epic', 3],
+		['#atlanabyss:ingots/andesite_alloy', 1]
+	]);
+	tacRecipes('tac:qbz_191', [
+		['#forge:materials/epic', 3],
+		['#minecraft:coals', 1]
+	]);
+	tacRecipes('tac:mk47', [
+		['#forge:materials/epic', 3],
+		['#forge:ingots/zinc', 1]
+	]);
+	tacRecipes('tac:scar_l', [
+		['#forge:materials/epic', 3],
+		['#forge:ingots/brass', 1]
+	]);
+	tacRecipes('tac:mk14', [
+		['#forge:materials/rare', 3],
+		['#forge:dyes/white', 2]
+	]);
+	tacRecipes('tac:spr15', [
+		['#forge:materials/rare', 4],
+		['#forge:dyes/yellow', 1]
+	]);
+	//霰弹枪
+	tacRecipes('tac:m1014', [
+		['#forge:materials/epic', 4]
+	]);
+	//狙击枪
+	tacRecipes('tac:ai_awp', [
+		['#forge:materials/epic', 5],
+		['#forge:dyes/green', 1]
+	]);
+
+	//传说级
+	//手枪
+	tacRecipes('tac:timeless_50', [
+		['#forge:materials/legendary', 2],
+		['#forge:nuggets/silver', 7]
+	]);
+	tacRecipes('tac:colt_python', [
+		['#forge:materials/legendary', 2]
+	]);
+	//冲锋枪
+	tacRecipes('tac:vector45', [
 		['#forge:materials/legendary', 3]
+	]);
+	tacRecipes('tac:udp_9', [
+		['#forge:materials/legendary', 3],
+		['#forge:dyes/yellow', 2]
+	]);
+	tacRecipes('tac:mp7', [
+		['#forge:materials/legendary', 3],
+		['#forge:ingots/amethyst_bronze', 1]
+	]);
+	//步枪
+	tacRecipes('tac:hk416_a5', [
+		['#forge:materials/legendary', 4]
+	]);
+	tacRecipes('tac:mk18_mod1', [
+		['#forge:materials/legendary', 4],
+		['#forge:gems/sulfur', 2]
+	]);
+	tacRecipes('tac:sig_mcx_spear', [
+		['#forge:materials/legendary', 4],
+		['#forge:dyes/yellow', 3]
+	]);
+	tacRecipes('tac:hk_g3', [
+		['#forge:materials/legendary', 4],
+		['#forge:gems/niter', 3]
+	]);
+	//狙击枪
+	tacRecipes('tac:mrad', [
+		['#forge:materials/legendary', 5],
+		['#forge:ingots/silver', 3]
+	]);
+	tacRecipes('tac:scar_mk20', [
+		['#forge:materials/legendary', 5],
+		['#forge:ingots/lead', 2]
+	]);
+	//重型武器
+	tacRecipes('tac:m249', [
+		['#forge:materials/legendary', 5],
+		['#atlanabyss:item_vault', 2]
+	]);
+
+	//专家级
+	//手枪
+	tacRecipes('tac:deagle_357', [
+		['#forge:materials/ultimate', 3]
+	]);
+	//步枪
+	tacRecipes('tac:scar_h', [
+		['#forge:materials/ultimate', 4]
+	]);
+	//霰弹枪
+	tacRecipes('tac:aa_12', [
+		['#forge:materials/ultimate', 5]
+	]);
+	//狙击枪
+	tacRecipes('tac:m82a2', [
+		['#forge:materials/ultimate', 6]
 	]);
 	//重型武器
 	tacRecipes('tac:m60', [
-		['#forge:materials/epic', 18],
-		['#forge:materials/legendary', 12],
-		['#forge:materials/ultimate', 1],
-	]);
-	tacRecipes('tac:dp28', [
-		['#forge:materials/rare', 12]
-	]);
-	tacRecipes('tac:rpk', [
-		['#forge:materials/uncommon', 3],
-		['#forge:materials/rare', 10]
-	]);
-	tacRecipes('tac:rpg7', [
-		['#forge:materials/rare', 15],
-		['#forge:materials/legendary', 3]
-	]);
-	tacRecipes('tac:m249', [
-		['#forge:materials/epic', 8],
-		['#forge:materials/legendary', 5]
+		['#forge:materials/ultimate', 5],
+		['#atlanabyss:item_vault', 3]
 	]);
 
 	// //绿材料
@@ -376,14 +381,14 @@ onEvent('recipes', event => {
 
 	let sna = ('kubejs:sniper_shell')
 	sequenced_assembly([
-		'5x kubejs:sniper_ammo'
+		'10x kubejs:sniper_ammo'
 	],
 		'thermal:steel_plate',
 		[
 			cutting(sna, sna,),
 			deploying(sna, [sna, 'tconstruct:efln_ball']),
 			pressing(sna, sna),
-		]).transitionalItem(sna).loops(3).id("atlanabyss:sniper_ammo")//狙击枪子弹
+		]).transitionalItem(sna).loops(3).id("atlanabyss:sniper_ammo")//大口径步枪子弹
 
 	let ma = ('kubejs:magnum_shell')
 	sequenced_assembly([
@@ -436,7 +441,7 @@ onEvent('recipes', event => {
 		'B'
 	], {
 		A: '#forge:stripped_logs',
-		B: 'pneumaticcraft:display_table'
+		B: 'minecraft:iron_block'
 	}).id("atlanabyss:tac_workbench")
 
 	//扭蛋

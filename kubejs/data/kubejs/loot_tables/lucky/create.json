@@ -5,6 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "create:wrench"
+                },
+                {
+                    "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:track_signal"
                 },
@@ -175,20 +180,6 @@
                             "count": {
                                 "min": 1,
                                 "max": 5
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:turntable",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
                             }
                         }
                     ]

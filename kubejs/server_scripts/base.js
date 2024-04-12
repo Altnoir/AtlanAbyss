@@ -512,13 +512,11 @@ onEvent('recipes', event => {
 
 	//肥皂
 	remove('supplementaries:soap')
-	compacting(
-		'2x supplementaries:soap',
-		[
-			'minecraft:porkchop',
-			'4x supplementaries:ash',
-			Fluid.of('thermal:creosote', 250)
-		]).id("atlanabyss:pyrolyzer_soap")
+	compacting('2x supplementaries:soap', [
+		'minecraft:porkchop',
+		'4x supplementaries:ash',
+		Fluid.of('thermal:creosote', 250)
+	]).id("atlanabyss:pyrolyzer_soap")
 
 	remove('supplementaries:soap/carpet')
 	event.shapeless('minecraft:white_carpet', [
@@ -841,6 +839,17 @@ onEvent('recipes', event => {
 	splashing('kitchenkarrot:water', Item.of('minecraft:potion', '{Potion:"minecraft:water"}')).id("atlanabyss:splashing_water_potion")
 	milling('kitchenkarrot:birch_sap', 'minecraft:birch_sapling').id("atlanabyss:milling_birch_sapling")
 
+	//海绵再生
+	pressing('4x kubejs:sponge_gemmule', 'minecraft:sponge').id("atlanabyss:pressing_sponge")
+	splashing('minecraft:wet_sponge', 'kubejs:sponge_gemmule').id("atlanabyss:splashing_sponge_gemmule")
+
+	//蛆和蚊子口器
+	splashing([
+		'2x alexsmobs:maggot',
+		Item.of('alexsmobs:maggot').withChance(.5),
+		Item.of('alexsmobs:mosquito_proboscis').withChance(.25),
+		Item.of('alexsmobs:blood_sac').withChance(.05)
+	], 'minecraft:rotten_flesh').id("atlanabyss:splashing_rotten_flesh")
 	//暮色乐事
 	function fdCutting(item, tool, result, id) {
 		let resultList = [];
@@ -1333,6 +1342,7 @@ onEvent('recipes', event => {
 	createHaunting('thermal:blizz_powder', 'thermal:ice_charge', 'ice_charge')//瀑冰弹
 	createHaunting('thermal:basalz_powder', 'thermal:earth_charge', 'earth_charge')//裂岩弹
 	createHaunting('minecraft:blaze_powder', 'minecraft:fire_charge', 'fire_charge')//火焰弹
+	createHaunting('minecraft:hanging_roots', 'twilightforest:liveroot', 'haunting_liveroot')//活根
 
 	//管道升级
 	deploying('pipez:basic_upgrade', [
@@ -1777,17 +1787,16 @@ onEvent('recipes', event => {
 	//锇锭！
 	let oc = ('kubejs:osmium_compound')
 	sequenced_assembly([
-		'4x kubejs:osmium_ingot'
+		'kubejs:osmium_ingot'
 	],
 		'kubejs:osmium_scrap',
 		[
-			filling(oc, [oc, Fluid.of('tconstruct:molten_platinum', 125)]),
+			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
+			filling(oc, [oc, Fluid.of('minecraft:lava', 500)]),
 			pressing(oc, oc).processingTime(100),
 			pressing(oc, oc).processingTime(100),
-			pressing(oc, oc).processingTime(100),
-			filling(oc, [oc, Fluid.of('minecraft:water', 250)]),
-			cutting(oc, oc).processingTime(100)
-		]).transitionalItem(oc).loops(8).id("atlanabyss:osmium_ingot")
+			filling(oc, [oc, Fluid.of('minecraft:water', 1000)])
+		]).transitionalItem(oc).loops(1).id("atlanabyss:osmium_ingot")
 
 	//锇粒
 	event.shaped('kubejs:osmium_ingot', [

@@ -188,4 +188,34 @@ onEvent('recipes', event => {
     'ars_nouveau:red_archwood_sapling',
     120,
     'minecraft:amethyst_block').id("atlanabyss:blood_slime_sapling")
+
+
+  //蜂蜜
+  remove('tconstruct:smeltery/melting/slime/honey_block')
+  event.custom({
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "minecraft:honey_block"
+    },
+    "result": {
+      "fluid": "create:honey",
+      "amount": 1000
+    },
+    "temperature": 1,
+    "time": 94
+  }).id("atlanabyss:tc_melting_honey_block")
+  
+  remove('tconstruct:smeltery/entity_melting/bee')
+  event.custom({
+    "type": "tconstruct:entity_melting",
+    "entity": {
+      "type": "minecraft:bee"
+    },
+    "result": {
+      "fluid": "create:honey",
+      "amount": 25
+    },
+    "damage": 2
+  }).id("atlanabyss:entity_melting_bee")
+
 })

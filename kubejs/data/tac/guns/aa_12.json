@@ -40,7 +40,7 @@
     "projectile": {
         "item": "kubejs:shotgun_ammo",
         "visible": false,
-        "damage": 42,
+        "damage": 120,
         "armorIgnore": 0.2,
         "critical": 0.0,
         "criticalDamage": 0.625,

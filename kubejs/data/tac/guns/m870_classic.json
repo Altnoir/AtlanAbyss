@@ -1,6 +1,6 @@
 {
     "general": {
-        "rate": 200,
+        "rate": 400,
         "rateSelector": [
             1
         ],
@@ -37,7 +37,7 @@
     "projectile": {
         "item": "kubejs:shotgun_ammo",
         "visible": false,
-        "damage": 57,
+        "damage": 81,
         "armorIgnore": 0.2,
         "critical": 0.2,
         "criticalDamage": 0.75,

@@ -8,7 +8,7 @@
 		fpsDisplay = "ADVANCED"
 		#Shows GPU and memory usage onto FPS display
 		#Allowed Values: OFF, ON, GPU, RAM
-		fpsDisplaySystem = "RAM"
+		fpsDisplaySystem = "OFF"
 		#Set Fullscreen mode
 		#Borderless let you change between screens more faster and move your mouse across monitors
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
@@ -26,18 +26,18 @@
 		fpsDisplayMargin = 12
 
 	[embeddiumplus.performance]
-		#Toggles JREI item rendering until searching
-		#Increases performance a little bit and cleans your screen when you don't want to use it
-		hideJREI = true
 		#Toggles FastChest feature
 		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
-		fastChests = false
-		#Toggles FastBeds feature
-		fastBeds = true
+		fastChest = false
+		#Toggles JREI item rendering until searching
+		#Increases performance a little bit and cleans your screen when you don't want to use it
+		hideJREI = false
 		#Toggles Minecraft Fonts shadows
 		#Depending of the case may increase performance
 		#Gives a flat style text
-		fontShadows = false
+		fontShadows = true
+		#Toggles FastBeds feature
+		fastBed = false
 
 		[embeddiumplus.performance.distanceCulling]
 
@@ -49,15 +49,15 @@
 				#Toggles distance culling for entities
 				#Maybe you use another mod for that :(
 				enable = true
-				#List of all Entities to be ignored by distance culling
-				#Uses ResourceLocation to identify it
-				#Example 1: "minecraft:bat" - Ignores bats only
-				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
-				whitelist = []
 				#Configure vertical max distance before cull entities
 				#Value is raw
 				#Range: 0 ~ 512
 				cullingMaxDistanceY = 32
+				#List of all Entities to be ignored by distance culling
+				#Uses ResourceLocation to identify it
+				#Example 1: "minecraft:bat" - Ignores bats only
+				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
+				whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*"]
 
 			[embeddiumplus.performance.distanceCulling.tileEntities]
 				#Configure horizontal max distance before cull Block entities
@@ -67,22 +67,22 @@
 				#Toggles distance culling for Block Entities
 				#Maybe you use another mod for that :(
 				enable = true
-				#List of all Block Entities to be ignored by distance culling
-				#Uses ResourceLocation to identify it
-				#Example 1: "minecraft:chest" - Ignores chests only
-				#Example 2: "ae2:*" - ignores all Block entities from Applied Energetics 2
-				whitelist = []
 				#Configure vertical max distance before cull Block entities
 				#Value is raw
 				#Range: 0 ~ 512
 				cullingMaxDistanceY = 32
+				#List of all Block Entities to be ignored by distance culling
+				#Uses ResourceLocation to identify it
+				#Example 1: "minecraft:chest" - Ignores chests only
+				#Example 2: "ae2:*" - ignores all Block entities from Applied Energetics 2
+				whitelist = ["waterframes:*"]
 
 	[embeddiumplus.dynlights]
 		#Toggle if Block Entities should have dynamic lights
 		onTileEntities = true
 		#Configure how fast light whould be updated
 		#Allowed Values: OFF, SLOW, NORMAL, FAST, SUPERFAST, FASTESTS, REALTIME
-		updateSpeed = "OFF"
+		updateSpeed = "REALTIME"
 		#Toggle if Entities should have dynamic lights
 		onEntities = true
 		updateOnlyOnPositionChange = true
@@ -100,13 +100,19 @@
 		#This option doesn't affect performance, just changes speed
 		#Allowed Values: OFF, FAST, SLOW
 		chunkFadeSpeed = "SLOW"
+		#Clean my skies
+		#Blue band was a vanilla feature, toggle off will show sky color directly
+		blueBand = true
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
 		#Range: 0 ~ 512
-		cloudsHeight = 128
+		cloudsHeight = 192
+		#Do not show me your name
+		#disables nametag rendering for players and entities
+		disableNameTagRendering = false
 		#Toggle fog feature
-		#Fog was a vanilla feature, toggling off may increases performance
-		fog = false
+		#Fog was a vanilla feature
+		fog = true
 
 		[embeddiumplus.quality.darkness]
 			#Configure fog brightness on nether when darkness is enabled
@@ -118,11 +124,11 @@
 			#Toggle Darkness on End dimension
 			enableOnEnd = false
 			#Toggle Darkness default mode for modded dimensions
-			valueByDefault = false
+			valueByDefault = true
 			#Configure Darkness Mode
 			#Each config changes what is considered 'true darkness'
 			#Allowed Values: TOTAL_DARKNESS, PITCH_BLACK, DARK, DIM, OFF
-			mode = "OFF"
+			mode = "PITCH_BLACK"
 			#Toggles if moon phases affects darkness in the overworld
 			affectedByMoonPhase = true
 			#List of all dimensions to use True Darkness
@@ -142,5 +148,5 @@
 			#Only affects darkness effect
 			enableBlockLightOnly = false
 			#Toggle Darkness on Overworld dimension
-			enableOnOverworld = true
+			enableOnOverworld = false
 

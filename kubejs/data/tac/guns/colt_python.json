@@ -32,7 +32,7 @@
     "projectile": {
         "item": "kubejs:magnum_ammo",
         "visible": false,
-        "damage": 216,
+        "damage": 288,
         "armorIgnore": 2.0,
         "critical": 0.5,
         "criticalDamage": 1.0,

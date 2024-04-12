@@ -38,7 +38,7 @@
         "item": "kubejs:smg_ammo",
         "visible": false,
         "size": 0.1,
-        "damage": 3.5,
+        "damage": 8.0,
         "armorIgnore": 0.2,
         "critical": 0.0,
         "criticalDamage": 0.625,

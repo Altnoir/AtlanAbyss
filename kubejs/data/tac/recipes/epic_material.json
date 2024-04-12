@@ -7,10 +7,10 @@
     ],
     "key": {
         "A": {
-            "item": "minecraft:amethyst_shard"
+            "item": "pneumaticcraft:plastic"
         },
         "B": {
-            "item": "minecraft:obsidian"
+            "item": "create:sturdy_sheet"
         },
         "C": {
             "item": "tac:rare_material"

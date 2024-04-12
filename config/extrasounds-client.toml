@@ -29,4 +29,6 @@
 	item_drop = true
 	#Empty hotbar Sounds
 	empty_hotbar = true
+	#Enable Effects Sounds
+	effects_enable = true
 

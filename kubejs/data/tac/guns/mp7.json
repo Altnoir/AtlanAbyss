@@ -28,16 +28,16 @@
         "reloadMagTimer": 29,
         "additionalReloadEmptyMagTimer": 13,
         "maxAdditionalAmmoPerOC": [
-            10,
             20,
-            30
+            40,
+            60
         ],
         "preReloadPauseTicks": 0
     },
     "projectile": {
         "item": "kubejs:smg_ammo",
         "visible": false,
-        "damage": 6.0,
+        "damage": 35.0,
         "armorIgnore": 1.4,
         "critical": 0.0,
         "criticalDamage": 0.625,

@@ -84,8 +84,8 @@
 		}
 		{
 			disable_toast: true
-			x: 3.5d
-			y: 1.5d
+			x: 2.5d
+			y: 1.0d
 			shape: "hexagon"
 			description: ["一把会飞的扫帚！不觉得很酷吗？"]
 			dependencies: [
@@ -133,11 +133,12 @@
 			title: "P点掉落改动"
 			icon: "touhou_little_maid:power_point"
 			disable_toast: true
-			x: 5.5d
-			y: -1.5d
+			x: 4.0d
+			y: -3.0d
 			shape: "hexagon"
 			description: ["本整合包虽然移除了妖精女仆的生成，但你可以通过魔力池转换经验瓶以获得相应的P点。"]
 			dependencies: ["0FFF68D8B91B8A70"]
+			hide: true
 			id: "6CC3920A8B0C1B39"
 			tasks: [{
 				id: "2350CF369489A7D8"
@@ -145,14 +146,20 @@
 				item: "touhou_little_maid:power_point"
 			}]
 			rewards: [{
-				id: "5B67A8B7E288A7AF"
-				type: "xp"
-				xp: 10
+				id: "0DB4D6A282366ADA"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+					}
+				}
 			}]
 		}
 		{
 			x: 4.0d
-			y: 0.5d
+			y: 0.0d
 			dependencies: ["0FD46CB5A854B716"]
 			id: "369202E8265D6C29"
 			tasks: [{
@@ -167,8 +174,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -0.5d
+			x: 3.0d
+			y: -1.0d
 			dependencies: ["0FD46CB5A854B716"]
 			id: "404B700E4ABCA47D"
 			tasks: [{
@@ -183,12 +190,9 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 0.0d
-			dependencies: [
-				"369202E8265D6C29"
-				"404B700E4ABCA47D"
-			]
+			x: 4.0d
+			y: -1.5d
+			dependencies: ["369202E8265D6C29"]
 			id: "0FFF68D8B91B8A70"
 			tasks: [{
 				id: "54E85FC0B73736F2"
@@ -203,8 +207,8 @@
 		}
 		{
 			disable_toast: true
-			x: 3.5d
-			y: -1.5d
+			x: 1.5d
+			y: -1.0d
 			dependencies: ["404B700E4ABCA47D"]
 			id: "36BFC4B7AE75FDCD"
 			tasks: [{
@@ -220,8 +224,8 @@
 		}
 		{
 			disable_toast: true
-			x: 4.5d
-			y: -1.5d
+			x: 2.0d
+			y: -2.0d
 			dependencies: ["404B700E4ABCA47D"]
 			id: "0471E925290C0E5C"
 			tasks: [{
@@ -236,8 +240,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 2.0d
+			x: 1.0d
+			y: 1.0d
 			dependencies: ["61635A022660E8DD"]
 			id: "381E536079E75588"
 			tasks: [{
@@ -253,7 +257,7 @@
 		}
 		{
 			x: 2.5d
-			y: 3.5d
+			y: 2.0d
 			dependencies: ["61635A022660E8DD"]
 			id: "6FBD76A2F0D639BF"
 			tasks: [{
@@ -269,15 +273,22 @@
 		}
 		{
 			x: 1.0d
-			y: 3.5d
-			dependencies: ["3F1BC198BA9B6A45"]
+			y: 2.0d
+			dependencies: ["6C6215BC890BD22A"]
 			hide: true
 			id: "61635A022660E8DD"
-			tasks: [{
-				id: "53D8659639246133"
-				type: "item"
-				item: "ars_nouveau:enchanting_apparatus"
-			}]
+			tasks: [
+				{
+					id: "53D8659639246133"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "5F4BCA1474F5D617"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+			]
 			rewards: [{
 				id: "2DE9560B4DE456F6"
 				type: "xp"
@@ -285,24 +296,7 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 3.0d
-			dependencies: ["3F1BC198BA9B6A45"]
-			hide: true
-			id: "59590B7C0407D529"
-			tasks: [{
-				id: "364773923450B540"
-				type: "item"
-				item: "ars_nouveau:arcane_core"
-			}]
-			rewards: [{
-				id: "05980D1EA0B557D0"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 1.0d
+			x: 1.5d
 			y: 5.5d
 			dependencies: ["3F1BC198BA9B6A45"]
 			hide: true
@@ -400,8 +394,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 5.5d
+			x: 0.0d
+			y: 3.0d
 			dependencies: ["3F1BC198BA9B6A45"]
 			hide: true
 			id: "6C6215BC890BD22A"
@@ -417,8 +411,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 7.0d
+			x: 1.5d
+			y: 3.5d
 			dependencies: ["6C6215BC890BD22A"]
 			id: "1418B6EDC4D32AAD"
 			tasks: [{
@@ -547,8 +541,9 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 2.0d
+			disable_toast: true
+			x: 6.5d
+			y: -1.0d
 			dependencies: ["5764D7F29A9A31E0"]
 			hide: true
 			id: "176873F1E61B607A"
@@ -564,9 +559,9 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 0.5d
-			dependencies: ["0FFF68D8B91B8A70"]
+			x: 5.0d
+			y: -1.0d
+			dependencies: ["369202E8265D6C29"]
 			hide: true
 			id: "5764D7F29A9A31E0"
 			tasks: [{
@@ -581,8 +576,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 4.5d
+			x: 6.5d
+			y: -2.5d
 			dependencies: ["176873F1E61B607A"]
 			hide: true
 			id: "5D1503960882D059"
@@ -598,10 +593,11 @@
 			}]
 		}
 		{
-			x: 5.5d
+			disable_toast: true
+			x: 6.5d
 			y: 2.0d
 			shape: "hexagon"
-			dependencies: ["41DCA36A2F09C523"]
+			dependencies: ["4E9CE72466ABDEE1"]
 			hide: true
 			id: "311FF8EB13D08D2D"
 			tasks: [{
@@ -609,10 +605,16 @@
 				type: "item"
 				item: "waystones:waystone"
 			}]
+			rewards: [{
+				id: "563F31EA79326895"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 4.5d
-			y: 1.5d
+			disable_toast: true
+			x: 5.5d
+			y: 1.0d
 			shape: "hexagon"
 			dependencies: ["369202E8265D6C29"]
 			hide: true
@@ -629,8 +631,9 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 5.5d
-			y: 1.0d
+			y: 2.0d
 			shape: "hexagon"
 			dependencies: ["41DCA36A2F09C523"]
 			hide: true
@@ -827,6 +830,1040 @@
 			}]
 			rewards: [{
 				id: "0510BA39A112A39B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "04DCFE84E46C96A4"
+			tasks: [{
+				id: "648BB13EFA2E5F86"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+			rewards: [{
+				id: "292FE0113FD0EFDE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["41DCA36A2F09C523"]
+			hide: true
+			id: "4E9CE72466ABDEE1"
+			tasks: [{
+				id: "060859710E24898D"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "34D4488A2FA4F8C0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["04DCFE84E46C96A4"]
+			hide: true
+			id: "55065B7AAA3269E6"
+			tasks: [
+				{
+					id: "64B0BCA46CE1BF54"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:blaze_gate_small"
+						}
+					}
+				}
+				{
+					id: "586F42371F56A3DA"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:creeper_gate_small"
+						}
+					}
+				}
+				{
+					id: "313AC5DA54FEAEC8"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:enderman_gate_small"
+						}
+					}
+				}
+				{
+					id: "17259A3051788C97"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ghast_gate_small"
+						}
+					}
+				}
+				{
+					id: "79CA806E2091A88E"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate_small"
+						}
+					}
+				}
+				{
+					id: "4A64059DE46FBBBA"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:shulker_gate_small"
+						}
+					}
+				}
+				{
+					id: "38D6A78168DC79A7"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:skeleton_gate_small"
+						}
+					}
+				}
+				{
+					id: "4FDA4D645604F3C4"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:slime_gate_small"
+						}
+					}
+				}
+				{
+					id: "05E678DF2C9650D4"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:spider_gate_small"
+						}
+					}
+				}
+				{
+					id: "564AC9BCE6415590"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:witch_gate_small"
+						}
+					}
+				}
+				{
+					id: "3511FCA6EFD58C33"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:wither_skeleton_gate_small"
+						}
+					}
+				}
+				{
+					id: "003E8CCFD69B2CD5"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate_small"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0FB9D6FDB6EACB85"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "apotheosis:boss_gate_small"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["4E9CE72466ABDEE1"]
+			hide: true
+			id: "5BC33FD3FC5795B5"
+			tasks: [{
+				id: "740BBF3CA3E08BC9"
+				type: "item"
+				item: "ae2:fluix_pearl"
+			}]
+			rewards: [{
+				id: "1AF4373DA3082969"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 9.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["5BC33FD3FC5795B5"]
+			hide: true
+			id: "0D6A0E5952280704"
+			tasks: [
+				{
+					id: "3A8B7DCDB40FC138"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:blaze_gate_large"
+						}
+					}
+				}
+				{
+					id: "199EB82CA036A2BC"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:creeper_gate_large"
+						}
+					}
+				}
+				{
+					id: "75DD4C9A1C605251"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:enderman_gate_large"
+						}
+					}
+				}
+				{
+					id: "51F804C555AA26AB"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ghast_gate_large"
+						}
+					}
+				}
+				{
+					id: "7D7DB06AF7E91E2A"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate_large"
+						}
+					}
+				}
+				{
+					id: "58CF6358F415362B"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:shulker_gate_large"
+						}
+					}
+				}
+				{
+					id: "3676998382D97FF2"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:skeleton_gate_large"
+						}
+					}
+				}
+				{
+					id: "0C8131676ED5B241"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:slime_gate_large"
+						}
+					}
+				}
+				{
+					id: "0143E2DEC57307B5"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:spider_gate_large"
+						}
+					}
+				}
+				{
+					id: "6C31534EED1034A2"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:witch_gate_large"
+						}
+					}
+				}
+				{
+					id: "722A82931DE6AFF0"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:wither_skeleton_gate_large"
+						}
+					}
+				}
+				{
+					id: "73FD527D77760E26"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate_large"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4EAD81E59EBC61D2"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "apotheosis:boss_gate_small"
+					}
+				}
+				count: 36
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4E9CE72466ABDEE1"]
+			hide: true
+			id: "45F764796881AD67"
+			tasks: [
+				{
+					id: "2EB846B1880E19F5"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:blaze_gate"
+						}
+					}
+				}
+				{
+					id: "2D7902878D044D38"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:creeper_gate"
+						}
+					}
+				}
+				{
+					id: "147DD6775E92D103"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:enderman_gate"
+						}
+					}
+				}
+				{
+					id: "62DEF92452F26666"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ghast_gate"
+						}
+					}
+				}
+				{
+					id: "05A127DF6E9454B0"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate"
+						}
+					}
+				}
+				{
+					id: "5B639746EFAFAB37"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:shulker_gate"
+						}
+					}
+				}
+				{
+					id: "18623C69AE747AFD"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:skeleton_gate"
+						}
+					}
+				}
+				{
+					id: "3503D493BB3AC0A1"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:slime_gate"
+						}
+					}
+				}
+				{
+					id: "1D6ACF7C006041B0"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:spider_gate"
+						}
+					}
+				}
+				{
+					id: "1717160E182F5021"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:witch_gate"
+						}
+					}
+				}
+				{
+					id: "2993E9926D60F080"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:wither_skeleton_gate"
+						}
+					}
+				}
+				{
+					id: "10AF2B2247B1F16E"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7958291B39DF9AA0"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "apotheosis:boss_gate_small"
+					}
+				}
+				count: 12
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["414CFD78FA59E5C8"]
+			hide: true
+			id: "5B1752815667A780"
+			tasks: [{
+				id: "3C61A580765FDF08"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+			rewards: [{
+				id: "1EC67CE6CEA1A0E5"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 9.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["5B1752815667A780"]
+			hide: true
+			id: "302C177B15F46E99"
+			tasks: [{
+				id: "59680E3FAB79EF46"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:zombie_gate_ultra"
+					}
+				}
+			}]
+			rewards: [{
+				id: "135CB243D42C9FFC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["369202E8265D6C29"]
+			id: "4AA6C0889DF77D22"
+			tasks: [{
+				id: "1822B3163C0E19C8"
+				type: "item"
+				item: "botania:mana_pylon"
+			}]
+			rewards: [{
+				id: "2A89B9B392EAED4F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.5d
+			y: -2.0d
+			dependencies: ["5D1503960882D059"]
+			hide: true
+			id: "18AFCA7D6F0B5F8E"
+			tasks: [
+				{
+					id: "7E87238D613B7934"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "7339C5D4057EF525"
+					type: "item"
+					item: "botania:glimmering_livingwood_log"
+					count: 3L
+				}
+				{
+					id: "5B9473340BB426CF"
+					type: "item"
+					item: "botania:livingwood_log"
+					count: 8L
+				}
+				{
+					id: "4A1897D2C0C87943"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "5599B655D6A0B89D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["18AFCA7D6F0B5F8E"]
+			hide: true
+			id: "414CFD78FA59E5C8"
+			tasks: [
+				{
+					id: "3B80DEACCCA724E6"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "7F267BE105423678"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+			rewards: [{
+				id: "7E730E3DE1433B51"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["0FFF68D8B91B8A70"]
+			hide: true
+			id: "431E46B6870EA9D5"
+			tasks: [{
+				id: "03517902087CF5BD"
+				type: "item"
+				item: "botania:conjuration_catalyst"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -3.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "4013EDE7973973A4"
+			tasks: [{
+				id: "164A7858036581B8"
+				type: "item"
+				item: {
+					id: "touhou_little_maid:entity_placeholder"
+					Count: 1b
+					tag: {
+						RecipeId: "touhou_little_maid:altar/spawn_box"
+					}
+				}
+			}]
+			rewards: [{
+				id: "69886B76F21488EB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -4.5d
+			shape: "rsquare"
+			dependencies: ["6CC3920A8B0C1B39"]
+			hide: true
+			id: "546362B6A9815FC2"
+			tasks: [{
+				id: "4B3977CC5A126399"
+				type: "item"
+				item: {
+					id: "touhou_little_maid:hakurei_gohei"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "6C4C615731212B9F"
+			tasks: [{
+				id: "1291EF4BAE4450A5"
+				type: "item"
+				item: "touhou_little_maid:maid_bed"
+			}]
+			rewards: [{
+				id: "1B0534A7578ADF89"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: -4.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "70F159509560D266"
+			tasks: [{
+				id: "19D89EA9545AD1B5"
+				type: "item"
+				item: "touhou_little_maid:maid_backpack_small"
+			}]
+			rewards: [{
+				id: "636BD5F1FDFAA4A7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: -4.5d
+			shape: "hexagon"
+			dependencies: ["70F159509560D266"]
+			hide: true
+			id: "1A69530802EF7501"
+			tasks: [{
+				id: "645B53A8EC23396D"
+				type: "item"
+				item: "touhou_little_maid:maid_backpack_middle"
+			}]
+			rewards: [{
+				id: "59FF10720CF87181"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.5d
+			y: -4.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "4B4CE5B87BD9C659"
+			tasks: [{
+				id: "5D46EE4D55019428"
+				type: "item"
+				item: "touhou_little_maid:maid_backpack_big"
+			}]
+			rewards: [{
+				id: "4D7E39D1B5CD7308"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -3.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "4383E6F9AECE858A"
+			tasks: [{
+				id: "4322A7A8EF8C904D"
+				type: "item"
+				item: "touhou_little_maid:crafting_table_backpack"
+			}]
+			rewards: [{
+				id: "1C1C8673495A9756"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "3F14B92B62750E25"
+			tasks: [{
+				id: "200BA7518A38F118"
+				type: "item"
+				item: "touhou_little_maid:ender_chest_backpack"
+			}]
+			rewards: [{
+				id: "3C5A36DE3CF78E7E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -3.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "0CBB798FCB366DBC"
+			tasks: [{
+				id: "4818D27461EA234F"
+				type: "item"
+				item: "touhou_little_maid:furnace_backpack"
+			}]
+			rewards: [{
+				id: "573916FF2A5AEC05"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "06203DAAAB7DB061"
+			tasks: [{
+				id: "4C729B8454BE63A8"
+				type: "item"
+				item: "touhou_little_maid:tank_backpack"
+			}]
+			rewards: [{
+				id: "4A4B7AD9C9052FEC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: -4.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "0A13747B66EE1094"
+			tasks: [{
+				id: "703E037351350978"
+				type: "item"
+				item: "touhou_little_maid:gomoku"
+			}]
+			rewards: [{
+				id: "676D852E606FFDB2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.0d
+			y: -3.5d
+			shape: "hexagon"
+			dependencies: ["0A13747B66EE1094"]
+			hide: true
+			id: "2AD3A65EC2E5DDB5"
+			tasks: [{
+				id: "00D644D1FF437988"
+				type: "item"
+				item: "touhou_little_maid:keyboard"
+			}]
+			rewards: [{
+				id: "70C334EAC69C7BBB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: -4.5d
+			shape: "hexagon"
+			dependencies: ["0A13747B66EE1094"]
+			hide: true
+			id: "779B91498D3A6F11"
+			tasks: [{
+				id: "65E4342BA4AA9655"
+				type: "item"
+				item: "touhou_little_maid:bookshelf"
+			}]
+			rewards: [{
+				id: "7F640E9E466D7CB0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.0d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["0A13747B66EE1094"]
+			hide: true
+			id: "395195284751359D"
+			tasks: [{
+				id: "311E683E73D3FA92"
+				type: "item"
+				item: "touhou_little_maid:computer"
+			}]
+			rewards: [{
+				id: "5888B73324269957"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -6.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "7B8CD895F39DDCAD"
+			tasks: [{
+				id: "6F46A04AD65C6024"
+				type: "item"
+				item: "touhou_little_maid:trumpet"
+			}]
+			rewards: [{
+				id: "640FA6CB1C10A649"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -6.5d
+			shape: "hexagon"
+			dependencies: ["7B8CD895F39DDCAD"]
+			hide: true
+			id: "2BDF9D30D60453DF"
+			tasks: [{
+				id: "436C6410A95A8CB2"
+				type: "item"
+				item: "touhou_little_maid:red_fox_scroll"
+			}]
+			rewards: [{
+				id: "603068C5F4157C21"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -6.5d
+			shape: "hexagon"
+			dependencies: ["7B8CD895F39DDCAD"]
+			hide: true
+			id: "3B0B4371A8A40A0F"
+			tasks: [{
+				id: "159D7237B0C49985"
+				type: "item"
+				item: "touhou_little_maid:white_fox_scroll"
+			}]
+			rewards: [{
+				id: "1353E8EE47E63F7F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -3.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "5192735A1D38A6D1"
+			tasks: [{
+				id: "472C3EC33F40C5D2"
+				type: "item"
+				item: "touhou_little_maid:kappa_compass"
+			}]
+			rewards: [{
+				id: "571F661572F9D89C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -5.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "01496985574DAE94"
+			tasks: [{
+				id: "3A80288DD1A5BF32"
+				type: "item"
+				item: "touhou_little_maid:wireless_io"
+			}]
+			rewards: [{
+				id: "4D82B21984D284B9"
 				type: "xp"
 				xp: 10
 			}]

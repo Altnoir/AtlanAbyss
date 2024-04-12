@@ -18,6 +18,8 @@ onEvent('tags.items', event => {
 		//背包
 		['curios:back', 'thermal:satchel'],
 		['curios:back', 'thermal:potion_quiver'],
+		//pnc钢
+		['forge:ingots/compressed_iron', 'pneumaticcraft:ingot_iron_compressed'],
 		//byd钢
 		['forge:ingots/steel', 'beyond_earth:steel_ingot'],
 		['forge:nuggets/steel', 'beyond_earth:steel_nugget'],
@@ -162,6 +164,10 @@ onEvent('tags.items', event => {
 	const tagToAdd = [
 		//光环
 		['atlanabyss:halos', 'yuushya:wriggle_nightbug'],
+		//tac专属tag
+		['atlanabyss:flint', 'minecraft:flint'],
+		['atlanabyss:item_vault', 'create:item_vault'],
+		['atlanabyss:ingots/andesite_alloy', 'create:andesite_alloy'],
 		//信标激活物品添加
 		['minecraft:beacon_payment_items', 'kubejs:aluminium_alloy_ingot'],
 		//替身是个好东西之生物质
@@ -258,6 +264,7 @@ onEvent('tags.items', event => {
 	thick('kubejs:borer_tear_soup')
 	thick('kubejs:thousand_plant_stew')
 
+	//交易卡tag（必须）
 	global.trades.forEach(element => {
 		event.get('forge:trade_cards').add(`kubejs:trade_card_${element}`)
 	});
@@ -299,6 +306,8 @@ onEvent('tags.fluids', event => {
 	event.remove('forge:crude_oil', 'pneumaticcraft:oil')//石油
 	event.remove('forge:ender', 'thermal:ender')//谐振末影
 	event.remove('forge:honey', 'cofh_core:honey')//蜂蜜
+	event.remove('tconstruct:honey', 'tconstruct:honey')//蜂蜜
+	event.remove('tconstruct:honey', 'tconstruct:flowing_honey')//蜂蜜
 	event.remove('forge:potion', 'cofh_core:potion')//药水
 	event.add('forge:ethanol', 'createaddition:bioethanol')//乙醇
 	event.add('forge:molten_plutonium', 'kubejs:molten_plutonium')//钚

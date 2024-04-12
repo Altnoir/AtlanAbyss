@@ -4,9 +4,9 @@
             "rolls": {
                 "min": {
                     "min": 1,
-                    "max": 4
+                    "max": 2
                 },
-                "max": 8
+                "max": 3
             },
             "entries": [
                 {
@@ -517,8 +517,8 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 1,
-                                "max": 4
+                                "min": 5,
+                                "max": 32
                             }
                         }
                     ]

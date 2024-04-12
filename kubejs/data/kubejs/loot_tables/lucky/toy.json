@@ -56,6 +56,35 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "toms_storage:ts.storage_terminal"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "majobroom:broom_item"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "majobroom:majo_hat"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "majobroom:majo_cloth"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "touhou_little_maid:power_point",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 10
+                            }
+                        }
+                    ]
                 }
             ]
         }

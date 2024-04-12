@@ -52,11 +52,6 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "kubejs:lucky/gun_plug"
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "weight": 4,
                     "name": "kubejs:lucky/move"
                 },
@@ -74,11 +69,6 @@
                     "type": "minecraft:loot_table",
                     "weight": 4,
                     "name": "kubejs:lucky/redstone"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 2,
-                    "name": "kubejs:lucky/tools"
                 },
                 {
                     "type": "minecraft:loot_table",

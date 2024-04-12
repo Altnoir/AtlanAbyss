@@ -9,13 +9,13 @@
             3
         ],
         "gripType": "tac:two_handed_vector",
-        "recoilAngle": 1.0,
-        "horizontalRecoilAngle": 2.5,
+        "recoilAngle": 1.5,
+        "horizontalRecoilAngle": 1.5,
         "recoilKick": 2.575,
         "recoilAdsReduction": 0.205,
         "weaponRecoilOffset": 0.9275,
         "cameraRecoilModifier": 0.865,
-        "recoilDuration": 0.1,
+        "recoilDuration": 0.11,
         "weightKilo": 0.0,
         "spread": 2.425,
         "firstShotSpread": 0.195,
@@ -30,9 +30,9 @@
         "reloadMagTimer": 15,
         "additionalReloadEmptyMagTimer": 15,
         "maxAdditionalAmmoPerOC": [
-            5,
             15,
-            25
+            25,
+            35
         ],
         "preReloadPauseTicks": 9,
         "openBolt": false
@@ -40,7 +40,7 @@
     "projectile": {
         "item": "kubejs:smg_ammo",
         "visible": false,
-        "damage": 7,
+        "damage": 32.5,
         "armorIgnore": 0.2,
         "critical": 0.0,
         "criticalDamage": 0.625,

@@ -25,7 +25,7 @@
     "projectile": {
         "item": "kubejs:rifle_ammo",
         "visible": false,
-        "damage": 9.5,
+        "damage": 19.5,
         "armorIgnore": 0.8,
         "critical": 0.00,
         "criticalDamage": 0.75,

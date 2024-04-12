@@ -26,9 +26,9 @@
         "reloadMagTimer": 25,
         "additionalReloadEmptyMagTimer": 11,
         "maxAdditionalAmmoPerOC": [
-            1,
-            2,
-            3
+            3,
+            6,
+            10
         ],
         "preReloadPauseTicks": 0
     },

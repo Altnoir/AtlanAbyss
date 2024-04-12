@@ -25,7 +25,23 @@ onEvent("lootjs", event => {
     .addBlockLootModifier('minecraft:grass')
     .randomChance(0.03)
     .addLoot('kubejs:cottons_seed');
-})
+  //在暮色森林根据生物位置掉落战利品
+  let entityX;
+  let entityZ;
+  event
+    .addLootTypeModifier(LootType.ENTITY)
+    .anyDimension('twilightforest:twilight_forest')
+    .apply((e) => {
+      entityX = e.getEntity().x;
+      entityZ = e.getEntity().z;
+    })
+    .modifyLoot(Ingredient.getAll(), (itemStack) => {
+      let distance = Math.hypot(entityX, entityZ); // 计算实体离中心的距离
+      let i = Math.min(128, Math.floor(distance / 128)) + 1; // 计算战利品掉落倍率
+      itemStack.count += i;
+      return itemStack;
+    });
+});
 
 
 
@@ -156,12 +172,11 @@ onEvent('entity.spawned', event => {
   //monsterSpawn(生命值, 倍率, 每隔多少距离强化一次);
   function monsterSpawn(health, multiple, length) {
     let distance = Math.hypot(x, z); // 计算怪物离中心的距离
-    let coefficient = Math.floor(distance / length); // 计算离中心有多少个距离
+    let coefficient = Math.min(1999, Math.floor(distance / length)); // 计算离中心有多少个距离
     let newHealth = Math.floor(health + (health * multiple * coefficient)); // 根据系数计算生命值
-    let minHealth = Math.min(Number.MAX_VALUE - health, newHealth)
 
-    entity.mergeFullNBT(`{KubeJSPersistentData:{id:7210},Attributes:[{Name:"generic.max_health",Base:${minHealth}}]}`);
-    entity.heal(minHealth);
+    entity.mergeFullNBT(`{KubeJSPersistentData:{id:7210},Attributes:[{Name:"generic.max_health",Base:${newHealth}}]}`);
+    entity.heal(newHealth);
     event.cancel();
   }
 
@@ -200,7 +215,8 @@ onEvent('entity.hurt', event => {
   let health = Math.floor(entity.getHealth());
 
   //暮色怪物增强
-  if (source.actual && entity.isLiving() && source.type != 'fall' && source.type != 'magic' && source.type != 'generic' && source.type != 'inFire' && source.type != 'drown' && source.type != 'outOfWorld') {
+  //&& source.type != 'fall' && source.type != 'magic' && source.type != 'generic' && source.type != 'inFire' && source.type != 'drown' && source.type != 'outOfWorld'
+  if (source.actual && entity.isLiving()) {
     if (entity.type == 'minecraft:player' && source.type != 'player' && level.dimension == 'twilightforest:twilight_forest' && !entity.creativeMode) {
       //玩家在暮色会受到额外伤害
       let damage = event.damage * 1.5; // 倍率
@@ -227,6 +243,7 @@ onEvent('entity.hurt', event => {
         let radius = Math.round(playerHealth / 40);
         let max = Math.min((playerHealth / 2), 90);
         let step = Math.max(length, 1);
+
         for (let i = 0; i < max; i += step) {
           let x = source.actual.x + radius * Math.cos(i);
           let z = source.actual.z + radius * Math.sin(i);
@@ -366,8 +383,8 @@ onEvent('entity.hurt', event => {
     }
     if (cmData === 11821908) { // 破伤
       if (health >= maxHealth * 0.9) {
-        entity.attack(source, damage * 10);
-        event.cancel();
+        entity.attack(source, damage * 9);
+        //event.cancel();
       }
     }
     if (cmData === 11821909) { // 斩杀
@@ -441,9 +458,9 @@ onEvent('entity.hurt', event => {
           entity.kill();
         }
       } else {
-        entity.attack(source, Math.max(0.5, damage * health / 100));
+        entity.attack(source, Math.max(1, damage * (health / 500)));
       }
-      event.cancel();
+      //event.cancel();
     }
   }
 })

@@ -15,6 +15,11 @@ onEvent('recipes', event => {
     mechanical_crafting
   } = event.recipes.create;
 
+  let {
+    pulverizer,
+    smelter
+  } = event.recipes.thermal;
+
   let remove = (name) => {
     event.remove({ id: name })
   }
@@ -566,7 +571,7 @@ onEvent('recipes', event => {
     { output: 'minecraft:glowstone', input: 'thermal:glowstone', count: 1000, id: 'glowstone' },
     { output: 'minecraft:redstone', input: 'thermal:redstone', count: 100, id: 'redstone' },
     { output: 'minecraft:redstone_block', input: 'thermal:redstone', count: 900, id: 'redstone_block' },
-    { output: 'thermal:rubber', input: 'thermal:latex', count: 200, id: 'rubber' },//橡胶
+    { output: 'thermal:rubber', input: 'thermal:latex', count: 25, id: 'rubber' },//橡胶
     { output: 'thermal:sulfur_dust', input: 'thermal:refined_fuel', count: 50, id: 'sulfur' },//硫粉
     { output: 'thermal:blitz_rod', input: 'kubejs:fine_sand', count: 50, id: 'blitz_rod' },//狂风沙尘
   ];
@@ -995,16 +1000,43 @@ onEvent('recipes', event => {
 
   //修复
   remove('thermal:compat/create/pulverizer_create_zinc_ore')
-  event.recipes.thermal.pulverizer([
-    Item.of('create:crushed_raw_zinc', 2),
-    Item.of('minecraft:gravel').withChance(.2),
+
+  pulverizer([
+    Item.of('create:crushed_raw_zinc').withChance(2.25),
+    Item.of('minecraft:gravel').withChance(.2)
   ], 'create:zinc_ore'
-  ).experience(0.2)
-  event.recipes.thermal.pulverizer([
-    Item.of('create:crushed_raw_zinc', 2),
-    Item.of('minecraft:gravel').withChance(.2),
+  ).experience(0.2).id("atlanabyss:pulverizer_create_zinc_ore")
+
+  pulverizer([
+    Item.of('create:crushed_raw_zinc').withChance(2.25),
+    Item.of('minecraft:gravel').withChance(.2)
   ], 'create:deepslate_zinc_ore'
-  ).experience(0.2)
+  ).experience(0.2).id("atlanabyss:pulverizer_deepslate_create_zinc_ore")
+
+  //下界硫矿
+  remove('thermal:smelting/sulfur_from_smelting')
+  remove('thermal:smelting/sulfur_from_blasting')
+  remove('thermal:machines/pulverizer/pulverizer_sulfur_ore')
+  remove('create:compat/thermal/crushing/sulfur_ore')
+  remove('thermal:machines/smelter/smelter_sulfur_ore')
+
+  crushing([
+    '3x thermal:sulfur',
+    Item.of('2x thermal:sulfur').withChance(0.5),
+    Item.of('create:experience_nugget').withChance(0.75),
+    Item.of('minecraft:netherrack').withChance(0.12)
+  ], 'kubejs:nether_sulfur_ore').id("atlanabyss:crushing_nether_sulfur_ore")
+
+  pulverizer([
+    Item.of('thermal:sulfur').withChance(6.5)
+  ], 'kubejs:nether_sulfur_ore'
+  ).experience(0.2).id("atlanabyss:pulverizer_nether_sulfur_ore")
+
+  smelter([
+    Item.of('thermal:sulfur').withChance(3.5),
+    Item.of('thermal:rich_slag').withChance(.15)
+  ], 'kubejs:nether_sulfur_ore'
+  ).experience(0.5).energy(3200).id("atlanabyss:smelter_nether_sulfur_ore")
 
   // {
   //   "type": "thermal:flag",

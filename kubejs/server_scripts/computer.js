@@ -37,9 +37,18 @@ onEvent('recipes', event => {
     'ae2:certus_quartz_crystal',
     '4x ae2:certus_quartz_dust',
     Item.of('ae2:certus_quartz_dust').withChance(0.5),
-    Item.of('ae2:sky_dust').withChance(0.05),
+    Item.of('ae2:sky_dust').withChance(0.25),
+    Item.of('create:experience_nugget').withChance(0.75),
     Item.of('minecraft:end_stone').withChance(0.12)
   ], 'ae2:deepslate_quartz_ore').id("atlanabyss:crushing_certus_quartz_ore")
+
+  crushing([
+    '6x kubejs:raw_bismuth',
+    Item.of('6x kubejs:raw_bismuth').withChance(0.5),
+    Item.of('ae2:sky_dust').withChance(0.25),
+    Item.of('create:experience_nugget').withChance(0.75),
+    Item.of('minecraft:end_stone').withChance(0.12)
+  ], 'kubejs:end_bismuth_ore').id("atlanabyss:crushing_bismuth_ore")
   //陨石粉
   remove('ae2:inscriber/sky_stone_dust')
   crushing([

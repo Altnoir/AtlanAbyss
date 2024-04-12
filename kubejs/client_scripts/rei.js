@@ -231,6 +231,9 @@ onEvent('rei.hide.items', event => {
 		'thermal:lumium_coin',
 		'thermal:enderium_coin',
 		'thermal:steel_coin',
+		//矿
+		'thermal:sulfur_ore',
+		'thermal:deepslate_sulfur_ore',
 		//                              分割线                              // 
 		//                              分割线                              // 
 		//                              分割线                              // 
@@ -245,11 +248,7 @@ onEvent('rei.hide.items', event => {
 		'createoreexcavation:raw_diamond',
 		'createoreexcavation:raw_emerald',
 		'createoreexcavation:raw_redstone',
-		//tconstruct
-		'tconstruct:copper_nugget',//铜粒
-		//biggerreactors
-		'biggerreactors:uranium_ore',
-		'biggerreactors:wrench',
+		//phosphophyllite
 		'phosphophyllite:fluid_white_hole',
 		'phosphophyllite:fluid_black_hole',
 		'phosphophyllite:item_white_hole',
@@ -259,6 +258,8 @@ onEvent('rei.hide.items', event => {
 		'phosphophyllite:power_black_hole',
 		'phosphophyllite:debug_tool',
 		//biggerreactors
+		'biggerreactors:uranium_ore',
+		'biggerreactors:wrench',
 		'biggerreactors:ludicrite_ingot',
 		'biggerreactors:ludicrite_dust',
 		'biggerreactors:cyanite_dust',
@@ -297,6 +298,11 @@ onEvent('rei.hide.items', event => {
 		'kitchenkarrot:ice_cubes',
 		//twilightforest
 		'twilightforest:uncrafting_table',
+		//tconstruct
+		'tconstruct:copper_nugget',//铜粒
+		'tconstruct:honey_bucket',
+		//beyond_earth
+		'beyond_earth:steel_ingot',
 		//黑紫方块
 		'citadel:fancy_item',
 		'decorative_blocks:blockstate_copy_item',
@@ -802,6 +808,7 @@ onEvent('rei.hide.fluids', event => {
 		'sophisticatedcore:xp_still',
 		'biggerreactors:liquid_obsidian',
 		'beyond_earth:oil',
+		'tconstruct:honey',
 	].forEach(fluid => {
 		event.hide(fluid);
 	});

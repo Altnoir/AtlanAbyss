@@ -1,4 +1,16 @@
 onEvent('recipes', event => {
+    let {
+        milling,
+        splashing,
+        compacting,
+        mechanical_crafting
+    } = event.recipes.create;
+    let {
+        runic_altar
+    } = event.recipes.botania;
+    let {
+        pulverizer
+    } = event.recipes.thermal;
 
     let remove = (name) => {
         event.remove({ id: name })
@@ -15,7 +27,99 @@ onEvent('recipes', event => {
         count: 1,
         source: 500,
         pedestalItems: []
-    }).id("atlanabyss:uma_jewel")
+    }).id('atlanabyss:uma_jewel')
+
+    //宝石粉
+    milling('apotheosis:gem_dust', [
+        'apotheosis:gem'
+    ]).id("atlanabyss:milling_ap_gem")
+    pulverizer(Item.of('apotheosis:gem_dust').withChance(1.25), [
+        'apotheosis:gem'
+    ]).energy(4000).id('atlanabyss:pulverizer_ap_gem')
+
+    //活根
+    event.shaped('twilightforest:liveroot_block', [
+        'AA',
+        'AA'
+    ], {
+        A: 'twilightforest:liveroot'
+    }).id('atlanabyss:liveroot_block_from_liveroot')
+    event.shapeless('4x twilightforest:liveroot', [
+        'twilightforest:liveroot_block'
+    ]).id('atlanabyss:liveroot_from_liveroot_block')
+    //废金属
+    splashing([
+        Item.of('apotheosis:common_material').withChance(.5),
+        Item.of('5x minecraft:iron_nugget').withChance(.75),
+        Item.of('minecraft:gold_nugget').withChance(.25)
+    ], [
+        'twilightforest:raw_ironwood'
+    ]).id('atlanabyss:splashing_common_material')
+    //绿材料
+    event.shaped('apotheosis:uncommon_material', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'apotheosis:common_material',
+        B: 'farmersdelight:canvas'
+    }).id('atlanabyss:uncommon_material')
+    //蓝材料
+    event.custom({
+        type: 'ars_nouveau:enchanting_apparatus',
+        reagent: [{ item: 'minecraft:amethyst_shard' }],
+        pedestalItems: [
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+            { item: { item: 'apotheosis:uncommon_material' } },
+        ],
+        output: { item: 'apotheosis:rare_material' },
+        sourceCost: 0,
+        keepNbtOfReagent: false
+    }).id('atlanabyss:enchanting_apparatus_rare_material')
+    //紫材料
+    compacting('apotheosis:epic_material', [
+        '8x apotheosis:rare_material',
+        Fluid.of('tconstruct:ender_slime', 500)
+    ]).heated().id('atlanabyss:compacting_epic_material')
+    event.custom({
+        type: 'kitchenkarrot:brewing_barrel',
+        content: {
+            recipe: [
+                { item: 'apotheosis:rare_material' },
+                { item: 'apotheosis:rare_material' },
+                { item: 'apotheosis:rare_material' },
+                { item: 'apotheosis:rare_material' },
+                { item: 'create:cinder_flour' },
+                { item: 'create:cinder_flour' }
+            ],
+            craftingtime: 3000
+        },
+        result: { item: 'apotheosis:epic_material' }
+    }).id('atlanabyss:brewing_barrel_epic_material')
+    //橙材料
+    mechanical_crafting('apotheosis:mythic_material', [
+        '  A  ',
+        '  A  ',
+        'AABAA',
+        '  A  ',
+        '  A  '
+    ], {
+        A: 'apotheosis:epic_material',
+        B: 'botania:mana_pearl'
+    }).id('atlanabyss:mechanical_crafting_mythic_material')
+    //白材料
+    runic_altar('apotheosis_modern_ragnarok:izanagi_object', [
+        'apotheosis:mythic_material', 'apotheosis:mythic_material',
+        'apotheosis:mythic_material', 'apotheosis:mythic_material',
+        'apotheosis:mythic_material', 'apotheosis:mythic_material',
+        'apotheosis:mythic_material', 'apotheosis:mythic_material'
+    ], 50000).id('atlanabyss:runic_altar_izanagi_object')
 
 
 
@@ -29,7 +133,7 @@ onEvent('recipes', event => {
             key: { A: { item: a }, B: { item: b } },
             result: { item: 'gateways:gate_pearl' },
             gateway: 'gateways:' + id
-        }).id("atlanabyss:" + id)
+        }).id('atlanabyss:' + id)
     }
     function newGate(a, b, id) {
         event.custom({
@@ -39,7 +143,7 @@ onEvent('recipes', event => {
             key: { A: { item: a }, B: { item: b } },
             result: { item: 'gateways:gate_pearl' },
             gateway: 'gateways:' + id
-        }).id("atlanabyss:" + id)
+        }).id('atlanabyss:' + id)
     }
 
     //烈焰人
@@ -103,7 +207,7 @@ onEvent('recipes', event => {
             },
             result: { item: 'gateways:gate_pearl' },
             gateway: 'gateways:' + id
-        }).id("atlanabyss:" + id)
+        }).id('atlanabyss:' + id)
     }
     gateWitch('botania:mana_pearl', 'witch_gate_small')
     gateWitch('waystones:warp_stone', 'witch_gate')
