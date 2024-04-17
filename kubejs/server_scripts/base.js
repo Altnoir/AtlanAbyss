@@ -119,6 +119,31 @@ onEvent('recipes', event => {
 		A: 'kubejs:planetary_ingot'
 	}).id("atlanabyss:world_rune")
 
+	//修复工作台bug
+	remove('sophisticatedbackpacks:crafting_upgrade')
+
+	//精妙存储升级基板
+	remove('sophisticatedstorage:upgrade_base')
+	event.shapeless('sophisticatedstorage:upgrade_base', [
+		'tconstruct:pattern',
+		'create:andesite_alloy'
+	]).id("atlanabyss:ophisticatedstorage_upgrade_base")
+
+	//书架配方修复
+	function bookshelRecipes(plank, output, id) {
+		event.shaped(output, [
+			'AAA',
+			'BBB',
+			'AAA'
+		], {
+			A: plank,
+			B: 'minecraft:book'
+		}).id("atlanabyss:" + id)
+	}
+	bookshelRecipes('atmospheric:rosewood_planks', 'atmospheric:rosewood_bookshelf', 'rosewood_bookshelf')
+	bookshelRecipes('atmospheric:morado_planks', 'atmospheric:morado_bookshelf', 'morado_bookshelf')
+	bookshelRecipes('atmospheric:yucca_planks', 'atmospheric:yucca_bookshelf', 'yucca_bookshelf')
+	bookshelRecipes('atmospheric:aspen_planks', 'atmospheric:aspen_bookshelf', 'aspen_bookshelf')
 
 	//修复了原版宝石矿能烧的BUG
 	let blastingAndSmelting = (name) => {
@@ -158,6 +183,14 @@ onEvent('recipes', event => {
 	).id("atlanabyss:splashing_wheat_flour").processingTime(600)
 
 	remove('create:mixing/dough_by_mixing')
+
+	//蛋糕底座
+	remove('createaddition:compacting/cake_base')
+	compacting('createaddition:cake_base', [
+		'#forge:eggs',
+		'2x minecraft:sugar',
+		'farmersdelight:wheat_dough'
+	]).id("atlanabyss:cake_base")
 
 	//安山合金
 	remove('create:crafting/materials/andesite_alloy_from_zinc')
@@ -445,8 +478,63 @@ onEvent('recipes', event => {
 		S: 'create:iron_sheet'
 	}).id("atlanabyss:aircraft_improved_landing_gear")
 
+	// //安山机器
+	// event.shaped('kubejs:andesite_machine', [
+	// 	'ABA',
+	// 	'BCB',
+	// 	'DDD'
+	// ], {
+	// 	A: 'create:shaft',
+	// 	B: 'create:cogwheel',
+	// 	C: 'create:andesite_casing',
+	// 	D: '#minecraft:wooden_slabs'
+	// }).id("atlanabyss:andesite_machine")
+	// //黄铜机器
+	// event.shaped('kubejs:brass_machine', [
+	// 	'ABA',
+	// 	'CDC',
+	// 	'EEE'
+	// ], {
+	// 	A: 'create:shaft',
+	// 	B: 'create:precision_mechanism',
+	// 	C: 'create:electron_tube',
+	// 	D: 'create:brass_casing',
+	// 	E: '#minecraft:wooden_slabs'
+	// }).id("atlanabyss:brass_machine")
+	// //铜机器
+	// item_application('kubejs:copper_machine', [
+	// 	'kubejs:andesite_machine',
+	// 	'create:copper_sheet'
+	// ]).id("atlanabyss:copper_machine")
+
+	// //安山机器附
+	// let ac = 'create:andesite_casing';
+	// sequenced_assembly('kubejs:andesite_machine',
+	// 	'create:andesite_casing', [
+	// 	deploying(ac, [ac, 'minecraft:iron_nugget']),
+	// 	deploying(ac, [ac, 'create:cogwheel']),
+	// 	deploying(ac, [ac, 'create:shaft'])
+	// ]).transitionalItem(ac).loops(2).id("atlanabyss:sequenced_assembly_andesite_machine")
+	// //黄铜机器附
+	// let bc = 'create:brass_casing';
+	// sequenced_assembly('kubejs:brass_machine',
+	// 	'create:brass_casing', [
+	// 	deploying(bc, [bc, 'create:brass_sheet']),
+	// 	deploying(bc, [bc, 'create:electron_tube']),
+	// 	deploying(bc, [bc, 'create:precision_mechanism'])
+	// ]).transitionalItem(bc).loops(1).id("atlanabyss:sequenced_assembly_brass_machine")
+
+	//玫瑰石英
+	filling('create:rose_quartz', [
+		Fluid.of('thermal:redstone', 300),
+		'minecraft:quartz'
+	]).id("atlanabyss:filling_rose_quartz")
 	//糖果石英
 	event.shapeless('kubejs:candy_crystal', ['ars_nouveau:source_gem', '8x minecraft:sugar']).id("atlanabyss:candy_crystal")
+	filling('kubejs:candy_crystal', [
+		Fluid.of('create:honey', 250),
+		'ars_nouveau:source_gem'
+	]).id("atlanabyss:filling_candy_crystal")
 	//打磨
 	function polishing(input, output, id) {
 		event.custom({
@@ -1684,13 +1772,23 @@ onEvent('recipes', event => {
 		inputs: [
 			{
 				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:aluminium_alloy_ingot',
-				count: 2
+				item: 'kubejs:elemental_ingot',
+				count: 12
+			},
+			{
+				type: 'pneumaticcraft:stacked_item',
+				item: 'kubejs:virgin_ingot',
+				count: 9
 			},
 			{
 				type: 'pneumaticcraft:stacked_item',
 				item: 'kubejs:crystal_matrix_ingot',
 				count: 3
+			},
+			{
+				type: 'pneumaticcraft:stacked_item',
+				item: 'tiab:time_in_a_bottle',
+				count: 1
 			}
 		],
 		results: [Item.of('kubejs:infinity_ingot')],
@@ -2477,6 +2575,15 @@ onEvent('recipes', event => {
 		}
 	}
 
+	//异彩化合物
+	remove('thermal:compat/create/smelter_create_alloy_chromatic_compound')
+	mixing('2x create:chromatic_compound', [
+		'create:polished_rose_quartz',
+		'kubejs:polished_candy_crystal',
+		'kubejs:polished_sulfur',
+		'kubejs:polished_charged_certus_quartz'
+	]).superheated().id("atlanabyss:mixing_chromatic_compound")
+
 	//机壳
 	item_application('create:shadow_steel_casing', [
 		'create:andesite_casing',
@@ -2486,6 +2593,18 @@ onEvent('recipes', event => {
 		'create:andesite_casing',
 		'create:refined_radiance'
 	]).id("atlanabyss:item_application_refined_radiance_casing")
+
+	//原初锭
+	event.custom({
+		type: 'ae2:inscriber',
+		mode: 'inscribe',
+		result: { item: 'kubejs:virgin_ingot' },
+		ingredients: {
+			top: { item: 'create:refined_radiance' },
+			middle: { item: 'kubejs:charged_constantan_ingot' },
+			bottom: { item: 'create:shadow_steel' }
+		}
+	}).id("atlanabyss:inscriber_virgin_ingot")
 
 
 	//铋晶体
@@ -2520,74 +2639,57 @@ onEvent('recipes', event => {
 		'kubejs:alchemy_2',
 		5000,
 		'alchemy_2')
-	cutting('kubejs:alchemy_3',
-		'kubejs:alchemy_2'
-	).id("atlanabyss:alchemy_3")
 	event.custom({
 		type: 'create:haunting',
-		ingredients: [Ingredient.of('kubejs:alchemy_3').toJson()],
-		results: [Item.of('kubejs:alchemy_4').toResultJson()]
-	}).id("atlanabyss:alchemy_4");
+		ingredients: [Ingredient.of('kubejs:alchemy_2').toJson()],
+		results: [Item.of('kubejs:alchemy_3').toResultJson()]
+	}).id("atlanabyss:alchemy_3");
 	event.custom({
 		type: 'botania:pure_daisy',
 		input: {
 			type: 'block',
-			block: 'kubejs:alchemy_4'
+			block: 'kubejs:alchemy_3'
 		},
-		output: { name: 'kubejs:alchemy_5' }
-	}).id("atlanabyss:alchemy_5")
-	event.custom({
-		type: 'botania:mana_infusion',
-		input: {
-			item: 'kubejs:alchemy_5'
-		},
-		output: { item: 'kubejs:alchemy_6' },
-		mana: 25000
-	}).id("atlanabyss:alchemy_6")
+		output: { name: 'kubejs:alchemy_4' }
+	}).id("atlanabyss:alchemy_4")
 	event.custom({
 		type: 'botania:elven_trade',
-		ingredients: [{ item: 'kubejs:alchemy_6' }],
-		output: [{ item: 'kubejs:alchemy_7' }]
-	}).id("atlanabyss:alchemy_7")
+		ingredients: [{ item: 'kubejs:alchemy_4' }],
+		output: [{ item: 'kubejs:alchemy_5' }]
+	}).id("atlanabyss:alchemy_5")
 	event.custom({
 		type: 'ars_nouveau:imbuement',
-		input: { item: 'kubejs:alchemy_7' },
-		output: 'kubejs:alchemy_8',
+		input: { item: 'kubejs:alchemy_5' },
+		output: 'kubejs:alchemy_6',
 		count: 1,
 		source: 1000,
 		pedestalItems: []
-	}).id("atlanabyss:alchemy_8")
+	}).id("atlanabyss:alchemy_6")
 	event.custom({
 		type: 'pneumaticcraft:pressure_chamber',
-		inputs: [Ingredient.of('kubejs:alchemy_8')],
-		results: [Item.of('kubejs:alchemy_9')],
+		inputs: [Ingredient.of('kubejs:alchemy_6')],
+		results: [Item.of('kubejs:alchemy_7')],
 		pressure: 2.5
-	}).id("atlanabyss:alchemy_9")
+	}).id("atlanabyss:alchemy_7")
 	event.custom({
 		type: 'pneumaticcraft:assembly_drill',
-		input: { item: 'kubejs:alchemy_9', },
-		result: { item: 'kubejs:alchemy_10', },
+		input: { item: 'kubejs:alchemy_7', },
+		result: { item: 'kubejs:alchemy_8', },
 		program: 'drill'
-	}).id("atlanabyss:alchemy_10")
+	}).id("atlanabyss:alchemy_8")
 	event.custom({
 		type: 'pneumaticcraft:assembly_laser',
-		input: { item: 'kubejs:alchemy_10', },
-		result: { item: 'kubejs:alchemy_11', },
+		input: { item: 'kubejs:alchemy_8', },
+		result: { item: 'kubejs:alchemy_9', },
 		program: 'laser'
-	}).id("atlanabyss:alchemy_11")
-	event.custom({
-		type: 'ae2:inscriber',
-		mode: 'inscribe',
-		result: { item: 'kubejs:alchemy_12' },
-		ingredients: { middle: { item: 'kubejs:alchemy_11' } }
-	}).id("atlanabyss:alchemy_12")
+	}).id("atlanabyss:alchemy_9")
 	deploying([
 		Item.of('kubejs:treasure_box').withChance(1 / 1000),
 		Item.of('kubejs:alchemy_0').withChance(3 / 4),
 		Item.of('farmersdelight:roast_chicken_block', 1).withChance(1 / 16),
 		Item.of('minecraft:barrel', "{RepairCost:0,display:{Name:'{\"text\":\"耐心之桶\"}'}}").enchant('minecraft:looting', 2).withChance(1 / 2)
 	], [
-		'kubejs:alchemy_12',
+		'kubejs:alchemy_9',
 		'kubejs:tungsten_nugget'
 	]).id("atlanabyss:treasure_box")
 })

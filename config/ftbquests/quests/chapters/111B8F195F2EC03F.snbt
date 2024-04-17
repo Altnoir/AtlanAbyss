@@ -49,7 +49,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 1.5d
 			y: 0.0d
 			dependencies: ["5A6B03E76B3807D3"]
 			hide: true
@@ -174,7 +174,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 1.5d
 			y: -1.0d
 			dependencies: ["0FD46CB5A854B716"]
 			id: "404B700E4ABCA47D"
@@ -207,8 +207,8 @@
 		}
 		{
 			disable_toast: true
-			x: 1.5d
-			y: -1.0d
+			x: 1.0d
+			y: -2.0d
 			dependencies: ["404B700E4ABCA47D"]
 			id: "36BFC4B7AE75FDCD"
 			tasks: [{
@@ -240,7 +240,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 1.5d
 			y: 1.0d
 			dependencies: ["61635A022660E8DD"]
 			id: "381E536079E75588"
@@ -256,7 +256,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: -1.0d
 			y: 2.0d
 			dependencies: ["61635A022660E8DD"]
 			id: "6FBD76A2F0D639BF"
@@ -272,8 +272,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 2.0d
+			x: 0.0d
+			y: 1.0d
 			dependencies: ["6C6215BC890BD22A"]
 			hide: true
 			id: "61635A022660E8DD"
@@ -296,8 +296,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 5.5d
+			x: 2.0d
+			y: 6.0d
 			dependencies: ["3F1BC198BA9B6A45"]
 			hide: true
 			id: "1992B0BD1955E547"
@@ -411,8 +411,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 3.5d
+			x: 1.0d
+			y: 2.0d
 			dependencies: ["6C6215BC890BD22A"]
 			id: "1418B6EDC4D32AAD"
 			tasks: [{
@@ -652,7 +652,7 @@
 		{
 			disable_toast: true
 			x: -2.0d
-			y: 3.0d
+			y: 6.0d
 			shape: "rsquare"
 			description: ["注意：手册里的配方表不可作为参考，实际配方还请以REI查询为主。"]
 			dependencies: ["3F1BC198BA9B6A45"]
@@ -677,8 +677,8 @@
 		}
 		{
 			disable_toast: true
-			x: -3.5d
-			y: 2.0d
+			x: -4.5d
+			y: 5.0d
 			shape: "hexagon"
 			description: ["使用萝卜宝石或抽奖券在基座上抽取马娘或支援卡\\n（可使用REI查看）\\n注意：只有金色基座才可出现稀有马娘和支援卡"]
 			dependencies: ["3A254AA3BB45F620"]
@@ -697,8 +697,8 @@
 		}
 		{
 			disable_toast: true
-			x: -3.5d
-			y: 1.0d
+			x: -4.5d
+			y: 4.0d
 			shape: "hexagon"
 			dependencies: ["4515CB82C692B4CB"]
 			hide: true
@@ -716,8 +716,8 @@
 		}
 		{
 			disable_toast: true
-			x: -2.5d
-			y: 1.5d
+			x: -3.0d
+			y: 6.0d
 			shape: "hexagon"
 			description: ["用于激活褪色的马娘之魂，和因子继承。"]
 			dependencies: ["3A254AA3BB45F620"]
@@ -736,8 +736,8 @@
 		}
 		{
 			disable_toast: true
-			x: -0.5d
-			y: 2.0d
+			x: -3.0d
+			y: 7.0d
 			shape: "hexagon"
 			description: ["结束马娘的训练。"]
 			dependencies: ["3A254AA3BB45F620"]
@@ -756,8 +756,8 @@
 		}
 		{
 			disable_toast: true
-			x: -1.5d
-			y: 1.5d
+			x: -3.0d
+			y: 5.0d
 			shape: "hexagon"
 			description: ["用于训练马娘之魂。"]
 			dependencies: ["3A254AA3BB45F620"]
@@ -776,8 +776,8 @@
 		}
 		{
 			disable_toast: true
-			x: -0.5d
-			y: 1.0d
+			x: -3.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: ["用于给马娘之魂添加技能书。"]
 			dependencies: ["576793090D99E15B"]
@@ -796,8 +796,8 @@
 		}
 		{
 			disable_toast: true
-			x: -3.5d
-			y: 3.0d
+			x: -4.5d
+			y: 6.0d
 			shape: "hexagon"
 			description: ["用于给马娘和支援卡进行回收。"]
 			dependencies: ["3A254AA3BB45F620"]
@@ -816,8 +816,8 @@
 		}
 		{
 			disable_toast: true
-			x: -3.5d
-			y: 4.0d
+			x: -4.5d
+			y: 7.0d
 			shape: "hexagon"
 			description: ["自选马娘！\\n需要马娘券和青金石。"]
 			dependencies: ["3A254AA3BB45F620"]
@@ -1544,6 +1544,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4545DD948EE478DF"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true
@@ -1864,6 +1869,509 @@
 			}]
 			rewards: [{
 				id: "4D82B21984D284B9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["7FEC216969A7D841"]
+			hide: true
+			id: "4A0994537604B652"
+			tasks: [{
+				id: "619A9748F325E058"
+				type: "item"
+				item: "minecraft:bookshelf"
+			}]
+			rewards: [{
+				id: "7C7FC86D896C0D23"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["4A0994537604B652"]
+			id: "19463C09E694291E"
+			tasks: [{
+				id: "2B483A397BDD0519"
+				type: "item"
+				item: "apotheosis:hellshelf"
+			}]
+			rewards: [{
+				id: "212195F5179DB38E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["19463C09E694291E"]
+			id: "6794B516F70C78BA"
+			tasks: [{
+				id: "3FB34C0E77D0485A"
+				type: "item"
+				item: "apotheosis:infused_hellshelf"
+			}]
+			rewards: [{
+				id: "1A8158D651CF1F07"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			dependencies: ["6794B516F70C78BA"]
+			id: "593565DEA21D8028"
+			tasks: [{
+				id: "682DA98F4932EA36"
+				type: "item"
+				item: "apotheosis:blazing_hellshelf"
+			}]
+			rewards: [{
+				id: "28B468D8F6E07E32"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["6794B516F70C78BA"]
+			id: "40713F0214CE6C35"
+			tasks: [{
+				id: "1D865EDE12A82985"
+				type: "item"
+				item: "apotheosis:glowing_hellshelf"
+			}]
+			rewards: [{
+				id: "74838A6D5779B246"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			dependencies: ["6794B516F70C78BA"]
+			id: "250397B5B02572DD"
+			tasks: [{
+				id: "0B0714A7503444B5"
+				type: "item"
+				item: "apotheosis:sightshelf"
+			}]
+			rewards: [{
+				id: "3775D267DC640033"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			dependencies: ["6794B516F70C78BA"]
+			id: "7556C1D2BA2BDC92"
+			tasks: [{
+				id: "31DA421D9BAA4840"
+				type: "item"
+				item: "apotheosis:library"
+			}]
+			rewards: [{
+				id: "2D7EC81320A8E298"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["4A0994537604B652"]
+			id: "2CBF9D04AB9B96B2"
+			tasks: [{
+				id: "088A2944F402628D"
+				type: "item"
+				item: "apotheosis:seashelf"
+			}]
+			rewards: [{
+				id: "3F2A6A25F20609E8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			dependencies: ["2CBF9D04AB9B96B2"]
+			id: "2B19633C90D71B51"
+			tasks: [{
+				id: "70A94A05F719CE6B"
+				type: "item"
+				item: "apotheosis:infused_seashelf"
+			}]
+			rewards: [{
+				id: "78020B7D83F4E2BE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			dependencies: ["2B19633C90D71B51"]
+			id: "4A97C26032735744"
+			tasks: [{
+				id: "44FB1F91D0512CC9"
+				type: "item"
+				item: "apotheosis:crystal_seashelf"
+			}]
+			rewards: [{
+				id: "76B0E25FF9E3BFCF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.5d
+			dependencies: ["2B19633C90D71B51"]
+			id: "3540BBD7C1DBA0C0"
+			tasks: [{
+				id: "43D395382BBD10B3"
+				type: "item"
+				item: "apotheosis:heart_seashelf"
+			}]
+			rewards: [{
+				id: "29189AA69E6D9E92"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.5d
+			dependencies: ["2B19633C90D71B51"]
+			id: "19E909FF740778ED"
+			tasks: [{
+				id: "1ABA6FD7144F2A25"
+				type: "item"
+				item: "apotheosis:rectifier"
+			}]
+			rewards: [{
+				id: "31FD832C8016AA87"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "081C1B0ED5BCB99D"
+			tasks: [{
+				id: "49D0E29D16B53595"
+				type: "item"
+				item: "apotheosis:endshelf"
+			}]
+			rewards: [{
+				id: "55283787E8360DDC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["081C1B0ED5BCB99D"]
+			hide: true
+			id: "7F013ED96B0D5B34"
+			tasks: [{
+				id: "55948E9B9C202216"
+				type: "item"
+				item: "apotheosis:draconic_endshelf"
+			}]
+			rewards: [{
+				id: "1973CDB82DBD262B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["081C1B0ED5BCB99D"]
+			hide: true
+			id: "09A56B79A92A05D8"
+			tasks: [{
+				id: "773C398B4454DFCC"
+				type: "item"
+				item: "apotheosis:pearl_endshelf"
+			}]
+			rewards: [{
+				id: "08B006B6A6200478"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "3AF7DC3B785B4643"
+			tasks: [{
+				id: "101C6C112C90BFCF"
+				type: "item"
+				item: "apotheosis:beeshelf"
+			}]
+			rewards: [{
+				id: "468ACD35838DB97A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "0D6A7E4EF2CD8459"
+			tasks: [{
+				id: "25A72EE30E72FFD8"
+				type: "item"
+				item: "apotheosis:melonshelf"
+			}]
+			rewards: [{
+				id: "281B7E952571201D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			dependencies: ["19E909FF740778ED"]
+			id: "3FF6C3FBA0B617ED"
+			tasks: [{
+				id: "252DC6E4D90ACE36"
+				type: "item"
+				item: "apotheosis:rectifier_t2"
+			}]
+			rewards: [{
+				id: "55280C3F71B23410"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: -8.0d
+			dependencies: ["3FF6C3FBA0B617ED"]
+			id: "3DF856CA009E0063"
+			tasks: [{
+				id: "3267293DF905F584"
+				type: "item"
+				item: "apotheosis:rectifier_t3"
+			}]
+			rewards: [{
+				id: "109859FB16EF8467"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.5d
+			dependencies: ["250397B5B02572DD"]
+			id: "2580F86603EBCA5D"
+			tasks: [{
+				id: "47BB3E73EBA63C1F"
+				type: "item"
+				item: "apotheosis:sightshelf_t2"
+			}]
+			rewards: [{
+				id: "621DA49A1080E6FA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -8.0d
+			dependencies: ["7556C1D2BA2BDC92"]
+			id: "2CFF0661C0866156"
+			tasks: [{
+				id: "04D7E791E5CCD6D4"
+				type: "item"
+				item: "apotheosis:ender_library"
+			}]
+			rewards: [{
+				id: "68600DA623623E3D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: -0.5d
+			shape: "hexagon"
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "629B75A3BB761759"
+			tasks: [{
+				id: "1ABCE0101128BD4B"
+				type: "item"
+				item: "enchantinginfuser:enchanting_infuser"
+			}]
+			rewards: [{
+				id: "1A87CC9E772CF469"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: [
+				"629B75A3BB761759"
+				"61635A022660E8DD"
+			]
+			hide: true
+			id: "3BCDFE0A07A7A347"
+			tasks: [{
+				id: "45A81428759D76BB"
+				type: "item"
+				item: "enchantinginfuser:advanced_enchanting_infuser"
+			}]
+			rewards: [{
+				id: "4336F181ADDE3B53"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			description: [
+				"把宝石粉碎即可获得，一般用铁砧砸。"
+				"宝石获取来源：暮色森林中，击杀神化boss百分百掉落。"
+			]
+			dependencies: ["4A0994537604B652"]
+			id: "4CC98E508B360BA6"
+			tasks: [{
+				id: "16B8F4B29C26C6D2"
+				type: "item"
+				item: "apotheosis:gem_dust"
+			}]
+			rewards: [{
+				id: "49143BD3C405D595"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: -6.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "1A40AE6D9D4EBBB0"
+			tasks: [{
+				id: "69422DCF77062D60"
+				type: "item"
+				item: "netmusic:music_player_backpack"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: -3.5d
+			shape: "hexagon"
+			dependencies: ["4CC98E508B360BA6"]
+			hide: true
+			id: "21E66FCDF2FD6F62"
+			tasks: [{
+				id: "16E9CEB65B81DD5F"
+				type: "item"
+				item: "apotheosis:reforging_table"
+			}]
+			rewards: [{
+				id: "755F67EEAFEC944C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["4CC98E508B360BA6"]
+			hide: true
+			id: "2648EE07A21ACD7A"
+			tasks: [{
+				id: "283865850194841B"
+				type: "item"
+				item: "apotheosis:salvaging_table"
+			}]
+			rewards: [{
+				id: "20B6827BDB091F9F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"在这个世界中，史莱姆空岛并不会自然生成，但是"
+				"你可以通过至高木树苗魔力灌注获得。"
+			]
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "34D10A81067DF0CB"
+			tasks: [
+				{
+					id: "044FB91BB420E0E7"
+					type: "item"
+					item: "tconstruct:earth_slime_sapling"
+				}
+				{
+					id: "613C359B6F8C2BE7"
+					type: "item"
+					item: "tconstruct:sky_slime_sapling"
+				}
+				{
+					id: "6137EDD613D6D0C2"
+					type: "item"
+					item: "tconstruct:ender_slime_sapling"
+				}
+				{
+					id: "41148402B55B1CD3"
+					type: "item"
+					item: "tconstruct:blood_slime_sapling"
+				}
+			]
+			rewards: [{
+				id: "165683D55BED1D51"
 				type: "xp"
 				xp: 10
 			}]

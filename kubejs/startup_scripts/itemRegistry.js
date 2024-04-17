@@ -95,7 +95,9 @@ onEvent('item.registry', event => {
 	event.create('album_michelia').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_redraw').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_nacollection4').displayName('Album').rarity(RARITY_RARE).unstackable();
-	event.create('album_unity_band').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_kessoku_band').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_mameyudoufu').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_adventure').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('treasure_box').displayName('Treasure Box').glow(true).rarity(RARITY_EPIC).unstackable();
 
 	event.create('divine_ore').displayName('Divine Ore').rarity(RARITY_RARE);
@@ -103,12 +105,12 @@ onEvent('item.registry', event => {
 	event.create('catalyst_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Catalyst');
 	event.create('chaos_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Chemical Agent');
 
-	event.create('pistol_ammo').maxStackSize(60).displayName('Pistol Ammo');
-	event.create('shotgun_ammo').maxStackSize(30).displayName('Shotgun Ammo');
-	event.create('rifle_ammo').maxStackSize(60).displayName('Rifle Ammo');
-	event.create('smg_ammo').maxStackSize(60).displayName('SMG Ammo');
-	event.create('sniper_ammo').maxStackSize(30).displayName('Sniper Ammo');
-	event.create('magnum_ammo').maxStackSize(10).displayName('Magnum Ammo');
+	event.create('pistol_ammo').maxStackSize(64).displayName('Pistol Ammo');
+	event.create('shotgun_ammo').maxStackSize(32).displayName('Shotgun Ammo');
+	event.create('rifle_ammo').maxStackSize(64).displayName('Rifle Ammo');
+	event.create('smg_ammo').maxStackSize(64).displayName('SMG Ammo');
+	event.create('sniper_ammo').maxStackSize(64).displayName('Sniper Ammo');
+	event.create('magnum_ammo').maxStackSize(16).displayName('Magnum Ammo');
 
 	event.create('pistol_shell', 'create:sequenced_assembly').displayName('Pistol Shell');
 	event.create('shotgun_shell', 'create:sequenced_assembly').displayName('Shotgun Shell');

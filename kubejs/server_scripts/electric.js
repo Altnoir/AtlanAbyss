@@ -543,7 +543,7 @@ onEvent('recipes', event => {
 
   //机械熔岩炉
   const superheated = [
-    { input: 'netherrack', output: 'minecraft:lava', count: 100 },
+    { input: 'netherrack', output: 'minecraft:lava', count: 125 },
     { input: 'magma_block', output: 'minecraft:lava', count: 500 },
     { input: 'ender_pearl', output: 'thermal:ender', count: 250 }
   ];

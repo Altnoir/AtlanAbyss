@@ -903,9 +903,52 @@ onEvent('recipes', event => {
 	createMixingRecipe('pneumaticcraft:salmon_tempura', 'pneumaticcraft:raw_salmon_tempura', 'createaddition:seed_oil', 50, 'salmon_tempura');
 	//薯条
 	compacting(
-		'4x pneumaticcraft:chips',
-		[
-			'minecraft:potato',
-			Fluid.of('createaddition:seed_oil', 50)
-		]).heated().id("atlanabyss:chips")
+		'4x pneumaticcraft:chips', [
+		'minecraft:potato',
+		Fluid.of('createaddition:seed_oil', 50)
+	]).heated().id("atlanabyss:chips")
+	//钢钻头
+	remove('pneumaticcraft:thermo_plant/compressed_iron_drill_bit')
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { tag: 'forge:ingots/steel' },
+		fluid_input: {
+			type: 'pneumaticcraft:fluid',
+			tag: 'forge:lubricant',
+			amount: 4000
+		},
+		item_output: { item: 'pneumaticcraft:drill_bit_compressed_iron' },
+		temperature: { min_temp: 573 },
+		pressure: 4.0,
+		speed: 0.25,
+		air_use_multiplier: 5.0,
+		exothermic: false
+	}).id("atlanabyss:drill_bit_compressed_iron")
+	//熔岩再生
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { tag: 'forge:cobblestone' },
+		fluid_output: { fluid: 'minecraft:lava', amount: 100 },
+		temperature: { min_temp: 1273 },
+		pressure: 4.5,
+		exothermic: false
+	}).id("atlanabyss:thermo_plant_cobblestone")
+
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { tag: 'forge:netherrack' },
+		fluid_output: { fluid: 'minecraft:lava', amount: 500 },
+		temperature: { min_temp: 1273 },
+		pressure: 4.5,
+		exothermic: false
+	}).id("atlanabyss:thermo_plant_netherrack")
+
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { item: 'minecraft:magma_block' },
+		fluid_output: { fluid: 'minecraft:lava', amount: 1000 },
+		temperature: { min_temp: 1273 },
+		pressure: 4.5,
+		exothermic: false
+	}).id("atlanabyss:thermo_plant_magma_block")
 })

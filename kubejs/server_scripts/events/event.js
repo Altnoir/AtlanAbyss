@@ -58,7 +58,9 @@ onEvent('item.right_click', event => {
   lootbag('kubejs:album_michelia', 'kubejs:album/michelia', true)//专辑
   lootbag('kubejs:album_redraw', 'kubejs:album/redraw', true)//专辑
   lootbag('kubejs:album_nacollection4', 'kubejs:album/nacollection4', true)//专辑
-  lootbag('kubejs:album_unity_band', 'kubejs:album/unity_band', true)//专辑
+  lootbag('kubejs:album_kessoku_band', 'kubejs:album/kessoku_band', true)//专辑
+  lootbag('kubejs:album_mameyudoufu', 'kubejs:album/mameyudoufu', true)//专辑
+  lootbag('kubejs:album_adventure', 'kubejs:album/adventure', true)//专辑
 
   function lootbag(lootbag, lootable, activation) {
     if (item === lootbag) {
@@ -67,13 +69,13 @@ onEvent('item.right_click', event => {
       player.playSound('minecraft:block.enchantment_table.use');
       if (activation) {
         if (lootbag === 'kubejs:halo_gashapon') {
-          server.runCommandSilent(`/playsound kubejs:ciallo voice @a ${player.x} ${player.y} ${player.z} 1 1`)
+          server.runCommandSilent(`playsound kubejs:ciallo voice @a ${player.x} ${player.y} ${player.z} 1 1`)
         } else {
           player.playSound('minecraft:entity.player.levelup');
         }
         Minecraft.getInstance().gameRenderer.displayItemActivation(lootbag);
       }
-      player.addItemCooldown(lootbag, 20);
+      player.addItemCooldown(lootbag, 10);
       item.count--;
     }
   }
@@ -212,47 +214,8 @@ onEvent('entity.check_spawn', event => {
 
 onEvent('entity.hurt', event => {
   let { level, server, entity, source, damage } = event;
-  let health = Math.floor(entity.getHealth());
+  let allHealth = Math.floor(entity.getHealth());
 
-  //暮色怪物增强
-  //&& source.type != 'fall' && source.type != 'magic' && source.type != 'generic' && source.type != 'inFire' && source.type != 'drown' && source.type != 'outOfWorld'
-  if (source.actual && entity.isLiving()) {
-    if (entity.type == 'minecraft:player' && source.type != 'player' && level.dimension == 'twilightforest:twilight_forest' && !entity.creativeMode) {
-      //玩家在暮色会受到额外伤害
-      let damage = event.damage * 1.5; // 倍率
-      server.scheduleInTicks(1, () => {
-        entity.attack(source, damage);
-      });
-      //获取当前玩家生命值
-      let playerHealth = Math.round(entity.getHealth());
-      let time = Math.round(playerHealth / 4);
-      if (source.actual.type == 'minecraft:skeleton') {//骷髅额外造成凋零伤害，根据玩家当前血量计算时间和等级
-        let witherLevel = Math.round(playerHealth / 10);
-        server.scheduleInTicks(1, () => {
-          server.runCommandSilent(`effect give ${entity} minecraft:wither ${time} ${witherLevel}`);
-        });
-      }
-      if (source.actual.type == 'twilightforest:skeleton_druid') {//骷髅德鲁伊额外造成中毒伤害，根据玩家当前血量计算时间和等级
-        let poisonLevel = Math.round(playerHealth / 5);
-        server.scheduleInTicks(1, () => {
-          server.runCommandSilent(`effect give ${entity} minecraft:poison ${time} ${poisonLevel}`);
-        });
-      }
-      if (source.actual.type == 'minecraft:creeper') {//苦力怕炸到玩家后会生成圆形TNT阵列，也是根据玩家当前血量计算圆的大小和TNT数量
-        let length = Math.round(100 / playerHealth);
-        let radius = Math.round(playerHealth / 40);
-        let max = Math.min((playerHealth / 2), 90);
-        let step = Math.max(length, 1);
-
-        for (let i = 0; i < max; i += step) {
-          let x = source.actual.x + radius * Math.cos(i);
-          let z = source.actual.z + radius * Math.sin(i);
-          let y = source.actual.y;
-          server.runCommandSilent(`execute in ${level.dimension} run summon minecraft:tnt ${x} ${y} ${z} {Fuse:` + i + `}`);
-        }
-      }
-    }
-  }
   //落地水
   function fallWater() {
     Minecraft.getInstance().gameRenderer.displayItemActivation('minecraft:water_bucket');
@@ -261,7 +224,7 @@ onEvent('entity.hurt', event => {
     event.cancel();
   }
 
-  if (entity.isLiving() && source.type == 'fall' && damage >= health * 3 / 4) {
+  if (entity.isLiving() && source.type == 'fall' && damage >= allHealth * 3 / 4) {
     if (entity.mainHandItem === 'minecraft:water_bucket') {
       entity.mainHandItem.count--;
       fallWater();
@@ -271,196 +234,261 @@ onEvent('entity.hurt', event => {
     }
   }
 
-
-
-  //光环
-  if (source.actual && entity.isLiving() && source.actual.isPlayer() && source.type === 'bullet' && source.actual.headArmorItem === 'yuushya:wriggle_nightbug' && source.actual.headArmorItem.getNbt()) {
-    let actual = source.actual;
-    let entityEffect = entity.potionEffects;
-    let actualEffect = actual.potionEffects;
-    let health = Math.floor(entity.getHealth());
-    let maxHealth = Math.floor(entity.getMaxHealth());
-    let cmData = actual.headArmorItem.getNbt().CustomModelData;
-
-    if (cmData === 11821901) { // 破甲
-      let sundering = entityEffect.getActive('apotheosis:sundering');
-      if (sundering == null) {
-        entityEffect.add('apotheosis:sundering', 300);
-      } else {
-        let sua = sundering.amplifier + 1;
-        let sud = sundering.duration;
-        let suTime = Math.round(sud + 20);
-        let suLevel = Math.min(sua, 250);
-        entityEffect.add('apotheosis:sundering', suTime, suLevel);
-      }
-      let alice = actualEffect.getActive('kubejs:alice_powah');
-      if (alice != null) {
-        // 强 锁 挂
-        let dx = entity.x - actual.x;
-        let dy = (entity.y + entity.eyeHeight) - (actual.y + actual.eyeHeight);
-        let dz = entity.z - actual.z;
-
-        // 计算yaw值
-        let yaw = Math.atan2(dx, dz);
-        let yawDegrees = -(yaw * (180 / 3.14159)).toFixed(2);
-
-        // 计算pitch值
-        let distance = Math.sqrt(dx * dx + dz * dz);
-        let pitch = Math.atan2(dy, distance);
-        let pitchDegrees = -(pitch * (180 / 3.14159)).toFixed(2);
-
-        actual.setRotation(yawDegrees, pitchDegrees);
-      }
-    }
-    if (cmData === 11821902) { // 闪电
-      if (health % 5 === 0 || health % 7 === 0) {
-        //server.tell(`${level.getSeed()}`)
+  //暮色怪物增强
+  //&& source.type != 'fall' && source.type != 'magic' && source.type != 'generic' && source.type != 'inFire' && source.type != 'drown' && source.type != 'outOfWorld'
+  if (source.actual && entity.isLiving()) {
+    if (entity.type == 'minecraft:player' && source.type != 'player') {
+      if (level.dimension == 'twilightforest:twilight_forest' && !entity.creativeMode) {
+        //玩家在暮色会受到额外伤害
+        let damage = event.damage * 1.5; // 倍率
         server.scheduleInTicks(1, () => {
-          server.runCommandSilent(`execute in ${level.dimension} run summon minecraft:lightning_bolt ${entity.x} ${entity.y} ${entity.z}`);
-          entity.attack(source, damage * 1.5);
-        })
-      }
-    }
-    if (cmData === 11821903) { // 爆炸
-      server.runCommandSilent(`execute in ${level.dimension} run summon minecraft:tnt ${entity.x} ${entity.y + 1} ${entity.z}`);
-    }
-    if (cmData === 11821904) { // 起飞
-      entityEffect.add('minecraft:levitation', 40, 2);
-      server.scheduleInTicks(40, () => {
-        entityEffect.add('minecraft:levitation', 4, 250);
-      })
-    }
-    if (cmData === 11821905) { // 护盾
-      let absorption = actualEffect.getActive('minecraft:absorption');
-      if (absorption == null) {
-        actualEffect.add('minecraft:absorption', 100);
-        actualEffect.add('minecraft:resistance', 100);
-      } else {
-        let aba = absorption.amplifier + 1;
-        let abd = absorption.duration + 40;
-        let abTime = Math.min(abd, 1200);
-        let abLevel = Math.min(aba, 4);
-        actualEffect.add('minecraft:absorption', abTime, abLevel);
-        actualEffect.add('minecraft:resistance', abTime, 1);
-      }
-    }
-    if (cmData === 11821906) { // 治疗
-      if (actual.crouching) {
-        server.runCommandSilent(`execute at ${actual} run effect give @e[type=!item,distance=..5] minecraft:instant_health`);
-        server.scheduleInTicks(1, () => {
-          for (let i = 0; i < 180; i++) {
-            let x = actual.x + 5 * Math.cos(i);
-            let z = actual.z + 5 * Math.sin(i);
-            let y = actual.y;
-            server.runCommandSilent(`execute in ${level.dimension} run particle dust 0 255 0 1 ${x} ${y + 0.1} ${z} 0 0 0 0.01 1`);
+          entity.attack(source, damage);
+        });
+        //获取当前玩家生命值
+        let playerHealth = Math.round(entity.getHealth());
+        let time = Math.round(playerHealth / 4);
+        if (source.actual.type == 'minecraft:skeleton') {//骷髅额外造成凋零伤害，根据玩家当前血量计算时间和等级
+          let witherLevel = Math.round(playerHealth / 10);
+          server.scheduleInTicks(1, () => {
+            server.runCommandSilent(`effect give ${entity} minecraft:wither ${time} ${witherLevel}`);
+          });
+        }
+        if (source.actual.type == 'twilightforest:skeleton_druid') {//骷髅德鲁伊额外造成中毒伤害，根据玩家当前血量计算时间和等级
+          let poisonLevel = Math.round(playerHealth / 5);
+          server.scheduleInTicks(1, () => {
+            server.runCommandSilent(`effect give ${entity} minecraft:poison ${time} ${poisonLevel}`);
+          });
+        }
+        if (source.actual.type == 'minecraft:creeper') {//苦力怕炸到玩家后会生成圆形TNT阵列，也是根据玩家当前血量计算圆的大小和TNT数量
+          let length = Math.round(100 / playerHealth);
+          let radius = Math.round(playerHealth / 40);
+          let max = Math.min((playerHealth / 2), 90);
+          let step = Math.max(length, 1);
+
+          for (let i = 0; i < max; i += step) {
+            let x = source.actual.x + radius * Math.cos(i);
+            let z = source.actual.z + radius * Math.sin(i);
+            let y = source.actual.y;
+            server.runCommandSilent(`execute in ${level.dimension} run summon minecraft:tnt ${x} ${y} ${z} {Fuse:` + i + `}`);
           }
-        })
-      } else {
-        actual.heal(damage / 2);
+        }
+      }
+      if (entity.headArmorItem === 'yuushya:wriggle_nightbug' && entity.headArmorItem.getNbt()) {
+        if (entity.headArmorItem.getNbt().CustomModelData === 11821905) { // 看看是谁在打我
+          let actualEffects = source.actual.potionEffects;
+          let glowing = actualEffects.getActive('minecraft:glowing');
+          if (glowing == null) {
+            actualEffects.add('minecraft:glowing', 60);
+          } else {
+            let gld = glowing.duration + 20;
+            let glTime = Math.min(gld, 1200);
+            actualEffects.add('minecraft:glowing', glTime);
+          }
+        }
       }
     }
-    if (cmData === 11821907) { // 互换
-      let x1 = actual.x;
-      let y1 = actual.y;
-      let z1 = actual.z;
-      let yaw1 = actual.getYaw();
-      let pitch1 = actual.getPitch();
-      let x2 = entity.x;
-      let y2 = entity.y;
-      let z2 = entity.z;
-      let yaw2 = entity.getYaw();
-      let pitch2 = entity.getPitch();
-      actualEffect.add('minecraft:resistance', 10, 4);
-      entityEffect.add('minecraft:resistance', 10, 4);
-      server.scheduleInTicks(1, () => {
-        entity.playSound('minecraft:entity.enderman.teleport');
-        entity.setPositionAndRotation(x1, y1, z1, yaw1, pitch1);
-      });
-      server.scheduleInTicks(2, () => {
-        actual.playSound('minecraft:entity.enderman.teleport');
-        actual.setPositionAndRotation(x2, y2, z2, yaw2, pitch2);
-      });
+    //打一下就红温的苦力怕
+    if (level.dimension == 'twilightforest:twilight_forest' && entity.type == 'minecraft:creeper') {
+      let creeperEffect = entity.potionEffects;
+      creeperEffect.add('minecraft:speed', 200, 4);
+      creeperEffect.add('minecraft:regeneration', 200, 1);
+      creeperEffect.add('minecraft:resistance', 200, 1);
     }
-    if (cmData === 11821908) { // 破伤
-      if (health >= maxHealth * 0.9) {
-        entity.attack(source, damage * 9);
+    //光环
+    if (source.actual.isPlayer() && source.type === 'bullet' && source.actual.headArmorItem === 'yuushya:wriggle_nightbug' && source.actual.headArmorItem.getNbt()) {
+      let actual = source.actual;
+      let entityEffect = entity.potionEffects;
+      let actualEffect = actual.potionEffects;
+      let health = Math.floor(entity.getHealth());
+      let maxHealth = Math.floor(entity.getMaxHealth());
+      let cmData = actual.headArmorItem.getNbt().CustomModelData;
+
+      if (cmData === 11821901) { // 破甲
+        let sundering = entityEffect.getActive('apotheosis:sundering');
+        if (sundering == null) {
+          entityEffect.add('apotheosis:sundering', 300);
+        } else {
+          let sua = sundering.amplifier + 1;
+          let sud = sundering.duration;
+          let suTime = Math.round(sud + 20);
+          let suLevel = Math.min(sua, 250);
+          entityEffect.add('apotheosis:sundering', suTime, suLevel);
+        }
+        let alice = actualEffect.getActive('kubejs:alice_powah');
+        if (alice != null) {
+          // 强 锁 挂
+          let dx = entity.x - actual.x;
+          let dy = (entity.y + entity.eyeHeight) - (actual.y + actual.eyeHeight);
+          let dz = entity.z - actual.z;
+
+          // 计算yaw值
+          let yaw = Math.atan2(dx, dz);
+          let yawDegrees = -(yaw * (180 / 3.14159)).toFixed(2);
+
+          // 计算pitch值
+          let distance = Math.sqrt(dx * dx + dz * dz);
+          let pitch = Math.atan2(dy, distance);
+          let pitchDegrees = -(pitch * (180 / 3.14159)).toFixed(2);
+
+          actual.setRotation(yawDegrees, pitchDegrees);
+        }
+      }
+      if (cmData === 11821902) { // 闪电
+        if (health % 5 === 0 || health % 7 === 0) {
+          //server.tell(`${level.getSeed()}`)
+          server.scheduleInTicks(1, () => {
+            server.runCommandSilent(`execute in ${level.dimension} run summon minecraft:lightning_bolt ${entity.x} ${entity.y} ${entity.z}`);
+            entity.attack(source, damage * 2.5);
+          })
+        }
+      }
+      if (cmData === 11821903) { // 重锤
+        if (!actual.onGround) {
+          let fall = actual.fallDistance;
+          let fallDamage = fall.toFixed(1) * 4;
+
+          entity.attack(source, damage + fallDamage);
+          actual.potionEffects.add('minecraft:levitation', 2, 4);
+        }
+      }
+      if (cmData === 11821904) { // 起飞
+        entityEffect.add('minecraft:levitation', 40, 2);
+        server.scheduleInTicks(40, () => {
+          entityEffect.add('minecraft:levitation', 4, 250);
+        })
+      }
+      if (cmData === 11821905) { // 护盾
+        let absorption = actualEffect.getActive('minecraft:absorption');
+        if (absorption == null) {
+          actualEffect.add('minecraft:absorption', 100);
+          actualEffect.add('minecraft:resistance', 100);
+        } else {
+          let aba = absorption.amplifier + 1;
+          let abd = absorption.duration + 40;
+          let abTime = Math.min(abd, 1200);
+          let abLevel = Math.min(aba, 4);
+          actualEffect.add('minecraft:absorption', abTime, abLevel);
+          actualEffect.add('minecraft:resistance', abTime, 1);
+        }
+      }
+      if (cmData === 11821906) { // 治疗
+        if (actual.crouching) {
+          server.runCommandSilent(`execute at ${actual} run effect give @e[type=!item,distance=..5] minecraft:instant_health`);
+          server.scheduleInTicks(1, () => {
+            for (let i = 0; i < 180; i++) {
+              let x = actual.x + 5 * Math.cos(i);
+              let z = actual.z + 5 * Math.sin(i);
+              let y = actual.y;
+              server.runCommandSilent(`execute in ${level.dimension} run particle dust 0 255 0 1 ${x} ${y + 0.1} ${z} 0 0 0 0.01 1`);
+            }
+          })
+        } else {
+          actual.heal(damage / 2);
+        }
+      }
+      if (cmData === 11821907) { // 互换
+        let x1 = actual.x;
+        let y1 = actual.y;
+        let z1 = actual.z;
+        let yaw1 = actual.getYaw();
+        let pitch1 = actual.getPitch();
+        let x2 = entity.x;
+        let y2 = entity.y;
+        let z2 = entity.z;
+        let yaw2 = entity.getYaw();
+        let pitch2 = entity.getPitch();
+        actualEffect.add('minecraft:resistance', 10, 4);
+        entityEffect.add('minecraft:resistance', 10, 4);
+        server.scheduleInTicks(1, () => {
+          entity.playSound('minecraft:entity.enderman.teleport');
+          entity.setPositionAndRotation(x1, y1, z1, yaw1, pitch1);
+        });
+        server.scheduleInTicks(2, () => {
+          actual.playSound('minecraft:entity.enderman.teleport');
+          actual.setPositionAndRotation(x2, y2, z2, yaw2, pitch2);
+        });
+      }
+      if (cmData === 11821908) { // 破伤
+        if (health >= maxHealth * 0.9) {
+          entity.attack(source, damage * 20);
+          //event.cancel();
+        }
+      }
+      if (cmData === 11821909) { // 斩杀
+        if (health <= maxHealth / 3) {
+          server.scheduleInTicks(1, () => {
+            entity.kill();
+          })
+        }
+      }
+      if (cmData === 11821910) { // 范围
+        let entityList = level.getEntitiesWithin(AABB.of(
+          entity.x - 3,
+          entity.y - 1,
+          entity.z - 3,
+          entity.x + 3,
+          entity.y + 3,
+          entity.z + 3
+        ))
+        for (let entities of entityList) {
+          entities.attack(source, damage);
+        }
+        event.cancel();
+      }
+      if (cmData === 11821911) { // 流血
+        let bleeding = entityEffect.getActive('apotheosis:bleeding');
+        if (bleeding == null) {
+          entityEffect.add('apotheosis:bleeding', 300, 0);
+        } else {
+          let bla = bleeding.amplifier + 1;
+          let bld = bleeding.duration;
+          let blTime = Math.round(bld + 20);
+          let blLevel = Math.min(bla, 250);
+          entityEffect.add('apotheosis:bleeding', blTime, blLevel);
+        }
+      }
+      if (cmData === 11821912) { // 赌徒
+        let random = () => Utils.random.nextInt(6); // 0-5
+        let randomList = [random(), random()]
+
+        if (randomList[0] === 0) {
+          if (randomList[1] === 0 || randomList[1] === 2 || randomList[1] === 4) {
+            entity.attack(source, damage * 88);
+          } else {
+            actual.attack(source, damage * 88);
+          }
+        }
+        event.cancel();
+
+      }
+      if (cmData === 11821913) { // 虚弱
+        let weakness = entityEffect.getActive('minecraft:weakness');
+        if (weakness == null) {
+          entityEffect.add('minecraft:weakness', 300)
+        } else {
+          let wea = weakness.amplifier + 1;
+          let wed = weakness.duration;
+          let weTime = Math.round(wed + 100);
+          let weLevel = Math.min(wea, 4);
+          entityEffect.add('minecraft:weakness', weTime, weLevel);
+        }
+      }
+      if (cmData === 11821916) { // 幸运
+        let worldSize = level.worldBorder.getSize();
+        let ws = worldSize / 96;
+        let alice = actualEffect.getActive('kubejs:alice_powah');
+
+        if (alice != null) {
+          if (worldSize < 59999800) {
+            entity.attack(source, damage + ws * 8);
+          } else {
+            entity.kill();
+          }
+        } else {
+          entity.attack(source, Math.max(1, damage * (health / 500)));
+        }
         //event.cancel();
       }
-    }
-    if (cmData === 11821909) { // 斩杀
-      if (health <= maxHealth / 3) {
-        server.scheduleInTicks(1, () => {
-          entity.kill();
-        })
-      }
-    }
-    if (cmData === 11821910) { // 范围
-      let entityList = level.getEntitiesWithin(AABB.of(
-        entity.x - 3,
-        entity.y - 1,
-        entity.z - 3,
-        entity.x + 3,
-        entity.y + 3,
-        entity.z + 3
-      ))
-      for (let entities of entityList) {
-        entities.attack(source, damage / 2);
-      }
-      event.cancel();
-    }
-    if (cmData === 11821911) { // 流血
-      let bleeding = entityEffect.getActive('apotheosis:bleeding');
-      if (bleeding == null) {
-        entityEffect.add('apotheosis:bleeding', 300, 0);
-      } else {
-        let bla = bleeding.amplifier + 1;
-        let bld = bleeding.duration;
-        let blTime = Math.round(bld + 20);
-        let blLevel = Math.min(bla, 250);
-        entityEffect.add('apotheosis:bleeding', blTime, blLevel);
-      }
-    }
-    if (cmData === 11821912) { // 赌徒
-      let random = () => Utils.random.nextInt(6); // 0-5
-      let randomList = [random(), random()]
-
-      if (randomList[0] === 0) {
-        if (randomList[1] === 0 || randomList[1] === 2 || randomList[1] === 4) {
-          entity.attack(source, damage * 88);
-        } else {
-          actual.attack(source, damage * 88);
-        }
-      }
-      event.cancel();
-
-    }
-    if (cmData === 11821913) { // 虚弱
-      let weakness = entityEffect.getActive('minecraft:weakness');
-      if (weakness == null) {
-        entityEffect.add('minecraft:weakness', 300)
-      } else {
-        let wea = weakness.amplifier + 1;
-        let wed = weakness.duration;
-        let weTime = Math.round(wed + 100);
-        let weLevel = Math.min(wea, 4);
-        entityEffect.add('minecraft:weakness', weTime, weLevel);
-      }
-    }
-    if (cmData === 11821916) { // 幸运
-      let worldSize = level.worldBorder.getSize();
-      let ws = worldSize / 96;
-      let alice = actualEffect.getActive('kubejs:alice_powah');
-
-      if (alice != null) {
-        if (worldSize < 59999800) {
-          entity.attack(source, damage + ws * 8);
-        } else {
-          entity.kill();
-        }
-      } else {
-        entity.attack(source, Math.max(1, damage * (health / 500)));
-      }
-      //event.cancel();
     }
   }
 })

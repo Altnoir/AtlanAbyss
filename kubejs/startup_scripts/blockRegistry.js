@@ -213,25 +213,25 @@ onEvent('block.registry', event => {
         .displayName('Lucky Block');
 
     //机器
-    let registerMachine = (name, layer) => {
-        let id = name.toLowerCase() + "_machine"
-        event.create(id)
-            .model("kubejs:block/machine/" + id)
-            .material("lantern")
-            .hardness(3.0)
-            .displayName(name + " Machine")
-            .notSolid()
-            .renderType(layer)
-            .tagBlock("create:wrench_pickup")
-            .tagBlock("minecraft:mineable/pickaxe")
-    }
-    registerMachine("Andesite", "solid")
-    registerMachine("Brass", "translucent")
-    registerMachine("Copper", "cutout")
+    // let registerMachine = (name, layer) => {
+    //     let id = name.toLowerCase() + "_machine"
+    //     event.create(id)
+    //         .model("kubejs:block/machine/" + id)
+    //         .material("lantern")
+    //         .hardness(3.0)
+    //         .displayName(name + " Machine")
+    //         .notSolid()
+    //         .renderType(layer)
+    //         .tagBlock("create:wrench_pickup")
+    //         .tagBlock("minecraft:mineable/pickaxe")
+    // }
+    // registerMachine("Andesite", "solid")
+    // registerMachine("Brass", "translucent")
+    // registerMachine("Copper", "cutout")
 
 
     //炼金
-    for (let i = 0; i < 12; i++)
+    for (let i = 0; i < 9; i++)
         event.create(`alchemy_${i + 1}`)
             .material("glass")
             .color(0, 0x394867)
@@ -239,7 +239,7 @@ onEvent('block.registry', event => {
             .hardness(0.1)
             .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
             .model("kubejs:block/mundane_substrate")
-            .displayName(`§b炼金混合物 §6阶段:${i + 1}/12`)
+            .displayName(`§b炼金混合物 §6阶段:${i + 1}/9`)
             .renderType("cutout")
             .item(e => e.color(0, 0x394867).color(1, 0x072348))
             .tagBlock("minecraft:mineable/pickaxe")

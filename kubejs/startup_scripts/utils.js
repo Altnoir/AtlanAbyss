@@ -25,6 +25,8 @@
 // 		.registerPortal();
 // });
 
+//Platform.getInfo("kubejs").name = 'AtlanAbyss';
+
 onEvent('botania.brews.registry', event => {
 	event.create('alicepowah')
 		.cost(5000)

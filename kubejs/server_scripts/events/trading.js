@@ -56,4 +56,5 @@ function trading(event) {
     });
 
     amadron('thermal:gold_coin', 8, 'kubejs:halo_gashapon', 2, 500, 'halo_gashapon');
+    amadron('thermal:gold_coin', 32, 'minecraft:spawner', 2, 1, 'spawner');
 }

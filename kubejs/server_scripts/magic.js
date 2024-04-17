@@ -6,7 +6,10 @@ onEvent('recipes', event => {
         mechanical_crafting
     } = event.recipes.create;
     let {
-        runic_altar
+        runic_altar,
+        terra_plate,
+        orechid,
+        orechid_ignem
     } = event.recipes.botania;
     let {
         pulverizer
@@ -212,4 +215,94 @@ onEvent('recipes', event => {
     gateWitch('botania:mana_pearl', 'witch_gate_small')
     gateWitch('waystones:warp_stone', 'witch_gate')
     gateWitch('ae2:fluix_pearl', 'witch_gate_large')
+
+    //附魔灌注台
+    remove('enchantinginfuser:enchanting_infuser')
+    event.custom({
+        type: 'apotheosis:enchanting',
+        conditions: [{
+            type: 'apotheosis:module',
+            module: 'enchantment'
+        }],
+        input: { item: 'minecraft:enchanting_table' },
+        requirements: {
+            eterna: 40.0,
+            quanta: 25,
+            arcana: 25
+        },
+        display_level: 5,
+        result: { item: 'enchantinginfuser:enchanting_infuser', count: 1 }
+    }).id('atlanabyss:enchanting_enchanting_infuser')
+    //高级附魔灌注台
+    remove('enchantinginfuser:advanced_enchanting_infuser')
+    event.custom({
+        type: 'ars_nouveau:enchanting_apparatus',
+        reagent: [{ item: 'enchantinginfuser:enchanting_infuser' }],
+        pedestalItems: [
+            { item: { item: 'botania:terrasteel_ingot' } },
+            { item: { item: 'kubejs:polished_charged_certus_quartz' } },
+            { item: { item: 'kubejs:polished_sulfur' } },
+            { item: { item: 'kubejs:polished_candy_crystal' } },
+            { item: { item: 'create:polished_rose_quartz' } }
+        ],
+        output: { item: 'enchantinginfuser:advanced_enchanting_infuser' },
+        sourceCost: 0,
+        keepNbtOfReagent: false
+    }).id('atlanabyss:enchanting_apparatus_advanced_enchanting_infuser')
+
+    //时间之瓶
+    remove('tiab:time_in_a_bottle')
+    runic_altar('tiab:time_in_a_bottle', [
+        'minecraft:clock',
+        'kubejs:virgin_ingot',
+        'kubejs:virgin_ingot',
+        'create_enchantment_industry:hyper_experience_bottle',
+        'kubejs:virgin_ingot',
+        'kubejs:virgin_ingot'
+    ], 100000).id('atlanabyss:runic_altar_time_bottle')
+
+    //元素锭
+    terra_plate('kubejs:elemental_ingot', [
+        'kubejs:chlorophyll_ingot',
+        'kubejs:abyss_ingot',
+        'kubejs:planetary_ingot',
+        'kubejs:calamity_ingot',
+        'kubejs:end_ingot'
+    ], 2500000).id('atlanabyss:terra_plate_elemental_ingot')
+
+    //铝矿
+    orechid_ignem('kubejs:nether_aluminum_ore', 'minecraft:netherrack',
+        6542).id('atlanabyss:orechid_ignem_nether_aluminum_ore')
+    //硫矿
+    orechid_ignem('kubejs:nether_sulfur_ore', 'minecraft:netherrack',
+        12050).id('atlanabyss:orechid_ignem_nether_sulfur_ore')
+
+    //锡矿
+    orechid('thermal:tin_ore', 'minecraft:stone',
+        8686).id('atlanabyss:orechid_tin_ore')
+    //镍矿
+    orechid('thermal:nickel_ore', 'minecraft:stone',
+        18072).id('atlanabyss:orechid_nickel_ore')
+    //银矿
+    orechid('thermal:silver_ore', 'minecraft:stone',
+        1521).id('atlanabyss:orechid_silver_ore')
+    //锌矿
+    orechid('create:zinc_ore', 'minecraft:stone',
+        23242).id('atlanabyss:orechid_zinc_ore')
+
+    //深层锡矿
+    orechid('thermal:deepslate_tin_ore', 'minecraft:deepslate',
+        210).id('atlanabyss:orechid_deepslate_tin_ore')
+    //深层镍矿
+    orechid('thermal:deepslate_nickel_ore', 'minecraft:deepslate',
+        100).id('atlanabyss:orechid_deepslate_nickel_ore')
+    //深层银矿
+    orechid('thermal:deepslate_silver_ore', 'minecraft:deepslate',
+        120).id('atlanabyss:orechid_deepslate_silver_ore')
+    //深层铅矿
+    orechid('thermal:deepslate_lead_ore', 'minecraft:deepslate',
+        50).id('atlanabyss:orechid_deepslate_lead_ore')
+    //深层锌矿
+    orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
+        150).id('atlanabyss:orechid_deepslate_zinc_ore')
 })

@@ -296,6 +296,8 @@ onEvent('rei.hide.items', event => {
 		'neapolitan:milk_bottle',
 		//kitchenkarrot
 		'kitchenkarrot:ice_cubes',
+		//sophisticatedbackpacks
+		'sophisticatedbackpacks:crafting_upgrade',
 		//twilightforest
 		'twilightforest:uncrafting_table',
 		//tconstruct
@@ -354,6 +356,9 @@ onEvent('rei.group', (event) => {
 		'supplementaries:bamboo_spikes_tipped',
 		'netmusic:music_cd',
 		'sophisticatedbackpacks:backpack',
+		'sophisticatedstorage:barrel',
+		'sophisticatedstorage:chest',
+		'sophisticatedstorage:shulker_box',
 		'touhou_little_maid:chair',
 		'touhou_little_maid:garage_kit',
 		'botania:twig_wand',
@@ -616,6 +621,22 @@ onEvent('rei.group', (event) => {
 	//背包升级
 	event.groupItems('atlanabyss:rei_groups/back_upgrade', "背包升级",
 		[/^sophisticatedbackpacks:.*_upgrade/, 'sophisticatedbackpacks:upgrade_base']
+	);
+	//存储升级
+	event.groupItems('atlanabyss:rei_groups/storage_upgrade', "存储升级",
+		[/^sophisticatedstorage:.*_upgrade/, 'sophisticatedstorage:upgrade_base']
+	);
+	//精妙桶
+	event.groupItems('atlanabyss:rei_groups/storage_barrel', "升级桶",
+		[/^sophisticatedstorage:.*_barrel/]
+	);
+	//精妙箱
+	event.groupItems('atlanabyss:rei_groups/storage_chest', "升级箱",
+		[/^sophisticatedstorage:.*_chest/]
+	);
+	//精妙盒
+	event.groupItems('atlanabyss:rei_groups/storage_shulker_box', "升级盒",
+		[/^sophisticatedstorage:.*_shulker_box/]
 	);
 	//铸模
 	event.groupItems('atlanabyss:rei_groups/casts', "铸模",

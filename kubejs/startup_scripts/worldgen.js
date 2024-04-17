@@ -46,7 +46,7 @@ onEvent('worldgen.add', event => {
 
     ore.addTarget('#forge:netherrack', 'kubejs:nether_sulfur_ore')//下界硫矿
 
-    ore.count([16, 27])
+    ore.count([12, 18])
       .squared()
       .triangleHeight(
         anchors.aboveBottom(16),

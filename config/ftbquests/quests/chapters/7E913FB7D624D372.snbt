@@ -13,7 +13,7 @@
 			icon: "minecraft:grass_block"
 			x: 0.0d
 			y: 0.0d
-			description: ["这是个休闲养老类的科技整合包，主要内容有枪械，建筑，赛马娘，女仆，科技等，当然您也可以完全无视掉入门引导，因为这并不是必须完成的。"]
+			description: ["这是个休闲养老类的科技整合包，主要内容有枪械，神化，建筑，赛马娘，女仆，科技等，当然您也可以完全无视掉入门引导，因为这并不是必须完成的。"]
 			id: "44572D4F990F380B"
 			tasks: [{
 				id: "016D1C71B4245A2B"
@@ -33,7 +33,7 @@
 					item: "minecraft:oak_sapling"
 				}
 				{
-					id: "0E2C52DA062292B1"
+					id: "5BD2023FA14E6220"
 					type: "item"
 					item: "minecraft:bone_meal"
 					count: 64
@@ -112,7 +112,7 @@
 		{
 			title: "石油精炼"
 			x: 3.0d
-			y: 6.0d
+			y: 5.5d
 			description: [
 				"加工石油的必备套件。"
 				"使用热管给控制器传热以更快速的升温，升温速度根据发热方块决定，比如：高温液体，岩浆块，烈焰人燃烧室，火炉，篝火，烈焰网甚至是火把都是发热方块。"
@@ -146,7 +146,7 @@
 		{
 			title: "石油，哪里有石油？"
 			x: 2.0d
-			y: 6.5d
+			y: 6.0d
 			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，又或许实在找不到沙漠而打算使用血液人工合成石油，但这些并不是最优选择，您需要探矿杖，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
 			dependencies: ["3671DBBFABCD1B71"]
 			id: "0BC087D2D6933F9C"
@@ -166,10 +166,7 @@
 			x: 0.0d
 			y: 7.0d
 			description: ["从您破坏的第一颗原木开始......到应力时代的嗡嗡作响......再到压力时代的气体泄漏，你已经历许多。现在，开启你最伟大的探索吧：从早期生产力的革命到浩瀚星宇！"]
-			dependencies: [
-				"3909A2788335AB22"
-				"4172CB4FD4825D49"
-			]
+			dependencies: ["2896AD9C74EA52FF"]
 			hide: true
 			id: "04B534A53F398C7A"
 			tasks: [{
@@ -185,7 +182,7 @@
 		}
 		{
 			x: -6.5d
-			y: 4.0d
+			y: 5.5d
 			dependencies: ["71831986FEB52C6F"]
 			id: "11F6435C17265B4A"
 			tasks: [{
@@ -210,7 +207,7 @@
 			tasks: [{
 				id: "01A9395D86710A6A"
 				type: "item"
-				title: "Any #minecraft:logs"
+				title: "任意原木"
 				icon: "minecraft:oak_log"
 				item: {
 					id: "itemfilters:tag"
@@ -407,7 +404,7 @@
 		}
 		{
 			title: "Fe铁"
-			x: 3.0d
+			x: 2.5d
 			y: 1.5d
 			description: ["不管是用传统的熔炉冶炼，还是通过四处搜刮获取，铁都是本游戏里最为重要的资源。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
@@ -528,7 +525,7 @@
 		{
 			disable_toast: true
 			x: 8.5d
-			y: 4.0d
+			y: 5.0d
 			shape: "hexagon"
 			description: ["水车，大水车和曲柄，机械动力的来源，当然还有风车和蒸汽引擎。"]
 			dependencies: ["0F1CD1C8804008B7"]
@@ -608,8 +605,9 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 5.0d
+			disable_toast: true
+			x: 9.0d
+			y: 6.0d
 			dependencies: ["0D3B950AFB6E6BC2"]
 			hide: true
 			id: "14A8E7E37136FB5C"
@@ -756,9 +754,9 @@
 		}
 		{
 			x: 6.5d
-			y: 6.0d
+			y: 9.0d
 			description: ["一种能完美模仿玩家右击和左击行为的动力机械！"]
-			dependencies: ["32F577B605FC8D35"]
+			dependencies: ["59AF238BE1A99F24"]
 			hide: true
 			id: "4786752F32FF31C0"
 			tasks: [{
@@ -774,8 +772,12 @@
 		}
 		{
 			x: 9.5d
-			y: 4.5d
+			y: 7.0d
 			shape: "rsquare"
+			description: [
+				" 在这个世界中，神秘花不会自然生成，但是"
+				"你可以用骨粉缠魂获得。"
+			]
 			dependencies: ["14A8E7E37136FB5C"]
 			hide: true
 			id: "5D059C7F1A64ABB9"
@@ -793,10 +795,10 @@
 		{
 			title: "“这是什么?喝一口”"
 			disable_toast: true
-			x: -6.5d
-			y: 3.0d
+			x: -7.5d
+			y: 5.5d
 			shape: "hexagon"
-			description: ["核反应堆的产出物"]
+			description: ["核反应堆的产出物。"]
 			dependencies: ["11F6435C17265B4A"]
 			hide: true
 			id: "3F8D442510D58D22"
@@ -813,7 +815,8 @@
 		}
 		{
 			x: 1.0d
-			y: 2.5d
+			y: 3.0d
+			description: ["注：在下界中的敌对生物，生命值会随着距离出生点越远越高。"]
 			dependencies: ["4E12320C5CF0FE7B"]
 			hide: true
 			id: "137563E84BDBF0CC"
@@ -833,7 +836,7 @@
 			title: "搭建下界传送门"
 			icon: "minecraft:obsidian"
 			x: 2.5d
-			y: 2.5d
+			y: 3.0d
 			description: ["你可以选择用传统的钻石镐挖掘黑曜石搭建传送门，也可以选择用岩浆桶浇筑传送门，根据你的偏好决定。"]
 			dependencies: ["58D3EC802A6FBD27"]
 			hide: true
@@ -850,8 +853,12 @@
 		}
 		{
 			x: 9.5d
-			y: 5.5d
+			y: 5.0d
 			shape: "rsquare"
+			description: [
+				"在这个世界中，至高木不会自然生成，但是"
+				"你可以通过普通树苗缠魂获得。"
+			]
 			dependencies: ["14A8E7E37136FB5C"]
 			hide: true
 			id: "43E93D9FC2ED3F4D"
@@ -907,28 +914,6 @@
 			}]
 			rewards: [
 				{
-					id: "6AE656A746DDA0CC"
-					type: "item"
-					item: {
-						id: "patchouli:guide_book"
-						Count: 1b
-						tag: {
-							"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
-						}
-					}
-				}
-				{
-					id: "4BC8C11FA6792674"
-					type: "item"
-					item: {
-						id: "patchouli:guide_book"
-						Count: 1b
-						tag: {
-							"patchouli:book": "umapyoi:trainers_manual"
-						}
-					}
-				}
-				{
 					id: "4F03670E97797663"
 					type: "item"
 					item: "alexsmobs:animal_dictionary"
@@ -968,7 +953,7 @@
 		}
 		{
 			x: 5.5d
-			y: 6.5d
+			y: 9.5d
 			shape: "hexagon"
 			description: ["世界神符：一种能扩大世界边界的功能性道具，右键使用，每次使用扩大2格边界，当有多个世界神符时可以蹲下一次性全部使用。"]
 			dependencies: ["4786752F32FF31C0"]
@@ -988,6 +973,7 @@
 		{
 			x: -2.0d
 			y: 3.0d
+			description: ["一种只出现在末地的矿石，并且不会裸露在表面。"]
 			dependencies: ["31C9BD74CDB26F64"]
 			id: "662E241FAA46E381"
 			tasks: [{
@@ -1004,7 +990,7 @@
 		{
 			title: " 进入末地"
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 			dependencies: ["137563E84BDBF0CC"]
 			hide: true
 			id: "31C9BD74CDB26F64"
@@ -1063,6 +1049,7 @@
 		{
 			x: -3.0d
 			y: 4.0d
+			description: ["使用特斯拉线圈对赛特斯石英水晶充能即可获得。"]
 			dependencies: [
 				"662E241FAA46E381"
 				"61CDC9A969C09267"
@@ -1098,9 +1085,9 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 3.0d
-			dependencies: ["77AACF5ABE3BB465"]
+			x: -5.0d
+			y: 2.0d
+			dependencies: ["71D5C4423F628785"]
 			id: "688C5FEF6695C5A4"
 			tasks: [{
 				id: "14718E4776803989"
@@ -1116,7 +1103,8 @@
 		{
 			title: "太空时代！"
 			x: -2.0d
-			y: 0.0d
+			y: -0.5d
+			description: ["为了超级地球！"]
 			dependencies: ["30A0CDCD1B7CE208"]
 			id: "07B81B403E4B0D1A"
 			tasks: [{
@@ -1387,8 +1375,11 @@
 		}
 		{
 			x: -2.0d
-			y: 1.0d
-			dependencies: ["679863D04FCA1B0B"]
+			y: 0.5d
+			dependencies: [
+				"679863D04FCA1B0B"
+				"5366B3798112EA39"
+			]
 			id: "30A0CDCD1B7CE208"
 			tasks: [{
 				id: "27CA6E90A641B353"
@@ -1516,8 +1507,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 6.5d
+			x: -5.0d
+			y: 4.0d
 			dependencies: ["71831986FEB52C6F"]
 			id: "6C68E5B30B2CDA88"
 			tasks: [{
@@ -1532,8 +1523,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 5.5d
+			x: -6.0d
+			y: 4.5d
 			dependencies: ["71831986FEB52C6F"]
 			id: "70F5C843A08AE753"
 			tasks: [{
@@ -1548,8 +1539,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 7.0d
+			x: -4.0d
+			y: 4.5d
 			dependencies: ["71831986FEB52C6F"]
 			id: "65476F77C566B3EA"
 			tasks: [{
@@ -1581,8 +1572,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 4.0d
+			x: -6.0d
+			y: 6.5d
 			dependencies: ["71831986FEB52C6F"]
 			id: "08D542FA0C9E3AC8"
 			tasks: [
@@ -1604,8 +1595,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 4.5d
+			x: -5.0d
+			y: 7.0d
 			shape: "hexagon"
 			dependencies: ["71831986FEB52C6F"]
 			id: "2FA680014202E150"
@@ -1894,8 +1885,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 2.0d
+			x: -3.0d
+			y: 0.5d
 			shape: "hexagon"
 			dependencies: ["30A0CDCD1B7CE208"]
 			hide: true
@@ -1927,8 +1918,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 7.0d
+			x: 0.5d
+			y: 6.0d
 			shape: "hexagon"
 			dependencies: ["04B534A53F398C7A"]
 			hide: true
@@ -1971,7 +1962,7 @@
 		}
 		{
 			x: 4.5d
-			y: 6.0d
+			y: 9.0d
 			shape: "hexagon"
 			dependencies: ["4786752F32FF31C0"]
 			hide: true
@@ -1988,9 +1979,14 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 5.5d
-			y: 5.5d
+			y: 8.5d
 			shape: "hexagon"
+			description: [
+				"催化剂通过序列组装概率获得。"
+				"催化剂可以用于元素炼金。"
+			]
 			dependencies: ["4786752F32FF31C0"]
 			hide: true
 			id: "5BD88AB862216AA1"
@@ -2037,7 +2033,7 @@
 			y: 1.5d
 			description: [
 				"本整合包重要的资源之一"
-				"第一个苔藓块可通过探险或手动合成获得（合成方式：使用骨粉对着位于水下的草方块右键右击）\\n获取一个之后便可用骨粉增生！"
+				"第一个苔藓块可通过探险或手动合成获得\\n合成方式：使用骨粉对着位于水下的草方块右击\\n获取一个之后便可用骨粉增生！"
 			]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
@@ -2077,8 +2073,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 1.5d
+			x: 1.0d
+			y: 0.5d
 			description: [
 				"恩赐之石：颠倒之域的特产品"
 				"使用带时运的稿子挖掘深板岩可便有概率获得"
@@ -2258,8 +2254,8 @@
 		}
 		{
 			disable_toast: true
-			x: 5.5d
-			y: 9.0d
+			x: 2.0d
+			y: 10.0d
 			dependencies: ["0F39A47561B38A32"]
 			hide: true
 			id: "0A056C2098731282"
@@ -2268,26 +2264,45 @@
 				type: "item"
 				item: "kubejs:aluminium_chip"
 			}]
+			rewards: [{
+				id: "334AD73460AC626B"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 8.5d
-			y: 11.0d
+			disable_toast: true
+			x: 6.5d
+			y: 10.0d
+			dependencies: ["529FFF3330B1F7EC"]
+			hide: true
 			id: "3C4BF44C30626F05"
 			tasks: [{
 				id: "045B159330B82401"
 				type: "item"
 				item: "create:crushing_wheel"
 			}]
+			rewards: [{
+				id: "118910705BB405A2"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 7.5d
-			y: 9.5d
+			x: 8.5d
+			y: 9.0d
 			dependencies: ["59AF238BE1A99F24"]
+			hide: true
 			id: "1814D0684AAB4731"
 			tasks: [{
 				id: "60BA93DF4C5F44EC"
 				type: "item"
 				item: "create:brass_casing"
+			}]
+			rewards: [{
+				id: "1B737ADB76362434"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -2297,42 +2312,71 @@
 				"2B26826B86BCA145"
 				"32F577B605FC8D35"
 			]
+			hide: true
 			id: "59AF238BE1A99F24"
 			tasks: [{
 				id: "4B51B55EE177FE99"
 				type: "item"
 				item: "create:brass_ingot"
 			}]
+			rewards: [{
+				id: "143937703BAD9644"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 5.5d
-			y: 10.5d
+			disable_toast: true
+			x: 4.5d
+			y: 10.0d
 			dependencies: ["3C4BF44C30626F05"]
+			hide: true
 			id: "0F39A47561B38A32"
 			tasks: [{
 				id: "5A8B91C55E7ECAD2"
 				type: "item"
 				item: "create:crushed_raw_aluminum"
 			}]
+			rewards: [{
+				id: "1DFF90AF6246ADA4"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 11.0d
-			y: 6.5d
+			disable_toast: true
+			x: 10.0d
+			y: 8.0d
+			dependencies: ["1AF66F653905B9C9"]
+			hide: true
 			id: "5DCA0691218E5425"
 			tasks: [{
 				id: "35C64E9C5B7C5E9F"
 				type: "item"
 				item: "create:polished_rose_quartz"
 			}]
+			rewards: [{
+				id: "4D5BDFA8C35FB651"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 11.5d
-			y: 8.0d
+			disable_toast: true
+			x: 10.0d
+			y: 10.0d
+			dependencies: ["5DCA0691218E5425"]
+			hide: true
 			id: "7B367DD31326CE5E"
 			tasks: [{
 				id: "71CA7AD5450DBCC1"
 				type: "item"
 				item: "create:electron_tube"
+			}]
+			rewards: [{
+				id: "10ABA473892110DC"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -2340,6 +2384,10 @@
 			x: 4.0d
 			y: -2.5d
 			shape: "hexagon"
+			description: [
+				"整合包限定的幸运方块：只会在苦力怕，骷髅，僵尸，尸壳身上概率掉落（只有玩家击杀时）。"
+				"注：在暮色维度破坏幸运方块时，将百分百出现宝箱怪！但是，会有极低的概率出现小惊喜。"
+			]
 			dependencies: ["5A7F67F2BD3327F6"]
 			hide: true
 			id: "352BC5448ACDEF10"
@@ -2350,6 +2398,346 @@
 			}]
 			rewards: [{
 				id: "126D9E199B1243CB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.7653061224489832d
+			y: 2.2534013605442027d
+			shape: "hexagon"
+			description: ["落地水：手里拿着水桶的情况下受到致命摔落伤害时会自动触发落地水哦。"]
+			dependencies: ["58D3EC802A6FBD27"]
+			hide: true
+			id: "2EAB82EBAF44C882"
+			tasks: [{
+				id: "52F1B5CDB0E3F9A4"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+			rewards: [{
+				id: "5A71868A6E2009BD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "遇见线缆无法渲染的解决办法"
+			icon: "ae2:fluix_glass_cable"
+			disable_toast: true
+			x: -4.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"如有遇见线缆无法正常渲染的情况下，请："
+				"打开资源包，禁用\\nMC Connected CTM\\nGlass Panes CTM\\n这俩材质包即可。"
+			]
+			dependencies: ["20C4673FF6970BA3"]
+			hide: true
+			id: "28048A5402B9DC0A"
+			tasks: [{
+				id: "4BB041581B40EC9D"
+				type: "checkmark"
+				title: "我知道了"
+			}]
+			rewards: [{
+				id: "38C564F7C8406F73"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.5d
+			y: 10.0d
+			dependencies: [
+				"1814D0684AAB4731"
+				"7B367DD31326CE5E"
+			]
+			hide: true
+			id: "529FFF3330B1F7EC"
+			tasks: [{
+				id: "3BB6D184731FF22B"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+			rewards: [{
+				id: "3AB9B6453CC320E2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "砂纸"
+			disable_toast: true
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["0F1CD1C8804008B7"]
+			hide: true
+			id: "1AF66F653905B9C9"
+			tasks: [{
+				id: "30CAE2413F66F12D"
+				type: "item"
+				title: "任意砂纸"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+			}]
+			rewards: [{
+				id: "341E3C1FFD54BD7F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			dependencies: [
+				"4012E5BF145D426A"
+				"3909A2788335AB22"
+				"4172CB4FD4825D49"
+			]
+			hide: true
+			id: "2896AD9C74EA52FF"
+			tasks: [{
+				id: "06AC0FF9EA50EAF3"
+				type: "item"
+				item: "kubejs:thermal_mechanism"
+			}]
+			rewards: [{
+				id: "3C41E10150190BB3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 7.0d
+			dependencies: ["3671DBBFABCD1B71"]
+			hide: true
+			id: "4012E5BF145D426A"
+			tasks: [{
+				id: "6BE525AAB00478B8"
+				type: "item"
+				item: "kubejs:sulfur_electron_tube"
+			}]
+			rewards: [{
+				id: "2EA1836DB8091FED"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 2.5d
+			description: [
+				"一种只出现在末地的矿石，并且不会裸露在表面。"
+				"但是，随着时间的推移，铋矿石会向周围生长（周围必须是末地石）。"
+			]
+			dependencies: ["31C9BD74CDB26F64"]
+			hide: true
+			id: "6A286B39EC88CF35"
+			tasks: [{
+				id: "51C5EBB09362442D"
+				type: "item"
+				item: "kubejs:end_bismuth_ore"
+			}]
+			rewards: [{
+				id: "7CEAD6A41B78B004"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 1.5d
+			dependencies: ["6A286B39EC88CF35"]
+			hide: true
+			id: "726DF7A5F10D04C1"
+			tasks: [{
+				id: "1ED86A3152917F01"
+				type: "item"
+				item: "kubejs:bismuth_ingot"
+			}]
+			rewards: [{
+				id: "285C421CB4DA2814"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 0.5d
+			dependencies: ["726DF7A5F10D04C1"]
+			hide: true
+			id: "5366B3798112EA39"
+			tasks: [{
+				id: "6496BD98EB0856E9"
+				type: "item"
+				item: "kubejs:magbismuth_ingot"
+			}]
+			rewards: [{
+				id: "72C9FDF5210C9D02"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 1.5d
+			shape: "hexagon"
+			description: ["一种建筑材料。"]
+			dependencies: ["726DF7A5F10D04C1"]
+			hide: true
+			id: "3C90F024AAB8DABB"
+			tasks: [{
+				id: "3E1FF510BC7B0270"
+				type: "item"
+				item: "yuushya:bismuth_crystal"
+			}]
+			rewards: [{
+				id: "0599C5B5258609AD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 3.0d
+			shape: "rsquare"
+			description: ["利用强劲的附魔，战斗！"]
+			dependencies: ["4E12320C5CF0FE7B"]
+			hide: true
+			id: "7FEC216969A7D841"
+			tasks: [{
+				id: "16CF1A620EEE3226"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "3C271D70177578FB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["77AACF5ABE3BB465"]
+			hide: true
+			id: "71D5C4423F628785"
+			tasks: [{
+				id: "74F3822901CCF64B"
+				type: "item"
+				item: "kubejs:polished_charged_certus_quartz"
+			}]
+			rewards: [{
+				id: "487364A546B3F911"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["71D5C4423F628785"]
+			hide: true
+			id: "633C37FA492FB28C"
+			tasks: [{
+				id: "17B4AEC6BBFBB8F4"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "120138BC8413CE25"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 2.5d
+			description: [
+				"把异彩化合物丢弃在明亮的区域以转变获取，如："
+				"信标上方。"
+			]
+			dependencies: ["633C37FA492FB28C"]
+			hide: true
+			id: "4A1CFC8966CA0784"
+			tasks: [{
+				id: "7F1B8FBD1FD1C754"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+			rewards: [{
+				id: "18CEFE4E336FDF59"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 3.5d
+			description: [
+				"把异彩化合物丢弃在黑暗的区域以转变获取，如："
+				"虚空下方。"
+			]
+			dependencies: ["633C37FA492FB28C"]
+			hide: true
+			id: "5054A94D72277F83"
+			tasks: [{
+				id: "62F4EE5F589A98BC"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+			rewards: [{
+				id: "3CD3D102D08F2C2A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "溺尸挑战"
+			icon: "tconstruct:drowned_head"
+			disable_toast: true
+			x: 5.0d
+			y: -2.0d
+			shape: "hexagon"
+			description: [
+				"在这个整合包中，溺尸有了一些特别的功能，如下："
+				"溺尸击杀铁傀儡 - 100%掉落鹦鹉螺壳；"
+				"溺尸击杀     鸡      - 25%掉落海洋之心；"
+				"溺尸击杀苦力怕 - 100%掉落神秘唱片；"
+			]
+			dependencies: ["5A7F67F2BD3327F6"]
+			hide: true
+			id: "633D317850D56B85"
+			tasks: [{
+				id: "57914FA46B2A9546"
+				type: "checkmark"
+				title: "已阅"
+			}]
+			rewards: [{
+				id: "3B2864D17C3F1D2E"
 				type: "xp"
 				xp: 10
 			}]

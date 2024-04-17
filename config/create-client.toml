@@ -22,7 +22,7 @@
 	filterItemRenderDistance = 10.0
 	#.
 	#Show kinetic debug information on blocks while the F3-Menu is open.
-	enableRainbowDebug = true
+	enableRainbowDebug = false
 	#.
 	#The maximum amount of blocks for which to try and calculate dynamic contraption lighting. Decrease if large contraption cause too much lag
 	#Range: > 0
@@ -50,6 +50,18 @@
 	#.
 	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
 	ignoreFabulousWarning = false
+
+	#.
+	#Configure your vision range when submerged in Create's custom fluids
+	[client.fluidFogSettings]
+		#.
+		#The vision range through honey will be multiplied by this factor
+		#Range: 0.125 ~ 256.0
+		honey = 1.0
+		#.
+		#The vision range though chocolate will be multiplied by this factor
+		#Range: 0.125 ~ 256.0
+		chocolate = 1.0
 
 	#.
 	#Settings for the Goggle Overlay
@@ -131,16 +143,4 @@
 		#.
 		#Additionally display materials of a Rail Network while f3 debug mode is active
 		showExtendedTrackGraphOnF3 = false
-
-	#.
-	#Configure your vision range when submerged in Create's custom fluids
-	[client.fluidFogSettings]
-		#.
-		#The vision range through honey will be multiplied by this factor
-		#Range: 0.125 ~ 256.0
-		honey = 1.0
-		#.
-		#The vision range though chocolate will be multiplied by this factor
-		#Range: 0.125 ~ 256.0
-		chocolate = 1.0
 

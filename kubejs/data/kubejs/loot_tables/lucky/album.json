@@ -21,7 +21,27 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "kubejs:album_unity_band"
+                    "name": "kubejs:album_redraw"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_nacollection4"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_kessoku_band"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_mameyudoufu"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_adventure"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_adventure"
                 }
             ]
         }
