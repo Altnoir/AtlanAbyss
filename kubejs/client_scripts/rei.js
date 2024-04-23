@@ -301,6 +301,7 @@ onEvent('rei.hide.items', event => {
 		//twilightforest
 		'twilightforest:uncrafting_table',
 		//tconstruct
+		'tconstruct:netherite_nugget',//下界合金粒
 		'tconstruct:copper_nugget',//铜粒
 		'tconstruct:honey_bucket',
 		//beyond_earth

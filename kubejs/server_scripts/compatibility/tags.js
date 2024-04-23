@@ -18,6 +18,8 @@ onEvent('tags.items', event => {
 		//背包
 		['curios:back', 'thermal:satchel'],
 		['curios:back', 'thermal:potion_quiver'],
+		//下界合金粒
+		['forge:nuggets/netherite', 'tconstruct:netherite_nugget'],
 		//pnc钢
 		['forge:ingots/compressed_iron', 'pneumaticcraft:ingot_iron_compressed'],
 		//byd钢

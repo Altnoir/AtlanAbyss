@@ -5,10 +5,10 @@
             "id": "minecraft:generic.max_health",
             "modifier_name": "max_health for Redcap",
             "amount": {
-                "min": 2,
-                "max": 3
+                "min": 15,
+                "max": 20
             },
-            "operation": "multiply_total"
+            "operation": "addition"
         },
         {
             "id": "minecraft:generic.attack_damage",

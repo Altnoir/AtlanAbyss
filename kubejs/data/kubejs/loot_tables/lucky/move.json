@@ -83,11 +83,6 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "create:sticker"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
                     "name": "create:contraption_controls"
                 },
                 {

@@ -32,6 +32,36 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "umapyoi:ssr_card_ticket"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "umapyoi:crystal_silver"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "umapyoi:crystal_gold"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "umapyoi:crystal_rainbow"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "umapyoi:horseshoe_silver"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "umapyoi:horseshoe_gold"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "umapyoi:horseshoe_rainbow"
                 }
             ]
         }

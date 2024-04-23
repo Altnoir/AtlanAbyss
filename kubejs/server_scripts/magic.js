@@ -32,6 +32,18 @@ onEvent('recipes', event => {
         pedestalItems: []
     }).id('atlanabyss:uma_jewel')
 
+    //人工煤炭
+    event.custom({
+        type: 'ars_nouveau:imbuement',
+        input: {
+            item: 'minecraft:charcoal'
+        },
+        output: 'minecraft:coal',
+        count: 1,
+        source: 500,
+        pedestalItems: []
+    }).id('atlanabyss:imbuement_coal')
+
     //宝石粉
     milling('apotheosis:gem_dust', [
         'apotheosis:gem'

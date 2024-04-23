@@ -48,7 +48,7 @@
   "jade": {
     "block_states": false,
     "entity_armor": true,
-    "registry_name": false,
+    "registry_name": true,
     "item_mod_name": false,
     "mod_name": false,
     "entity_hp": true

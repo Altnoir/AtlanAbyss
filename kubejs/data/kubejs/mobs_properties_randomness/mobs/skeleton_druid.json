@@ -8,15 +8,6 @@
             "operation": "multiply_base"
         },
         {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "+20hp for Skeleton Druid",
-            "amount": {
-                "min": 20,
-                "max": 40
-            },
-            "operation": "addition"
-        },
-        {
             "id": "minecraft:generic.attack_damage",
             "modifier_name": "attack_damage for Skeleton Druid",
             "amount": {

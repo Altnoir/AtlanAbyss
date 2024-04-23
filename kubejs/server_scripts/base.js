@@ -122,6 +122,10 @@ onEvent('recipes', event => {
 	//修复工作台bug
 	remove('sophisticatedbackpacks:crafting_upgrade')
 
+	//修复下界合金粒
+	remove('tconstruct:common/materials/netherite_nugget_from_ingot')
+	remove('tconstruct:common/materials/netherite_ingot_from_nuggets')
+
 	//精妙存储升级基板
 	remove('sophisticatedstorage:upgrade_base')
 	event.shapeless('sophisticatedstorage:upgrade_base', [

@@ -6,7 +6,7 @@
             "modifier_name": "max_health for upper_goblin_knight",
             "amount": {
                 "min": 2,
-                "max": 5
+                "max": 4
             },
             "operation": "multiply_total"
         },
