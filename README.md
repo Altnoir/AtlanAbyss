@@ -1,6 +1,6 @@
 <div align="center">
   
-[个人Bilibili主页](https://space.bilibili.com/256237451)  [QQ频道](https://pd.qq.com/s/796mgiz18)  [QQ交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BLXxDVDcSaZjEf7RZwuve3nTRYaLiibA&authKey=xMXTiVWhMjumG1WFrE%2FQpVOPM5lAJUXOQi9Ycsz1Lzi%2Fbjo9PS9HKPMLCp5XGJ2R&noverify=0&group_code=1020087157)  [爱发电]([https://kook.top/Fbqm4J](https://afdian.net/a/LLmion))
+[个人Bilibili主页](https://space.bilibili.com/256237451)  [QQ频道](https://pd.qq.com/s/796mgiz18)  [QQ交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=BLXxDVDcSaZjEf7RZwuve3nTRYaLiibA&authKey=xMXTiVWhMjumG1WFrE%2FQpVOPM5lAJUXOQi9Ycsz1Lzi%2Fbjo9PS9HKPMLCp5XGJ2R&noverify=0&group_code=1020087157)  [爱发电](https://afdian.net/a/LLmion)
 
 
 **Languages/语言:** [中文](README.md) [**English**](README-en.md)
