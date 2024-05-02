@@ -1,6 +1,6 @@
 <div align="center">
   
-[My Bilibili Homepage](https://space.bilibili.com/256237451)
+[My Bilibili Homepage](https://space.bilibili.com/256237451) [First Promo Video](https://www.bilibili.com/video/BV1Kx4y1z7GH)
 
 **Languages/语言:** [中文](README.md) [**English**](README-en.md)
 
