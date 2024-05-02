@@ -30,6 +30,7 @@ java.lang.AbstractMethodError: Method me/desht/pneumaticcraft/common/entity/semi
 	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
 	at cpw.mods.bootstraplauncher@1.0.0/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149)
 
+<<<<<<< HEAD
 04/25/2024 - 10:52:13
 class net.blay09.mods.waystones.compat.WailaProvider$WaystoneDataProvider
 java.lang.AbstractMethodError: Method net/blay09/mods/waystones/compat/WailaProvider$WaystoneDataProvider.appendTooltip(Lmcp/mobius/waila/api/ITooltip;Lmcp/mobius/waila/api/BlockAccessor;Lmcp/mobius/waila/api/config/IPluginConfig;)V is abstract
@@ -61,3 +62,5 @@ java.lang.AbstractMethodError: Method net/blay09/mods/waystones/compat/WailaProv
 	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
 	at cpw.mods.bootstraplauncher@1.0.0/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149)
 
+=======
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d

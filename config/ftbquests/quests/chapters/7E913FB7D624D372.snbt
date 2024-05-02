@@ -2262,6 +2262,10 @@
 			x: 6.5d
 			y: 10.0d
 			dependencies: ["529FFF3330B1F7EC"]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "3C4BF44C30626F05"
 			tasks: [{
 				id: "045B159330B82401"
@@ -2298,6 +2302,7 @@
 				"2B26826B86BCA145"
 				"32F577B605FC8D35"
 			]
+			hide: true
 			id: "59AF238BE1A99F24"
 			tasks: [{
 				id: "4B51B55EE177FE99"
@@ -2315,6 +2320,7 @@
 			x: 4.5d
 			y: 10.0d
 			dependencies: ["3C4BF44C30626F05"]
+			hide: true
 			id: "0F39A47561B38A32"
 			tasks: [{
 				id: "5A8B91C55E7ECAD2"
@@ -2438,6 +2444,10 @@
 				"1814D0684AAB4731"
 				"7B367DD31326CE5E"
 			]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "529FFF3330B1F7EC"
 			tasks: [{
 				id: "3BB6D184731FF22B"
@@ -2456,6 +2466,10 @@
 			x: 10.0d
 			y: 4.0d
 			dependencies: ["0F1CD1C8804008B7"]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "1AF66F653905B9C9"
 			tasks: [{
 				id: "30CAE2413F66F12D"
@@ -2483,6 +2497,10 @@
 				"3909A2788335AB22"
 				"4172CB4FD4825D49"
 			]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "2896AD9C74EA52FF"
 			tasks: [{
 				id: "06AC0FF9EA50EAF3"
@@ -2522,6 +2540,10 @@
 				"但是，随着时间的推移，铋矿石会向周围生长（周围必须是末地石）。"
 			]
 			dependencies: ["31C9BD74CDB26F64"]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "6A286B39EC88CF35"
 			tasks: [{
 				id: "51C5EBB09362442D"
@@ -2577,6 +2599,10 @@
 			shape: "hexagon"
 			description: ["一种建筑材料。"]
 			dependencies: ["726DF7A5F10D04C1"]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "3C90F024AAB8DABB"
 			tasks: [{
 				id: "3E1FF510BC7B0270"
@@ -2596,6 +2622,10 @@
 			shape: "rsquare"
 			description: ["利用强劲的附魔，战斗！"]
 			dependencies: ["4E12320C5CF0FE7B"]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "7FEC216969A7D841"
 			tasks: [{
 				id: "16CF1A620EEE3226"
@@ -2630,7 +2660,10 @@
 			disable_toast: true
 			x: -6.0d
 			y: 3.0d
+<<<<<<< HEAD
 			shape: "hexagon"
+=======
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			dependencies: ["71D5C4423F628785"]
 			hide: true
 			id: "633C37FA492FB28C"
@@ -2653,7 +2686,10 @@
 			disable_toast: true
 			x: -7.0d
 			y: 2.5d
+<<<<<<< HEAD
 			shape: "hexagon"
+=======
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			description: [
 				"把异彩化合物丢弃在明亮的区域以转变获取，如："
 				"信标上方。"
@@ -2676,7 +2712,10 @@
 			disable_toast: true
 			x: -7.0d
 			y: 3.5d
+<<<<<<< HEAD
 			shape: "hexagon"
+=======
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			description: [
 				"把异彩化合物丢弃在黑暗的区域以转变获取，如："
 				"虚空下方。"
@@ -2709,6 +2748,10 @@
 				"溺尸击杀苦力怕 - 100%掉落神秘唱片；"
 			]
 			dependencies: ["5A7F67F2BD3327F6"]
+<<<<<<< HEAD
+=======
+			hide: true
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 			id: "633D317850D56B85"
 			tasks: [{
 				id: "57914FA46B2A9546"

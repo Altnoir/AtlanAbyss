@@ -38,6 +38,13 @@
                 {
                     "type": "minecraft:item",
                     "name": "kubejs:album_adventure"
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:album_adventure"
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
                 }
             ]
         }
