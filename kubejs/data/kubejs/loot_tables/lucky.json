@@ -21,9 +21,9 @@
                     "name": "kubejs:lucky/album"
                 },
                 {
-                    "type": "minecraft:tag",
+                    "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "artifacts:artifacts"
+                    "name": "kubejs:lucky/artifacts"
                 },
                 {
                     "type": "minecraft:loot_table",

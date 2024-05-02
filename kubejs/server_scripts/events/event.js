@@ -371,22 +371,9 @@ onEvent('entity.hurt', event => {
         }
         if (cmData === 11821903) { // 重锤
           if (!actual.onGround) {
-<<<<<<< HEAD
-<<<<<<< HEAD
             let fall = actual.fallDistance.toFixed(1);
 
             entity.attack(source, damage + damage / 2 * fall);
-=======
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-            let fall = actual.fallDistance;
-            let fallDamage = fall.toFixed(1) * 4;
-
-            entity.attack(source, damage + fallDamage);
-<<<<<<< HEAD
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
             actual.potionEffects.add('minecraft:levitation', 2, 4);
           }
         }
@@ -453,22 +440,6 @@ onEvent('entity.hurt', event => {
             //event.cancel();
           }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-        if (cmData === 11821909) { // 斩杀
-          if (health <= maxHealth / 3) {
-            server.scheduleInTicks(1, () => {
-              entity.kill();
-            })
-          }
-        }
-<<<<<<< HEAD
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
         if (cmData === 11821910) { // 范围
           let entityList = level.getEntitiesWithin(AABB.of(
             entity.x - 3,
@@ -522,29 +493,7 @@ onEvent('entity.hurt', event => {
           }
         }
         if (cmData === 11821916) { // 幸运
-<<<<<<< HEAD
-<<<<<<< HEAD
           entity.attack(source, Math.max(1, damage * (health / 500)));
-=======
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-          let worldSize = level.worldBorder.getSize();
-          let ws = worldSize / 96;
-          let alice = actualEffect.getActive('kubejs:alice_powah');
-
-          if (alice != null) {
-            if (worldSize < 59999800) {
-              entity.attack(source, damage + ws * 8);
-            } else {
-              entity.kill();
-            }
-          } else {
-            entity.attack(source, Math.max(1, damage * (health / 500)));
-          }
-<<<<<<< HEAD
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
           //event.cancel();
         }
       }

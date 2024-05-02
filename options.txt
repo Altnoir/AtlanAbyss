@@ -13,7 +13,7 @@ realmsNotifications:true
 reducedDebugInfo:false
 showSubtitles:true
 touchscreen:false
-fullscreen:true
+fullscreen:false
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -36,18 +36,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-<<<<<<< HEAD
-<<<<<<< HEAD
-resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","resources/AtlanAbyss","quark:emote_resources","file/AtlanAbyss-Sounds Pack.zip"]
-incompatibleResourcePacks:["quark:emote_resources"]
-=======
 resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","resources/AtlanAbyss","resources/AtlanAbyss-Music"]
 incompatibleResourcePacks:[]
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
-resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","resources/AtlanAbyss","resources/AtlanAbyss-Music"]
-incompatibleResourcePacks:[]
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 lastServer:
 lang:zh_cn
 soundDevice:
@@ -142,23 +132,10 @@ key_key.ae2.ae2wtlib_restock:key.keyboard.unknown
 key_key.ae2.ae2wtlib_magnet:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.modernfix.config:key.keyboard.unknown
-<<<<<<< HEAD
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.corpse.death_history:key.keyboard.u
-=======
-key_placebo.toggleTrails:key.keyboard.unknown
-key_key.corpse.death_history:key.keyboard.u
-key_placebo.toggleWings:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.unknown
-key_iris.keybind.toggleShaders:key.keyboard.k
-key_iris.keybind.shaderPackSelection:key.keyboard.o
-key_key.botania_corporea_request:key.keyboard.unknown
-key_chunkloaders.keys.open_screen:key.keyboard.i
-key_key.ftbquests.quests:key.keyboard.unknown
-key_key.curios.open.desc:key.keyboard.unknown
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_key.yes_steve_model.player_model.desc:key.keyboard.y:ALT
 key_key.yes_steve_model.animation_roulette.desc:key.keyboard.comma
 key_key.yes_steve_model.debug_animation.desc:key.keyboard.b:ALT
@@ -217,8 +194,8 @@ key_key.ars_nouveau.qc7:key.keyboard.unknown
 key_key.ars_nouveau.qc8:key.keyboard.unknown
 key_key.ars_nouveau.qc9:key.keyboard.unknown
 key_key.ars_nouveau.qc10:key.keyboard.unknown
-key_key.ftbquests.quests:key.keyboard.unknown
 key_chunkloaders.keys.open_screen:key.keyboard.semicolon
+key_key.ftbquests.quests:key.keyboard.unknown
 key_key.observable.profile:key.keyboard.apostrophe
 key_gui.xaero_open_map:key.keyboard.m
 key_gui.xaero_open_settings:key.keyboard.right.bracket
@@ -232,41 +209,7 @@ key_key.waila.toggle_liquid:key.keyboard.keypad.2
 key_key.waila.narrate:key.keyboard.keypad.6
 key_key.waila.show_details:key.keyboard.left.shift
 key_key.waila.show_recipes:key.keyboard.keypad.3
-<<<<<<< HEAD
-key_key.waila.show_uses:key.keyboard.unknown
-key_key.beyond_earth.rocket_start:key.keyboard.space
-=======
 key_key.waila.show_uses:key.keyboard.keypad.4
-key_pneumaticcraft.armor.options:key.keyboard.unknown
-key_pneumaticcraft.helmet.hack:key.keyboard.unknown
-key_pneumaticcraft.helmet.debugging.drone:key.keyboard.unknown
-key_pneumaticcraft.boots.kick:key.keyboard.unknown
-key_pneumaticcraft.chestplate.launcher:key.keyboard.unknown
-key_pneumaticcraft.boots.jet_boots:key.keyboard.unknown
-key_gui.xaero_open_map:key.keyboard.m
-key_gui.xaero_open_settings:key.keyboard.right.bracket
-key_gui.xaero_map_zoom_in:key.keyboard.unknown
-key_gui.xaero_map_zoom_out:key.keyboard.unknown
-key_gui.xaero_quick_confirm:key.keyboard.right.shift
-key_gui.xaero_toggle_dimension:key.keyboard.unknown
-key_key.beyond_earth.rocket_start:key.keyboard.space
-key_key.modernui.openCenter:key.keyboard.k:CONTROL
-key_key.modernui.zoom:key.keyboard.unknown
-key_key.inventoryhud.toggle:key.keyboard.unknown
-key_key.inventoryhud.openconfig:key.keyboard.p
-key_key.inventoryhud.togglepot:key.keyboard.unknown
-key_key.inventoryhud.togglearm:key.keyboard.unknown
-key_key.inventoryhud.toggleall:key.keyboard.unknown
-key_cos.key.opencosarmorinventory:key.keyboard.unknown
-key_key.presencefootsteps.settings:key.keyboard.f10
-key_ibeeditor.key.editor:key.keyboard.keypad.9
-key_ibeeditor.key.nbt_editor:key.keyboard.keypad.7
-key_ibeeditor.key.snbt_editor:key.keyboard.keypad.8
-key_ibeeditor.key.vault:key.keyboard.unknown
-<<<<<<< HEAD
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.unknown
 key_gui.xaero_toggle_slime:key.keyboard.unknown
@@ -278,15 +221,7 @@ key_gui.xaero_enlarge_map:key.keyboard.unknown
 key_gui.xaero_waypoints_key:key.keyboard.unknown
 key_gui.xaero_zoom_in:key.keyboard.unknown
 key_gui.xaero_zoom_out:key.keyboard.unknown
-<<<<<<< HEAD
-<<<<<<< HEAD
-key_gui.xaero_new_waypoint:key.keyboard.backslash
-=======
 key_gui.xaero_new_waypoint:key.keyboard.n
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
-key_gui.xaero_new_waypoint:key.keyboard.n
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_gui.xaero_display_all_sets:key.keyboard.unknown
 key_gui.xaero_toggle_light_overlay:key.keyboard.unknown
 key_gui.xaero_toggle_entity_radar:key.keyboard.unknown
@@ -296,22 +231,19 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.unknown
-key_quark.keybind.transfer_insert:key.keyboard.unknown
-key_quark.keybind.transfer_extract:key.keyboard.unknown
-key_quark.keybind.shift_lock:key.keyboard.unknown
-key_quark.keybind.back:key.mouse.4
-key_quark.keybind.lock_rotation:key.keyboard.l
+key_key.beyond_earth.rocket_start:key.keyboard.space
 key_key.inventoryhud.toggle:key.keyboard.unknown
 key_key.inventoryhud.openconfig:key.keyboard.p
 key_key.inventoryhud.togglepot:key.keyboard.unknown
 key_key.inventoryhud.togglearm:key.keyboard.unknown
 key_key.inventoryhud.toggleall:key.keyboard.unknown
 key_key.presencefootsteps.settings:key.keyboard.f10
-key_quark.keybind.change_hotbar:key.keyboard.unknown
 key_quark.keybind.camera_mode:key.keyboard.f12
+key_quark.keybind.change_hotbar:key.keyboard.unknown
 key_quark.keybind.sort_player:key.keyboard.unknown
-key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.lock_rotation:key.keyboard.l
+key_quark.keybind.back:key.mouse.4
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -330,6 +262,10 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
+key_quark.keybind.transfer_insert:key.keyboard.unknown
+key_quark.keybind.transfer_extract:key.keyboard.unknown
+key_quark.keybind.shift_lock:key.keyboard.unknown
+key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.entity_tracker:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.search:key.keyboard.unknown
@@ -358,43 +294,15 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.l
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
-<<<<<<< HEAD
-<<<<<<< HEAD
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_keybind.sophisticatedstorage.sort:key.mouse.middle
 key_key.up:key.keyboard.space
 key_key.down:key.keyboard.left.control
 key_key.summon:key.keyboard.unknown
-=======
-key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-=======
-key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-key_keybind.sophisticatedstorage.sort:key.mouse.middle
-key_key.cofh.mode_change_increment:key.keyboard.z
-key_key.cofh.mode_change_decrement:key.keyboard.unknown
-key_key.up:key.keyboard.space
-key_key.down:key.keyboard.left.control
-key_key.summon:key.keyboard.unknown
-key_key.umapyoi.use_skill:key.keyboard.left.bracket
-key_key.umapyoi.select_former_skill:key.keyboard.up
-key_key.umapyoi.select_latter_skill:key.keyboard.down
-<<<<<<< HEAD
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_key.tconstruct.helmet_interact:key.keyboard.unknown
 key_key.tconstruct.leggings_interact:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.jet_boots.module.builder_mode:key.keyboard.unknown
@@ -411,18 +319,8 @@ key_key.toolbelt.open:key.keyboard.x
 key_key.toolbelt.cycle.left:key.keyboard.unknown
 key_key.toolbelt.cycle.right:key.keyboard.unknown
 key_key.toolbelt.slot:key.keyboard.unknown
-<<<<<<< HEAD
-<<<<<<< HEAD
-soundCategory_master:1.0
-soundCategory_music:0.35211268
-=======
 soundCategory_master:0.50772625
 soundCategory_music:0.3544601
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
-soundCategory_master:0.50772625
-soundCategory_music:0.3544601
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 soundCategory_record:0.5023474
 soundCategory_weather:1.0
 soundCategory_block:1.0

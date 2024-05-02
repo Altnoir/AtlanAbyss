@@ -4,16 +4,8 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max_health for upper_goblin_knight",
-<<<<<<< HEAD
             "amount": 100,
             "operation": "addition"
-=======
-            "amount": {
-                "min": 2,
-                "max": 4
-            },
-            "operation": "multiply_total"
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
         },
         {
             "id": "minecraft:generic.attack_damage",
