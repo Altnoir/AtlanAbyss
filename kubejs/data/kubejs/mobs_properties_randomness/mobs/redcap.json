@@ -11,6 +11,9 @@
                 "min": 15,
                 "max": 20
             },
+<<<<<<< HEAD
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
+=======
 >>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
             "operation": "addition"
         },

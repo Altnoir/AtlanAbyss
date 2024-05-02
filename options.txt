@@ -37,8 +37,13 @@ prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
 <<<<<<< HEAD
+<<<<<<< HEAD
 resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","resources/AtlanAbyss","quark:emote_resources","file/AtlanAbyss-Sounds Pack.zip"]
 incompatibleResourcePacks:["quark:emote_resources"]
+=======
+resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","resources/AtlanAbyss","resources/AtlanAbyss-Music"]
+incompatibleResourcePacks:[]
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 =======
 resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","resources/AtlanAbyss","resources/AtlanAbyss-Music"]
 incompatibleResourcePacks:[]
@@ -258,6 +263,9 @@ key_ibeeditor.key.editor:key.keyboard.keypad.9
 key_ibeeditor.key.nbt_editor:key.keyboard.keypad.7
 key_ibeeditor.key.snbt_editor:key.keyboard.keypad.8
 key_ibeeditor.key.vault:key.keyboard.unknown
+<<<<<<< HEAD
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
+=======
 >>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.unknown
@@ -271,7 +279,11 @@ key_gui.xaero_waypoints_key:key.keyboard.unknown
 key_gui.xaero_zoom_in:key.keyboard.unknown
 key_gui.xaero_zoom_out:key.keyboard.unknown
 <<<<<<< HEAD
+<<<<<<< HEAD
 key_gui.xaero_new_waypoint:key.keyboard.backslash
+=======
+key_gui.xaero_new_waypoint:key.keyboard.n
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 =======
 key_gui.xaero_new_waypoint:key.keyboard.n
 >>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
@@ -347,6 +359,7 @@ key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.l
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
 <<<<<<< HEAD
+<<<<<<< HEAD
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
@@ -362,6 +375,13 @@ key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+=======
+key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_keybind.sophisticatedstorage.sort:key.mouse.middle
 key_key.cofh.mode_change_increment:key.keyboard.z
 key_key.cofh.mode_change_decrement:key.keyboard.unknown
@@ -371,6 +391,9 @@ key_key.summon:key.keyboard.unknown
 key_key.umapyoi.use_skill:key.keyboard.left.bracket
 key_key.umapyoi.select_former_skill:key.keyboard.up
 key_key.umapyoi.select_latter_skill:key.keyboard.down
+<<<<<<< HEAD
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
+=======
 >>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 key_key.tconstruct.helmet_interact:key.keyboard.unknown
 key_key.tconstruct.leggings_interact:key.keyboard.unknown
@@ -389,8 +412,13 @@ key_key.toolbelt.cycle.left:key.keyboard.unknown
 key_key.toolbelt.cycle.right:key.keyboard.unknown
 key_key.toolbelt.slot:key.keyboard.unknown
 <<<<<<< HEAD
+<<<<<<< HEAD
 soundCategory_master:1.0
 soundCategory_music:0.35211268
+=======
+soundCategory_master:0.50772625
+soundCategory_music:0.3544601
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 =======
 soundCategory_master:0.50772625
 soundCategory_music:0.3544601

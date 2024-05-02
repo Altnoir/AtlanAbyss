@@ -106,17 +106,23 @@ onEvent('item.registry', event => {
 	event.create('chaos_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Chemical Agent');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	event.create('pistol_ammo').displayName('Pistol Ammo');
 	event.create('shotgun_ammo').maxStackSize(32).displayName('Shotgun Ammo');
 	event.create('rifle_ammo').displayName('Rifle Ammo');
 	event.create('smg_ammo').displayName('SMG Ammo');
 	event.create('sniper_ammo').displayName('Sniper Ammo');
 =======
+=======
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 	event.create('pistol_ammo').maxStackSize(64).displayName('Pistol Ammo');
 	event.create('shotgun_ammo').maxStackSize(32).displayName('Shotgun Ammo');
 	event.create('rifle_ammo').maxStackSize(64).displayName('Rifle Ammo');
 	event.create('smg_ammo').maxStackSize(64).displayName('SMG Ammo');
 	event.create('sniper_ammo').maxStackSize(64).displayName('Sniper Ammo');
+<<<<<<< HEAD
+>>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
+=======
 >>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
 	event.create('magnum_ammo').maxStackSize(16).displayName('Magnum Ammo');
 
