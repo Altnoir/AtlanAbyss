@@ -4,11 +4,8 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max_health for blockchain_goblin",
-            "amount": {
-                "min": 2,
-                "max": 5
-            },
-            "operation": "multiply_total"
+            "amount": 50,
+            "operation": "addition"
         },
         {
             "id": "minecraft:generic.attack_damage",

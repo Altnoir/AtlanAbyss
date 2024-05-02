@@ -4,8 +4,8 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max health for Knight Phantom",
-            "amount": 25,
-            "operation": "multiply_total"
+            "amount": 400,
+            "operation": "addition"
         }
     ]
 }

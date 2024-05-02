@@ -287,7 +287,7 @@ function musicRecipes(event) {
       input: {
         type: 'ITEM',
         id: 'minecraft:emerald',
-        amount: 42
+        amount: 4
       },
       output: {
         type: 'ITEM',
@@ -295,19 +295,15 @@ function musicRecipes(event) {
         amount: 1,
         nbt: `{NetMusicSongInfo:{name:'${music.name}',time:${music.time_second},url:'${music.url}'}}`
       },
-      level: 4,
+      level: 3,
       maxStock: 1
     }).id(music.id);
   }
 
   const newMusics = [
     {
-      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"榊原ゆい\"],name:\"愛しさと感謝の気持ち\",time:342,trans_name:\"献予你的爱意与谢意\",url:\"https://music.163.com/song/media/outer/url?id=473403183.mp3\"}}",
+      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"榊原ゆい\"],name:\"§e愛しさと感謝の気持ち\",time:342,trans_name:\"献予你的爱意与谢意\",url:\"https://music.163.com/song/media/outer/url?id=473403183.mp3\"}}",
       id: "atlanabyss:senrenbanka_music_1"
-    },
-    {
-      nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"KOTOKO\"],name:\"恋ひ恋ふ縁\",time:237,trans_name:\"以恋结缘\",url:\"https://music.163.com/song/media/outer/url?id=473403182.mp3\"}}",
-      id: "atlanabyss:senrenbanka_music_2"
     },
     {
       nbt: "{NetMusicSongInfo:{artists:[\"Famishin\",\"井ノ原智\"],name:\"恋ひ恋ふ縁 (Title Version)\",time:235,url:\"https://music.163.com/song/media/outer/url?id=473403127.mp3\"}}",
@@ -364,26 +360,18 @@ function musicRecipes(event) {
     {
       nbt: "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"sweet treasure\",time:273,url:\"https://music.163.com/song/media/outer/url?id=29724906.mp3\"}}",
       id: "atlanabyss:senrenbanka_music_16"
-    }
-    ,
+    },
     {
       nbt: "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"§eレイル・ロマネスク ハチロクver\",time:264,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459691556.mp3\"}}",
       id: "atlanabyss:senrenbanka_music_17"
-    }
-    ,
+    },
     {
       nbt: "{NetMusicSongInfo:{artists:[\"中恵光城\"],name:\"§eレイル・ロマネスク\",time:262,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459692474.mp3\"}}",
       id: "atlanabyss:senrenbanka_music_18"
-    }
-    ,
+    },
     {
       nbt: "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§eこれくらいで\",time:214,trans_name:\"就这样\",url:\"https://music.163.com/song/media/outer/url?id=1350447904.mp3\"}}",
       id: "atlanabyss:senrenbanka_music_19"
-    }
-    ,
-    {
-      nbt: "{NetMusicSongInfo:{artists:[\"Sad Keyboard Guy\",\"AKA\"],name:\"§eLullaby For an Android (feat. AKA)\",time:307,url:\"https://music.163.com/song/media/outer/url?id=1911878867.mp3\"}}",
-      id: "atlanabyss:senrenbanka_music_20"
     }
   ];
 

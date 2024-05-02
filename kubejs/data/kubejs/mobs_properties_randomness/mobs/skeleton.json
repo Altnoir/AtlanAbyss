@@ -87,38 +87,6 @@
             }
         },
         {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "+20hp for Skeleton",
-            "amount": {
-                "min": 10,
-                "max": 20
-            },
-            "operation": "addition",
-            "world_whitelist": {
-                "biomes": [
-                    "twilightforest:clearing",
-                    "twilightforest:dark_forest",
-                    "twilightforest:dense_forest",
-                    "twilightforest:dense_mushroom_forest",
-                    "twilightforest:enchanted_forest",
-                    "twilightforest:final_plateau",
-                    "twilightforest:fire_swamp",
-                    "twilightforest:firefly_forest",
-                    "twilightforest:forest",
-                    "twilightforest:glacier",
-                    "twilightforest:highlands",
-                    "twilightforest:lake",
-                    "twilightforest:mushroom_forest",
-                    "twilightforest:oak_savannah",
-                    "twilightforest:snowy_forest",
-                    "twilightforest:spooky_forest",
-                    "twilightforest:stream",
-                    "twilightforest:swamp",
-                    "twilightforest:thornlands"
-                ]
-            }
-        },
-        {
             "id": "minecraft:generic.armor",
             "modifier_name": "Base armor for Skeleton",
             "amount": {

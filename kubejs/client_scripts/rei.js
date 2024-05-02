@@ -296,9 +296,12 @@ onEvent('rei.hide.items', event => {
 		'neapolitan:milk_bottle',
 		//kitchenkarrot
 		'kitchenkarrot:ice_cubes',
+		//sophisticatedbackpacks
+		'sophisticatedbackpacks:crafting_upgrade',
 		//twilightforest
 		'twilightforest:uncrafting_table',
 		//tconstruct
+		'tconstruct:netherite_nugget',//下界合金粒
 		'tconstruct:copper_nugget',//铜粒
 		'tconstruct:honey_bucket',
 		//beyond_earth
@@ -308,8 +311,6 @@ onEvent('rei.hide.items', event => {
 		'decorative_blocks:blockstate_copy_item',
 		//ftb
 		/^itemfilters:/,
-		//前置
-		/^titanium:/,
 	];
 	nameId.forEach(hideId);
 });
@@ -354,6 +355,9 @@ onEvent('rei.group', (event) => {
 		'supplementaries:bamboo_spikes_tipped',
 		'netmusic:music_cd',
 		'sophisticatedbackpacks:backpack',
+		'sophisticatedstorage:barrel',
+		'sophisticatedstorage:chest',
+		'sophisticatedstorage:shulker_box',
 		'touhou_little_maid:chair',
 		'touhou_little_maid:garage_kit',
 		'botania:twig_wand',
@@ -371,6 +375,7 @@ onEvent('rei.group', (event) => {
 		'umapyoi:support_card',
 		'gateways:gate_pearl',
 		'apotheosis:potion_charm',
+		'quark:seed_pouch',
 	];
 
 	useNbt.forEach((id) => {
@@ -570,9 +575,9 @@ onEvent('rei.group', (event) => {
 	event.groupItems('atlanabyss:rei_groups/trapped_presents', "陷阱礼物盒",
 		/^supplementaries:trapped_present.*/
 	);
-	//抽屉
-	event.groupItems('atlanabyss:rei_groups/drawers', "抽屉",
-		'#functionalstorage:drawer'
+	//竖半砖
+	event.groupItems('atlanabyss:rei_groups/vertical_slab', "竖半砖",
+		'#quark:vertical_slab'
 	);
 	//塑料砖块
 	event.groupItems('atlanabyss:rei_groups/plastic_bricks', "塑料砖块",
@@ -616,6 +621,22 @@ onEvent('rei.group', (event) => {
 	//背包升级
 	event.groupItems('atlanabyss:rei_groups/back_upgrade', "背包升级",
 		[/^sophisticatedbackpacks:.*_upgrade/, 'sophisticatedbackpacks:upgrade_base']
+	);
+	//存储升级
+	event.groupItems('atlanabyss:rei_groups/storage_upgrade', "存储升级",
+		[/^sophisticatedstorage:.*_upgrade/, 'sophisticatedstorage:upgrade_base']
+	);
+	//精妙桶
+	event.groupItems('atlanabyss:rei_groups/storage_barrel', "升级桶",
+		[/^sophisticatedstorage:.*_barrel/]
+	);
+	//精妙箱
+	event.groupItems('atlanabyss:rei_groups/storage_chest', "升级箱",
+		[/^sophisticatedstorage:.*_chest/]
+	);
+	//精妙盒
+	event.groupItems('atlanabyss:rei_groups/storage_shulker_box', "升级盒",
+		[/^sophisticatedstorage:.*_shulker_box/]
 	);
 	//铸模
 	event.groupItems('atlanabyss:rei_groups/casts', "铸模",

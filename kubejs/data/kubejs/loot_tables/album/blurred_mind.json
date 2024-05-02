@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
@@ -12,12 +12,7 @@
             }
           ],
           "name": "netmusic:music_cd"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "functions": [
@@ -27,12 +22,7 @@
             }
           ],
           "name": "netmusic:music_cd"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "functions": [
@@ -42,12 +32,7 @@
             }
           ],
           "name": "netmusic:music_cd"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "functions": [
@@ -57,12 +42,7 @@
             }
           ],
           "name": "netmusic:music_cd"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "functions": [
@@ -72,12 +52,7 @@
             }
           ],
           "name": "netmusic:music_cd"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "functions": [

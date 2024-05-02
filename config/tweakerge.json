@@ -45,7 +45,7 @@
     "fastRightClickCount": 10,
     "fillCloneLimit": 10000000,
     "flyDecelerationFactor": 0.4,
-    "flySpeedPreset1": 0.01,
+    "flySpeedPreset1": 0.005,
     "flySpeedPreset2": 0.064,
     "flySpeedPreset3": 0.128,
     "flySpeedPreset4": 0.32,
@@ -849,7 +849,7 @@
       "keys": ""
     },
     "tweakFlySpeed": {
-      "keys": ""
+      "keys": "LEFT_ALT,V"
     },
     "tweakFlexibleBlockPlacement": {
       "keys": ""
@@ -858,7 +858,7 @@
       "keys": "G"
     },
     "tweakGammaOverride": {
-      "keys": "N"
+      "keys": "LEFT_ALT,N"
     },
     "tweakHandRestock": {
       "keys": ""

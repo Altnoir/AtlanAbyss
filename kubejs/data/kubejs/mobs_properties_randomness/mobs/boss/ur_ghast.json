@@ -4,7 +4,7 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max health for Ur Ghast",
-            "amount": 750,
+            "amount": 500,
             "operation": "addition"
         },
         {

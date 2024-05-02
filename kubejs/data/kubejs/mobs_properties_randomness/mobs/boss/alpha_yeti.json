@@ -4,11 +4,8 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max health for Alpha Yeti",
-            "amount": {
-                "min": 10,
-                "max": 15
-            },
-            "operation": "multiply_total"
+            "amount": 500,
+            "operation": "addition"
         }
     ]
 }

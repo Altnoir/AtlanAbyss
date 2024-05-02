@@ -18,6 +18,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
+			description: ["大人，时代变了！"]
 			dependencies: ["62ABD67CFC26F88E"]
 			hide: true
 			size: 1.5d
@@ -37,6 +38,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: 2.5d
+			description: ["普通级枪械：100DPS以下。"]
 			dependencies: ["4DA61F4D53EDC6AD"]
 			hide: true
 			id: "0FE3B58E65864060"
@@ -55,6 +57,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: -2.5d
+			description: ["稀有级枪械：100DPS以上。"]
 			dependencies: ["0FE3B58E65864060"]
 			hide: true
 			id: "1FC2394DF84DD49D"
@@ -73,6 +76,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: -6.5d
+			description: ["史诗级枪械：200DPS以上。"]
 			dependencies: ["1FC2394DF84DD49D"]
 			hide: true
 			id: "0D06561B8C9D82E3"
@@ -91,6 +95,7 @@
 			disable_toast: true
 			x: -3.0d
 			y: -2.5d
+			description: ["传说级枪械：400DPS以上。"]
 			dependencies: ["0D06561B8C9D82E3"]
 			hide: true
 			id: "0EC352B6A657D98C"
@@ -109,6 +114,7 @@
 			disable_toast: true
 			x: -3.0d
 			y: 2.5d
+			description: ["终极枪械：1000DPS以上。"]
 			dependencies: ["0EC352B6A657D98C"]
 			hide: true
 			id: "52730CF66109C799"
@@ -127,6 +133,11 @@
 			disable_toast: true
 			x: 0.0d
 			y: 6.5d
+			description: [
+				"一种专为枪械打造的光环。"
+				"右键开始随机抽取光环，光环总共16种。"
+				"个别特殊的光环配合枪械，可使DPS上不封顶！"
+			]
 			dependencies: ["52730CF66109C799"]
 			hide: true
 			id: "48775D208B988239"
@@ -157,6 +168,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "16143A249FA83FE8"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 5.5d
@@ -177,6 +193,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "59A204686842A13E"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 5.5d
@@ -193,6 +214,11 @@
 						AmmoCount: 2
 					}
 				}
+			}]
+			rewards: [{
+				id: "0B5A8113E22CF6E8"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -211,6 +237,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "040C1BBBF4CDFF3D"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: -2.5d
@@ -227,6 +258,11 @@
 						AmmoCount: 9
 					}
 				}
+			}]
+			rewards: [{
+				id: "3403A0F10C127DBE"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -245,6 +281,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "74928AEE3E8CCC26"
+				type: "xp"
+				xp: 30
+			}]
 		}
 		{
 			x: 4.5d
@@ -261,6 +302,11 @@
 						AmmoCount: 16
 					}
 				}
+			}]
+			rewards: [{
+				id: "78A2B792786DCDDB"
+				type: "xp"
+				xp: 20
 			}]
 		}
 		{
@@ -279,6 +325,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "19567AD917B7C507"
+				type: "xp"
+				xp: 30
+			}]
 		}
 		{
 			x: 0.0d
@@ -295,6 +346,11 @@
 						AmmoCount: 17
 					}
 				}
+			}]
+			rewards: [{
+				id: "21687726942555E4"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -313,6 +369,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "277509CD53ECC190"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: 1.0d
@@ -329,6 +390,11 @@
 						AmmoCount: 10
 					}
 				}
+			}]
+			rewards: [{
+				id: "4E0E53C76D31AA88"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -347,6 +413,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "20CD8C1037B20547"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: 6.0d
@@ -363,6 +434,11 @@
 						AmmoCount: 30
 					}
 				}
+			}]
+			rewards: [{
+				id: "3A4AABCC3B8E3E11"
+				type: "xp"
+				xp: 20
 			}]
 		}
 		{
@@ -381,6 +457,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "6FF7820E9B1E7ED0"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: 6.0d
@@ -397,6 +478,11 @@
 						AmmoCount: 30
 					}
 				}
+			}]
+			rewards: [{
+				id: "33AB8E9B5C800A77"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -415,6 +501,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "36AA13CA3F9914C8"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: 6.5d
@@ -431,6 +522,11 @@
 						AmmoCount: 20
 					}
 				}
+			}]
+			rewards: [{
+				id: "463F90A48B7B9F04"
+				type: "xp"
+				xp: 20
 			}]
 		}
 		{
@@ -449,6 +545,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "506F5DD7570CE4F7"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 7.0d
@@ -465,6 +566,11 @@
 						AmmoCount: 6
 					}
 				}
+			}]
+			rewards: [{
+				id: "287A5FBA3695D85D"
+				type: "xp"
+				xp: 20
 			}]
 		}
 		{
@@ -483,6 +589,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4769222D0A8F2044"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: 4.0d
@@ -499,6 +610,11 @@
 						AmmoCount: 20
 					}
 				}
+			}]
+			rewards: [{
+				id: "5FE846ACF1A170B1"
+				type: "xp"
+				xp: 20
 			}]
 		}
 		{
@@ -517,6 +633,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7D19D2837F056BEE"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: 7.0d
@@ -533,6 +654,11 @@
 						AmmoCount: 5
 					}
 				}
+			}]
+			rewards: [{
+				id: "391541D5AD89D268"
+				type: "xp"
+				xp: 20
 			}]
 		}
 		{
@@ -551,6 +677,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3090C22D4C00BE2C"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: 0.5d
@@ -567,6 +698,11 @@
 						AmmoCount: 30
 					}
 				}
+			}]
+			rewards: [{
+				id: "478050BAD993B940"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -585,6 +721,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "0896157F8791F4AD"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: -1.5d
@@ -601,6 +742,11 @@
 						AmmoCount: 30
 					}
 				}
+			}]
+			rewards: [{
+				id: "374D7D747A9D072E"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -619,6 +765,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "14F01926931E396D"
+				type: "xp"
+				xp: 30
+			}]
 		}
 		{
 			x: -2.5d
@@ -635,6 +786,11 @@
 						AmmoCount: 30
 					}
 				}
+			}]
+			rewards: [{
+				id: "1D7CEBBACEC3800E"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -653,6 +809,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5174783FE6C02AD1"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: -4.5d
@@ -669,6 +830,11 @@
 						AmmoCount: 20
 					}
 				}
+			}]
+			rewards: [{
+				id: "2893B93275BE5A81"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -687,6 +853,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3C84E9CC0FBCD7CF"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: 0.0d
@@ -703,6 +874,11 @@
 						AmmoCount: 20
 					}
 				}
+			}]
+			rewards: [{
+				id: "3985515036DA5005"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -721,6 +897,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3BF8F65E8C894A72"
+				type: "xp"
+				xp: 30
+			}]
 		}
 		{
 			x: 1.5d
@@ -737,6 +918,11 @@
 						AmmoCount: 30
 					}
 				}
+			}]
+			rewards: [{
+				id: "02C6F42526149888"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -755,6 +941,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "75B88ABA88B744F8"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: 2.5d
@@ -771,6 +962,11 @@
 						AmmoCount: 8
 					}
 				}
+			}]
+			rewards: [{
+				id: "0DAD7AB1FA512C1A"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -789,6 +985,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4F6D20733284C7EC"
+				type: "xp"
+				xp: 30
+			}]
 		}
 		{
 			x: -4.0d
@@ -805,6 +1006,11 @@
 						AmmoCount: 22
 					}
 				}
+			}]
+			rewards: [{
+				id: "1306EB8AFF28BDB2"
+				type: "xp"
+				xp: 40
 			}]
 		}
 		{
@@ -823,6 +1029,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "01A5DD08D9385ED8"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: -3.0d
@@ -839,6 +1050,11 @@
 						AmmoCount: 24
 					}
 				}
+			}]
+			rewards: [{
+				id: "5119E3CAA17ACAE6"
+				type: "xp"
+				xp: 40
 			}]
 		}
 		{
@@ -857,6 +1073,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "0C20650E5B99384B"
+				type: "xp"
+				xp: 30
+			}]
 		}
 		{
 			x: 1.5d
@@ -873,6 +1094,11 @@
 						AmmoCount: 5
 					}
 				}
+			}]
+			rewards: [{
+				id: "7809DE63B40E6137"
+				type: "xp"
+				xp: 30
 			}]
 		}
 		{
@@ -891,6 +1117,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "62D3D70BC34B5266"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: -6.5d
@@ -907,6 +1138,11 @@
 						AmmoCount: 100
 					}
 				}
+			}]
+			rewards: [{
+				id: "395626C5BED7ED02"
+				type: "xp"
+				xp: 40
 			}]
 		}
 		{
@@ -925,6 +1161,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4805433833A05662"
+				type: "xp"
+				xp: 20
+			}]
 		}
 		{
 			x: -5.5d
@@ -941,6 +1182,11 @@
 						AmmoCount: 10
 					}
 				}
+			}]
+			rewards: [{
+				id: "72AF4D32846E2CA8"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -959,6 +1205,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "374B61A36FE4D905"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: -6.0d
@@ -975,6 +1226,11 @@
 						AmmoCount: 7
 					}
 				}
+			}]
+			rewards: [{
+				id: "353EE465AEEE3942"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -993,6 +1249,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "78980BA8FC54EAB7"
+				type: "xp"
+				xp: 40
+			}]
 		}
 		{
 			x: -4.0d
@@ -1009,6 +1270,11 @@
 						AmmoCount: 6
 					}
 				}
+			}]
+			rewards: [{
+				id: "3B0F108C7261BC82"
+				type: "xp"
+				xp: 40
 			}]
 		}
 		{
@@ -1027,6 +1293,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "00D272A65900F50E"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			x: -4.5d
@@ -1043,6 +1314,11 @@
 						AmmoCount: 5
 					}
 				}
+			}]
+			rewards: [{
+				id: "0B0FAA0C47DFB252"
+				type: "xp"
+				xp: 50
 			}]
 		}
 	]

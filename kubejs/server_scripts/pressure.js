@@ -633,7 +633,7 @@ onEvent('recipes', event => {
 	remove('pneumaticcraft:pressure_gauge_module')
 	event.shapeless('pneumaticcraft:pressure_gauge_module', [
 		'thermal:steel_plate',
-		'pneumaticcraft:pressure_gauge_module'
+		'pneumaticcraft:pressure_gauge'
 	]).id("atlanabyss:pressure_gauge_module")
 	//流量检测管道模块
 	remove('pneumaticcraft:flow_detector_module')
@@ -695,17 +695,17 @@ onEvent('recipes', event => {
 	event.custom({
 		type: 'pneumaticcraft:pressure_chamber',
 		inputs: [
-			Ingredient.of('minecraft:fermented_spider_eye'),
+			Ingredient.of('pneumaticcraft:sourdough'),
 			Ingredient.of('create:cinder_flour')
 		],
-		results: [Item.of('kubejs:acid')],
+		results: [Item.of('kubejs:acid', 2)],
 		pressure: 3.0
 	}).id("atlanabyss:acid");
 
 	//蚀刻酸
 	remove('pneumaticcraft:pressure_chamber/etching_acid')
 	mixing(Fluid.of('pneumaticcraft:etching_acid', 500), [
-		Fluid.of('pneumaticcraft:plastic', 400),
+		Fluid.of('pneumaticcraft:plastic', 250),
 		'kubejs:acid'
 	]).heated().id("atlanabyss:etching_acid")
 	//压缩石
@@ -727,24 +727,22 @@ onEvent('recipes', event => {
 	],
 		epcb,
 		[
-			filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 50)]),
-			filling(epcb, [epcb, Fluid.of('tconstruct:molten_gold', 50)]),
+			filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
+			filling(epcb, [epcb, Fluid.of('tconstruct:molten_gold', 500)]),
 			cutting(epcb, epcb).processingTime(100)
-		]).transitionalItem(epcb).loops(9).id("atlanabyss:empty_pcb")
+		]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb")
 	//PCB
 	let pcb = 'pneumaticcraft:unassembled_pcb';
 	remove('pneumaticcraft:printed_circuit_board')
 	sequenced_assembly([
-		Item.of('pneumaticcraft:printed_circuit_board').withChance(75 / 100),
-		Item.of('pneumaticcraft:failed_pcb').withChance(24 / 100),
-		Item.of('kubejs:circuit_scrap').withChance(1 / 100)//电路废料
+		'pneumaticcraft:printed_circuit_board',
 	],
 		pcb,
 		[
 			deploying(pcb, [pcb, 'createaddition:capacitor']),
 			deploying(pcb, [pcb, 'createaddition:capacitor']),
 			deploying(pcb, [pcb, 'createaddition:gold_rod'])
-		]).transitionalItem(pcb).loops(5).id("atlanabyss:printed_circuit_board")
+		]).transitionalItem(pcb).loops(10).id("atlanabyss:printed_circuit_board")
 	//装配平台
 	remove('pneumaticcraft:assembly_platform')
 	event.shaped('pneumaticcraft:assembly_platform', [
@@ -903,9 +901,52 @@ onEvent('recipes', event => {
 	createMixingRecipe('pneumaticcraft:salmon_tempura', 'pneumaticcraft:raw_salmon_tempura', 'createaddition:seed_oil', 50, 'salmon_tempura');
 	//薯条
 	compacting(
-		'4x pneumaticcraft:chips',
-		[
-			'minecraft:potato',
-			Fluid.of('createaddition:seed_oil', 50)
-		]).heated().id("atlanabyss:chips")
+		'4x pneumaticcraft:chips', [
+		'minecraft:potato',
+		Fluid.of('createaddition:seed_oil', 50)
+	]).heated().id("atlanabyss:chips")
+	//钢钻头
+	remove('pneumaticcraft:thermo_plant/compressed_iron_drill_bit')
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { tag: 'forge:ingots/steel' },
+		fluid_input: {
+			type: 'pneumaticcraft:fluid',
+			tag: 'forge:lubricant',
+			amount: 4000
+		},
+		item_output: { item: 'pneumaticcraft:drill_bit_compressed_iron' },
+		temperature: { min_temp: 573 },
+		pressure: 4.0,
+		speed: 0.25,
+		air_use_multiplier: 5.0,
+		exothermic: false
+	}).id("atlanabyss:drill_bit_compressed_iron")
+	//熔岩再生
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { tag: 'forge:cobblestone' },
+		fluid_output: { fluid: 'minecraft:lava', amount: 100 },
+		temperature: { min_temp: 1273 },
+		pressure: 4.5,
+		exothermic: false
+	}).id("atlanabyss:thermo_plant_cobblestone")
+
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { tag: 'forge:netherrack' },
+		fluid_output: { fluid: 'minecraft:lava', amount: 500 },
+		temperature: { min_temp: 1273 },
+		pressure: 4.5,
+		exothermic: false
+	}).id("atlanabyss:thermo_plant_netherrack")
+
+	event.custom({
+		type: 'pneumaticcraft:thermo_plant',
+		item_input: { item: 'minecraft:magma_block' },
+		fluid_output: { fluid: 'minecraft:lava', amount: 1000 },
+		temperature: { min_temp: 1273 },
+		pressure: 4.5,
+		exothermic: false
+	}).id("atlanabyss:thermo_plant_magma_block")
 })

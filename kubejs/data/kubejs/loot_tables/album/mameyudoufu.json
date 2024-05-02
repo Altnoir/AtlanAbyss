@@ -1,0 +1,109 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\"],name:\"§fPixel Perfect\",time:281,url:\"https://music.163.com/song/media/outer/url?id=1337182771.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\"],name:\"§fI HATE MY PUTER -ALL MY ENEMIES ARE INSIDE IT-\",time:226,url:\"https://music.163.com/song/media/outer/url?id=1893861641.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\"],name:\"§fMulti-Thread\",time:172,url:\"https://music.163.com/song/media/outer/url?id=1893861642.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\",\"星名はる\"],name:\"§fChasing\",time:245,url:\"https://music.163.com/song/media/outer/url?id=2101419121.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\",\"Shully\"],name:\"§fDot to Dot (feat. Shully) [Rework]\",time:251,url:\"https://music.163.com/song/media/outer/url?id=1893861643.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Such\",\"Mameyudoufu\"],name:\"§fENDLESS CIDER\",time:193,url:\"https://music.163.com/song/media/outer/url?id=1490922046.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\",\"Kanata.N\"],name:\"§fSunday Night\",time:166,url:\"https://music.163.com/song/media/outer/url?id=1446577051.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\",\"藍月なくる\"],name:\"§fOne Step Closer\",time:228,url:\"https://music.163.com/song/media/outer/url?id=2132967727.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\",\"nayuta\"],name:\"§fTOMORROW NEVER KNOWS\",time:216,url:\"https://music.163.com/song/media/outer/url?id=2130309200.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Mameyudoufu\",\"Exobolt\"],name:\"§fEveryday Things\",time:283,url:\"https://music.163.com/song/media/outer/url?id=2069054936.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

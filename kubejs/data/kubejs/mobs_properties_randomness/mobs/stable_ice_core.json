@@ -4,11 +4,8 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max_health for stable_ice_core",
-            "amount": {
-                "min": 2,
-                "max": 4
-            },
-            "operation": "multiply_total"
+            "amount": 40,
+            "operation": "addition"
         }
     ]
 }

@@ -57,7 +57,7 @@ onEvent('block.registry', event => {
         .randomTick((callback) => {
             let { random, block } = callback;
 
-            if (random.nextInt(15) > 1) return;
+            if (random.nextInt(30) > 1) return;
 
             const allFacing = ['north', 'south', 'east', 'west', 'up', 'down'];
             let i = 0, { length } = allFacing;
@@ -94,6 +94,28 @@ onEvent('block.registry', event => {
         .tagBlock('forge:ores_in_ground/deepslate')
         .requiresTool(true)
         .displayName('Inversia Uranium Pre');
+    //月球锇矿
+    event.create('moon_osmium_ore')
+        .material('stone')
+        .hardness(6.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/osmium')
+        .tagBlock('forge:ores_in_ground/moon')
+        .requiresTool(true)
+        .displayName('Moon Osmium Ore');
+    //水星银矿
+    event.create('mercury_silver_ore')
+        .material('stone')
+        .hardness(6.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .tagBlock('forge:ores')
+        .tagBlock('forge:ores/silver')
+        .tagBlock('forge:ores_in_ground/mercury')
+        .requiresTool(true)
+        .displayName('Mercury Silver Ore');
     //粗铝块
     event.create('raw_aluminum_block')
         .material('stone')
@@ -213,25 +235,25 @@ onEvent('block.registry', event => {
         .displayName('Lucky Block');
 
     //机器
-    let registerMachine = (name, layer) => {
-        let id = name.toLowerCase() + "_machine"
-        event.create(id)
-            .model("kubejs:block/machine/" + id)
-            .material("lantern")
-            .hardness(3.0)
-            .displayName(name + " Machine")
-            .notSolid()
-            .renderType(layer)
-            .tagBlock("create:wrench_pickup")
-            .tagBlock("minecraft:mineable/pickaxe")
-    }
-    registerMachine("Andesite", "solid")
-    registerMachine("Brass", "translucent")
-    registerMachine("Copper", "cutout")
+    // let registerMachine = (name, layer) => {
+    //     let id = name.toLowerCase() + "_machine"
+    //     event.create(id)
+    //         .model("kubejs:block/machine/" + id)
+    //         .material("lantern")
+    //         .hardness(3.0)
+    //         .displayName(name + " Machine")
+    //         .notSolid()
+    //         .renderType(layer)
+    //         .tagBlock("create:wrench_pickup")
+    //         .tagBlock("minecraft:mineable/pickaxe")
+    // }
+    // registerMachine("Andesite", "solid")
+    // registerMachine("Brass", "translucent")
+    // registerMachine("Copper", "cutout")
 
 
     //炼金
-    for (let i = 0; i < 12; i++)
+    for (let i = 0; i < 9; i++)
         event.create(`alchemy_${i + 1}`)
             .material("glass")
             .color(0, 0x394867)
@@ -239,7 +261,7 @@ onEvent('block.registry', event => {
             .hardness(0.1)
             .box(.25, 0, .25, .75, 14.0 / 16.0, .75, false)
             .model("kubejs:block/mundane_substrate")
-            .displayName(`§b炼金混合物 §6阶段:${i + 1}/12`)
+            .displayName(`§b炼金混合物 §6阶段:${i + 1}/9`)
             .renderType("cutout")
             .item(e => e.color(0, 0x394867).color(1, 0x072348))
             .tagBlock("minecraft:mineable/pickaxe")
@@ -321,7 +343,7 @@ onEvent('block.registry', event => {
     reagent(0x535353, 0x717171, "gunpowder", "Gunpowder", "§8易爆§r", "minecraft:gunpowder")
     reagent(0x529680, 0xA2CFC0, "prismarine", "Aquatic", "§3亲水§r", "minecraft:prismarine_shard")
     category()
-    reagent(0x9E72BE, 0xB7C9D1, "arcane", "Arcane", "§7神秘§r", "ars_nouveau:source_gem")
+    reagent(0x9E72BE, 0xB7C9D1, "amethyst", "Amethyst", "§d紫水晶§r", "minecraft:amethyst_shard")
     reagent(0x27A9BB, 0x2CC7C9, "apatite", "Apatite", "§3磷灰石§r", "thermal:apatite_dust")
     reagent(0x735A65, 0xB8AFAF, "niter", "Niter", "§6硝石§r", "thermal:niter_dust")
     reagent(0xB19E8F, 0xE7E2DB, "quartz", "Quartz", "§f下界石英§r", "thermal:quartz_dust")
@@ -334,6 +356,13 @@ onEvent('block.registry', event => {
     reagent(0x314F6F, 0x6C8998, "tin", "Tin", "§3锡元素§r", "thermal:tin_dust")
     reagent(0xD99413, 0xFAF25E, "gold", "Gold", "§e金元素§r", "thermal:gold_dust")
     reagent(0x734C3B, 0xA28960, "nickel", "Nickel", "§6镍元素§r", "thermal:nickel_dust")
+    category()
+    reagent(0x3C4859, 0x9FADB4, "silver", "Silver", "§3银元素§r", "thermal:silver_dust")
+    reagent(0x2F3061, 0x575E79, "lead", "Lead", "§9铅元素§r", "thermal:lead_dust")
+    reagent(0x969DC0, 0xCFCDE2, "aluminum", "Aluminum", "§f铝元素§r", "kubejs:aluminum_dust")
+    reagent(0x5E7095, 0x9BBBE3, "osmium", "Osmium", "§3锇元素§r", "kubejs:osmium_ingot")
+    reagent(0x8554A1, 0xAE91BF, "bismuth", "Bismuth", "§d铋元素§r", "kubejs:bismuth_ingot")
+    reagent(0x545156, 0xADA2A7, "silicon", "Silicon", "§7硅元素§r", "ae2:silicon")
     category()
     reagent(0xFC7781, 0xFCCED0, "cinnabar", "Cinnabar", "§c朱砂§r", "thermal:cinnabar")
     reagent(0x335DC1, 0x7395E7, "lapis", "Lapis Lazuli", "§1青金石§r", "minecraft:lapis_lazuli")

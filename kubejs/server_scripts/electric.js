@@ -543,7 +543,7 @@ onEvent('recipes', event => {
 
   //机械熔岩炉
   const superheated = [
-    { input: 'netherrack', output: 'minecraft:lava', count: 100 },
+    { input: 'netherrack', output: 'minecraft:lava', count: 125 },
     { input: 'magma_block', output: 'minecraft:lava', count: 500 },
     { input: 'ender_pearl', output: 'thermal:ender', count: 250 }
   ];
@@ -851,8 +851,8 @@ onEvent('recipes', event => {
     },
     result: [
       {
-        item: 'kubejs:aluminum_dust',
-        chance: 2.0
+        item: 'create:crushed_raw_aluminum',
+        chance: 3.0
       },
       {
         item: 'minecraft:netherrack',
@@ -868,12 +868,12 @@ onEvent('recipes', event => {
     },
     result: [
       {
-        item: 'kubejs:aluminum_dust',
+        item: 'create:crushed_raw_aluminum',
         chance: 1.25
       },
       {
         item: 'thermal:netherite_dust',
-        chance: 0.01
+        chance: 0.02
       }
     ],
     experience: 0.1

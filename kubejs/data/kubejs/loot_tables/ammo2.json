@@ -1,0 +1,79 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "kubejs:pistol_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 24
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "kubejs:shotgun_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "kubejs:rifle_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 24
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "kubejs:smg_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 24
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "kubejs:sniper_ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

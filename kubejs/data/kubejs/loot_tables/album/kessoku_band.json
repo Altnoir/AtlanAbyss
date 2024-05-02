@@ -1,0 +1,149 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c青春コンプレックス\",time:203,trans_name:\"青春症侯群\",url:\"https://music.163.com/song/media/outer/url?id=2003496500.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cひとりぼっち東京\",time:232,trans_name:\"孤独东京\",url:\"https://music.163.com/song/media/outer/url?id=2003496920.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cDistortion!!\",time:203,trans_name:\"失真\",url:\"https://music.163.com/song/media/outer/url?id=2003496921.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cひみつ基地\",time:232,trans_name:\"秘密基地\",url:\"https://music.163.com/song/media/outer/url?id=2003496922.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cギターと孤独と蒼い惑星\",time:228,trans_name:\"吉他与孤独与蓝色星球\",url:\"https://music.163.com/song/media/outer/url?id=2003496923.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cラブソングが歌えない\",time:188,trans_name:\"不会唱情歌\",url:\"https://music.163.com/song/media/outer/url?id=2003496501.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cあのバンド\",time:213,trans_name:\"那个乐队\",url:\"https://music.163.com/song/media/outer/url?id=2003496502.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cカラカラ\",time:265,trans_name:\"卡拉卡拉\",url:\"https://music.163.com/song/media/outer/url?id=2003496503.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c小さな海\",time:223,trans_name:\"小小的海\",url:\"https://music.163.com/song/media/outer/url?id=2003496924.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cなにが悪い\",time:227,trans_name:\"有什么不好\",url:\"https://music.163.com/song/media/outer/url?id=2003496925.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c忘れてやらない\",time:223,trans_name:\"绝不会忘记\",url:\"https://music.163.com/song/media/outer/url?id=2003496504.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c星座になれたら\",time:258,trans_name:\"若能化作星座\",url:\"https://music.163.com/song/media/outer/url?id=2003496926.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cフラッシュバッカー\",time:275,trans_name:\"往日重现\",url:\"https://music.163.com/song/media/outer/url?id=2003496927.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c転がる岩、君に朝が降る\",time:271,trans_name:\"翻转岩石，晨光洒落你身\",url:\"https://music.163.com/song/media/outer/url?id=2003496928.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd"
+        }
+      ]
+    }
+  ]
+}

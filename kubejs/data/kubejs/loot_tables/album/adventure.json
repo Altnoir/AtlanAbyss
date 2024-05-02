@@ -1,0 +1,189 @@
+{
+   "pools": [
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aIsometric (Intro)\",time:80,url:\"https://music.163.com/song/media/outer/url?id=31152264.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\",\"KYAN\"],name:\"§aYou're On\",time:192,url:\"https://music.163.com/song/media/outer/url?id=30953236.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aOK\",time:181,url:\"https://music.163.com/song/media/outer/url?id=31152265.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aLa Lune\",time:219,url:\"https://music.163.com/song/media/outer/url?id=36067093.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\",\"Passion Pit\"],name:\"§aPay No Mind\",time:249,url:\"https://music.163.com/song/media/outer/url?id=30569755.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aBeings\",time:215,url:\"https://music.163.com/song/media/outer/url?id=31152267.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aImperium\",time:198,url:\"https://music.163.com/song/media/outer/url?id=30953239.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aZephyr\",time:220,url:\"https://music.163.com/song/media/outer/url?id=31152268.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\",\"Mark Foster\"],name:\"§aNonsense\",time:225,url:\"https://music.163.com/song/media/outer/url?id=31152269.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\",\"Aquilo\"],name:\"§aInnocence\",time:224,url:\"https://music.163.com/song/media/outer/url?id=31152272.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aPixel Empire\",time:244,url:\"https://music.163.com/song/media/outer/url?id=31152271.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aHome\",time:225,url:\"https://music.163.com/song/media/outer/url?id=30953240.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aIcarus\",time:214,url:\"https://music.163.com/song/media/outer/url?id=30953237.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aFinale\",time:204,url:\"https://music.163.com/song/media/outer/url?id=30953238.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aThe City\",time:233,url:\"https://music.163.com/song/media/outer/url?id=30953241.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aCut the Kid\",time:197,url:\"https://music.163.com/song/media/outer/url?id=31152270.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\"],name:\"§aTechnicolor\",time:385,url:\"https://music.163.com/song/media/outer/url?id=31152274.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Madeon\",\"Vancouver Sleep Clinic\"],name:\"§aOnly Way Out\",time:226,url:\"https://music.163.com/song/media/outer/url?id=31152273.mp3\"}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          }
+        ]
+      }
+    ]
+}

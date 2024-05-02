@@ -87,7 +87,10 @@
     "item.kubejs.album_michelia": "《专辑》§5ミシュメリア",
     "item.kubejs.album_redraw": "《专辑》§cCOLOURS.03「Redraw」",
     "item.kubejs.album_nacollection4": "《专辑》§9Nacollection4",
-    "item.kubejs.album_unity_band": "《专辑》§4結束バンド",
+    "item.kubejs.album_kessoku_band": "《专辑》§4結束バンド",
+    "item.kubejs.album_mameyudoufu": "《专辑》§fMameyudoufu「作者精选」",
+    "item.kubejs.album_adventure": "《专辑》§aAdventure",
+    "item.kubejs.album_worlds": "《专辑》§bWorlds",
 
     "item.kubejs.halo_gashapon": "§e光环扭蛋",
     "item.kubejs.world_rune": "§9世界神符",
@@ -237,6 +240,8 @@
     "block.kubejs.nether_aluminum_ore": "下界铝矿石",
     "block.kubejs.end_bismuth_ore": "§d末地铋矿石",
     "block.kubejs.inversia_uranium_ore": "§a颠倒域铀矿石",
+    "block.kubejs.moon_osmium_ore": "§3月球锇矿石",
+    "block.kubejs.mercury_silver_ore": "水星银矿石",
     "block.kubejs.raw_aluminum_block": "粗铝块",
     "block.kubejs.raw_bismuth_block": "§d粗铋块",
     "block.kubejs.raw_uranium_block": "§a粗铀块",
@@ -295,15 +300,15 @@
     "ore.kubejs.enriched_lazuli":"§9富集青金石矿脉",
     "ore.kubejs.enriched_certus_quartz":"§b富集赛特斯石英矿脉",
 
-    "tooltip.kubejs.cinnabar_y":"§7生成高度：Y=§6§6-16§7§7至§6§648",
-    "tooltip.kubejs.niter_y":"§7生成高度：Y=§6-16§7至§664",
-    "tooltip.kubejs.nickel_y":"§7生成高度：Y=§6-40§7至§6120",
-    "tooltip.kubejs.ruby_y":"§7生成高度：Y=§6-144§7至§616",
-    "tooltip.kubejs.sapphire_y":"§7生成高度：Y=§6-144§7至§616",
-    "tooltip.kubejs.silver_y":"§7生成高度：Y=§6-60§7至§640",
-    "tooltip.kubejs.apatite_y":"§7生成高度：Y=§6-16§7至§696",
-    "tooltip.kubejs.sulfur_y":"§7生成高度：Y=§6-16§7至§632",
-    "tooltip.kubejs.tin_y":"§7生成高度：Y=§6-20§7至§660",
+    "tooltip.kubejs.cinnabar_y":"§7生成高度：Y=§6 -16§7§7至§648",
+    "tooltip.kubejs.niter_y":"§7生成高度：Y=§6 -16§7至§664",
+    "tooltip.kubejs.nickel_y":"§7生成高度：Y=§6 -40§7至§6120",
+    "tooltip.kubejs.ruby_y":"§7生成高度：Y=§6 -144§7至§616",
+    "tooltip.kubejs.sapphire_y":"§7生成高度：Y=§6 -144§7至§616",
+    "tooltip.kubejs.silver_y":"§7生成高度：Y=§6 -60§7至§640",
+    "tooltip.kubejs.apatite_y":"§7生成高度：Y=§6 -16§7至§696",
+    "tooltip.kubejs.tin_y":"§7生成高度：Y=§6 -20§7至§660",
+    "tooltip.kubejs.sulfur_y":"§7生成高度：Y=§6 16§7至§648",
     "tooltip.kubejs.aluminum_y":"§7生成高度：Y=§6 104§7至§6128",
     "tooltip.kubejs.lead_y":"§7生成高度：Y=§6 180§7至§6255",
     "tooltip.kubejs.uranium_y":"§7生成高度：Y=§6 188§7至§6255",
@@ -370,14 +375,15 @@
     "tooltip.kubejs.azusa1":"§6使§e枪械攻击§6概率触发§e雷击§6，并且",
     "tooltip.kubejs.azusa2":"§6额外造成§e150%§6伤害",
 
-    "tooltip.kubejs.shiroko":"§6破坏之环",
-    "tooltip.kubejs.shiroko1":"§6使§e枪械攻击§6额外造成§e爆炸",
+    "tooltip.kubejs.shiroko":"§6重锤之环",
+    "tooltip.kubejs.shiroko1":"§6使§e枪械攻击§6能吸收攻击者的§e动能",
 
     "tooltip.kubejs.mika":"§6狂风之环",
     "tooltip.kubejs.mika1":"§e枪械攻击§6可使受击者§e†升天†",
 
     "tooltip.kubejs.yuuka":"§6庇佑之环",
     "tooltip.kubejs.yuuka1":"§6使§e枪械攻击§6能为穿戴者提供§e护盾",
+    "tooltip.kubejs.yuuka2":"§6被攻击时能使攻击者发光",
 
     "tooltip.kubejs.koharu":"§6治愈之环",
     "tooltip.kubejs.koharu1":"§6使§e枪械攻击§6的一半伤害转为给穿戴者提供§e治疗§6效果",
@@ -388,15 +394,13 @@
 
     "tooltip.kubejs.midori":"§6破伤之环",
     "tooltip.kubejs.midori1":"§6如果受击者的当前生命值高于§e90%§6，则",
-    "tooltip.kubejs.midori2":"§6使§e枪械攻击§6提高§e10倍§6伤害",
+    "tooltip.kubejs.midori2":"§6使§e枪械攻击§6提高§e20倍§6伤害",
 
-    "tooltip.kubejs.momoi":"§6处决之环",
-    "tooltip.kubejs.momoi1":"§6如果受击者的当前生命值低于§e1/3§6，则",
-    "tooltip.kubejs.momoi2":"§6使§e枪械攻击§6能直接§e斩杀§6受击者",
+    "tooltip.kubejs.momoi":"§6火力之环",
+    "tooltip.kubejs.momoi1":"§6使§e敌对生物§6死亡时掉落§e弹药",
 
     "tooltip.kubejs.mari":"§6横扫之环",
     "tooltip.kubejs.mari1":"§6使§e枪械攻击§6造成范围伤害",
-    "tooltip.kubejs.mari2":"§6但伤害减半",
 
     "tooltip.kubejs.hoshino":"§6灾难之环",
     "tooltip.kubejs.hoshino1":"§6使§e枪械攻击§6额外造成§e流血§6效果",
@@ -420,7 +424,6 @@
 
     "tooltip.kubejs.purana":"§6幸运之环",
     "tooltip.kubejs.purana1":"§6使§e枪械攻击§6根据受击者血量造成伤害",
-    "tooltip.kubejs.purana2":"§6根据世界边界大小造成伤害",
  
     "item.kubejs.purin": "布丁",
     "subtitle.kubejs.ciallo":"Ciallo～(∠・ω< )⌒☆",

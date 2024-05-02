@@ -40,13 +40,51 @@ onEvent('worldgen.add', event => {
   });
 
   const { anchors } = event;
+
+  event.addOre(ore => {
+    ore.id = 'kubejs:moon_osmium_ore'
+    ore.biomes = {
+      id: 'beyond_earth:moon',
+      id: 'beyond_earth:moon_desert'
+    }
+    ore.addTarget('beyond_earth:moon_stone', 'kubejs:moon_osmium_ore') //月球锇矿
+
+    ore.count([16, 32])
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(9),
+        anchors.absolute(90)
+      )
+
+    ore.size = 9
+    ore.worldgenLayer = 'underground_ores'
+  });
+
+  event.addOre(ore => {
+    ore.id = 'kubejs:mercury_silver_ore'
+    ore.biomes = {
+      id: 'beyond_earth:mercury'
+    }
+    ore.addTarget('beyond_earth:mercury_stone', 'kubejs:mercury_silver_ore') //水星银矿
+
+    ore.count([24, 42])
+      .squared()
+      .triangleHeight(
+        anchors.aboveBottom(-32),
+        anchors.absolute(70)
+      )
+
+    ore.size = 9
+    ore.worldgenLayer = 'underground_ores'
+  });
+
   event.addOre(ore => {
     ore.id = 'kubejs:nether_sulfur_ore'
     ore.biomes = '^nether'
 
     ore.addTarget('#forge:netherrack', 'kubejs:nether_sulfur_ore')//下界硫矿
 
-    ore.count([16, 27])
+    ore.count([12, 18])
       .squared()
       .triangleHeight(
         anchors.aboveBottom(16),

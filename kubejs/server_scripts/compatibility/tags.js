@@ -18,6 +18,8 @@ onEvent('tags.items', event => {
 		//背包
 		['curios:back', 'thermal:satchel'],
 		['curios:back', 'thermal:potion_quiver'],
+		//下界合金粒
+		['forge:nuggets/netherite', 'tconstruct:netherite_nugget'],
 		//pnc钢
 		['forge:ingots/compressed_iron', 'pneumaticcraft:ingot_iron_compressed'],
 		//byd钢
@@ -220,6 +222,11 @@ onEvent('tags.items', event => {
 		//锇
 		['forge:ingots/osmium', 'kubejs:osmium_ingot'],//锭
 		['forge:plates/osmium', 'kubejs:osmium_sheet'],//板
+		['forge:ores', 'kubejs:moon_osmium_ore'],//矿石
+		['forge:ores/osmium', 'kubejs:moon_osmium_ore'],
+		//银
+		['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
+		['forge:ores/silver', 'kubejs:mercury_silver_ore'],
 	];
 	for (const [tag, item] of tagToAdd) {
 		event.add(tag, item);
@@ -298,7 +305,9 @@ onEvent('tags.blocks', event => {
 		/^thermal:fluid_cell/,
 		'thermal:charge_bench',
 		'thermal:tinker_bench',
-		/^functionalstorage:/
+		/^sophisticatedstorage:/,
+		/^kubejs:alchemy_/,
+		'#kubejs:substrates'
 	])
 })
 

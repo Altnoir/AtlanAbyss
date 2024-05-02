@@ -1,4 +1,8 @@
 onEvent('item.tooltip', tooltip => {
+    tooltip.addAdvanced('kubejs:nether_sulfur_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.sulfur_y'));
+        text.add(2, Text.translate('tooltip.kubejs.the_nether'));
+    });
     tooltip.addAdvanced('kubejs:nether_aluminum_ore', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.aluminum_y'));
         text.add(2, Text.translate('tooltip.kubejs.the_nether'));
@@ -148,7 +152,8 @@ onEvent('item.tooltip', tooltip => {
                 text.add(5, Text.of(' '));
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.yuuka1'));
-                text.add(8, Text.of(' '));
+                text.add(8, Text.translate('tooltip.kubejs.yuuka2'));
+                text.add(9, Text.of(' '));
             }
         }
         if (cmData === 11821906) {
@@ -202,8 +207,7 @@ onEvent('item.tooltip', tooltip => {
                 text.add(5, Text.of(' '));
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.momoi1'));
-                text.add(8, Text.translate('tooltip.kubejs.momoi2'));
-                text.add(9, Text.of(' '));
+                text.add(8, Text.of(' '));
             }
         }
         if (cmData === 11821910) {
@@ -216,8 +220,7 @@ onEvent('item.tooltip', tooltip => {
                 text.add(5, Text.of(' '));
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.mari1'));
-                text.add(8, Text.translate('tooltip.kubejs.mari2'));
-                text.add(9, Text.of(' '));
+                text.add(8, Text.of(' '));
             }
         }
         if (cmData === 11821911) {
@@ -300,9 +303,7 @@ onEvent('item.tooltip', tooltip => {
                 text.add(5, Text.of(' '));
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.purana1'));
-                text.add(8, Text.translate('tooltip.kubejs.alice3'));
-                text.add(9, Text.translate('tooltip.kubejs.purana2'));
-                text.add(10, Text.of(' '));
+                text.add(8, Text.of(' '));
             }
         }
     })

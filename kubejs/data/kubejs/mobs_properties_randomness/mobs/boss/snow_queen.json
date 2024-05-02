@@ -4,7 +4,7 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max health for Snow Queen",
-            "amount": 1800,
+            "amount": 1000,
             "operation": "addition"
         }
     ]

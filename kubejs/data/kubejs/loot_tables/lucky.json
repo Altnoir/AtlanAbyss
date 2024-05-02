@@ -63,11 +63,6 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "kubejs:lucky/power"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 4,
                     "name": "kubejs:lucky/redstone"
                 },
                 {
@@ -79,21 +74,6 @@
                     "type": "minecraft:loot_table",
                     "weight": 2,
                     "name": "kubejs:lucky/uma_card"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 2,
-                    "name": "kubejs:lucky/uma_crystal"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "kubejs:lucky/uma_skill_book"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "kubejs:lucky/uma_supply_book"
                 },
                 {
                     "type": "minecraft:loot_table",

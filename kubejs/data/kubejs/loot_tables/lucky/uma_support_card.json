@@ -8,6 +8,336 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:last_leg\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:heart_and_soul\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:deep_breaths\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:cooldown\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:low_health_heal\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:adv_low_health_heal\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:low_health_buff\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:adv_low_health_buff\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:nutritional_supplements\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:big_eater\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:serene\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill:\"umapyoi:steel_will\"}"
+            }
+          ],
+          "name": "umapyoi:skill_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "name": "umapyoi:speed_low_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "name": "umapyoi:stamina_low_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "name": "umapyoi:strength_low_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "name": "umapyoi:mentality_low_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "name": "umapyoi:wisdom_low_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ],
+          "name": "umapyoi:speed_mid_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ],
+          "name": "umapyoi:stamina_mid_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ],
+          "name": "umapyoi:strength_mid_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ],
+          "name": "umapyoi:mentality_mid_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ],
+          "name": "umapyoi:wisdom_mid_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ],
+          "name": "umapyoi:speed_high_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ],
+          "name": "umapyoi:stamina_high_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ],
+          "name": "umapyoi:strength_high_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ],
+          "name": "umapyoi:mentality_high_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ],
+          "name": "umapyoi:wisdom_high_item"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{maxDamage:8,ranking:\"sr\",support_card:\"umapyoi:adv_guts_card\"}"
             }
           ],
