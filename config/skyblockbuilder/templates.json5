@@ -1,0 +1,39 @@
+{
+  // The template which will be used for spawn only
+  // Example: 
+  // {
+  //     "name": "default",
+  //     "desc": "",
+  //     "file": "default.nbt",
+  //     "spawns": "default",
+  //     "direction": "south"
+  // }
+  "spawn": null,
+  
+  "spawns": {
+    "seablock": [
+      [ 5, 12, 5 ]
+    ],
+    "bigseablock": [
+      [ 7, 14, 7 ]
+    ]
+  },
+  
+  // The list of templates being available. The first entry is the default template.
+  "templates": [
+    {
+      "name": "Landing Cabin",
+      "desc": "",
+      "file": "landing_cabin.nbt",
+      "spawns": "seablock",
+      "direction": "south"
+    },
+    {
+      "name": "Big Landing Cabin",
+      "desc": "",
+      "file": "big_landing_cabin.nbt",
+      "spawns": "bigseablock",
+      "direction": "south"
+    }
+  ]
+}

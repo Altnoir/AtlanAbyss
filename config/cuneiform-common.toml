@@ -1,0 +1,27 @@
+
+[Commands]
+	#Allows teleporting between dimensions.
+	#Default: true
+	"/dimteleport" = true
+
+#Features related to log filtering.
+[Filtering]
+	#Default: true
+	Enabled = true
+	#The following loggers will NOT be filtered. Exceptions will still be handled normally.
+	"Logger Whitelist" = ["cuneiform"]
+	#The following loggers will be completely ignored. Exceptions will still be handled normally.
+	"Logger Blacklist" = []
+	#Any lines containing the following substrings will be removed from the logs.
+	"Substrings To Remove" = ["[net.minecraft.util.Util]: No data fixer registered for"]
+	#Any lines matching the following regular expressions will be removed from the logs.
+	#Note that the whole line doesn't have to match the regex, it just needs to contain a match in it.
+	#If you want to match the whole string, use ^ and $ symbols (see regex syntax for more info)
+	"Patterns To Remove" = []
+	#Stack traces from the following exceptions will be truncated, leaving only the message.
+	#The class must be exactly the same, child classes will not be filtered!
+	"Exceptions To Truncate" = ["com.google.gson.JsonSyntaxException"]
+	#Exceptions inheriting the following classes will be completely removed from the logs.
+	#The class must be exactly the same, child classes will not be filtered!
+	"Exceptions To Ignore" = []
+

@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Wed May 01 17:59:16 CST 2024
-=======
-#Thu Apr 18 04:48:19 CST 2024
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
-=======
-#Thu Apr 18 04:48:19 CST 2024
->>>>>>> 89bf69bf67d5aa47165a93e5145474db91541d0d
+#Sat May 11 22:27:31 CST 2024
 SUN_EG=0.80
 COLORED_LIGHTS=true
 INFO=3

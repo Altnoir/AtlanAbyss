@@ -38,7 +38,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cひみつ基地\",time:232,trans_name:\"秘密基地\",url:\"https://music.163.com/song/media/outer/url?id=2003496922.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cひみつ基地\",time:232,trans_name:\"秘密基地\",url:\"https://music.163.com/song/media/outer/url?id=2003496922.mp3\",vip:1b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -48,7 +48,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cギターと孤独と蒼い惑星\",time:228,trans_name:\"吉他与孤独与蓝色星球\",url:\"https://music.163.com/song/media/outer/url?id=2003496923.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cギターと孤独と蒼い惑星\",time:228,trans_name:\"吉他与孤独与蓝色星球\",url:\"https://music.163.com/song/media/outer/url?id=2003496923.mp3\",vip:1b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -58,7 +58,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cラブソングが歌えない\",time:188,trans_name:\"不会唱情歌\",url:\"https://music.163.com/song/media/outer/url?id=2003496501.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cラブソングが歌えない\",time:188,trans_name:\"不会唱情歌\",url:\"https://music.163.com/song/media/outer/url?id=2003496501.mp3\",vip:1b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -88,7 +88,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c小さな海\",time:223,trans_name:\"小小的海\",url:\"https://music.163.com/song/media/outer/url?id=2003496924.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c小さな海\",time:223,trans_name:\"小小的海\",url:\"https://music.163.com/song/media/outer/url?id=2003496924.mp3\",vip:1b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -108,7 +108,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c忘れてやらない\",time:223,trans_name:\"绝不会忘记\",url:\"https://music.163.com/song/media/outer/url?id=2003496504.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c忘れてやらない\",time:223,trans_name:\"绝不会忘记\",url:\"https://music.163.com/song/media/outer/url?id=2003496467.mp3\",vip:0b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -118,7 +118,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c星座になれたら\",time:258,trans_name:\"若能化作星座\",url:\"https://music.163.com/song/media/outer/url?id=2003496926.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c星座になれたら\",time:258,trans_name:\"若能化作星座\",url:\"https://music.163.com/song/media/outer/url?id=2003496926.mp3\",vip:1b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -128,7 +128,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cフラッシュバッカー\",time:275,trans_name:\"往日重现\",url:\"https://music.163.com/song/media/outer/url?id=2003496927.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§cフラッシュバッカー\",time:275,trans_name:\"往日重现\",url:\"https://music.163.com/song/media/outer/url?id=2003496927.mp3\",vip:1b}}"
             }
           ],
           "name": "netmusic:music_cd"
@@ -138,7 +138,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c転がる岩、君に朝が降る\",time:271,trans_name:\"翻转岩石，晨光洒落你身\",url:\"https://music.163.com/song/media/outer/url?id=2003496928.mp3\",vip:0b}}"
+              "tag": "{NetMusicSongInfo:{artists:[\"結束バンド\"],name:\"§c転がる岩、君に朝が降る\",time:271,trans_name:\"翻转岩石，晨光洒落你身\",url:\"https://music.163.com/song/media/outer/url?id=2003496765.mp3\",vip:0b}}"
             }
           ],
           "name": "netmusic:music_cd"

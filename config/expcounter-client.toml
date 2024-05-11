@@ -1,0 +1,25 @@
+
+["EXP Counter Config"]
+	#Show how much more exp until next level
+	showNextLevel = true
+	#Show total amount of exp
+	showTotal = true
+	#Color of the counter of exp until next level in decimal
+	#Range: > -2147483648
+	colNextLevel = 16776960
+	#Color of total exp counter in decimal
+	#Range: > -2147483648
+	colTotal = 16776960
+	#X axis position off centre of the counter of exp until next level
+	#Range: > -2147483648
+	posOffCentreNextLevel = -50
+	#Y axis position of the counter of exp until next level
+	#Range: > -2147483648
+	posYNextLevel = 30
+	#X axis position off centre of total exp counter
+	#Range: > -2147483648
+	posOffCentreTotal = 50
+	#Y axis position of total exp counter
+	#Range: > -2147483648
+	posYTotal = 30
+

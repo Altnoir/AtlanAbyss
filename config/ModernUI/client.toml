@@ -22,7 +22,7 @@
 	inventoryPause = false
 	#Framerate limit on window inactive (out of focus or minimized), 0 = no change.
 	#Range: 0 ~ 255
-	framerateInactive = 10
+	framerateInactive = 30
 	#Framerate limit on window minimized, 0 = same as framerate inactive.
 	#This value will be no greater than framerate inactive.
 	#Range: 0 ~ 255
@@ -33,17 +33,17 @@
 	#Master volume multiplier on window minimized, 1 = same as master volume inactive.
 	#This value will be no greater than master volume inactive.
 	#Range: 0.0 ~ 1.0
-	masterVolumeMinimized = 0.3499999940395355
+	masterVolumeMinimized = 0.25
 	#This option means that blur effect only applies for GUI screens with a background
 	#This is only meaningful when blur effect is enabled.
-	blurWithBackground = true
+	blurWithBackground = false
 
 #Tooltip Config
 [tooltip]
 	#Whether to enable Modern UI rounded tooltip style, or back to vanilla style.
 	enable = true
 	#Whether to use rounded tooltip shapes, or to use vanilla style.
-	roundedShape = true
+	roundedShape = false
 	#True to center the tooltip title if rendering an item's tooltip.
 	#Following lines are not affected by this option.
 	centerTitle = true

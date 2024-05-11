@@ -2,9 +2,10 @@
 	version: 13
 	title: "亚特兰深渊"
 	icon: "minecraft:amethyst_block"
+	disable_toast: true
 	default_reward_team: false
 	default_consume_items: false
-	default_autoclaim_rewards: "disabled"
+	default_autoclaim_rewards: "no_toast"
 	default_quest_shape: "circle"
 	default_quest_disable_jei: false
 	emergency_items_cooldown: 300

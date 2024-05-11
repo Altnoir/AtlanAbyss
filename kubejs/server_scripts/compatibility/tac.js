@@ -19,6 +19,9 @@ onEvent('recipes', event => {
 	}
 
 	remove('tac:762x25')
+	remove('tac:light_armor')
+	remove('tac:medium_steel_armor')
+	remove('tac:light_armor_plate')
 
 	let tacRecipes = (item, input) => {
 		let inputList = []

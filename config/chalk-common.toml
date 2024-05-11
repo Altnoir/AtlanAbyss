@@ -14,5 +14,5 @@ ChalkBoxGlowingEnabled = true
 ChalkBoxGlowingItemUses = 8
 #If enabled, Chalks (and Chalk Boxes) will generate in Dungeons, Abandoned Mineshafts, Planes and Savanna villages, Cartographer houses
 #Default: true
-ShouldGenerateInChests = true
+ShouldGenerateInChests = false
 

@@ -5,7 +5,7 @@
 		#Configure FPS Display mode
 		#Complete mode gives you min FPS count and average count
 		#Allowed Values: OFF, SIMPLE, ADVANCED
-		fpsDisplay = "SIMPLE"
+		fpsDisplay = "ADVANCED"
 		#Shows GPU and memory usage onto FPS display
 		#Allowed Values: OFF, ON, GPU, RAM
 		fpsDisplaySystem = "OFF"
@@ -28,11 +28,11 @@
 	[embeddiumplus.performance]
 		#Toggles JREI item rendering until searching
 		#Increases performance a little bit and cleans your screen when you don't want to use it
-		hideJREI = false
+		hideJREI = true
 		#Sets culling mode
 		#Reduces number of visible faces when the neighbor blocks are leaves
 		#Allowed Values: ALL, OFF
-		leavesCulling = "OFF"
+		leavesCulling = "ALL"
 		#Toggles Minecraft Fonts shadows
 		#Depending of the case may increase performance
 		#Gives a flat style text
@@ -44,14 +44,14 @@
 				#Configure horizontal max distance before cull entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
-				cullingMaxDistanceX = 16384
+				cullingMaxDistanceX = 4096
 				#Toggles distance culling for entities, doesn't affect monsters culling
 				#Check the options below
 				enable = true
 				#Configure vertical max distance before cull entities
 				#Value is raw
 				#Range: 0 ~ 512
-				cullingMaxDistanceY = 64
+				cullingMaxDistanceY = 32
 				#List of all Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:bat" - Ignores bats only
@@ -65,7 +65,7 @@
 					cullingMaxDistanceX = 16384
 					#Toggles distance culling for monsters (or hostile entities, whatever you want to call it), doesn't affect neutral/pacific entities
 					#Check the options above
-					enable = false
+					enable = true
 					#Configure vertical max distance before cull monster entities
 					#Value is raw
 					#Range: 0 ~ 512

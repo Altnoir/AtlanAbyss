@@ -1,0 +1,914 @@
+{
+	id: "71CAD9F36A7EDF83"
+	group: "62B0CA2D682AC9D6"
+	order_index: 1
+	filename: "71CAD9F36A7EDF83"
+	title: "传动应力"
+	icon: "create:andesite_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"与普通的合成方法不同，安山机壳的合成方法是需要在世界中交互获得。"
+				"您需要手持安山合金，对着已经去皮的任意原木进行右击便可合成安山机壳。"
+				"温馨提示：这一过程后面可通过机械手代替。"
+			]
+			dependencies: ["07835D33A0BA9FD1"]
+			hide: true
+			id: "0F1CD1C8804008B7"
+			tasks: [{
+				id: "4FE9B462C0797FE0"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "2F559B5D9D794000"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "27A398EC39DC9F94"
+			tasks: [{
+				id: "610F1FC0C1ACE44A"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+			rewards: [{
+				id: "261480EFADE0DBBB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -3.0d
+			shape: "rsquare"
+			dependencies: ["27A398EC39DC9F94"]
+			id: "62ABD67CFC26F88E"
+			tasks: [{
+				id: "292202280DB4F9F0"
+				type: "item"
+				item: "thermal:cured_rubber"
+			}]
+			rewards: [{
+				id: "7B24EB35E5C59185"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "27BBEB65EE647E74"
+			tasks: [{
+				id: "09DD98EAEF3FB5AD"
+				type: "item"
+				item: "thermal:device_fisher"
+			}]
+			rewards: [{
+				id: "31357061B57271E6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "6892758DB79A96E5"
+			tasks: [{
+				id: "45B89C69B09DB81F"
+				type: "item"
+				item: "thermal:device_composter"
+			}]
+			rewards: [{
+				id: "455257609316B517"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["小巧好用的磨粉机。"]
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "7026D208C4850E52"
+			tasks: [{
+				id: "6FF9D4C6E66E893A"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "7AD78382C0D954CB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"不像让家周围刷怪但又不想一个一个插火把？您需要：超级火把！"
+				"但又想让周围更亮一些？您还需要：野火灯笼！"
+			]
+			dependencies: ["7026D208C4850E52"]
+			id: "1430F7FB3DADD2C5"
+			tasks: [
+				{
+					id: "007F5D3361B0A49E"
+					type: "item"
+					item: "torchmaster:megatorch"
+				}
+				{
+					id: "54F857D891205C25"
+					type: "item"
+					item: "torchmaster:feral_flare_lantern"
+				}
+			]
+			rewards: [{
+				id: "0912000C2343F8DD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["水车，大水车和曲柄，机械动力的来源，当然还有风车和蒸汽引擎。"]
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "1F5A77E77CE7A69A"
+			tasks: [
+				{
+					id: "62FA00DB0D2212D3"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "7DB8FF2FE6037F04"
+					type: "item"
+					item: "create:large_water_wheel"
+				}
+				{
+					id: "601A28C002EED9A8"
+					type: "item"
+					item: "create:hand_crank"
+				}
+			]
+			rewards: [{
+				id: "1D957DDB75759BFE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"您的金属处理第一站。"
+				"温馨提示：在鼠标指针指着某些物品时，可以按住W查看思索教学。"
+			]
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "0D3B950AFB6E6BC2"
+			tasks: [{
+				id: "6E3DECA4C3BC0660"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "63306E64694A76AA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "烈焰人燃烧室"
+			x: 1.0d
+			y: 2.0d
+			description: [
+				"在您进入下界时，可以提前做个空的烈焰人燃烧室，当您在下界探险时，务必多留意烈焰人，当遇见烈焰人时您可以手持空的烈焰人燃烧室对着烈焰人右击便可进行捕获。"
+				"温馨提示：烈焰人刷怪笼具有无限的烈焰人。"
+			]
+			dependencies: ["0D3B950AFB6E6BC2"]
+			id: "2B26826B86BCA145"
+			tasks: [
+				{
+					id: "40022291572678D5"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "75E15B0F4439A4B1"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+			rewards: [{
+				id: "0407149776EA3F57"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["动力搅拌器是一种拥有多种功能的动力机械，如一些特殊的混合搅拌功能，自动炼药的功能和无序合成的功能。"]
+			dependencies: ["0D3B950AFB6E6BC2"]
+			id: "32F577B605FC8D35"
+			tasks: [{
+				id: "6C621F86344023B9"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "26C7CE5F72A1046D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["32F577B605FC8D35"]
+			id: "59AF238BE1A99F24"
+			tasks: [{
+				id: "4B51B55EE177FE99"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+			rewards: [{
+				id: "143937703BAD9644"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "可再生的下界合金！"
+			icon: "kubejs:eviltwisting_ingot"
+			disable_toast: true
+			x: 1.0d
+			y: 3.0d
+			shape: "hexagon"
+			description: ["现在，你可以通过生产噩梦缠怨锭来人工合成下界合金，进行简单粉碎处理有一半的概率可获得下界合金碎片，而当您进入电力时代之后，便可用感应炉直接合成出下界合金锭！"]
+			dependencies: ["32F577B605FC8D35"]
+			hide: true
+			id: "5CBFBFC9BDCDFA57"
+			tasks: [{
+				id: "7341D8E93B12B56C"
+				type: "item"
+				item: "kubejs:eviltwisting_ingot"
+			}]
+			rewards: [{
+				id: "61D92FD6BA1D4486"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["0D3B950AFB6E6BC2"]
+			id: "14A8E7E37136FB5C"
+			tasks: [{
+				id: "1FF2B98F37958438"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "1F7186064AE34426"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			shape: "rsquare"
+			description: [
+				"在这个世界中，至高木不会自然生成，但是"
+				"你可以通过普通树苗缠魂获得。"
+			]
+			dependencies: ["14A8E7E37136FB5C"]
+			id: "43E93D9FC2ED3F4D"
+			tasks: [{
+				id: "023B963A1AA50DCF"
+				type: "item"
+				item: "ars_nouveau:green_archwood_sapling"
+			}]
+			rewards: [{
+				id: "4CD17E91F38A2C9B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				" 在这个世界中，神秘花不会自然生成，但是"
+				"你可以用骨粉缠魂获得。"
+			]
+			dependencies: ["14A8E7E37136FB5C"]
+			id: "5D059C7F1A64ABB9"
+			tasks: [{
+				id: "0C84183C7A0C3F89"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [{
+				id: "09FC37D3817E84FA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["1814D0684AAB4731"]
+			id: "529FFF3330B1F7EC"
+			tasks: [{
+				id: "3BB6D184731FF22B"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+			rewards: [{
+				id: "3AB9B6453CC320E2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["59AF238BE1A99F24"]
+			hide: true
+			id: "1814D0684AAB4731"
+			tasks: [{
+				id: "60BA93DF4C5F44EC"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+			rewards: [{
+				id: "1B737ADB76362434"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["529FFF3330B1F7EC"]
+			id: "3C4BF44C30626F05"
+			tasks: [{
+				id: "045B159330B82401"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+			rewards: [{
+				id: "118910705BB405A2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			description: ["一种能完美模仿玩家右击和左击行为的动力机械！"]
+			dependencies: ["59AF238BE1A99F24"]
+			hide: true
+			id: "4786752F32FF31C0"
+			tasks: [{
+				id: "31D45CDCD5158D44"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "76AC6B13F34955FA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 6.0d
+			shape: "hexagon"
+			description: [
+				"催化剂通过序列组装概率获得。"
+				"催化剂可以用于元素炼金。"
+			]
+			dependencies: ["4786752F32FF31C0"]
+			id: "5BD88AB862216AA1"
+			tasks: [
+				{
+					id: "5FA1AA5FE91C38F8"
+					type: "item"
+					item: "kubejs:substrate_igneous"
+				}
+				{
+					id: "38E60F0E2A51CDCD"
+					type: "item"
+					item: "kubejs:substrate_herbal"
+				}
+				{
+					id: "452738BA1A04020C"
+					type: "item"
+					item: "kubejs:substrate_volatile"
+				}
+				{
+					id: "667D652F424FEC88"
+					type: "item"
+					item: "kubejs:substrate_crystal"
+				}
+				{
+					id: "6B305E0FCC696BEB"
+					type: "item"
+					item: "kubejs:substrate_metal"
+				}
+				{
+					id: "2EA2B01D8E0579F5"
+					type: "item"
+					item: "kubejs:substrate_gem"
+				}
+			]
+			rewards: [{
+				id: "4ED18D8B2CA8E52C"
+				type: "item"
+				item: "kubejs:alchemy_0"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["4786752F32FF31C0"]
+			id: "736880DB591C8A0A"
+			tasks: [{
+				id: "6746146993782451"
+				type: "item"
+				item: "kubejs:compressed_coal_block"
+			}]
+			rewards: [{
+				id: "76F72BA8351140C0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["32F577B605FC8D35"]
+			id: "7F1B208FCBFFF466"
+			tasks: [{
+				id: "70279C1E12F33E16"
+				type: "item"
+				item: "thermal:coal_coke"
+			}]
+			rewards: [{
+				id: "2A9F201CF6202141"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["07835D33A0BA9FD1"]
+			hide: true
+			id: "0EA2F9720106F822"
+			tasks: [{
+				id: "6BB06BCEDE75424B"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+			rewards: [{
+				id: "18C2A26A94EF64C1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "513EF3E112260A3F"
+			tasks: [{
+				id: "1C7B4853231CA59E"
+				type: "item"
+				item: "create_enchantment_industry:printer"
+			}]
+			rewards: [{
+				id: "56A67802022CC8C0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "79DE813508ECE200"
+			tasks: [{
+				id: "0B26FFB4FA6C8D17"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "55A0CB520401F087"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "5546AD2F2428157C"
+			tasks: [
+				{
+					id: "159B3AAFB92CA910"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "4E4D42943753F1D7"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+			]
+			rewards: [{
+				id: "40E335A9E4DAB706"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "5DA4D857EE2C106A"
+			tasks: [{
+				id: "4CC7F972558340E5"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "66F271DBB0D28057"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "52B83ADC3D18FA78"
+			tasks: [{
+				id: "25D9262057108B09"
+				type: "item"
+				item: "create_enchantment_industry:disenchanter"
+			}]
+			rewards: [{
+				id: "5D17B1ACCF312D13"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "6C56CA5D09136547"
+			tasks: [{
+				id: "39847A1B1EF6F118"
+				type: "item"
+				item: "create:item_drain"
+			}]
+			rewards: [{
+				id: "1F4B300CAE057715"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "35A013B670E4FB3D"
+			tasks: [{
+				id: "6CDFB6329AFAC438"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+			rewards: [{
+				id: "020DF86216891168"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["0EA2F9720106F822"]
+			id: "29709B35CE793268"
+			tasks: [{
+				id: "4CE96164D9FF34DC"
+				type: "item"
+				item: "create:steam_engine"
+			}]
+			rewards: [{
+				id: "5879767872CB2267"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["1814D0684AAB4731"]
+			id: "6D070E7955546249"
+			tasks: [{
+				id: "0BCD6A91B4166913"
+				type: "item"
+				item: "create:railway_casing"
+			}]
+			rewards: [{
+				id: "50FE67C1BD4B4346"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["0F1CD1C8804008B7"]
+			id: "3AA4506D8BD9B1CE"
+			tasks: [{
+				id: "01D119602AC108D7"
+				type: "item"
+				item: "create:rope_pulley"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 3.5d
+			shape: "hexagon"
+			dependencies: ["1814D0684AAB4731"]
+			id: "2452A8C073F40229"
+			tasks: [{
+				id: "4F792E5B55EACE62"
+				type: "item"
+				item: "create:elevator_pulley"
+			}]
+			rewards: [{
+				id: "7D2C2FF2B07C575D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 4.5d
+			shape: "hexagon"
+			dependencies: ["1814D0684AAB4731"]
+			id: "036EC478EB9C8A13"
+			tasks: [{
+				id: "116607A949489282"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+			rewards: [{
+				id: "4C21A50E79FEC41A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: 4.5d
+			shape: "hexagon"
+			dependencies: ["036EC478EB9C8A13"]
+			hide: true
+			id: "699C17A063EC4299"
+			tasks: [{
+				id: "4F7AACF7E170421D"
+				type: "item"
+				item: "create:linked_controller"
+			}]
+			rewards: [{
+				id: "101A2F62D42A8116"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: 5.0d
+			shape: "hexagon"
+			dependencies: ["6FCDF6D77BB86B96"]
+			id: "4BC557716D1C1120"
+			tasks: [{
+				id: "52B56ABC07E83FB3"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+			rewards: [{
+				id: "0ED2A9C43767ACC9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["4786752F32FF31C0"]
+			id: "6FCDF6D77BB86B96"
+			tasks: [{
+				id: "6E485A28404DA4E2"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["6FCDF6D77BB86B96"]
+			id: "68AC3D4C33B0F941"
+			tasks: [{
+				id: "6EB628C409642F7D"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+			rewards: [{
+				id: "246566C52AF6D456"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["6FCDF6D77BB86B96"]
+			id: "15A1AFADDDDBF7C3"
+			tasks: [{
+				id: "0AA0F0D534756364"
+				type: "item"
+				item: "toms_storage:ts.storage_terminal"
+			}]
+			rewards: [{
+				id: "1D49B7503B35B377"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 7.0d
+			shape: "hexagon"
+			dependencies: ["6D070E7955546249"]
+			hide: true
+			id: "29E9DD3E49AA48DF"
+			tasks: [{
+				id: "33A2B0B9C21C14DE"
+				type: "item"
+				item: "create:controls"
+			}]
+			rewards: [{
+				id: "4A49C882AC1D5CFB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			shape: "rsquare"
+			dependencies: ["6FCDF6D77BB86B96"]
+			id: "29FE9D9B9E0746D8"
+			tasks: [{
+				id: "71DF3E5E49680F15"
+				type: "item"
+				item: "immersive_aircraft:gyrodyne"
+			}]
+			rewards: [{
+				id: "495A10F81EEF58F9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["59AF238BE1A99F24"]
+			hide: true
+			id: "471A76695E1374AB"
+			tasks: [{
+				id: "4C5FE93F5530AFE9"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+			rewards: [{
+				id: "4CEEA913D84B5EB9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 5.5d
+			shape: "hexagon"
+			dependencies: ["1814D0684AAB4731"]
+			id: "4FA504EF881D517D"
+			tasks: [{
+				id: "15CD6C55C1E08D4E"
+				type: "item"
+				item: "create:content_observer"
+			}]
+			rewards: [{
+				id: "2940BB8A90808623"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			shape: "octagon"
+			description: [
+				"钢，一种碳与铁的合金，比铁更为坚固可靠。"
+				"您需要提前把煤炭处理为焦炭，并把焦炭与铁加热混合搅拌即可获得。"
+			]
+			dependencies: ["7F1B208FCBFFF466"]
+			id: "4C2C16BA5796BFD0"
+			tasks: [{
+				id: "7F7ABA73E1D85FA9"
+				type: "item"
+				item: "thermal:steel_ingot"
+			}]
+			rewards: [{
+				id: "01DFDCFC35A2C235"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

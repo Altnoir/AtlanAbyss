@@ -716,7 +716,7 @@ onEvent('recipes', event => {
 	],
 		stone,
 		[
-			pressing(stone, stone).processingTime(50)
+			pressing(stone, stone)
 		]).transitionalItem(stone).loops(2).id("atlanabyss:compressed_stone")
 
 	//空PCB
@@ -724,25 +724,37 @@ onEvent('recipes', event => {
 	remove('pneumaticcraft:pressure_chamber/empty_pcb')
 	sequenced_assembly([
 		'3x pneumaticcraft:empty_pcb'
-	],
-		epcb,
-		[
-			filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
-			filling(epcb, [epcb, Fluid.of('tconstruct:molten_gold', 500)]),
-			cutting(epcb, epcb).processingTime(100)
-		]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb")
+	], epcb, [
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_gold', 500)]),
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
+		cutting(epcb, epcb)
+	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_3")
+	//空PCB2
+	sequenced_assembly([
+		'9x pneumaticcraft:empty_pcb'
+	], epcb, [
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_silver', 500)]),
+		filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
+		cutting(epcb, epcb)
+	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_9")
 	//PCB
 	let pcb = 'pneumaticcraft:unassembled_pcb';
 	remove('pneumaticcraft:printed_circuit_board')
 	sequenced_assembly([
 		'pneumaticcraft:printed_circuit_board',
-	],
-		pcb,
-		[
-			deploying(pcb, [pcb, 'createaddition:capacitor']),
-			deploying(pcb, [pcb, 'createaddition:capacitor']),
-			deploying(pcb, [pcb, 'createaddition:gold_rod'])
-		]).transitionalItem(pcb).loops(10).id("atlanabyss:printed_circuit_board")
+	], pcb, [
+		deploying(pcb, [pcb, 'createaddition:capacitor']),
+		deploying(pcb, [pcb, 'createaddition:capacitor']),
+		deploying(pcb, [pcb, 'createaddition:gold_rod'])
+	]).transitionalItem(pcb).loops(10).id("atlanabyss:printed_circuit_board")
+	//PCB2
+	sequenced_assembly([
+		'pneumaticcraft:printed_circuit_board',
+	], pcb, [
+		deploying(pcb, [pcb, 'botania:terrasteel_nugget']),
+		deploying(pcb, [pcb, 'createaddition:capacitor']),
+		deploying(pcb, [pcb, 'createaddition:electrum_rod'])
+	]).transitionalItem(pcb).loops(3).id("atlanabyss:printed_circuit_board_3")
 	//装配平台
 	remove('pneumaticcraft:assembly_platform')
 	event.shaped('pneumaticcraft:assembly_platform', [
@@ -825,6 +837,8 @@ onEvent('recipes', event => {
 		"thermalResistance": 10
 	}).id("atlanabyss:heat_properties_plutonium_block")
 
+	//石油不能直接当燃料了
+	remove('createaddition:liquid_burning/crude_oil')
 	//石油处理
 	for (let i = 2; i < 5; i++) {
 		event.remove({ id: 'pneumaticcraft:refinery/oil_' + i })
@@ -897,7 +911,7 @@ onEvent('recipes', event => {
 	}
 	createMixingRecipe(['thermal:bitumen', Fluid.of('pneumaticcraft:lubricant', 250)], Fluid.of('thermal:redstone', 180), 'thermal:heavy_oil', 250, 'mixing_lubricant');
 	createMixingRecipe(Fluid.of('pneumaticcraft:yeast_culture', 250), '#forge:mushrooms', 'minecraft:water', 1000, 'yeast_culture');
-	createMixingRecipe(Fluid.of('pneumaticcraft:plastic', 1000), 'thermal:lightning_charge', 'pneumaticcraft:lpg', 100, 'lpg');
+	createMixingRecipe(Fluid.of('pneumaticcraft:plastic', 500), 'thermal:lightning_charge', 'pneumaticcraft:lpg', 50, 'lpg');
 	createMixingRecipe('pneumaticcraft:salmon_tempura', 'pneumaticcraft:raw_salmon_tempura', 'createaddition:seed_oil', 50, 'salmon_tempura');
 	//薯条
 	compacting(

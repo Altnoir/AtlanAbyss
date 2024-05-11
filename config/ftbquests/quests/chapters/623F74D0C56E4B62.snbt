@@ -1,0 +1,427 @@
+{
+	id: "623F74D0C56E4B62"
+	group: "03B4E601CC5A5BFE"
+	order_index: 4
+	filename: "623F74D0C56E4B62"
+	title: "仆之力"
+	icon: {
+		id: "touhou_little_maid:hakurei_gohei"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "4013EDE7973973A4"
+			tasks: [{
+				id: "164A7858036581B8"
+				type: "item"
+				item: {
+					id: "touhou_little_maid:entity_placeholder"
+					Count: 1b
+					tag: {
+						RecipeId: "touhou_little_maid:altar/spawn_box"
+					}
+				}
+			}]
+			rewards: [{
+				id: "69886B76F21488EB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["6CC3920A8B0C1B39"]
+			hide: true
+			id: "546362B6A9815FC2"
+			tasks: [{
+				id: "4B3977CC5A126399"
+				type: "item"
+				item: {
+					id: "touhou_little_maid:hakurei_gohei"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4545DD948EE478DF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "6C4C615731212B9F"
+			tasks: [{
+				id: "1291EF4BAE4450A5"
+				type: "item"
+				item: "touhou_little_maid:maid_bed"
+			}]
+			rewards: [{
+				id: "1B0534A7578ADF89"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "70F159509560D266"
+			tasks: [{
+				id: "19D89EA9545AD1B5"
+				type: "item"
+				item: "touhou_little_maid:maid_backpack_small"
+			}]
+			rewards: [{
+				id: "636BD5F1FDFAA4A7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["70F159509560D266"]
+			hide: true
+			id: "1A69530802EF7501"
+			tasks: [{
+				id: "645B53A8EC23396D"
+				type: "item"
+				item: "touhou_little_maid:maid_backpack_middle"
+			}]
+			rewards: [{
+				id: "59FF10720CF87181"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "0CBB798FCB366DBC"
+			tasks: [{
+				id: "4818D27461EA234F"
+				type: "item"
+				item: "touhou_little_maid:furnace_backpack"
+			}]
+			rewards: [{
+				id: "573916FF2A5AEC05"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "06203DAAAB7DB061"
+			tasks: [{
+				id: "4C729B8454BE63A8"
+				type: "item"
+				item: "touhou_little_maid:tank_backpack"
+			}]
+			rewards: [{
+				id: "4A4B7AD9C9052FEC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "0A13747B66EE1094"
+			tasks: [{
+				id: "703E037351350978"
+				type: "item"
+				item: "touhou_little_maid:gomoku"
+			}]
+			rewards: [{
+				id: "676D852E606FFDB2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["0A13747B66EE1094"]
+			hide: true
+			id: "2AD3A65EC2E5DDB5"
+			tasks: [{
+				id: "00D644D1FF437988"
+				type: "item"
+				item: "touhou_little_maid:keyboard"
+			}]
+			rewards: [{
+				id: "70C334EAC69C7BBB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["0A13747B66EE1094"]
+			hide: true
+			id: "779B91498D3A6F11"
+			tasks: [{
+				id: "65E4342BA4AA9655"
+				type: "item"
+				item: "touhou_little_maid:bookshelf"
+			}]
+			rewards: [{
+				id: "7F640E9E466D7CB0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0A13747B66EE1094"]
+			hide: true
+			id: "395195284751359D"
+			tasks: [{
+				id: "311E683E73D3FA92"
+				type: "item"
+				item: "touhou_little_maid:computer"
+			}]
+			rewards: [{
+				id: "5888B73324269957"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "7B8CD895F39DDCAD"
+			tasks: [{
+				id: "6F46A04AD65C6024"
+				type: "item"
+				item: "touhou_little_maid:trumpet"
+			}]
+			rewards: [{
+				id: "640FA6CB1C10A649"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["7B8CD895F39DDCAD"]
+			hide: true
+			id: "2BDF9D30D60453DF"
+			tasks: [{
+				id: "436C6410A95A8CB2"
+				type: "item"
+				item: "touhou_little_maid:red_fox_scroll"
+			}]
+			rewards: [{
+				id: "603068C5F4157C21"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["7B8CD895F39DDCAD"]
+			hide: true
+			id: "3B0B4371A8A40A0F"
+			tasks: [{
+				id: "159D7237B0C49985"
+				type: "item"
+				item: "touhou_little_maid:white_fox_scroll"
+			}]
+			rewards: [{
+				id: "1353E8EE47E63F7F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "5192735A1D38A6D1"
+			tasks: [{
+				id: "472C3EC33F40C5D2"
+				type: "item"
+				item: "touhou_little_maid:kappa_compass"
+			}]
+			rewards: [{
+				id: "571F661572F9D89C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["546362B6A9815FC2"]
+			hide: true
+			id: "01496985574DAE94"
+			tasks: [{
+				id: "3A80288DD1A5BF32"
+				type: "item"
+				item: "touhou_little_maid:wireless_io"
+			}]
+			rewards: [{
+				id: "4D82B21984D284B9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "1A40AE6D9D4EBBB0"
+			tasks: [{
+				id: "69422DCF77062D60"
+				type: "item"
+				item: "netmusic:music_player_backpack"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "3F14B92B62750E25"
+			tasks: [{
+				id: "200BA7518A38F118"
+				type: "item"
+				item: "touhou_little_maid:ender_chest_backpack"
+			}]
+			rewards: [{
+				id: "3C5A36DE3CF78E7E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 3.5d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "4B4CE5B87BD9C659"
+			tasks: [{
+				id: "5D46EE4D55019428"
+				type: "item"
+				item: "touhou_little_maid:maid_backpack_big"
+			}]
+			rewards: [{
+				id: "4D7E39D1B5CD7308"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["1A69530802EF7501"]
+			hide: true
+			id: "4383E6F9AECE858A"
+			tasks: [{
+				id: "4322A7A8EF8C904D"
+				type: "item"
+				item: "touhou_little_maid:crafting_table_backpack"
+			}]
+			rewards: [{
+				id: "1C1C8673495A9756"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["546362B6A9815FC2"]
+			id: "53CCBFBD0E44D08D"
+			tasks: [{
+				id: "0881E9E0D701659F"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2412931CADF49B08"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,833 @@
+{
+	id: "5E6AD9DEEBD4436B"
+	group: "62B0CA2D682AC9D6"
+	order_index: 2
+	filename: "5E6AD9DEEBD4436B"
+	title: "膨胀压力"
+	icon: "pneumaticcraft:compressed_iron_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"更强更硬的金属机壳，并且具有导热属性。"
+				"在初期，您或许需要使用辊压机反复辊压石头以获取压缩石。"
+			]
+			dependencies: ["70AE48835A764D8C"]
+			hide: true
+			id: "3671DBBFABCD1B71"
+			tasks: [{
+				id: "2BFFB61E4BD27ADC"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_block"
+			}]
+			rewards: [{
+				id: "303AC93B10D99233"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "区块加载器"
+			disable_toast: true
+			x: 1.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["在游戏里，当玩家离一个区域太远之后，那个区域的区块便会卸载掉（出生点区块除外），所以如果您有很重要的建筑不想要让它卸载，也许您可以试试：区块加载器！"]
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "0DC2728FDA93D63E"
+			tasks: [{
+				id: "3B82812670E74944"
+				type: "item"
+				item: "chunkloaders:basic_chunk_loader"
+			}]
+			rewards: [{
+				id: "11AFFAA1A0FE71F4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"在这个世界上，遍布都是资源，可惜以您的肉眼是无法观测的，如果您想要知道，探矿杖是您的不二之选！"
+				"温馨提示：油田也能探。"
+			]
+			dependencies: ["70AE48835A764D8C"]
+			hide: true
+			id: "082B263CE25C5598"
+			tasks: [{
+				id: "2EEED77BE5C992DA"
+				type: "item"
+				item: "createoreexcavation:vein_finder"
+			}]
+			rewards: [
+				{
+					id: "193C30026B0599AB"
+					type: "item"
+					item: "createoreexcavation:drilling_machine"
+				}
+				{
+					id: "4B8F2C8045CD7B11"
+					type: "item"
+					item: "createoreexcavation:extractor"
+				}
+			]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "6CD725A11ABEF296"
+			tasks: [{
+				id: "3359A264F57FDABD"
+				type: "item"
+				item: "itemcollectors:basic_collector"
+			}]
+			rewards: [{
+				id: "385F347EE599AB01"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "石油精炼"
+			x: -2.5d
+			y: 1.5d
+			description: [
+				"加工石油的必备套件。"
+				"使用热管给控制器传热以更快速的升温，升温速度根据发热方块决定，比如：高温液体，岩浆块，烈焰人燃烧室，火炉，篝火，烈焰网甚至是火把都是发热方块。"
+			]
+			dependencies: ["0F5A93488A644D11"]
+			id: "53351BAE32FDCD6A"
+			tasks: [{
+				id: "4306C454C52883BB"
+				type: "item"
+				item: "pneumaticcraft:refinery"
+			}]
+			rewards: [{
+				id: "2CB31A58C159B3C6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "石油，哪里有石油？"
+			disable_toast: true
+			x: -1.5d
+			y: 4.0d
+			description: ["这个世界上遍地都是石油，但大部分的石油肉眼并不可见，或许在炎热的沙漠地区会有少量的沥青沙，又或许实在找不到沙漠而打算使用血液人工合成石油，但这些并不是最优选择，您需要探矿杖，有了它，世界上所有的石油都将会被您窥探的一干二净。"]
+			dependencies: ["4C2C16BA5796BFD0"]
+			hide: true
+			id: "0BC087D2D6933F9C"
+			tasks: [{
+				id: "7D3F3E2C0A397DA3"
+				type: "item"
+				item: "thermal:crude_oil_bucket"
+			}]
+			rewards: [{
+				id: "67A4C146FBE5E2F0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: 5.5d
+			description: ["使用分液池从沙子中过滤出细沙，并使用辊压机压缩细沙获得。"]
+			dependencies: ["4C2C16BA5796BFD0"]
+			hide: true
+			id: "0BB8CB7E2D58A3DB"
+			tasks: [{
+				id: "40F1D4E0B5565FDB"
+				type: "item"
+				item: "thermal:blitz_rod"
+			}]
+			rewards: [{
+				id: "47D6871E7BDC4A9E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: 4.0d
+			description: ["一种能召唤闪电的催化物，合成塑料的必备配料。"]
+			dependencies: ["0BB8CB7E2D58A3DB"]
+			id: "101644FFFD0476B7"
+			tasks: [{
+				id: "01E27DFB90BAD145"
+				type: "item"
+				item: "thermal:lightning_charge"
+			}]
+			rewards: [{
+				id: "6E0C4E1114A727F2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: [
+				"0BC087D2D6933F9C"
+				"53351BAE32FDCD6A"
+				"101644FFFD0476B7"
+			]
+			id: "3909A2788335AB22"
+			tasks: [{
+				id: "7506E9BEABEB8369"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+			rewards: [{
+				id: "78FEE0A977C0D359"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: -3.0d
+			dependencies: ["4C2C16BA5796BFD0"]
+			hide: true
+			id: "0F39A47561B38A32"
+			tasks: [{
+				id: "5A8B91C55E7ECAD2"
+				type: "item"
+				item: "create:crushed_raw_aluminum"
+			}]
+			rewards: [{
+				id: "1DFF90AF6246ADA4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.5d
+			y: -1.5d
+			dependencies: ["0F39A47561B38A32"]
+			id: "0A056C2098731282"
+			tasks: [{
+				id: "04D4E493A53A5FCE"
+				type: "item"
+				item: "kubejs:aluminium_chip"
+			}]
+			rewards: [{
+				id: "334AD73460AC626B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.5d
+			y: 0.0d
+			description: ["一种又轻又软的金属。"]
+			dependencies: ["0A056C2098731282"]
+			id: "4172CB4FD4825D49"
+			tasks: [{
+				id: "43007E4A52F24896"
+				type: "item"
+				item: "kubejs:aluminum_ingot"
+			}]
+			rewards: [{
+				id: "52DDB273ED948BA9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 3.0d
+			description: ["网购开始！"]
+			dependencies: ["3909A2788335AB22"]
+			hide: true
+			id: "7A5CF3AE0FC40893"
+			tasks: [{
+				id: "712597DC1932ABA7"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+			rewards: [{
+				id: "2FF9E80F6F216C1E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["70AE48835A764D8C"]
+			id: "0F5A93488A644D11"
+			tasks: [{
+				id: "6C9DCBEBB3A934EC"
+				type: "item"
+				item: "kubejs:pressure_mechanism"
+			}]
+			rewards: [{
+				id: "3C4A82954651BB79"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["4C2C16BA5796BFD0"]
+			hide: true
+			id: "70AE48835A764D8C"
+			tasks: [{
+				id: "40B24D47450C1EFC"
+				type: "item"
+				item: "pneumaticcraft:compressed_stone"
+			}]
+			rewards: [{
+				id: "4B60342CB60E7BB3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "4A905E7271A27618"
+			tasks: [{
+				id: "60C5F5ABAF2887C4"
+				type: "item"
+				item: "pneumaticcraft:vacuum_pump"
+			}]
+			rewards: [{
+				id: "1C4310308AE06AF3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["7A5CF3AE0FC40893"]
+			id: "4370C227E41AF2C1"
+			tasks: [{
+				id: "1A11D77507F4444A"
+				type: "item"
+				item: "pneumaticcraft:pcb_blueprint"
+			}]
+			rewards: [{
+				id: "478AD1BF63B61B64"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "3169E0E1F58FC8BE"
+			tasks: [{
+				id: "55C883FEEFEE2CCA"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_wall"
+			}]
+			rewards: [{
+				id: "77F45D4688D2BB0D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -1.5d
+			shape: "hexagon"
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "35FDD4A7D68ED0C2"
+			tasks: [{
+				id: "2766803C3A7438DA"
+				type: "item"
+				item: "pneumaticcraft:spawner_extractor"
+			}]
+			rewards: [{
+				id: "7EDBE82F097488D9"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["4370C227E41AF2C1"]
+			id: "31033ECC25EFB6E2"
+			tasks: [{
+				id: "51B28B1AB44F52A3"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+			rewards: [{
+				id: "17112E719E6F2482"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "779FCA3B54F33323"
+			tasks: [{
+				id: "71DCCFF00367EE8C"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_interface"
+			}]
+			rewards: [{
+				id: "597BE029BD1D88D7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "35D1436E9EA94C89"
+			tasks: [{
+				id: "4347163178FD46A3"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_valve"
+			}]
+			rewards: [{
+				id: "615BBA54EC932312"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["3671DBBFABCD1B71"]
+			id: "10699AD6804D40DD"
+			tasks: [{
+				id: "0D9F65720E338094"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_glass"
+			}]
+			rewards: [{
+				id: "47879F30AAD8CC4C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 2.0d
+			dependencies: ["53351BAE32FDCD6A"]
+			hide: true
+			id: "4500B18440DFC874"
+			tasks: [{
+				id: "6680365017764DC2"
+				type: "item"
+				item: "pneumaticcraft:refinery_output"
+			}]
+			rewards: [{
+				id: "65700D03DE65B5E0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: -2.0d
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "103532B32276929F"
+			tasks: [{
+				id: "6E0008CE85F07516"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+			rewards: [{
+				id: "57DC3535B951D525"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "34C70F570536D296"
+			tasks: [{
+				id: "3A999D0FDA5F7B7A"
+				type: "item"
+				item: "pneumaticcraft:air_compressor"
+			}]
+			rewards: [{
+				id: "3E93B62DA4CE9E27"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: 5.0d
+			dependencies: ["474FD08A21970A69"]
+			id: "1E9885F04785A081"
+			tasks: [{
+				id: "190D5F74CB200AAB"
+				type: "item"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+			rewards: [{
+				id: "700FF72913BF00D4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: 7.0d
+			dependencies: ["474FD08A21970A69"]
+			id: "1801DDAA569CEC3E"
+			tasks: [{
+				id: "0A7D285BE1A463FC"
+				type: "item"
+				item: "pneumaticcraft:advanced_air_compressor"
+			}]
+			rewards: [{
+				id: "3B807D71EAE71117"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "42720CAE1E7E73D6"
+			tasks: [{
+				id: "2B11094E39150040"
+				type: "item"
+				item: "pneumaticcraft:etching_tank"
+			}]
+			rewards: [{
+				id: "6738FC54C954F407"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "165CF390DD2FBA40"
+			tasks: [{
+				id: "5B864CF42A9ABF5B"
+				type: "item"
+				item: "pneumaticcraft:aerial_interface"
+			}]
+			rewards: [{
+				id: "721B0AD95EA08405"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: 1.0d
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "360AF22B07FFD5D7"
+			tasks: [{
+				id: "3A3C5C89577E3A95"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+			rewards: [{
+				id: "1C7799A685863CF8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["0F5A93488A644D11"]
+			hide: true
+			id: "4F24B931175BF217"
+			tasks: [{
+				id: "5D348277A6C21A47"
+				type: "item"
+				item: "pneumaticcraft:fluid_mixer"
+			}]
+			rewards: [{
+				id: "71CDFAE12FC9A37A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: 4.5d
+			dependencies: ["3909A2788335AB22"]
+			hide: true
+			id: "474572481FF74155"
+			tasks: [{
+				id: "46DBFC0AFA09C03B"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+			rewards: [{
+				id: "41367FE853D61242"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 5.5d
+			dependencies: ["474572481FF74155"]
+			id: "2399BBBF99DB6B35"
+			tasks: [{
+				id: "4707E11C3CB692DA"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+			rewards: [{
+				id: "41B376C4389A0073"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["2399BBBF99DB6B35"]
+			id: "709388647514D4FE"
+			tasks: [{
+				id: "06E3C17D07F45DC7"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+			rewards: [{
+				id: "161B71AC0459D372"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 7.5d
+			dependencies: ["709388647514D4FE"]
+			id: "2E492AAF673CFC7E"
+			tasks: [{
+				id: "31562F7095D27B1B"
+				type: "item"
+				item: "pneumaticcraft:assembly_platform"
+			}]
+			rewards: [{
+				id: "3B9470C1588E1591"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 7.0d
+			dependencies: ["709388647514D4FE"]
+			id: "039CB78661E00C16"
+			tasks: [{
+				id: "5AA09DE5CC3679F9"
+				type: "item"
+				item: "pneumaticcraft:assembly_io_unit_import"
+			}]
+			rewards: [{
+				id: "7F8C0726917C35D0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 5.0d
+			dependencies: ["709388647514D4FE"]
+			id: "157A102AC00902B5"
+			tasks: [{
+				id: "46955EB02F29C5FF"
+				type: "item"
+				item: "pneumaticcraft:assembly_io_unit_export"
+			}]
+			rewards: [{
+				id: "6424CE23145C9D11"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 6.0d
+			dependencies: ["709388647514D4FE"]
+			id: "7A3F23841E77B65B"
+			tasks: [{
+				id: "71A9A9268E14AF3E"
+				type: "item"
+				item: "pneumaticcraft:assembly_laser"
+			}]
+			rewards: [{
+				id: "0706D739F126484F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["709388647514D4FE"]
+			id: "26346CCD1EB9DB69"
+			tasks: [{
+				id: "12726B3C3493B95B"
+				type: "item"
+				item: "pneumaticcraft:assembly_controller"
+			}]
+			rewards: [{
+				id: "3AD56AF73117367B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["5803B6734364460B"]
+			id: "258E4030AEDA19D5"
+			tasks: [{
+				id: "0413A17DBA9A152E"
+				type: "item"
+				item: "pneumaticcraft:assembly_drill"
+			}]
+			rewards: [{
+				id: "4B3071188B345524"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 6.0d
+			dependencies: ["7A3F23841E77B65B"]
+			id: "474FD08A21970A69"
+			tasks: [{
+				id: "27FAE9E6C8E899CA"
+				type: "item"
+				item: "pneumaticcraft:advanced_pressure_tube"
+			}]
+			rewards: [{
+				id: "7F7768F38F607D79"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			shape: "octagon"
+			dependencies: [
+				"3909A2788335AB22"
+				"449654DC7648F05B"
+			]
+			id: "2896AD9C74EA52FF"
+			tasks: [{
+				id: "06AC0FF9EA50EAF3"
+				type: "item"
+				item: "kubejs:thermal_mechanism"
+			}]
+			rewards: [{
+				id: "3C41E10150190BB3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.5d
+			y: 1.5d
+			dependencies: ["4172CB4FD4825D49"]
+			id: "449654DC7648F05B"
+			tasks: [{
+				id: "643B24FAAF7DC5F3"
+				type: "item"
+				item: "kubejs:aluminum_sheet"
+			}]
+			rewards: [{
+				id: "3066578DC30B5670"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["474FD08A21970A69"]
+			id: "5803B6734364460B"
+			tasks: [{
+				id: "4D0EF20EF7C0EE67"
+				type: "item"
+				item: "pneumaticcraft:drill_bit_diamond"
+			}]
+			rewards: [{
+				id: "0E0877E2747C1795"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,440 @@
+{
+	id: "1233E757E33D4173"
+	group: "03B4E601CC5A5BFE"
+	order_index: 2
+	filename: "1233E757E33D4173"
+	title: "书之力"
+	icon: "minecraft:bookshelf"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["7FEC216969A7D841"]
+			hide: true
+			id: "4A0994537604B652"
+			tasks: [{
+				id: "619A9748F325E058"
+				type: "item"
+				item: "minecraft:bookshelf"
+			}]
+			rewards: [{
+				id: "7C7FC86D896C0D23"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["4A0994537604B652"]
+			id: "19463C09E694291E"
+			tasks: [{
+				id: "2B483A397BDD0519"
+				type: "item"
+				item: "apotheosis:hellshelf"
+			}]
+			rewards: [{
+				id: "212195F5179DB38E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["19463C09E694291E"]
+			id: "6794B516F70C78BA"
+			tasks: [{
+				id: "3FB34C0E77D0485A"
+				type: "item"
+				item: "apotheosis:infused_hellshelf"
+			}]
+			rewards: [{
+				id: "1A8158D651CF1F07"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["6794B516F70C78BA"]
+			id: "593565DEA21D8028"
+			tasks: [{
+				id: "682DA98F4932EA36"
+				type: "item"
+				item: "apotheosis:blazing_hellshelf"
+			}]
+			rewards: [{
+				id: "28B468D8F6E07E32"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["6794B516F70C78BA"]
+			id: "40713F0214CE6C35"
+			tasks: [{
+				id: "1D865EDE12A82985"
+				type: "item"
+				item: "apotheosis:glowing_hellshelf"
+			}]
+			rewards: [{
+				id: "74838A6D5779B246"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["6794B516F70C78BA"]
+			id: "250397B5B02572DD"
+			tasks: [{
+				id: "0B0714A7503444B5"
+				type: "item"
+				item: "apotheosis:sightshelf"
+			}]
+			rewards: [{
+				id: "3775D267DC640033"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			dependencies: ["6794B516F70C78BA"]
+			id: "7556C1D2BA2BDC92"
+			tasks: [{
+				id: "31DA421D9BAA4840"
+				type: "item"
+				item: "apotheosis:library"
+			}]
+			rewards: [{
+				id: "2D7EC81320A8E298"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			dependencies: ["4A0994537604B652"]
+			id: "2CBF9D04AB9B96B2"
+			tasks: [{
+				id: "088A2944F402628D"
+				type: "item"
+				item: "apotheosis:seashelf"
+			}]
+			rewards: [{
+				id: "3F2A6A25F20609E8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			dependencies: ["2CBF9D04AB9B96B2"]
+			id: "2B19633C90D71B51"
+			tasks: [{
+				id: "70A94A05F719CE6B"
+				type: "item"
+				item: "apotheosis:infused_seashelf"
+			}]
+			rewards: [{
+				id: "78020B7D83F4E2BE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["2B19633C90D71B51"]
+			id: "4A97C26032735744"
+			tasks: [{
+				id: "44FB1F91D0512CC9"
+				type: "item"
+				item: "apotheosis:crystal_seashelf"
+			}]
+			rewards: [{
+				id: "76B0E25FF9E3BFCF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["2B19633C90D71B51"]
+			id: "3540BBD7C1DBA0C0"
+			tasks: [{
+				id: "43D395382BBD10B3"
+				type: "item"
+				item: "apotheosis:heart_seashelf"
+			}]
+			rewards: [{
+				id: "29189AA69E6D9E92"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["2B19633C90D71B51"]
+			id: "19E909FF740778ED"
+			tasks: [{
+				id: "1ABA6FD7144F2A25"
+				type: "item"
+				item: "apotheosis:rectifier"
+			}]
+			rewards: [{
+				id: "31FD832C8016AA87"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "081C1B0ED5BCB99D"
+			tasks: [{
+				id: "49D0E29D16B53595"
+				type: "item"
+				item: "apotheosis:endshelf"
+			}]
+			rewards: [{
+				id: "55283787E8360DDC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["081C1B0ED5BCB99D"]
+			hide: true
+			id: "7F013ED96B0D5B34"
+			tasks: [{
+				id: "55948E9B9C202216"
+				type: "item"
+				item: "apotheosis:draconic_endshelf"
+			}]
+			rewards: [{
+				id: "1973CDB82DBD262B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -1.0d
+			dependencies: ["081C1B0ED5BCB99D"]
+			hide: true
+			id: "09A56B79A92A05D8"
+			tasks: [{
+				id: "773C398B4454DFCC"
+				type: "item"
+				item: "apotheosis:pearl_endshelf"
+			}]
+			rewards: [{
+				id: "08B006B6A6200478"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "3AF7DC3B785B4643"
+			tasks: [{
+				id: "101C6C112C90BFCF"
+				type: "item"
+				item: "apotheosis:beeshelf"
+			}]
+			rewards: [{
+				id: "468ACD35838DB97A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "0D6A7E4EF2CD8459"
+			tasks: [{
+				id: "25A72EE30E72FFD8"
+				type: "item"
+				item: "apotheosis:melonshelf"
+			}]
+			rewards: [{
+				id: "281B7E952571201D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["19E909FF740778ED"]
+			id: "3FF6C3FBA0B617ED"
+			tasks: [{
+				id: "252DC6E4D90ACE36"
+				type: "item"
+				item: "apotheosis:rectifier_t2"
+			}]
+			rewards: [{
+				id: "55280C3F71B23410"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			dependencies: ["3FF6C3FBA0B617ED"]
+			id: "3DF856CA009E0063"
+			tasks: [{
+				id: "3267293DF905F584"
+				type: "item"
+				item: "apotheosis:rectifier_t3"
+			}]
+			rewards: [{
+				id: "109859FB16EF8467"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			dependencies: ["250397B5B02572DD"]
+			id: "2580F86603EBCA5D"
+			tasks: [{
+				id: "47BB3E73EBA63C1F"
+				type: "item"
+				item: "apotheosis:sightshelf_t2"
+			}]
+			rewards: [{
+				id: "621DA49A1080E6FA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			dependencies: ["7556C1D2BA2BDC92"]
+			id: "2CFF0661C0866156"
+			tasks: [{
+				id: "04D7E791E5CCD6D4"
+				type: "item"
+				item: "apotheosis:ender_library"
+			}]
+			rewards: [{
+				id: "68600DA623623E3D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["4A0994537604B652"]
+			hide: true
+			id: "629B75A3BB761759"
+			tasks: [{
+				id: "1ABCE0101128BD4B"
+				type: "item"
+				item: "enchantinginfuser:enchanting_infuser"
+			}]
+			rewards: [{
+				id: "1A87CC9E772CF469"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"把宝石粉碎即可获得，一般用铁砧砸。"
+				"宝石获取来源：暮色森林中，击杀神化boss百分百掉落。"
+			]
+			dependencies: ["4A0994537604B652"]
+			id: "4CC98E508B360BA6"
+			tasks: [{
+				id: "16B8F4B29C26C6D2"
+				type: "item"
+				item: "apotheosis:gem_dust"
+			}]
+			rewards: [{
+				id: "49143BD3C405D595"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["4CC98E508B360BA6"]
+			hide: true
+			id: "21E66FCDF2FD6F62"
+			tasks: [{
+				id: "16E9CEB65B81DD5F"
+				type: "item"
+				item: "apotheosis:reforging_table"
+			}]
+			rewards: [{
+				id: "755F67EEAFEC944C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4CC98E508B360BA6"]
+			hide: true
+			id: "2648EE07A21ACD7A"
+			tasks: [{
+				id: "283865850194841B"
+				type: "item"
+				item: "apotheosis:salvaging_table"
+			}]
+			rewards: [{
+				id: "20B6827BDB091F9F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

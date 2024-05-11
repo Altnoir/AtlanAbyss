@@ -1,0 +1,939 @@
+{
+	id: "33B154299C1285A3"
+	group: "62B0CA2D682AC9D6"
+	order_index: 4
+	filename: "33B154299C1285A3"
+	title: "数据算力"
+	icon: "ae2:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["0995E7B507258131"]
+			id: "147EA282B12BBF98"
+			tasks: [{
+				id: "1AC1F47FA587D83B"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "124C8BE6C766652C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["147EA282B12BBF98"]
+			id: "7948C4200A09FE37"
+			tasks: [{
+				id: "73B2B1F69A1DDFC2"
+				type: "item"
+				item: "ae2:drive"
+			}]
+			rewards: [{
+				id: "2C60C9F2A384844B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["147EA282B12BBF98"]
+			id: "0DF60356F33E6CB3"
+			tasks: [{
+				id: "7FBE534ADE15F51F"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+			rewards: [{
+				id: "3EC79E0CAE6615A4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["20B36D04B937B5FA"]
+			hide: true
+			id: "7CE9CA55C7700FF5"
+			tasks: [{
+				id: "74228AECB85D2FBF"
+				type: "item"
+				item: "ae2:pattern_encoding_terminal"
+			}]
+			rewards: [{
+				id: "2ABE8CEFDFB0C4C7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["147EA282B12BBF98"]
+			id: "20C4673FF6970BA3"
+			tasks: [{
+				id: "7C596B8ECEF54ECB"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+			}]
+			rewards: [{
+				id: "6914B9A6A7A97885"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["7948C4200A09FE37"]
+			hide: true
+			id: "4745BB3D40BF9CE4"
+			tasks: [{
+				id: "1D63B38D9EF55600"
+				type: "item"
+				item: "ae2:cell_component_1k"
+			}]
+			rewards: [{
+				id: "29C383EE2CC4275E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4745BB3D40BF9CE4"]
+			hide: true
+			id: "0F30D5617BDA87BA"
+			tasks: [{
+				id: "5B208ABEF6163D9A"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "51859C09F76FA565"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["4745BB3D40BF9CE4"]
+			hide: true
+			id: "1B5CAE5435E0E8B8"
+			tasks: [{
+				id: "1E92D5AEC1A6C1FC"
+				type: "item"
+				item: "ae2:1k_crafting_storage"
+			}]
+			rewards: [{
+				id: "5B7444019BA1EC08"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["147EA282B12BBF98"]
+			id: "3DCFFE814D416FDE"
+			tasks: [{
+				id: "713DF431F3C3F009"
+				type: "item"
+				item: "ae2:interface"
+			}]
+			rewards: [{
+				id: "10A05E93F44ABFEF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["147EA282B12BBF98"]
+			id: "3293FA204D6F3720"
+			tasks: [{
+				id: "5CD24B1D0765A275"
+				type: "item"
+				item: "ae2:pattern_provider"
+			}]
+			rewards: [{
+				id: "6A16B0319493751E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["147EA282B12BBF98"]
+			id: "61613B11E2742065"
+			tasks: [{
+				id: "06A3830FF3869241"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+			rewards: [{
+				id: "5FAC0817079E0D74"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4745BB3D40BF9CE4"]
+			hide: true
+			id: "1906C9628AEC2055"
+			tasks: [{
+				id: "01DE2B2ECAA71575"
+				type: "item"
+				item: "ae2:io_port"
+			}]
+			rewards: [{
+				id: "375830637BCB5DFD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["3E644C085DE2A8F8"]
+			hide: true
+			id: "183FAAA841A3683E"
+			tasks: [{
+				id: "7433AA4DF5560AE1"
+				type: "item"
+				item: "ae2:cell_component_256k"
+			}]
+			rewards: [{
+				id: "53C5F2014FCBE4EE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "遇见线缆无法渲染的解决办法"
+			icon: "ae2:fluix_glass_cable"
+			disable_toast: true
+			x: -1.0d
+			y: -2.0d
+			shape: "hexagon"
+			description: [
+				"如有遇见线缆无法正常渲染的情况下，请："
+				"打开资源包，禁用\\nMC Connected CTM\\nGlass Panes CTM\\n这俩材质包即可。"
+			]
+			dependencies: ["20C4673FF6970BA3"]
+			hide: true
+			id: "28048A5402B9DC0A"
+			tasks: [{
+				id: "4BB041581B40EC9D"
+				type: "checkmark"
+				title: "我知道了"
+			}]
+			rewards: [{
+				id: "38C564F7C8406F73"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["1B5CAE5435E0E8B8"]
+			hide: true
+			id: "58E36B38E77E89F1"
+			tasks: [{
+				id: "15A00F1F0989827A"
+				type: "item"
+				item: "ae2:4k_crafting_storage"
+			}]
+			rewards: [{
+				id: "3F4B8A256C176E46"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["58E36B38E77E89F1"]
+			hide: true
+			id: "3DE92062F671EE08"
+			tasks: [{
+				id: "493264F3DE8AAA18"
+				type: "item"
+				item: "ae2:16k_crafting_storage"
+			}]
+			rewards: [{
+				id: "1A6C5B1EB225E878"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["3DE92062F671EE08"]
+			hide: true
+			id: "164ED5FAD196F445"
+			tasks: [{
+				id: "138067FA3C53AFD6"
+				type: "item"
+				item: "ae2:64k_crafting_storage"
+			}]
+			rewards: [{
+				id: "4D02F053EFC4AC6C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -8.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["164ED5FAD196F445"]
+			hide: true
+			id: "0E91558731238C4D"
+			tasks: [{
+				id: "3DC8E3D4F09EF408"
+				type: "item"
+				item: "ae2:256k_crafting_storage"
+			}]
+			rewards: [{
+				id: "6BB7803BCAB4CDF8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["0F30D5617BDA87BA"]
+			hide: true
+			id: "32308E4692F299DD"
+			tasks: [{
+				id: "34A8A4FEC2F601C7"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_4k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "3F70A53A1C619F10"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["32308E4692F299DD"]
+			hide: true
+			id: "77B8B98C2CBF903F"
+			tasks: [{
+				id: "4BB6349E94077588"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_16k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "54BFCE12D9537072"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -6.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["77B8B98C2CBF903F"]
+			hide: true
+			id: "16385B8D88ABC8A3"
+			tasks: [{
+				id: "3922B7C20DB83783"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_64k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "29462EE9CFEA6156"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -7.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["16385B8D88ABC8A3"]
+			hide: true
+			id: "388CA578B96A635B"
+			tasks: [{
+				id: "3357339A24617C4C"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_256k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6184E60BF0076A10"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["4745BB3D40BF9CE4"]
+			hide: true
+			id: "57B94C08AF95CA0B"
+			tasks: [{
+				id: "164872C92164D173"
+				type: "item"
+				item: "ae2:cell_component_4k"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -5.0d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["1C4C37304A41EA29"]
+			hide: true
+			id: "3E644C085DE2A8F8"
+			tasks: [{
+				id: "3A93B441B7D20FDB"
+				type: "item"
+				item: "ae2:cell_component_64k"
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["57B94C08AF95CA0B"]
+			hide: true
+			id: "1C4C37304A41EA29"
+			tasks: [{
+				id: "2D47016AFE731340"
+				type: "item"
+				item: "ae2:cell_component_16k"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			shape: "octagon"
+			dependencies: [
+				"679863D04FCA1B0B"
+				"1C4C37304A41EA29"
+				"44710A8C222E1DB5"
+			]
+			hide: true
+			id: "30A0CDCD1B7CE208"
+			tasks: [{
+				id: "27CA6E90A641B353"
+				type: "item"
+				item: "kubejs:gravitation_mechanism"
+			}]
+			rewards: [{
+				id: "1172CEB5F06F9C8A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["30A0CDCD1B7CE208"]
+			hide: true
+			id: "780E7334812E5863"
+			tasks: [
+				{
+					id: "13A3AC882A74B6EF"
+					type: "item"
+					item: {
+						id: "entangled:block"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "69EE843240BAAA5A"
+					type: "item"
+					item: {
+						id: "entangled:item"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "5400574C98A4605D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "kubejs:end_bismuth_ore"
+			disable_toast: true
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"一种只出现在末地的矿石，并且不会裸露在表面。"
+				"但是，随着时间的推移，铋矿石会向周围生长（周围必须是末地石）。"
+			]
+			dependencies: ["0995E7B507258131"]
+			hide: true
+			id: "6A286B39EC88CF35"
+			tasks: [{
+				id: "37AEEFC423437531"
+				type: "item"
+				item: "kubejs:raw_bismuth"
+			}]
+			rewards: [{
+				id: "7CEAD6A41B78B004"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["6A286B39EC88CF35"]
+			id: "726DF7A5F10D04C1"
+			tasks: [{
+				id: "1ED86A3152917F01"
+				type: "item"
+				item: "kubejs:bismuth_ingot"
+			}]
+			rewards: [{
+				id: "285C421CB4DA2814"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["726DF7A5F10D04C1"]
+			hide: true
+			id: "5366B3798112EA39"
+			tasks: [{
+				id: "6496BD98EB0856E9"
+				type: "item"
+				item: "kubejs:magbismuth_ingot"
+			}]
+			rewards: [{
+				id: "72C9FDF5210C9D02"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["一种建筑材料。"]
+			dependencies: ["726DF7A5F10D04C1"]
+			hide: true
+			id: "3C90F024AAB8DABB"
+			tasks: [{
+				id: "3E1FF510BC7B0270"
+				type: "item"
+				item: "yuushya:bismuth_crystal"
+			}]
+			rewards: [{
+				id: "0599C5B5258609AD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: ["2A4E28366BBDD94D"]
+			id: "679863D04FCA1B0B"
+			tasks: [{
+				id: "6190E6FD89A687B3"
+				type: "item"
+				item: "kubejs:candy_electron_tube"
+			}]
+			rewards: [{
+				id: "0789975A3961A0AB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["0DF60356F33E6CB3"]
+			hide: true
+			id: "20B36D04B937B5FA"
+			tasks: [{
+				id: "0D9092F1D0B9AEFF"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+			rewards: [{
+				id: "79D7B1AFBFB2EC68"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["0DF60356F33E6CB3"]
+			hide: true
+			id: "2FF175F932A6F53B"
+			tasks: [{
+				id: "7E728715500B242D"
+				type: "item"
+				item: "ae2:wireless_terminal"
+			}]
+			rewards: [{
+				id: "089AA7892E8A1E6C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["2FF175F932A6F53B"]
+			hide: true
+			id: "47D3A393677358D3"
+			tasks: [{
+				id: "39BD2788B656C8B2"
+				type: "item"
+				item: "ae2:wireless_crafting_terminal"
+			}]
+			rewards: [{
+				id: "15B2C329206F8AE1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.5d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["7CE9CA55C7700FF5"]
+			hide: true
+			id: "278AD15AE80069A7"
+			tasks: [{
+				id: "41EC67474439A2EB"
+				type: "item"
+				item: "ae2:pattern_access_terminal"
+			}]
+			rewards: [{
+				id: "603F376D8A6A9B76"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: 4.0d
+			shape: "hexagon"
+			dependencies: ["47D3A393677358D3"]
+			hide: true
+			id: "4254DDA40EC80E3C"
+			tasks: [{
+				id: "4D85A40324919722"
+				type: "item"
+				item: "ae2wtlib:wireless_pattern_encoding_terminal"
+			}]
+			rewards: [{
+				id: "5649C787D3645144"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 4.5d
+			shape: "hexagon"
+			dependencies: ["4254DDA40EC80E3C"]
+			hide: true
+			id: "4D27837F6F5F2004"
+			tasks: [{
+				id: "4BB162AB6DE15393"
+				type: "item"
+				item: "ae2wtlib:wireless_pattern_access_terminal"
+			}]
+			rewards: [{
+				id: "335FEF653D418297"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["2FF175F932A6F53B"]
+			hide: true
+			id: "1653474E675B491B"
+			tasks: [{
+				id: "3F033989892A2864"
+				type: "item"
+				item: "ae2wtlib:infinity_booster_card"
+			}]
+			rewards: [{
+				id: "1AC780BD5C5E317C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["2FF175F932A6F53B"]
+			hide: true
+			id: "736FD38743FE9BBF"
+			tasks: [{
+				id: "65A424A95960BE44"
+				type: "item"
+				item: "ae2wtlib:magnet_card"
+			}]
+			rewards: [{
+				id: "2AEE033A8D298E33"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["4D27837F6F5F2004"]
+			hide: true
+			id: "2DD522489C3F5300"
+			tasks: [{
+				id: "75D45F5DFCCD2B47"
+				type: "item"
+				item: "ae2wtlib:wireless_universal_terminal"
+			}]
+			rewards: [{
+				id: "12ADD39D5DAB5430"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -8.5d
+			shape: "hexagon"
+			dependencies: ["2A4E28366BBDD94D"]
+			hide: true
+			id: "633C37FA492FB28C"
+			tasks: [{
+				id: "17B4AEC6BBFBB8F4"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "120138BC8413CE25"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -0.5d
+			y: -9.5d
+			shape: "hexagon"
+			description: [
+				"把异彩化合物丢弃在明亮的区域以转变获取，如："
+				"信标上方。"
+			]
+			dependencies: ["633C37FA492FB28C"]
+			hide: true
+			id: "4A1CFC8966CA0784"
+			tasks: [{
+				id: "7F1B8FBD1FD1C754"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+			rewards: [{
+				id: "18CEFE4E336FDF59"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.5d
+			y: -9.5d
+			shape: "hexagon"
+			description: [
+				"把异彩化合物丢弃在黑暗的区域以转变获取，如："
+				"虚空下方。"
+			]
+			dependencies: ["633C37FA492FB28C"]
+			hide: true
+			id: "5054A94D72277F83"
+			tasks: [{
+				id: "62F4EE5F589A98BC"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+			rewards: [{
+				id: "3CD3D102D08F2C2A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -11.5d
+			shape: "hexagon"
+			dependencies: ["747BA8A02DC01DB1"]
+			id: "386E44C7B0EE98FD"
+			tasks: [{
+				id: "1BEAB436D2337BA3"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1A18C4D6DDE04571"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -10.5d
+			dependencies: [
+				"4A1CFC8966CA0784"
+				"5054A94D72277F83"
+			]
+			id: "747BA8A02DC01DB1"
+			tasks: [{
+				id: "4C4F91331D7DFE3D"
+				type: "item"
+				item: "kubejs:virgin_ingot"
+			}]
+			rewards: [{
+				id: "5100519223746436"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -7.0d
+			dependencies: ["0995E7B507258131"]
+			hide: true
+			id: "2A4E28366BBDD94D"
+			tasks: [{
+				id: "08D94DB694ECDD11"
+				type: "item"
+				item: "kubejs:polished_candy_crystal"
+			}]
+			rewards: [{
+				id: "431E8EF46B73649E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["5366B3798112EA39"]
+			id: "44710A8C222E1DB5"
+			tasks: [{
+				id: "2387936F71367496"
+				type: "item"
+				item: "kubejs:magbismuth_sheet"
+			}]
+			rewards: [{
+				id: "51FD86B5C6600778"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

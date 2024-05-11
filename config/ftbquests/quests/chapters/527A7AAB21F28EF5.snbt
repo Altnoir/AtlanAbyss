@@ -1,0 +1,981 @@
+{
+	id: "527A7AAB21F28EF5"
+	group: "03B4E601CC5A5BFE"
+	order_index: 0
+	filename: "527A7AAB21F28EF5"
+	title: "花之力"
+	icon: "botania:pure_daisy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["5D059C7F1A64ABB9"]
+			hide: true
+			id: "5A6B03E76B3807D3"
+			tasks: [{
+				id: "5C2D7DA3E1F48C63"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+			rewards: [{
+				id: "4C0011AE59D576EF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["5A6B03E76B3807D3"]
+			id: "6A63D947959AAB77"
+			tasks: [{
+				id: "555D472205C8CF82"
+				type: "item"
+				item: "botania:lexicon"
+			}]
+			rewards: [{
+				id: "146F600BEFFE53F5"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["5A6B03E76B3807D3"]
+			hide: true
+			id: "0FD46CB5A854B716"
+			tasks: [{
+				id: "5A59F3890E0E1513"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [{
+				id: "3F43648CFE525DA0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["注：活木只能通过至高木转化获得。"]
+			dependencies: ["0FD46CB5A854B716"]
+			id: "3A2A0B2CFDDB343F"
+			tasks: [{
+				id: "7659F9F0EEAB9DB1"
+				type: "item"
+				item: "botania:livingwood_log"
+			}]
+			rewards: [{
+				id: "21D8DF863C7727D7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: [" 制作出魔力发射器后，你可以考虑用火红莲或是水绣球用于前期产魔。"]
+			dependencies: ["3A2A0B2CFDDB343F"]
+			hide: true
+			id: "404B700E4ABCA47D"
+			tasks: [{
+				id: "26D12D36A9BDAE67"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "55D171CB32988214"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["注：活石只能通过方解石转化获得。"]
+			dependencies: ["0FD46CB5A854B716"]
+			id: "3C4768CE7C04C704"
+			tasks: [{
+				id: "37969EC4AE88F6E6"
+				type: "item"
+				item: "botania:livingrock"
+			}]
+			rewards: [{
+				id: "6954E42776C3D306"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"在这个世界中，史莱姆空岛并不会自然生成，但是"
+				"你可以通过至高木树苗魔力灌注获得。"
+			]
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "34D10A81067DF0CB"
+			tasks: [
+				{
+					id: "044FB91BB420E0E7"
+					type: "item"
+					item: "tconstruct:earth_slime_sapling"
+				}
+				{
+					id: "613C359B6F8C2BE7"
+					type: "item"
+					item: "tconstruct:sky_slime_sapling"
+				}
+				{
+					id: "6137EDD613D6D0C2"
+					type: "item"
+					item: "tconstruct:ender_slime_sapling"
+				}
+				{
+					id: "41148402B55B1CD3"
+					type: "item"
+					item: "tconstruct:blood_slime_sapling"
+				}
+			]
+			rewards: [{
+				id: "165683D55BED1D51"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["3C4768CE7C04C704"]
+			hide: true
+			id: "369202E8265D6C29"
+			tasks: [{
+				id: "43DB87DB8899A3D0"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "1191162F600702ED"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			dependencies: ["369202E8265D6C29"]
+			id: "0FFF68D8B91B8A70"
+			tasks: [{
+				id: "54E85FC0B73736F2"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+			rewards: [{
+				id: "554DF64C55B7688D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: 1.0d
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "5764D7F29A9A31E0"
+			tasks: [{
+				id: "0081763FC92938EC"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [{
+				id: "5BD5328E181464CB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "4AA6C0889DF77D22"
+			tasks: [{
+				id: "1822B3163C0E19C8"
+				type: "item"
+				item: "botania:mana_pylon"
+			}]
+			rewards: [{
+				id: "2A89B9B392EAED4F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "04DCFE84E46C96A4"
+			tasks: [{
+				id: "648BB13EFA2E5F86"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+			rewards: [{
+				id: "292FE0113FD0EFDE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["04DCFE84E46C96A4"]
+			id: "55065B7AAA3269E6"
+			tasks: [
+				{
+					id: "64B0BCA46CE1BF54"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:blaze_gate_small"
+						}
+					}
+				}
+				{
+					id: "586F42371F56A3DA"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:creeper_gate_small"
+						}
+					}
+				}
+				{
+					id: "313AC5DA54FEAEC8"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:enderman_gate_small"
+						}
+					}
+				}
+				{
+					id: "17259A3051788C97"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ghast_gate_small"
+						}
+					}
+				}
+				{
+					id: "79CA806E2091A88E"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate_small"
+						}
+					}
+				}
+				{
+					id: "4A64059DE46FBBBA"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:shulker_gate_small"
+						}
+					}
+				}
+				{
+					id: "38D6A78168DC79A7"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:skeleton_gate_small"
+						}
+					}
+				}
+				{
+					id: "4FDA4D645604F3C4"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:slime_gate_small"
+						}
+					}
+				}
+				{
+					id: "05E678DF2C9650D4"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:spider_gate_small"
+						}
+					}
+				}
+				{
+					id: "564AC9BCE6415590"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:witch_gate_small"
+						}
+					}
+				}
+				{
+					id: "3511FCA6EFD58C33"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:wither_skeleton_gate_small"
+						}
+					}
+				}
+				{
+					id: "003E8CCFD69B2CD5"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate_small"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0FB9D6FDB6EACB85"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "apotheosis:boss_gate_small"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["5764D7F29A9A31E0"]
+			hide: true
+			id: "176873F1E61B607A"
+			tasks: [{
+				id: "459ACB47AC116779"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+			rewards: [{
+				id: "59E95D9FB545B722"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["176873F1E61B607A"]
+			id: "5D1503960882D059"
+			tasks: [{
+				id: "5D026616E7B32315"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "49BA741EDD3BD4E0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["5D1503960882D059"]
+			hide: true
+			id: "18AFCA7D6F0B5F8E"
+			tasks: [
+				{
+					id: "7E87238D613B7934"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "7339C5D4057EF525"
+					type: "item"
+					item: "botania:glimmering_livingwood_log"
+					count: 3L
+				}
+				{
+					id: "5B9473340BB426CF"
+					type: "item"
+					item: "botania:livingwood_log"
+					count: 8L
+				}
+				{
+					id: "4A1897D2C0C87943"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "5599B655D6A0B89D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["18AFCA7D6F0B5F8E"]
+			hide: true
+			id: "414CFD78FA59E5C8"
+			tasks: [
+				{
+					id: "3B80DEACCCA724E6"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "7F267BE105423678"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+			rewards: [{
+				id: "7E730E3DE1433B51"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["414CFD78FA59E5C8"]
+			hide: true
+			id: "5B1752815667A780"
+			tasks: [{
+				id: "3C61A580765FDF08"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+			rewards: [{
+				id: "1EC67CE6CEA1A0E5"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["5B1752815667A780"]
+			hide: true
+			id: "302C177B15F46E99"
+			tasks: [{
+				id: "59680E3FAB79EF46"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:zombie_gate_ultra"
+					}
+				}
+			}]
+			rewards: [{
+				id: "135CB243D42C9FFC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 8.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4E9CE72466ABDEE1"]
+			id: "45F764796881AD67"
+			tasks: [
+				{
+					id: "2EB846B1880E19F5"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:blaze_gate"
+						}
+					}
+				}
+				{
+					id: "2D7902878D044D38"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:creeper_gate"
+						}
+					}
+				}
+				{
+					id: "147DD6775E92D103"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:enderman_gate"
+						}
+					}
+				}
+				{
+					id: "62DEF92452F26666"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ghast_gate"
+						}
+					}
+				}
+				{
+					id: "05A127DF6E9454B0"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate"
+						}
+					}
+				}
+				{
+					id: "5B639746EFAFAB37"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:shulker_gate"
+						}
+					}
+				}
+				{
+					id: "18623C69AE747AFD"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:skeleton_gate"
+						}
+					}
+				}
+				{
+					id: "3503D493BB3AC0A1"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:slime_gate"
+						}
+					}
+				}
+				{
+					id: "1D6ACF7C006041B0"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:spider_gate"
+						}
+					}
+				}
+				{
+					id: "1717160E182F5021"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:witch_gate"
+						}
+					}
+				}
+				{
+					id: "2993E9926D60F080"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:wither_skeleton_gate"
+						}
+					}
+				}
+				{
+					id: "10AF2B2247B1F16E"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7958291B39DF9AA0"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "apotheosis:boss_gate_small"
+					}
+				}
+				count: 12
+			}]
+		}
+		{
+			disable_toast: true
+			x: 9.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["5BC33FD3FC5795B5"]
+			id: "0D6A0E5952280704"
+			tasks: [
+				{
+					id: "3A8B7DCDB40FC138"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:blaze_gate_large"
+						}
+					}
+				}
+				{
+					id: "199EB82CA036A2BC"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:creeper_gate_large"
+						}
+					}
+				}
+				{
+					id: "75DD4C9A1C605251"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:enderman_gate_large"
+						}
+					}
+				}
+				{
+					id: "51F804C555AA26AB"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ghast_gate_large"
+						}
+					}
+				}
+				{
+					id: "7D7DB06AF7E91E2A"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate_large"
+						}
+					}
+				}
+				{
+					id: "58CF6358F415362B"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:shulker_gate_large"
+						}
+					}
+				}
+				{
+					id: "3676998382D97FF2"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:skeleton_gate_large"
+						}
+					}
+				}
+				{
+					id: "0C8131676ED5B241"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:slime_gate_large"
+						}
+					}
+				}
+				{
+					id: "0143E2DEC57307B5"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:spider_gate_large"
+						}
+					}
+				}
+				{
+					id: "6C31534EED1034A2"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:witch_gate_large"
+						}
+					}
+				}
+				{
+					id: "722A82931DE6AFF0"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:wither_skeleton_gate_large"
+						}
+					}
+				}
+				{
+					id: "73FD527D77760E26"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate_large"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4EAD81E59EBC61D2"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "apotheosis:boss_gate_small"
+					}
+				}
+				count: 36
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["4E9CE72466ABDEE1"]
+			id: "5BC33FD3FC5795B5"
+			tasks: [{
+				id: "740BBF3CA3E08BC9"
+				type: "item"
+				item: "ae2:fluix_pearl"
+			}]
+			rewards: [{
+				id: "1AF4373DA3082969"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["41DCA36A2F09C523"]
+			hide: true
+			id: "4E9CE72466ABDEE1"
+			tasks: [{
+				id: "060859710E24898D"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "34D4488A2FA4F8C0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["4E9CE72466ABDEE1"]
+			id: "311FF8EB13D08D2D"
+			tasks: [{
+				id: "78522AB3E9B59B05"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "563F31EA79326895"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: 2.5d
+			shape: "hexagon"
+			dependencies: ["41DCA36A2F09C523"]
+			id: "72345E661D191FB1"
+			tasks: [{
+				id: "75E97BA4EC9B43B5"
+				type: "item"
+				item: "waystones:warp_plate"
+			}]
+			rewards: [{
+				id: "3732F196D4303CCE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["369202E8265D6C29"]
+			hide: true
+			id: "41DCA36A2F09C523"
+			tasks: [{
+				id: "7C095EC265507BAE"
+				type: "item"
+				item: "waystones:warp_dust"
+			}]
+			rewards: [{
+				id: "79747C31EE8BA3E1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "P点掉落改动"
+			icon: "touhou_little_maid:power_point"
+			disable_toast: true
+			x: 4.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["本整合包虽然移除了妖精女仆的生成，但你可以通过魔力池转换经验瓶以获得相应的P点。"]
+			dependencies: ["0FFF68D8B91B8A70"]
+			hide: true
+			id: "6CC3920A8B0C1B39"
+			tasks: [{
+				id: "2350CF369489A7D8"
+				type: "item"
+				item: "touhou_little_maid:power_point"
+			}]
+			rewards: [{
+				id: "4BFE9358AC27FBC4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: -3.0d
+			shape: "hexagon"
+			dependencies: ["0FFF68D8B91B8A70"]
+			hide: true
+			id: "431E46B6870EA9D5"
+			tasks: [{
+				id: "03517902087CF5BD"
+				type: "item"
+				item: "botania:conjuration_catalyst"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

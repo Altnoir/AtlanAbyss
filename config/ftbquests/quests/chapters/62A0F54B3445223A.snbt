@@ -1,9 +1,9 @@
 {
 	id: "62A0F54B3445223A"
-	group: "62B0CA2D682AC9D6"
-	order_index: 2
+	group: "19B6F72CD7C78A04"
+	order_index: 0
 	filename: "62A0F54B3445223A"
-	title: "火铳之力量"
+	title: "现代火力"
 	icon: {
 		id: "tac:deagle_357"
 		Count: 1b
@@ -177,10 +177,7 @@
 		{
 			x: 5.5d
 			y: 1.5d
-			dependencies: [
-				"51118EFF5866B6D3"
-				"0FE3B58E65864060"
-			]
+			dependencies: ["0FE3B58E65864060"]
 			id: "72C1540C6FE71F52"
 			tasks: [{
 				id: "2455109C8B31875F"

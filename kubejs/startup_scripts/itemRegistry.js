@@ -6,6 +6,7 @@ onEvent('item.registry', event => {
 	event.create('polished_charged_certus_quartz').displayName('Polished Certus Quartz');
 	event.create('raw_aluminum').displayName('Raw Aluminum');
 	event.create('raw_uranium').displayName('Raw Uranium');
+	event.create('raw_osmium').displayName('Raw Osmium');
 	event.create('raw_bismuth').displayName('Raw Bismuth');
 
 	event.create('aluminum_ingot').displayName('Aluminum Ingot');
@@ -66,7 +67,7 @@ onEvent('item.registry', event => {
 	//光环扭蛋
 	event.create('halo_gashapon').displayName('Halo Gashapon');
 	//世界神符
-	event.create('world_rune').displayName('World Rune');
+	event.create('crystal_nucleus').displayName('Crystal Nucleus');
 
 	event.create('incomplete_core_container', 'create:sequenced_assembly').displayName('Incomplete Core Container');
 	event.create('uranium_core').displayName('Uranium Core');

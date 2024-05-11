@@ -43,6 +43,20 @@ onEvent('recipes', event => {
         source: 500,
         pedestalItems: []
     }).id('atlanabyss:imbuement_coal')
+    
+    remove('thermal:gunpowder_4')
+    remove('tac:gun_powder')
+    //魔法火药
+    event.custom({
+        type: 'ars_nouveau:imbuement',
+        input: {
+            item: 'minecraft:gravel'
+        },
+        output: 'minecraft:gunpowder',
+        count: 1,
+        source: 200,
+        pedestalItems: []
+    }).id('atlanabyss:imbuement_gunpowder')
 
     //宝石粉
     milling('apotheosis:gem_dust', [

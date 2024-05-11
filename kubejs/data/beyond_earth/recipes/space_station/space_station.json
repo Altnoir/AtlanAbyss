@@ -5,13 +5,13 @@
 			"ingredient": {
 				"item": "kubejs:gravitation_mechanism"
 			},
-			"count": 6
+			"count": 1
 		},
 		{
 			"ingredient": {
 				"item": "kubejs:osmium_casing"
 			},
-			"count": 32
+			"count": 8
 		}
 	]
 }

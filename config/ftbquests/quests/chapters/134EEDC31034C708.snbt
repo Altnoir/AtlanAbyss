@@ -1,0 +1,544 @@
+{
+	id: "134EEDC31034C708"
+	group: "62B0CA2D682AC9D6"
+	order_index: 0
+	filename: "134EEDC31034C708"
+	title: "原始人力"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "获取原木"
+			x: 0.0d
+			y: 0.0d
+			description: ["尽管整合包有许多内容可以探索，但在之前，您至少需要『获得木头』"]
+			dependencies: ["44572D4F990F380B"]
+			hide: true
+			id: "36943F6B7F336DF2"
+			tasks: [{
+				id: "01A9395D86710A6A"
+				type: "item"
+				title: "任意原木"
+				icon: "minecraft:oak_log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+			rewards: [{
+				id: "549A622D1A3FBB4A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "制作工作台"
+			disable_toast: true
+			x: 2.0d
+			y: 0.0d
+			description: ["在接下来的探险中，您也许会遇见某些不能仅靠自身背包合成的物品，这时候你就不得不制作出一个工作台了。"]
+			dependencies: ["36943F6B7F336DF2"]
+			id: "5BC3A59AAD6CEDBE"
+			tasks: [{
+				id: "1AC44A870C872BC1"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [{
+				id: "08E78C10C9FEFB72"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "一些说明书"
+			disable_toast: true
+			x: -1.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["今天您看书了吗？"]
+			dependencies: ["36943F6B7F336DF2"]
+			id: "457F93059BD28394"
+			tasks: [{
+				id: "35C678F3E2232228"
+				type: "item"
+				item: "minecraft:book"
+			}]
+			rewards: [
+				{
+					id: "3ECD597C4236D228"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+				{
+					id: "560E0D1CFCFB49D0"
+					type: "item"
+					item: "ftbquests:book"
+				}
+			]
+		}
+		{
+			title: "锄树叶"
+			icon: "minecraft:oak_leaves"
+			disable_toast: true
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["很可惜，在当前的Forge版无法使用原版的刷线机特性，但别灰心，为了弥补这个问题，您可以使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
+			dependencies: ["36943F6B7F336DF2"]
+			id: "519403A46F37EB4D"
+			tasks: [{
+				id: "11BCC48D58B08B5B"
+				type: "checkmark"
+				title: "确定"
+			}]
+			rewards: [{
+				id: "40354BFA3013BF57"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "种棉花"
+			disable_toast: true
+			x: 1.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: [
+				"在破坏草时你也许会发现，除了会掉落原版的小麦种子以外，还会有棉花种子。"
+				"没错，为了弥补刷线机不能用的问题我不仅仅是只给树叶添加新特性，也添加了新作物！"
+				"种植棉花，获取无限的线！"
+			]
+			dependencies: ["36943F6B7F336DF2"]
+			id: "566C1EA56C28BAEC"
+			tasks: [{
+				id: "0D909AE204627D9F"
+				type: "item"
+				item: "kubejs:cottons_seed"
+			}]
+			rewards: [{
+				id: "08825931D148892D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "新手初始装"
+			disable_toast: true
+			x: 2.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["或许您需要准备一些工具？"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "5A7F67F2BD3327F6"
+			tasks: [
+				{
+					id: "786D1ACE3AEF6757"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "05350053C833C26A"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2D2B3279340E6BA8"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "46C44AAD4B965498"
+					type: "item"
+					item: {
+						id: "minecraft:stone_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4366A4C1A2A159F7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -2.5d
+			shape: "hexagon"
+			description: [
+				"整合包限定的幸运方块：只会在苦力怕，骷髅，僵尸，尸壳身上概率掉落（只有玩家击杀时）。"
+				"注：在暮色维度破坏幸运方块时，将百分百出现宝箱怪！但是，会有极低的概率出现小惊喜。"
+			]
+			dependencies: ["5A7F67F2BD3327F6"]
+			id: "352BC5448ACDEF10"
+			tasks: [{
+				id: "116D3614707AA5C8"
+				type: "item"
+				item: "kubejs:lucky_block"
+			}]
+			rewards: [{
+				id: "126D9E199B1243CB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "溺尸挑战"
+			icon: "tconstruct:drowned_head"
+			disable_toast: true
+			x: 3.0d
+			y: -2.0d
+			shape: "hexagon"
+			description: [
+				"在这个整合包中，溺尸有了一些特别的功能，如下："
+				"溺尸击杀铁傀儡 - 100%掉落鹦鹉螺壳；"
+				"溺尸击杀     鸡      - 25%掉落海洋之心；"
+				"溺尸击杀苦力怕 - 100%掉落神秘唱片；"
+			]
+			dependencies: ["5A7F67F2BD3327F6"]
+			id: "633D317850D56B85"
+			tasks: [{
+				id: "57914FA46B2A9546"
+				type: "checkmark"
+				title: "已阅"
+			}]
+			rewards: [{
+				id: "3B2864D17C3F1D2E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "固定容器"
+			disable_toast: true
+			x: 3.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["想找个东西存一存身上的物品？您或许可以考虑使用箱子，木桶，又或是限类木桶。"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "16CCDD21E5E15818"
+			tasks: [
+				{
+					id: "429FC15D45835DAD"
+					type: "item"
+					title: "任意木桶"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:barrels/wooden"
+						}
+					}
+				}
+				{
+					id: "7C658511BDD6A175"
+					type: "item"
+					title: "任意木箱"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:chests/wooden"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "67B138EB935F62D4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "移动容器"
+			disable_toast: true
+			x: 3.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: ["想存储身上的物品但又想四处探险？您可以考虑制作一个背包！"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "13627E6F08A8CB2D"
+			tasks: [{
+				id: "55645D91BE8BACC9"
+				type: "item"
+				title: "任意背包"
+				icon: {
+					id: "sophisticatedbackpacks:backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 27
+						upgradeSlots: 1
+						contentsUuid: [I;
+							-1844206996
+							-664973661
+							-1977918144
+							737068954
+						]
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "curios:back"
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "41B399335485DFBA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"本整合包重要的资源之一"
+				"第一个苔藓块可通过探险获得\\n如：沉船宝箱，繁茂洞穴等。"
+			]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			id: "51118EFF5866B6D3"
+			tasks: [{
+				id: "0CDC8B26EDA9B48E"
+				type: "item"
+				item: "minecraft:moss_block"
+			}]
+			rewards: [{
+				id: "2659DC47CE42D083"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "399B746233C77AFD"
+			tasks: [
+				{
+					id: "4DC4FD95522FD753"
+					type: "item"
+					item: "netmusic:music_player"
+				}
+				{
+					id: "1FB7AE3305D8BE0D"
+					type: "item"
+					item: "netmusic:cd_burner"
+				}
+			]
+			rewards: [{
+				id: "61AEA73CD530DCDB"
+				type: "item"
+				item: "netmusic:music_cd"
+				count: 16
+			}]
+		}
+		{
+			title: "Fe铁"
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			description: ["不管是用传统的熔炉冶炼，还是通过四处搜刮获取，铁都是本游戏里最为重要的资源。"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "58D3EC802A6FBD27"
+			tasks: [{
+				id: "30F97086984C186C"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "5B284BB6716ABCCB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["落地水：手里拿着水桶的情况下受到致命摔落伤害时会自动触发落地水哦。"]
+			dependencies: ["58D3EC802A6FBD27"]
+			id: "2EAB82EBAF44C882"
+			tasks: [{
+				id: "52F1B5CDB0E3F9A4"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+			rewards: [{
+				id: "5A71868A6E2009BD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "搭建下界传送门"
+			icon: "minecraft:obsidian"
+			disable_toast: true
+			x: -1.0d
+			y: 1.0d
+			description: ["你可以选择用传统的钻石镐挖掘黑曜石搭建传送门，也可以选择用岩浆桶浇筑传送门，根据你的偏好决定。"]
+			dependencies: ["58D3EC802A6FBD27"]
+			id: "4E12320C5CF0FE7B"
+			tasks: [{
+				id: "5F8439575D62E3EC"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "79D152B8E2B1BE1B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: ["利用强劲的附魔，战斗！"]
+			dependencies: ["4E12320C5CF0FE7B"]
+			id: "7FEC216969A7D841"
+			tasks: [{
+				id: "16CF1A620EEE3226"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "3C271D70177578FB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			description: ["注：在下界中的敌对生物，生命值会随着距离出生点越远越高。"]
+			dependencies: ["4E12320C5CF0FE7B"]
+			hide: true
+			id: "137563E84BDBF0CC"
+			tasks: [{
+				id: "2B5DEA529A5A582C"
+				type: "dimension"
+				title: "“我们需要更深入一些”"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "52F6808675871D03"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "octagon"
+			dependencies: ["51118EFF5866B6D3"]
+			id: "07835D33A0BA9FD1"
+			tasks: [{
+				id: "7CA9E3DB24791A99"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: " 进入末地"
+			x: -1.0d
+			y: 3.5d
+			dependencies: ["137563E84BDBF0CC"]
+			hide: true
+			id: "31C9BD74CDB26F64"
+			tasks: [{
+				id: "02A8F47BE70987F9"
+				type: "dimension"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "6136C2559A9D4D6B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "颠倒之域"
+			x: 1.0d
+			y: 3.5d
+			description: [
+				"颠倒之域：夹在在主世界与下界之间的维度"
+				"进入方法：\\n1.在主世界的基岩上方食用紫颂果\\n2.在下界往上超过360格"
+			]
+			dependencies: ["31C9BD74CDB26F64"]
+			hide: true
+			id: "7DE7DA29AEE73C26"
+			tasks: [{
+				id: "1A5C2BBC58D64D5F"
+				type: "dimension"
+				icon: "minecraft:amethyst_block"
+				dimension: "inversia:inversiadim"
+			}]
+			rewards: [{
+				id: "45723380B323ADEA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: [
+				"恩赐之石：颠倒之域的特产品"
+				"使用带时运的稿子挖掘深板岩可便有概率获得"
+			]
+			dependencies: ["7DE7DA29AEE73C26"]
+			id: "7C08BB663A3B8249"
+			tasks: [{
+				id: "5204DC608219AC5E"
+				type: "item"
+				item: "kubejs:divine_ore"
+			}]
+			rewards: [{
+				id: "3200D1DFA7F4410E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

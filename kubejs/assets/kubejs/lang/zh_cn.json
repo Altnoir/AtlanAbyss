@@ -40,6 +40,7 @@
     "item.kubejs.osmium_ingot": "§3锇锭",
     "item.kubejs.osmium_nugget": "§3锇粒",
     "item.kubejs.osmium_sheet": "§3锇板",
+    "item.kubejs.raw_osmium": "§3粗锇",
     "item.kubejs.platinum_nugget": "铂粒",
     "item.kubejs.tungsten_nugget": "钨粒",
 
@@ -93,7 +94,7 @@
     "item.kubejs.album_worlds": "《专辑》§bWorlds",
 
     "item.kubejs.halo_gashapon": "§e光环扭蛋",
-    "item.kubejs.world_rune": "§9世界神符",
+    "item.kubejs.crystal_nucleus": "§9晶核",
 
     "item.kubejs.divine_ore": "恩赐之石",
     "item.kubejs.treasure_box": "宝藏箱",
@@ -245,6 +246,7 @@
     "block.kubejs.raw_aluminum_block": "粗铝块",
     "block.kubejs.raw_bismuth_block": "§d粗铋块",
     "block.kubejs.raw_uranium_block": "§a粗铀块",
+    "block.kubejs.raw_osmium_block": "§3粗锇块",
     "block.kubejs.dry_oil_sand": "干涸的沥青沙",
     "block.kubejs.dry_oil_red_sand": "干涸的沥青红沙",
     "block.kubejs.baked_potato_crate": "箱装烤马铃薯",
@@ -399,8 +401,8 @@
     "tooltip.kubejs.momoi":"§6火力之环",
     "tooltip.kubejs.momoi1":"§6使§e敌对生物§6死亡时掉落§e弹药",
 
-    "tooltip.kubejs.mari":"§6横扫之环",
-    "tooltip.kubejs.mari1":"§6使§e枪械攻击§6造成范围伤害",
+    "tooltip.kubejs.mari":"§6幸运之环",
+    "tooltip.kubejs.mari1":"§6使§e生物§6死亡时只掉落§e幸运方块",
 
     "tooltip.kubejs.hoshino":"§6灾难之环",
     "tooltip.kubejs.hoshino1":"§6使§e枪械攻击§6额外造成§e流血§6效果",
@@ -422,7 +424,7 @@
     "tooltip.kubejs.hasumi2":"§6Tips：破坏力极强",
     "tooltip.kubejs.hasumi3":"§6(消耗品)",
 
-    "tooltip.kubejs.purana":"§6幸运之环",
+    "tooltip.kubejs.purana":"§6诸神之环",
     "tooltip.kubejs.purana1":"§6使§e枪械攻击§6根据受击者血量造成伤害",
  
     "item.kubejs.purin": "布丁",

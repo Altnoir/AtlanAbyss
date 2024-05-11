@@ -31,8 +31,6 @@ onEvent('recipes', event => {
   remove('thermal:carrot_block')//箱装胡萝卜
   remove('thermal:potato_block')//箱装马铃薯
   remove('thermal:beetroot_block')//箱装甜菜根
-  remove('thermal:flux_drill')//电钻
-  remove('thermal:flux_saw')//电锯
   remove('thermal:fluid_reservoir')//大桶
   remove('thermal:tools/satchel')//背包
   remove('thermal:potion_infuser')//药水注射器
@@ -404,7 +402,7 @@ onEvent('recipes', event => {
   remove('thermal:ice_charge/ice_from_water_bucket')
   splashing(['minecraft:ice'],
     'thermal:ice_charge'
-  ).id("atlanabyss:splashing_ice_charge").processingTime(600)
+  ).id("atlanabyss:splashing_ice_charge")
   //瀑冰弹→黑曜石
   remove('thermal:ice_charge/obsidian_from_lava_bucket')
   event.blasting('minecraft:obsidian', 'thermal:ice_charge').id("atlanabyss:obsidian_from_ice_charge")
@@ -496,14 +494,14 @@ onEvent('recipes', event => {
   //木炭杂酚油
   compacting([
     'minecraft:charcoal',
-    Fluid.of('thermal:creosote', 144)
+    Fluid.of('thermal:creosote', 125)
   ],
     '#minecraft:logs'
   ).heated().id("atlanabyss:pyrolyzer_logs")
   //焦炭杂酚油
   compacting([
     'thermal:coal_coke',
-    Fluid.of('thermal:creosote', 288)
+    Fluid.of('thermal:creosote', 250)
   ],
     'minecraft:coal'
   ).heated().id("atlanabyss:pyrolyzer_coal")
@@ -517,13 +515,13 @@ onEvent('recipes', event => {
   ).heated().id("atlanabyss:pyrolyzer_bitumen")
 
   //人工石油
-  mixing(Fluid.of('thermal:crude_oil', 50), [
+  mixing(Fluid.of('thermal:crude_oil', 100), [
     '#create_enchantment_industry:ink_ingredient',
-    Fluid.of('tconstruct:blood', 500)
+    Fluid.of('tconstruct:blood', 100)
   ]).superheated().id("atlanabyss:oil_from_black_dye")
   mixing(Fluid.of('thermal:crude_oil', 500), [
     'thermal:bitumen',
-    Fluid.of('tconstruct:blood', 500)
+    Fluid.of('tconstruct:blood', 100)
   ]).superheated().id("atlanabyss:oil_from_bitumen")
   //精炼油
   mixing(Fluid.of('thermal:refined_fuel', 100), [
@@ -537,15 +535,25 @@ onEvent('recipes', event => {
       fluid: 'thermal:refined_fuel',
       amount: 1000
     },
-    burnTime: 120000,
+    burnTime: 72000,
     superheated: true,
   }).id("atlanabyss:liquid_burning_refined_fuel")
+
+  //烈焰人煤油
+  event.custom({
+    type: 'createaddition:liquid_burning',
+    input: {
+      fluid: 'pneumaticcraft:kerosene',
+      amount: 1000
+    },
+    burnTime: 12000,
+  }).id("atlanabyss:liquid_burning_kerosene")
+
 
   //机械熔岩炉
   const superheated = [
     { input: 'netherrack', output: 'minecraft:lava', count: 125 },
-    { input: 'magma_block', output: 'minecraft:lava', count: 500 },
-    { input: 'ender_pearl', output: 'thermal:ender', count: 250 }
+    { input: 'magma_block', output: 'minecraft:lava', count: 500 }
   ];
   for (const sh of superheated) {
     mixing(Fluid.of(`${sh.output}`, sh.count),
@@ -556,7 +564,8 @@ onEvent('recipes', event => {
     { input: 'glowstone_dust', output: 'thermal:glowstone', count: 250 },
     { input: 'glowstone', output: 'thermal:glowstone', count: 1000 },
     { input: 'redstone', output: 'thermal:redstone', count: 100 },
-    { input: 'redstone_block', output: 'thermal:redstone', count: 900 }
+    { input: 'redstone_block', output: 'thermal:redstone', count: 900 },
+    { input: 'ender_pearl', output: 'thermal:ender', count: 250 }
   ];
   for (const h of heated) {
     mixing(Fluid.of(`${h.output}`, h.count),
@@ -624,6 +633,7 @@ onEvent('recipes', event => {
     { input: 'minecraft:dragon_breath', output: 'device_potion_diffuser' },//药水雾化
     { input: 'minecraft:crafting_table', output: 'machine_crafter' },//序列装配台
     { input: 'minecraft:amethyst_block', output: 'machine_crystallizer' },//结晶器
+    { input: 'create:blaze_burner', output: 'machine_crucible' },//熔岩炉
     { input: 'thermal:electrum_block', output: 'charge_bench' },//能量灌注机
     { input: 'minecraft:emerald', output: 'machine_press' },//贸易站
   ];
@@ -723,8 +733,7 @@ onEvent('recipes', event => {
       `minecraft:${cos.output}`,
       'thermal:bitumen',
       Item.of(('thermal:niter'), 3).withChance(.50),
-    ], `kubejs:${cos.input}`)
-      .processingTime(50).id(`atlanabyss:crushing_${cos.input}`)
+    ], `kubejs:${cos.input}`).id(`atlanabyss:crushing_${cos.input}`)
   }
 
   //树汁提取
@@ -1037,6 +1046,51 @@ onEvent('recipes', event => {
     Item.of('thermal:rich_slag').withChance(.15)
   ], 'kubejs:nether_sulfur_ore'
   ).experience(0.5).energy(3200).id("atlanabyss:smelter_nether_sulfur_ore")
+
+  remove('createaddition:liquid_burning/ethanol')
+  //能源炉燃料
+  compressionFuel('createaddition:seed_oil', 80000);
+  compressionFuel('createaddition:bioethanol', 500000);
+  compressionFuel('thermal:heavy_oil', 40000);
+  compressionFuel('pneumaticcraft:kerosene', 60000);
+  compressionFuel('thermal:light_oil', 80000);
+  compressionFuel('pneumaticcraft:lpg', 100000);
+
+  function compressionFuel(fluid, energy) {
+    event.custom({
+      type: 'thermal:compression_fuel',
+      ingredient: {
+        fluid: fluid,
+        amount: 1000
+      },
+      energy: energy
+    })
+  }
+
+  //电钻
+  remove('thermal:flux_drill')
+  event.shaped('thermal:flux_drill', [
+    'AB ',
+    'BCB',
+    ' D ',
+  ], {
+    A: 'thermal:drill_head',
+    B: 'thermal:cured_rubber',
+    C: 'kubejs:thermal_mechanism',
+    D: 'thermal:rf_coil'
+  }).id("atlanabyss:flux_drill")
+  //电锯
+  remove('thermal:flux_saw')
+  event.shaped('thermal:flux_saw', [
+    'AB ',
+    'BCB',
+    ' D ',
+  ], {
+    A: 'thermal:saw_blade',
+    B: 'thermal:cured_rubber',
+    C: 'kubejs:thermal_mechanism',
+    D: 'thermal:rf_coil'
+  }).id("atlanabyss:flux_saw")
 
   // {
   //   "type": "thermal:flag",

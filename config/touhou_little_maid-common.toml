@@ -43,6 +43,12 @@
 	MaidHomeMealsBlockList = ["minecraft:pufferfish", "minecraft:poisonous_potato", "minecraft:rotten_flesh", "minecraft:spider_eye", "minecraft:chorus_fruit"]
 	#These items cannot be used as a maid's heal meals
 	MaidHealMealsBlockList = ["minecraft:pufferfish", "minecraft:poisonous_potato", "minecraft:rotten_flesh", "minecraft:spider_eye"]
+	#These items cannot be used as a maid's work meals which match the regex
+	MaidWorkMealsBlockListRegEx = []
+	#These items cannot be used as a maid's home meals which match the regex
+	MaidHomeMealsBlockListRegEx = []
+	#These items cannot be used as a maid's heal meals which match the regex
+	MaidHealMealsBlockListRegEx = []
 
 [chair]
 	#Chair can switch models freely

@@ -43,6 +43,11 @@ onEvent('recipes', event => {
   ], 'ae2:deepslate_quartz_ore').id("atlanabyss:crushing_certus_quartz_ore")
 
   crushing([
+    Item.of('tconstruct:ender_slime_crystal').withChance(0.50),
+    Item.of('ae2:sky_dust').withChance(0.10)
+  ], '#forge:end_stones').id("atlanabyss:crushing_end_stones")
+
+  crushing([
     '6x kubejs:raw_bismuth',
     Item.of('6x kubejs:raw_bismuth').withChance(0.5),
     Item.of('ae2:sky_dust').withChance(0.25),
@@ -61,7 +66,7 @@ onEvent('recipes', event => {
     'ae2:sky_stone_block',
     [
       'ae2:sky_dust',
-      Fluid.of('minecraft:lava', 500)
+      Fluid.of('minecraft:lava', 100)
     ]).id("atlanabyss:sky_stone_block")
   //压印模板
   event.stonecutting('ae2:calculation_processor_press', 'kubejs:circuit_scrap').id('atlanabyss:calculation_processor_press');
@@ -174,6 +179,14 @@ onEvent('recipes', event => {
     A: 'kubejs:computer_mechanism',
     B: 'ae2:fluix_block'
   }).id('atlanabyss:ae_controller');
+  event.shaped('16x ae2:controller', [
+    'AAA',
+    'ABA',
+    'AAA'
+  ], {
+    A: 'kubejs:computer_mechanism',
+    B: 'kubejs:end_ingot'
+  }).id('atlanabyss:ae_controller_16');
 
   remove('ae2:network/blocks/inscribers')
   remove('ae2:network/blocks/storage_drive')
@@ -187,7 +200,7 @@ onEvent('recipes', event => {
     'ae2:drive',
     'ae2:controller').id('atlanabyss:ae_drive');//驱动器
   event.stonecutting(
-    '8x ae2:semi_dark_monitor',
+    '6x ae2:semi_dark_monitor',
     'ae2:controller').id('atlanabyss:semi_dark_monitor');//照明面板
   event.stonecutting(
     'ae2:crafting_unit',
@@ -195,6 +208,156 @@ onEvent('recipes', event => {
   event.stonecutting(
     'ae2:energy_cell',
     'ae2:controller').id('atlanabyss:ae_energy_cell');//能源元件
+  //ME接口
+  remove('ae2:network/blocks/interfaces_interface')
+  event.shaped('ae2:interface', [
+    'ABC'
+  ], {
+    A: 'ae2:annihilation_core',
+    B: 'ae2:controller',
+    C: 'ae2:formation_core'
+  }).id("atlanabyss:ae_interface")
+  //ME样本接口
+  remove('ae2:network/blocks/pattern_providers_interface')
+  event.shaped('ae2:pattern_provider', [
+    ' D ',
+    'ABC',
+    ' D '
+  ], {
+    A: 'ae2:annihilation_core',
+    B: 'ae2:controller',
+    C: 'ae2:formation_core',
+    D: 'minecraft:crafting_table'
+  }).id("atlanabyss:ae_pattern_provider")
+  //分子装配室
+  remove('ae2:network/crafting/molecular_assembler')
+  event.shaped('ae2:molecular_assembler', [
+    'BEB',
+    'ADC',
+    'BEB'
+  ], {
+    A: 'ae2:annihilation_core',
+    B: 'kubejs:meteosteel_ingot',
+    C: 'ae2:formation_core',
+    D: 'minecraft:crafting_table',
+    E: 'ae2:quartz_glass'
+  }).id("atlanabyss:ae_molecular_assembler")
+  //ME箱子
+  remove('ae2:network/blocks/storage_chest')
+  event.shaped('ae2:chest', [
+    'ABA',
+    'C C',
+    'DDD'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'ae2:terminal',
+    C: 'ae2:fluix_glass_cable',
+    D: 'kubejs:meteosteel_ingot'
+  }).id("atlanabyss:ae_chest")
+  //ME安全终端
+  remove('ae2:network/blocks/security_station')
+  event.shaped('ae2:security_station', [
+    'ABA',
+    'CEC',
+    'ADA'
+  ], {
+    A: 'kubejs:meteosteel_ingot',
+    B: 'ae2:chest',
+    C: 'ae2:fluix_glass_cable',
+    D: 'ae2:engineering_processor',
+    E: 'ae2:cell_component_16k'
+  }).id("atlanabyss:ae_security_station")
+  //ME IO
+  remove('ae2:network/blocks/io_port')
+  event.shaped('ae2:io_port', [
+    'AAA',
+    'BCB',
+    'DED'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'ae2:drive',
+    C: 'ae2:controller',
+    D: 'kubejs:meteosteel_ingot',
+    E: 'ae2:logic_processor'
+  }).id("atlanabyss:ae_io_port")
+  //空间IO
+  remove('ae2:network/blocks/spatial_io_port')
+  event.shapeless('ae2:spatial_io_port', [
+    'ae2:io_port',
+    'ae2:engineering_processor'
+  ]).id("atlanabyss:ae_spatial_io_port")
+  //晶体催生器
+  remove('ae2:network/blocks/crystal_processing_quartz_growth_accelerator')
+  event.shaped('ae2:quartz_growth_accelerator', [
+    'ABA',
+    'CDC',
+    'ABA'
+  ], {
+    A: 'kubejs:meteosteel_ingot',
+    B: 'ae2:fluix_glass_cable',
+    C: 'ae2:quartz_glass',
+    D: 'ae2:fluix_block'
+  }).id("atlanabyss:ae_quartz_growth_accelerator")
+  //空间塔
+  remove('ae2:network/blocks/spatial_io_pylon')
+  event.shaped('ae2:spatial_pylon', [
+    'ABA',
+    'CDC',
+    'ABA'
+  ], {
+    A: 'ae2:quartz_glass',
+    B: 'ae2:fluix_glass_cable',
+    C: 'ae2:fluix_dust',
+    D: 'ae2:controller'
+  }).id("atlanabyss:ae_spatial_pylon")
+  //空间锚
+  remove('ae2:network/blocks/spatial_anchor')
+  event.shaped('ae2:spatial_anchor', [
+    'AAA',
+    'BCB',
+    'DED'
+  ], {
+    A: 'ae2:spatial_pylon',
+    B: 'ae2:fluix_glass_cable',
+    C: 'ae2:spatial_cell_component_128',
+    D: 'kubejs:meteosteel_ingot',
+    E: 'ae2:engineering_processor'
+  }).id("atlanabyss:ae_spatial_anchor")
+  //量子环
+  remove('ae2:network/blocks/quantum_ring')
+  event.shaped('ae2:quantum_ring', [
+    'ABA',
+    'CDE',
+    'ABA'
+  ], {
+    A: 'kubejs:meteosteel_ingot',
+    B: 'ae2:logic_processor',
+    C: 'ae2:engineering_processor',
+    D: 'ae2:energy_cell',
+    E: '#ae2:smart_dense_cable'
+  }).id("atlanabyss:ae_quantum_ring")
+  //物质聚合
+  remove('ae2:network/blocks/io_condenser')
+  event.shaped('ae2:condenser', [
+    'ABA',
+    'BCB',
+    'ABA'
+  ], {
+    A: 'kubejs:meteosteel_ingot',
+    B: 'ae2:quartz_glass',
+    C: 'ae2:controller'
+  }).id("atlanabyss:ae_condenser")
+  //能源接收
+  remove('ae2:network/blocks/energy_energy_acceptor')
+  event.shaped('ae2:energy_acceptor', [
+    'ABA',
+    'BCB',
+    'ABA'
+  ], {
+    A: 'kubejs:meteosteel_ingot',
+    B: 'ae2:quartz_glass',
+    C: 'createaddition:modular_accumulator'
+  }).id("atlanabyss:ae_energy_acceptor")
 
   //硅板
   remove('ae2:inscriber/silicon_print')
@@ -218,34 +381,21 @@ onEvent('recipes', event => {
 
   //运算处理器
   remove('ae2:inscriber/calculation_processor')
-  let pcp = 'ae2:printed_calculation_processor';
-  sequenced_assembly(
-    'ae2:calculation_processor',
-    pcp, [
-    filling(pcp, [pcp, Fluid.of('thermal:ender', 250)]),
-    filling(pcp, [pcp, Fluid.of('thermal:redstone', 100)]),
-    deploying(pcp, [pcp, 'ae2:printed_silicon'])
-  ]).transitionalItem(pcp).loops(1).id('atlanabyss:calculation_processor')
+  processor('ae2:printed_calculation_processor', 'ae2:calculation_processor', 'calculation_processor')
   //工程处理器
   remove('ae2:inscriber/engineering_processor')
-  let pep = 'ae2:printed_engineering_processor';
-  sequenced_assembly(
-    'ae2:engineering_processor',
-    pep, [
-    filling(pep, [pep, Fluid.of('thermal:ender', 250)]),
-    filling(pep, [pep, Fluid.of('thermal:redstone', 100)]),
-    deploying(pep, [pep, 'ae2:printed_silicon'])
-  ]).transitionalItem(pep).loops(1).id('atlanabyss:engineering_processor')
+  processor('ae2:printed_engineering_processor', 'ae2:engineering_processor', 'engineering_processor')
   //逻辑处理器
   remove('ae2:inscriber/logic_processor')
-  let plp = 'ae2:printed_logic_processor';
-  sequenced_assembly(
-    'ae2:logic_processor',
-    plp, [
-    filling(plp, [plp, Fluid.of('thermal:ender', 250)]),
-    filling(plp, [plp, Fluid.of('thermal:redstone', 100)]),
-    deploying(plp, [plp, 'ae2:printed_silicon'])
-  ]).transitionalItem(plp).loops(1).id('atlanabyss:logic_processor')
+  processor('ae2:printed_logic_processor', 'ae2:logic_processor', 'logic_processor')
+
+  function processor(inp, out, id) {
+    sequenced_assembly(out, inp, [
+      filling(inp, [inp, Fluid.of('thermal:ender', 500)]),
+      filling(inp, [inp, Fluid.of('thermal:redstone', 200)]),
+      deploying(inp, [inp, 'ae2:printed_silicon'])
+    ]).transitionalItem(inp).loops(1).id('atlanabyss:sequenced_assembly_' + id)
+  }
 
   //福鲁伊克斯珍珠
   remove('ae2:misc/fluixpearl')

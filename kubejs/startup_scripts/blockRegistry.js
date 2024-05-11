@@ -108,7 +108,7 @@ onEvent('block.registry', event => {
     //水星银矿
     event.create('mercury_silver_ore')
         .material('stone')
-        .hardness(6.0)
+        .hardness(5.0)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .tagBlock('forge:ores')
@@ -140,6 +140,14 @@ onEvent('block.registry', event => {
         .tagBlock('minecraft:needs_diamond_tool')
         .requiresTool(true)
         .displayName('Raw Uranium Block');
+    //粗锇块
+    event.create('raw_osmium_block')
+        .material('stone')
+        .hardness(6.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .requiresTool(true)
+        .displayName('Raw Osmium Block');
     //干涸的沥青沙
     event.create('dry_oil_sand', 'falling')
         .material('sand')

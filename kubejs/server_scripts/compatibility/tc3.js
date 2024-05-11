@@ -118,9 +118,9 @@ onEvent('recipes', event => {
   }).id("atlanabyss:ore_molten_steelsoul");
 
   //熔融末影→谐振末影
-  event.recipes.createMixing(Fluid.of('thermal:ender', 250),
+  event.recipes.create.mixing(Fluid.of('thermal:ender', 250),
     Fluid.of('tconstruct:molten_ender', 250)
-  ).superheated().id('atlanabyss:superheated_tc_molten_ender')
+  ).heated().id('atlanabyss:superheated_tc_molten_ender')
 
   //粉碎矿熔炼
   function oreMelting(ingredient, result, ra, dt, t, byproducts, ba, id) {
@@ -204,7 +204,7 @@ onEvent('recipes', event => {
     "temperature": 1,
     "time": 94
   }).id("atlanabyss:tc_melting_honey_block")
-  
+
   remove('tconstruct:smeltery/entity_melting/bee')
   event.custom({
     "type": "tconstruct:entity_melting",
@@ -217,5 +217,4 @@ onEvent('recipes', event => {
     },
     "damage": 2
   }).id("atlanabyss:entity_melting_bee")
-
 })

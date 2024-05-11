@@ -106,7 +106,7 @@
 	Grate = true
 	"Gold Bars" = false
 	"Glass Item Frame" = true
-	"Framed Glass" = false
+	"Framed Glass" = true
 	"Duskbound Blocks" = true
 	"Compressed Blocks" = false
 	"Celebratory Lamps" = false
@@ -553,7 +553,7 @@
 	"Blossom Trees" = true
 	"Big Stone Clusters" = true
 	"Big Dungeon" = false
-	"Azalea Wood" = true
+	"Azalea Wood" = false
 
 	[world.spiral_spires]
 		Rarity = 200

@@ -1,6 +1,11 @@
 // priority: 100
 
 onEvent('recipes', event => {
+	//扬了一些默认配方
+	let remove = (name) => {
+		event.remove({ id: name })
+	}
+
 	let {
 		mixing,
 		cutting,
@@ -25,10 +30,7 @@ onEvent('recipes', event => {
 	let {
 		smelter
 	} = event.recipes.thermal;
-	//扬了一些默认配方
-	let remove = (name) => {
-		event.remove({ id: name })
-	}
+
 	//管道
 	remove('pipez:universal_pipe')
 	remove('pipez:item_pipe')
@@ -82,20 +84,47 @@ onEvent('recipes', event => {
 	}).id("atlanabyss:vein_finder")
 
 	//有机碎片
-	let dci = 'minecraft:dirt';
-	sequenced_assembly('kubejs:organic_scrap',
-		'#minecraft:dirt', [
-		deploying(dci, [dci, '#createaddition:plants']),
-		deploying(dci, [dci, '#minecraft:flowers']),
-		pressing(dci, dci)
-	]).transitionalItem(dci).loops(1).id("atlanabyss:organic_scrap")
+	mixing('kubejs:organic_scrap', [
+		'#minecraft:dirt',
+		'#createaddition:plants',
+		'#minecraft:flowers'
+	]).id("atlanabyss:organic_scrap")
+	//深邃碎片
+	let orsc = 'kubejs:organic_scrap';
+	sequenced_assembly('kubejs:deep_scrap',
+		orsc, [
+		filling(orsc, [orsc, Fluid.of('minecraft:water', 500)])
+	]).transitionalItem(orsc).loops(8).id("atlanabyss:deep_scrap")
 	//质量碎片
-	let ipi = 'minecraft:iron_nugget';
+	let desc = 'kubejs:deep_scrap';
 	sequenced_assembly('kubejs:mass_scrap',
-		'#forge:nuggets/iron', [
-		deploying(ipi, [ipi, '#forge:cobblestone'])
-	]).transitionalItem(ipi).loops(16).id("atlanabyss:mass_scrap")
+		desc, [
+		deploying(desc, [desc, '#forge:cobblestone'])
+	]).transitionalItem(desc).loops(16).id("atlanabyss:mass_scrap")
+	//灾厄碎片
+	event.custom({
+		type: 'tconstruct:casting_table',
+		cast: { item: 'kubejs:mass_scrap' },
+		cast_consumed: true,
+		fluid: { tag: 'minecraft:lava', amount: 4000 },
+		result: 'kubejs:misery_scrap',
+		cooling_time: 40
+	})
+	//虚空碎片
+	event.shapeless('kubejs:void_scrap', [
+		'kubejs:misery_scrap',
+		'ae2:fluix_pearl'
+	]).id("atlanabyss:void_scrap")
+
 	//叶绿锭
+	event.shaped('kubejs:abyss_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:deep_scrap'
+	}).id("atlanabyss:abyss_ingot")
+	//深渊锭
 	event.shaped('kubejs:chlorophyll_ingot', [
 		'AAA',
 		'AAA',
@@ -111,27 +140,92 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:mass_scrap'
 	}).id("atlanabyss:planetary_ingot")
+	//灾厄锭
+	event.shaped('kubejs:calamity_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:misery_scrap'
+	}).id("atlanabyss:calamity_ingot")
+	//终末锭
+	event.shaped('kubejs:end_ingot', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:void_scrap'
+	}).id("atlanabyss:end_ingot")
 
-	event.shaped('kubejs:world_rune', [
+	//粉碎深渊锭
+	milling([
+		'8x thermal:blitz_rod',
+		Item.of('8x thermal:blitz_rod').withChance(0.5),
+		'8x thermal:blizz_rod',
+		Item.of('8x thermal:blizz_rod').withChance(0.5)
+	], 'kubejs:abyss_ingot').id("atlanabyss:milling_abyss_ingot")
+
+	//晶核
+	event.shaped('kubejs:crystal_nucleus', [
 		'AA',
 		'AA'
 	], {
 		A: 'kubejs:planetary_ingot'
-	}).id("atlanabyss:world_rune")
+	}).id("atlanabyss:crystal_nucleus")
 
-	//修复工作台bug
-	remove('sophisticatedbackpacks:crafting_upgrade')
+	event.shaped('minecraft:budding_amethyst', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: 'minecraft:amethyst_block',
+		B: 'kubejs:crystal_nucleus'
+	}).id("atlanabyss:budding_amethyst")
 
 	//修复下界合金粒
 	remove('tconstruct:common/materials/netherite_nugget_from_ingot')
 	remove('tconstruct:common/materials/netherite_ingot_from_nuggets')
 
-	//精妙存储升级基板
-	remove('sophisticatedstorage:upgrade_base')
-	event.shapeless('sophisticatedstorage:upgrade_base', [
-		'tconstruct:pattern',
-		'create:andesite_alloy'
-	]).id("atlanabyss:ophisticatedstorage_upgrade_base")
+	//精妙背包升级基板
+	remove('sophisticatedbackpacks:upgrade_base')
+	event.shaped('sophisticatedbackpacks:upgrade_base', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: 'minecraft:string',
+		B: 'create:andesite_alloy',
+		C: 'minecraft:leather'
+	}).id("atlanabyss:sophisticatedbackpacks_upgrade_base")
+
+	//盆栽
+	remove('botanypots:minecraft/crop/moss')
+	event.custom({
+		"type": "botanypots:crop",
+		"seed": { "item": "kubejs:cottons_seed" },
+		"categories": ["dirt", "farmland"],
+		"growthTicks": 1200,
+		"display": {
+			"type": "botanypots:aging",
+			"block": "minecraft:wheat"
+		},
+		"drops": [{
+			"chance": 1.00,
+			"output": { "item": "kubejs:cotton" },
+			"minRolls": 1,
+			"maxRolls": 2
+		}, {
+			"chance": 0.50,
+			"output": { "item": "kubejs:cotton" },
+			"minRolls": 1,
+			"maxRolls": 2
+		}, {
+			"chance": 0.05,
+			"output": { "item": "kubejs:cottons_seed" },
+			"minRolls": 1,
+			"maxRolls": 2
+		}]
+	})
 
 	//书架配方修复
 	function bookshelRecipes(plank, output, id) {
@@ -184,7 +278,7 @@ onEvent('recipes', event => {
 
 	splashing(['farmersdelight:wheat_dough'],
 		'create:wheat_flour'
-	).id("atlanabyss:splashing_wheat_flour").processingTime(600)
+	).id("atlanabyss:splashing_wheat_flour")
 
 	remove('create:mixing/dough_by_mixing')
 
@@ -285,14 +379,6 @@ onEvent('recipes', event => {
 		B: 'botania:mana_pearl'
 	}).id('atlanabyss:majo_cloth');
 
-	//墓园
-	remove('graveyard:ossuary')
-	remove('graveyard:dark_iron_ingot')
-	item_application(
-		'graveyard:dark_iron_block', [
-		'minecraft:iron_block',
-		'graveyard:corruption'
-	]).id('atlanabyss:item_application_dark_iron_block')
 
 	//飞艇
 	remove('immersive_aircraft:airship')
@@ -1325,6 +1411,12 @@ onEvent('recipes', event => {
 		'minecraft:lime_dye'
 	]).id("atlanabyss:slime_ball")
 
+	//闪长岩变方解石
+	filling('minecraft:calcite', [
+		'minecraft:diorite',
+		Fluid.of('minecraft:water', 500)
+	]).id("atlanabyss:filling_calcite")
+
 	//粉碎绯红岩
 	milling([
 		Item.of('create:crushed_raw_iron').withChance(0.40)
@@ -1339,8 +1431,25 @@ onEvent('recipes', event => {
 	], '#create:stone_types/veridium').id("atlanabyss:milling_veridium")
 	//粉碎赭金砂
 	milling([
+		Item.of('create:crushed_raw_nickel').withChance(0.40),
 		Item.of('create:crushed_raw_gold').withChance(0.20)
 	], '#create:stone_types/ochrum').id("atlanabyss:milling_ochrum")
+	remove('create:crushing/ochrum')
+	remove('create:crushing/ochrum_recycling')
+	crushing([
+		Item.of('create:crushed_raw_nickel').withChance(0.40),
+		Item.of('create:crushed_raw_gold').withChance(0.20),
+		Item.of('thermal:nickel_nugget').withChance(0.40),
+		Item.of('minecraft:gold_nugget').withChance(0.20)
+	], '#create:stone_types/ochrum').id("atlanabyss:crushing_ochrum")
+	//粉碎石灰石
+	milling([
+		Item.of('create:crushed_raw_tin').withChance(0.80)
+	], '#create:stone_types/limestone').id("atlanabyss:milling_limestone")
+	crushing([
+		Item.of('create:crushed_raw_tin').withChance(0.80),
+		Item.of('thermal:tin_nugget').withChance(0.80)
+	], '#create:stone_types/limestone').id("atlanabyss:crushing_limestone")
 
 	//压板
 	pressing(
@@ -1487,7 +1596,7 @@ onEvent('recipes', event => {
 	],
 		'thermal:steel_plate', [
 		deploying(pm, [pm, 'pneumaticcraft:compressed_stone']),
-		deploying(pm, [pm, 'create:shaft']),
+		deploying(pm, [pm, 'create:electron_tube']),
 		deploying(pm, [pm, 'create:powdered_obsidian'])
 	]).transitionalItem(pm).loops(5).id("atlanabyss:pressure_mechanism")
 	//电力部件
@@ -1498,7 +1607,7 @@ onEvent('recipes', event => {
 		'kubejs:aluminum_sheet', [
 		deploying(tm, [tm, 'pneumaticcraft:plastic']),
 		deploying(tm, [tm, 'kubejs:sulfur_electron_tube']),
-		filling(tm, [tm, Fluid.of('minecraft:water', 500)])
+		filling(tm, [tm, Fluid.of('thermal:creosote', 500)])
 	]).transitionalItem(tm).loops(3).id("atlanabyss:thermal_mechanism")
 	//算力构件
 	let cm = ('kubejs:incomplete_computer_mechanism')
@@ -1516,11 +1625,11 @@ onEvent('recipes', event => {
 		'kubejs:gravitation_mechanism'
 	],
 		'kubejs:magbismuth_sheet', [
-		deploying(gm, [gm, 'ae2:cell_component_4k']),
+		deploying(gm, [gm, 'ae2:cell_component_16k']),
 		deploying(gm, [gm, 'kubejs:candy_electron_tube']),
-		filling(gm, [gm, Fluid.of('tconstruct:ender_slime', 50)]),
+		filling(gm, [gm, Fluid.of('tconstruct:ender_slime', 250)]),
 		deploying(gm, [gm, 'minecraft:honeycomb_block']).keepHeldItem(true)
-	]).transitionalItem(gm).loops(5).id("atlanabyss:gravitation_mechanism")
+	]).transitionalItem(gm).loops(6).id("atlanabyss:gravitation_mechanism")
 
 	//陨钢锭
 	event.custom({
@@ -1617,7 +1726,7 @@ onEvent('recipes', event => {
 		Item.of(('create:crushed_raw_silver'), 1).withChance(.03),
 		Item.of(('minecraft:coal'), 1).withChance(.50),
 		Item.of(('create:experience_nugget'), 1).withChance(.75),
-	], 'kubejs:divine_ore').processingTime(50).id("atlanabyss:divine_ore")
+	], 'kubejs:divine_ore').id("atlanabyss:divine_ore")
 
 	//噩梦缠怨锭！
 	mixing(
@@ -1634,7 +1743,7 @@ onEvent('recipes', event => {
 	crushing([
 		'create:cinder_flour',
 		Item.of(('minecraft:netherite_scrap'), 1).withChance(.50)
-	], 'kubejs:eviltwisting_ingot').processingTime(50).id("atlanabyss:eviltwisting_crushing")
+	], 'kubejs:eviltwisting_ingot').id("atlanabyss:eviltwisting_crushing")
 
 	//氧化铝溶液
 	mixing([
@@ -1743,7 +1852,8 @@ onEvent('recipes', event => {
 	//铋锭
 	mixing('kubejs:bismuth_ingot', [
 		'kubejs:raw_bismuth',
-		'minecraft:chorus_fruit'
+		'minecraft:chorus_fruit',
+		'create:powdered_obsidian'
 	]).heated().id("atlanabyss:mixing_bismuth_ingot")
 	event.custom({
 		type: 'thermal:smelter',
@@ -1904,10 +2014,20 @@ onEvent('recipes', event => {
 		[
 			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
 			filling(oc, [oc, Fluid.of('minecraft:lava', 500)]),
-			pressing(oc, oc).processingTime(100),
-			pressing(oc, oc).processingTime(100),
-			filling(oc, [oc, Fluid.of('minecraft:water', 1000)])
+			pressing(oc, oc),
+			pressing(oc, oc)
 		]).transitionalItem(oc).loops(1).id("atlanabyss:osmium_ingot")
+	//锇锭2
+	sequenced_assembly([
+		'16x kubejs:osmium_ingot'
+	],
+		'kubejs:osmium_scrap',
+		[
+			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
+			deploying(oc, [oc, 'kubejs:calamity_ingot']),
+			pressing(oc, oc),
+			pressing(oc, oc)
+		]).transitionalItem(oc).loops(1).id("atlanabyss:osmium_ingot_16")
 
 	//锇粒
 	event.shaped('kubejs:osmium_ingot', [
@@ -1920,6 +2040,18 @@ onEvent('recipes', event => {
 	event.shapeless('9x kubejs:osmium_nugget', [
 		'kubejs:osmium_ingot'
 	]).id("atlanabyss:osmium_nugget_from_ingot")
+
+	//粗锇
+	event.shaped('kubejs:raw_osmium_block', [
+		'AAA',
+		'AAA',
+		'AAA'
+	], {
+		A: 'kubejs:raw_osmium'
+	}).id("atlanabyss:raw_osmium_block")
+	event.shapeless('9x kubejs:raw_osmium', [
+		'kubejs:raw_osmium_block'
+	]).id("atlanabyss:raw_osmium")
 
 	//蓝晶
 	remove('biggerreactors:crafting/uranium_to_cyanite')
@@ -2147,6 +2279,21 @@ onEvent('recipes', event => {
 		C: 'create:shaft',
 		D: 'createaddition:capacitor'
 	}).id("atlanabyss:alternator")
+	//特斯拉
+	remove('createaddition:mechanical_crafting/tesla_coil')
+	mechanical_crafting('createaddition:tesla_coil', [
+		'AAA',
+		' B ',
+		'CDC',
+		'EFE'
+	], {
+		A: 'createaddition:copper_spool',
+		B: 'create:shaft',
+		C: 'createaddition:capacitor',
+		D: 'create:brass_block',
+		E: 'create:brass_sheet',
+		F: 'kubejs:thermal_mechanism'
+	}).id("atlanabyss:tesla_coil")
 	//电池
 	remove('createaddition:crafting/modular_accumulator_gold')
 	remove('createaddition:crafting/modular_accumulator_electrum')
@@ -2533,7 +2680,7 @@ onEvent('recipes', event => {
 		"temperature": 200
 	}).id("atlanabyss:matrix")
 
-	meltOrCrucible('kubejs:circuit_scrap', 'kubejs:raw_logic', 30, 'raw_logic')
+	meltOrCrucible('kubejs:computer_mechanism', 'kubejs:raw_logic', 90, 'raw_logic')
 	meltOrCrucible('kubejs:zero', 'kubejs:number_0', 1, 'number_0')
 	meltOrCrucible('kubejs:one', 'kubejs:number_1', 1, 'number_1')
 	meltOrCrucible('kubejs:two', 'kubejs:number_2', 1, 'number_2')
@@ -2618,6 +2765,7 @@ onEvent('recipes', event => {
 			bottom: { item: 'create:shadow_steel' }
 		}
 	}).id("atlanabyss:inscriber_virgin_ingot")
+
 
 
 	//铋晶体
@@ -2705,4 +2853,9 @@ onEvent('recipes', event => {
 		'kubejs:alchemy_9',
 		'kubejs:tungsten_nugget'
 	]).id("atlanabyss:treasure_box")
+})
+//堆肥桶
+onEvent('recipes.compostables', event => {
+	event.add('kubejs:cottons_seed', 0.3);
+	event.add('kubejs:cotton', 0.65);
 })

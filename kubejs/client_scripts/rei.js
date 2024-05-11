@@ -149,7 +149,6 @@ onEvent('rei.hide.items', event => {
 		//'thermal:machine_press',//冲压机
 		'thermal:machine_bottler',//罐装机
 		'thermal:machine_brewer',//罐装机
-		'thermal:machine_crucible',//熔岩炉
 		'thermal:machine_chiller',//冷冻机
 		'thermal:machine_refinery',//流体精炼机
 		'thermal:machine_pyrolyzer',//热解机
@@ -158,8 +157,6 @@ onEvent('rei.hide.items', event => {
 		'thermal:iron_plate',//铁板
 		'thermal:gold_plate',//金板
 		'thermal:copper_plate',//铜板
-		'thermal:flux_drill',//电钻
-		'thermal:flux_saw',//电锯
 		'thermal:fluid_reservoir',//大桶
 		'thermal:satchel',//背包
 		'thermal:potion_infuser',//药水注射器
@@ -285,6 +282,9 @@ onEvent('rei.hide.items', event => {
 		'tac:lapua338',
 		'tac:bullet68',
 		'tac:b_magnum',
+		'tac:light_armor',//防弹衣
+		'tac:medium_steel_armor',
+		'tac:light_armor_plate',
 		//ae2
 		'ae2:ender_dust',
 		'ae2:vibration_chamber',
@@ -296,8 +296,6 @@ onEvent('rei.hide.items', event => {
 		'neapolitan:milk_bottle',
 		//kitchenkarrot
 		'kitchenkarrot:ice_cubes',
-		//sophisticatedbackpacks
-		'sophisticatedbackpacks:crafting_upgrade',
 		//twilightforest
 		'twilightforest:uncrafting_table',
 		//tconstruct
@@ -323,7 +321,6 @@ onEvent('rei.remove.categories', event => {
 		//'thermal:sawmill', //热力锯木机
 		//'thermal:press',//冲压机
 		'thermal:brewer',//罐装机
-		'thermal:crucible',//熔岩炉
 		'thermal:chiller',//冷冻机
 		'thermal:refinery',//流体精炼机
 		'thermal:pyrolyzer',//热解机
@@ -355,9 +352,6 @@ onEvent('rei.group', (event) => {
 		'supplementaries:bamboo_spikes_tipped',
 		'netmusic:music_cd',
 		'sophisticatedbackpacks:backpack',
-		'sophisticatedstorage:barrel',
-		'sophisticatedstorage:chest',
-		'sophisticatedstorage:shulker_box',
 		'touhou_little_maid:chair',
 		'touhou_little_maid:garage_kit',
 		'botania:twig_wand',
@@ -478,10 +472,6 @@ onEvent('rei.group', (event) => {
 	//蜡烛
 	event.groupItems('atlanabyss:rei_groups/candles', "蜡烛",
 		'#minecraft:candles'
-	);
-	//唱片
-	event.groupItems('atlanabyss:rei_groups/music_discs', "唱片",
-		'#minecraft:music_discs'
 	);
 	//墙
 	event.groupItems('atlanabyss:rei_groups/wall', "墙",
@@ -621,22 +611,6 @@ onEvent('rei.group', (event) => {
 	//背包升级
 	event.groupItems('atlanabyss:rei_groups/back_upgrade', "背包升级",
 		[/^sophisticatedbackpacks:.*_upgrade/, 'sophisticatedbackpacks:upgrade_base']
-	);
-	//存储升级
-	event.groupItems('atlanabyss:rei_groups/storage_upgrade', "存储升级",
-		[/^sophisticatedstorage:.*_upgrade/, 'sophisticatedstorage:upgrade_base']
-	);
-	//精妙桶
-	event.groupItems('atlanabyss:rei_groups/storage_barrel', "升级桶",
-		[/^sophisticatedstorage:.*_barrel/]
-	);
-	//精妙箱
-	event.groupItems('atlanabyss:rei_groups/storage_chest', "升级箱",
-		[/^sophisticatedstorage:.*_chest/]
-	);
-	//精妙盒
-	event.groupItems('atlanabyss:rei_groups/storage_shulker_box', "升级盒",
-		[/^sophisticatedstorage:.*_shulker_box/]
 	);
 	//铸模
 	event.groupItems('atlanabyss:rei_groups/casts', "铸模",

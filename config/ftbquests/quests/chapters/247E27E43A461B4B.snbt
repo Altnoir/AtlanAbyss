@@ -1,0 +1,901 @@
+{
+	id: "247E27E43A461B4B"
+	group: "62B0CA2D682AC9D6"
+	order_index: 3
+	filename: "247E27E43A461B4B"
+	title: "交流电力"
+	icon: "thermal:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["2896AD9C74EA52FF"]
+			hide: true
+			id: "04B534A53F398C7A"
+			tasks: [{
+				id: "0E3CCC035533C713"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+			rewards: [{
+				id: "211EB8DC39FFD6E4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["15FDE04FCBC2778D"]
+			hide: true
+			id: "0D77BEE452563508"
+			tasks: [
+				{
+					id: "7A16F9C3F7B63362"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "2FF509F420B8BA94"
+					type: "item"
+					item: "enderstorage:ender_tank"
+				}
+			]
+			rewards: [{
+				id: "23671D930D266F8F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "7D91651678824730"
+			tasks: [{
+				id: "5347141E17409A63"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+			rewards: [{
+				id: "2A3297FE7DA50C67"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 5.0d
+			description: ["锇，在这个世界中极为罕见的高密度金属，不过，在守卫者的体内似乎含有微量的锇碎片？"]
+			dependencies: ["2896AD9C74EA52FF"]
+			hide: true
+			id: "786FDB466081FCC6"
+			tasks: [{
+				id: "0106A6D9A695CA70"
+				type: "item"
+				item: "kubejs:osmium_scrap"
+			}]
+			rewards: [{
+				id: "280E2FA9A5C45BD1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"方便好用的多功能管道！"
+				"使用机械动力扳手方可进行调整。"
+			]
+			dependencies: ["786FDB466081FCC6"]
+			hide: true
+			id: "1E39344709EC4874"
+			tasks: [{
+				id: "1FFBCABEDA66166A"
+				type: "item"
+				item: "pipez:universal_pipe"
+			}]
+			rewards: [{
+				id: "678F9870EC5B236D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.0d
+			dependencies: ["3411A6B26CA383EA"]
+			id: "4D9C925CA479EDC2"
+			tasks: [{
+				id: "01432FA4B77EEC12"
+				type: "item"
+				item: "biggerreactors:turbine_casing"
+			}]
+			rewards: [{
+				id: "3F6946EA93018C9F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["4D9C925CA479EDC2"]
+			id: "385BD6EE1DB980A0"
+			tasks: [{
+				id: "1DE71CA7C8E9EEBD"
+				type: "item"
+				item: "biggerreactors:ludicrite_block"
+			}]
+			rewards: [{
+				id: "7991AF8D6A3DEF65"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["4D9C925CA479EDC2"]
+			id: "19F8D09F698F7562"
+			tasks: [{
+				id: "721E93CBBFD17EE1"
+				type: "item"
+				item: "biggerreactors:turbine_glass"
+			}]
+			rewards: [{
+				id: "01767B307332FB51"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["4D9C925CA479EDC2"]
+			id: "12621AF27FC7857C"
+			tasks: [{
+				id: "2F4BA115C1A603B3"
+				type: "item"
+				item: "biggerreactors:turbine_fluid_port"
+			}]
+			rewards: [{
+				id: "742874ACD313FD2E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 8.0d
+			dependencies: ["4D9C925CA479EDC2"]
+			id: "1A6C966F90EDB471"
+			tasks: [{
+				id: "14A15854CF91E11A"
+				type: "item"
+				item: "biggerreactors:turbine_terminal"
+			}]
+			rewards: [{
+				id: "523D99C259638E12"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 8.5d
+			dependencies: ["4D9C925CA479EDC2"]
+			id: "6AF0C49B843D6589"
+			tasks: [
+				{
+					id: "1E1078E69F969420"
+					type: "item"
+					item: "biggerreactors:turbine_rotor_shaft"
+				}
+				{
+					id: "1D96DB549A11FC73"
+					type: "item"
+					item: "biggerreactors:turbine_rotor_blade"
+				}
+				{
+					id: "5843D824C6F3D73F"
+					type: "item"
+					item: "biggerreactors:turbine_rotor_bearing"
+				}
+			]
+			rewards: [{
+				id: "2E31780504E2344B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			dependencies: ["4D9C925CA479EDC2"]
+			id: "471221F801A134B3"
+			tasks: [{
+				id: "726F95F9932A9097"
+				type: "item"
+				item: "biggerreactors:turbine_power_tap"
+			}]
+			rewards: [{
+				id: "6CF65999E312E0E7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			dependencies: ["3411A6B26CA383EA"]
+			id: "7D58F8127C3CF6E7"
+			tasks: [{
+				id: "65A496C6204675EC"
+				type: "item"
+				item: "biggerreactors:heat_exchanger_casing"
+			}]
+			rewards: [{
+				id: "1EC4980E4E35EF07"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: 10.0d
+			dependencies: ["7D58F8127C3CF6E7"]
+			hide: true
+			id: "2F0ECA92C1ECDDEF"
+			tasks: [
+				{
+					id: "14AB6AC3360263C8"
+					type: "item"
+					item: "biggerreactors:heat_exchanger_condenser_channel"
+				}
+				{
+					id: "038BCA36A1322654"
+					type: "item"
+					item: "biggerreactors:heat_exchanger_evaporator_channel"
+				}
+			]
+			rewards: [{
+				id: "2275668D97EA1692"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 10.0d
+			dependencies: ["7D58F8127C3CF6E7"]
+			hide: true
+			id: "6B99DB9547D6DD47"
+			tasks: [{
+				id: "586A8FF28A3D3B93"
+				type: "item"
+				item: "biggerreactors:heat_exchanger_fluid_port"
+			}]
+			rewards: [{
+				id: "750BA2287B42C4DD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: 9.0d
+			dependencies: ["7D58F8127C3CF6E7"]
+			hide: true
+			id: "3C4808A0915D7BC9"
+			tasks: [{
+				id: "577B4B46B6BA24A1"
+				type: "item"
+				item: "biggerreactors:heat_exchanger_terminal"
+			}]
+			rewards: [{
+				id: "4B00300A398FFF6A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: 9.0d
+			shape: "hexagon"
+			dependencies: ["7D58F8127C3CF6E7"]
+			hide: true
+			id: "1D5A6376751EDFF0"
+			tasks: [{
+				id: "32756E5DAF90DD74"
+				type: "item"
+				item: "biggerreactors:heat_exchanger_glass"
+			}]
+			rewards: [{
+				id: "30DFFD4AB8A399B0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.0d
+			dependencies: ["71831986FEB52C6F"]
+			id: "11F6435C17265B4A"
+			tasks: [{
+				id: "680F64E363DDE326"
+				type: "item"
+				item: "biggerreactors:uranium_ingot"
+			}]
+			rewards: [{
+				id: "71D98DEE55A9AA7D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "“这是什么?喝一口”"
+			disable_toast: true
+			x: -4.0d
+			y: 9.5d
+			shape: "hexagon"
+			description: ["核反应堆的产出物。"]
+			dependencies: ["11F6435C17265B4A"]
+			hide: true
+			id: "3F8D442510D58D22"
+			tasks: [{
+				id: "522E4431E0C0077F"
+				type: "item"
+				item: "biggerreactors:cyanite_ingot"
+			}]
+			rewards: [{
+				id: "2A43E3406022812C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["04B534A53F398C7A"]
+			id: "61CDC9A969C09267"
+			tasks: [{
+				id: "1E9C221A2397303F"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+			rewards: [{
+				id: "69466015DAA1A8F0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "091F01B16A12EAF2"
+			tasks: [{
+				id: "7CC2C8326C36236F"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "286AED8A9B39BB15"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 7.0d
+			dependencies: ["172EF188349304AC"]
+			hide: true
+			id: "3411A6B26CA383EA"
+			tasks: [{
+				id: "44482772BCD83387"
+				type: "item"
+				item: "kubejs:osmium_casing"
+			}]
+			rewards: [{
+				id: "0CF548D60BC238D6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.0d
+			dependencies: ["3411A6B26CA383EA"]
+			id: "71831986FEB52C6F"
+			tasks: [{
+				id: "335B5BF131BFB8A6"
+				type: "item"
+				item: "biggerreactors:reactor_casing"
+			}]
+			rewards: [{
+				id: "5155B12B373B2713"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.0d
+			dependencies: ["71831986FEB52C6F"]
+			id: "70F5C843A08AE753"
+			tasks: [{
+				id: "52433850C58A81AF"
+				type: "item"
+				item: "biggerreactors:reactor_control_rod"
+			}]
+			rewards: [{
+				id: "448BCB4A2EE222AC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			dependencies: ["71831986FEB52C6F"]
+			id: "65476F77C566B3EA"
+			tasks: [{
+				id: "6E3BFB31EDE0C7C4"
+				type: "item"
+				item: "biggerreactors:reactor_terminal"
+			}]
+			rewards: [{
+				id: "64EB491CDC89E8BB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			shape: "hexagon"
+			dependencies: ["71831986FEB52C6F"]
+			id: "01BD0CAB9E5C4889"
+			tasks: [{
+				id: "7025628C76CFCEB3"
+				type: "item"
+				item: "biggerreactors:reactor_glass"
+			}]
+			rewards: [{
+				id: "350459C8B80794F4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			dependencies: ["71831986FEB52C6F"]
+			id: "08D542FA0C9E3AC8"
+			tasks: [
+				{
+					id: "565FA4A4AC17A55E"
+					type: "item"
+					item: "biggerreactors:reactor_access_port"
+				}
+				{
+					id: "7541701CD05D821C"
+					type: "item"
+					item: "biggerreactors:reactor_coolant_port"
+				}
+			]
+			rewards: [{
+				id: "626FA04AEDBE1F54"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.0d
+			shape: "hexagon"
+			dependencies: ["71831986FEB52C6F"]
+			id: "2FA680014202E150"
+			tasks: [{
+				id: "48448C6ADB4605F5"
+				type: "item"
+				item: "biggerreactors:reactor_redstone_port"
+			}]
+			rewards: [{
+				id: "193241114E22DE0A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["04B534A53F398C7A"]
+			id: "3A7C031DDABE3942"
+			tasks: [{
+				id: "094125A04855CD1F"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+			rewards: [{
+				id: "1A303B52A81405D6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["04B534A53F398C7A"]
+			id: "20ED7A1C1B7E4CD3"
+			tasks: [{
+				id: "39A2BC259CE7D4B0"
+				type: "item"
+				item: "thermal:dynamo_magmatic"
+			}]
+			rewards: [{
+				id: "1E25F4C8EC72CA5F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["71831986FEB52C6F"]
+			id: "6C68E5B30B2CDA88"
+			tasks: [{
+				id: "610E7D03C2371CAC"
+				type: "item"
+				item: "biggerreactors:reactor_fuel_rod"
+			}]
+			rewards: [{
+				id: "4996DFD4803CF528"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -5.0d
+			dependencies: ["77AACF5ABE3BB465"]
+			hide: true
+			id: "71D5C4423F628785"
+			tasks: [{
+				id: "74F3822901CCF64B"
+				type: "item"
+				item: "kubejs:polished_charged_certus_quartz"
+			}]
+			rewards: [{
+				id: "487364A546B3F911"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -3.5d
+			description: ["使用特斯拉线圈对赛特斯石英水晶充能即可获得。"]
+			dependencies: [
+				"61CDC9A969C09267"
+				"4CE70B356739CDA2"
+			]
+			id: "77AACF5ABE3BB465"
+			tasks: [{
+				id: "29B51CD87C1A0106"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+			rewards: [{
+				id: "56C50C382F8D0C84"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["04B534A53F398C7A"]
+			id: "15FDE04FCBC2778D"
+			tasks: [{
+				id: "50EF90AC5D022C54"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "40D39F31787941C8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["04B534A53F398C7A"]
+			id: "65161712E8643D11"
+			tasks: [{
+				id: "6A3AF1934F80E07C"
+				type: "item"
+				item: "thermal:machine_insolator"
+			}]
+			rewards: [{
+				id: "2BD5791796742111"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["04B534A53F398C7A"]
+			id: "05902BBF645C211E"
+			tasks: [{
+				id: "7F834E37EE6568E9"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "5AEB6A699D4266CA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "6429523E580D0569"
+			tasks: [{
+				id: "266CED2A6DD50A19"
+				type: "item"
+				item: "thermal:machine_crystallizer"
+			}]
+			rewards: [{
+				id: "53CEABD6DDAC6370"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "25029642A6C98057"
+			tasks: [{
+				id: "13A2F30B758032C3"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "54C8835325693563"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "157A8F42A9C5BC48"
+			tasks: [{
+				id: "5414D019C8EB6284"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+			rewards: [{
+				id: "0B8E3B6ACB723D82"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "138FFD32A0DABF38"
+			tasks: [{
+				id: "2222932E5389A3DE"
+				type: "item"
+				item: "thermal:machine_centrifuge"
+			}]
+			rewards: [{
+				id: "4BD34AEB3534D6A2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "74BED0ACAF1CA27A"
+			tasks: [{
+				id: "6F81E37CB47771DE"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+			rewards: [{
+				id: "1B246DF47F7A77A0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "53FA04C57406C5C4"
+			tasks: [{
+				id: "22C006FF65661EF1"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+			rewards: [{
+				id: "08DDAC02A0A7251D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "60C85559AEE3DFC5"
+			tasks: [{
+				id: "03CC257F146794A5"
+				type: "item"
+				item: "thermal:device_potion_diffuser"
+			}]
+			rewards: [{
+				id: "71057E46122E8DFE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "42F0BEF1687524CD"
+			tasks: [{
+				id: "180D269DF24E14EE"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+			rewards: [{
+				id: "74470A86F41D2E72"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "43415A7062E7C6B1"
+			tasks: [{
+				id: "7F2CB2A48AAE7E8B"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+			rewards: [{
+				id: "61F7E768B7BCAB60"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["04B534A53F398C7A"]
+			id: "303AC9C73C10DC81"
+			tasks: [{
+				id: "6718B70C1F83D70D"
+				type: "item"
+				item: "createaddition:modular_accumulator"
+			}]
+			rewards: [{
+				id: "23567CA2B81498E1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "赛特斯石英"
+			icon: "ae2:deepslate_quartz_ore"
+			disable_toast: true
+			x: -2.0d
+			y: -3.5d
+			description: ["一种只出现在末地的矿石，并且不会暴露在表面。"]
+			dependencies: ["2896AD9C74EA52FF"]
+			hide: true
+			id: "4CE70B356739CDA2"
+			tasks: [{
+				id: "35302A300907D826"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+			rewards: [{
+				id: "0D7139956CAA07A2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -6.5d
+			dependencies: ["71D5C4423F628785"]
+			id: "688C5FEF6695C5A4"
+			tasks: [{
+				id: "14718E4776803989"
+				type: "item"
+				item: "kubejs:charged_electron_tube"
+			}]
+			rewards: [{
+				id: "55092C8BA7726356"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			shape: "octagon"
+			dependencies: ["688C5FEF6695C5A4"]
+			id: "0995E7B507258131"
+			tasks: [{
+				id: "07BA3419E64CB3D1"
+				type: "item"
+				item: "kubejs:computer_mechanism"
+			}]
+			rewards: [{
+				id: "5739DD4758325AF4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["786FDB466081FCC6"]
+			id: "172EF188349304AC"
+			tasks: [{
+				id: "673FD7514A3927F4"
+				type: "item"
+				item: "kubejs:osmium_ingot"
+			}]
+			rewards: [{
+				id: "0FA9D19DC27D0ED5"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

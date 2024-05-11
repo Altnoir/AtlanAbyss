@@ -123,7 +123,7 @@
       }
     },
     "openConfigGui": {
-      "keys": "H,C"
+      "keys": "J,C"
     },
     "requiredKey": {
       "keys": ""
@@ -562,7 +562,7 @@
     "Mineshaft": false,
     "Nether Fortress": false,
     "Nether Fossil": false,
-    "Ocean Monument": false,
+    "Ocean Monument": true,
     "Ocean Ruin": false,
     "Pillager Outpost": false,
     "Ruined Portal": false,

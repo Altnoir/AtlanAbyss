@@ -1,3 +1,10 @@
+onEvent('worldgen.remove', event => {
+  event.removeOres(props => {
+    props.worldgenLayer = 'underground_ores'
+    props.blocks = ['ae2:quartz_ore']
+  })
+})
+
 onEvent('worldgen.add', event => {
   event.addOre(ore => {
     ore.id = 'kubejs:end_bismuth_ore' // (可选)自定义id
@@ -114,7 +121,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_uranium_ore'
-    ore.biomes = /^inversia:.*/
+    ore.biomes = /^inversia:*/
 
     ore.addTarget('minecraft:deepslate', 'kubejs:inversia_uranium_ore')//颠倒铀矿
 
@@ -131,7 +138,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_lead_ore'
-    ore.biomes = /^inversia:.*/
+    ore.biomes = /^inversia:*/
 
     ore.addTarget('minecraft:deepslate', 'thermal:deepslate_lead_ore')//颠倒铅矿
 
@@ -148,7 +155,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_diamond_ore'
-    ore.biomes = /^inversia:.*/
+    ore.biomes = /^inversia:*/
 
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_diamond_ore')//颠倒钻石矿
 
@@ -165,7 +172,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_lapis_ore'
-    ore.biomes = /^inversia:.*/
+    ore.biomes = /^inversia:*/
 
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_lapis_ore')//颠倒青金石矿
 
@@ -183,7 +190,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_redstone_ore'
-    ore.biomes = /^inversia:.*/
+    ore.biomes = /^inversia:*/
 
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_redstone_ore')//颠倒红石矿
 

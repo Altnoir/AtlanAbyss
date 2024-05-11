@@ -1,0 +1,21 @@
+
+#Opotato Common Config
+["Opotato Settings"]
+	"allow entities spawn limit" = false
+	#Range: 1 ~ 100
+	"max entities spawning number per chunk" = 10
+	"entities whose spawn won't be limited" = ["modid:mobid"]
+	"enable creative one pouch" = true
+
+["Cracker's Wither Storm Mod Optimization Settings"]
+	#Every settings here will improve performance a lot as the mod is really laggy
+	"let wither sickness ticking system only take effect on players, NOT AVAILABLE YET, DON'T ENABLE THIS" = false
+	"don't let the wither sickness ticking system affect monsters, NOT AVAILABLE YET, DON'T ENABLE THIS" = false
+	"don't let the wither sickness ticking system affect animals, NOT AVAILABLE YET, DON'T ENABLE THIS" = false
+	#With this turning on, the amount of block clusters will be reduced on rendering and they won't be rendered when no player see them, NOT AVAILABLE YET
+	"block cluster render optimization" = false
+	"reduce the wither storm chunks activity by one half, NOT AVAILABLE YET, DON'T ENABLE THIS" = false
+	#Entities that will be killed: Block Cluster, Sickened Skeleton, Sickened Creeper, Sickened Spider, Sickened Zombie, Tentacle, Withered Symbiont.
+	#Inspired by Lag Removal mod.
+	"kill witherstormmod entities after command block dies" = false
+

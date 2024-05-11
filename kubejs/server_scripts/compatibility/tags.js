@@ -221,9 +221,12 @@ onEvent('tags.items', event => {
 		['forge:storage_blocks/tungsten', 'kubejs:tungsten_block'],//块
 		//锇
 		['forge:ingots/osmium', 'kubejs:osmium_ingot'],//锭
+		['forge:ingots', 'kubejs:osmium_ingot'],//锭
 		['forge:plates/osmium', 'kubejs:osmium_sheet'],//板
 		['forge:ores', 'kubejs:moon_osmium_ore'],//矿石
 		['forge:ores/osmium', 'kubejs:moon_osmium_ore'],
+		['forge:raw_materials/osmium','kubejs:raw_osmium'],//粗
+		['forge:storage_blocks/raw_osmium','kubejs:raw_osmium_block'],
 		//银
 		['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
 		['forge:ores/silver', 'kubejs:mercury_silver_ore'],
@@ -307,7 +310,8 @@ onEvent('tags.blocks', event => {
 		'thermal:tinker_bench',
 		/^sophisticatedstorage:/,
 		/^kubejs:alchemy_/,
-		'#kubejs:substrates'
+		'#kubejs:substrates',
+		'minecraft:bone_block'
 	])
 })
 
