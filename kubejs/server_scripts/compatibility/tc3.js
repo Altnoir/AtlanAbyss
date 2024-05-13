@@ -28,6 +28,18 @@ onEvent('recipes', event => {
   remove('twilightforest:smeltery/melting/metal/fiery/nugget')
   //骑士金属
   remove('twilightforest:smeltery/melting/metal/knightmetal/nugget')
+  //砖泥
+  remove('tconstruct:smeltery/seared/grout_multiple')
+  remove('tconstruct:smeltery/seared/grout')
+  remove('tconstruct:smeltery/seared/seared_brick')
+  remove('tconstruct:smeltery/seared/seared_brick_kiln')
+  remove('tconstruct:smeltery/melting/seared/grout')
+  remove('tconstruct:common/puny_smelting')
+  event.shapeless('tconstruct:puny_smelting',[
+    'minecraft:book',
+    'minecraft:clay_ball'
+  ]).id('atlanabyss:tc_puny_smelting');
+
   event.custom({
     type: 'tconstruct:melting',
     ingredient: {
@@ -39,7 +51,7 @@ onEvent('recipes', event => {
     },
     temperature: 830,
     time: 61
-  }).id("atlanabyss:tc_melting_uranium_ingot");
+  }).id('atlanabyss:tc_melting_uranium_ingot');
 
   remove('tconstruct:tools/modifiers/slotless/embellishment_uranium')
   event.custom({
@@ -63,7 +75,7 @@ onEvent('recipes', event => {
       name: 'tconstruct:embellishment',
       value: 'tconstruct:uranium'
     }
-  }).id("atlanabyss:tc_embellishment_uranium");
+  }).id('atlanabyss:tc_embellishment_uranium');
 
   remove('tconstruct:smeltery/casting/metal/uranium/ingot_gold_cast')
   remove('tconstruct:smeltery/casting/metal/uranium/ingot_sand_cast')
@@ -80,7 +92,7 @@ onEvent('recipes', event => {
       item: 'kubejs:uranium_ingot'
     },
     cooling_time: 61
-  }).id("atlanabyss:tc_casting_uranium_ingot_gold_cast");
+  }).id('atlanabyss:tc_casting_uranium_ingot_gold_cast');
   event.custom({
     type: 'tconstruct:casting_table',
     cast: {
@@ -95,7 +107,7 @@ onEvent('recipes', event => {
       item: 'kubejs:uranium_ingot'
     },
     cooling_time: 61
-  }).id("atlanabyss:tc_casting_uranium_ingot_sand_cast");
+  }).id('atlanabyss:tc_casting_uranium_ingot_sand_cast');
 
   //魂钢
   event.custom({
@@ -115,7 +127,7 @@ onEvent('recipes', event => {
       amount: 270
     },
     temperature: 1200
-  }).id("atlanabyss:ore_molten_steelsoul");
+  }).id('atlanabyss:ore_molten_steelsoul');
 
   //熔融末影→谐振末影
   event.recipes.create.mixing(Fluid.of('thermal:ender', 250),
@@ -142,7 +154,7 @@ onEvent('recipes', event => {
           amount: ba
         }
       ]
-    }).id("atlanabyss:ore_melting_" + id);
+    }).id('atlanabyss:ore_melting_' + id);
   }
 
   oreMelting('create:crushed_raw_iron', 'tconstruct:molten_iron', 90, 800, 90, 'tconstruct:molten_nickel', 90, 'crushed_iron')
@@ -158,63 +170,125 @@ onEvent('recipes', event => {
   event.shapeless('tconstruct:earth_slime_grass_seeds', [
     'botania:grass_seeds',
     'minecraft:slime_ball'
-  ]).id("atlanabyss:earth_slime_grass_seeds")//绿种子
+  ]).id('atlanabyss:earth_slime_grass_seeds')//绿种子
   event.shapeless('tconstruct:sky_slime_grass_seeds', [
     'botania:grass_seeds',
     'tconstruct:sky_slime_ball'
-  ]).id("atlanabyss:sky_slime_grass_seeds")//蓝种子
+  ]).id('atlanabyss:sky_slime_grass_seeds')//蓝种子
   event.shapeless('tconstruct:blood_slime_grass_seeds', [
     'botania:grass_seeds',
     'tconstruct:blood_slime_ball'
-  ]).id("atlanabyss:blood_slime_grass_seeds")//红种子
+  ]).id('atlanabyss:blood_slime_grass_seeds')//红种子
   event.shapeless('tconstruct:ender_slime_grass_seeds', [
     'botania:grass_seeds',
     'tconstruct:ender_slime_ball'
-  ]).id("atlanabyss:ender_slime_grass_seeds")//紫种子
+  ]).id('atlanabyss:ender_slime_grass_seeds')//紫种子
   //树苗
   event.recipes.botania.mana_infusion('tconstruct:earth_slime_sapling',
     'ars_nouveau:green_archwood_sapling',
     120,
-    'minecraft:amethyst_block').id("atlanabyss:earth_slime_sapling")
+    'minecraft:amethyst_block').id('atlanabyss:earth_slime_sapling')
   event.recipes.botania.mana_infusion('tconstruct:sky_slime_sapling',
     'ars_nouveau:blue_archwood_sapling',
     120,
-    'minecraft:amethyst_block').id("atlanabyss:sky_slime_sapling")
+    'minecraft:amethyst_block').id('atlanabyss:sky_slime_sapling')
   event.recipes.botania.mana_infusion('tconstruct:ender_slime_sapling',
     'ars_nouveau:purple_archwood_sapling',
     120,
-    'minecraft:amethyst_block').id("atlanabyss:ender_slime_sapling")
+    'minecraft:amethyst_block').id('atlanabyss:ender_slime_sapling')
   event.recipes.botania.mana_infusion('tconstruct:blood_slime_sapling',
     'ars_nouveau:red_archwood_sapling',
     120,
-    'minecraft:amethyst_block').id("atlanabyss:blood_slime_sapling")
+    'minecraft:amethyst_block').id('atlanabyss:blood_slime_sapling')
 
 
   //蜂蜜
   remove('tconstruct:smeltery/melting/slime/honey_block')
   event.custom({
-    "type": "tconstruct:melting",
-    "ingredient": {
-      "item": "minecraft:honey_block"
+    'type': 'tconstruct:melting',
+    'ingredient': {
+      'item': 'minecraft:honey_block'
     },
-    "result": {
-      "fluid": "create:honey",
-      "amount": 1000
+    'result': {
+      'fluid': 'create:honey',
+      'amount': 1000
     },
-    "temperature": 1,
-    "time": 94
-  }).id("atlanabyss:tc_melting_honey_block")
+    'temperature': 1,
+    'time': 94
+  }).id('atlanabyss:tc_melting_honey_block')
 
   remove('tconstruct:smeltery/entity_melting/bee')
   event.custom({
-    "type": "tconstruct:entity_melting",
-    "entity": {
-      "type": "minecraft:bee"
+    'type': 'tconstruct:entity_melting',
+    'entity': {
+      'type': 'minecraft:bee'
     },
-    "result": {
-      "fluid": "create:honey",
-      "amount": 25
+    'result': {
+      'fluid': 'create:honey',
+      'amount': 25
     },
-    "damage": 2
-  }).id("atlanabyss:entity_melting_bee")
+    'damage': 2
+  }).id('atlanabyss:entity_melting_bee')
+
+  //花岗粘土
+  remove('tconstruct:smeltery/melting/clay/brick_slab')
+  remove('tconstruct:smeltery/melting/clay/pot')
+  remove('tconstruct:smeltery/melting/clay/terracotta')
+  event.custom({
+    type: 'tconstruct:melting',
+    ingredient: {
+      item: 'minecraft:granite'
+    },
+    result: {
+      fluid: 'tconstruct:molten_clay',
+      amount: 1000
+    },
+    temperature: 450,
+    time: 96
+  }).id('atlanabyss:tc_melting_granite');
+
+  //花岗砖泥
+  event.shaped('tconstruct:seared_brick', [
+    'AB',
+    'BA'
+  ], {
+    A: 'minecraft:dried_kelp',
+    B: 'minecraft:granite'
+  }).id('atlanabyss:tc_seared_brick');
+
+  //熔渣
+  event.custom({
+    type: 'tconstruct:melting',
+    ingredient: {
+      tag: 'create:stone_types/scoria'
+    },
+    result: {
+      fluid: 'tconstruct:scorched_stone',
+      amount: 1000
+    },
+    temperature: 500,
+    time: 100
+  }).id('atlanabyss:tc_melting_scoria');
+
+  //魂钢配方补
+  event.shaped('tconstruct:soulsteel_block', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'tconstruct:soulsteel_ingot'
+  }).id('atlanabyss:soulsteel_block_from_ingot')
+  event.shapeless('9x tconstruct:soulsteel_ingot', [
+    'tconstruct:soulsteel_block'
+  ]).id('atlanabyss:soulsteel_ingot_from_block')
+  event.shaped('tconstruct:soulsteel_ingot', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'tconstruct:soulsteel_nugget'
+  }).id('atlanabyss:soulsteel_ingot_from_nugget')
+  event.shapeless('9x tconstruct:soulsteel_nugget', [
+    'tconstruct:soulsteel_ingot'
+  ]).id('atlanabyss:soulsteel_nugget_from_ingot')
 })

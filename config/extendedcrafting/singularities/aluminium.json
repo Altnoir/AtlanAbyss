@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.aluminium",
+  "colors": [
+    "969dc0",
+    "8193ac"
+  ],
+  "ingredient": {
+    "item": "kubejs:aluminium_alloy_ingot"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.lutetium",
+  "colors": [
+    "e974b5",
+    "ae448a"
+  ],
+  "ingredient": {
+    "item": "kubejs:lutetium_ingot"
+  }
+}

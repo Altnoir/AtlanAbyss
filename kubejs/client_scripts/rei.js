@@ -266,6 +266,22 @@ onEvent('rei.hide.items', event => {
 		'biggerreactors:reactor_computer_port',//电脑端口
 		'biggerreactors:turbine_computer_port',
 		'biggerreactors:heat_exchanger_computer_port',
+		//extendedcrafting
+		'extendedcrafting:luminessence',
+		'extendedcrafting:black_iron_slate',
+		'extendedcrafting:ender_star',
+		'extendedcrafting:pedestal',
+		'extendedcrafting:ender_alternator',
+		'extendedcrafting:ender_crafter',
+		'extendedcrafting:recipe_maker',
+		'extendedcrafting:crafting_core',
+		'extendedcrafting:handheld_table',
+		/^extendedcrafting:.*block/,
+		/^extendedcrafting:.*ingot/,
+		/^extendedcrafting:.*nugget/,
+		/^extendedcrafting:.*catalyst/,
+		/^extendedcrafting:.*component/,
+		/^extendedcrafting:.*table/,
 		//tac
 		'tac:round45',
 		'tac:ae50',
@@ -302,6 +318,7 @@ onEvent('rei.hide.items', event => {
 		'tconstruct:netherite_nugget',//下界合金粒
 		'tconstruct:copper_nugget',//铜粒
 		'tconstruct:honey_bucket',
+		'tconstruct:grout',//砖泥
 		//beyond_earth
 		'beyond_earth:steel_ingot',
 		//黑紫方块

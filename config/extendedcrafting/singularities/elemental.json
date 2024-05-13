@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.elemental",
+  "colors": [
+    "e096a5",
+    "916091"
+  ],
+  "ingredient": {
+    "item": "kubejs:elemental_ingot"
+  }
+}

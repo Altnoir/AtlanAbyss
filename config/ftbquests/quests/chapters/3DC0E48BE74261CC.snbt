@@ -1,0 +1,395 @@
+{
+	id: "3DC0E48BE74261CC"
+	group: "03B4E601CC5A5BFE"
+	order_index: 2
+	filename: "3DC0E48BE74261CC"
+	title: "匠之力"
+	icon: "tconstruct:smeltery_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["55E15B669198B728"]
+			hide: true
+			id: "4458072D8E0FF1EB"
+			tasks: [{
+				id: "25C8C8B341D767DF"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+			rewards: [{
+				id: "05C868C8CB610B42"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "122B98EA9134BB5F"
+			tasks: [{
+				id: "08E458E3698348D6"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+			rewards: [{
+				id: "627631EB4AEF4E47"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "388FA3B37E240BAB"
+			tasks: [{
+				id: "3CF6D30A9548BA89"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+			rewards: [{
+				id: "7C6D7CC83558077C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "6965DBFDD49E0136"
+			tasks: [{
+				id: "74F55C69847F42B3"
+				type: "item"
+				item: "tconstruct:seared_basin"
+			}]
+			rewards: [{
+				id: "5C2EFF7E9BFA4EF2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "4F669D502E92E634"
+			tasks: [{
+				id: "729E596D73659024"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "7EF1A281FD6BA771"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -1.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "2C23BA050BDD5769"
+			tasks: [{
+				id: "477D74F6C233C928"
+				type: "item"
+				item: "tconstruct:seared_table"
+			}]
+			rewards: [{
+				id: "45DE915EE372C297"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["4F669D502E92E634"]
+			id: "443514BE331D9F80"
+			tasks: [{
+				id: "6D57C0EF1793726D"
+				type: "item"
+				title: "任意储罐"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:tanks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5023E6887257C746"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["4F669D502E92E634"]
+			id: "1371D704494C9EE7"
+			tasks: [{
+				id: "794E37E3CC917712"
+				type: "item"
+				title: "任意焦黑石"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:seared_blocks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "7E8FD83AF848FA47"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["4F669D502E92E634"]
+			id: "211BC77BA64E1AE5"
+			tasks: [{
+				id: "3A01B03388F500D9"
+				type: "item"
+				item: "tconstruct:seared_ladder"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: 1.0d
+			description: ["用于流体交互"]
+			dependencies: ["4F669D502E92E634"]
+			id: "10F769A6D0660667"
+			tasks: [{
+				id: "561E3E8158B43C34"
+				type: "item"
+				item: "tconstruct:seared_drain"
+			}]
+			rewards: [{
+				id: "080BC292076E644B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.5d
+			y: 1.5d
+			description: ["用于物品交互"]
+			dependencies: ["4F669D502E92E634"]
+			id: "5E374297D5A8F37D"
+			tasks: [{
+				id: "1D9E48FCF9299D00"
+				type: "item"
+				item: "tconstruct:seared_chute"
+			}]
+			rewards: [{
+				id: "75917BFF6C418476"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			shape: "hexagon"
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "2A1A97CA12705C15"
+			tasks: [{
+				id: "553D880279654D87"
+				type: "item"
+				item: "tconstruct:seared_channel"
+			}]
+			rewards: [{
+				id: "68F012178B8CAE96"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "220764DE08BFC051"
+			tasks: [{
+				id: "49FFC75106E01A3E"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+			rewards: [{
+				id: "54B12E8D3D2E9A77"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: 1.0d
+			description: ["用于流体交互"]
+			dependencies: ["220764DE08BFC051"]
+			id: "224FBB0DD75AFD2F"
+			tasks: [{
+				id: "0C35BECF064E19D6"
+				type: "item"
+				item: "tconstruct:scorched_drain"
+			}]
+			rewards: [{
+				id: "3E18EADFCCE2BE6D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: 1.5d
+			description: ["用于物品交互"]
+			dependencies: ["220764DE08BFC051"]
+			id: "31B26C7D4571F2CE"
+			tasks: [{
+				id: "11FE5A1B4039B3D6"
+				type: "item"
+				item: "tconstruct:scorched_chute"
+			}]
+			rewards: [{
+				id: "09EFDDD9B9806930"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: 1.0d
+			shape: "hexagon"
+			description: ["用于流体交互过滤"]
+			dependencies: ["220764DE08BFC051"]
+			id: "16C01174766256A8"
+			tasks: [{
+				id: "73B8CB1004733270"
+				type: "item"
+				item: "tconstruct:scorched_duct"
+			}]
+			rewards: [{
+				id: "06DA2D48BC709D51"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.5d
+			y: 1.0d
+			shape: "hexagon"
+			description: ["用于流体交互过滤"]
+			dependencies: ["4F669D502E92E634"]
+			id: "4CA63D75FC5D4518"
+			tasks: [{
+				id: "62E70376550714A3"
+				type: "item"
+				item: "tconstruct:seared_duct"
+			}]
+			rewards: [{
+				id: "37ACC7BB1DCDB0F0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["220764DE08BFC051"]
+			id: "18D0718FE515E71B"
+			tasks: [{
+				id: "352CE5F7945B9A76"
+				type: "item"
+				item: "tconstruct:scorched_ladder"
+			}]
+			rewards: [{
+				id: "6BEC2F529D5E775B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.5d
+			y: -1.5d
+			dependencies: ["220764DE08BFC051"]
+			id: "66F55FF3FA8E305A"
+			tasks: [{
+				id: "0F37F45A7B27B5ED"
+				type: "item"
+				title: "任意焦褐石"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:scorched_blocks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1BBC4B76F7803134"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.5d
+			y: -1.0d
+			dependencies: ["220764DE08BFC051"]
+			id: "4483AB38701D0699"
+			tasks: [{
+				id: "2EACC838FDE51ADC"
+				type: "item"
+				title: "任意储罐"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:scorched_tanks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "362B02ABD962E30F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+	quest_links: [ ]
+}

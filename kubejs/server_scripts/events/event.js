@@ -17,7 +17,7 @@ onEvent("lootjs", event => {
     'ars_nouveau:wilden_spike',
     'ars_nouveau:wilden_wing',
     'ars_nouveau:wilden_horn',
-    'ars_nouveau:amplify_arrow',
+    /ars_nouveau:.*arrow/,
     'ars_nouveau:source_gem',
     'tconstruct:ender_slime_sapling',
     'tconstruct:blood_slime_grass_seeds',
@@ -42,9 +42,21 @@ onEvent("lootjs", event => {
     .addBlockLootModifier('minecraft:grass')
     .randomChance(0.03)
     .addLoot('kubejs:cottons_seed');
+  //火力之环
+  event.addLootTypeModifier(LootType.ENTITY)
+    .matchEquip(EquipmentSlot.HEAD, Item.of('yuushya:wriggle_nightbug', '{CustomModelData:11821909}').weakNBT())
+    .removeLoot(Ingredient.getAll())
+    .addWeightedLoot([
+      Item.of('kubejs:pistol_ammo', 4).withChance(20),
+      Item.of('kubejs:smg_ammo', 4).withChance(10),
+      Item.of('kubejs:rifle_ammo', 4).withChance(5),
+      Item.of('kubejs:shotgun_ammo', 2).withChance(3),
+      Item.of('kubejs:sniper_ammo', 4).withChance(2),
+      Item.of('kubejs:magnum_ammo').withChance(1)
+    ])
   //幸运之环
   event.addLootTypeModifier(LootType.ENTITY)
-    .matchEquip(EquipmentSlot.HEAD, Item.of('yuushya:wriggle_nightbug', '{AttributeModifiers:[{Amount:3,AttributeName:"generic.armor",Name:"armor",Operation:0,Slot:"head",UUID:[I;11,19,60,38]},{Amount:3,AttributeName:"generic.armor_toughness",Name:"armorToughness",Operation:0,Slot:"head",UUID:[I;11,19,60,39]},{Amount:0.1d,AttributeName:"generic.knockback_resistance",Name:"knockbackResistance",Operation:0,Slot:"head",UUID:[I;11,19,60,40]}],CustomModelData:11821910,display:{Name:\'[{"translate":"kubejs.mari.name","italic":false}]\'}}'))
+    .matchEquip(EquipmentSlot.HEAD, Item.of('yuushya:wriggle_nightbug', '{CustomModelData:11821910}').weakNBT())
     .removeLoot(Ingredient.getAll())
     .addLoot('kubejs:lucky_block')
   //在暮色森林根据生物位置掉落战利品
@@ -533,22 +545,21 @@ onEvent('entity.hurt', event => {
 onEvent('entity.death', event => {
   let { source, entity, server, level } = event;
 
-  if (entity.isMonster() && source.actual && source.actual.headArmorItem === 'yuushya:wriggle_nightbug' && source.actual.headArmorItem.getNbt()) {
-    let acmData = source.actual.headArmorItem.getNbt().CustomModelData;
-    // if (cmData === 11821910) { // 幸运方块！爆！
-    //   if (Utils.random.nextInt(2) > 1) return;
-    //   server.runCommandSilent(`execute in ${level.dimension} run summon item ${entity.x} ${entity.y} ${entity.z} {Item:{id:'kubejs:lucky_block',Count:1b}}`);
-    // }
-    if (acmData !== 11821909) return; // 枪械子弹！爆！
-    if (entity.getMaxHealth() > 100) {
-      server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${entity.x} ${entity.y} ${entity.z} loot kubejs:ammo3`);
-    } else if (entity.getMaxHealth() > 50) {
-      server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${entity.x} ${entity.y} ${entity.z} loot kubejs:ammo2`);
-    } else {
-      server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${entity.x} ${entity.y} ${entity.z} loot kubejs:ammo1`);
-    }
-
-  }
+  // if (entity.isMonster() && source.actual && source.actual.headArmorItem === 'yuushya:wriggle_nightbug' && source.actual.headArmorItem.getNbt()) {
+  //   let acmData = source.actual.headArmorItem.getNbt().CustomModelData;
+  //   if (cmData === 11821910) { // 幸运方块！爆！
+  //     if (Utils.random.nextInt(2) > 1) return;
+  //     server.runCommandSilent(`execute in ${level.dimension} run summon item ${entity.x} ${entity.y} ${entity.z} {Item:{id:'kubejs:lucky_block',Count:1b}}`);
+  //   }
+  //   if (acmData !== 11821909) return; // 枪械子弹！爆！
+  //   if (entity.getMaxHealth() > 100) {
+  //     server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${entity.x} ${entity.y} ${entity.z} loot kubejs:ammo3`);
+  //   } else if (entity.getMaxHealth() > 50) {
+  //     server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${entity.x} ${entity.y} ${entity.z} loot kubejs:ammo2`);
+  //   } else {
+  //     server.runCommandSilent(`execute in ${level.dimension} run loot spawn ${entity.x} ${entity.y} ${entity.z} loot kubejs:ammo1`);
+  //   }
+  // }
   if (entity.isPlayer() && entity.headArmorItem === 'yuushya:wriggle_nightbug' && entity.headArmorItem.getNbt()) {
     let ecmData = entity.headArmorItem.getNbt().CustomModelData;
     if (ecmData !== 11821915) return;// 跟你爆了

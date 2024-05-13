@@ -100,11 +100,14 @@
     "generationStructures": {
       "allow_list": true,
       "elements": [
-        "minecraft:fortress",
-        "minecraft:monument",
         "minecraft:ocean_ruin",
         "minecraft:buried_treasure",
         "minecraft:shipwreck",
+        "minecraft:swamp_hut",
+        "minecraft:mineshaft",
+        "betterfortresses:fortress",
+        "betteroceanmonuments:ocean_monument",
+        "integrated_api:underground_structure",
         "integrated_stronghold:stronghold"
       ]
     }
@@ -156,7 +159,8 @@
         "allow_list": true,
         "elements": [
           "minecraft:*ocean*",
-          "minecraft:mushroom_fields"
+          "minecraft:mushroom_fields",
+          "minecraft:swamp"
         ]
       },
       "minecraft:the_nether": {
@@ -179,7 +183,7 @@
     "offset": 0,
     
     // Sea level in world [default: 63]
-    "seaHeight": 280,
+    "seaHeight": 300,
     
     // Should a surface be generated in the dimensions? [default: false]
     "surface": true,
@@ -187,7 +191,7 @@
     // The block settings for generating the different dimensions surfaces.
     // Same format as flat world generation settings (blocks only)
     "surfaceSettings": {
-      "minecraft:overworld": "minecraft:bedrock,32*minecraft:deepslate,32*minecraft:tuff,20*create:limestone,18*minecraft:gravel,61*minecraft:water,minecraft:amethyst_block,minecraft:calcite,minecraft:smooth_basalt,10*minecraft:diorite,5*create:ochrum,10*minecraft:granite,5*create:veridium,10*minecraft:dripstone_block,5*create:asurine,10*minecraft:andesite,5*create:crimsite,10*minecraft:stone,7*minecraft:sand,100*minecraft:water",
+      "minecraft:overworld": "minecraft:bedrock,63*minecraft:deepslate,22*minecraft:tuff,11*minecraft:gravel,30*minecraft:water,20*minecraft:air,minecraft:amethyst_block,minecraft:calcite,minecraft:smooth_basalt,17*create:limestone,10*minecraft:diorite,5*create:ochrum,10*minecraft:granite,5*create:veridium,10*minecraft:dripstone_block,5*create:asurine,10*minecraft:andesite,5*create:crimsite,10*minecraft:stone,7*minecraft:sand,120*minecraft:water",
       "minecraft:the_nether": "",
       "minecraft:the_end": ""
     }

@@ -373,7 +373,7 @@
     "overlaySpawnableColumnHeights": false,
     "overlaySpawnChunkReal": false,
     "overlaySpawnChunkPlayer": false,
-    "overlayStructureMainToggle": false,
+    "overlayStructureMainToggle": true,
     "shapeRenderer": false,
     "debugChunkBorder": false,
     "debugChunkInfo": false,
@@ -569,7 +569,7 @@
     "Shipwreck": false,
     "Stronghold": false,
     "Village": false,
-    "Witch Hut": false,
+    "Witch Hut": true,
     "Unknown": false
   },
   "config_version": 1

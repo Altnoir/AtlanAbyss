@@ -14,7 +14,7 @@
 	#Should the Singularities be enabled?
 	enabled = true
 	#The item to use as the Catalyst in default Singularity recipes.
-	defaultCatalyst = "extendedcrafting:ultimate_catalyst"
+	defaultCatalyst = "kubejs:crystal_matrix_ingot"
 
 #Settings for the Crafting Core.
 ["Combination Crafting"]

@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.zirconium",
+  "colors": [
+    "92c392",
+    "77aeae"
+  ],
+  "ingredient": {
+    "item": "kubejs:zirconium_alloy_ingot"
+  }
+}

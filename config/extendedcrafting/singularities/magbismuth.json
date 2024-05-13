@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.magbismuth",
+  "colors": [
+    "b22a6e",
+    "871c61"
+  ],
+  "ingredient": {
+    "item": "kubejs:magbismuth_ingot"
+  }
+}

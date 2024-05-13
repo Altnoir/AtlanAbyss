@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.meteosteel",
+  "colors": [
+    "547991",
+    "547991"
+  ],
+  "ingredient": {
+    "item": "kubejs:meteosteel_ingot"
+  }
+}

@@ -242,7 +242,6 @@ onEvent('item.registry', event => {
 	simple("黏土", "Clay", MC('clay', 16), 6, S, 0x878B95, 0x8E939D)
 	simple("冰", "Ice", MC('ice', 16), 16, S, 0x7E99CF, 0xABB8D0)
 	simple("黑石", "Blackstone", MC('blackstone', 16), 12, S, 0x140E0F, 0x2D2831)
-	simple("砖泥", "Grout", TC('grout', 16), 12, S, 0x70737F, 0xAEB0B5)
 	simple("圆石", "Cobblestone", MC('cobblestone', 16), 1, S, 0x585858, 0x646363)
 	simple("花岗岩", "Granite", MC('granite', 16), 3, S, 0x563A2F, 0x9A6C5B)
 	simple("闪长岩", "Diorite", MC('diorite', 16), 3, S, 0x7F7F7F, 0xD4D4D4)

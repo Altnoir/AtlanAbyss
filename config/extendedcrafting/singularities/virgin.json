@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.virgin",
+  "colors": [
+    "bcb8c7",
+    "43445b"
+  ],
+  "ingredient": {
+    "item": "kubejs:virgin_ingot"
+  }
+}

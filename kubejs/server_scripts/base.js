@@ -1875,44 +1875,6 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:bismuth_ingot'
 	}).id("atlanabyss:bismuth_block")
-
-	//水晶矩阵锭
-	mixing(
-		'kubejs:crystal_matrix_ingot',
-		[
-			'minecraft:nether_star',
-			Fluid.of('thermal:ender', 500)
-		]
-	).id("atlanabyss:crystal_matrix_ingot")
-	//无尽之锭
-	event.custom({
-		type: 'pneumaticcraft:pressure_chamber',
-		inputs: [
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:elemental_ingot',
-				count: 12
-			},
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:virgin_ingot',
-				count: 9
-			},
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:crystal_matrix_ingot',
-				count: 3
-			},
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'tiab:time_in_a_bottle',
-				count: 1
-			}
-		],
-		results: [Item.of('kubejs:infinity_ingot')],
-		pressure: 5.0
-	}).id("atlanabyss:infinity_ingot");
-
 	//铂锭
 	event.shaped('kubejs:platinum_ingot', [
 		'BA',
@@ -2227,11 +2189,6 @@ onEvent('recipes', event => {
 				type: 'pneumaticcraft:stacked_item',
 				item: 'biggerreactors:cyanite_ingot',
 				count: 16
-			},
-			{
-				type: 'pneumaticcraft:stacked_item',
-				item: 'kubejs:bismuth_ingot',
-				count: 8
 			},
 			{
 				type: 'pneumaticcraft:stacked_item',
@@ -2596,11 +2553,21 @@ onEvent('recipes', event => {
 	]).id("atlanabyss:raw_uranium_from_block")
 
 	//锆合金
-	mixing('5x kubejs:zirconium_alloy_ingot', [
+	mixing('3x kubejs:zirconium_alloy_ingot', [
 		'ae2:silicon',
-		'botania:terrasteel_ingot',
 		'3x thermal:lead_ingot'
 	]).superheated().id("atlanabyss:zirconium_alloy_ingot")
+	event.custom({
+		type: 'thermal:smelter',
+		ingredients: [
+			Item.of('thermal:lead_ingot', 3).toResultJson(),
+			Item.of('ae2:sky_dust').toResultJson()
+		],
+		result: [
+			Item.of('kubejs:zirconium_alloy_ingot', 3).toResultJson()
+		],
+		energy: 18000
+	}).id("atlanabyss:smelter_zirconium_alloy_ingot")
 
 	//充能魂钢锭
 	teslaCharging('tconstruct:soulsteel_ingot', 'kubejs:charged_soulsteel_ingot', 1600, 'charged_soulsteel_ingot')

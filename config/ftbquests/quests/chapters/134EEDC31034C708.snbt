@@ -57,8 +57,8 @@
 		{
 			title: "一些说明书"
 			disable_toast: true
-			x: -1.0d
-			y: -1.5d
+			x: -2.0d
+			y: 0.0d
 			shape: "hexagon"
 			description: ["今天您看书了吗？"]
 			dependencies: ["36943F6B7F336DF2"]
@@ -105,8 +105,8 @@
 		{
 			title: "种棉花"
 			disable_toast: true
-			x: 1.0d
-			y: -1.5d
+			x: -1.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: [
 				"在破坏草时你也许会发现，除了会掉落原版的小麦种子以外，还会有棉花种子。"
@@ -132,7 +132,7 @@
 			x: 2.0d
 			y: -1.5d
 			shape: "hexagon"
-			description: ["或许您需要准备一些工具？"]
+			description: ["或许您需要准备一些工具。"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "5A7F67F2BD3327F6"
@@ -237,7 +237,7 @@
 			}]
 		}
 		{
-			title: "固定容器"
+			title: "物品存储"
 			disable_toast: true
 			x: 3.0d
 			y: -1.0d
@@ -344,8 +344,8 @@
 		}
 		{
 			disable_toast: true
-			x: 2.0d
-			y: 1.5d
+			x: 1.0d
+			y: 1.0d
 			shape: "hexagon"
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
@@ -372,10 +372,10 @@
 		{
 			title: "Fe铁"
 			disable_toast: true
-			x: 1.0d
-			y: 1.0d
+			x: 0.0d
+			y: 1.5d
 			description: ["不管是用传统的熔炉冶炼，还是通过四处搜刮获取，铁都是本游戏里最为重要的资源。"]
-			dependencies: ["5BC3A59AAD6CEDBE"]
+			dependencies: ["71BE14B442164268"]
 			hide: true
 			id: "58D3EC802A6FBD27"
 			tasks: [{
@@ -391,8 +391,8 @@
 		}
 		{
 			disable_toast: true
-			x: 1.0d
-			y: 2.0d
+			x: -1.0d
+			y: 1.0d
 			shape: "hexagon"
 			description: ["落地水：手里拿着水桶的情况下受到致命摔落伤害时会自动触发落地水哦。"]
 			dependencies: ["58D3EC802A6FBD27"]
@@ -412,8 +412,8 @@
 			title: "搭建下界传送门"
 			icon: "minecraft:obsidian"
 			disable_toast: true
-			x: -1.0d
-			y: 1.0d
+			x: -2.0d
+			y: 1.5d
 			description: ["你可以选择用传统的钻石镐挖掘黑曜石搭建传送门，也可以选择用岩浆桶浇筑传送门，根据你的偏好决定。"]
 			dependencies: ["58D3EC802A6FBD27"]
 			id: "4E12320C5CF0FE7B"
@@ -429,8 +429,8 @@
 		}
 		{
 			disable_toast: true
-			x: -2.5d
-			y: 1.0d
+			x: -2.0d
+			y: 2.5d
 			shape: "rsquare"
 			description: ["利用强劲的附魔，战斗！"]
 			dependencies: ["4E12320C5CF0FE7B"]
@@ -447,8 +447,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 2.0d
+			x: -0.5d
+			y: 3.0d
 			description: ["注：在下界中的敌对生物，生命值会随着距离出生点越远越高。"]
 			dependencies: ["4E12320C5CF0FE7B"]
 			hide: true
@@ -479,7 +479,8 @@
 		}
 		{
 			title: " 进入末地"
-			x: -1.0d
+			disable_toast: true
+			x: 2.0d
 			y: 3.5d
 			dependencies: ["137563E84BDBF0CC"]
 			hide: true
@@ -498,8 +499,8 @@
 		}
 		{
 			title: "颠倒之域"
-			x: 1.0d
-			y: 3.5d
+			x: 4.5d
+			y: 3.0d
 			description: [
 				"颠倒之域：夹在在主世界与下界之间的维度"
 				"进入方法：\\n1.在主世界的基岩上方食用紫颂果\\n2.在下界往上超过360格"
@@ -520,8 +521,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 3.5d
+			x: 6.0d
+			y: 1.5d
 			description: [
 				"恩赐之石：颠倒之域的特产品"
 				"使用带时运的稿子挖掘深板岩可便有概率获得"
@@ -535,6 +536,505 @@
 			}]
 			rewards: [{
 				id: "3200D1DFA7F4410E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: ["帮助您快速扩地的工具。"]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "063FEFBBB9895429"
+			tasks: [{
+				id: "30317F9201A6757C"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "37C1703360D03FC0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["063FEFBBB9895429"]
+			hide: true
+			id: "299751571259A4A3"
+			tasks: [{
+				id: "24247F460CA6F281"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6B8EF9B28B788B45"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: -3.0d
+			shape: "hexagon"
+			dependencies: ["299751571259A4A3"]
+			hide: true
+			id: "22997BE2D0713170"
+			tasks: [{
+				id: "62852E34D1E95F28"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "382248D971CBFAE0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["16CCDD21E5E15818"]
+			hide: true
+			id: "53C4D6F0CFEE17BD"
+			tasks: [{
+				id: "34F62E85F6624D09"
+				type: "item"
+				title: "任意抽屉"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2389A5A360B4A257"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: -2.5d
+			shape: "hexagon"
+			dependencies: ["53C4D6F0CFEE17BD"]
+			hide: true
+			id: "20E5B8D8CA70C5D2"
+			tasks: [{
+				id: "50AD65479D3C66A3"
+				type: "item"
+				item: "functionalstorage:storage_controller"
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -3.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "28387CA3E8B83894"
+			tasks: [{
+				id: "2623B8FF7FF153C4"
+				type: "item"
+				item: "functionalstorage:copper_upgrade"
+			}]
+			rewards: [{
+				id: "4B433840F4CD97E7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "228FA70A79A1A947"
+			tasks: [{
+				id: "0CF1D117179C8A08"
+				type: "item"
+				item: "functionalstorage:iron_downgrade"
+			}]
+			rewards: [{
+				id: "2E6320BE6ED8461B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 3.0d
+			y: -3.0d
+			shape: "hexagon"
+			dependencies: ["28387CA3E8B83894"]
+			hide: true
+			id: "08A50C9AF6A61D90"
+			tasks: [{
+				id: "4B27E866AF073117"
+				type: "item"
+				item: "functionalstorage:gold_upgrade"
+			}]
+			rewards: [{
+				id: "38F6F8ED31C8813F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.5d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["08A50C9AF6A61D90"]
+			hide: true
+			id: "693F8909C9965F1B"
+			tasks: [{
+				id: "3AF17205D74057E6"
+				type: "item"
+				item: "functionalstorage:diamond_upgrade"
+			}]
+			rewards: [{
+				id: "60C5EFD8B3483BCC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.5d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["693F8909C9965F1B"]
+			hide: true
+			id: "7FA7D26EB4C650C7"
+			tasks: [{
+				id: "15E2266EEBB8517A"
+				type: "item"
+				item: "functionalstorage:netherite_upgrade"
+			}]
+			rewards: [{
+				id: "08FC5C083A7ECD28"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "51E101D22E0D7F06"
+			tasks: [{
+				id: "4642A61A6E7344E7"
+				type: "item"
+				item: "functionalstorage:compacting_drawer"
+			}]
+			rewards: [{
+				id: "2C616852D8DEAE09"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "23EB5C92B742F57E"
+			tasks: [{
+				id: "6D437657FEA37917"
+				type: "item"
+				item: {
+					id: "functionalstorage:linking_tool"
+					Count: 1b
+					tag: {
+						Action: "ADD"
+						Mode: "SINGLE"
+					}
+				}
+			}]
+			rewards: [{
+				id: "32B63C5AC549971D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.0d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "490625025E150390"
+			tasks: [{
+				id: "08F5EB072D9E7940"
+				type: "item"
+				item: "functionalstorage:fluid_1"
+			}]
+			rewards: [{
+				id: "3E6DF87862109DFA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: -3.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "79A8F3B6CC691380"
+			tasks: [{
+				id: "625EA1E6F66CFC1E"
+				type: "item"
+				item: {
+					id: "functionalstorage:puller_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+			rewards: [{
+				id: "154341E4CACE91EA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "566FF5B3F8DA1BAF"
+			tasks: [{
+				id: "1C4A5F2191FF18F7"
+				type: "item"
+				item: {
+					id: "functionalstorage:pusher_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4E2A708F111E2C98"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "029B72F4BE8912EE"
+			tasks: [{
+				id: "1A4822C21D2FB1CE"
+				type: "item"
+				item: "functionalstorage:void_upgrade"
+			}]
+			rewards: [{
+				id: "539C6CAF03E3BBC3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.5d
+			y: -1.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "4499C8F48801F7FF"
+			tasks: [{
+				id: "4BBBC8DE86858554"
+				type: "item"
+				item: "functionalstorage:armory_cabinet"
+			}]
+			rewards: [{
+				id: "2864C4FC985C3622"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: -4.0d
+			shape: "hexagon"
+			dependencies: ["20E5B8D8CA70C5D2"]
+			id: "33D2B1714F2A2CAA"
+			tasks: [{
+				id: "0E18ADB0133BD5AE"
+				type: "item"
+				item: {
+					id: "functionalstorage:collector_upgrade"
+					Count: 1b
+					tag: {
+						Direction: "down"
+					}
+				}
+			}]
+			rewards: [{
+				id: "267B395C4CA2D401"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 5.0d
+			y: -5.0d
+			shape: "hexagon"
+			dependencies: ["51E101D22E0D7F06"]
+			hide: true
+			id: "166A6D6E87B5B3FA"
+			tasks: [{
+				id: "5E513AB186A85E97"
+				type: "item"
+				item: "functionalstorage:simple_compacting_drawer"
+			}]
+			rewards: [{
+				id: "2FC428EE03C93E37"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 6.0d
+			y: -5.0d
+			shape: "hexagon"
+			dependencies: ["490625025E150390"]
+			hide: true
+			id: "1631A375D07D5A35"
+			tasks: [{
+				id: "2AC05364BA88FD31"
+				type: "item"
+				item: "functionalstorage:fluid_2"
+			}]
+			rewards: [{
+				id: "0BA19D9E3C5EA59A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 7.0d
+			y: -5.0d
+			shape: "hexagon"
+			dependencies: ["1631A375D07D5A35"]
+			hide: true
+			id: "3A331B39CEBE25C0"
+			tasks: [{
+				id: "0FF1DD6EB03ACBC7"
+				type: "item"
+				item: "functionalstorage:fluid_4"
+			}]
+			rewards: [{
+				id: "62373027522907E2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 4.0d
+			y: -5.0d
+			shape: "hexagon"
+			dependencies: ["23EB5C92B742F57E"]
+			hide: true
+			id: "31BDDEBAA0864AC3"
+			tasks: [{
+				id: "16075D3E8609D885"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6C7908A1CB4525FF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["71BE14B442164268"]
+			id: "55E15B669198B728"
+			tasks: [{
+				id: "40F74C29A6ED59D7"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+			rewards: [{
+				id: "3685DD8413F17473"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "71BE14B442164268"
+			tasks: [{
+				id: "5790C005C8D21A25"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [{
+				id: "63D398A780638123"
 				type: "xp"
 				xp: 10
 			}]
