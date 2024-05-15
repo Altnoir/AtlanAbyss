@@ -36,7 +36,7 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
+resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/AtlanAbyss-Music Pack.zip","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
 incompatibleResourcePacks:["quark:emote_resources","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
 lastServer:
 lang:zh_cn
