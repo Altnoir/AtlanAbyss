@@ -327,7 +327,7 @@
 			y: 0.0d
 			description: [
 				"本整合包重要的资源之一"
-				"第一个苔藓块可通过探险获得\\n如：沉船宝箱，繁茂洞穴等。"
+				"第一个苔藓块可通过搜刮沉船获得。"
 			]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			id: "51118EFF5866B6D3"
@@ -475,6 +475,11 @@
 				id: "7CA9E3DB24791A99"
 				type: "item"
 				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "084B6230318BCE3C"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -657,6 +662,11 @@
 				id: "50AD65479D3C66A3"
 				type: "item"
 				item: "functionalstorage:storage_controller"
+			}]
+			rewards: [{
+				id: "0C5B295914E2C86C"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{

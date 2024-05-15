@@ -225,8 +225,8 @@ onEvent('tags.items', event => {
 		['forge:plates/osmium', 'kubejs:osmium_sheet'],//板
 		['forge:ores', 'kubejs:moon_osmium_ore'],//矿石
 		['forge:ores/osmium', 'kubejs:moon_osmium_ore'],
-		['forge:raw_materials/osmium','kubejs:raw_osmium'],//粗
-		['forge:storage_blocks/raw_osmium','kubejs:raw_osmium_block'],
+		['forge:raw_materials/osmium', 'kubejs:raw_osmium'],//粗
+		['forge:storage_blocks/raw_osmium', 'kubejs:raw_osmium_block'],
 		//银
 		['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
 		['forge:ores/silver', 'kubejs:mercury_silver_ore'],
@@ -234,6 +234,14 @@ onEvent('tags.items', event => {
 	for (const [tag, item] of tagToAdd) {
 		event.add(tag, item);
 	}
+
+	//唱片
+	event.add('minecraft:creeper_drop_music_discs', [
+		'botania:record_gaia_1', 'botania:record_gaia_2',
+		'alexsmobs:music_disc_thime', 'alexsmobs:music_disc_daze',
+		'quark:music_disc_endermosh', 'neapolitan:music_disc_hullabaloo',
+		'minecraft:music_disc_otherside', 'minecraft:music_disc_pigstep'
+	]);
 
 	//原木标签
 	event.add('atlanabyss:unstripped_wood', [

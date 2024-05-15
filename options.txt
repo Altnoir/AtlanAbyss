@@ -36,7 +36,7 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/AtlanAbyss-Sounds Pack.zip","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
+resourcePacks:["vanilla","mod_resources","file/[1.18]MASA全家桶汉化包.zip","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
 incompatibleResourcePacks:["quark:emote_resources","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
 lastServer:
 lang:zh_cn
@@ -47,7 +47,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -186,8 +186,8 @@ key_key.ars_nouveau.qc8:key.keyboard.unknown
 key_key.ars_nouveau.qc9:key.keyboard.unknown
 key_key.ars_nouveau.qc10:key.keyboard.unknown
 key_chunkloaders.keys.open_screen:key.keyboard.semicolon
-key_key.ftbquests.quests:key.keyboard.unknown
 key_key.observable.profile:key.keyboard.apostrophe
+key_key.ftbquests.quests:key.keyboard.unknown
 key_gui.xaero_open_map:key.keyboard.m
 key_gui.xaero_open_settings:key.keyboard.right.bracket
 key_gui.xaero_map_zoom_in:key.keyboard.unknown
@@ -201,6 +201,8 @@ key_key.waila.narrate:key.keyboard.unknown
 key_key.waila.show_details:key.keyboard.left.shift
 key_key.waila.show_recipes:key.keyboard.keypad.3
 key_key.waila.show_uses:key.keyboard.unknown
+key_key.beyond_earth.rocket_start:key.keyboard.space
+key_quark.keybind.back:key.mouse.4
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.unknown
 key_gui.xaero_toggle_slime:key.keyboard.unknown
@@ -222,7 +224,8 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.unknown
-key_key.beyond_earth.rocket_start:key.keyboard.space
+key_quark.keybind.camera_mode:key.keyboard.f12
+key_key.presencefootsteps.settings:key.keyboard.f10
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -241,16 +244,13 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_key.presencefootsteps.settings:key.keyboard.f10
-key_quark.keybind.camera_mode:key.keyboard.f12
-key_quark.keybind.back:key.mouse.4
+key_quark.keybind.change_hotbar:key.keyboard.unknown
 key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
 key_quark.keybind.transfer_insert:key.keyboard.unknown
 key_quark.keybind.transfer_extract:key.keyboard.unknown
 key_quark.keybind.shift_lock:key.keyboard.unknown
 key_quark.keybind.lock_rotation:key.keyboard.l
-key_quark.keybind.change_hotbar:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.entity_tracker:key.keyboard.unknown
@@ -281,11 +281,11 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.l
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.up:key.keyboard.space
 key_key.down:key.keyboard.left.control
 key_key.summon:key.keyboard.unknown
