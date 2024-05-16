@@ -132,6 +132,7 @@
 				"但又想让周围更亮一些？您还需要：野火灯笼！"
 			]
 			dependencies: ["7026D208C4850E52"]
+			hide: true
 			id: "1430F7FB3DADD2C5"
 			tasks: [
 				{
@@ -211,6 +212,7 @@
 				"温馨提示：烈焰人刷怪笼具有无限的烈焰人。"
 			]
 			dependencies: ["0D3B950AFB6E6BC2"]
+			hide: true
 			id: "2B26826B86BCA145"
 			tasks: [
 				{
@@ -248,9 +250,11 @@
 			}]
 		}
 		{
+			disable_toast: true
 			x: 0.0d
 			y: 4.5d
 			dependencies: ["32F577B605FC8D35"]
+			hide: true
 			id: "59AF238BE1A99F24"
 			tasks: [{
 				id: "4B51B55EE177FE99"
@@ -290,6 +294,7 @@
 			x: -1.0d
 			y: 1.0d
 			dependencies: ["0D3B950AFB6E6BC2"]
+			hide: true
 			id: "14A8E7E37136FB5C"
 			tasks: [{
 				id: "1FF2B98F37958438"

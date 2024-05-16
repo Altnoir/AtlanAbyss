@@ -182,6 +182,45 @@ onEvent('recipes', event => {
 		B: 'kubejs:crystal_nucleus'
 	}).id("atlanabyss:budding_amethyst")
 
+	//珊瑚块
+	function coralBlock(dye) {
+		event.shaped('minecraft:' + dye + '_coral_block', [
+			'AB',
+			'BA'
+		], {
+			A: 'minecraft:' + dye + '_coral_fan',
+			B: 'minecraft:' + dye + '_coral'
+		}).id('atlanabyss:' + dye + '_coral_block')
+	}
+	coralBlock('tube')
+	coralBlock('brain')
+	coralBlock('bubble')
+	coralBlock('fire')
+	coralBlock('horn')
+
+	//唱片机
+	remove('minecraft:jukebox')
+	event.shaped('minecraft:jukebox', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: '#minecraft:planks',
+		B: 'tconstruct:pattern'
+	}).id('atlanabyss:jukebox')
+
+	remove('netmusic:music_player')
+	event.shaped('netmusic:music_player', [
+		'ACA',
+		'ABA',
+		'AAA'
+	], {
+		A: '#minecraft:planks',
+		B: 'tconstruct:pattern',
+		C: 'minecraft:book'
+	}).id('atlanabyss:music_player')
+
+
 	//修复下界合金粒
 	remove('tconstruct:common/materials/netherite_nugget_from_ingot')
 	remove('tconstruct:common/materials/netherite_ingot_from_nuggets')
@@ -2095,15 +2134,12 @@ onEvent('recipes', event => {
 	]).superheated().id("atlanabyss:molten_uranium")
 	//铀核心
 	let uc = ('kubejs:incomplete_core_container')
-	sequenced_assembly([
-		'kubejs:uranium_core'
-	],
-		'thermal:lead_plate',
-		[
-			deploying(uc, [uc, 'thermal:cured_rubber']),
-			deploying(uc, [uc, 'kubejs:tungsten_ingot']),
-			filling(uc, [uc, Fluid.of('tconstruct:molten_uranium', 125)])
-		]).transitionalItem(uc).loops(1).id("atlanabyss:uranium_core")
+	sequenced_assembly(['kubejs:uranium_core'
+	], 'thermal:lead_plate', [
+		deploying(uc, [uc, 'thermal:cured_rubber']),
+		deploying(uc, [uc, 'kubejs:tungsten_ingot']),
+		filling(uc, [uc, Fluid.of('tconstruct:molten_uranium', 125)])
+	]).transitionalItem(uc).loops(1).id("atlanabyss:uranium_core")
 	//铀燃料棒
 	mechanical_crafting('biggerreactors:uranium_ingot', [
 		'AA',
@@ -2129,13 +2165,11 @@ onEvent('recipes', event => {
 	let pc = ('kubejs:incomplete_core_container')
 	sequenced_assembly([
 		'kubejs:plutonium_core'
-	],
-		'thermal:lead_plate',
-		[
-			deploying(pc, [pc, 'pneumaticcraft:heat_sink']),
-			deploying(pc, [pc, 'kubejs:tungsten_ingot']),
-			filling(pc, [pc, Fluid.of('kubejs:molten_plutonium', 80)])
-		]).transitionalItem(pc).loops(1).id("atlanabyss:plutonium_core")
+	], 'thermal:lead_plate', [
+		deploying(pc, [pc, 'pneumaticcraft:heat_sink']),
+		deploying(pc, [pc, 'kubejs:tungsten_ingot']),
+		filling(pc, [pc, Fluid.of('kubejs:molten_plutonium', 80)])
+	]).transitionalItem(pc).loops(1).id("atlanabyss:plutonium_core")
 	//钚燃料棒
 	mechanical_crafting('biggerreactors:blutonium_ingot', [
 		'AA',

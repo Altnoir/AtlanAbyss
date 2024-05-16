@@ -9,7 +9,7 @@ radarHideInvisibleEntities:true
 allowInternetAccess:true
 #INGAME SETTINGS (DO NOT EDIT!)
 updateNotification:false
-minimap:false
+minimap:true
 caveMaps:2
 caveZoom:1
 showWaypoints:true

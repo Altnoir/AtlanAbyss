@@ -398,6 +398,10 @@ onEvent('rei.group', (event) => {
 			item
 		);
 	});
+	//唱片
+	event.groupItems(`atlanabyss:rei_groups/music_discs`, `唱片`,
+		'#minecraft:music_discs'
+	);
 	//刷怪蛋
 	event.groupItems(`atlanabyss:rei_groups/spawn_eggs`, `刷怪蛋`,
 		/.*spawn_egg/

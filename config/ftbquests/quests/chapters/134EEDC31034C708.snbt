@@ -68,18 +68,11 @@
 				type: "item"
 				item: "minecraft:book"
 			}]
-			rewards: [
-				{
-					id: "3ECD597C4236D228"
-					type: "item"
-					item: "tconstruct:materials_and_you"
-				}
-				{
-					id: "560E0D1CFCFB49D0"
-					type: "item"
-					item: "ftbquests:book"
-				}
-			]
+			rewards: [{
+				id: "560E0D1CFCFB49D0"
+				type: "item"
+				item: "ftbquests:book"
+			}]
 		}
 		{
 			title: "锄树叶"

@@ -390,6 +390,24 @@
 				xp: 10
 			}]
 		}
+		{
+			disable_toast: true
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["4458072D8E0FF1EB"]
+			hide: true
+			id: "09A06BD818744888"
+			tasks: [{
+				id: "6B9FD1BCD96AACB4"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+			rewards: [{
+				id: "471B6F474CAFE7E4"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }

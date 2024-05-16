@@ -1,19 +1,5 @@
 onEvent('recipes', event => {
-  let {
-    mixing,
-    cutting,
-    filling,
-    emptying,
-    splashing,
-    compacting,
-    deploying,
-    milling,
-    crushing,
-    pressing,
-    item_application,
-    sequenced_assembly,
-    mechanical_crafting
-  } = event.recipes.create;
+  let { create } = event.recipes;
 
   let remove = (name) => {
     event.remove({ id: name })
@@ -31,9 +17,9 @@ onEvent('recipes', event => {
   //末影粉
   remove('create:compat/ae2/milling/ender_pearl')
   remove('ae2:inscriber/ender_dust')
-  milling(['thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
+  create.milling(['thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
 
-  crushing([
+  create.crushing([
     'ae2:certus_quartz_crystal',
     '4x ae2:certus_quartz_dust',
     Item.of('ae2:certus_quartz_dust').withChance(0.5),
@@ -42,12 +28,12 @@ onEvent('recipes', event => {
     Item.of('minecraft:end_stone').withChance(0.12)
   ], 'ae2:deepslate_quartz_ore').id("atlanabyss:crushing_certus_quartz_ore")
 
-  crushing([
+  create.crushing([
     Item.of('tconstruct:ender_slime_crystal').withChance(0.50),
     Item.of('ae2:sky_dust').withChance(0.10)
   ], '#forge:end_stones').id("atlanabyss:crushing_end_stones")
 
-  crushing([
+  create.crushing([
     '6x kubejs:raw_bismuth',
     Item.of('6x kubejs:raw_bismuth').withChance(0.5),
     Item.of('ae2:sky_dust').withChance(0.25),
@@ -56,13 +42,13 @@ onEvent('recipes', event => {
   ], 'kubejs:end_bismuth_ore').id("atlanabyss:crushing_bismuth_ore")
   //陨石粉
   remove('ae2:inscriber/sky_stone_dust')
-  crushing([
+  create.crushing([
     'ae2:sky_dust',
     Item.of('ae2:sky_stone_block').withChance(0.5)
   ], 'ae2:sky_stone_block').id("atlanabyss:crushing_sky_stone_block")
   //陨石
   remove('ae2:blasting/sky_stone_block')
-  filling(
+  create.filling(
     'ae2:sky_stone_block',
     [
       'ae2:sky_dust',
@@ -74,8 +60,8 @@ onEvent('recipes', event => {
   event.stonecutting('ae2:logic_processor_press', 'kubejs:circuit_scrap').id('atlanabyss:logic_processor_press');
   //种子生长
   let grow = (to, from, via, id) => {
-    sequenced_assembly([to], from, [
-      filling(via, [via, Fluid.of("minecraft:water", 500)]),
+    create.sequenced_assembly([to], from, [
+      create.filling(via, [via, Fluid.of("minecraft:water", 500)]),
     ]).transitionalItem(via)
       .loops(4)
       .id('atlanabyss:' + id)
@@ -151,7 +137,7 @@ onEvent('recipes', event => {
     energy: 3600
   }).id("atlanabyss:smelter_quartz_glass")
   //电路废料额外
-  milling([
+  create.milling([
     Item.of('kubejs:circuit_scrap').withChance(6 / 9),
     Item.of('pneumaticcraft:failed_pcb').withChance(3 / 9),
   ],
@@ -362,19 +348,19 @@ onEvent('recipes', event => {
   //硅板
   remove('ae2:inscriber/silicon_print')
   remove('ae2:inscriber/silicon_press')
-  pressing('ae2:printed_silicon', 'ae2:silicon').id('atlanabyss:pressing_printed_silicon')
+  create.pressing('ae2:printed_silicon', 'ae2:silicon').id('atlanabyss:pressing_printed_silicon')
   //运算电路板
-  deploying('ae2:printed_calculation_processor', [
+  create.deploying('ae2:printed_calculation_processor', [
     'ae2:certus_quartz_crystal',
     'ae2:calculation_processor_press'
   ]).keepHeldItem(true).id('atlanabyss:deploying_printed_calculation_processor')
   //工程电路板
-  deploying('ae2:printed_engineering_processor', [
+  create.deploying('ae2:printed_engineering_processor', [
     'minecraft:diamond',
     'ae2:engineering_processor_press'
   ]).keepHeldItem(true).id('atlanabyss:deploying_printed_engineering_processor')
   //逻辑电路板
-  deploying('ae2:printed_logic_processor', [
+  create.deploying('ae2:printed_logic_processor', [
     'tconstruct:rose_gold_ingot',
     'ae2:logic_processor_press'
   ]).keepHeldItem(true).id('atlanabyss:deploying_printed_logic_processor')
@@ -390,10 +376,10 @@ onEvent('recipes', event => {
   processor('ae2:printed_logic_processor', 'ae2:logic_processor', 'logic_processor')
 
   function processor(inp, out, id) {
-    sequenced_assembly(out, inp, [
-      filling(inp, [inp, Fluid.of('thermal:ender', 500)]),
-      filling(inp, [inp, Fluid.of('thermal:redstone', 200)]),
-      deploying(inp, [inp, 'ae2:printed_silicon'])
+    create.sequenced_assembly(out, inp, [
+      create.filling(inp, [inp, Fluid.of('thermal:ender', 500)]),
+      create.filling(inp, [inp, Fluid.of('thermal:redstone', 200)]),
+      create.deploying(inp, [inp, 'ae2:printed_silicon'])
     ]).transitionalItem(inp).loops(1).id('atlanabyss:sequenced_assembly_' + id)
   }
 

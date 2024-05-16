@@ -103,7 +103,6 @@
         "minecraft:ocean_ruin",
         "minecraft:buried_treasure",
         "minecraft:shipwreck",
-        "minecraft:swamp_hut",
         "minecraft:mineshaft",
         "betterfortresses:fortress",
         "betteroceanmonuments:ocean_monument",
@@ -159,8 +158,8 @@
         "allow_list": true,
         "elements": [
           "minecraft:*ocean*",
-          "minecraft:mushroom_fields",
-          "minecraft:swamp"
+          "minecraft:*snowy*",
+          "minecraft:mushroom_fields"
         ]
       },
       "minecraft:the_nether": {
