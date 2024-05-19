@@ -60,7 +60,7 @@
 			x: -2.0d
 			y: 0.0d
 			shape: "hexagon"
-			description: ["今天您看书了吗？"]
+			description: ["入门手册实体版。"]
 			dependencies: ["36943F6B7F336DF2"]
 			id: "457F93059BD28394"
 			tasks: [{
@@ -83,6 +83,7 @@
 			shape: "hexagon"
 			description: ["很可惜，在当前的Forge版无法使用原版的刷线机特性，但别灰心，为了弥补这个问题，您可以使用锄头类的工具破坏树叶，会有75%的概率会掉落线！"]
 			dependencies: ["36943F6B7F336DF2"]
+			hide: true
 			id: "519403A46F37EB4D"
 			tasks: [{
 				id: "11BCC48D58B08B5B"
@@ -107,6 +108,7 @@
 				"种植棉花，获取无限的线！"
 			]
 			dependencies: ["36943F6B7F336DF2"]
+			hide: true
 			id: "566C1EA56C28BAEC"
 			tasks: [{
 				id: "0D909AE204627D9F"
@@ -338,9 +340,9 @@
 		{
 			disable_toast: true
 			x: 1.0d
-			y: 1.0d
+			y: 2.0d
 			shape: "hexagon"
-			dependencies: ["5BC3A59AAD6CEDBE"]
+			dependencies: ["58D3EC802A6FBD27"]
 			hide: true
 			id: "399B746233C77AFD"
 			tasks: [
@@ -462,6 +464,12 @@
 			x: 6.0d
 			y: 0.0d
 			shape: "octagon"
+			description: [
+				"开启动力篇章！"
+				"注：\\n八边形任务 => 开启下一章。"
+				"正方形任务 => 开启新支线。"
+				"六边形任务 => 选做。"
+			]
 			dependencies: ["51118EFF5866B6D3"]
 			id: "07835D33A0BA9FD1"
 			tasks: [{
@@ -1038,6 +1046,36 @@
 			}]
 			rewards: [{
 				id: "63D398A780638123"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: 1.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"该整合包调整了钓鱼战利品。\\n现在你可以通过钓鱼获得："
+				"苔藓块，海带\\n岩浆桶（需在开放水域）"
+				"蘑菇（需在蘑菇岛群系）"
+			]
+			dependencies: ["5BC3A59AAD6CEDBE"]
+			hide: true
+			id: "363406BE284AD65A"
+			tasks: [{
+				id: "42D727693E25098C"
+				type: "item"
+				item: {
+					id: "minecraft:fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "040A95B5CCEAECD4"
 				type: "xp"
 				xp: 10
 			}]

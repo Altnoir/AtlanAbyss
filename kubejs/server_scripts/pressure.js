@@ -940,7 +940,7 @@ onEvent('recipes', event => {
 	event.custom({
 		type: 'pneumaticcraft:thermo_plant',
 		item_input: { tag: 'forge:cobblestone' },
-		fluid_output: { fluid: 'minecraft:lava', amount: 100 },
+		fluid_output: { fluid: 'minecraft:lava', amount: 250 },
 		temperature: { min_temp: 1273 },
 		pressure: 4.5,
 		exothermic: false

@@ -1,19 +1,5 @@
 onEvent('recipes', event => {
-    let {
-        milling,
-        splashing,
-        compacting,
-        mechanical_crafting
-    } = event.recipes.create;
-    let {
-        runic_altar,
-        terra_plate,
-        orechid,
-        orechid_ignem
-    } = event.recipes.botania;
-    let {
-        pulverizer
-    } = event.recipes.thermal;
+    let { create, botania, thermal } = event.recipes;
 
     let remove = (name) => {
         event.remove({ id: name })
@@ -43,7 +29,7 @@ onEvent('recipes', event => {
         source: 500,
         pedestalItems: []
     }).id('atlanabyss:imbuement_coal')
-    
+
     remove('thermal:gunpowder_4')
     remove('tac:gun_powder')
     //魔法火药
@@ -57,12 +43,23 @@ onEvent('recipes', event => {
         source: 200,
         pedestalItems: []
     }).id('atlanabyss:imbuement_gunpowder')
+    //魔法皮革
+    event.custom({
+        type: 'ars_nouveau:imbuement',
+        input: {
+            item: 'minecraft:rotten_flesh'
+        },
+        output: 'minecraft:leather',
+        count: 1,
+        source: 100,
+        pedestalItems: []
+    }).id('atlanabyss:imbuement_leather')
 
     //宝石粉
-    milling('apotheosis:gem_dust', [
+    create.milling('apotheosis:gem_dust', [
         'apotheosis:gem'
     ]).id("atlanabyss:milling_ap_gem")
-    pulverizer(Item.of('apotheosis:gem_dust').withChance(1.25), [
+    thermal.pulverizer(Item.of('apotheosis:gem_dust').withChance(1.25), [
         'apotheosis:gem'
     ]).energy(4000).id('atlanabyss:pulverizer_ap_gem')
 
@@ -77,7 +74,7 @@ onEvent('recipes', event => {
         'twilightforest:liveroot_block'
     ]).id('atlanabyss:liveroot_from_liveroot_block')
     //废金属
-    splashing([
+    create.splashing([
         Item.of('apotheosis:common_material').withChance(.5),
         Item.of('5x minecraft:iron_nugget').withChance(.75),
         Item.of('minecraft:gold_nugget').withChance(.25)
@@ -112,7 +109,7 @@ onEvent('recipes', event => {
         keepNbtOfReagent: false
     }).id('atlanabyss:enchanting_apparatus_rare_material')
     //紫材料
-    compacting('apotheosis:epic_material', [
+    create.compacting('apotheosis:epic_material', [
         '8x apotheosis:rare_material',
         Fluid.of('tconstruct:ender_slime', 500)
     ]).heated().id('atlanabyss:compacting_epic_material')
@@ -132,7 +129,7 @@ onEvent('recipes', event => {
         result: { item: 'apotheosis:epic_material' }
     }).id('atlanabyss:brewing_barrel_epic_material')
     //橙材料
-    mechanical_crafting('apotheosis:mythic_material', [
+    create.mechanical_crafting('apotheosis:mythic_material', [
         '  A  ',
         '  A  ',
         'AABAA',
@@ -143,7 +140,7 @@ onEvent('recipes', event => {
         B: 'botania:mana_pearl'
     }).id('atlanabyss:mechanical_crafting_mythic_material')
     //白材料
-    runic_altar('apotheosis_modern_ragnarok:izanagi_object', [
+    botania.runic_altar('apotheosis_modern_ragnarok:izanagi_object', [
         'apotheosis:mythic_material', 'apotheosis:mythic_material',
         'apotheosis:mythic_material', 'apotheosis:mythic_material',
         'apotheosis:mythic_material', 'apotheosis:mythic_material',
@@ -278,7 +275,7 @@ onEvent('recipes', event => {
 
     //时间之瓶
     remove('tiab:time_in_a_bottle')
-    runic_altar('tiab:time_in_a_bottle', [
+    botania.runic_altar('tiab:time_in_a_bottle', [
         'minecraft:clock',
         'kubejs:virgin_ingot',
         'kubejs:virgin_ingot',
@@ -288,7 +285,7 @@ onEvent('recipes', event => {
     ], 100000).id('atlanabyss:runic_altar_time_bottle')
 
     //元素锭
-    terra_plate('kubejs:elemental_ingot', [
+    botania.terra_plate('kubejs:elemental_ingot', [
         'kubejs:chlorophyll_ingot',
         'kubejs:abyss_ingot',
         'kubejs:planetary_ingot',
@@ -297,38 +294,41 @@ onEvent('recipes', event => {
     ], 2500000).id('atlanabyss:terra_plate_elemental_ingot')
 
     //铝矿
-    orechid_ignem('kubejs:nether_aluminum_ore', 'minecraft:netherrack',
+    botania.orechid_ignem('tconstruct:cobalt_ore', 'minecraft:netherrack',
+        4000).id('atlanabyss:orechid_ignem_cobalt_ore')
+    //铝矿
+    botania.orechid_ignem('kubejs:nether_aluminum_ore', 'minecraft:netherrack',
         6542).id('atlanabyss:orechid_ignem_nether_aluminum_ore')
     //硫矿
-    orechid_ignem('kubejs:nether_sulfur_ore', 'minecraft:netherrack',
+    botania.orechid_ignem('kubejs:nether_sulfur_ore', 'minecraft:netherrack',
         12050).id('atlanabyss:orechid_ignem_nether_sulfur_ore')
 
     //锡矿
-    orechid('thermal:tin_ore', 'minecraft:stone',
+    botania.orechid('thermal:tin_ore', 'minecraft:stone',
         8686).id('atlanabyss:orechid_tin_ore')
     //镍矿
-    orechid('thermal:nickel_ore', 'minecraft:stone',
+    botania.orechid('thermal:nickel_ore', 'minecraft:stone',
         18072).id('atlanabyss:orechid_nickel_ore')
     //银矿
-    orechid('thermal:silver_ore', 'minecraft:stone',
+    botania.orechid('thermal:silver_ore', 'minecraft:stone',
         1521).id('atlanabyss:orechid_silver_ore')
     //锌矿
-    orechid('create:zinc_ore', 'minecraft:stone',
+    botania.orechid('create:zinc_ore', 'minecraft:stone',
         23242).id('atlanabyss:orechid_zinc_ore')
 
     //深层锡矿
-    orechid('thermal:deepslate_tin_ore', 'minecraft:deepslate',
+    botania.orechid('thermal:deepslate_tin_ore', 'minecraft:deepslate',
         210).id('atlanabyss:orechid_deepslate_tin_ore')
     //深层镍矿
-    orechid('thermal:deepslate_nickel_ore', 'minecraft:deepslate',
+    botania.orechid('thermal:deepslate_nickel_ore', 'minecraft:deepslate',
         100).id('atlanabyss:orechid_deepslate_nickel_ore')
     //深层银矿
-    orechid('thermal:deepslate_silver_ore', 'minecraft:deepslate',
+    botania.orechid('thermal:deepslate_silver_ore', 'minecraft:deepslate',
         120).id('atlanabyss:orechid_deepslate_silver_ore')
     //深层铅矿
-    orechid('thermal:deepslate_lead_ore', 'minecraft:deepslate',
+    botania.orechid('thermal:deepslate_lead_ore', 'minecraft:deepslate',
         50).id('atlanabyss:orechid_deepslate_lead_ore')
     //深层锌矿
-    orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
+    botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
         150).id('atlanabyss:orechid_deepslate_zinc_ore')
 })

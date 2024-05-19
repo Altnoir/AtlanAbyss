@@ -158,7 +158,7 @@
         "allow_list": true,
         "elements": [
           "minecraft:*ocean*",
-          "minecraft:*snowy*",
+          "minecraft.snowy_taiga",
           "minecraft:mushroom_fields"
         ]
       },

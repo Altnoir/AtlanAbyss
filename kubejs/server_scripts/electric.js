@@ -552,8 +552,8 @@ onEvent('recipes', event => {
 
   //机械熔岩炉
   const superheated = [
-    { input: 'netherrack', output: 'minecraft:lava', count: 125 },
-    { input: 'magma_block', output: 'minecraft:lava', count: 500 }
+    { input: 'netherrack', output: 'minecraft:lava', count: 500 },
+    { input: 'magma_block', output: 'minecraft:lava', count: 1000 }
   ];
   for (const sh of superheated) {
     mixing(Fluid.of(`${sh.output}`, sh.count),
@@ -689,23 +689,20 @@ onEvent('recipes', event => {
     event.custom({
       type: 'thermal:rock_gen',
       adjacent: adjacent,
-      result: {
-        item: output
-      }
+      result: { item: output }
     }).id('atlanabyss:rock_gen_' + id)
   }
   rockGen('create:honey', 'create:limestone', 'limestone')
   rockGen('create_enchantment_industry:ink', 'minecraft:blackstone', 'blackstone')
   rockGen('create:chocolate', 'create:scoria', 'scoria')
+  rockGen('tconstruct:blood_congealed_slime', 'minecraft:netherrack', 'netherrack')
 
   function rockGen2(adjacent, below, output, id) {
     event.custom({
       type: 'thermal:rock_gen',
       adjacent: adjacent,
       below: below,
-      result: {
-        item: output
-      }
+      result: { item: output }
     }).id('atlanabyss:rock_gen_' + id)
   }
   rockGen2('minecraft:water', 'minecraft:calcite', 'minecraft:diorite', 'diorite')

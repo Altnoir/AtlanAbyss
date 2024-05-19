@@ -692,7 +692,6 @@ onEvent('block.break', event => {
 //幸运方块数组
 const summon = [
   'minecraft:villager',//从0开始算
-  'minecraft:bee',
   'minecraft:cat',
   'minecraft:cow',
   'minecraft:pig',

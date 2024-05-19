@@ -1,0 +1,31 @@
+
+[forgeautofish]
+	#Sets the delay before reeling in the fishing rod after catching a fish (in ticks).
+	#Range: 0 ~ 600
+	reelindelay = 0
+	#Sets the delay between each item throw in filtering (in ticks).
+	#Range: 5 ~ 600
+	throwdelay = 10
+	#Sets whether should the mod be turned off when the fishing rod is about to break.
+	rodprotect = true
+	#Sets the delay before casting the fishing rod again (in ticks).
+	#Minimum is 1 tick to allow Auto Replace to take effect.
+	#Range: 1 ~ 600
+	recastdelay = 20
+	#Does nothing currently
+	autoreplace = true
+	#Sets the default status of the Auto Fish feature
+	autofish = true
+	#Sets the interval for checking if the rod is thrown (in ticks).
+	#If not, throw it.
+	#Range: 20 ~ 72000
+	checkinterval = 200
+
+	[forgeautofish.filter]
+		#Toggles the entire item filter
+		all = true
+		#Sets item filter
+		items = ["minecraft:rotten_flesh"]
+		#Puts these items to top of filter.
+		prioritize = ["minecraft:cod", "minecraft:salmon", "minecraft:tropical_fish", "minecraft:pufferfish", "minecraft:bow", "minecraft:enchanted_book", "minecraft:fishing_rod", "minecraft:name_tag", "minecraft:nautilus_shell", "minecraft:saddle", "minecraft:lily_pad", "minecraft:bowl", "minecraft:leather", "minecraft:leather_boots", "minecraft:rotten_flesh", "minecraft:stick", "minecraft:string", "minecraft:water_bottle", "minecraft:bone", "minecraft:ink_sac", "minecraft:tripwire_hook", "minecraft:bamboo", "minecraft:cocoa_beans"]
+

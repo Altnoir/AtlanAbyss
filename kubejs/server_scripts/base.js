@@ -1000,6 +1000,28 @@ onEvent('recipes', event => {
 		'minecraft:stick',
 		Item.of('thermal:sawdust').withChance(0.5)
 	], 'minecraft:bamboo').id("atlanabyss:milling_bamboo")
+	//造纸
+	remove('quark:tweaks/crafting/utility/bent/paper')
+	filling('2x minecraft:paper', [
+		'#forge:dusts/wood',
+		Fluid.of('minecraft:water', 50)
+	]).id("atlanabyss:paper_by_sawdust")
+
+	//滴水石锥
+	event.shapeless('4x minecraft:pointed_dripstone', [
+		'minecraft:dripstone_block'
+	]).id("atlanabyss:pointed_dripstone_by_block")
+
+	//绯红菌岩
+	item_application('minecraft:crimson_nylium', [
+		'minecraft:netherrack',
+		'minecraft:crimson_fungus'
+	]).id("atlanabyss:item_application_crimson_nylium")
+	//诡异菌岩
+	item_application('minecraft:warped_nylium', [
+		'minecraft:netherrack',
+		'minecraft:warped_fungus'
+	]).id("atlanabyss:item_application_warped_nylium")
 
 	//粉末
 	milling('thermal:apatite_dust', 'thermal:apatite').id("atlanabyss:milling_apatite")
@@ -1481,7 +1503,7 @@ onEvent('recipes', event => {
 		Item.of('thermal:nickel_nugget').withChance(0.40),
 		Item.of('minecraft:gold_nugget').withChance(0.20)
 	], '#create:stone_types/ochrum').id("atlanabyss:crushing_ochrum")
-	//粉碎石灰石
+	//粉碎石灰岩
 	milling([
 		Item.of('create:crushed_raw_tin').withChance(0.80)
 	], '#create:stone_types/limestone').id("atlanabyss:milling_limestone")
@@ -1489,6 +1511,15 @@ onEvent('recipes', event => {
 		Item.of('create:crushed_raw_tin').withChance(0.80),
 		Item.of('thermal:tin_nugget').withChance(0.80)
 	], '#create:stone_types/limestone').id("atlanabyss:crushing_limestone")
+	//洗涤石灰岩
+	splashing([
+		'minecraft:quartz',
+		Item.of('thermal:niter').withChance(0.5),
+		Item.of('thermal:apatite').withChance(0.5),
+		Item.of('minecraft:lapis_lazuli').withChance(0.25),
+		Item.of('thermal:cinnabar').withChance(0.1),
+		Item.of('minecraft:emerald').withChance(0.05)
+	], '#create:stone_types/limestone').id("atlanabyss:splashing_limestone")
 
 	//压板
 	pressing(
