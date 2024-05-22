@@ -36,8 +36,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/AtlanAbyss-Music Pack.zip","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
-incompatibleResourcePacks:["quark:emote_resources","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
+resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/AtlanAbyss-Music Pack.zip","file/FreshAnimations_v1.8.zip"]
+incompatibleResourcePacks:["quark:emote_resources","file/FreshAnimations_v1.8.zip"]
 lastServer:
 lang:zh_cn
 soundDevice:
@@ -47,7 +47,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -146,12 +146,12 @@ key_key.modernfix.config:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
+key_key.corpse.death_history:key.keyboard.unknown
 key_key.forgeautofish.autofish:key.keyboard.unknown
 key_key.forgeautofish.rodprotect:key.keyboard.unknown
 key_key.forgeautofish.autoreplace:key.keyboard.unknown
 key_key.forgeautofish.settings:key.keyboard.unknown
 key_key.forgeautofish.itemfilter:key.keyboard.unknown
-key_key.corpse.death_history:key.keyboard.unknown
 key_key.botania_corporea_request:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.modernui.openCenter:key.keyboard.k:CONTROL
@@ -191,8 +191,14 @@ key_key.ars_nouveau.qc8:key.keyboard.unknown
 key_key.ars_nouveau.qc9:key.keyboard.unknown
 key_key.ars_nouveau.qc10:key.keyboard.unknown
 key_chunkloaders.keys.open_screen:key.keyboard.semicolon
-key_key.observable.profile:key.keyboard.apostrophe
 key_key.ftbquests.quests:key.keyboard.unknown
+key_key.observable.profile:key.keyboard.apostrophe
+key_gui.xaero_open_map:key.keyboard.m
+key_gui.xaero_open_settings:key.keyboard.right.bracket
+key_gui.xaero_map_zoom_in:key.keyboard.unknown
+key_gui.xaero_map_zoom_out:key.keyboard.unknown
+key_gui.xaero_quick_confirm:key.keyboard.right.shift
+key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
@@ -200,14 +206,7 @@ key_key.waila.narrate:key.keyboard.unknown
 key_key.waila.show_details:key.keyboard.left.shift
 key_key.waila.show_recipes:key.keyboard.keypad.3
 key_key.waila.show_uses:key.keyboard.unknown
-key_gui.xaero_open_map:key.keyboard.m
-key_gui.xaero_open_settings:key.keyboard.right.bracket
-key_gui.xaero_map_zoom_in:key.keyboard.unknown
-key_gui.xaero_map_zoom_out:key.keyboard.unknown
-key_gui.xaero_quick_confirm:key.keyboard.right.shift
-key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_key.beyond_earth.rocket_start:key.keyboard.space
-key_quark.keybind.back:key.mouse.4
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.unknown
 key_gui.xaero_toggle_slime:key.keyboard.unknown
@@ -251,11 +250,12 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_quark.keybind.sort_player:key.keyboard.unknown
-key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.back:key.mouse.4
+key_quark.keybind.lock_rotation:key.keyboard.l
 key_quark.keybind.change_hotbar:key.keyboard.unknown
 key_quark.keybind.camera_mode:key.keyboard.f12
-key_quark.keybind.lock_rotation:key.keyboard.l
+key_quark.keybind.sort_player:key.keyboard.unknown
+key_quark.keybind.sort_container:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.entity_tracker:key.keyboard.unknown
