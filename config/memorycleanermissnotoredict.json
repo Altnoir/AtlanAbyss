@@ -1,0 +1,5 @@
+{
+  "autoCleanMemory": true,
+  "enableCommand": true,
+  "cleanupInterval": 8
+}

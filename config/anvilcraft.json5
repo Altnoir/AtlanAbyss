@@ -1,0 +1,44 @@
+{
+	// Maximum number of items processed by the anvil at the same time
+	"anvilEfficiency": 64,
+	// Maximum depth a lightning strike can reach
+	"lightningStrikeDepth": 2,
+	// Maximum radius a lightning strike can reach
+	"lightningStrikeRadius": 1,
+	// Maximum distance a magnet attracts
+	"magnetAttractsDistance": 5,
+	// Maximum radius a handheld magnet attracts
+	"magnetItemAttractsRadius": 8.0,
+	// Redstone EMP distance generated per block dropped by the anvil
+	"redstoneEmpRadius": 6,
+	// Maximum distance of redstone EMP
+	"redstoneEmpMaxRadius": 24,
+	// Maximum cooldown time of chute (in ticks)
+	"chuteMaxCooldown": 4,
+	// Maximum cooldown time of auto crafter (in ticks)
+	"autoCrafterCooldown": 20,
+	// The maximum search radius of the geode
+	"geodeRadius": 64,
+	// The search interval of the geode
+	"geodeInterval": 4,
+	// The search cooldown of the geode (in seconds)
+	"geodeCooldown": 5,
+	// The power transmitter can identify the range of the power transmitter
+	"powerTransmitterRange": 8,
+	// The power transmitter can identify the range of the power transmitter
+	"remotePowerTransmitterRange": 16,
+	// The maximum number of logs that can be cut per level of Felling enchantment
+	"fellingBlockPerLevel": 2,
+	// Should show anvil levitate animation
+	"displayAnvilAnimation": true,
+	// Maximum cooldown of load monitor
+	"loadMonitor": 10,
+	"powerConverter": {
+		// The working interval of power converters
+		"powerConverterCountdown": 10,
+		// Energy efficiency of energy converters (1 MW => xx FE/t)
+		"powerConverterEfficiency": 80,
+		// Power loss of energy converters
+		"powerConverterLoss": 0.1
+	}
+}

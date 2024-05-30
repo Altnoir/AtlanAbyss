@@ -1,0 +1,76 @@
+
+[youkaifying_effect]
+	#Chance for flesh food to add Youkaifying effect for the first time
+	#Range: 0.0 ~ 1.0
+	youkaifyingChance = 0.2
+	#Confusion time when flesh food to add Youkaifying effect for the first time
+	#Range: 0 ~ 1000000
+	youkaifyingConfusionTime = 200
+	#Time for flesh food to add Youkaifying effect
+	#Range: 0 ~ 1000000
+	youkaifyingTime = 1200
+	#Threshold for Youkaifying effect to turn into Youkaified effect
+	#Range: 0 ~ 1000000
+	youkaifyingThreshold = 6000
+	#Youkaified duration once reached
+	#Range: 0 ~ 1000000
+	youkaifiedDuration = 24000
+	#Time for flesh food to add Youkaified effect
+	#Range: 0 ~ 1000000
+	youkaifiedProlongation = 6000
+
+[food_effect]
+	#Smoothing Healing Factor
+	#Range: 0.0 ~ 100.0
+	smoothingHealingFactor = 1.5
+	#Tea Healing Interval
+	#Range: 0 ~ 10000
+	teaHealingPeriod = 60
+	#Udumbara effect Healing Interval
+	#Range: 0 ~ 10000
+	udumbaraHealingPeriod = 60
+	#Udumbara flowering duration
+	#Range: 0 ~ 100000
+	udumbaraDuration = 200
+	#Udumbara full moon damage reduction
+	#Range: 0 ~ 100
+	udumbaraFullMoonReduction = 4
+
+[suwako_hat]
+	#Number of raiders with different types frogs need to eat in front of villager to drop Suwako hat
+	#Range: 1 ~ 10
+	frogEatCountForHat = 3
+	#Range for villagers with direct sight when frog eat raiders
+	#Range: 1 ~ 64
+	frogEatRaiderVillagerSightRange = 20
+	#Range for villagers without direct sight when frog eat raiders
+	#Range: 1 ~ 64
+	frogEatRaiderVillagerNoSightRange = 10
+
+[koishi_attack]
+	#Enable koishi attack when player has youkaifying or youkaified effect
+	koishiAttackEnable = true
+	#Time in ticks for minimum time between koishi attacks
+	#Range: 1 ~ 1000000
+	koishiAttackCoolDown = 6000
+	#Chance every tick to do koishi attack
+	#Range: 0.0 ~ 1.0
+	koishiAttackChance = 0.001
+	#Koishi attack damage
+	#Range: 0 ~ 100000000
+	koishiAttackDamage = 100
+	#Number of times player needs to consecutively block Koishi attack to get hat
+	#Range: 0 ~ 100
+	koishiAttackBlockCount = 3
+
+[danmaku_battle]
+	#Minimum damage youkai danmaku will deal against non-player
+	#Range: 0.0 ~ 1.0
+	danmakuMinPHPDamage = 0.02
+	#Minimum damage youkai danmaku will deal against player
+	#Range: 0.0 ~ 1.0
+	danmakuPlayerPHPDamage = 0.1
+	#When danmaku hits target, heal youkai health by percentage of max health
+	#Range: 0.0 ~ 1.0
+	danmakuHealOnHitTarget = 0.2
+
