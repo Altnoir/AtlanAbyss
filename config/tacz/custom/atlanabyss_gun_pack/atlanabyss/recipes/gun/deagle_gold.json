@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 128
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "atlanabyss:deagle_gold"
+  }
+}

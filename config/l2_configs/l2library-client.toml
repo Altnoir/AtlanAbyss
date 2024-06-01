@@ -11,4 +11,7 @@ infoMaxWidth = 0.3
 selectionDisplayRequireShift = false
 #Scroll for selection only when pressing shift
 selectionScrollRequireShift = true
+#Scroll sensitivity
+#Range: 0.01 ~ 10000.0
+scrollTick = 1.0
 
