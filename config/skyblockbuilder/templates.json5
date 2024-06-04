@@ -13,7 +13,7 @@
   "spawns": {
     "bigseablock": [
       [ 7, 14, 7 ]
-    ],
+    ]
     // "seablock": [
     //   [ 5, 12, 5 ]
     // ]
@@ -27,7 +27,7 @@
       "file": "big_landing_cabin.nbt",
       "spawns": "bigseablock",
       "direction": "south"
-    },
+    }
     // {
     //   "name": "Landing Cabin",
     //   "desc": "",
