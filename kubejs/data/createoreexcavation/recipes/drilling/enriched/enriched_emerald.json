@@ -5,23 +5,25 @@
   },
   "name": "{\"translate\":\"ore.kubejs.enriched_emerald\"}",
   "weight": 2,
-  "ticks": 80,
+  "ticks": 1,
   "biomeWhitelist": "forge:is_overworld",
-  "stress": 256,
+  "stress": 16,
   "amountMin": 1.0,
   "amountMax": 2.0,
   "output": [
     {
-      "item": "minecraft:emerald"
+      "item": "minecraft:emerald",
+      "count": 2
     },
     {
       "item": "minecraft:emerald",
+      "count": 2,
       "chance": 0.5
     }
   ],
   "fluid": {
     "fluid": "minecraft:water",
     "nbt": {},
-    "amount": 500
+    "amount": 50
   }
 }

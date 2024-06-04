@@ -6,11 +6,6 @@
                 {
                     "type": "minecraft:item",
                     "weight": 2,
-                    "name": "create:flywheel"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
                     "name": "minecraft:calcite",
                     "functions": [
                         {
@@ -40,11 +35,6 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "farmersdelight:skillet"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
                     "name": "farmersdelight:cooking_pot"
                 },
                 {
@@ -69,7 +59,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
+                    "weight": 5,
                     "name": "touhou_little_maid:power_point",
                     "functions": [
                         {
@@ -77,6 +67,20 @@
                             "count": {
                                 "min": 2,
                                 "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "kubejs:lucky_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 64
                             }
                         }
                     ]

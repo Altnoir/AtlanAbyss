@@ -55,14 +55,6 @@ onEvent('recipes', event => {
         pedestalItems: []
     }).id('atlanabyss:imbuement_leather')
 
-    //宝石粉
-    create.milling('apotheosis:gem_dust', [
-        'apotheosis:gem'
-    ]).id("atlanabyss:milling_ap_gem")
-    thermal.pulverizer(Item.of('apotheosis:gem_dust').withChance(1.25), [
-        'apotheosis:gem'
-    ]).energy(4000).id('atlanabyss:pulverizer_ap_gem')
-
     //活根
     event.shaped('twilightforest:liveroot_block', [
         'AA',
@@ -73,81 +65,6 @@ onEvent('recipes', event => {
     event.shapeless('4x twilightforest:liveroot', [
         'twilightforest:liveroot_block'
     ]).id('atlanabyss:liveroot_from_liveroot_block')
-    //废金属
-    create.splashing([
-        Item.of('apotheosis:common_material').withChance(.5),
-        Item.of('5x minecraft:iron_nugget').withChance(.75),
-        Item.of('minecraft:gold_nugget').withChance(.25)
-    ], [
-        'twilightforest:raw_ironwood'
-    ]).id('atlanabyss:splashing_common_material')
-    //绿材料
-    event.shaped('apotheosis:uncommon_material', [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'apotheosis:common_material',
-        B: 'farmersdelight:canvas'
-    }).id('atlanabyss:uncommon_material')
-    //蓝材料
-    event.custom({
-        type: 'ars_nouveau:enchanting_apparatus',
-        reagent: [{ item: 'minecraft:amethyst_shard' }],
-        pedestalItems: [
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-            { item: { item: 'apotheosis:uncommon_material' } },
-        ],
-        output: { item: 'apotheosis:rare_material' },
-        sourceCost: 0,
-        keepNbtOfReagent: false
-    }).id('atlanabyss:enchanting_apparatus_rare_material')
-    //紫材料
-    create.compacting('apotheosis:epic_material', [
-        '8x apotheosis:rare_material',
-        Fluid.of('tconstruct:ender_slime', 500)
-    ]).heated().id('atlanabyss:compacting_epic_material')
-    event.custom({
-        type: 'kitchenkarrot:brewing_barrel',
-        content: {
-            recipe: [
-                { item: 'apotheosis:rare_material' },
-                { item: 'apotheosis:rare_material' },
-                { item: 'apotheosis:rare_material' },
-                { item: 'apotheosis:rare_material' },
-                { item: 'create:cinder_flour' },
-                { item: 'create:cinder_flour' }
-            ],
-            craftingtime: 3000
-        },
-        result: { item: 'apotheosis:epic_material' }
-    }).id('atlanabyss:brewing_barrel_epic_material')
-    //橙材料
-    create.mechanical_crafting('apotheosis:mythic_material', [
-        '  A  ',
-        '  A  ',
-        'AABAA',
-        '  A  ',
-        '  A  '
-    ], {
-        A: 'apotheosis:epic_material',
-        B: 'botania:mana_pearl'
-    }).id('atlanabyss:mechanical_crafting_mythic_material')
-    //白材料
-    botania.runic_altar('apotheosis_modern_ragnarok:izanagi_object', [
-        'apotheosis:mythic_material', 'apotheosis:mythic_material',
-        'apotheosis:mythic_material', 'apotheosis:mythic_material',
-        'apotheosis:mythic_material', 'apotheosis:mythic_material',
-        'apotheosis:mythic_material', 'apotheosis:mythic_material'
-    ], 50000).id('atlanabyss:runic_altar_izanagi_object')
-
-
 
     //传送门珍珠
     function gateRecipe(a, b, id) {
@@ -242,20 +159,18 @@ onEvent('recipes', event => {
     //附魔灌注台
     remove('enchantinginfuser:enchanting_infuser')
     event.custom({
-        type: 'apotheosis:enchanting',
-        conditions: [{
-            type: 'apotheosis:module',
-            module: 'enchantment'
-        }],
-        input: { item: 'minecraft:enchanting_table' },
-        requirements: {
-            eterna: 40.0,
-            quanta: 25,
-            arcana: 25
-        },
-        display_level: 5,
-        result: { item: 'enchantinginfuser:enchanting_infuser', count: 1 }
-    }).id('atlanabyss:enchanting_enchanting_infuser')
+		type: 'tconstruct:casting_basin',
+		cast: {
+			item: 'minecraft:enchanting_table'
+		},
+		cast_consumed: true,
+		fluid: {
+			tag: "tconstruct:molten_amethyst",
+			amount: 1600
+		},
+		result: 'enchantinginfuser:enchanting_infuser',
+		cooling_time: 300
+	}).id('atlanabyss:casting_basin_enchanting_infuser')
     //高级附魔灌注台
     remove('enchantinginfuser:advanced_enchanting_infuser')
     event.custom({

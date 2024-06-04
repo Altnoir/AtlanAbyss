@@ -10,7 +10,6 @@ let FD = (id, x) => MOD("farmersdelight", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
 let BO = (id, x) => MOD("botania", id, x)
-let AP = (id, x) => MOD("apotheosis", id, x)
 
 
 
@@ -218,11 +217,6 @@ onEvent('item.registry', event => {
 		{ in: BO('mana_cookie'), out: S(10) },
 		{ in: BO('tiny_potato'), out: S(1) },
 		{ in: BO('dice'), out: G(32) },
-		{ in: AP('common_material'), out: S(1) },
-		{ in: AP('uncommon_material'), out: S(8) },
-		{ in: AP('rare_material'), out: S(32) },
-		{ in: AP('epic_material'), out: G(1) },
-		{ in: AP('mythic_material'), out: G(4) },
 	])
 
 	trade("货币兑换卡", "Exchange Currencies", 0xEBA83A, 0xF4F4F4, [
@@ -324,5 +318,4 @@ onEvent('item.registry', event => {
 
 	simple("幻翼膜", "Phantom Membrane", MC('phantom_membrane', 1), 48, S, 0x6E506B, 0xC1B79F)
 	simple("烈焰蛋糕", "Blaze Cake", CR('blaze_cake', 1), 16, S, 0x834141, 0xFCE083)
-	simple("宝石粉", "Gem Dust", AP('gem_dust', 1), 20, S, 0x262680, 0xDEC5E7)
 })

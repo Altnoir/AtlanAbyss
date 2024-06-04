@@ -5,23 +5,25 @@
   },
   "name": "{\"translate\":\"ore.kubejs.enriched_diamond\"}",
   "weight": 2,
-  "ticks": 80,
+  "ticks": 1,
   "biomeWhitelist": "forge:is_overworld",
-  "stress": 256,
+  "stress": 16,
   "amountMin": 2.0,
   "amountMax": 4.0,
   "output": [
     {
-      "item": "minecraft:diamond"
+      "item": "minecraft:diamond",
+      "count": 2
     },
     {
       "item": "minecraft:diamond",
+      "count": 2,
       "chance": 0.5
     }
   ],
   "fluid": {
     "fluid": "minecraft:water",
     "nbt": {},
-    "amount": 500
+    "amount": 50
   }
 }

@@ -178,11 +178,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:lightning_rod"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "minecraft:redstone_lamp",
                     "functions": [
@@ -302,16 +297,6 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:analog_lever"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:pulse_repeater"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:pulse_extender"
                 },
                 {
                     "type": "minecraft:item",

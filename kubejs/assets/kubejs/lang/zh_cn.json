@@ -84,9 +84,11 @@
 
     "item.kubejs.album_transpain": "《专辑》§7Transpain",
     "item.kubejs.album_indigrotto": "《专辑》§1Indigrotto",
-    "item.kubejs.album_blurred_mind": "《专辑》§3COLOURS.02「Blurred Mind」",
     "item.kubejs.album_michelia": "《专辑》§5ミシュメリア",
+    "item.kubejs.album_growing": "《专辑》§2COLOURS.01「Growing」",
+    "item.kubejs.album_blurred_mind": "《专辑》§3COLOURS.02「Blurred Mind」",
     "item.kubejs.album_redraw": "《专辑》§cCOLOURS.03「Redraw」",
+    "item.kubejs.album_yelling": "《专辑》§eCOLOURS.04「Yelling」",
     "item.kubejs.album_nacollection4": "《专辑》§9Nacollection4",
     "item.kubejs.album_kessoku_band": "《专辑》§4結束バンド",
     "item.kubejs.album_mameyudoufu": "《专辑》§fMameyudoufu「作者精选」",
@@ -360,6 +362,8 @@
     "kubejs.hasumi.name":"§e莲望的光环",
     "kubejs.purana.name":"§c普拉娜的光环",
 
+    "effect.kubejs.sundering":"破甲",
+    "effect.kubejs.time_slowing":"时缓",
     "effect.kubejs.alice_powah":"§b爱丽丝之力",
     "kubejs.brew.alicepowah":"爱丽丝之力",
 
@@ -371,14 +375,14 @@
     "tooltip.kubejs.alice1":"§6使§e枪械攻击§6额外造成§e破甲§6效果",
     "tooltip.kubejs.alice2":"§6(可叠加)",
     "tooltip.kubejs.alice3":"§6当穿戴者拥有§e爱丽丝之力§6时，则",
-    "tooltip.kubejs.alice4":"§6自动锁头",
+    "tooltip.kubejs.alice4":"§6破甲伤害翻倍",
 
     "tooltip.kubejs.azusa":"§6雷霆之环",
     "tooltip.kubejs.azusa1":"§6使§e枪械攻击§6概率触发§e雷击§6，并且",
     "tooltip.kubejs.azusa2":"§6额外造成§e150%§6伤害",
 
     "tooltip.kubejs.shiroko":"§6重锤之环",
-    "tooltip.kubejs.shiroko1":"§6使§e枪械攻击§6能吸收攻击者的§e动能",
+    "tooltip.kubejs.shiroko1":"§6使穿戴者§e下落§6时把§e任意攻击§6转化成伤害",
 
     "tooltip.kubejs.mika":"§6狂风之环",
     "tooltip.kubejs.mika1":"§e枪械攻击§6可使受击者§e†升天†",
@@ -404,9 +408,10 @@
     "tooltip.kubejs.mari":"§6幸运之环",
     "tooltip.kubejs.mari1":"§6使§e生物§6死亡时只掉落§e幸运方块",
 
-    "tooltip.kubejs.hoshino":"§6灾难之环",
-    "tooltip.kubejs.hoshino1":"§6使§e枪械攻击§6额外造成§e流血§6效果",
-    "tooltip.kubejs.hoshino2":"§6(可叠加)",
+    "tooltip.kubejs.hoshino":"§6时间之环",
+    "tooltip.kubejs.hoshino1":"§6使用§e时钟§6可§e减缓时间",
+    "tooltip.kubejs.hoshino2":"§6潜行使用可§e减速",
+    "tooltip.kubejs.hoshino3":"§6站立使用则§e恢复",
 
     "tooltip.kubejs.iroha":"§6赌徒之环",
     "tooltip.kubejs.iroha1":"§6使§e枪械攻击§6有§e1/6§6概率，在受击者或",
@@ -437,6 +442,14 @@
     "singularity.extendedcrafting.lutetium":"镥",
     "singularity.extendedcrafting.virgin":"原初",
     "singularity.extendedcrafting.elemental":"元素",
+
+    "material.kubejs.infinity":"§4§k无尽",
+    "modifier.kubejs.lutetium":"§5镥",
+    "modifier.kubejs.lutetium.flavor":"镥大师！",
+    "modifier.kubejs.lutetium.description":"额外增加的四个升级槽",
+    "modifier.kubejs.elemental":"§c元§a素",
+    "modifier.kubejs.elemental.flavor":"掌握自然！",
+    "modifier.kubejs.elemental.description":"额外增加的一个能力槽",
 
     "gateways.wither_skeleton_gate":"凋零骷髅传送门",
     "gateways.wither_skeleton_gate_large":"[大型]凋零骷髅传送门",

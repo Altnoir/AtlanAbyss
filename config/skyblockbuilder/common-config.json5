@@ -104,7 +104,7 @@
         "minecraft:buried_treasure",
         "minecraft:shipwreck",
         "minecraft:mineshaft",
-        "betterfortresses:fortress",
+        "minecraft:fortress",
         "betteroceanmonuments:ocean_monument",
         "integrated_api:underground_structure",
         "integrated_stronghold:stronghold"

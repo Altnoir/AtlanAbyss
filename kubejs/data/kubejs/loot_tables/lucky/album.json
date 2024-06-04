@@ -13,15 +13,19 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "kubejs:album_growing"
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "kubejs:album_blurred_mind"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "kubejs:album_michelia"
+                    "name": "kubejs:album_redraw"
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "kubejs:album_redraw"
+                    "name": "kubejs:album_yelling"
                 },
                 {
                     "type": "minecraft:item",

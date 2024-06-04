@@ -1,0 +1,69 @@
+﻿{
+    "pools": [
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§e水彩のカナリア\",read_only:0b,time:243,url:\"https://music.163.com/song/media/outer/url?id=2156174174.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§ecitron\",read_only:0b,time:182,url:\"https://music.163.com/song/media/outer/url?id=2156173242.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§eフラフィ\",read_only:0b,time:196,url:\"https://music.163.com/song/media/outer/url?id=2156174175.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§e蛍火の雪\",read_only:0b,time:160,url:\"https://music.163.com/song/media/outer/url?id=2156174176.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§eスローアライズ\",read_only:0b,time:224,url:\"https://music.163.com/song/media/outer/url?id=2156174177.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§eCOLOURS\",read_only:0b,time:279,url:\"https://music.163.com/song/media/outer/url?id=2156173243.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          }
+        ]
+      }
+    ]
+  }

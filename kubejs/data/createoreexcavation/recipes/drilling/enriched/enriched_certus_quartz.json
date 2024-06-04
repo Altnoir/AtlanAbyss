@@ -5,18 +5,25 @@
   },
   "name": "{\"translate\":\"ore.kubejs.enriched_certus_quartz\"}",
   "weight": 3,
-  "ticks": 20,
+  "ticks": 1,
   "biomeWhitelist": "forge:is_end",
-  "stress": 128,
+  "stress": 16,
   "amountMin": 15.0,
   "amountMax": 40.0,
   "output": [
     {
-      "item": "ae2:certus_quartz_dust"
+      "item": "ae2:certus_quartz_dust",
+      "count": 10
     },
     {
       "item": "ae2:certus_quartz_dust",
+      "count": 10,
       "chance": 0.5
     }
-  ]
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 50
+  }
 }

@@ -15,21 +15,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:track_observer"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "railways:track_coupler"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "create:stockpile_switch"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "create:content_observer"
                 },
@@ -37,28 +22,6 @@
                     "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:elevator_pulley"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "create:brass_tunnel"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "create:brass_casing",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 2,
-                                "max": {
-                                    "min": 2,
-                                    "max": 5
-                                }
-                            }
-                        }
-                    ]
                 },
                 {
                     "type": "minecraft:item",
@@ -96,18 +59,8 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "create:copper_casing"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:super_glue"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "createaddition:spool"
                 },
                 {
                     "type": "minecraft:item",
@@ -150,11 +103,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "createaddition:straw"
                 },
                 {
                     "type": "minecraft:item",
@@ -242,34 +190,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "create:copycat_step",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 8,
-                                "max": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "create:copycat_panel",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 8,
-                                "max": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:filter",
                     "functions": [
@@ -289,47 +209,8 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 14,
-                    "name": "create:mechanical_crafter",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": {
-                                    "min": 1,
-                                    "max": {
-                                        "min": 1,
-                                        "max": 2
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:controls"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "createaddition:tesla_coil"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "createaddition:modular_accumulator",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
-                            }
-                        }
-                    ]
                 },
                 {
                     "type": "minecraft:item",

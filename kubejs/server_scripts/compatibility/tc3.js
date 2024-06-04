@@ -35,7 +35,7 @@ onEvent('recipes', event => {
   remove('tconstruct:smeltery/seared/seared_brick_kiln')
   remove('tconstruct:smeltery/melting/seared/grout')
   remove('tconstruct:common/puny_smelting')
-  event.shapeless('tconstruct:puny_smelting',[
+  event.shapeless('tconstruct:puny_smelting', [
     'minecraft:book',
     'minecraft:clay_ball'
   ]).id('atlanabyss:tc_puny_smelting');
@@ -291,4 +291,64 @@ onEvent('recipes', event => {
   event.shapeless('9x tconstruct:soulsteel_nugget', [
     'tconstruct:soulsteel_ingot'
   ]).id('atlanabyss:soulsteel_nugget_from_ingot')
+
+  //燃料
+  remove('twilightforest:smeltery/melting/fuel/fiery_essence')
+  event.custom({
+    "type": "tconstruct:melting_fuel",
+    "fluid": {
+      "name": "kubejs:molten_plutonium",
+      "amount": 50
+    },
+    "duration": 50,
+    "temperature": 5000
+  }).id('atlanabyss:melting_fuel_molten_plutonium')
+
+  //无尽材料
+  event.custom({
+    type: 'tconstruct:material',
+    ingredient: {
+      tag: 'forge:ingots/infinity'
+    },
+    value: 1,
+    needed: 1,
+    material: 'kubejs:infinity'
+  }).id('atlanabyss:material_infinity')
+
+  //升级槽
+  event.custom({
+    type: 'tconstruct:incremental_modifier',
+    input: {
+      item: 'kubejs:lutetium_ingot'
+    },
+    amount_per_item: 1,
+    needed_per_level: 42,
+    tools: {
+      tag: 'tconstruct:modifiable'
+    },
+    allow_crystal: true,
+    result: {
+      name: "kubejs:lutetium",
+      level: 1
+    },
+    max_level: 3
+  }).id('atlanabyss:modifier_infinity')
+  //能力槽
+  event.custom({
+    type: 'tconstruct:incremental_modifier',
+    input: {
+      item: 'kubejs:elemental_ingot'
+    },
+    amount_per_item: 1,
+    needed_per_level: 10,
+    tools: {
+      tag: 'tconstruct:modifiable'
+    },
+    allow_crystal: true,
+    result: {
+      name: "kubejs:elemental",
+      level: 1
+    },
+    max_level: 10
+  }).id('atlanabyss:modifier_elemental')
 })

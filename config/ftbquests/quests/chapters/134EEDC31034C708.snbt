@@ -426,9 +426,10 @@
 			disable_toast: true
 			x: -2.0d
 			y: 2.5d
-			shape: "rsquare"
+			shape: "hexagon"
 			description: ["利用强劲的附魔，战斗！"]
 			dependencies: ["4E12320C5CF0FE7B"]
+			hide: true
 			id: "7FEC216969A7D841"
 			tasks: [{
 				id: "16CF1A620EEE3226"
@@ -1076,6 +1077,43 @@
 			}]
 			rewards: [{
 				id: "040A95B5CCEAECD4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["7FEC216969A7D841"]
+			id: "629B75A3BB761759"
+			tasks: [{
+				id: "1ABCE0101128BD4B"
+				type: "item"
+				item: "enchantinginfuser:enchanting_infuser"
+			}]
+			rewards: [{
+				id: "1A87CC9E772CF469"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 0.0d
+			shape: "hexagon"
+			dependencies: ["629B75A3BB761759"]
+			hide: true
+			id: "3BCDFE0A07A7A347"
+			tasks: [{
+				id: "45A81428759D76BB"
+				type: "item"
+				item: "enchantinginfuser:advanced_enchanting_infuser"
+			}]
+			rewards: [{
+				id: "4336F181ADDE3B53"
 				type: "xp"
 				xp: 10
 			}]

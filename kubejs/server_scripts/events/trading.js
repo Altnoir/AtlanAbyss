@@ -8,7 +8,6 @@ function trading(event) {
         //     ],
         //     result: [
         //         Item.of(output).toResultJson(),
-
         //     ],
         //     energy: 1000
         // })
@@ -55,6 +54,6 @@ function trading(event) {
             })
     });
 
-    amadron('thermal:gold_coin', 8, 'kubejs:halo_gashapon', 2, 500, 'halo_gashapon');
-    amadron('thermal:gold_coin', 32, 'minecraft:spawner', 2, 1, 'spawner');
+    amadron('thermal:gold_coin', 64, 'kubejs:halo_gashapon', 2, 1, 'halo_gashapon');
+    amadron('thermal:gold_coin', 8, 'minecraft:spawner', 2, 1, 'spawner');
 }

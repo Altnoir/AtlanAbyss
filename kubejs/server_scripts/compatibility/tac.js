@@ -424,10 +424,11 @@ onEvent('recipes', event => {
 	//扭蛋
 	event.shaped('kubejs:halo_gashapon', [
 		' A ',
-		'ABA',
-		' A '
+		'ACA',
+		' B '
 	], {
 		A: 'ae2:certus_quartz_crystal',
-		B: 'tac:ultimate_material'
+		B: 'tac:ultimate_material',
+		C: 'kubejs:infinity_ingot'
 	}).id("atlanabyss:halo_gashapon")
 })

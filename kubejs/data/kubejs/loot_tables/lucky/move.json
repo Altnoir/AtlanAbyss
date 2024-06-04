@@ -11,11 +11,6 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:turntable"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 4,
                     "name": "create:piston_extension_pole",
                     "functions": [
@@ -27,11 +22,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:gantry_carriage"
                 },
                 {
                     "type": "minecraft:item",
@@ -60,8 +50,8 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 4,
-                                "max": 16
+                                "min": 2,
+                                "max": 8
                             }
                         }
                     ]
@@ -74,15 +64,15 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 4,
-                                "max": 16
+                                "min": 1,
+                                "max": 6
                             }
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
+                    "weight": 6,
                     "name": "create:contraption_controls"
                 },
                 {
@@ -93,8 +83,8 @@
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 8,
-                                "max": 16
+                                "min": 2,
+                                "max": 9
                             }
                         }
                     ]

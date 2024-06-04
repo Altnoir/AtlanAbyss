@@ -5,23 +5,25 @@
   },
   "name": "{\"translate\":\"ore.kubejs.enriched_lazuli\"}",
   "weight": 5,
-  "ticks": 20,
+  "ticks": 1,
   "biomeWhitelist": "forge:is_overworld",
-  "stress": 96,
+  "stress": 16,
   "amountMin": 20.0,
   "amountMax": 60.0,
   "output": [
     {
-      "item": "minecraft:lapis_lazuli"
+      "item": "minecraft:lapis_lazuli",
+      "count": 5
     },
     {
       "item": "minecraft:lapis_lazuli",
+      "count": 5,
       "chance": 0.5
     }
   ],
   "fluid": {
     "fluid": "minecraft:water",
     "nbt": {},
-    "amount": 500
+    "amount": 50
   }
 }

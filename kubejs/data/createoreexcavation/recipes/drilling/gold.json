@@ -5,9 +5,9 @@
   },
   "name": "{\"translate\":\"ore.kubejs.gold\"}",
   "weight": 15,
-  "ticks": 600,
+  "ticks": 20,
   "biomeWhitelist": "forge:is_overworld",
-  "stress": 192,
+  "stress": 16,
   "amountMin": 2.0,
   "amountMax": 4.0,
   "output": [
@@ -18,6 +18,6 @@
   "fluid": {
     "fluid": "minecraft:water",
     "nbt": {},
-    "amount": 100
+    "amount": 10
   }
 }

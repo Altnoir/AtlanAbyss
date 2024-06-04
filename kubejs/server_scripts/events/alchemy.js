@@ -12,7 +12,6 @@ function alchemyRecipes(event) {
 	let alchemy_smelt = (output, catalyst, r1, r2, amount) => {
 		event.recipes.thermal.smelter([
 			Item.of("kubejs:substrate_" + output, amount ? amount : 1),
-			"kubejs:substrate_" + catalyst
 		], [
 			"2x kubejs:substrate_" + r1,
 			"kubejs:substrate_" + catalyst,
@@ -96,30 +95,28 @@ function alchemyRecipes(event) {
 		result: [{ item: 'kubejs:catalyst_empty' }]
 	})
 
-	function catalyst(out, in1, in2, in3, in4, in5, in6, id) {
+	function catalyst2(output, input, id) {
+		event.custom({
+			type: 'createaddition:charging',
+			input: { tag: input, count: 1 },
+			result: { item: output, count: 1 },
+			energy: 42000,
+		}).id('atlanabyss:charging_' + id)
+	}
+	catalyst2('kubejs:substrate_igneous', 'atlanabyss:substrate_igneous', 'igneous');
+	catalyst2('kubejs:substrate_volatile', 'atlanabyss:substrate_volatile', 'volatile');
+	catalyst2('kubejs:substrate_metal', 'atlanabyss:substrate_metal', 'metal');
+
+	function catalyst(out, in1, id) {
 		let s = ('kubejs:catalyst_incomplete')
 		event.recipes.create.sequenced_assembly([
 			Item.of(out).withChance(0.01),
-			Item.of('kubejs:alchemy_0').withChance(0.03),
-			Item.of(in1).withChance(0.16),
-			Item.of(in2).withChance(0.16),
-			Item.of(in3).withChance(0.16),
-			Item.of(in4).withChance(0.16),
-			Item.of(in5).withChance(0.16),
-			Item.of(in6).withChance(0.16)
+			Item.of('kubejs:alchemy_0').withChance(0.99)
 		], 'kubejs:catalyst_empty', [
-			event.recipes.createDeploying(s, [s, in1]),
-			event.recipes.createDeploying(s, [s, in2]),
-			event.recipes.createDeploying(s, [s, in3]),
-			event.recipes.createDeploying(s, [s, in4]),
-			event.recipes.createDeploying(s, [s, in5]),
-			event.recipes.createDeploying(s, [s, in6])
+			event.recipes.createDeploying(s, [s, in1])
 		]).transitionalItem(s).loops(1).id(`atlanabyss:sequenced_assembly_alchemy_${id}`)
 	}
-	catalyst('kubejs:substrate_igneous', 'kubejs:substrate_andesite', 'kubejs:substrate_diorite', 'kubejs:substrate_granite', 'kubejs:substrate_cobblestone', 'kubejs:substrate_basalt', 'kubejs:substrate_limestone', 'igneous');
-	catalyst('kubejs:substrate_herbal', 'kubejs:substrate_red', 'kubejs:substrate_orange', 'kubejs:substrate_yellow', 'kubejs:substrate_green', 'kubejs:substrate_blue', 'kubejs:substrate_magenta', 'herbal');
-	catalyst('kubejs:substrate_volatile', 'kubejs:substrate_blaze', 'kubejs:substrate_slime', 'kubejs:substrate_nether', 'kubejs:substrate_obsidian', 'kubejs:substrate_gunpowder', 'kubejs:substrate_prismarine', 'volatile');
-	catalyst('kubejs:substrate_crystal', 'kubejs:substrate_amethyst', 'kubejs:substrate_apatite', 'kubejs:substrate_niter', 'kubejs:substrate_quartz', 'kubejs:substrate_sulfur', 'kubejs:substrate_certus', 'crystal');
-	catalyst('kubejs:substrate_metal', 'kubejs:substrate_zinc', 'kubejs:substrate_copper', 'kubejs:substrate_iron', 'kubejs:substrate_tin', 'kubejs:substrate_gold', 'kubejs:substrate_nickel', 'metal');
-	catalyst('kubejs:substrate_gem', 'kubejs:substrate_cinnabar', 'kubejs:substrate_lapis', 'kubejs:substrate_emerald', 'kubejs:substrate_diamond', 'kubejs:substrate_ruby', 'kubejs:substrate_sapphire', 'gem');
+	catalyst('kubejs:substrate_herbal', '#atlanabyss:substrate_herbal', 'herbal');
+	catalyst('kubejs:substrate_crystal', '#atlanabyss:substrate_crystal', 'crystal');
+	catalyst('kubejs:substrate_gem', '#atlanabyss:substrate_gem', 'gem');
 };

@@ -5,9 +5,9 @@
   },
   "name": "{\"translate\":\"ore.kubejs.diamond\"}",
   "weight": 5,
-  "ticks": 1000,
+  "ticks": 60,
   "biomeWhitelist": "forge:is_overworld",
-  "stress": 512,
+  "stress": 16,
   "amountMin": 0.5,
   "amountMax": 2.0,
   "output": [
@@ -18,6 +18,6 @@
   "fluid": {
     "fluid": "minecraft:water",
     "nbt": {},
-    "amount": 100
+    "amount": 10
   }
 }

@@ -5,17 +5,19 @@
   },
   "name": "{\"translate\":\"ore.kubejs.enriched_quartz\"}",
   "weight": 4,
-  "ticks": 60,
+  "ticks": 1,
   "biomeWhitelist": "minecraft:is_nether",
-  "stress": 128,
+  "stress": 16,
   "amountMin": 15.0,
   "amountMax": 40.0,
   "output": [
     {
-      "item": "minecraft:quartz"
+      "item": "minecraft:quartz",
+      "count": 5
     },
     {
       "item": "minecraft:quartz",
+      "count": 5,
       "chance": 0.5
     }
   ]

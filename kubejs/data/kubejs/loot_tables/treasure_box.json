@@ -6,15 +6,6 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "apotheosis_modern_ragnarok:izanagi_object"
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {

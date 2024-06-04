@@ -5,9 +5,9 @@
   },
   "name": "{\"translate\":\"ore.kubejs.quartz\"}",
   "weight": 30,
-  "ticks": 300,
+  "ticks": 10,
   "biomeWhitelist": "minecraft:is_nether",
-  "stress": 256,
+  "stress": 16,
   "amountMin": 8.0,
   "amountMax": 24.0,
   "output": [

@@ -234,7 +234,8 @@ onEvent('item.tooltip', tooltip => {
                 text.add(6, Text.translate('tooltip.kubejs.head'));
                 text.add(7, Text.translate('tooltip.kubejs.hoshino1'));
                 text.add(8, Text.translate('tooltip.kubejs.hoshino2'));
-                text.add(9, Text.of(' '));
+                text.add(9, Text.translate('tooltip.kubejs.hoshino3'));
+                text.add(10, Text.of(' '));
             }
         }
         if (cmData === 11821912) {

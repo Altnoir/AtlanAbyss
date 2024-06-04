@@ -16,7 +16,6 @@ minecraft:buried_treasure
 minecraft:village
 minecraft:nether_fossil
 minecraft:bastion_remnant
-betterfortresses:fortress
 betteroceanmonuments:ocean_monument
 integrated_api:generic_structure
 integrated_api:underground_structure

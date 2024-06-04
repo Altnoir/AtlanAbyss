@@ -373,25 +373,6 @@
 				xp: 10
 			}]
 		}
-		{
-			disable_toast: true
-			x: -2.0d
-			y: -3.5d
-			shape: "hexagon"
-			dependencies: ["61635A022660E8DD"]
-			hide: true
-			id: "3BCDFE0A07A7A347"
-			tasks: [{
-				id: "45A81428759D76BB"
-				type: "item"
-				item: "enchantinginfuser:advanced_enchanting_infuser"
-			}]
-			rewards: [{
-				id: "4336F181ADDE3B53"
-				type: "xp"
-				xp: 10
-			}]
-		}
 	]
 	quest_links: [ ]
 }

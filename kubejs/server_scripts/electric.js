@@ -636,6 +636,7 @@ onEvent('recipes', event => {
     { input: 'create:blaze_burner', output: 'machine_crucible' },//熔岩炉
     { input: 'thermal:electrum_block', output: 'charge_bench' },//能量灌注机
     { input: 'minecraft:emerald', output: 'machine_press' },//贸易站
+    { input: 'kubejs:charged_electron_tube', output: 'machine_sawmill' }//反应物提取机
   ];
   for (const machine of machines) {
     event.smithing(`thermal:${machine.output}`,
@@ -978,8 +979,8 @@ onEvent('recipes', event => {
     primary_mod: 12.0,
     secondary_mod: 6.0,
     energy_mod: 2.0,
-    min_chance: 0.02,
-    use_chance: 0.02
+    min_chance: 0.0,
+    use_chance: 0.0
   }).id("atlanabyss:insolator_catalyst_herbal")//灌注器
   event.custom({
     type: 'thermal:pulverizer_catalyst',
@@ -989,20 +990,35 @@ onEvent('recipes', event => {
     primary_mod: 6.0,
     secondary_mod: 12.0,
     energy_mod: 2.0,
-    min_chance: 0.02,
-    use_chance: 0.02
+    min_chance: 0.75,
+    use_chance: 0.75
   }).id("atlanabyss:pulverizer_catalyst_igneous")//粉碎机
   event.custom({
     type: 'thermal:smelter_catalyst',
     ingredient: {
-      item: 'kubejs:substrate_gem'
+      item: 'kubejs:substrate_crystal'
     },
     primary_mod: 12.0,
     secondary_mod: 12.0,
     energy_mod: 4.0,
-    min_chance: 0.02,
-    use_chance: 0.02
+    min_chance: 0.0,
+    use_chance: 0.0
   }).id("atlanabyss:smelter_catalyst_gem")//感应炉
+
+  //发电
+  event.remove({ type: 'thermal:numismatic_fuel' })
+  event.custom({
+    type: 'thermal:numismatic_fuel',
+    ingredient: { item: 'kubejs:substrate_metal' },
+    energy: 250000
+  }).id("atlanabyss:numismatic_fuel_metal")
+
+  event.remove({ type: 'thermal:lapidary_fuel' })
+  event.custom({
+    type: 'thermal:lapidary_fuel',
+    ingredient: { item: 'kubejs:substrate_gem' },
+    energy: 5000000
+  }).id("atlanabyss:lapidary_fuel_gem")
 
   //修复
   remove('thermal:compat/create/pulverizer_create_zinc_ore')

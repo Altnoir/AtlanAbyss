@@ -122,46 +122,13 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "create:adjustable_chain_gearshift"
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "create:hand_crank"
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 6,
-                    "name": "create:gantry_shaft",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 5,
-                                "max": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
                     "weight": 1,
                     "name": "create:rotation_speed_controller"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "create:andesite_alloy",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 4,
-                                "max": 12
-                            }
-                        }
-                    ]
                 }
             ]
         }

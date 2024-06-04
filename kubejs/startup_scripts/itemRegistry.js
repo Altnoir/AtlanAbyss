@@ -21,7 +21,7 @@ onEvent('item.registry', event => {
 	event.create('charged_soulsteel_ingot').displayName('Charged Soulsteel Ingot').rarity(RARITY_RARE);
 	event.create('charged_constantan_ingot').displayName('Charged Constantan Ingot').rarity(RARITY_RARE);
 	event.create('crystal_matrix_ingot').displayName('Crystal Matrix Ingot').rarity(RARITY_RARE);
-	event.create('infinity_ingot').displayName('Infinity Ingot').rarity(RARITY_EPIC);
+	event.create('infinity_ingot').displayName('Infinity Ingot').glow(true).rarity(RARITY_EPIC);
 	event.create('eviltwisting_ingot').displayName('Eviltwisting Ingot').rarity(RARITY_RARE);
 	event.create('bismuth_ingot').displayName('Bismuth Ingot');
 	event.create('platinum_ingot').displayName('Platinum Ingot');
@@ -66,7 +66,7 @@ onEvent('item.registry', event => {
 	event.create('void_scrap').displayName('Void Scrap');
 	//光环扭蛋
 	event.create('halo_gashapon').displayName('Halo Gashapon');
-	//世界神符
+	//晶核
 	event.create('crystal_nucleus').displayName('Crystal Nucleus');
 
 	event.create('incomplete_core_container', 'create:sequenced_assembly').displayName('Incomplete Core Container');
@@ -92,9 +92,11 @@ onEvent('item.registry', event => {
 
 	event.create('album_transpain').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_indigrotto').displayName('Album').rarity(RARITY_RARE).unstackable();
-	event.create('album_blurred_mind').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_michelia').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_growing').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_blurred_mind').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_redraw').displayName('Album').rarity(RARITY_RARE).unstackable();
+	event.create('album_yelling').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_nacollection4').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_kessoku_band').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('album_mameyudoufu').displayName('Album').rarity(RARITY_RARE).unstackable();

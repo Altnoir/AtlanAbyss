@@ -1,0 +1,69 @@
+﻿{
+    "pools": [
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§2A Fairy with You\",read_only:0b,time:55,url:\"https://music.163.com/song/media/outer/url?id=1944601838.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§2花残り、蕾ひとつ\",read_only:0b,time:216,trans_name:\"花凋零 蕾孤绽\",url:\"https://music.163.com/song/media/outer/url?id=1944601839.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§2サニーサイド・クローバー\",read_only:0b,time:266,trans_name:\"向阳的四叶草\",url:\"https://music.163.com/song/media/outer/url?id=1944601840.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§2Transistor\",read_only:0b,time:223,url:\"https://music.163.com/song/media/outer/url?id=1944602793.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§2Route Signal\",read_only:0b,time:173,url:\"https://music.163.com/song/media/outer/url?id=1944601841.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{NetMusicSongInfo:{artists:[\"Endorfin.\"],name:\"§2アンチグレーズ\",read_only:0b,time:234,trans_name:\"Anti Glaze\",url:\"https://music.163.com/song/media/outer/url?id=1944602794.mp3\",vip:0b}}"
+              }
+            ],
+            "name": "netmusic:music_cd"
+          }
+        ]
+      }
+    ]
+  }

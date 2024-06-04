@@ -173,9 +173,7 @@ onEvent('rei.hide.items', event => {
 		'thermal:bronze_coin',
 		//发电机
 		'thermal:dynamo_stirling',
-		'thermal:dynamo_lapidary',
 		'thermal:dynamo_gourmand',
-		'thermal:dynamo_numismatic',
 		'thermal:dynamo_disenchantment',
 		//齿轮
 		'thermal:iron_gear',
@@ -344,8 +342,6 @@ onEvent('rei.remove.categories', event => {
 		'thermal:bottler',//流体罐装机
 		//能源炉
 		'thermal:stirling_fuel',//斯特林能源炉
-		'thermal:numismatic_fuel',//通货能源炉
-		'thermal:lapidary_fuel',//珠宝能源炉
 		'thermal:disenchantment_fuel',//祛魔能源炉
 		'thermal:gourmand_fuel',//饕餮能源炉
 		//导热框架
@@ -385,7 +381,6 @@ onEvent('rei.group', (event) => {
 		'umapyoi:skill_book',
 		'umapyoi:support_card',
 		'gateways:gate_pearl',
-		'apotheosis:potion_charm',
 		'quark:seed_pouch',
 	];
 

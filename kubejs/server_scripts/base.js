@@ -83,6 +83,35 @@ onEvent('recipes', event => {
 		D: 'minecraft:stick'
 	}).id("atlanabyss:vein_finder")
 
+	//矿物钻井
+	remove('createoreexcavation:drilling_machine')
+	mechanical_crafting('createoreexcavation:drilling_machine', [
+		'BEADB',
+		'BFCFB',
+		'BFFFB',
+		'B   B',
+	], {
+		A: 'create:brass_casing',
+		B: 'create:metal_girder',
+		C: 'create:shaft',
+		D: 'create:fluid_pipe',
+		E: 'create:brass_tunnel',
+		F: 'kubejs:pressure_mechanism'
+	}).id("atlanabyss:mechanical_crafting_drilling_machine")
+	//流体钻井
+	remove('createoreexcavation:extractor')
+	mechanical_crafting('createoreexcavation:extractor', [
+		'BDADB',
+		'BEDEB',
+		'BEEEB',
+		'B   B',
+	], {
+		A: 'create:copper_casing',
+		B: 'create:metal_girder',
+		D: 'create:fluid_pipe',
+		E: 'kubejs:pressure_mechanism'
+	}).id("atlanabyss:mechanical_crafting_extractor")
+
 	//有机碎片
 	mixing('kubejs:organic_scrap', [
 		'#minecraft:dirt',
@@ -1702,29 +1731,12 @@ onEvent('recipes', event => {
 	]).transitionalItem(gm).loops(6).id("atlanabyss:gravitation_mechanism")
 
 	//陨钢锭
-	event.custom({
-		type: 'thermal:smelter',
-		ingredients: [
-			Item.of('minecraft:iron_ingot', 3).toResultJson(),
-			Item.of('thermal:coal_coke', 2).toResultJson(),
-			Item.of('ae2:sky_dust', 5).toResultJson()
-		],
-		result: [
-			Item.of('kubejs:meteosteel_ingot', 2).toResultJson()
-		],
-		energy: 20000
-	}).id("atlanabyss:smelter_meteosteel_ingot")
-	event.custom({
-		type: 'thermal:smelter',
-		ingredients: [
-			Item.of('thermal:steel_ingot', 3).toResultJson(),
-			Item.of('ae2:sky_dust', 5).toResultJson()
-		],
-		result: [
-			Item.of('kubejs:meteosteel_ingot', 2).toResultJson()
-		],
-		energy: 20000
-	}).id("atlanabyss:smelter_meteosteel_ingot_by_steel")
+	smelter('2x kubejs:meteosteel_ingot', [
+		'3x thermal:steel_ingot',
+		'5x ae2:sky_dust',
+		'8x #forge:ingots/lead'
+	]).energy(20000).id("atlanabyss:smelter_meteosteel_ingot")
+
 	//陨钢粒
 	event.shaped('kubejs:meteosteel_ingot', [
 		'AAA',
@@ -1738,34 +1750,11 @@ onEvent('recipes', event => {
 	]).id("atlanabyss:meteosteel_nugget_from_ingot")
 
 	//神铋锭
-	event.custom({
-		type: 'thermal:smelter',
-		ingredients: [
-			{
-				value: [
-					{ item: 'kubejs:bismuth_ingot' }
-				],
-				count: 3
-			},
-			{
-				value: [
-					{ item: 'kubejs:aluminum_ingot' },
-					{ item: 'kubejs:aluminum_dust' }
-				],
-				count: 1
-			},
-			{
-				value: [
-					{ item: 'botania:pixie_dust' }
-				],
-				count: 5
-			}
-		],
-		result: [
-			Item.of('kubejs:magbismuth_ingot', 1).toResultJson()
-		],
-		energy: 24000
-	}).id("atlanabyss:smelter_magbismuth_ingot")
+	smelter('kubejs:magbismuth_ingot', [
+		'3x kubejs:bismuth_ingot',
+		['kubejs:aluminum_ingot', 'kubejs:aluminum_dust'],
+		'5x botania:pixie_dust'
+	]).id("atlanabyss:smelter_magbismuth_ingot")
 	//神铋板
 	pressing(
 		'kubejs:magbismuth_sheet',
@@ -2055,8 +2044,8 @@ onEvent('recipes', event => {
 	],
 		'kubejs:osmium_scrap',
 		[
-			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
 			deploying(oc, [oc, 'kubejs:calamity_ingot']),
+			deploying(oc, [oc, 'ae2:certus_quartz_dust']),
 			pressing(oc, oc),
 			pressing(oc, oc)
 		]).transitionalItem(oc).loops(1).id("atlanabyss:osmium_ingot_16")
@@ -2622,17 +2611,10 @@ onEvent('recipes', event => {
 		'ae2:silicon',
 		'3x thermal:lead_ingot'
 	]).superheated().id("atlanabyss:zirconium_alloy_ingot")
-	event.custom({
-		type: 'thermal:smelter',
-		ingredients: [
-			Item.of('thermal:lead_ingot', 3).toResultJson(),
-			Item.of('ae2:sky_dust').toResultJson()
-		],
-		result: [
-			Item.of('kubejs:zirconium_alloy_ingot', 3).toResultJson()
-		],
-		energy: 18000
-	}).id("atlanabyss:smelter_zirconium_alloy_ingot")
+	smelter('3x kubejs:zirconium_alloy_ingot', [
+		'3x #forge:ingots/lead',
+		'ae2:sky_dust'
+	]).energy(18000).id("atlanabyss:smelter_zirconium_alloy_ingot")
 
 	//充能魂钢锭
 	teslaCharging('tconstruct:soulsteel_ingot', 'kubejs:charged_soulsteel_ingot', 1600, 'charged_soulsteel_ingot')

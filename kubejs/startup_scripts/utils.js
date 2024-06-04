@@ -27,6 +27,19 @@
 
 //Platform.getInfo("kubejs").name = 'AtlanAbyss';
 
+//取消破坏速度（写在了server_script里面）
+// onForgeEvent('net.minecraftforge.event.entity.player.PlayerEvent$BreakSpeed', event => {
+// 	global.blockBreak(event);
+// })
+// /** @param {Internal.PlayerEvent$BreakSpeed} event */
+// global.blockBreak = event => {
+// 	let { player } = event;
+
+// 	if (!player.creativeMode && player.getMainHandItem().is(ItemFilter.PICKAXE)) {
+// 		event.setCanceled(true);
+// 	}
+// }
+
 onEvent('botania.brews.registry', event => {
 	event.create('alicepowah')
 		.cost(5000)
@@ -35,7 +48,9 @@ onEvent('botania.brews.registry', event => {
 })
 
 onEvent('mob_effect.registry', event => {
-	event.create('alice_powah')
+	event.create('alice_powah').beneficial().color(Color.of(65535));
+	event.create('sundering').harmful().color(Color.of(16711680));
+	event.create('time_slowing').beneficial().color(Color.of(16776960));
 })
 
 onEvent('item.modification', event => {

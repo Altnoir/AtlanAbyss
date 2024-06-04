@@ -11,7 +11,7 @@ discrete_mouse_scroll:false
 invertYMouse:false
 realmsNotifications:true
 reducedDebugInfo:false
-showSubtitles:false
+showSubtitles:true
 touchscreen:false
 fullscreen:false
 bobView:true
@@ -22,13 +22,13 @@ hideLightningFlashes:false
 mouseSensitivity:0.403755868544601
 fov:0.125
 screenEffectScale:1.0
-fovEffectScale:1.0
+fovEffectScale:0.0
 gamma:1.0
-renderDistance:12
-simulationDistance:6
+renderDistance:8
+simulationDistance:5
 entityDistanceScaling:1.0
 guiScale:3
-particles:0
+particles:1
 maxFps:260
 difficulty:2
 graphicsMode:1
@@ -36,8 +36,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/AtlanAbyss-Music Pack.zip","file/FreshAnimations_v1.8.zip"]
-incompatibleResourcePacks:["quark:emote_resources","file/FreshAnimations_v1.8.zip"]
+resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","quark:emote_resources","AtlanAbyss","file/AtlanAbyss Music Pack v0.8.zip","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
+incompatibleResourcePacks:["quark:emote_resources","file/JustExpressions_v1.1.zip","file/FreshAnimations_v1.8.zip"]
 lastServer:
 lang:zh_cn
 soundDevice:
@@ -47,7 +47,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -112,15 +112,6 @@ key_opotato.key.one_punch:key.keyboard.unknown
 key_key.zume.zoom:key.keyboard.c
 key_key.zume.zoom_in:key.keyboard.unknown
 key_key.zume.zoom_out:key.keyboard.unknown
-key_key.zoomin:key.keyboard.keypad.7
-key_key.centerzoom:key.keyboard.keypad.8
-key_key.zoomout:key.keyboard.keypad.9
-key_key.rollleft:key.keyboard.keypad.4
-key_key.rollcenter:key.keyboard.keypad.5
-key_key.rollright:key.keyboard.keypad.6
-key_key.point:key.keyboard.keypad.multiply
-key_key.startStop:key.keyboard.keypad.divide
-key_key.clearPoint:key.keyboard.delete
 key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.tac.reload:key.keyboard.t
 key_key.tac.unload:key.keyboard.t:ALT
@@ -152,6 +143,7 @@ key_key.forgeautofish.rodprotect:key.keyboard.unknown
 key_key.forgeautofish.autoreplace:key.keyboard.unknown
 key_key.forgeautofish.settings:key.keyboard.unknown
 key_key.forgeautofish.itemfilter:key.keyboard.unknown
+key_key.industrialforegoing.backpack.desc:key.keyboard.unknown
 key_key.botania_corporea_request:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.modernui.openCenter:key.keyboard.k:CONTROL
@@ -191,8 +183,8 @@ key_key.ars_nouveau.qc8:key.keyboard.unknown
 key_key.ars_nouveau.qc9:key.keyboard.unknown
 key_key.ars_nouveau.qc10:key.keyboard.unknown
 key_chunkloaders.keys.open_screen:key.keyboard.semicolon
-key_key.ftbquests.quests:key.keyboard.unknown
 key_key.observable.profile:key.keyboard.apostrophe
+key_key.ftbquests.quests:key.keyboard.unknown
 key_gui.xaero_open_map:key.keyboard.m
 key_gui.xaero_open_settings:key.keyboard.right.bracket
 key_gui.xaero_map_zoom_in:key.keyboard.unknown
@@ -206,7 +198,9 @@ key_key.waila.narrate:key.keyboard.unknown
 key_key.waila.show_details:key.keyboard.left.shift
 key_key.waila.show_recipes:key.keyboard.keypad.3
 key_key.waila.show_uses:key.keyboard.unknown
+key_quark.keybind.camera_mode:key.keyboard.f12
 key_key.beyond_earth.rocket_start:key.keyboard.space
+key_key.presencefootsteps.settings:key.keyboard.f10
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
 key_gui.xaero_instant_waypoint:key.keyboard.unknown
 key_gui.xaero_toggle_slime:key.keyboard.unknown
@@ -228,10 +222,9 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.unknown
-key_key.presencefootsteps.settings:key.keyboard.f10
-key_quark.keybind.transfer_insert:key.keyboard.unknown
-key_quark.keybind.transfer_extract:key.keyboard.unknown
-key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.keybind.sort_player:key.keyboard.unknown
+key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.lock_rotation:key.keyboard.l
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -250,12 +243,11 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_quark.keybind.back:key.mouse.4
-key_quark.keybind.lock_rotation:key.keyboard.l
 key_quark.keybind.change_hotbar:key.keyboard.unknown
-key_quark.keybind.camera_mode:key.keyboard.f12
-key_quark.keybind.sort_player:key.keyboard.unknown
-key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.back:key.mouse.4
+key_quark.keybind.transfer_insert:key.keyboard.unknown
+key_quark.keybind.transfer_extract:key.keyboard.unknown
+key_quark.keybind.shift_lock:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.entity_tracker:key.keyboard.unknown
@@ -286,11 +278,11 @@ key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.l
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.sort:key.mouse.middle
-key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.up:key.keyboard.space
 key_key.down:key.keyboard.left.control
 key_key.summon:key.keyboard.unknown

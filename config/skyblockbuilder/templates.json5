@@ -11,12 +11,12 @@
   "spawn": null,
   
   "spawns": {
-    "seablock": [
-      [ 5, 12, 5 ]
-    ],
     "bigseablock": [
       [ 7, 14, 7 ]
-    ]
+    ],
+    // "seablock": [
+    //   [ 5, 12, 5 ]
+    // ]
   },
   
   // The list of templates being available. The first entry is the default template.
@@ -28,12 +28,12 @@
       "spawns": "bigseablock",
       "direction": "south"
     },
-    {
-      "name": "Landing Cabin",
-      "desc": "",
-      "file": "landing_cabin.nbt",
-      "spawns": "seablock",
-      "direction": "south"
-    }
+    // {
+    //   "name": "Landing Cabin",
+    //   "desc": "",
+    //   "file": "landing_cabin.nbt",
+    //   "spawns": "seablock",
+    //   "direction": "south"
+    // }
   ]
 }

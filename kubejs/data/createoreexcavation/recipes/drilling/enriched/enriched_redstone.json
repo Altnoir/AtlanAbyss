@@ -5,23 +5,25 @@
   },
   "name": "{\"translate\":\"ore.kubejs.enriched_redstone\"}",
   "weight": 5,
-  "ticks": 30,
+  "ticks": 1,
   "biomeWhitelist": "forge:is_overworld",
-  "stress": 128,
+  "stress": 16,
   "amountMin": 20.0,
   "amountMax": 60.0,
   "output": [
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:redstone",
+      "count": 10
     },
     {
       "item": "minecraft:redstone",
+      "count": 10,
       "chance": 0.5
     }
   ],
   "fluid": {
     "fluid": "minecraft:water",
     "nbt": {},
-    "amount": 500
+    "amount": 50
   }
 }

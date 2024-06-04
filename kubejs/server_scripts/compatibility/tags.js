@@ -229,11 +229,49 @@ onEvent('tags.items', event => {
 		['forge:storage_blocks/raw_osmium', 'kubejs:raw_osmium_block'],
 		//银
 		['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
-		['forge:ores/silver', 'kubejs:mercury_silver_ore'],
+		['forge:ores/silver', 'kubejs:mercury_silver_ore']
 	];
 	for (const [tag, item] of tagToAdd) {
 		event.add(tag, item);
 	}
+	//无尽锭
+	event.add('forge:ingots/infinity', 'kubejs:infinity_ingot')
+	//火成
+	event.add('atlanabyss:substrate_igneous', [
+		'kubejs:substrate_andesite', 'kubejs:substrate_diorite',
+		'kubejs:substrate_granite', 'kubejs:substrate_cobblestone',
+		'kubejs:substrate_basalt', 'kubejs:substrate_limestone'
+	]);
+	//不稳定
+	event.add('atlanabyss:substrate_volatile', [
+		'kubejs:substrate_blaze', 'kubejs:substrate_slime',
+		'kubejs:substrate_nether', 'kubejs:substrate_obsidian',
+		'kubejs:substrate_gunpowder', 'kubejs:substrate_prismarine'
+	]);
+	//金属
+	event.add('atlanabyss:substrate_metal', [
+		'kubejs:substrate_zinc', 'kubejs:substrate_copper',
+		'kubejs:substrate_iron', 'kubejs:substrate_tin',
+		'kubejs:substrate_gold', 'kubejs:substrate_nickel'
+	]);
+	//草药
+	event.add('atlanabyss:substrate_herbal', [
+		'kubejs:substrate_red', 'kubejs:substrate_orange',
+		'kubejs:substrate_yellow', 'kubejs:substrate_green',
+		'kubejs:substrate_blue', 'kubejs:substrate_magenta'
+	]);
+	//晶化
+	event.add('atlanabyss:substrate_crystal', [
+		'kubejs:substrate_amethyst', 'kubejs:substrate_apatite',
+		'kubejs:substrate_niter', 'kubejs:substrate_quartz',
+		'kubejs:substrate_sulfur', 'kubejs:substrate_certus'
+	]);
+	//辉光
+	event.add('atlanabyss:substrate_gem', [
+		'kubejs:substrate_cinnabar', 'kubejs:substrate_lapis',
+		'kubejs:substrate_emerald', 'kubejs:substrate_diamond',
+		'kubejs:substrate_ruby', 'kubejs:substrate_sapphire'
+	]);
 
 	//唱片
 	event.add('minecraft:creeper_drop_music_discs', [
