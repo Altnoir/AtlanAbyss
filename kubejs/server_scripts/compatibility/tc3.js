@@ -109,6 +109,21 @@ onEvent('recipes', event => {
     cooling_time: 61
   }).id('atlanabyss:tc_casting_uranium_ingot_sand_cast');
 
+  //下界岩
+  event.custom({
+    type: 'tconstruct:casting_basin',
+    cast: {
+      item: 'minecraft:cobblestone'
+    },
+    cast_consumed: true,
+    fluid: {
+      tag: "tconstruct:blood",
+      amount: 1250
+    },
+    result: 'minecraft:netherrack',
+    cooling_time: 1000
+  }).id("atlanabyss:casting_basin_netherrack")
+
   //魂钢
   event.custom({
     type: 'tconstruct:alloy',
