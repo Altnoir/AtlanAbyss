@@ -178,18 +178,18 @@ onEvent('tags.items', event => {
 		//替身是个好东西之电路板
 		['forge:circuits', 'pneumaticcraft:printed_circuit_board'],
 		['forge:circuits/basic', 'pneumaticcraft:printed_circuit_board'],
-		//九头蛇肉
-		['kubejs:hydra_meat', 'kubejs:hydra_piece'],
-		['kubejs:hydra_meat', 'twilightforest:hydra_chop'],
-		//鹿肉
-		['kubejs:vension_raw', 'twilightforest:raw_venison'],
-		['kubejs:vension_raw', 'kubejs:raw_venison_rib'],
-		//牛头人肉
-		['kubejs:meef_raw', 'twilightforest:raw_meef'],
-		['kubejs:meef_raw', 'kubejs:raw_meef_slice'],
-		//熟牛头人肉
-		['kubejs:meef_cooked', 'twilightforest:cooked_meef'],
-		['kubejs:meef_cooked', 'kubejs:cooked_meef_slice'],
+		// //九头蛇肉
+		// ['kubejs:hydra_meat', 'kubejs:hydra_piece'],
+		// ['kubejs:hydra_meat', 'twilightforest:hydra_chop'],
+		// //鹿肉
+		// ['kubejs:vension_raw', 'twilightforest:raw_venison'],
+		// ['kubejs:vension_raw', 'kubejs:raw_venison_rib'],
+		// //牛头人肉
+		// ['kubejs:meef_raw', 'twilightforest:raw_meef'],
+		// ['kubejs:meef_raw', 'kubejs:raw_meef_slice'],
+		// //熟牛头人肉
+		// ['kubejs:meef_cooked', 'twilightforest:cooked_meef'],
+		// ['kubejs:meef_cooked', 'kubejs:cooked_meef_slice'],
 		//铝
 		['forge:ores', 'kubejs:nether_aluminum_ore'],//矿石
 		['forge:ores/aluminum', 'kubejs:nether_aluminum_ore'],
@@ -308,17 +308,17 @@ onEvent('tags.items', event => {
 		event.add('drinkit:drinkable', name)
 		event.add('drinkit:thick', name)
 	}
-	drinkable('kubejs:thorn_rose_tea')
-	drinkable('kubejs:torchberry_juice')
-	drinkable('kubejs:phytochemical_juice')
-	drinkable('kubejs:glacier_ice_tea')
-	drinkable('kubejs:twilight_spring')
-	drinkable('kubejs:tear_drink')
+	// drinkable('kubejs:thorn_rose_tea')
+	// drinkable('kubejs:torchberry_juice')
+	// drinkable('kubejs:phytochemical_juice')
+	// drinkable('kubejs:glacier_ice_tea')
+	// drinkable('kubejs:twilight_spring')
+	// drinkable('kubejs:tear_drink')
 	thick('biggerreactors:cyanite_ingot')
-	thick('kubejs:glowstew')
-	thick('kubejs:mushgloom_sauce')
-	thick('kubejs:borer_tear_soup')
-	thick('kubejs:thousand_plant_stew')
+	// thick('kubejs:glowstew')
+	// thick('kubejs:mushgloom_sauce')
+	// thick('kubejs:borer_tear_soup')
+	// thick('kubejs:thousand_plant_stew')
 
 	//交易卡tag（必须）
 	global.trades.forEach(element => {
@@ -343,7 +343,6 @@ onEvent('tags.blocks', event => {
 		event.remove('minecraft:beacon_base_blocks', name)
 	}
 	removeBeaconBase('thermal:rose_gold_block')
-	removeBeaconBase('twilightforest:arctic_fur_block')
 	removeBeaconBase('beyond_earth:steel_block')
 
 	//机械动力扳手标签

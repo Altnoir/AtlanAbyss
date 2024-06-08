@@ -5,18 +5,7 @@ onEvent('recipes', event => {
         event.remove({ id: name })
     }
 
-    //萝卜水晶
-    remove('umapyoi:jewel')
-    event.custom({
-        type: 'ars_nouveau:imbuement',
-        input: {
-            item: 'minecraft:carrot'
-        },
-        output: 'umapyoi:jewel',
-        count: 1,
-        source: 500,
-        pedestalItems: []
-    }).id('atlanabyss:uma_jewel')
+ 
 
     //人工煤炭
     event.custom({
@@ -56,15 +45,15 @@ onEvent('recipes', event => {
     }).id('atlanabyss:imbuement_leather')
 
     //活根
-    event.shaped('twilightforest:liveroot_block', [
-        'AA',
-        'AA'
-    ], {
-        A: 'twilightforest:liveroot'
-    }).id('atlanabyss:liveroot_block_from_liveroot')
-    event.shapeless('4x twilightforest:liveroot', [
-        'twilightforest:liveroot_block'
-    ]).id('atlanabyss:liveroot_from_liveroot_block')
+    // event.shaped('twilightforest:liveroot_block', [
+    //     'AA',
+    //     'AA'
+    // ], {
+    //     A: 'twilightforest:liveroot'
+    // }).id('atlanabyss:liveroot_block_from_liveroot')
+    // event.shapeless('4x twilightforest:liveroot', [
+    //     'twilightforest:liveroot_block'
+    // ]).id('atlanabyss:liveroot_from_liveroot_block')
 
     //传送门珍珠
     function gateRecipe(a, b, id) {

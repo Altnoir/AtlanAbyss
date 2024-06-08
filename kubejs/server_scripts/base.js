@@ -60,8 +60,6 @@ onEvent('recipes', event => {
 	//重复配方
 	remove('neapolitan:cake')
 	remove('minecraft:cake')
-	//扬了拆解台
-	remove('twilightforest:uncrafting_table')
 	//矿石开凿
 	remove('createoreexcavation:cutting/diamond_cutting')
 	remove('createoreexcavation:cutting/emerald_cutting')
@@ -1118,6 +1116,8 @@ onEvent('recipes', event => {
 		Item.of('alexsmobs:mosquito_proboscis').withChance(.25),
 		Item.of('alexsmobs:blood_sac').withChance(.05)
 	], 'minecraft:rotten_flesh').id("atlanabyss:splashing_rotten_flesh")
+
+
 	//暮色乐事
 	function fdCutting(item, tool, result, id) {
 		let resultList = [];
@@ -1141,78 +1141,78 @@ onEvent('recipes', event => {
 			tool: { tag: tool }
 		}).id('atlanabyss:farmerscutting_' + id)
 	}
-	fdCutting('twilightforest:alpha_yeti_trophy', 'forge:tools/knives', [
-		['twilightforest:alpha_yeti_fur', 9],
-		['twilightforest:ice_bomb', 4, 0.5]
-	], 'alpha_yeti_trophy')
+	// fdCutting('twilightforest:alpha_yeti_trophy', 'forge:tools/knives', [
+	// 	['twilightforest:alpha_yeti_fur', 9],
+	// 	['twilightforest:ice_bomb', 4, 0.5]
+	// ], 'alpha_yeti_trophy')
 
-	fdCutting('twilightforest:lich_trophy', 'forge:tools/knives', [
-		['minecraft:skeleton_skull', 1],
-		['twilightforest:zombie_scepter', 0.2],
-		['twilightforest:lifedrain_scepter', 0.2],
-		['twilightforest:twilight_scepter', 0.2]
-	], 'lich_trophy')
+	// fdCutting('twilightforest:lich_trophy', 'forge:tools/knives', [
+	// 	['minecraft:skeleton_skull', 1],
+	// 	['twilightforest:zombie_scepter', 0.2],
+	// 	['twilightforest:lifedrain_scepter', 0.2],
+	// 	['twilightforest:twilight_scepter', 0.2]
+	// ], 'lich_trophy')
 
-	fdCutting('twilightforest:minoshroom_trophy', 'forge:tools/knives', [
-		['twilightforest:raw_meef', 9],
-		['minecraft:red_mushroom', 8, 0.5]
-	], 'minoshroom_trophy')
+	// fdCutting('twilightforest:minoshroom_trophy', 'forge:tools/knives', [
+	// 	['twilightforest:raw_meef', 9],
+	// 	['minecraft:red_mushroom', 8, 0.5]
+	// ], 'minoshroom_trophy')
 
-	fdCutting('twilightforest:snow_queen_trophy', 'forge:tools/knives', [
-		['twilightforest:ice_bomb', 9],
-		['twilightforest:ice_sword', 0.2],
-		['twilightforest:glass_sword', 0.1],
-		['twilightforest:ice_bow', 0.2]
-	], 'snow_queen_trophy')
+	// fdCutting('twilightforest:snow_queen_trophy', 'forge:tools/knives', [
+	// 	['twilightforest:ice_bomb', 9],
+	// 	['twilightforest:ice_sword', 0.2],
+	// 	['twilightforest:glass_sword', 0.1],
+	// 	['twilightforest:ice_bow', 0.2]
+	// ], 'snow_queen_trophy')
 
-	fdCutting('twilightforest:ur_ghast_trophy', 'forge:tools/knives', [
-		['kubejs:experiment_113', 9],
-		['twilightforest:experiment_115', 4],
-		['kubejs:experiment_110', 0.1]
-	], 'ur_ghast_trophy')
+	// fdCutting('twilightforest:ur_ghast_trophy', 'forge:tools/knives', [
+	// 	['kubejs:experiment_113', 9],
+	// 	['twilightforest:experiment_115', 4],
+	// 	['kubejs:experiment_110', 0.1]
+	// ], 'ur_ghast_trophy')
 
-	fdCutting('twilightforest:phantom_chestplate', 'forge:tools/pickaxes', [
-		['twilightforest:armor_shard_cluster', 5]
-	], 'phantom_chestplate')
-	fdCutting('twilightforest:phantom_helmet', 'forge:tools/pickaxes', [
-		['twilightforest:armor_shard_cluster', 3]
-	], 'phantom_helmet')
-	fdCutting('twilightforest:cooked_meef', 'forge:tools/knives', [
-		['kubejs:cooked_meef_slice', 2]
-	], 'cooked_meef_slice')
-	fdCutting('twilightforest:cooked_venison', 'forge:tools/knives', [
-		['kubejs:cooked_venison_rib', 2]
-	], 'cooked_venison_rib')
-	fdCutting('twilightforest:hydra_chop', 'forge:tools/knives', [
-		['kubejs:hydra_piece', 2]
-	], 'hydra_piece')
-	fdCutting('twilightforest:hydra_trophy', 'forge:tools/knives', [
-		['twilightforest:hydra_chop', 4]
-	], 'hydra_trophy')
-	fdCutting('twilightforest:knight_phantom_trophy', 'forge:tools/knives', [
-		['twilightforest:phantom_helmet', 1]
-	], 'knight_phantom_trophy')
-	fdCutting('twilightforest:naga_trophy', 'forge:tools/knives', [
-		['twilightforest:naga_scale', 9]
-	], 'naga_trophy')
-	fdCutting('twilightforest:quest_ram_trophy', 'forge:tools/knives', [
-		['minecraft:mutton', 9]
-	], 'quest_ram_trophy')
-	fdCutting('twilightforest:firefly', 'forge:tools/knives', [
-		['kubejs:raw_insect', 2]
-	], 'raw_insect_from_firefly')
-	fdCutting('twilightforest:cicada', 'forge:tools/knives', [
-		['kubejs:raw_insect', 2]
-	], 'raw_insect_from_cicada')
-	fdCutting('twilightforest:moonworm', 'forge:tools/knives', [
-		['kubejs:raw_insect', 2]
-	], 'raw_insect_from_moonworm')
-	fdCutting('twilightforest:raw_meef', 'forge:tools/knives', [
-		['kubejs:raw_meef_slice', 2]
-	], 'raw_meef_slice')
-	fdCutting('twilightforest:raw_venison', 'forge:tools/knives', [
-		['kubejs:raw_venison_rib', 2]
-	], 'raw_venison_rib')
+	// fdCutting('twilightforest:phantom_chestplate', 'forge:tools/pickaxes', [
+	// 	['twilightforest:armor_shard_cluster', 5]
+	// ], 'phantom_chestplate')
+	// fdCutting('twilightforest:phantom_helmet', 'forge:tools/pickaxes', [
+	// 	['twilightforest:armor_shard_cluster', 3]
+	// ], 'phantom_helmet')
+	// fdCutting('twilightforest:cooked_meef', 'forge:tools/knives', [
+	// 	['kubejs:cooked_meef_slice', 2]
+	// ], 'cooked_meef_slice')
+	// fdCutting('twilightforest:cooked_venison', 'forge:tools/knives', [
+	// 	['kubejs:cooked_venison_rib', 2]
+	// ], 'cooked_venison_rib')
+	// fdCutting('twilightforest:hydra_chop', 'forge:tools/knives', [
+	// 	['kubejs:hydra_piece', 2]
+	// ], 'hydra_piece')
+	// fdCutting('twilightforest:hydra_trophy', 'forge:tools/knives', [
+	// 	['twilightforest:hydra_chop', 4]
+	// ], 'hydra_trophy')
+	// fdCutting('twilightforest:knight_phantom_trophy', 'forge:tools/knives', [
+	// 	['twilightforest:phantom_helmet', 1]
+	// ], 'knight_phantom_trophy')
+	// fdCutting('twilightforest:naga_trophy', 'forge:tools/knives', [
+	// 	['twilightforest:naga_scale', 9]
+	// ], 'naga_trophy')
+	// fdCutting('twilightforest:quest_ram_trophy', 'forge:tools/knives', [
+	// 	['minecraft:mutton', 9]
+	// ], 'quest_ram_trophy')
+	// fdCutting('twilightforest:firefly', 'forge:tools/knives', [
+	// 	['kubejs:raw_insect', 2]
+	// ], 'raw_insect_from_firefly')
+	// fdCutting('twilightforest:cicada', 'forge:tools/knives', [
+	// 	['kubejs:raw_insect', 2]
+	// ], 'raw_insect_from_cicada')
+	// fdCutting('twilightforest:moonworm', 'forge:tools/knives', [
+	// 	['kubejs:raw_insect', 2]
+	// ], 'raw_insect_from_moonworm')
+	// fdCutting('twilightforest:raw_meef', 'forge:tools/knives', [
+	// 	['kubejs:raw_meef_slice', 2]
+	// ], 'raw_meef_slice')
+	// fdCutting('twilightforest:raw_venison', 'forge:tools/knives', [
+	// 	['kubejs:raw_venison_rib', 2]
+	// ], 'raw_venison_rib')
 
 	function cooking(container, time, xp, item, count, result, id) {
 		let ingredientsList = [];
@@ -1238,205 +1238,207 @@ onEvent('recipes', event => {
 			cookingtime: time
 		}).id('atlanabyss:' + id)
 	}
-	cooking('minecraft:bowl', 800, 0.5, [
-		'#kubejs:hydra_meat',
-		'twilightforest:fiery_blood',
-		'twilightforest:naga_scale',
-		'farmersdelight:tomato_sauce',
-		'twilightforest:torchberries'
-	], 1, 'kubejs:fiery_snakes', 'fiery_snakes')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'kubejs:raw_insect',
-		'farmersdelight:onion',
-		'minecraft:carrot'
-	], 1, 'kubejs:fried_insect', 'fried_insect')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'kubejs:glowstew',
-		'#kubejs:vension_raw',
-		'farmersdelight:raw_pasta',
-		'twilightforest:liveroot',
-		'minecraft:beetroot'
-	], 1, 'kubejs:glow_venison_rib_with_pasta', 'glow_venison_rib_with_pasta')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'minecraft:glowstone_dust',
-		'twilightforest:mushgloom',
-		'twilightforest:torchberries'
-	], 1, 'kubejs:glowstew', 'glowstew')
-	cooking('minecraft:bowl', 800, 0.35, [
-		'farmersdelight:tomato',
-		'minecraft:beetroot',
-		'twilightforest:fiery_tears',
-		'twilightforest:experiment_115',
-		'twilightforest:experiment_115'
-	], 1, 'kubejs:grilled_ghast', 'grilled_ghast')
-	cooking('minecraft:bowl', 400, 0.35, [
-		'twilightforest:huge_lily_pad',
-		'minecraft:chicken',
-		'twilightforest:huge_water_lily',
-		'farmersdelight:onion',
-		'#forge:eggs',
-		'minecraft:bread'
-	], 4, 'kubejs:lily_chicken', 'lily_chicken')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'minecraft:mushroom_stew',
-		'kubejs:raw_meef_slice',
-		'twilightforest:liveroot',
-		'twilightforest:torchberries',
-		'farmersdelight:onion'
-	], 1, 'twilightforest:meef_stroganoff', 'meef_stroganoff')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'kubejs:mushgloom_sauce',
-		'#kubejs:meef_raw',
-		'farmersdelight:raw_pasta'
-	], 1, 'kubejs:mushgloom_meef_pasta', 'mushgloom_meef_pasta')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'minecraft:brown_mushroom',
-		'twilightforest:mushgloom',
-		'farmersdelight:onion'
-	], 1, 'kubejs:mushgloom_sauce', 'mushgloom_sauce')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'twilightforest:liveroot',
-		'twilightforest:steeleaf_ingot',
-		'minecraft:sugar'
-	], 1, 'kubejs:phytochemical_juice', 'phytochemical_juice')
-	cooking('minecraft:bowl', 800, 0.35, [
-		'twilightforest:fiery_tears',
-		'minecraft:ghast_tear'
-	], 1, 'kubejs:tear_drink', 'tear_drink')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'twilightforest:thorn_rose',
-		'minecraft:sugar'
-	], 1, 'kubejs:thorn_rose_tea', 'thorn_rose_tea')
-	cooking('minecraft:bowl', 400, 0.35, [
-		'twilightforest:root_strand',
-		'twilightforest:fallen_leaves',
-		'twilightforest:liveroot',
-		'twilightforest:torchberry_plant',
-		'minecraft:vine',
-		'twilightforest:fiddlehead'
-	], 1, 'kubejs:thousand_plant_stew', 'thousand_plant_stew')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'twilightforest:torchberries',
-		'minecraft:sugar'
-	], 1, 'kubejs:torchberry_juice', 'torchberry_juice')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'twilightforest:ice_bomb',
-		'minecraft:ice',
-		'twilightforest:arctic_fur',
-		'minecraft:sugar'
-	], 1, 'kubejs:glacier_ice_tea', 'glacier_ice_tea')
-	cooking('minecraft:bowl', 200, 0.35, [
-		'minecraft:ice',
-		'twilightforest:raw_ironwood'
-	], 1, 'kubejs:twilight_spring', 'twilight_spring')
+	// cooking('minecraft:bowl', 800, 0.5, [
+	// 	'#kubejs:hydra_meat',
+	// 	'twilightforest:fiery_blood',
+	// 	'twilightforest:naga_scale',
+	// 	'farmersdelight:tomato_sauce',
+	// 	'twilightforest:torchberries'
+	// ], 1, 'kubejs:fiery_snakes', 'fiery_snakes')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'kubejs:raw_insect',
+	// 	'farmersdelight:onion',
+	// 	'minecraft:carrot'
+	// ], 1, 'kubejs:fried_insect', 'fried_insect')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'kubejs:glowstew',
+	// 	'#kubejs:vension_raw',
+	// 	'farmersdelight:raw_pasta',
+	// 	'twilightforest:liveroot',
+	// 	'minecraft:beetroot'
+	// ], 1, 'kubejs:glow_venison_rib_with_pasta', 'glow_venison_rib_with_pasta')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'minecraft:glowstone_dust',
+	// 	'twilightforest:mushgloom',
+	// 	'twilightforest:torchberries'
+	// ], 1, 'kubejs:glowstew', 'glowstew')
+	// cooking('minecraft:bowl', 800, 0.35, [
+	// 	'farmersdelight:tomato',
+	// 	'minecraft:beetroot',
+	// 	'twilightforest:fiery_tears',
+	// 	'twilightforest:experiment_115',
+	// 	'twilightforest:experiment_115'
+	// ], 1, 'kubejs:grilled_ghast', 'grilled_ghast')
+	// cooking('minecraft:bowl', 400, 0.35, [
+	// 	'twilightforest:huge_lily_pad',
+	// 	'minecraft:chicken',
+	// 	'twilightforest:huge_water_lily',
+	// 	'farmersdelight:onion',
+	// 	'#forge:eggs',
+	// 	'minecraft:bread'
+	// ], 4, 'kubejs:lily_chicken', 'lily_chicken')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'minecraft:mushroom_stew',
+	// 	'kubejs:raw_meef_slice',
+	// 	'twilightforest:liveroot',
+	// 	'twilightforest:torchberries',
+	// 	'farmersdelight:onion'
+	// ], 1, 'twilightforest:meef_stroganoff', 'meef_stroganoff')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'kubejs:mushgloom_sauce',
+	// 	'#kubejs:meef_raw',
+	// 	'farmersdelight:raw_pasta'
+	// ], 1, 'kubejs:mushgloom_meef_pasta', 'mushgloom_meef_pasta')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'minecraft:brown_mushroom',
+	// 	'twilightforest:mushgloom',
+	// 	'farmersdelight:onion'
+	// ], 1, 'kubejs:mushgloom_sauce', 'mushgloom_sauce')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'twilightforest:liveroot',
+	// 	'twilightforest:steeleaf_ingot',
+	// 	'minecraft:sugar'
+	// ], 1, 'kubejs:phytochemical_juice', 'phytochemical_juice')
+	// cooking('minecraft:bowl', 800, 0.35, [
+	// 	'twilightforest:fiery_tears',
+	// 	'minecraft:ghast_tear'
+	// ], 1, 'kubejs:tear_drink', 'tear_drink')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'twilightforest:thorn_rose',
+	// 	'minecraft:sugar'
+	// ], 1, 'kubejs:thorn_rose_tea', 'thorn_rose_tea')
+	// cooking('minecraft:bowl', 400, 0.35, [
+	// 	'twilightforest:root_strand',
+	// 	'twilightforest:fallen_leaves',
+	// 	'twilightforest:liveroot',
+	// 	'twilightforest:torchberry_plant',
+	// 	'minecraft:vine',
+	// 	'twilightforest:fiddlehead'
+	// ], 1, 'kubejs:thousand_plant_stew', 'thousand_plant_stew')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'twilightforest:torchberries',
+	// 	'minecraft:sugar'
+	// ], 1, 'kubejs:torchberry_juice', 'torchberry_juice')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'twilightforest:ice_bomb',
+	// 	'minecraft:ice',
+	// 	'twilightforest:arctic_fur',
+	// 	'minecraft:sugar'
+	// ], 1, 'kubejs:glacier_ice_tea', 'glacier_ice_tea')
+	// cooking('minecraft:bowl', 200, 0.35, [
+	// 	'minecraft:ice',
+	// 	'twilightforest:raw_ironwood'
+	// ], 1, 'kubejs:twilight_spring', 'twilight_spring')
 
 	function ccss(item, result, xp, id) {
 		event.campfireCooking(result, item).xp(xp).id("atlanabyss:campfire_" + id)
 		event.smelting(result, item).xp(xp).id("atlanabyss:smelting_" + id)
 		event.smoking(result, item).xp(xp).id("atlanabyss:smoking_" + id)
 	}
-	ccss('kubejs:raw_insect', 'kubejs:cooked_insect', 1, 'raw_insect')
-	ccss('kubejs:raw_meef_slice', 'kubejs:cooked_meef_slice', 1, 'raw_meef_slice')
-	ccss('kubejs:raw_venison_rib', 'kubejs:cooked_venison_rib', 1, 'raw_venison_rib')
-	//火炬浆果曲奇
-	event.shaped('8x kubejs:torchberry_cookie', [
-		'BAB'
-	], {
-		A: 'twilightforest:torchberries',
-		B: 'minecraft:wheat'
-	}).id("atlanabyss:torchberry_cookie")
-	//巧克力夹心薄饼
-	event.shaped('kubejs:chocolate_wafer', [
-		'A',
-		'B',
-		'A'
-	], {
-		A: 'twilightforest:maze_wafer',
-		B: 'minecraft:cocoa_beans'
-	}).id("atlanabyss:chocolate_wafer")
-	//米诺陶卷
-	event.shapeless('kubejs:meef_wrap', [
-		'#forge:bread', '#kubejs:meef_cooked', '#forge:salad_ingredients', '#forge:crops/onion'
-	]).id("atlanabyss:meef_wrap")
-	//蘸荧光煲的113
-	event.shapeless('kubejs:glow_113', [
-		'kubejs:experiment_113', 'kubejs:glowstew'
-	]).id("atlanabyss:glow_113")
-	//蘸蜂蜜的113
-	event.shapeless('kubejs:honey_113', [
-		'kubejs:experiment_113', 'minecraft:honey_bottle'
-	]).id("atlanabyss:honey_113")
-	filling('kubejs:honey_113', [
-		'kubejs:experiment_113', Fluid.of('create:honey', 250)
-	]).id("atlanabyss:filling_honey_113")
-	//蘸巧克力的113
-	event.shapeless('kubejs:chocolate_113', [
-		'kubejs:experiment_113', '#forge:milk', 'minecraft:sugar', 'minecraft:cocoa_beans'
-	]).id("atlanabyss:chocolate_113")
-	filling('kubejs:chocolate_113',
-		['kubejs:experiment_113', Fluid.of('create:chocolate', 250)
-		]).id("atlanabyss:filling_chocolate_113")
-	//蘸巧克力的113
-	event.shapeless('kubejs:milky_113', [
-		'kubejs:experiment_113', '#forge:milk', 'minecraft:sugar'
-	]).id("atlanabyss:milky_113")
-	filling('kubejs:milky_113',
-		['kubejs:experiment_113', Fluid.of('minecraft:milk', 250)
-		]).id("atlanabyss:filling_milky_113")
-	//九头蛇汉堡
-	event.shapeless('kubejs:hydra_burger', [
-		'#forge:bread', '#kubejs:hydra_meat', '#forge:salad_ingredients', '#forge:crops/tomato', '#forge:crops/onion'
-	]).id("atlanabyss:hydra_burger")
-	//恶魂汉堡
-	event.shapeless('kubejs:ghast_burger', [
-		'#forge:bread', 'twilightforest:experiment_115', '#forge:vegetables/beetroot', '#forge:crops/tomato', '#forge:crops/onion'
-	]).id("atlanabyss:ghast_burger")
-	//浆果串
-	event.shapeless('kubejs:berry_stick', [
-		'minecraft:sweet_berries', 'minecraft:glow_berries', 'twilightforest:torchberries', 'minecraft:stick'
-	]).id("atlanabyss:berry_stick")
-	//恶魂脑沙拉
-	event.shapeless('kubejs:ghast_brain_salad', [
-		'minecraft:bowl', '#forge:salad_ingredients', '#forge:crops/onion', '#forge:crops/tomato', 'kubejs:experiment_110', 'twilightforest:borer_essence', 'twilightforest:transformation_powder'
-	]).id("atlanabyss:ghast_brain_salad")
-	//蛀虫精华甜菜汤
-	event.shapeless('kubejs:borer_tear_soup', [
-		'minecraft:bowl', 'minecraft:beetroot', 'minecraft:beetroot', 'minecraft:beetroot', 'minecraft:beetroot', 'twilightforest:borer_essence'
-	]).id("atlanabyss:borer_tear_soup")
-	//冰川冰淇淋
-	event.shapeless('kubejs:glacier_ice_cream', [
-		'minecraft:bowl', 'twilightforest:ice_bomb', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
-	]).id("atlanabyss:glacier_ice_cream")
-	//植物素冰淇淋
-	event.shapeless('kubejs:phytochemical_ice_cream', [
-		'minecraft:bowl', 'twilightforest:steeleaf_ingot', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
-	]).id("atlanabyss:phytochemical_ice_cream")
-	//火炬浆果冰淇淋
-	event.shapeless('kubejs:torchberry_ice_cream', [
-		'minecraft:bowl', 'twilightforest:torchberries', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
-	]).id("atlanabyss:torchberry_ice_cream")
-	//极光冰淇淋
-	event.shapeless('kubejs:aurora_ice_cream', [
-		'minecraft:bowl', 'twilightforest:aurora_block', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
-	]).id("atlanabyss:aurora_ice_cream")
-	//暮色冰淇淋
-	event.shapeless('3x kubejs:twilight_ice_cream', [
-		'kubejs:torchberry_ice_cream', 'neapolitan:chocolate_ice_cream', 'neapolitan:strawberry_ice_cream'
-	]).id("atlanabyss:twilight_ice_cream")
-	//彩虹冰淇淋
-	event.shapeless('3x kubejs:rainbow_ice_cream', [
-		'kubejs:aurora_ice_cream', 'neapolitan:banana_ice_cream', 'neapolitan:adzuki_ice_cream'
-	]).id("atlanabyss:rainbow_ice_cream")
-	//清爽冰淇淋
-	event.shapeless('3x kubejs:refreshing_ice_cream', [
-		'kubejs:glacier_ice_cream', 'neapolitan:mint_ice_cream', 'kubejs:phytochemical_ice_cream'
-	]).id("atlanabyss:refreshing_ice_cream")
+	// ccss('kubejs:raw_insect', 'kubejs:cooked_insect', 1, 'raw_insect')
+	// ccss('kubejs:raw_meef_slice', 'kubejs:cooked_meef_slice', 1, 'raw_meef_slice')
+	// ccss('kubejs:raw_venison_rib', 'kubejs:cooked_venison_rib', 1, 'raw_venison_rib')
+	
+	
+	// //火炬浆果曲奇
+	// event.shaped('8x kubejs:torchberry_cookie', [
+	// 	'BAB'
+	// ], {
+	// 	A: 'twilightforest:torchberries',
+	// 	B: 'minecraft:wheat'
+	// }).id("atlanabyss:torchberry_cookie")
+	// //巧克力夹心薄饼
+	// event.shaped('kubejs:chocolate_wafer', [
+	// 	'A',
+	// 	'B',
+	// 	'A'
+	// ], {
+	// 	A: 'twilightforest:maze_wafer',
+	// 	B: 'minecraft:cocoa_beans'
+	// }).id("atlanabyss:chocolate_wafer")
+	// //米诺陶卷
+	// event.shapeless('kubejs:meef_wrap', [
+	// 	'#forge:bread', '#kubejs:meef_cooked', '#forge:salad_ingredients', '#forge:crops/onion'
+	// ]).id("atlanabyss:meef_wrap")
+	// //蘸荧光煲的113
+	// event.shapeless('kubejs:glow_113', [
+	// 	'kubejs:experiment_113', 'kubejs:glowstew'
+	// ]).id("atlanabyss:glow_113")
+	// //蘸蜂蜜的113
+	// event.shapeless('kubejs:honey_113', [
+	// 	'kubejs:experiment_113', 'minecraft:honey_bottle'
+	// ]).id("atlanabyss:honey_113")
+	// filling('kubejs:honey_113', [
+	// 	'kubejs:experiment_113', Fluid.of('create:honey', 250)
+	// ]).id("atlanabyss:filling_honey_113")
+	// //蘸巧克力的113
+	// event.shapeless('kubejs:chocolate_113', [
+	// 	'kubejs:experiment_113', '#forge:milk', 'minecraft:sugar', 'minecraft:cocoa_beans'
+	// ]).id("atlanabyss:chocolate_113")
+	// filling('kubejs:chocolate_113',
+	// 	['kubejs:experiment_113', Fluid.of('create:chocolate', 250)
+	// 	]).id("atlanabyss:filling_chocolate_113")
+	// //蘸巧克力的113
+	// event.shapeless('kubejs:milky_113', [
+	// 	'kubejs:experiment_113', '#forge:milk', 'minecraft:sugar'
+	// ]).id("atlanabyss:milky_113")
+	// filling('kubejs:milky_113',
+	// 	['kubejs:experiment_113', Fluid.of('minecraft:milk', 250)
+	// 	]).id("atlanabyss:filling_milky_113")
+	// //九头蛇汉堡
+	// event.shapeless('kubejs:hydra_burger', [
+	// 	'#forge:bread', '#kubejs:hydra_meat', '#forge:salad_ingredients', '#forge:crops/tomato', '#forge:crops/onion'
+	// ]).id("atlanabyss:hydra_burger")
+	// //恶魂汉堡
+	// event.shapeless('kubejs:ghast_burger', [
+	// 	'#forge:bread', 'twilightforest:experiment_115', '#forge:vegetables/beetroot', '#forge:crops/tomato', '#forge:crops/onion'
+	// ]).id("atlanabyss:ghast_burger")
+	// //浆果串
+	// event.shapeless('kubejs:berry_stick', [
+	// 	'minecraft:sweet_berries', 'minecraft:glow_berries', 'twilightforest:torchberries', 'minecraft:stick'
+	// ]).id("atlanabyss:berry_stick")
+	// //恶魂脑沙拉
+	// event.shapeless('kubejs:ghast_brain_salad', [
+	// 	'minecraft:bowl', '#forge:salad_ingredients', '#forge:crops/onion', '#forge:crops/tomato', 'kubejs:experiment_110', 'twilightforest:borer_essence', 'twilightforest:transformation_powder'
+	// ]).id("atlanabyss:ghast_brain_salad")
+	// //蛀虫精华甜菜汤
+	// event.shapeless('kubejs:borer_tear_soup', [
+	// 	'minecraft:bowl', 'minecraft:beetroot', 'minecraft:beetroot', 'minecraft:beetroot', 'minecraft:beetroot', 'twilightforest:borer_essence'
+	// ]).id("atlanabyss:borer_tear_soup")
+	// //冰川冰淇淋
+	// event.shapeless('kubejs:glacier_ice_cream', [
+	// 	'minecraft:bowl', 'twilightforest:ice_bomb', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
+	// ]).id("atlanabyss:glacier_ice_cream")
+	// //植物素冰淇淋
+	// event.shapeless('kubejs:phytochemical_ice_cream', [
+	// 	'minecraft:bowl', 'twilightforest:steeleaf_ingot', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
+	// ]).id("atlanabyss:phytochemical_ice_cream")
+	// //火炬浆果冰淇淋
+	// event.shapeless('kubejs:torchberry_ice_cream', [
+	// 	'minecraft:bowl', 'twilightforest:torchberries', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
+	// ]).id("atlanabyss:torchberry_ice_cream")
+	// //极光冰淇淋
+	// event.shapeless('kubejs:aurora_ice_cream', [
+	// 	'minecraft:bowl', 'twilightforest:aurora_block', '#forge:milk', 'neapolitan:ice_cubes', 'minecraft:sugar'
+	// ]).id("atlanabyss:aurora_ice_cream")
+	// //暮色冰淇淋
+	// event.shapeless('3x kubejs:twilight_ice_cream', [
+	// 	'kubejs:torchberry_ice_cream', 'neapolitan:chocolate_ice_cream', 'neapolitan:strawberry_ice_cream'
+	// ]).id("atlanabyss:twilight_ice_cream")
+	// //彩虹冰淇淋
+	// event.shapeless('3x kubejs:rainbow_ice_cream', [
+	// 	'kubejs:aurora_ice_cream', 'neapolitan:banana_ice_cream', 'neapolitan:adzuki_ice_cream'
+	// ]).id("atlanabyss:rainbow_ice_cream")
+	// //清爽冰淇淋
+	// event.shapeless('3x kubejs:refreshing_ice_cream', [
+	// 	'kubejs:glacier_ice_cream', 'neapolitan:mint_ice_cream', 'kubejs:phytochemical_ice_cream'
+	// ]).id("atlanabyss:refreshing_ice_cream")
 
 	remove('botania:elven_trade/pixie_dust')
 	elven_trade(['botania:pixie_dust'], 'botania:mana_powder').id("atlanabyss:elven_trade_pixie_dust")
-	elven_trade(['twilightforest:ice_bomb'], 'minecraft:blue_ice').id("atlanabyss:elven_trade_ice_bomb")
-	elven_trade(['twilightforest:ice_bow'], 'minecraft:bow').id("atlanabyss:elven_trade_ice_bow")
-	elven_trade(['twilightforest:ice_sword'], 'minecraft:diamond_sword').id("atlanabyss:elven_trade_ice_sword")
+	// elven_trade(['twilightforest:ice_bomb'], 'minecraft:blue_ice').id("atlanabyss:elven_trade_ice_bomb")
+	// elven_trade(['twilightforest:ice_bow'], 'minecraft:bow').id("atlanabyss:elven_trade_ice_bow")
+	// elven_trade(['twilightforest:ice_sword'], 'minecraft:diamond_sword').id("atlanabyss:elven_trade_ice_sword")
 
 	mana_infusion(
 		'2x touhou_little_maid:power_point',
@@ -1447,7 +1449,7 @@ onEvent('recipes', event => {
 	brew('kubejs:alicepowah', [
 		'minecraft:nether_wart',
 		'createaddition:capacitor',
-		'umapyoi:hachimi_mid'
+		'minecraft:sugar',
 	]).id("atlanabyss:brew_alicepowah")
 
 
@@ -1642,7 +1644,6 @@ onEvent('recipes', event => {
 	createHaunting('thermal:blizz_powder', 'thermal:ice_charge', 'ice_charge')//瀑冰弹
 	createHaunting('thermal:basalz_powder', 'thermal:earth_charge', 'earth_charge')//裂岩弹
 	createHaunting('minecraft:blaze_powder', 'minecraft:fire_charge', 'fire_charge')//火焰弹
-	createHaunting('minecraft:hanging_roots', 'twilightforest:liveroot', 'haunting_liveroot')//活根
 
 	//管道升级
 	deploying('pipez:basic_upgrade', [

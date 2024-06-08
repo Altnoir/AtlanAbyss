@@ -376,10 +376,6 @@ onEvent('rei.group', (event) => {
 		'botania:blood_pendant',
 		'botania:incense_stick',
 		'patchouli:guide_book',
-		'umapyoi:uma_soul',
-		'umapyoi:uma_factor_item',
-		'umapyoi:skill_book',
-		'umapyoi:support_card',
 		'gateways:gate_pearl',
 		'quark:seed_pouch',
 	];

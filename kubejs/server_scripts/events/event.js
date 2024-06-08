@@ -8,9 +8,6 @@ onEvent("lootjs", event => {
   event
     .addLootTypeModifier(LootType.CHEST)
     .replaceLoot('create:dough', 'farmersdelight:wheat_dough');
-  event
-    .addLootTypeModifier(LootType.CHEST)
-    .replaceLoot('twilightforest:red_thread', 'botania:red_string');
   //删
   const removeLoot = [
     'beyond_earth:steel_ingot',
@@ -22,9 +19,7 @@ onEvent("lootjs", event => {
     'tconstruct:ender_slime_sapling',
     'tconstruct:blood_slime_grass_seeds',
     'tconstruct:ender_slime_grass_seeds',
-    'twilightforest:uncrafting_table',
-    /sophisticatedbackpacks:.*_upgrade/,
-    /umapyoi:*/
+    /sophisticatedbackpacks:.*_upgrade/
   ];
   removeLoot.forEach((lootID) => {
     event
@@ -59,12 +54,12 @@ onEvent("lootjs", event => {
     .matchEquip(EquipmentSlot.HEAD, Item.of('yuushya:wriggle_nightbug', '{CustomModelData:11821910}').weakNBT())
     .removeLoot(Ingredient.getAll())
     .addLoot('kubejs:lucky_block')
-  //在暮色森林根据生物位置掉落战利品
+  //在下界根据生物位置掉落战利品
   let entityX;
   let entityZ;
   event
     .addLootTypeModifier(LootType.ENTITY)
-    .anyDimension('twilightforest:twilight_forest')
+    .anyDimension('minecraft:the_nether')
     .apply((e) => {
       entityX = e.getEntity().x;
       entityZ = e.getEntity().z;
@@ -264,11 +259,8 @@ onEvent('entity.spawned', event => {
     server.scheduleInTicks(1, () => {
       let health = entity.getMaxHealth();
 
-      // if (level.dimension === 'minecraft:the_nether') {
-      //   monsterSpawn(health, 0.05, 16);
-      // }
-      if (level.dimension === 'twilightforest:twilight_forest') {
-        monsterSpawn(health, 0.1, 64);
+      if (level.dimension === 'minecraft:the_nether') {
+        monsterSpawn(health, 0.05, 16);
       }
     });
   }
@@ -320,11 +312,11 @@ onEvent('entity.hurt', event => {
   if (!source.actual) return;
   let actual = source.actual;
 
-  //暮色怪物增强
+  //下界怪物增强
   //&& source.type != 'fall' && source.type != 'magic' && source.type != 'generic' && source.type != 'inFire' && source.type != 'drown' && source.type != 'outOfWorld'
   if (entity.type == 'minecraft:player' && source.type != 'player') {
-    if (level.dimension == 'twilightforest:twilight_forest' && !entity.creativeMode) {
-      //玩家在暮色会受到额外伤害
+    if (level.dimension == 'minecraft:the_nether' && !entity.creativeMode) {
+      //玩家在下界会受到额外伤害
       let damage = event.damage * 1.5; // 倍率
       server.scheduleInTicks(1, () => {
         entity.attack(source, damage);
@@ -336,12 +328,6 @@ onEvent('entity.hurt', event => {
         let witherLevel = Math.round(playerHealth / 10);
         server.scheduleInTicks(1, () => {
           server.runCommandSilent(`effect give ${entity} minecraft:wither ${time} ${witherLevel}`);
-        });
-      }
-      if (actual.type == 'twilightforest:skeleton_druid') {//骷髅德鲁伊额外造成中毒伤害，根据玩家当前血量计算时间和等级
-        let poisonLevel = Math.round(playerHealth / 5);
-        server.scheduleInTicks(1, () => {
-          server.runCommandSilent(`effect give ${entity} minecraft:poison ${time} ${poisonLevel}`);
         });
       }
       // if (actual.type == 'minecraft:creeper') {//苦力怕炸到玩家后会生成圆形TNT阵列，也是根据玩家当前血量计算圆的大小和TNT数量
@@ -374,7 +360,7 @@ onEvent('entity.hurt', event => {
   }
   if (actual.isPlayer()) {
     //打一下就红温的苦力怕
-    if (level.dimension == 'twilightforest:twilight_forest' && entity.type == 'minecraft:creeper') {
+    if (level.dimension == 'minecraft:the_nether' && entity.type == 'minecraft:creeper') {
       let creeperEffect = entity.potionEffects;
       creeperEffect.add('minecraft:speed', 200, 4);
       creeperEffect.add('minecraft:regeneration', 200, 1);
@@ -706,7 +692,7 @@ onEvent('block.break', event => {
   let randomIndex = [random(), random()];
   let randomSummon = summon[randomIndex[0]];
 
-  if (level.dimension != 'twilightforest:twilight_forest') {
+  if (level.dimension != 'minecraft:the_nether') {
     if (randomIndex[1] <= summon.length / 6) {
       luckSummon(randomSummon);
     }
@@ -760,6 +746,5 @@ const summon = [
   'minecraft:witch',
   'minecraft:spider',
   'minecraft:strider',
-  'twilightforest:kobold',
   'artifacts:mimic'
 ];

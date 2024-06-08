@@ -69,16 +69,6 @@
                     "type": "minecraft:loot_table",
                     "weight": 3,
                     "name": "kubejs:lucky/toy"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "kubejs:lucky/uma_card"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "weight": 1,
-                    "name": "kubejs:lucky/uma_support_card"
                 }
             ]
         }

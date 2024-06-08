@@ -138,13 +138,13 @@
       "home": true,
       
       // Cooldown in ticks for teleporting back home. [default: 3600 = 3min]
-      "homeCooldown": 3600,
+      "homeCooldown": 1200,
       
       // Should players be able to teleport to spawn? [default: true]
       "spawn": true,
       
       // Cooldown in ticks for teleporting to spawn. [default: 3600 = 3min]
-      "spawnCooldown": 3600
+      "spawnCooldown": 1200
     }
   },
   
