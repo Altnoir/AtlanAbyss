@@ -121,7 +121,7 @@ onEvent('recipes', event => {
       amount: 1250
     },
     result: 'minecraft:netherrack',
-    cooling_time: 1000
+    cooling_time: 100
   }).id("atlanabyss:casting_basin_netherrack")
 
   //魂钢

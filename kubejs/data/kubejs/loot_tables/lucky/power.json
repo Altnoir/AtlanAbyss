@@ -1,0 +1,90 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:machine_frame",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:alternator"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:dynamo_magmatic"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:tesla_coil"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:portable_energy_interface"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:modular_accumulator",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:connector",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:copper_spool",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "createaddition:barbed_wire",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

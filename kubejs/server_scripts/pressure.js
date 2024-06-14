@@ -678,7 +678,7 @@ onEvent('recipes', event => {
 		B: 'pneumaticcraft:compressed_iron_block'
 	}).id("atlanabyss:pneumatic_door_base")
 	//塑料
-	compacting('pneumaticcraft:plastic', [
+	compacting('10x pneumaticcraft:plastic', [
 		Fluid.of('pneumaticcraft:plastic', 1000)
 	]).id("atlanabyss:plastic")
 

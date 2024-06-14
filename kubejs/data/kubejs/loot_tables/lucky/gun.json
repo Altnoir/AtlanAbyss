@@ -5,26 +5,40 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "tac:m1911"
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{GunFireMode:\"SEMI\",GunId:\"tacz:glock_17\"}"
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "tac:m1a1_smg"
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{GunFireMode:\"BURST\",GunId:\"tacz:db_short\"}"
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "tac:type81_x"
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{GunFireMode:\"AUTO\",GunId:\"tacz:ak47\"}"
+                        }
+                    ]
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "tac:db_short"
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "tac:dp28"
-                },
-                {
-                    "type": "minecraft:item",
+                    "weight": 3,
                     "name": "kubejs:pistol_ammo",
                     "functions": [
                         {
@@ -38,6 +52,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 3,
                     "name": "kubejs:smg_ammo",
                     "functions": [
                         {
@@ -51,6 +66,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 3,
                     "name": "kubejs:shotgun_ammo",
                     "functions": [
                         {
@@ -64,6 +80,7 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 3,
                     "name": "kubejs:rifle_ammo",
                     "functions": [
                         {

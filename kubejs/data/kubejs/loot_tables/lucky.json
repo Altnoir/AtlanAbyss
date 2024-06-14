@@ -4,17 +4,22 @@
             "rolls": {
                 "min": {
                     "min": 1,
-                    "max": 5
+                    "max": 3
                 },
                 "max": {
-                    "min": 5,
+                    "min": 3,
                     "max": {
                         "min": 6,
-                        "max": 12
+                        "max": 9
                     }
                 }
             },
             "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "kubejs:lucky/ae2"
+                },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
@@ -27,12 +32,12 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 3,
+                    "weight": 2,
                     "name": "kubejs:lucky/cogwheel"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 2,
+                    "weight": 1,
                     "name": "kubejs:lucky/create"
                 },
                 {
@@ -42,12 +47,12 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 8,
+                    "weight": 9,
                     "name": "kubejs:lucky/eat"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 2,
+                    "weight": 1,
                     "name": "kubejs:lucky/gun"
                 },
                 {
@@ -59,6 +64,11 @@
                     "type": "minecraft:loot_table",
                     "weight": 3,
                     "name": "kubejs:lucky/pipe"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 2,
+                    "name": "kubejs:lucky/power"
                 },
                 {
                     "type": "minecraft:loot_table",

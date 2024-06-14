@@ -98,6 +98,12 @@
     "item.kubejs.halo_gashapon": "§e光环扭蛋",
     "item.kubejs.crystal_nucleus": "§9晶核",
 
+    "item.kubejs.uncommon_material": "§a优秀枪械材料",
+    "item.kubejs.rare_material": "§9稀有枪械材料",
+    "item.kubejs.epic_material": "§5史诗枪械材料",
+    "item.kubejs.legendary_material": "§6传说枪械材料",
+    "item.kubejs.ultimate_material": "§c机密枪械材料",
+
     "item.kubejs.divine_ore": "恩赐之石",
     "item.kubejs.treasure_box": "宝藏箱",
     "item.kubejs.eviltwisting_ingot": "噩梦缠怨锭",

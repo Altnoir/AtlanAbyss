@@ -119,27 +119,6 @@
           "entity": "killer"
         }
       ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "kubejs:lucky_block",
-          "expand": true
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.08,
-          "looting_multiplier": 0.01
-        }
-      ]
     }
   ]
 }

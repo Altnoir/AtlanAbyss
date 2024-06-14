@@ -166,6 +166,28 @@ onEvent('recipes', event => {
     C: 'createaddition:capacitor',
     D: 'kubejs:thermal_mechanism'
   }).id("atlanabyss:dynamo_magmatic")
+  //金属能源炉
+  event.shaped('thermal:dynamo_numismatic', [
+    ' A ',
+    'BCB',
+    'BDB'
+  ], {
+    A: 'thermal:rf_coil',
+    B: 'thermal:electrum_plate',
+    C: 'createaddition:capacitor',
+    D: 'kubejs:thermal_mechanism'
+  }).id("atlanabyss:dynamo_numismatic")
+  //辉光能源炉
+  event.shaped('thermal:dynamo_lapidary', [
+    ' A ',
+    'BCB',
+    'BDB'
+  ], {
+    A: 'thermal:rf_coil',
+    B: 'thermal:lead_plate',
+    C: 'createaddition:capacitor',
+    D: 'kubejs:thermal_mechanism'
+  }).id("atlanabyss:dynamo_lapidary")
 
   //扳手
   remove('thermal:tools/wrench')

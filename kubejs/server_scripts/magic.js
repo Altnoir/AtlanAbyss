@@ -20,7 +20,6 @@ onEvent('recipes', event => {
     }).id('atlanabyss:imbuement_coal')
 
     remove('thermal:gunpowder_4')
-    remove('tac:gun_powder')
     //魔法火药
     event.custom({
         type: 'ars_nouveau:imbuement',

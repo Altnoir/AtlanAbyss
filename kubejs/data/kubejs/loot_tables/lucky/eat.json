@@ -2,11 +2,8 @@
     "pools": [
         {
             "rolls": {
-                "min": {
-                    "min": 1,
-                    "max": 2
-                },
-                "max": 3
+                "min": 1,
+                "max": 2
             },
             "entries": [
                 {
@@ -327,118 +324,6 @@
                             "count": {
                                 "min": 4,
                                 "max": 20
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "umapyoi:hachimi_mid",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "umapyoi:hachimi_big",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 5,
-                    "name": "umapyoi:royal_bitter",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "umapyoi:cupcake",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "umapyoi:sweet_cupcake",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "umapyoi:small_energy_drink",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 8
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "umapyoi:medium_energy_drink",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "umapyoi:large_energy_drink",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 2
                             }
                         }
                     ]

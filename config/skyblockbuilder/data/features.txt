@@ -334,10 +334,10 @@ neapolitan:patch_vanilla_vine
 neapolitan:patch_adzuki_sprouts
 neapolitan:mint_pond
 neapolitan:banana_plant
-alexsmobs:leafcutter_anthill
 ars_nouveau:cascade_feature
 ars_nouveau:blazing_feature
 ars_nouveau:flourishing_feature
 ars_nouveau:vexing_feature
 ars_nouveau:patch_berry
 ars_nouveau:random_cascade
+alexsmobs:leafcutter_anthill

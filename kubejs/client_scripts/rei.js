@@ -280,25 +280,11 @@ onEvent('rei.hide.items', event => {
 		/^extendedcrafting:.*catalyst/,
 		/^extendedcrafting:.*component/,
 		/^extendedcrafting:.*table/,
+		//industrialforegoing
+		'industrialforegoing:pitiful_generator',//发电机
+		'industrialforegoing:plastic',//塑料片
 		//tac
-		'tac:round45',
-		'tac:ae50',
-		'tac:win_30-30',
-		'tac:bullet_308',
-		'tac:nato_556_bullet',
-		'tac:9mm_round',
-		'tac:10_gauge_round',
-		'tac:58x42',
-		'tac:762x25',
-		'tac:762x54',
-		'tac:762x39',
-		'tac:50bmg',
-		'tac:lapua338',
-		'tac:bullet68',
-		'tac:b_magnum',
-		'tac:light_armor',//防弹衣
-		'tac:medium_steel_armor',
-		'tac:light_armor_plate',
+
 		//ae2
 		'ae2:ender_dust',
 		'ae2:vibration_chamber',

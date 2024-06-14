@@ -804,24 +804,6 @@
 		}
 		{
 			disable_toast: true
-			x: -3.0d
-			y: 6.0d
-			shape: "hexagon"
-			dependencies: ["6FCDF6D77BB86B96"]
-			id: "15A1AFADDDDBF7C3"
-			tasks: [{
-				id: "0AA0F0D534756364"
-				type: "item"
-				item: "toms_storage:ts.storage_terminal"
-			}]
-			rewards: [{
-				id: "1D49B7503B35B377"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
 			x: 2.0d
 			y: 7.0d
 			shape: "hexagon"
@@ -835,23 +817,6 @@
 			}]
 			rewards: [{
 				id: "4A49C882AC1D5CFB"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -3.0d
-			y: 3.0d
-			shape: "rsquare"
-			dependencies: ["6FCDF6D77BB86B96"]
-			id: "29FE9D9B9E0746D8"
-			tasks: [{
-				id: "71DF3E5E49680F15"
-				type: "item"
-				item: "immersive_aircraft:gyrodyne"
-			}]
-			rewards: [{
-				id: "495A10F81EEF58F9"
 				type: "xp"
 				xp: 10
 			}]

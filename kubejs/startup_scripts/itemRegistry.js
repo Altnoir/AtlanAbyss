@@ -103,6 +103,12 @@ onEvent('item.registry', event => {
 	event.create('album_adventure').displayName('Album').rarity(RARITY_RARE).unstackable();
 	event.create('treasure_box').displayName('Treasure Box').glow(true).rarity(RARITY_EPIC).unstackable();
 
+	event.create('uncommon_material').displayName('Uncommon Material').glow(true);
+	event.create('rare_material').displayName('Rare Material').glow(true);
+	event.create('epic_material').displayName('Epic Material').glow(true);
+	event.create('legendary_material').displayName('Legendary Material').glow(true);
+	event.create('ultimate_material').displayName('Ultimate Material').glow(true);
+
 	event.create('divine_ore').displayName('Divine Ore').rarity(RARITY_RARE);
 
 	event.create('catalyst_incomplete', 'create:sequenced_assembly').color(0, 0x1E2533).color(1, 0x353E50).displayName('Incomplete Catalyst');

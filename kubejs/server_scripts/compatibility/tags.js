@@ -151,7 +151,9 @@ onEvent('tags.items', event => {
 		['forge:ingots', 'biggerreactors:ludicrite_ingot'],
 		['forge:ingots/ludicrite', 'biggerreactors:ludicrite_ingot'],
 		['forge:dusts', 'biggerreactors:ludicrite_dust'],
-		['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust']
+		['forge:dusts/ludicrite', 'biggerreactors:ludicrite_dust'],
+		//塑料片
+		['forge:plastic', 'industrialforegoing:plastic']
 	];
 	for (const [tag, item] of tagsToRemove) {
 		event.remove(tag, item);
@@ -229,7 +231,15 @@ onEvent('tags.items', event => {
 		['forge:storage_blocks/raw_osmium', 'kubejs:raw_osmium_block'],
 		//银
 		['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
-		['forge:ores/silver', 'kubejs:mercury_silver_ore']
+		['forge:ores/silver', 'kubejs:mercury_silver_ore'],
+		//枪械材料
+		['forge:materials/uncommon', 'kubejs:uncommon_material'],
+		['forge:materials/rare', 'kubejs:rare_material'],
+		['forge:materials/epic', 'kubejs:epic_material'],
+		['forge:materials/legendary', 'kubejs:legendary_material'],
+		['forge:materials/ultimate', 'kubejs:ultimate_material'],
+		//塑料片
+		['forge:plastic', 'pneumaticcraft:plastic']
 	];
 	for (const [tag, item] of tagToAdd) {
 		event.add(tag, item);

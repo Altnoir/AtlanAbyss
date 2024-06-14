@@ -35,8 +35,13 @@ onEvent("lootjs", event => {
   //打草有概率掉棉花种子
   event
     .addBlockLootModifier('minecraft:grass')
-    .randomChance(0.03)
+    .randomChance(0.05)
     .addLoot('kubejs:cottons_seed');
+  //幸运方块
+  event.addLootTypeModifier(LootType.ENTITY)
+    .killedByPlayer()
+    .randomChance(0.025)
+    .addLoot('kubejs:lucky_block');
   //火力之环
   event.addLootTypeModifier(LootType.ENTITY)
     .matchEquip(EquipmentSlot.HEAD, Item.of('yuushya:wriggle_nightbug', '{CustomModelData:11821909}').weakNBT())
@@ -405,8 +410,9 @@ onEvent('entity.hurt', event => {
           actual.potionEffects.add('minecraft:levitation', 2, 4);
         }
       }
+      //检测子弹伤害类型
+      if (source.type !== 'thrown') return;
 
-      if (source.type !== 'bullet') return;
       if (cmData === 11821901) { // 破甲
         let sundering = entityEffect.getActive('kubejs:sundering');
         let alice = actualEffect.getActive('kubejs:alice_powah');

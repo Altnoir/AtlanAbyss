@@ -1,0 +1,77 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:controller",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:fluix_glass_cable",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 5,
+                                "max": 20
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:item_storage_cell_1k"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:cell_component_1k"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:molecular_assembler"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:annihilation_core",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:formation_core",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ae2:molecular_assembler"
+                }
+            ]
+        }
+    ]
+}

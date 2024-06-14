@@ -446,193 +446,197 @@ onEvent('recipes', event => {
 	}).id('atlanabyss:majo_cloth');
 
 
-	//飞艇
-	remove('immersive_aircraft:airship')
-	mechanical_crafting('immersive_aircraft:airship', [
-		'SSSSS',
-		' A A ',
-		' HBEP',
-		' HHH '
-	], {
-		H: 'immersive_aircraft:hull',
-		E: 'immersive_aircraft:engine',
-		P: 'create:propeller',
-		S: 'immersive_aircraft:sail',
-		A: 'minecraft:string',
-		B: '#create:seats'
-	}).id('atlanabyss:mechanical_crafting_airship')
-	//双翼机
-	remove('immersive_aircraft:biplane')
-	mechanical_crafting('immersive_aircraft:biplane', [
-		'   S ',
-		'S  S ',
-		'HHBEP',
-		'S  S ',
-		'   S '
-	], {
-		H: 'immersive_aircraft:hull',
-		E: 'immersive_aircraft:engine',
-		P: 'immersive_aircraft:propeller',
-		S: 'immersive_aircraft:sail',
-		B: '#create:seats'
-	}).id('atlanabyss:mechanical_crafting_biplane')
-	//机身
-	remove('immersive_aircraft:hull')
-	event.shaped('immersive_aircraft:hull', [
-		'LIL',
-		'LIL'
-	], {
-		L: 'create:andesite_casing',
-		I: 'minecraft:iron_ingot'
-	}).id("atlanabyss:aircraft_hull")
-	//高级引擎
-	remove('immersive_aircraft:engine')
-	event.shaped('immersive_aircraft:engine', [
-		'BPB',
-		'SES'
-	], {
-		P: 'create:precision_mechanism',
-		E: 'immersive_aircraft:boiler',
-		B: 'create:brass_sheet',
-		S: 'create:sturdy_sheet'
-	}).id("atlanabyss:aircraft_engine")
-	//大矾
-	remove('immersive_aircraft:sail')
-	event.shaped('immersive_aircraft:sail', [
-		'SSS',
-		'SSS'
-	], {
-		S: 'create:white_sail'
-	}).id("atlanabyss:aircraft_sail")
-	//大螺旋桨
-	remove('immersive_aircraft:propeller')
-	event.shaped('immersive_aircraft:propeller', [
-		' I ',
-		'IPI',
-		' I '
-	], {
-		I: 'create:iron_sheet',
-		P: 'create:propeller'
-	}).id("atlanabyss:aircraft_propeller")
-	//基础引擎
-	remove('immersive_aircraft:boiler')
-	event.shaped('immersive_aircraft:boiler', [
-		'S',
-		'N',
-		'I'
-	], {
-		I: 'create:blaze_burner',
-		S: 'create:steam_engine',
-		N: 'create:fluid_tank'
-	}).id("atlanabyss:aircraft_boiler")
-	//固定翼旋翼机
-	remove('immersive_aircraft:gyrodyne')
-	event.shaped('immersive_aircraft:gyrodyne', [
-		' P ',
-		'SES',
-		'HBH'
-	], {
-		S: 'immersive_aircraft:sail',
-		H: 'immersive_aircraft:hull',
-		P: 'immersive_aircraft:propeller',
-		E: 'create:precision_mechanism',
-		B: '#create:seats'
-	}).id("atlanabyss:aircraft_gyrodyne")
-	//四轴飞行器
-	remove('immersive_aircraft:quadrocopter')
-	event.shaped('immersive_aircraft:quadrocopter', [
-		'PAP',
-		' S ',
-		'PEP'
-	], {
-		E: 'immersive_aircraft:boiler',
-		A: 'create:andesite_casing',
-		S: 'minecraft:string',
-		P: 'create:propeller'
-	}).id("atlanabyss:aircraft_quadrocopter")
-	//黄铜螺旋桨
-	remove('immersive_aircraft:enhanced_propeller')
-	event.shaped('immersive_aircraft:enhanced_propeller', [
-		' B ',
-		'BPB',
-		' B '
-	], {
-		B: 'create:brass_sheet',
-		P: 'create:propeller'
-	}).id("atlanabyss:aircraft_enhanced_propeller")
-	//液压引擎
-	remove('immersive_aircraft:eco_engine')
-	event.shaped('immersive_aircraft:eco_engine', [
-		'IWI',
-		'CEC'
-	], {
-		C: 'create:copper_sheet',
-		W: 'minecraft:water_bucket',
-		I: 'create:iron_sheet',
-		E: 'immersive_aircraft:boiler'
-	}).id("atlanabyss:aircraft_eco_engine")
-	//燃烧引擎
-	remove('immersive_aircraft:nether_engine')
-	event.shaped('immersive_aircraft:nether_engine', [
-		'ILI',
-		'SES'
-	], {
-		S: 'create:sturdy_sheet',
-		L: 'minecraft:lava_bucket',
-		I: 'create:iron_sheet',
-		E: 'immersive_aircraft:boiler'
-	}).id("atlanabyss:aircraft_nether_engine")
-	//铁制锅炉
-	remove('immersive_aircraft:steel_boiler')
-	event.shaped('immersive_aircraft:steel_boiler', [
-		'IFI'
-	], {
-		I: 'create:iron_sheet',
-		F: 'create:fluid_tank'
-	}).id("atlanabyss:aircraft_steel_boiler")
-	//工业齿轮
-	remove('immersive_aircraft:industrial_gears')
-	event.shaped('immersive_aircraft:industrial_gears', [
-		'ICI'
-	], {
-		C: 'create:cogwheel',
-		I: 'create:iron_sheet'
-	}).id("atlanabyss:aircraft_industrial_gears")
-	//加固管道
-	remove('immersive_aircraft:sturdy_pipes')
-	event.shaped('immersive_aircraft:sturdy_pipes', [
-		'IPI'
-	], {
-		I: 'create:iron_sheet',
-		P: 'create:fluid_pipe'
-	}).id("atlanabyss:aircraft_sturdy_pipes")
-	//陀螺仪
-	remove('immersive_aircraft:gyroscope')
-	event.shaped('immersive_aircraft:gyroscope', [
-		'E',
-		'C'
-	], {
-		E: 'create:electron_tube',
-		C: 'minecraft:compass'
-	}).id("atlanabyss:aircraft_gyroscope")
-	//加固船体
-	remove('immersive_aircraft:hull_reinforcement')
-	event.shaped('immersive_aircraft:hull_reinforcement', [
-		'IHI'
-	], {
-		H: 'immersive_aircraft:hull',
-		I: 'create:iron_sheet'
-	}).id("atlanabyss:aircraft_hull_reinforcement")
-	//改良型起落架
-	remove('immersive_aircraft:improved_landing_gear')
-	event.shaped('immersive_aircraft:improved_landing_gear', [
-		'SI',
-		'B '
-	], {
-		B: 'create:belt_connector',
-		I: 'minecraft:iron_ingot',
-		S: 'create:iron_sheet'
-	}).id("atlanabyss:aircraft_improved_landing_gear")
+	// //飞艇
+	// remove('immersive_aircraft:airship')
+	// mechanical_crafting('immersive_aircraft:airship', [
+	// 	'SSSSS',
+	// 	' A A ',
+	// 	' HBEP',
+	// 	' HHH '
+	// ], {
+	// 	H: 'immersive_aircraft:hull',
+	// 	E: 'immersive_aircraft:engine',
+	// 	P: 'create:propeller',
+	// 	S: 'immersive_aircraft:sail',
+	// 	A: 'minecraft:string',
+	// 	B: '#create:seats'
+	// }).id('atlanabyss:mechanical_crafting_airship')
+	// //双翼机
+	// remove('immersive_aircraft:biplane')
+	// mechanical_crafting('immersive_aircraft:biplane', [
+	// 	'   S ',
+	// 	'S  S ',
+	// 	'HHBEP',
+	// 	'S  S ',
+	// 	'   S '
+	// ], {
+	// 	H: 'immersive_aircraft:hull',
+	// 	E: 'immersive_aircraft:engine',
+	// 	P: 'immersive_aircraft:propeller',
+	// 	S: 'immersive_aircraft:sail',
+	// 	B: '#create:seats'
+	// }).id('atlanabyss:mechanical_crafting_biplane')
+	// //机身
+	// remove('immersive_aircraft:hull')
+	// event.shaped('immersive_aircraft:hull', [
+	// 	'LIL',
+	// 	'LIL'
+	// ], {
+	// 	L: 'create:andesite_casing',
+	// 	I: 'minecraft:iron_ingot'
+	// }).id("atlanabyss:aircraft_hull")
+	// //高级引擎
+	// remove('immersive_aircraft:engine')
+	// event.shaped('immersive_aircraft:engine', [
+	// 	'BPB',
+	// 	'SES'
+	// ], {
+	// 	P: 'create:precision_mechanism',
+	// 	E: 'immersive_aircraft:boiler',
+	// 	B: 'create:brass_sheet',
+	// 	S: 'create:sturdy_sheet'
+	// }).id("atlanabyss:aircraft_engine")
+	// //大矾
+	// remove('immersive_aircraft:sail')
+	// event.shaped('immersive_aircraft:sail', [
+	// 	'SSS',
+	// 	'SSS'
+	// ], {
+	// 	S: 'create:white_sail'
+	// }).id("atlanabyss:aircraft_sail")
+	// //大螺旋桨
+	// remove('immersive_aircraft:propeller')
+	// event.shaped('immersive_aircraft:propeller', [
+	// 	' I ',
+	// 	'IPI',
+	// 	' I '
+	// ], {
+	// 	I: 'create:iron_sheet',
+	// 	P: 'create:propeller'
+	// }).id("atlanabyss:aircraft_propeller")
+	// //基础引擎
+	// remove('immersive_aircraft:boiler')
+	// event.shaped('immersive_aircraft:boiler', [
+	// 	'S',
+	// 	'N',
+	// 	'I'
+	// ], {
+	// 	I: 'create:blaze_burner',
+	// 	S: 'create:steam_engine',
+	// 	N: 'create:fluid_tank'
+	// }).id("atlanabyss:aircraft_boiler")
+	// //固定翼旋翼机
+	// remove('immersive_aircraft:gyrodyne')
+	// event.shaped('immersive_aircraft:gyrodyne', [
+	// 	' P ',
+	// 	'SES',
+	// 	'HBH'
+	// ], {
+	// 	S: 'immersive_aircraft:sail',
+	// 	H: 'immersive_aircraft:hull',
+	// 	P: 'immersive_aircraft:propeller',
+	// 	E: 'create:precision_mechanism',
+	// 	B: '#create:seats'
+	// }).id("atlanabyss:aircraft_gyrodyne")
+	// //四轴飞行器
+	// remove('immersive_aircraft:quadrocopter')
+	// event.shaped('immersive_aircraft:quadrocopter', [
+	// 	'PAP',
+	// 	' S ',
+	// 	'PEP'
+	// ], {
+	// 	E: 'immersive_aircraft:boiler',
+	// 	A: 'create:andesite_casing',
+	// 	S: 'minecraft:string',
+	// 	P: 'create:propeller'
+	// }).id("atlanabyss:aircraft_quadrocopter")
+	// //黄铜螺旋桨
+	// remove('immersive_aircraft:enhanced_propeller')
+	// event.shaped('immersive_aircraft:enhanced_propeller', [
+	// 	' B ',
+	// 	'BPB',
+	// 	' B '
+	// ], {
+	// 	B: 'create:brass_sheet',
+	// 	P: 'create:propeller'
+	// }).id("atlanabyss:aircraft_enhanced_propeller")
+	// //液压引擎
+	// remove('immersive_aircraft:eco_engine')
+	// event.shaped('immersive_aircraft:eco_engine', [
+	// 	'IWI',
+	// 	'CEC'
+	// ], {
+	// 	C: 'create:copper_sheet',
+	// 	W: 'minecraft:water_bucket',
+	// 	I: 'create:iron_sheet',
+	// 	E: 'immersive_aircraft:boiler'
+	// }).id("atlanabyss:aircraft_eco_engine")
+	// //燃烧引擎
+	// remove('immersive_aircraft:nether_engine')
+	// event.shaped('immersive_aircraft:nether_engine', [
+	// 	'ILI',
+	// 	'SES'
+	// ], {
+	// 	S: 'create:sturdy_sheet',
+	// 	L: 'minecraft:lava_bucket',
+	// 	I: 'create:iron_sheet',
+	// 	E: 'immersive_aircraft:boiler'
+	// }).id("atlanabyss:aircraft_nether_engine")
+	// //铁制锅炉
+	// remove('immersive_aircraft:steel_boiler')
+	// event.shaped('immersive_aircraft:steel_boiler', [
+	// 	'IFI'
+	// ], {
+	// 	I: 'create:iron_sheet',
+	// 	F: 'create:fluid_tank'
+	// }).id("atlanabyss:aircraft_steel_boiler")
+	// //工业齿轮
+	// remove('immersive_aircraft:industrial_gears')
+	// event.shaped('immersive_aircraft:industrial_gears', [
+	// 	'ICI'
+	// ], {
+	// 	C: 'create:cogwheel',
+	// 	I: 'create:iron_sheet'
+	// }).id("atlanabyss:aircraft_industrial_gears")
+	// //加固管道
+	// remove('immersive_aircraft:sturdy_pipes')
+	// event.shaped('immersive_aircraft:sturdy_pipes', [
+	// 	'IPI'
+	// ], {
+	// 	I: 'create:iron_sheet',
+	// 	P: 'create:fluid_pipe'
+	// }).id("atlanabyss:aircraft_sturdy_pipes")
+	// //陀螺仪
+	// remove('immersive_aircraft:gyroscope')
+	// event.shaped('immersive_aircraft:gyroscope', [
+	// 	'E',
+	// 	'C'
+	// ], {
+	// 	E: 'create:electron_tube',
+	// 	C: 'minecraft:compass'
+	// }).id("atlanabyss:aircraft_gyroscope")
+	// //加固船体
+	// remove('immersive_aircraft:hull_reinforcement')
+	// event.shaped('immersive_aircraft:hull_reinforcement', [
+	// 	'IHI'
+	// ], {
+	// 	H: 'immersive_aircraft:hull',
+	// 	I: 'create:iron_sheet'
+	// }).id("atlanabyss:aircraft_hull_reinforcement")
+	// //改良型起落架
+	// remove('immersive_aircraft:improved_landing_gear')
+	// event.shaped('immersive_aircraft:improved_landing_gear', [
+	// 	'SI',
+	// 	'B '
+	// ], {
+	// 	B: 'create:belt_connector',
+	// 	I: 'minecraft:iron_ingot',
+	// 	S: 'create:iron_sheet'
+	// }).id("atlanabyss:aircraft_improved_landing_gear")
+
+
+
+
 
 	// //安山机器
 	// event.shaped('kubejs:andesite_machine', [
@@ -1338,8 +1342,8 @@ onEvent('recipes', event => {
 	// ccss('kubejs:raw_insect', 'kubejs:cooked_insect', 1, 'raw_insect')
 	// ccss('kubejs:raw_meef_slice', 'kubejs:cooked_meef_slice', 1, 'raw_meef_slice')
 	// ccss('kubejs:raw_venison_rib', 'kubejs:cooked_venison_rib', 1, 'raw_venison_rib')
-	
-	
+
+
 	// //火炬浆果曲奇
 	// event.shaped('8x kubejs:torchberry_cookie', [
 	// 	'BAB'
