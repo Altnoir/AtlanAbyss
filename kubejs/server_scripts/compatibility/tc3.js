@@ -2,6 +2,7 @@ onEvent('recipes', event => {
   let remove = (name) => {
     event.remove({ id: name })
   }
+  let { create, thermal } = event.recipes;
   //铜 
   remove('tconstruct:common/materials/copper_ingot_from_nuggets')
   remove('tconstruct:common/materials/copper_nugget_from_ingot')
@@ -262,14 +263,41 @@ onEvent('recipes', event => {
     time: 96
   }).id('atlanabyss:tc_melting_granite');
 
-  //花岗砖泥
-  event.shaped('tconstruct:seared_brick', [
+  //花岗合金
+  event.shaped('kubejs:granite_alloy', [
     'AB',
     'BA'
   ], {
     A: 'minecraft:dried_kelp',
     B: 'minecraft:granite'
-  }).id('atlanabyss:tc_seared_brick');
+  }).id('atlanabyss:granite_alloy');
+  event.shaped('16x kubejs:granite_alloy', [
+    'AB',
+    'BA'
+  ], {
+    A: 'kubejs:abyss_ingot',
+    B: 'minecraft:granite'
+  }).id('atlanabyss:granite_alloy_x');
+
+  create.mixing('kubejs:granite_alloy', [
+    'minecraft:granite',
+    'minecraft:dried_kelp'
+  ]).id('atlanabyss:mixing_granite_alloy');
+  create.mixing('16x kubejs:granite_alloy', [
+    'minecraft:granite',
+    'kubejs:abyss_ingot'
+  ]).id('atlanabyss:mixing_granite_alloy_x');
+
+  thermal.smelter('kubejs:granite_alloy', [
+    'minecraft:dried_kelp',
+    'minecraft:granite'
+  ]).energy(3200).id('atlanabyss:smelter_granite_alloy');
+  thermal.smelter('16x kubejs:granite_alloy', [
+    'kubejs:abyss_ingot',
+    'minecraft:granite'
+  ]).energy(3200).id('atlanabyss:smelter_granite_alloy_x');
+  //焦黑砖
+  event.smelting('tconstruct:seared_brick', 'kubejs:granite_alloy').xp(.3).id('atlanabyss:smelting_seared_brick')
 
   //熔渣
   event.custom({

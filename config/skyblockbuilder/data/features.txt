@@ -340,4 +340,3 @@ ars_nouveau:flourishing_feature
 ars_nouveau:vexing_feature
 ars_nouveau:patch_berry
 ars_nouveau:random_cascade
-alexsmobs:leafcutter_anthill

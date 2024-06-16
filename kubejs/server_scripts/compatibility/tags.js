@@ -238,6 +238,9 @@ onEvent('tags.items', event => {
 		['forge:materials/epic', 'kubejs:epic_material'],
 		['forge:materials/legendary', 'kubejs:legendary_material'],
 		['forge:materials/ultimate', 'kubejs:ultimate_material'],
+		//唱片
+		['minecraft:music_discs', 'integrated_stronghold:music_disc_forlorn'],
+		['minecraft:music_discs', 'integrated_stronghold:music_disc_sight'],
 		//塑料片
 		['forge:plastic', 'pneumaticcraft:plastic']
 	];
@@ -286,9 +289,9 @@ onEvent('tags.items', event => {
 	//唱片
 	event.add('minecraft:creeper_drop_music_discs', [
 		'botania:record_gaia_1', 'botania:record_gaia_2',
-		'alexsmobs:music_disc_thime', 'alexsmobs:music_disc_daze',
 		'quark:music_disc_endermosh', 'neapolitan:music_disc_hullabaloo',
-		'minecraft:music_disc_otherside', 'minecraft:music_disc_pigstep'
+		'minecraft:music_disc_otherside', 'minecraft:music_disc_pigstep',
+		'integrated_stronghold:music_disc_forlorn', 'integrated_stronghold:disc_fragment_sight'
 	]);
 
 	//原木标签

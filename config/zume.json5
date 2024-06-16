@@ -15,7 +15,7 @@
 	   Speed for Zoom In/Out key binds & zoom scrolling (if enabled).
 	   DEFAULT: `20`
 	*/
-	"zoomSpeed": 20,
+	"zoomSpeed": 10,
 	/* 
 	   Allows you to zoom in and out by scrolling up and down on your mouse while zoom is active.
 	   This will prevent you from scrolling through your hotbar while zooming if enabled.

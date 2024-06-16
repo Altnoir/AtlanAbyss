@@ -688,7 +688,7 @@ onEvent('recipes', event => {
 		type: 'pneumaticcraft:pressure_chamber',
 		inputs: [Ingredient.of('kubejs:compressed_coal_block')],
 		results: [Item.of('minecraft:diamond')],
-		pressure: 4.9
+		pressure: 2.9
 	}).id("atlanabyss:artificial_diamond");
 
 	//人工酸	
@@ -699,7 +699,7 @@ onEvent('recipes', event => {
 			Ingredient.of('create:cinder_flour')
 		],
 		results: [Item.of('kubejs:acid', 2)],
-		pressure: 3.0
+		pressure: 2.0
 	}).id("atlanabyss:acid");
 
 	//蚀刻酸

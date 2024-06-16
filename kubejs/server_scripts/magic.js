@@ -5,7 +5,7 @@ onEvent('recipes', event => {
         event.remove({ id: name })
     }
 
- 
+
 
     //人工煤炭
     event.custom({
@@ -147,18 +147,18 @@ onEvent('recipes', event => {
     //附魔灌注台
     remove('enchantinginfuser:enchanting_infuser')
     event.custom({
-		type: 'tconstruct:casting_basin',
-		cast: {
-			item: 'minecraft:enchanting_table'
-		},
-		cast_consumed: true,
-		fluid: {
-			tag: "tconstruct:molten_amethyst",
-			amount: 1600
-		},
-		result: 'enchantinginfuser:enchanting_infuser',
-		cooling_time: 300
-	}).id('atlanabyss:casting_basin_enchanting_infuser')
+        type: 'tconstruct:casting_basin',
+        cast: {
+            item: 'minecraft:enchanting_table'
+        },
+        cast_consumed: true,
+        fluid: {
+            tag: "tconstruct:molten_amethyst",
+            amount: 1600
+        },
+        result: 'enchantinginfuser:enchanting_infuser',
+        cooling_time: 300
+    }).id('atlanabyss:casting_basin_enchanting_infuser')
     //高级附魔灌注台
     remove('enchantinginfuser:advanced_enchanting_infuser')
     event.custom({
@@ -234,4 +234,67 @@ onEvent('recipes', event => {
     //深层锌矿
     botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
         150).id('atlanabyss:orechid_deepslate_zinc_ore')
+
+    //闪长合金
+    event.shaped('kubejs:diorite_alloy', [
+        'AB',
+        'BA'
+    ], {
+        A: 'ars_nouveau:source_berry',
+        B: 'minecraft:diorite'
+    }).id('atlanabyss:diorite_alloy');
+    event.shaped('16x kubejs:diorite_alloy', [
+        'AB',
+        'BA'
+    ], {
+        A: 'kubejs:planetary_ingot',
+        B: 'minecraft:diorite'
+    }).id('atlanabyss:diorite_alloy_x');
+
+    create.mixing('kubejs:diorite_alloy', [
+        'minecraft:diorite',
+        'ars_nouveau:source_berry'
+    ]).id('atlanabyss:mixing_diorite_alloy');
+    create.mixing('16x kubejs:diorite_alloy', [
+        'minecraft:diorite',
+        'kubejs:planetary_ingot'
+    ]).id('atlanabyss:mixing_diorite_alloy_x');
+
+    thermal.smelter('kubejs:diorite_alloy', [
+        'ars_nouveau:source_berry',
+        'minecraft:diorite'
+    ]).energy(3200).id('atlanabyss:smelter_diorite_alloy');
+    thermal.smelter('16x kubejs:diorite_alloy', [
+        'kubejs:planetary_ingot',
+        'minecraft:diorite'
+    ]).energy(3200).id('atlanabyss:smelter_diorite_alloy_x');
+
+    //活石
+    create.item_application('botania:livingrock', [
+        'minecraft:stone',
+        'kubejs:diorite_alloy'
+    ]).id('atlanabyss:item_application_livingrock')
+
+    //魔力浆果
+    botania.mana_infusion('ars_nouveau:source_berry', 'minecraft:sweet_berries', 100, 'ars_nouveau:arcane_stone').id("atlanabyss:mana_infusion_source_berry")
+
+
+    //其他魔艺树
+    remove('ars_nouveau:manipulation_essence_to_flourishing_sapling')
+    remove('ars_nouveau:manipulation_essence_to_cascading_sapling')
+    remove('ars_nouveau:manipulation_essence_to_blazin_sapling')
+    remove('ars_nouveau:manipulation_essence_to_vexing_sapling')
+    botania.mana_infusion('ars_nouveau:blue_archwood_sapling', 'ars_nouveau:green_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:blue_archwood_sapling")
+    botania.mana_infusion('ars_nouveau:purple_archwood_sapling', 'ars_nouveau:blue_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:purple_archwood_sapling")
+    botania.mana_infusion('ars_nouveau:red_archwood_sapling', 'ars_nouveau:purple_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:red_archwood_sapling")
+    botania.mana_infusion('ars_nouveau:green_archwood_sapling', 'ars_nouveau:red_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:mana_infusion_green_archwood_sapling")
+    //活石
+    remove('botania:pure_daisy/livingrock')
+    botania.pure_daisy('botania:livingrock', 'minecraft:calcite', 30).id("atlanabyss:livingrock")
+    //活木
+    remove('botania:pure_daisy/livingwood')
+    botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:green_archwood_log', 30).id("atlanabyss:livingwood_by_green")
+    botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:blue_archwood_log', 30).id("atlanabyss:livingwood_by_blue")
+    botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:purple_archwood_log', 30).id("atlanabyss:livingwood_by_purple")
+    botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:red_archwood_log', 30).id("atlanabyss:livingwood_by_red")
 })

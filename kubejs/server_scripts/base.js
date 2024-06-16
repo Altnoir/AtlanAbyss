@@ -327,6 +327,16 @@ onEvent('recipes', event => {
 	remove('minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore')
 	remove('minecraft:quartz_from_blasting')
 	remove('minecraft:quartz')
+	//byd ore
+	remove('beyond_earth:smelting/diamond_gem_from_venus_ore')
+	remove('beyond_earth:smelting/diamond_gem_from_mars_ore')
+	remove('beyond_earth:blasting/diamond_gem_from_venus_ore')
+	remove('beyond_earth:blasting/diamond_gem_from_mars_ore')
+
+	remove('beyond_earth:smelting/coal_from_venus_ore')
+	remove('beyond_earth:smelting/coal_from_glacio_ore')
+	remove('beyond_earth:blasting/coal_from_venus_ore')
+	remove('beyond_earth:blasting/coal_from_glacio_ore')
 
 	remove('thermal:storage/copper_nugget_from_ingot')
 
@@ -366,6 +376,13 @@ onEvent('recipes', event => {
 		A: 'minecraft:andesite',
 		B: 'minecraft:moss_block'
 	}).id('atlanabyss:andesite_alloy');
+	event.shaped('16x create:andesite_alloy', [
+		'BA',
+		'AB'
+	], {
+		A: 'minecraft:andesite',
+		B: 'kubejs:chlorophyll_ingot'
+	}).id('atlanabyss:andesite_alloy_x');
 
 	remove('create:mixing/andesite_alloy_from_zinc')
 	remove('create:mixing/andesite_alloy')
@@ -384,8 +401,8 @@ onEvent('recipes', event => {
 		'kubejs:chlorophyll_ingot', 'minecraft:andesite'
 	]).energy(3200).id('atlanabyss:smelter_andesite_alloy_x');
 
-	remove('tconstruct:compat/create/andesite_alloy_iron')
-	remove('tconstruct:compat/create/andesite_alloy_zinc')
+	remove('tconstruct:compat/create/andesite_alloy_iron');
+	remove('tconstruct:compat/create/andesite_alloy_zinc');
 
 	//钻石粉
 	remove('createaddition:crushing/diamond')
@@ -1113,13 +1130,13 @@ onEvent('recipes', event => {
 	pressing('4x kubejs:sponge_gemmule', 'minecraft:sponge').id("atlanabyss:pressing_sponge")
 	splashing('minecraft:wet_sponge', 'kubejs:sponge_gemmule').id("atlanabyss:splashing_sponge_gemmule")
 
-	//蛆和蚊子口器
-	splashing([
-		'2x alexsmobs:maggot',
-		Item.of('alexsmobs:maggot').withChance(.5),
-		Item.of('alexsmobs:mosquito_proboscis').withChance(.25),
-		Item.of('alexsmobs:blood_sac').withChance(.05)
-	], 'minecraft:rotten_flesh').id("atlanabyss:splashing_rotten_flesh")
+	// //蛆和蚊子口器
+	// splashing([
+	// 	'2x alexsmobs:maggot',
+	// 	Item.of('alexsmobs:maggot').withChance(.5),
+	// 	Item.of('alexsmobs:mosquito_proboscis').withChance(.25),
+	// 	Item.of('alexsmobs:blood_sac').withChance(.05)
+	// ], 'minecraft:rotten_flesh').id("atlanabyss:splashing_rotten_flesh")
 
 
 	//暮色乐事
@@ -2626,24 +2643,6 @@ onEvent('recipes', event => {
 	//充能康铜锭
 	teslaCharging('thermal:constantan_ingot', 'kubejs:charged_constantan_ingot', 64000, 'charged_constantan_ingot')
 
-	//其他魔艺树
-	remove('ars_nouveau:manipulation_essence_to_flourishing_sapling')
-	remove('ars_nouveau:manipulation_essence_to_cascading_sapling')
-	remove('ars_nouveau:manipulation_essence_to_blazin_sapling')
-	remove('ars_nouveau:manipulation_essence_to_vexing_sapling')
-	mana_infusion('ars_nouveau:blue_archwood_sapling', 'ars_nouveau:green_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:blue_archwood_sapling")
-	mana_infusion('ars_nouveau:purple_archwood_sapling', 'ars_nouveau:blue_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:purple_archwood_sapling")
-	mana_infusion('ars_nouveau:red_archwood_sapling', 'ars_nouveau:purple_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:red_archwood_sapling")
-	mana_infusion('ars_nouveau:green_archwood_sapling', 'ars_nouveau:red_archwood_sapling', 240, 'botania:alchemy_catalyst').id("atlanabyss:mana_infusion_green_archwood_sapling")
-	//活石
-	remove('botania:pure_daisy/livingrock')
-	pure_daisy('botania:livingrock', 'minecraft:calcite', 30).id("atlanabyss:livingrock")
-	//活木
-	remove('botania:pure_daisy/livingwood')
-	pure_daisy('botania:livingwood_log', 'ars_nouveau:green_archwood_log', 30).id("atlanabyss:livingwood_by_green")
-	pure_daisy('botania:livingwood_log', 'ars_nouveau:blue_archwood_log', 30).id("atlanabyss:livingwood_by_blue")
-	pure_daisy('botania:livingwood_log', 'ars_nouveau:purple_archwood_log', 30).id("atlanabyss:livingwood_by_purple")
-	pure_daisy('botania:livingwood_log', 'ars_nouveau:red_archwood_log', 30).id("atlanabyss:livingwood_by_red")
 
 
 	let types = ["three", "eight", "plus", "minus", "multiply", "divide"]

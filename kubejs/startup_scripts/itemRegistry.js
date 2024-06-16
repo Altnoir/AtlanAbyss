@@ -1,5 +1,7 @@
 onEvent('item.registry', event => {
 	//物品
+	event.create('granite_alloy').displayName('Granite Alloy');
+	event.create('diorite_alloy').displayName('Diorite Alloy');
 	event.create('candy_crystal').displayName('Candy Crystal');
 	event.create('polished_candy_crystal').displayName('Polished Candy Crystal');
 	event.create('polished_sulfur').displayName('Polished Sulfur');
