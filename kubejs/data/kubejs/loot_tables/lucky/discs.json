@@ -6,7 +6,7 @@
                 {
                     "type": "minecraft:tag",
                     "weight": 1,
-                    "name": "artifacts:artifacts",
+                    "name": "minecraft:creeper_drop_music_discs",
                     "expand": true
                 }
             ]

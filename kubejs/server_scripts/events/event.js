@@ -705,7 +705,7 @@ onEvent('block.break', event => {
   } else if (randomIndex[1] >= summon.length * 9 / 10) {
     badSummon();
   } else {
-    luckSummon('artifacts:mimic');
+    luckSummon(randomSummon);
   }
 
   function luckSummon(randomSummon) {
@@ -751,6 +751,5 @@ const summon = [
   'minecraft:slime',
   'minecraft:witch',
   'minecraft:spider',
-  'minecraft:strider',
-  'artifacts:mimic'
+  'minecraft:strider'
 ];

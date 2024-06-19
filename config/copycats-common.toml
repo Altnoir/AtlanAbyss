@@ -8,7 +8,6 @@ disableConversion = true
 #.
 #Enable/disable features. Values on server override clients
 [features]
-	#.
 	copycat_board = true
 	copycat_wooden_button = true
 	copycat_trapdoor = true
@@ -33,4 +32,6 @@ disableConversion = true
 	copycat_slab = true
 	copycat_ghost_block = true
 	copycat_ladder = true
+	#.
+	copycat_vertical_stairs = true
 

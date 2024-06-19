@@ -654,11 +654,8 @@ onEvent('recipes', event => {
 		'pneumaticcraft:charging_station'
 	]).id("atlanabyss:charging_module")
 	//红石模块
-	remove('pneumaticcraft:redstone_module')
-	event.shapeless('pneumaticcraft:redstone_module', [
-		'pneumaticcraft:pressure_tube',
-		'minecraft:redstone'
-	]).id("atlanabyss:redstone_module")
+	//remove('pneumaticcraft:redstone_module')
+
 	//气动门
 	remove('pneumaticcraft:pneumatic_door')
 	event.shaped('2x pneumaticcraft:pneumatic_door', [

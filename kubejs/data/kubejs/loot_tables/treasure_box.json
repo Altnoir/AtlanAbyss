@@ -84,7 +84,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "kubejs:lucky/artifacts"
+                    "name": "kubejs:lucky/album"
                 }
             ]
         }

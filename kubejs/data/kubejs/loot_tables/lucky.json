@@ -28,7 +28,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "kubejs:lucky/artifacts"
+                    "name": "kubejs:lucky/discs"
                 },
                 {
                     "type": "minecraft:loot_table",
