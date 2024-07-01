@@ -35,6 +35,9 @@
 	FirstPersonBulletTracerEnable = true
 	#Disable the interact hud text in center of the screen
 	DisableInteractHudText = false
+	#Max time the damage counter will reset
+	#Range: > 10
+	DamageCounterResetTime = 2000
 
 [Zoom]
 	#Screen distance coefficient for zoom, using MDV standard, default is MDV133

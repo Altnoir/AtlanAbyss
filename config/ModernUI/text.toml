@@ -24,7 +24,7 @@
 	outlineOffset = 0.5
 	#Set the recycle time of layout cache in seconds, using least recently used algorithm.
 	#Range: 2 ~ 15
-	cacheLifespan = 12
+	cacheLifespan = 6
 	#The bidirectional text heuristic algorithm.
 	#This will affect which BiDi algorithm to use during text layout.
 	#Allowed Values: FIRST_STRONG, ANY_RTL, LTR, RTL, LOCALE, FIRST_STRONG_LTR, FIRST_STRONG_RTL
@@ -35,14 +35,22 @@
 	#This does not affect text rendering in GUI.
 	#This option only applies to TrueType fonts.
 	useTextShadersInWorld = true
-	#For "minecraft:default" font, should we keep some bitmap providers of them?
-	#Ignore All: Equivalent to Force Unicode Font.
+	#For "minecraft:default" font, should we keep some glyph providers of them?
+	#Ignore All: Only use Modern UI typeface list.
 	#Keep ASCII: Include minecraft:font/ascii.png, minecraft:font/accented.png, minecraft:font/nonlatin_european.png
 	#Keep Other: Include providers other than ASCII and Unicode font.
 	#Keep All: Include all except Unicode font.
-	#The default value depends on OS language and region.
-	#Allowed Values: IGNORE_ALL, KEEP_ASCII, KEEP_OTHER, KEEP_ALL
-	defaultFontBehavior = "KEEP_OTHER"
+	#Only Include: Only include providers that specified by defaultFontRuleSet.
+	#Only Exclude: Only exclude providers that specified by defaultFontRuleSet.
+	#Allowed Values: IGNORE_ALL, KEEP_ASCII, KEEP_OTHER, KEEP_ALL, ONLY_INCLUDE, ONLY_EXCLUDE
+	defaultFontBehavior = "ONLY_EXCLUDE"
+	#Used when defaultFontBehavior is either ONLY_INCLUDE or ONLY_EXCLUDE.
+	#This specifies a set of regular expressions to match the glyph provider name.
+	#For bitmap providers, this is the texture path without 'textures/'.
+	#For TTF providers, this is the TTF file path without 'font/'.
+	#For space providers, this is "font_name / minecraft:space",
+	#where font_name is font definition path without 'font/'.
+	defaultFontRuleSet = ["^minecraft:font\\/(nonlatin_european|accented|ascii|element_ideographs|cjk_punctuations|ellipsis|2em_dash)\\.png$", "^minecraft:include\\/space \\/ minecraft:space$"]
 	#Whether to use text component object as hash key to lookup in layout cache.
 	#If you find that Modern UI text rendering is not compatible with some mods,
 	#you can disable this option for compatibility, but this will decrease performance a bit.

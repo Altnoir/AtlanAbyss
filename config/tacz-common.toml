@@ -8,6 +8,8 @@
 	DefaultGunOtherSoundDistance = 16
 	#Whether or not the player will consume ammo in creative mode
 	CreativePlayerConsumeAmmo = true
+	#Auto reload all the guns in player inventory, useful for pvp servers
+	AutoReloadWhenRespawn = false
 
 [ammo]
 	#Warning: Ammo with explosive properties can break blocks

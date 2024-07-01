@@ -6,7 +6,7 @@
     "texture": "atlanabyss:gun/lod/deagle_pink"
   },
   "hud": "atlanabyss:gun/hud/deagle",
-  "slot": "atlanabyss:gun/slot/ex_deagle_pink",
+  "slot": "atlanabyss:gun/slot/deagle_pink",
   "animation": "tacz:deagle",
   "use_default_animation": "pistol",
   "transform": {
@@ -33,8 +33,8 @@
     "inspect": "tacz:deagle/deagle_inspect",
     "inspect_empty": "tacz:deagle/deagle_inspect_empty",
     "draw": "tacz:deagle/deagle_draw",
-    "shoot": "atlanabyss:deagle/deagle_shoot",
-    "shoot_3p": "atlanabyss:deagle/deagle_shoot_3p",
+    "shoot": "tacz:rpg7/rpg7_shoot",
+    "shoot_3p": "tacz:rpg7/rpg7_shoot",
     "silence": "tacz:deagle/deagle_silence",
     "silence_3p": "tacz:deagle/deagle_silence_3p"
   },

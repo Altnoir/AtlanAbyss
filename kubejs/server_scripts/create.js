@@ -1,9 +1,13 @@
-ServerEvents.recipes(event => {
-    let { recipes } = event;
-    let { kubejs, create } = recipes;
+ServerEvents.recipes(e => {
+    const {
+        recipes: {
+            kubejs,
+            create
+        }
+    } = e;
 
     function remove(id) {
-        event.remove({ id: id })
+        e.remove({ id: id })
     }
 
     // 安山合金
@@ -18,13 +22,19 @@ ServerEvents.recipes(event => {
         'AB',
         'BA'
     ], {
-        A: 'immersive_weathering:moss_clump',
+        A: 'minecraft:moss_block',
         B: 'minecraft:andesite'
     }).id('atlanabyss2:andesite_alloy')
 
     create.mixing('create:andesite_alloy', [
         'minecraft:andesite',
-        'immersive_weathering:moss_clump'
+        'minecraft:moss_block'
     ]).id('atlanabyss2:mixing_andesite_alloy')
-})
 
+    e.recipes.createaddition.charging(
+        'minecraft:diamond',
+        'minecraft:coal',
+        4000,
+        200
+    )
+})

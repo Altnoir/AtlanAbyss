@@ -2,6 +2,9 @@
   "pack.atlanabyss.atlanabyss.name": "AtlanAbyss Pack",
   "pack.atlanabyss.atlanabyss.desc": "AtlanAbyss Pack",
   
-  "atlanabyss.gun.deagle_pink.name": "Deagle Gold 50",
-  "atlanabyss.gun.deagle_gold.name": "Deagle Pink 50"
+  "atlanabyss.gun.deagle_pink.name": "Deagle Gold",
+  "atlanabyss.gun.deagle_gold.name": "Deagle Pink",
+  "atlanabyss.gun.deagle_red.name": "Deagle Red",
+  "atlanabyss.gun.deagle_blue.name": "Deagle Blue",
+  "atlanabyss.gun.deagle_black.name": "Deagle Black"
 }

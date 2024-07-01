@@ -1,0 +1,7 @@
+
+[rendering]
+	#Toggle control name rendering
+	control_name_rendering = true
+	#Play idle console animations
+	console_idle_animations = true
+

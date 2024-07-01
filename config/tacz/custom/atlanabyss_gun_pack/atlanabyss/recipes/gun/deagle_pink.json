@@ -2,27 +2,25 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:nether_stars"
+        "tag": "forge:gems/amethyst"
       },
-      "count": 1
+      "count": 4
     },
     {
       "item": {
         "tag": "forge:ingots/netherite"
-      },
-      "count": 2
+      }
     },
     {
       "item": {
-        "tag": "forge:ingots/steel"
+        "tag": "forge:ingots/iron"
       },
       "count": 42
     },
     {
       "item": {
-        "tag": "forge:gems/amethyst"
-      },
-      "count": 4
+        "tag": "forge:dyes/pink"
+      }
     }
   ],
   "result": {

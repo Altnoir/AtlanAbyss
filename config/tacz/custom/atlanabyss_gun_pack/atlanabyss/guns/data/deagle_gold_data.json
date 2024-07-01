@@ -1,18 +1,18 @@
 {
   "ammo": "tacz:50ae",
-  "rpm": 300,
+  "rpm": 600,
   "bullet": {
     "life": 0.7,
     "bullet_amount": 1,
-    "damage": 42,
+    "damage": 18,
     "tracer_count_interval": 0,
     "extra_damage": {
-      "armor_ignore": 0.5,
+      "armor_ignore": 0.25,
       "head_shot_multiplier": 1.75,
       "damage_adjust": [
-        {"distance": 0.5, "damage": 64},
-        {"distance": 49.5, "damage": 42},
-        {"distance": "infinite", "damage": 24}
+        {"distance": 0.5, "damage": 30},
+        {"distance": 49.5, "damage": 24},
+        {"distance": "infinite", "damage": 18}
       ]
     },
     "speed": 170,
@@ -24,9 +24,9 @@
   },
   "ammo_amount": 7,
   "extended_mag_ammo_amount": [
-    8,
-    10,
-    12
+    12,
+    15,
+    20
   ],
   "bolt": "closed_bolt",
   "reload": {
@@ -45,6 +45,7 @@
   "aim_time": 0.2,
   "sprint_time": 0.2,
   "fire_mode": [
+    "auto",
     "semi"
   ],
   "allow_attachment_types": [
@@ -54,8 +55,8 @@
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [1.8, 1.8]},
-      {"time": 0.4, "value": [1.8, 1.8]},
+      {"time": 0, "value": [0.95, 0.95]},
+      {"time": 0.4, "value": [0.95, 0.95]},
       {"time": 0.65, "value": [-0.225, -0.225]},
       {"time": 0.85, "value": [0.125, 0.125]},
       {"time": 1.1, "value": [0, 0]},

@@ -41,7 +41,7 @@
     }
   },
   "draw_time": 0.35,
-  "put_away_time": 0.6,
+  "put_away_time": 0.75,
   "aim_time": 0.25,
   "sprint_time": 0.2,
   "bolt_action_time": 0.9,
@@ -64,10 +64,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 8,
+    "stand": 8.5,
     "move": 11,
-    "sneak": 4.5,
-    "lie": 3,
+    "sneak": 6.5,
+    "lie": 4.5,
     "aim": 0.05
   },
   "allow_attachment_types": [

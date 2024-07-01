@@ -1,0 +1,5 @@
+
+[compatibility]
+	#Toggle Immersive Portals compatibility (TR 2.0+). 2.0 has limited support and does not recommend enabling this.
+	immersive_portals_support = true
+

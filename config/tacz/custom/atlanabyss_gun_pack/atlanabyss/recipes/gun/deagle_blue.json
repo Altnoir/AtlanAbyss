@@ -1,0 +1,31 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:nether_stars"
+      }
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/netherite"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 42
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/prismarine"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "atlanabyss:deagle_blue"
+  }
+}

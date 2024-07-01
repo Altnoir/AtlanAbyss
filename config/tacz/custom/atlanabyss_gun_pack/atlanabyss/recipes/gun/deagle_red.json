@@ -1,0 +1,30 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:dusts/blaze"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/netherite"
+      }
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 42
+    },
+    {
+      "item": {
+        "tag": "forge:dyes/red"
+      }
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "atlanabyss:deagle_red"
+  }
+}

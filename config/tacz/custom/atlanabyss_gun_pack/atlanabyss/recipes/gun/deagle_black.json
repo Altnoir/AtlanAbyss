@@ -1,0 +1,31 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 38
+    },
+    {
+      "item": {
+        "tag": "forge:storage_blocks/coal"
+      }
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "atlanabyss:deagle_black"
+  }
+}

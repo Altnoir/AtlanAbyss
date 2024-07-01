@@ -36,9 +36,6 @@
 		#note that the block will push further the faster it's pulsing
 		#Range: 0.0 ~ 64.0
 		base_velocity_scaling = 5.0
-		#sets velocity changed flag when pushing entities +
-		#causes pushing animation to be smooth client side but also restricts player movement when being pushed
-		velocity_changed_flag = true
 		#maximum range
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
@@ -184,10 +181,10 @@
 
 		#This is a map of special blocks that can be cleaned with soap
 		[functional.soap.special_blocks]
-			"quark:dirty_glass_pane" = "minecraft:glass_pane"
-			"#alexscaves:cave_paintings" = "alexscaves:smooth_limestone"
-			"quark:dirty_glass" = "minecraft:glass"
 			"minecraft:sticky_piston" = "minecraft:piston"
+			"quark:dirty_glass_pane" = "minecraft:glass_pane"
+			"quark:dirty_glass" = "minecraft:glass"
+			"#alexscaves:cave_paintings" = "alexscaves:smooth_limestone"
 
 	[functional.present]
 		enabled = true
@@ -276,8 +273,9 @@
 
 	[building.ash]
 		enabled = true
-		#Burnable blocks will have a chance to create ash layers when burned
-		ash_from_fire = true
+		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
+		#Range: 0.0 ~ 1.0
+		ash_from_fire_chance = 1.0
 		#Burning mobs will drop ash when they die
 		ash_from_burning_mobs = true
 		#Allows rain to wash away ash layers overtime

@@ -2,8 +2,12 @@
 #.
 #Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
 [client]
+
 	#.
-	#Higher density means more spawned particles.
-	#Range: 0.0 ~ 1.0
-	fanParticleDensity = 0.5
+	#Configure your vision range when submerged in Create Dream n' Desire's custom fluids
+	[client.fluidFogSettings]
+		#.
+		#The vision range through honey will be multiplied by this factor
+		#Range: 0.125 ~ 128.0
+		sap = 1.0
 

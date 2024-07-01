@@ -1,0 +1,17 @@
+{
+  "desaturate": false,
+  "overlay_tooltip": true,
+  "overlay_background": false,
+  "bypass_invulnerable_time": true,
+  "slot_interaction": false,
+  "model_size": 1.0,
+  "cooldown": 10,
+  "ability_tick": 0,
+  "overlay_tooltip_offset_x": 0,
+  "overlay_tooltip_offset_y": 0,
+  "sound_type": "EMPTY",
+  "tooltip_position": "BOTTOM_RIGHT",
+  "overlay_tooltip_color": -2039584,
+  "overlay_background_color": -1873784752,
+  "glowing_color": -171
+}
