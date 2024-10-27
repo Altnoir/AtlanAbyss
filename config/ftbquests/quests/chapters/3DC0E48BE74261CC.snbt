@@ -177,6 +177,11 @@
 				type: "item"
 				item: "tconstruct:seared_ladder"
 			}]
+			rewards: [{
+				id: "0622A05D28D56300"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			disable_toast: true

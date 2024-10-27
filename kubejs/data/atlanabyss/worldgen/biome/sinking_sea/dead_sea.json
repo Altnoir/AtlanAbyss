@@ -27,48 +27,16 @@
       {
         "type": "minecraft:drowned",
         "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:skelewag",
-        "weight": 50,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:frilled_shark",
-        "weight": 10,
-        "minCount": 2,
-        "maxCount": 4
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
     "creature": [],
     "ambient": [],
     "axolotls": [],
-    "underground_water_creature": [
-      {
-        "type": "alexsmobs:mimic_octopus",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 2
-      }
-    ],
+    "underground_water_creature": [],
     "water_creature": [],
-    "water_ambient": [
-      {
-        "type": "alexsmobs:devils_hole_pupfish",
-        "weight": 25,
-        "minCount": 8,
-        "maxCount": 8
-      },
-      {
-        "type": "alexsmobs:blobfish",
-        "weight": 10,
-        "minCount": 8,
-        "maxCount": 8
-      }
-    ],
+    "water_ambient": [],
     "misc": []
   },
   "spawn_costs": {},

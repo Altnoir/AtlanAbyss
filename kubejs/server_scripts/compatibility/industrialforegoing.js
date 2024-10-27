@@ -132,6 +132,20 @@ onEvent('recipes', event => {
         'thermal:machine_frame'
     ).id('atlanabyss:smithing_dissolution_chamber')
 
+    //银空PCB
+    dissolution_chamber([
+        'createaddition:copper_rod',
+        'industrialforegoing:plastic',
+        'createaddition:copper_rod',
+        'create:copper_sheet',
+        'create:copper_sheet',
+        'createaddition:copper_rod',
+        'industrialforegoing:plastic',
+        'createaddition:copper_rod',
+    ], 'kubejs:empty_pcb', 12,
+        'tconstruct:molten_silver', 500,
+        100)
+
     //钢框架
     remove('industrialforegoing:machine_frame_pity')
     dissolution_chamber([

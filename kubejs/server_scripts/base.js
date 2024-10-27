@@ -56,7 +56,7 @@ onEvent('recipes', event => {
 		' DC',
 		'D  '
 	], {
-		A: 'minecraft:amethyst_shard',
+		A: 'kubejs:vibration_mechanism',
 		B: 'minecraft:ender_eye',
 		C: 'thermal:flux_magnet',
 		D: 'minecraft:stick'
@@ -97,7 +97,7 @@ onEvent('recipes', event => {
 	create.sequenced_assembly('kubejs:mass_scrap',
 		desc, [
 		create.deploying(desc, [desc, '#forge:cobblestone'])
-	]).transitionalItem(desc).loops(16).id("atlanabyss:mass_scrap")
+	]).transitionalItem(desc).loops(20).id("atlanabyss:mass_scrap")
 	//灾厄碎片
 	event.custom({
 		type: 'tconstruct:casting_table',
@@ -1030,8 +1030,12 @@ onEvent('recipes', event => {
 		'itemcollectors:basic_collector',
 		'create:nozzle'
 	]).id("atlanabyss:advanced_collector")
-	//下界碎片翻倍
+	//碎片翻倍
 	event.stonecutting('2x minecraft:netherite_scrap', 'minecraft:ancient_debris').id('atlanabyss:cutting_ancient_debris');
+	event.stonecutting('2x kubejs:osmium_scrap', 'kubejs:antiquity_debris').id('atlanabyss:cutting_antiquity_debris');
+	//淵古残骸
+	event.smelting('kubejs:osmium_scrap', 'kubejs:antiquity_debris').xp(5.0).id('atlanabyss:smelting_antiquity_debris')
+	event.blasting('kubejs:osmium_scrap', 'kubejs:antiquity_debris').xp(5.0).id('atlanabyss:blasting_antiquity_debris')
 	//灰烬
 	event.smoking('supplementaries:ash', 'thermal:sawdust').xp(1.35).id("atlanabyss:smoking_ash")
 	//箱装烤马铃薯
@@ -1911,14 +1915,6 @@ onEvent('recipes', event => {
 		create.filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
 		create.cutting(epcb, epcb)
 	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_3")
-	//空PCB2
-	create.sequenced_assembly([
-		'9x kubejs:empty_pcb'
-	], epcb, [
-		create.filling(epcb, [epcb, Fluid.of('tconstruct:molten_silver', 500)]),
-		create.filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
-		create.cutting(epcb, epcb)
-	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_9")
 
 	//PCB
 	create.mechanical_crafting('kubejs:integrated_circuit', [
@@ -2573,7 +2569,7 @@ onEvent('recipes', event => {
 	//原初锭
 	event.custom({
 		type: 'ae2:inscriber',
-		mode: 'inscribe',
+		mode: 'press',
 		result: { item: 'kubejs:virgin_ingot' },
 		ingredients: {
 			top: { item: 'create:refined_radiance' },
@@ -2581,8 +2577,6 @@ onEvent('recipes', event => {
 			bottom: { item: 'create:shadow_steel' }
 		}
 	}).id("atlanabyss:inscriber_virgin_ingot")
-
-
 
 	//铋晶体
 	remove('yuushya:bismuth_crystal')

@@ -16,8 +16,13 @@
         "result": "deny"
     },
     {
-        "dimension": "minecraft:overworld",
-        "mob": "alexsmobs:fly",
+        "dimension": "atlanabyss:paradise",
+        "mincount": 20,
+        "result": "deny"
+    },
+    {
+        "hostile": true,
+        "dimension": "inversia:inversiadim",
         "result": "deny"
     }
 ]

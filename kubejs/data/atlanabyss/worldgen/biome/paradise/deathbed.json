@@ -29,13 +29,68 @@
     }
   },
   "spawners": {
-    "monster": [],
-    "creature": [
+    "monster": [
       {
-        "type": "alexsmobs:bunfungus",
-        "weight": 20,
+        "type": "minecraft:skeleton",
+        "weight": 10,
         "minCount": 4,
         "maxCount": 4
+      },
+      {
+        "type": "biomancy:hungry_flesh_blob",
+        "weight": 70,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "biomancy:legacy_flesh_blob",
+        "weight": 50,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "biomancy:primordial_flesh_blob",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "biomancy:primordial_hungry_flesh_blob",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:sheep",
+        "weight": 12,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:pig",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:chicken",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:cow",
+        "weight": 8,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:rabbit",
+        "weight": 4,
+        "minCount": 2,
+        "maxCount": 3
       }
     ],
     "ambient": [],

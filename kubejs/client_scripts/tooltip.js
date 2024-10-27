@@ -1,27 +1,78 @@
 onEvent('item.tooltip', tooltip => {
-    tooltip.addAdvanced('kubejs:nether_sulfur_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.sulfur_y'));
-        text.add(2, Text.translate('tooltip.kubejs.the_nether'));
+    tooltip.addAdvanced('create:zinc_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.under_forest'));
     });
-    tooltip.addAdvanced('kubejs:nether_aluminum_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.aluminum_y'));
-        text.add(2, Text.translate('tooltip.kubejs.the_nether'));
+    tooltip.addAdvanced('create:deepslate_zinc_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.under_forest'));
+    });
+    tooltip.addAdvanced('thermal:niter_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.under_forest'));
+    });
+    tooltip.addAdvanced('thermal:deepslate_niter_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.under_forest'));
+    });
+    tooltip.addAdvanced('kubejs:diorite_cinnabar_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.major_fault'));
+    });
+    tooltip.addAdvanced('kubejs:diorite_tin_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.major_fault'));
+    });
+    tooltip.addAdvanced('kubejs:diorite_nickel_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.major_fault'));
+    });
+    tooltip.addAdvanced('kubejs:diorite_silver_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.major_fault'));
+    });
+    tooltip.addAdvanced('kubejs:permafrost_fluorite_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.sinking_sea'));
     });
     tooltip.addAdvanced('thermal:deepslate_lead_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.lead_y'));
-        text.add(2, Text.translate('tooltip.kubejs.inversiadim'));
+        text.add(1, Text.translate('tooltip.kubejs.paradise'));
     });
-    tooltip.addAdvanced('kubejs:inversia_uranium_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.uranium_y'));
-        text.add(2, Text.translate('tooltip.kubejs.inversiadim'));
+    tooltip.addAdvanced('thermal:deepslate_silver_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.paradise'));
+    });
+    tooltip.addAdvanced('thermal:deepslate_tin_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.paradise'));
+    });
+    tooltip.addAdvanced('thermal:deepslate_nickel_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.paradise'));
+    });
+    tooltip.addAdvanced('kubejs:antiquity_debris', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.inversiadim'));
+    });
+    tooltip.addAdvanced('kubejs:nether_sulfur_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_nether'));
+    });
+    tooltip.addAdvanced('kubejs:nether_aluminum_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_nether'));
+    });
+    tooltip.addAdvanced('tconstruct:cobalt_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_nether'));
+    });
+    tooltip.addAdvanced('minecraft:nether_gold_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_nether'));
+    });
+    tooltip.addAdvanced('minecraft:nether_quartz_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_nether'));
     });
     tooltip.addAdvanced('kubejs:end_bismuth_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.bismuth_y'));
-        text.add(2, Text.translate('tooltip.kubejs.the_end'));
+        text.add(1, Text.translate('tooltip.kubejs.the_end'));
     });
     tooltip.addAdvanced('ae2:deepslate_quartz_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.quartz_y'));
-        text.add(2, Text.translate('tooltip.kubejs.the_end'));
+        text.add(1, Text.translate('tooltip.kubejs.the_end'));
+    });
+    tooltip.addAdvanced('kubejs:moon_osmium_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_moon'));
+    });
+    tooltip.addAdvanced('kubejs:mercury_silver_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_mercury'));
+    });
+    tooltip.addAdvanced('kubejs:mercury_uranium_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_mercury'));
+    });
+    tooltip.addAdvanced('kubejs:mars_uranium_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.the_mars'));
     });
 
     // ore('minecraft:coal_ore', 'tooltip.kubejs.coal_y', 'tooltip.kubejs.overworld')

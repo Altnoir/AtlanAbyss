@@ -146,14 +146,18 @@ onEvent('recipes', event => {
 
 
     //创造箱子
-    event.custom({
-        type: 'extendedcrafting:compressor',
-        powerCost: 7210000,
-        inputCount: 1000,
-        ingredient: { item: 'minecraft:bedrock' },
-        catalyst: { item: 'kubejs:infinity_ingot' },
-        result: { item: 'create:creative_crate' }
-    }).id('atlanabyss:compressor_creative_crate');
+    create.mechanical_crafting('create:creative_crate', [
+        'CCCCC',
+        'CBBBC',
+        'CBABC',
+        'CBBBC',
+        'CCCCC'
+    ], {
+        A: 'witherstormmod:withered_nether_star',
+        B: 'kubejs:infinity_ingot',
+        C: 'minecraft:bedrock'
+    }).id('atlanabyss:creative_crate')
+
     //创造储罐
     event.custom({
         type: 'extendedcrafting:compressor',

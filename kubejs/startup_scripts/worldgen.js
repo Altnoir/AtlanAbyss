@@ -183,14 +183,27 @@ onEvent('worldgen.add', event => {
   });
 
   event.addOre(ore => {
+    ore.id = 'kubejs:inversia_antiquity_debris'
+    ore.biomes = /^inversia:*/
+
+    ore.addTarget('minecraft:deepslate', 'kubejs:antiquity_debris')//颠倒淵古残骸
+
+    ore.count([1, 8]).squared().triangleHeight(anchors.aboveBottom(180), anchors.absolute(250))
+
+    ore.size = 4
+    ore.noSurface = 1
+    ore.worldgenLayer = 'underground_ores'
+  });
+
+  event.addOre(ore => {
     ore.id = 'kubejs:inversia_lead_ore'
     ore.biomes = /^inversia:*/
 
     ore.addTarget('minecraft:deepslate', 'thermal:deepslate_lead_ore')//颠倒铅矿
 
-    ore.count([24, 32]).squared().triangleHeight(anchors.aboveBottom(180), anchors.absolute(255))
+    ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(180), anchors.absolute(255))
 
-    ore.size = 24
+    ore.size = 11
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -200,9 +213,9 @@ onEvent('worldgen.add', event => {
 
     ore.addTarget('minecraft:deepslate', 'minecraft:deepslate_emerald_ore')//颠倒绿宝石矿
 
-    ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(198), anchors.absolute(255))
+    ore.count([24, 32]).squared().triangleHeight(anchors.aboveBottom(188), anchors.absolute(255))
 
-    ore.size = 11
+    ore.size = 24
     ore.worldgenLayer = 'underground_ores'
   });
 

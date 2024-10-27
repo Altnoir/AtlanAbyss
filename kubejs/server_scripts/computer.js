@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-  let { create } = event.recipes;
+  let { create, thermal } = event.recipes;
 
   let remove = (name) => {
     event.remove({ id: name })
@@ -16,10 +16,21 @@ onEvent('recipes', event => {
   remove('ae2:inscriber/fluix_dust')
   remove('industrialforegoing:laser_drill_ore/certus_quartz')
   remove('create:crushing/compat/ae2/quartz_ore')
+  remove('create:crushing/compat/ae2/deepslate_quartz_ore')
   //末影粉
-  remove('create:compat/ae2/milling/ender_pearl')
+  remove('create:milling/compat/ae2/ender_pearl')
   remove('ae2:inscriber/ender_dust')
-  create.milling(['thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
+  remove('thermal:earth_charge/ender_pearl_dust_from_ender_pearl')
+  remove('thermal:machines/pulverizer/pulverizer_ender_pearl')
+  create.milling(['2x thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
+  thermal.pulverizer(['2x thermal:ender_pearl_dust'], 'minecraft:ender_pearl').experience(0.4).id("atlanabyss:pulverizer_ender_pearl")
+
+  event.custom({
+    type: 'thermal:crystallizer',
+    ingredients: [{ item: 'thermal:ender_pearl_dust' }, { fluid: 'minecraft:water', amount: 100 }],
+    result: [{ item: 'minecraft:ender_pearl' }],
+    energy: 200
+  }).id("atlanabyss:crystallizer_ender_pearl")
 
   create.crushing([
     'ae2:certus_quartz_crystal',

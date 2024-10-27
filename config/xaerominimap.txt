@@ -9,7 +9,7 @@ radarHideInvisibleEntities:true
 allowInternetAccess:true
 #INGAME SETTINGS (DO NOT EDIT!)
 updateNotification:false
-minimap:false
+minimap:true
 caveMaps:2
 caveZoom:1
 showWaypoints:true
@@ -126,4 +126,4 @@ infoDisplay:highlights:true:15:-1
 infoDisplay:light_overlay_indicator:true:15:-1
 infoDisplay:manual_cave_mode_indicator:true:15:-1
 infoDisplay:custom_sub_world:true:15:-1
-module;id=xaerominimap:minimap;active=false;x=-92;y=0;centered=false;fromRight=true;fromBottom=false;flippedVer=false;flippedHor=false;
+module;id=xaerominimap:minimap;active=true;x=-92;y=0;centered=false;fromRight=true;fromBottom=false;flippedVer=false;flippedHor=false;

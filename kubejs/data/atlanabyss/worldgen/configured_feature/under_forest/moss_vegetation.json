@@ -7,11 +7,17 @@
                 {
                     "weight": 5,
                     "data": {
+                        "Name": "supplementaries:wild_flax"
+                    }
+                },
+                {
+                    "weight": 5,
+                    "data": {
                         "Name": "minecraft:cornflower"
                     }
                 },
                 {
-                    "weight": 7,
+                    "weight": 5,
                     "data": {
                         "Name": "minecraft:blue_orchid"
                     }

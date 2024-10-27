@@ -32,41 +32,5 @@
             "minheight": 16,
             "maxheight": 250
         }
-    },
-    {
-        "mob": "alexsmobs:flutter",
-        "persecond": 0.5,
-        "attempts": 1,
-        "amount": {
-            "minimum": 4,
-            "maximum": 5
-        },
-        "conditions": {
-            "dimension": "atlanabyss:giants_cup",
-            "norestrictions": true,
-            "mindist": 5,
-            "maxdist": 60,
-            "minheight": 108,
-            "maxheight": 150,
-            "maxthis": 10
-        }
-    },
-    {
-        "mob": "goblintraders:goblin_trader",
-        "persecond": 0.05,
-        "attempts": 1,
-        "amount": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "conditions": {
-            "dimension": "atlanabyss:under_forest",
-            "norestrictions": true,
-            "mindist": 5,
-            "maxdist": 24,
-            "minheight": 16,
-            "maxheight": 255,
-            "maxthis": 10
-        }
     }
 ]

@@ -63,18 +63,6 @@
         "maxCount": 3
       },
       {
-        "type": "alexsmobs:flutter",
-        "weight": 120,
-        "minCount": 2,
-        "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:raccoon",
-        "weight": 80,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "minecraft:turtle",
         "weight": 5,
         "minCount": 2,

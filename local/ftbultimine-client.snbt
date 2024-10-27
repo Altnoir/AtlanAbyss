@@ -1,0 +1,16 @@
+# Client-specific configuration for FTB Ultimine
+# This file is meant for users to control Ultimine's clientside behaviour and rendering.
+# Changes to this file require you to reload the world
+
+{
+	# Maximum number of blocks the white outline should be rendered for
+	# Keep in mind this may get *very* laggy for large amounts of blocks!
+	# Default: 256
+	# Range: 0 ~ 2147483647
+	render_outline: 256
+	
+	# Manual x offset of FTB Ultimine overlay, required for some modpacks
+	# Default: -1
+	# Range: -∞ ~ +∞
+	x_offset: -1
+}

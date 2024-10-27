@@ -142,7 +142,10 @@
 			x: 0.0d
 			y: -1.5d
 			shape: "hexagon"
-			description: ["或许您需要准备一些工具。"]
+			description: [
+				"或许您需要准备一些工具。"
+				"注：默认的主世界只会生成原版矿物。"
+			]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "5A7F67F2BD3327F6"
@@ -489,7 +492,7 @@
 			y: 12.0d
 			description: [
 				"要塞只会生成在下界，推荐使用结构罗盘寻找“要塞”，或使用末影之眼寻找。"
-				"注：第一个末影之眼在第六层的小屋内。"
+				"注：第一个末影之眼在第六层的小屋内（坐标X和Z都为0）。"
 			]
 			dependencies: ["137563E84BDBF0CC"]
 			id: "31C9BD74CDB26F64"
@@ -513,13 +516,14 @@
 			y: 9.0d
 			description: [
 				"地下七层-颠倒之域"
-				"进入方法：\\n1.在地下六层使用深层传送门\\n2.在下界往上超过360格（薄荷糖和芦荟果冻片无效）"
+				"进入方法：\\n1.在地下六层使用深层传送门。"
 			]
 			dependencies: ["629CFB2AC95A381C"]
 			id: "7DE7DA29AEE73C26"
 			tasks: [{
 				id: "1A5C2BBC58D64D5F"
 				type: "dimension"
+				title: "颠倒之域"
 				icon: "minecraft:amethyst_block"
 				dimension: "inversia:inversiadim"
 			}]
@@ -939,8 +943,8 @@
 			x: -2.0d
 			y: 6.0d
 			description: [
-				"第六层已无法使用水晶传送门进行传送了，你需要在第五层寻找到深渊传送门遗迹（多数情况都埋在地里）。"
-				"深渊传送门无需框架，直接就可进行传送（小提示：这是单行道）。"
+				"第六层已无法使用水晶传送门进行传送了，你需要在第五层寻找到深渊传送门遗迹，位于下层基岩层附近（多数情况都埋在地里）。"
+				"深渊传送门无需框架，直接就可进行传送（小提示：这是单行道，从第六层开始变无法回头）。"
 			]
 			dependencies: ["7B3BD20CA1DED2F8"]
 			id: "71F9AA949923BAB9"
@@ -962,10 +966,7 @@
 			title: "“天堂”"
 			x: -2.0d
 			y: 7.5d
-			description: [
-				"通往第七层需使用深层传送门。\\n搭建方式和水晶传送门类似。"
-				"从第六层返回第五层则需要不断食用芦荟果冻片。"
-			]
+			description: ["通往第七层需使用深层传送门。\\n搭建方式和水晶传送门类似。"]
 			dependencies: ["71F9AA949923BAB9"]
 			id: "629CFB2AC95A381C"
 			tasks: [{
@@ -1004,7 +1005,7 @@
 			title: "“地下森林”"
 			x: -2.0d
 			y: 1.5d
-			description: ["通往地下第二层至第五层的传送门！\\n搭建方式类似于地狱门，但是躺着放的，把传送门放在中间，然后黑曜石围一圈，需要注意的是，传送门只能放在基岩层！"]
+			description: ["通往地下第二层至第五层的传送门！\\n搭建方式呈躺着放的十字形，把传送门放在中间，然后黑曜石放四边，需要注意的是，传送门只能放在基岩层！"]
 			dependencies: [
 				"43F7CFD129A732E5"
 				"36943F6B7F336DF2"
@@ -1044,26 +1045,6 @@
 			}]
 		}
 		{
-			disable_toast: true
-			x: -3.0d
-			y: 7.5d
-			shape: "hexagon"
-			description: ["在第六层使用可†升天†"]
-			dependencies: ["629CFB2AC95A381C"]
-			hide: true
-			id: "681DEC54F97FF794"
-			tasks: [{
-				id: "5D7C0A87B02D9308"
-				type: "item"
-				item: "peculiars:aloe_jelly_slice"
-			}]
-			rewards: [{
-				id: "7E0555BAF0837873"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
 			title: "AU金"
 			x: 0.0d
 			y: 1.5d
@@ -1087,7 +1068,7 @@
 			x: -2.0d
 			y: 3.0d
 			description: [
-				"地下三层-大断层"
+				"地下三层-大断层\\n进入方法和第二层一样。"
 				"这里可直接往下跳前往第四层。"
 			]
 			dependencies: ["668F9E6D1E5EAD90"]
@@ -1114,6 +1095,7 @@
 			description: [
 				"地下四层-不屈花园"
 				"如需返回第三层，可以在当地收集一些薄荷和糖，合成薄荷糖不断地吃掉即可。"
+				"在这里使用第二层的方法可以进入第五层。"
 			]
 			dependencies: ["3F27B137C093E691"]
 			id: "7B3BD20CA1DED2F8"

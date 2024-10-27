@@ -112,7 +112,7 @@ onEvent('block.registry', event => {
         .randomTick((callback) => {
             let { random, block } = callback;
 
-            if (random.nextInt(30) > 1) return;
+            if (random.nextInt(100) > 1) return;
 
             const allFacing = ['north', 'south', 'east', 'west', 'up', 'down'];
             let i = 0, { length } = allFacing;
@@ -184,6 +184,15 @@ onEvent('block.registry', event => {
         .tagBlock('forge:ores_in_ground/mercury')
         .requiresTool(true)
         .displayName('Mercury Uranium Pre');
+    //渊古残骸
+    event.create('antiquity_debris')
+        .material('ancient_debris')
+        .hardness(50.0)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .tagBlock('forge:ores')
+        .requiresTool(true)
+        .displayName('Antiquity Debris');
     //粗铝块
     event.create('raw_aluminum_block')
         .material('stone')

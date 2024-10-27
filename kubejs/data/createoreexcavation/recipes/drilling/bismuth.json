@@ -4,7 +4,7 @@
     "tag": "createoreexcavation:drills"
   },
   "name": "{\"translate\":\"ore.kubejs.bismuth\"}",
-  "weight": 25,
+  "weight": 5,
   "ticks": 20,
   "biomeWhitelist": "forge:is_end",
   "stress": 16,

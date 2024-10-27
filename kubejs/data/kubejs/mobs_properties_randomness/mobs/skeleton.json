@@ -4,12 +4,11 @@
         {
             "id": "minecraft:generic.max_health",
             "modifier_name": "max_health for Skeleton",
-            "amount": 20,
+            "amount": -10,
             "operation": "addition",
             "world_whitelist": {
                 "dimensions": [
-                    "atlanabyss:under_forest",
-                    "atlanabyss:major_fault"
+                    "minecraft:overworld"
                 ]
             }
         }
@@ -23,7 +22,30 @@
                     "enchantments": [
                         {
                             "id": "minecraft:power",
-                            "level": 20,
+                            "level": {
+                                "min": 1,
+                                "max": 10
+                            },
+                            "chance": {
+                                "value": 0.25
+                            }
+                        }
+                    ],
+                    "world_whitelist": {
+                        "dimensions": [
+                            "atlanabyss:under_forest"
+                        ]
+                    }
+                },
+                {
+                    "id": "minecraft:bow",
+                    "enchantments": [
+                        {
+                            "id": "minecraft:power",
+                            "level": {
+                                "min": 5,
+                                "max": 20
+                            },
                             "chance": {
                                 "value": 0.5
                             }
@@ -34,15 +56,38 @@
                             "chance": {
                                 "value": 0.5
                             }
+                        }
+                    ],
+                    "world_whitelist": {
+                        "dimensions": [
+                            "atlanabyss:major_fault"
+                        ]
+                    }
+                },
+                {
+                    "id": "minecraft:bow",
+                    "enchantments": [
+                        {
+                            "id": "minecraft:power",
+                            "level": {
+                                "min": 10,
+                                "max": 30
+                            }
+                        },
+                        {
+                            "id": "minecraft:punch",
+                            "level": 5
                         },
                         {
                             "id": "minecraft:flame",
-                            "level": 1,
-                            "chance": {
-                                "value": 0.5
-                            }
+                            "level": 5
                         }
-                    ]
+                    ],
+                    "world_whitelist": {
+                        "dimensions": [
+                            "atlanabyss:paradise"
+                        ]
+                    }
                 }
             ]
         }

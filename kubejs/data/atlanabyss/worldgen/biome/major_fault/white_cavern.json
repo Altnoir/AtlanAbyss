@@ -52,34 +52,9 @@
         "weight": 10,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:spawn_egg_rocky_roller",
-        "weight": 20,
-        "minCount": 2,
-        "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:spawn_egg_centipede",
-        "weight": 30,
-        "minCount": 2,
-        "maxCount": 2
       }
     ],
-    "creature": [
-      {
-        "type": "alexsmobs:jerboa",
-        "weight": 80,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:tusklin",
-        "weight": 40,
-        "minCount": 4,
-        "maxCount": 4
-      }
-    ],
+    "creature": [],
     "ambient": [],
     "axolotls": [
       {

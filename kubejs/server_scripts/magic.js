@@ -91,6 +91,18 @@ onEvent('recipes', event => {
     ])
         .id('atlanabyss:petal_apothecary_gourmaryllis')
 
+    //自然水晶
+    remove('botania:natura_pylon')
+    event.shaped('botania:natura_pylon', [
+        ' A ',
+        'ABA',
+        ' C '
+    ], {
+        A: 'botania:terrasteel_nugget',
+        B: 'botania:mana_pylon',
+        C: 'kubejs:vibration_mechanism'
+    }).id('atlanabyss:natura_pylon')
+
 
     //附魔灌注台
     remove('enchantinginfuser:enchanting_infuser')

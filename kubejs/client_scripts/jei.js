@@ -314,7 +314,7 @@ onEvent('jei.information', event => {
 	event.add('biggerreactors:cyanite_ingot', ['核废料', '可通过Ⅱ型裂变反应堆的产出获得。'])
 	event.add('kubejs:divine_ore', ['颠倒维度特产品', '使用带时运的稿子破坏深板岩概率掉落。'])
 	event.add('kubejs:osmium_scrap', ['守卫者死亡时概率掉落。', '（也许你需要设计建造一个守卫者农场）'])
-	event.add('minecraft:ender_eye', ['末影之眼只能通过复制再生。', '（第一个末影之眼需从地下第六层的小屋中获取）'])
+	event.add('minecraft:ender_eye', ['末影之眼只能通过复制再生。', '（第一个末影之眼需从地下第六层的小屋中获取，默认在X,Z都为0的坐标）'])
 })
 
 onEvent('jei.add.items', event => {

@@ -377,8 +377,7 @@ onEvent('tags.items', event => {
 		'botania:record_gaia_1', 'botania:record_gaia_2',
 		'quark:music_disc_endermosh', 'neapolitan:music_disc_hullabaloo',
 		'minecraft:music_disc_otherside', 'minecraft:music_disc_pigstep',
-		'integrated_stronghold:music_disc_forlorn', 'integrated_stronghold:disc_fragment_sight',
-		'alexsmobs:music_disc_thime', 'alexsmobs:music_disc_daze'
+		'integrated_stronghold:music_disc_forlorn', 'integrated_stronghold:disc_fragment_sight'
 	]);
 	//专辑
 	event.add('atlanabyss:albums', [

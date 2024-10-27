@@ -35,12 +35,6 @@
         "weight": 100,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "minecraft:enderman",
-        "weight": 10,
-        "minCount": 1,
-        "maxCount": 4
       }
     ],
     "creature": [
@@ -79,12 +73,6 @@
         "weight": 20,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "alexsmobs:gorilla",
-        "weight": 20,
-        "minCount": 2,
-        "maxCount": 2
       }
     ],
     "ambient": [],
@@ -119,9 +107,7 @@
       "atlanabyss:under_forest/ground_flower",
       "atlanabyss:under_forest/stone_pile",
       "atlanabyss:under_forest/yucca_tree_1",
-      "atlanabyss:under_forest/leafcutter_anthill",
-      "atlanabyss:under_forest/monkey_brush",
-      "atlanabyss:under_forest/banana"
+      "atlanabyss:under_forest/monkey_brush"
     ],
     [
       "minecraft:monster_room",
@@ -172,9 +158,9 @@
       "minecraft:rooted_azalea_tree",
       "minecraft:spore_blossom",
       "minecraft:classic_vines_cave_feature",
-      "atlanabyss:under_forest/patch_adzuki_sprouts",
-      "atlanabyss:under_forest/patch_strawberry_bush",
-      "atlanabyss:under_forest/patch_vanilla_vine",
+      "atlanabyss:under_forest/flower_strangeness",
+      "atlanabyss:under_forest/vanilla_vines",
+      "atlanabyss:under_forest/wild_rice",
       "atlanabyss:under_forest/lake_patch"
     ],
     [

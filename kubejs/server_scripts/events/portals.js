@@ -59,13 +59,28 @@ onEvent('block.right_click', (e) => {
         let ygo = h + block.y;
         let zgo = Math.round(block.z / 2);
 
-        per.putDouble("pos_x", block.x)
-        per.putDouble("pos_y", block.y - 5)
-        per.putDouble("pos_z", block.z)
+        // per.putDouble("pos_x", block.x)
+        // per.putDouble("pos_y", block.y - 5)
+        // per.putDouble("pos_z", block.z)
         player.playSound('minecraft:block.portal.trigger');
         server.runCommandSilent(`execute in ${dimGo} as ${PlayerId} run tp ${xgo} ${ygo} ${zgo}`);
         player.potionEffects.add('minecraft:slow_falling', 1000);
         player.playSound('minecraft:block.portal.travel');
+    }
+
+    function goAbyss3(dimGo, h) {
+        let xgo = Math.round(block.x / 2);
+        let ygo = h - block.y;
+        let zgo = Math.round(block.z / 2);
+
+        player.playSound('minecraft:block.portal.trigger');
+        server.runCommandSilent(`execute in ${dimGo} as ${PlayerId} run tp ${xgo} ${ygo - 2} ${zgo}`);
+        server.runCommandSilent(`execute in ${dimGo} run fill ${xgo} ${ygo - 1} ${zgo} ${xgo} ${ygo - 2} ${zgo} air`);
+        player.potionEffects.add('minecraft:slow_falling', 200);
+        server.scheduleInTicks(1, () => {
+            player.playSound('minecraft:block.portal.travel');
+            //server.tell(`${xgo},${ygo},${zgo}`)
+        });
     }
 
 
@@ -130,19 +145,11 @@ onEvent('block.right_click', (e) => {
         }
     } else if (block.id == portalBlock[2]) {
         if (dim == sev) {
-            if (abyssPortal) {
-                if (block.y >= 250) {
-                    backAbyss(six, 255, 0);
-                } else {
-                    player.setStatusMessage('§c传送门过矮');
-                }
-            } else {
-                player.setStatusMessage('§c结构错误');
-            }
+            player.setStatusMessage('§c无法使用！');
         } else if (dim == six) {
             if (abyssPortal) {
                 if (block.y <= 5) {
-                    goAbyss(sev, 255, 0);
+                    goAbyss3(sev, 255);
                 } else {
                     player.setStatusMessage('§c传送门过高');
                 }
@@ -181,18 +188,18 @@ onEvent('item.food_eaten', (e) => {
     let PlayerId = player.getName().getString();
     let levitation = playerEffect.getActive('minecraft:levitation');
 
-    function backAbyss2(dimback) {
-        let xback = per.getDouble(`pos_x`);
-        let yback = per.getDouble(`pos_y`);
-        let zback = per.getDouble(`pos_z`);
+    // function backAbyss2(dimback) {
+    //     let xback = per.getDouble(`pos_x`);
+    //     let yback = per.getDouble(`pos_y`);
+    //     let zback = per.getDouble(`pos_z`);
 
-        player.playSound('minecraft:block.portal.trigger');
-        server.runCommandSilent(`execute in ${dimback} as ${PlayerId} run tp ${xback} ${yback + 6} ${zback}`)
-        server.scheduleInTicks(20, () => {
-            player.playSound('minecraft:block.portal.travel');
-            //server.tell(`${xgo},${ygo},${zgo}`)
-        });
-    }
+    //     player.playSound('minecraft:block.portal.trigger');
+    //     server.runCommandSilent(`execute in ${dimback} as ${PlayerId} run tp ${xback} ${yback + 6} ${zback}`)
+    //     server.scheduleInTicks(20, () => {
+    //         player.playSound('minecraft:block.portal.travel');
+    //         //server.tell(`${xgo},${ygo},${zgo}`)
+    //     });
+    // }
 
 
     // 恰薄荷糖飞天
@@ -211,17 +218,17 @@ onEvent('item.food_eaten', (e) => {
         }
     }
     // 恰芦荟果冻片飞天
-    if (dim == six && item.id == 'peculiars:aloe_jelly_slice') {
-        if (player.y >= 512) {
-            backAbyss2(fiv);
-        } else if (levitation == null) {
-            playerEffect.add('minecraft:levitation', 60);
-        } else {
-            let lea = levitation.amplifier + 1;
-            let led = levitation.duration;
-            let leTime = Math.round(led + 60);
-            let leLevel = Math.min(lea, 9);
-            playerEffect.add('minecraft:levitation', leTime, leLevel);
-        }
-    }
+    // if (dim == six && item.id == 'peculiars:aloe_jelly_slice') {
+    //     if (player.y >= 512) {
+    //         backAbyss2(fiv);
+    //     } else if (levitation == null) {
+    //         playerEffect.add('minecraft:levitation', 60);
+    //     } else {
+    //         let lea = levitation.amplifier + 1;
+    //         let led = levitation.duration;
+    //         let leTime = Math.round(led + 60);
+    //         let leLevel = Math.min(lea, 9);
+    //         playerEffect.add('minecraft:levitation', leTime, leLevel);
+    //     }
+    // }
 })

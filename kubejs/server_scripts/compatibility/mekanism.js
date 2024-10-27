@@ -325,33 +325,35 @@ onEvent('recipes', event => {
     mekanism.enriching('12x thermal:lead_dust', 'thermal:raw_lead_block').id('atlanabyss:enriching_raw_lead_block')
     mekanism.enriching('2x thermal:lead_dust', '#forge:ores/lead').id('atlanabyss:enriching_ore_lead')
 
+    mekanism.enriching('2x kubejs:osmium_scrap', 'kubejs:antiquity_debris').id('atlanabyss:enriching_antiquity_debris')
+
     mekanism.crushing('thermal:steel_dust', 'thermal:steel_ingot').id('atlanabyss:crushing_steel_ingot')
     mekanism.metallurgic_infusing('thermal:steel_dust', 'mekanism:enriched_iron', 'mekanism:carbon', 10).id('atlanabyss:metallurgic_infusing_steel_dust')
 
     //赛特斯石英粉
     remove('mekanism:compat/ae2/certus_ore_to_dust')
-    mekanism.enriching('5x ae2:certus_quartz_dust', 'ae2:deepslate_quartz_ore').id('atlanabyss:deepslate_quartz_ore')
+    mekanism.crushing('5x ae2:certus_quartz_dust', 'ae2:deepslate_quartz_ore').id('atlanabyss:deepslate_quartz_ore')
     //黑曜石粉
     remove('mekanism:enriching/conversion/obsidian_to_obsidian_dust')
-    mekanism.enriching('4x create:powdered_obsidian', 'minecraft:obsidian').id('atlanabyss:enriching_obsidian')
+    mekanism.crushing('4x create:powdered_obsidian', 'minecraft:obsidian').id('atlanabyss:enriching_obsidian')
     //石英粉
     remove('mekanism:processing/emerald/to_dust')
-    mekanism.enriching('thermal:quartz_dust', 'minecraft:quartz').id('atlanabyss:enriching_quartz')
+    mekanism.crushing('thermal:quartz_dust', 'minecraft:quartz').id('atlanabyss:enriching_quartz')
     //绿宝石粉
     remove('mekanism:processing/quartz/to_dust')
-    mekanism.enriching('thermal:emerald_dust', 'minecraft:emerald').id('atlanabyss:enriching_emerald')
+    mekanism.crushing('thermal:emerald_dust', 'minecraft:emerald').id('atlanabyss:enriching_emerald')
     //钻石粉
     remove('mekanism:processing/diamond/to_dust')
-    mekanism.enriching('thermal:diamond_dust', 'minecraft:diamond').id('atlanabyss:enriching_diamond')
+    mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond').id('atlanabyss:enriching_diamond')
     //下界合金粉
     remove('mekanism:processing/netherite/ingot_to_dust')
     remove('mekanism:processing/netherite/scrap_to_dust')
-    mekanism.enriching('thermal:netherite_dust', 'minecraft:netherite_ingot').id('atlanabyss:enriching_netherite_ingot')
+    mekanism.crushing('thermal:netherite_dust', 'minecraft:netherite_ingot').id('atlanabyss:enriching_netherite_ingot')
     mekanism.metallurgic_infusing('thermal:netherite_dust', '4x minecraft:netherite_scrap', 'mekanism:gold', 40).id('atlanabyss:metallurgic_infusing_netherite_dust')
     //硫粉
     remove('mekanism:injecting/gunpowder_to_sulfur')
     remove('mekanism:reaction/coal_gasification/blocks_coals')
-    mekanism.injecting('thermal:sulfur_dust', 'minecraft:gunpowder', 'mekanism:hydrogen_chloride').id('atlanabyss:injecting_sulfur_dust')
+    mekanism.injecting('thermal:sulfur_dust', 'minecraft:gunpowder', { gas: 'mekanism:hydrogen_chloride', amount: 1 }).id('atlanabyss:injecting_sulfur_dust')
     event.custom({
         "type": "mekanism:reaction",
         "itemInput": {
@@ -788,6 +790,17 @@ onEvent('recipes', event => {
         B: 'mekanism:qio_drive_time_dilating',
         C: 'mekanism:pellet_antimatter'
     }).id('atlanabyss:qio_drive_supermassive')
+
+    //化配置卡
+    remove('mekanism:configuration_card')
+    event.shaped('mekanism:configuration_card', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'industrialforegoing:plastic',
+        B: '#forge:circuits/basic'
+    }).id('atlanabyss:configuration_card');
 
     //数字矿机
     remove('mekanism:digital_miner')

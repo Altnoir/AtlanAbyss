@@ -1,0 +1,71 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+        },
+        "prioritize_tip": true,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:weighted_list",
+                    "distribution": [
+                        {
+                            "weight": 5,
+                            "data": {
+                                "type": "minecraft:uniform",
+                                "value": {
+                                    "min_inclusive": 1,
+                                    "max_inclusive": 4
+                                }
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "data": {
+                                "type": "minecraft:uniform",
+                                "value": {
+                                    "min_inclusive": 4,
+                                    "max_inclusive": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "neapolitan:vanilla_vine_plant",
+                                "Properties": {
+                                    "facing": "up"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                        {
+                            "weight": 1,
+                            "data": {
+                                "Name": "neapolitan:vanilla_vine",
+                                "Properties": {
+                                    "facing": "up"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

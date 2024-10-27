@@ -1,0 +1,16 @@
+{
+    "item.biomancy.hungry_flesh_blob_spawn_egg": "饥饿的生骸刷怪蛋",
+    "item.biomancy.flesh_blob_spawn_egg": "生骸刷怪蛋",
+    "item.biomancy.legacy_flesh_blob_spawn_egg": "生骸至宝刷怪蛋",
+    "item.biomancy.primordial_flesh_blob_spawn_egg": "原始生骸刷怪蛋",
+    "item.biomancy.primordial_hungry_flesh_blob_spawn_egg": "饥饿的原始生骸刷怪蛋",
+    "entity.biomancy.hungry_flesh_blob": "饥饿的生骸",
+    "entity.biomancy.flesh_blob": "生骸",
+    "entity.biomancy.legacy_flesh_blob": "生骸至宝",
+    "entity.biomancy.primordial_flesh_blob": "原始生骸",
+    "entity.biomancy.primordial_hungry_flesh_blob": "饥饿的原始生骸",
+    "sounds.biomancy.entity.flesh_blob.jump": "生骸：蹦跶",
+    "sounds.biomancy.entity.flesh_blob.hurt": "生骸：受时",
+    "sounds.biomancy.entity.flesh_blob.death": "生骸：死亡",
+    "sounds.biomancy.entity.flesh_blob.ambient": "生骸声"
+}

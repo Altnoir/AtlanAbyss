@@ -69,6 +69,12 @@
     ],
     "creature": [
       {
+        "type": "goblintraders:goblin_trader",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
         "type": "minecraft:sheep",
         "weight": 12,
         "minCount": 4,
@@ -188,7 +194,8 @@
       "minecraft:lush_caves_vegetation",
       "minecraft:rooted_azalea_tree",
       "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:classic_vines_cave_feature",
+      "atlanabyss:under_forest/wild_rice"
     ],
     [
       "minecraft:freeze_top_layer"
