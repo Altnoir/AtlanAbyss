@@ -16,6 +16,11 @@
         "result": "deny"
     },
     {
+        "dimension": "atlanabyss:secret_garden",
+        "mincount": 20,
+        "result": "deny"
+    },
+    {
         "dimension": "atlanabyss:paradise",
         "mincount": 20,
         "result": "deny"

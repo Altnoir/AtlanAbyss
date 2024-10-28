@@ -75,6 +75,10 @@ onEvent('item.tooltip', tooltip => {
         text.add(1, Text.translate('tooltip.kubejs.the_mars'));
     });
 
+    tooltip.addAdvanced('industrialforegoing:infinity_nuke', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.infinity_nuke'));
+    });
+
     // ore('minecraft:coal_ore', 'tooltip.kubejs.coal_y', 'tooltip.kubejs.overworld')
     // ore('minecraft:iron_ore', 'tooltip.kubejs.iron_y', 'tooltip.kubejs.overworld')
     // ore('minecraft:lapis_ore', 'tooltip.kubejs.lapis_y', 'tooltip.kubejs.overworld')

@@ -13,7 +13,16 @@
                     "hard": 5
                 }
             },
-            "operation": "addition"
+            "operation": "addition",
+            "world_whitelist": {
+                "dimensions": [
+                    "atlanabyss:under_forest",
+                    "atlanabyss:major_fault",
+                    "atlanabyss:secret_garden",
+                    "atlanabyss:sinking_sea",
+                    "atlanabyss:paradise"
+                ]
+            }
         },
         {
             "id": "minecraft:generic.armor",

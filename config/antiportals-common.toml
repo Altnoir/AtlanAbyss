@@ -1,0 +1,15 @@
+
+[Config]
+	#Change to 'false' if you want to reactivate Nether Portals
+	AntiNether = true
+	#Change to 'false' if you want to reactivate End Portals
+	AntiEnd = false
+	#Change to 'true' if you want to disable Ender Eye to be thrown in the air
+	AntiEye = false
+	#Add here the dimensions that you want to block. Example: 'minecraft:the_nether' or 'minecraft:the_end'
+	BlockedDimensions = []
+	#Change to 'true' if you want to OPs to bypass the mod
+	ShouldOPBypass = true
+	#Change to 'true' if you want to disable the End Remastered Eye
+	DisableEndRemasteredEye = false
+

@@ -145,6 +145,7 @@
 			description: [
 				"或许您需要准备一些工具。"
 				"注：默认的主世界只会生成原版矿物。"
+				"空岛模式没有矿物。"
 			]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
@@ -206,7 +207,10 @@
 			x: 1.0d
 			y: -2.0d
 			shape: "hexagon"
-			description: ["整合包限定的幸运方块：只有玩家击杀生物实体时，有1%概率掉落，并且免疫抢夺效果。"]
+			description: [
+				"整合包限定的幸运方块：只有玩家击杀生物实体时，有1%概率掉落，并且免疫抢夺效果。"
+				"幸运方块的用途比你想象的还要多。"
+			]
 			dependencies: ["5A7F67F2BD3327F6"]
 			id: "352BC5448ACDEF10"
 			tasks: [{
@@ -445,7 +449,7 @@
 			title: "“地狱”"
 			x: -2.0d
 			y: 10.5d
-			description: ["从第七层直接往下跳便可直达下界上层。\\n注：在下界中的敌对生物，生命值会随着距离出生点越远越高（但是掉落物也会随之变多，看你愿不愿意冒险了）。"]
+			description: ["从第七层直接往下跳便可直达下界上层。\\n注：在下界中的敌对生物，生命值会随着距离出生点越远越高（但是掉落物也会随之变多）。"]
 			dependencies: ["7DE7DA29AEE73C26"]
 			id: "137563E84BDBF0CC"
 			tasks: [{
@@ -492,7 +496,7 @@
 			y: 12.0d
 			description: [
 				"要塞只会生成在下界，推荐使用结构罗盘寻找“要塞”，或使用末影之眼寻找。"
-				"注：第一个末影之眼在第六层的小屋内（坐标X和Z都为0）。"
+				"注：第一个末影之眼在第六层的小屋内（坐标X、Z都为0）。"
 			]
 			dependencies: ["137563E84BDBF0CC"]
 			id: "31C9BD74CDB26F64"
@@ -540,8 +544,8 @@
 			y: 9.0d
 			shape: "hexagon"
 			description: [
-				"恩赐之石：颠倒之域的特产品"
-				"使用带时运的稿子挖掘深板岩可便有概率获得"
+				"恩赐之石：颠倒之域的特产品。"
+				"使用带时运的稿子挖掘深板岩可便有概率获得。"
 			]
 			dependencies: ["7DE7DA29AEE73C26"]
 			hide: true
@@ -987,7 +991,10 @@
 			x: 3.0d
 			y: 2.5d
 			shape: "hexagon"
-			description: ["如果没找到自然生成的黑曜石，可以把水浇在岩浆上，这样便有了黑曜石，另外你还需要钻石镐以及以上的稿子用于挖掘黑曜石。"]
+			description: [
+				"如果没找到自然生成的黑曜石，可以把水浇在岩浆上，这样便有了黑曜石，另外你还需要钻石镐以及以上的稿子用于挖掘黑曜石。"
+				"温馨提示：下界传送门已禁用！"
+			]
 			dependencies: ["2EAB82EBAF44C882"]
 			id: "23DBDED6263BF172"
 			tasks: [{
@@ -1110,6 +1117,26 @@
 				id: "57CE562AF5873149"
 				type: "xp"
 				auto: "enabled"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -3.0d
+			y: 10.5d
+			shape: "hexagon"
+			description: ["地狱和光环搭配更佳！"]
+			dependencies: ["137563E84BDBF0CC"]
+			hide: true
+			id: "07F20BDF17691AEC"
+			tasks: [{
+				id: "0CBB1E8572BE130B"
+				type: "item"
+				item: "kubejs:halo_gashapon"
+			}]
+			rewards: [{
+				id: "5456FFDC555FBB4C"
+				type: "xp"
 				xp: 10
 			}]
 		}

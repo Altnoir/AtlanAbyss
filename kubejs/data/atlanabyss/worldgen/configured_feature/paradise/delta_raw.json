@@ -2,7 +2,7 @@
     "type": "minecraft:delta_feature",
     "config": {
         "contents": {
-            "Name": "kubejs:raw_aluminum_block"
+            "Name": "minecraft:gold_block"
         },
         "rim": {
             "Name": "thermal:sulfur_block"
@@ -11,7 +11,7 @@
             "type": "minecraft:uniform",
             "value": {
                 "min_inclusive": 2,
-                "max_inclusive": 7
+                "max_inclusive": 6
             }
         },
         "rim_size": {

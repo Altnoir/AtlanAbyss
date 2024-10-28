@@ -112,9 +112,9 @@ onEvent('worldgen.add', event => {
 
     ore.addTarget('beyond_earth:moon_stone', 'kubejs:moon_osmium_ore') //月球锇矿
 
-    ore.count([16, 32]).squared().triangleHeight(anchors.aboveBottom(9), anchors.absolute(90))
+    ore.count([16, 48]).squared().triangleHeight(anchors.aboveBottom(9), anchors.absolute(90))
 
-    ore.size = 9
+    ore.size = 11
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -126,7 +126,7 @@ onEvent('worldgen.add', event => {
 
     ore.count([24, 42]).squared().triangleHeight(anchors.aboveBottom(-32), anchors.absolute(70))
 
-    ore.size = 9
+    ore.size = 13
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -142,7 +142,7 @@ onEvent('worldgen.add', event => {
 
     ore.count([9, 18]).squared().triangleHeight(anchors.aboveBottom(-16), anchors.absolute(70))
 
-    ore.size = 9
+    ore.size = 15
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -154,7 +154,7 @@ onEvent('worldgen.add', event => {
 
     ore.count([27, 36]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(16))
 
-    ore.size = 21
+    ore.size = 24
     ore.worldgenLayer = 'underground_ores'
   });
 
@@ -176,9 +176,9 @@ onEvent('worldgen.add', event => {
 
     ore.addTarget('#forge:netherrack', 'kubejs:nether_aluminum_ore')//下界铝矿
 
-    ore.count([8, 16]).squared().triangleHeight(anchors.aboveBottom(80), anchors.absolute(128))
+    ore.count([8, 20]).squared().triangleHeight(anchors.aboveBottom(64), anchors.absolute(128))
 
-    ore.size = 6
+    ore.size = 9
     ore.worldgenLayer = 'underground_ores'
   });
 

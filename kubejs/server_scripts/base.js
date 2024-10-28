@@ -942,7 +942,7 @@ onEvent('recipes', event => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'minecraft:ender_eye',
+		A: 'minecraft:string',
 		B: '#forge:stone',
 		C: 'minecraft:compass'
 	}).id("atlanabyss:explorerscompass")
@@ -1766,6 +1766,8 @@ onEvent('recipes', event => {
 	create.haunting('thermal:earth_charge', 'thermal:basalz_powder').id('atlanabyss:haunting_earth_charge')//裂岩弹
 	create.haunting('minecraft:fire_charge', 'minecraft:blaze_powder').id('atlanabyss:haunting_fire_charge')//火焰弹
 	create.haunting('minecraft:twisting_vines', 'minecraft:vine').id('atlanabyss:haunting_vine')//缠怨藤
+	create.haunting('minecraft:turtle_egg', 'minecraft:egg').id('atlanabyss:haunting_egg')//海龟蛋
+	create.haunting('minecraft:goat_spawn_egg', 'minecraft:sheep_spawn_egg').id('atlanabyss:haunting_sheep_spawn_egg')//山羊蛋
 
 	event.blasting('minecraft:weeping_vines', 'minecraft:vine').id('atlanabyss:blasting_vine')//垂泪藤
 
@@ -2036,6 +2038,103 @@ onEvent('recipes', event => {
 		Fluid.of('kubejs:lucky_fluid', 1000)]
 	).id("atlanabyss:compacting_uranium_from_lucky")
 
+	//幸运刷怪蛋
+	event.shaped('minecraft:sheep_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:white_wool',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:sheep_spawn_egg')
+	event.shaped('minecraft:cow_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:wheat',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:cow_spawn_egg')
+	event.shaped('minecraft:chicken_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:wheat_seeds',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:chicken_spawn_egg')
+	event.shaped('minecraft:pig_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:carrot',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:pig_spawn_egg')
+	event.shaped('minecraft:fox_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:sweet_berries',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:fox_spawn_egg')
+	event.shaped('minecraft:horse_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:golden_carrot',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:horse_spawn_egg')
+	event.shaped('minecraft:llama_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:hay_block',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:llama_spawn_egg')
+	event.shaped('minecraft:panda_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:bamboo',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:panda_spawn_egg')
+	event.shaped('minecraft:cat_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:string',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:cat_spawn_egg')
+	event.shaped('minecraft:wolf_spawn_egg', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'minecraft:bone',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:wolf_spawn_egg')
+	event.shaped('minecraft:slime_spawn_egg', [
+		'ABA',
+		'BAB',
+		'ABA'
+	], {
+		A: 'minecraft:slime_ball',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:slime_spawn_egg')
+	event.shaped('minecraft:villager_spawn_egg', [
+		'ABA',
+		'BAB',
+		'ABA'
+	], {
+		A: 'minecraft:emerald',
+		B: 'kubejs:lucky_block'
+	}).id('atlanabyss:villager_spawn_egg')
 
 	//压力部件
 	const pm = ('kubejs:incomplete_pressure_mechanism')

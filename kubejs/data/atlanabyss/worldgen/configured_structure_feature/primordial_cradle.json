@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "biomes": "#atlanabyss:is_paradise",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "atlanabyss:primordial_cradle",
+    "size": 1
+  }
+}

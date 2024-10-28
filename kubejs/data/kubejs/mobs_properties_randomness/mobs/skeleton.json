@@ -85,7 +85,8 @@
                     ],
                     "world_whitelist": {
                         "dimensions": [
-                            "atlanabyss:paradise"
+                            "atlanabyss:paradise",
+                            "minecraft:the_nether"
                         ]
                     }
                 }

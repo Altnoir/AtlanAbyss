@@ -1,0 +1,33 @@
+{
+    "feature": "atlanabyss:major_fault/raw_aluminum_block",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": {
+                "type": "minecraft:uniform",
+                "value": {
+                    "min_inclusive": 12,
+                    "max_inclusive": 32
+                }
+            }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:trapezoid",
+                "min_inclusive": {
+                    "above_bottom": 32
+                },
+                "max_inclusive": {
+                    "below_top": 32
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -373,6 +373,8 @@
     "tooltip.kubejs.mixed_herb_brg":"§6可清除体内所有毒素，恢复大量生命值",
     "tooltip.kubejs.mixed_herb_yrg":"§6可暂时提升生命上限，恢复大量生命值",
 
+    "tooltip.kubejs.infinity_nuke":"§c危险物品，小心使用，如坏存档，概不负责",
+
     "kubejs.alice.name":"§e爱丽丝的光环",
     "kubejs.azusa.name":"§e梓的光环",
     "kubejs.shiroko.name":"§e白子的光环",
