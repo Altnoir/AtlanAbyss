@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "minecraft:red_mushroom_block",
+      "Properties": {
+        "down": "true",
+        "east": "true",
+        "north": "true",
+        "south": "true",
+        "up": "true",
+        "west": "true"
+      }
+    },
+    "decor_state": {
+      "Name": "botania:blaze_block"
+    },
+    "stem_state": {
+      "Name": "botania:livingwood_log",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "botania:scorched_grass"
+    },
+    "planted": false
+  }
+}

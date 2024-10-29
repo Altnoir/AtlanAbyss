@@ -297,6 +297,29 @@ onEvent('recipes', event => {
     botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:purple_archwood_log', 30).id("atlanabyss:livingwood_by_purple")
     botania.pure_daisy('botania:livingwood_log', 'ars_nouveau:red_archwood_log', 30).id("atlanabyss:livingwood_by_red")
 
+    //荧光花花瓣
+    function petal(dye) {
+        event.shapeless(Item.of(`botania:${dye}_petal`, 2), [
+            `botania:${dye}_shiny_flower`
+        ]).id(`atlanabyss:${dye}_petal_3`)
+    }
+    petal('white')
+    petal('light_gray')
+    petal('gray')
+    petal('black')
+    petal('brown')
+    petal('orange')
+    petal('magenta')
+    petal('yellow')
+    petal('lime')
+    petal('pink')
+    petal('cyan')
+    petal('purple')
+    petal('gray')
+    petal('blue')
+    petal('green')
+    petal('red')
+
 
     //创造书
     event.custom({

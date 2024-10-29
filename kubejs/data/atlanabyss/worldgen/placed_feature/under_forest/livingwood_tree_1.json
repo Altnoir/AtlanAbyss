@@ -1,13 +1,9 @@
 {
-  "feature": "atlanabyss:under_forest/dream_tree_1",
+  "feature": "atlanabyss:under_forest/livingwood_tree_1",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 3
-    },
-    {
       "type": "minecraft:count_on_every_layer",
-      "count": 1
+      "count": 8
     },
     {
       "type": "minecraft:block_predicate_filter",

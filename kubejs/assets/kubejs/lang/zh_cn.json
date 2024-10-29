@@ -350,7 +350,7 @@
     "tooltip.kubejs.emerald_y":"§7生成高度：Y=§6 -16§7至§6480",
 
     "tooltip.kubejs.overworld":"§7生成维度：§2主世界",
-    "tooltip.kubejs.under_forest":"§7生成维度：§a大断层",
+    "tooltip.kubejs.under_forest":"§7生成维度：§a地下森林",
     "tooltip.kubejs.major_fault":"§7生成维度：§f大断层",
     "tooltip.kubejs.sinking_sea":"§7生成维度：§3沉沦之海",
     "tooltip.kubejs.paradise":"§7生成维度：§e矿物天堂",
@@ -575,6 +575,7 @@
 
     "biome.atlanabyss.under_forest/arch_forest":"至高森林",
     "biome.atlanabyss.under_forest/strangeness_forest":"奇异森林",
+    "biome.atlanabyss.under_forest/livingwood_forest":"活木森林",
     "biome.atlanabyss.under_forest/lush_caves":"繁茂洞穴",
     "biome.atlanabyss.under_forest/dripstone_cavern":"大溶洞",
     "biome.atlanabyss.under_forest/eroded_basin":"侵蚀盆地",

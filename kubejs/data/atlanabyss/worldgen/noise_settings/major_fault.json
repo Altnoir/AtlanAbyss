@@ -257,7 +257,7 @@
                         "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                                "Name": "minecraft:tuff",
+                                "Name": "create:limestone",
                                 "Properties": {
                                     "axis": "y"
                                 }
@@ -279,7 +279,7 @@
                         "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                                "Name": "create:limestone",
+                                "Name": "botania:livingrock",
                                 "Properties": {
                                     "axis": "y"
                                 }

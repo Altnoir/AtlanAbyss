@@ -1,0 +1,85 @@
+{
+    "type": "minecraft:flower",
+    "config": {
+        "tries": 96,
+        "xz_spread": 6,
+        "y_spread": 2,
+        "feature": {
+            "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                    "to_place": {
+                        "type": "minecraft:noise_provider",
+                        "seed": 2345,
+                        "noise": {
+                            "firstOctave": 0,
+                            "amplitudes": [
+                                1
+                            ]
+                        },
+                        "scale": 0.020833334,
+                        "states": [
+                            {
+                                "Name": "botania:white_mushroom"
+                            },
+                            {
+                                "Name": "botania:orange_mushroom"
+                            },
+                            {
+                                "Name": "botania:magenta_mushroom"
+                            },
+                            {
+                                "Name": "botania:light_blue_mushroom"
+                            },
+                            {
+                                "Name": "botania:yellow_mushroom"
+                            },
+                            {
+                                "Name": "botania:lime_mushroom"
+                            },
+                            {
+                                "Name": "botania:pink_mushroom"
+                            },
+                            {
+                                "Name": "botania:gray_mushroom"
+                            },
+                            {
+                                "Name": "botania:light_gray_mushroom"
+                            },
+                            {
+                                "Name": "botania:cyan_mushroom"
+                            },
+                            {
+                                "Name": "botania:purple_mushroom"
+                            },
+                            {
+                                "Name": "botania:blue_mushroom"
+                            },
+                            {
+                                "Name": "botania:brown_mushroom"
+                            },
+                            {
+                                "Name": "botania:green_mushroom"
+                            },
+                            {
+                                "Name": "botania:red_mushroom"
+                            },
+                            {
+                                "Name": "botania:black_mushroom"
+                            }
+                        ]
+                    }
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -6,8 +6,8 @@
             "count": {
                 "type": "minecraft:uniform",
                 "value": {
-                    "min_inclusive": 10,
-                    "max_inclusive": 20
+                    "min_inclusive": 48,
+                    "max_inclusive": 96
                 }
             }
         },
@@ -27,7 +27,7 @@
             }
         },
         {
-      "type": "minecraft:biome"
-    }
+            "type": "minecraft:biome"
+        }
     ]
 }

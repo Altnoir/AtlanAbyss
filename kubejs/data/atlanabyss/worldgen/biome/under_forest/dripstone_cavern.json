@@ -85,14 +85,10 @@
     ],
     [
       "minecraft:amethyst_geode",
-      "minecraft:pointed_dripstone"
-    ],
-    [
       "atlanabyss:under_forest/large_dripstone"
     ],
-    [
-      "atlanabyss:under_forest/dripstone"
-    ],
+    [],
+    [],
     [
       "minecraft:patch_tall_grass_2",
       "minecraft:trees_plains",
@@ -124,7 +120,10 @@
       "atlanabyss:under_forest/gravel",
       "atlanabyss:under_forest/raw_iron"
     ],
-    [],
+    [
+      "atlanabyss:under_forest/dripstone",
+      "minecraft:pointed_dripstone"
+    ],
     [],
     [
       "atlanabyss:under_forest/lichen",

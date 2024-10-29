@@ -156,10 +156,8 @@ onEvent('recipes', event => {
 
 	//粉碎深渊锭
 	create.milling([
-		'8x thermal:blitz_rod',
-		Item.of('8x thermal:blitz_rod').withChance(0.5),
-		'8x thermal:blizz_rod',
-		Item.of('8x thermal:blizz_rod').withChance(0.5)
+		'16x thermal:blizz_rod',
+		Item.of('16x thermal:blizz_rod').withChance(0.5)
 	], 'kubejs:abyss_ingot').id("atlanabyss:milling_abyss_ingot")
 
 	//晶核

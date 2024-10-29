@@ -20,12 +20,6 @@
       "min_delay": 12000,
       "max_delay": 24000,
       "replace_current_music": false
-    },
-    "particle": {
-      "options": {
-        "type": "minecraft:mycelium"
-      },
-      "probability": 0.118093334
     }
   },
   "spawners": {
@@ -103,20 +97,11 @@
       "minecraft:lake_lava_underground"
     ],
     [
-      "minecraft:amethyst_geode",
-      "atlanabyss:under_forest/ground_flower",
-      "atlanabyss:under_forest/stone_pile",
-      "atlanabyss:under_forest/yucca_tree_1",
-      "atlanabyss:under_forest/monkey_brush"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
-      "minecraft:monster_room_deep",
-      "atlanabyss:under_forest/morado_tree_1",
-      "atlanabyss:under_forest/morado_tree_2",
-      "atlanabyss:under_forest/rose_tree_1",
-      "atlanabyss:under_forest/rose_tree_2",
-      "atlanabyss:under_forest/yucca_tree_2"
+      "minecraft:monster_room_deep"
     ],
     [],
     [],
@@ -161,7 +146,16 @@
       "atlanabyss:under_forest/flower_strangeness",
       "atlanabyss:under_forest/vanilla_vines",
       "atlanabyss:under_forest/wild_rice",
-      "atlanabyss:under_forest/lake_patch"
+      "atlanabyss:under_forest/lake_patch",
+      "atlanabyss:under_forest/stone_pile",
+      "atlanabyss:under_forest/monkey_brush",
+      "atlanabyss:under_forest/ground_flower",
+      "atlanabyss:under_forest/yucca_tree_1",
+      "atlanabyss:under_forest/morado_tree_1",
+      "atlanabyss:under_forest/morado_tree_2",
+      "atlanabyss:under_forest/rose_tree_1",
+      "atlanabyss:under_forest/rose_tree_2",
+      "atlanabyss:under_forest/yucca_tree_2"
     ],
     [
       "minecraft:freeze_top_layer"
