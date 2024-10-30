@@ -350,7 +350,7 @@
     "tooltip.kubejs.emerald_y":"§7生成高度：Y=§6 -16§7至§6480",
 
     "tooltip.kubejs.overworld":"§7生成维度：§2主世界",
-    "tooltip.kubejs.under_forest":"§7生成维度：§a地下森林",
+    "tooltip.kubejs.under_forest":"§7生成维度：§a诱惑之森",
     "tooltip.kubejs.major_fault":"§7生成维度：§f大断层",
     "tooltip.kubejs.sinking_sea":"§7生成维度：§3沉沦之海",
     "tooltip.kubejs.paradise":"§7生成维度：§e矿物天堂",
@@ -582,6 +582,7 @@
     "biome.atlanabyss.major_fault/white_cavern":"大断层",
     "biome.atlanabyss.secret_garden/unyielding_garden":"不屈花园",
     "biome.atlanabyss.secret_garden/unyielding_plain":"神秘平原",
+    "biome.atlanabyss.secret_garden/white_field":"圣白领域",
     "biome.atlanabyss.secret_garden/unyielding_bamboo_grove":"幽静竹林",
     "biome.atlanabyss.sinking_sea/dead_sea":"亡骸之海",
     "biome.atlanabyss.paradise/paradise":"矿物天堂",

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:random_boolean_selector",
+    "config": {
+        "feature_false": {
+            "feature": "atlanabyss:secret_garden/quartz_pool_patch_1",
+            "placement": []
+        },
+        "feature_true": {
+            "feature": "atlanabyss:secret_garden/quartz_pool_patch_2",
+            "placement": []
+        }
+    }
+}

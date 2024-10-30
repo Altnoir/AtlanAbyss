@@ -10,7 +10,11 @@
             "predicate": {
                 "type": "minecraft:would_survive",
                 "state": {
-                    "Name": "minecraft:dead_bush"
+                    "Name": "minecraft:sea_pickle",
+                    "Properties": {
+                        "waterlogged": "false",
+                        "pickles": "1"
+                    }
                 }
             }
         },

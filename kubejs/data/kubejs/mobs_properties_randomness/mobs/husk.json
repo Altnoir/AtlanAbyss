@@ -23,26 +23,11 @@
             "operation": "addition"
         },
         {
-            "id": "minecraft:generic.max_health",
-            "modifier_name": "max_health for Husks under",
-            "amount": 30,
-            "operation": "addition",
-            "world_whitelist": {
-                "dimensions": [
-                    "atlanabyss:under_forest",
-                    "atlanabyss:major_fault",
-                    "atlanabyss:secret_garden",
-                    "atlanabyss:sinking_sea",
-                    "atlanabyss:paradise"
-                ]
-            }
-        },
-        {
             "id": "minecraft:generic.movement_speed",
             "modifier_name": "Speed for Husks",
             "amount": {
                 "min": 0.1,
-                "max": 0.2
+                "max": 0.35
             },
             "operation": "addition"
         }

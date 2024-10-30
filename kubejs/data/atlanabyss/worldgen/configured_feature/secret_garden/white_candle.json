@@ -36,6 +36,7 @@
                     ],
                     "blocks": [
                       "botania:enchanted_soil",
+                      "minecraft:calcite",
                       "minecraft:moss_block"
                     ]
                   },

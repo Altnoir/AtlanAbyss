@@ -1,10 +1,10 @@
 {
-  "temperature": 0.6,
-  "downfall": 0.4,
-  "precipitation": "none",
-  "category": "plains",
+  "temperature": 0.4,
+  "downfall": 0.9,
+  "precipitation": "snow",
+  "category": "taiga",
   "effects": {
-    "sky_color": 5205851,
+    "sky_color": 13158600,
     "fog_color": 1448222,
     "water_color": 4159204,
     "water_fog_color": 329011,
@@ -25,7 +25,13 @@
   "spawners": {
     "monster": [
       {
-        "type": "minecraft:zombie_villager",
+        "type": "thermal:blitz",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "thermal:blizz",
         "weight": 100,
         "minCount": 2,
         "maxCount": 4
@@ -131,26 +137,15 @@
       "minecraft:ore_tuff",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "atlanabyss:secret_garden/elementium_ore",
-      "atlanabyss:secret_garden/dragonstone_ore"
+      "atlanabyss:secret_garden/diorite_silver_ore"
     ],
     [],
     [
       "minecraft:spring_water"
     ],
     [
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature",
-      "atlanabyss:secret_garden/asurine_pool",
-      "atlanabyss:secret_garden/flower_flower",
-      "atlanabyss:secret_garden/flower_forest",
-      "atlanabyss:secret_garden/white_tree_1",
-      "atlanabyss:secret_garden/flower_cave_2",
+      "atlanabyss:secret_garden/quartz_pool",
       "atlanabyss:secret_garden/sugar_cube_pile"
     ],
     [

@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:polished_diorite",
+    "minecraft:calcite",
+    "botania:livingrock",
     "botania:enchanted_soil"
   ]
 }

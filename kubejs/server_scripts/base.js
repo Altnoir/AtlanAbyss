@@ -2567,7 +2567,7 @@ onEvent('recipes', event => {
 	}
 
 	let alloyAmount = 10
-	let outAmount = 50
+	let outAmount = 100
 	event.custom({
 		type: 'tconstruct:alloy',
 		inputs: [

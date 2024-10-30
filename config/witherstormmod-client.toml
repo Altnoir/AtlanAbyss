@@ -2,13 +2,13 @@
 #Client options
 [client]
 	#DEFAULT=true. Toggles the rendering of the debris cloud surrounding the Wither Storm. Reload Type: NONE
-	renderDebrisCloud = true
+	renderDebrisCloud = false
 	#DEFAULT=true. Toggles the rendering of debris rings that surround the Wither Storm (much more performant than the debris cloud). Reload Type: NONE
 	renderDebrisRings = true
 	#DEFAULT=false. Renders the debris in the debris cloud as 2D objects instead of 3D. Reload Type: NONE
-	renderDebrisTwoDimensional = false
+	renderDebrisTwoDimensional = true
 	#DEFAULT=true. Setting this value to false will disable the debris cloud when rendering the Wither Storm from large distances. Reload Type: NONE
-	renderDistantDebris = true
+	renderDistantDebris = false
 	#DEFAULT=false. Specifies if the debris particles orbiting segments should be rendered. Reload Type: NONE
 	renderSegmentDebris = false
 	#DEFAULT=true. Specifies if debris should render as 2D objects during phase 6 and above. Reload Type: NONE
@@ -16,7 +16,7 @@
 	#DEFAULT=false. Specifies if the low res models should be used when being rendered via the distant renderer. Reload Type: NONE
 	witherStormLOD = false
 	#DEFAULT=false. Uses larger cubes to make up the the phase 4 and up models. May result in a performance increase. Reload Type: NONE
-	lowResModels = false
+	lowResModels = true
 	#DEFAULT=true. Toggles the rendering of the tractor beams. Reload Type: NONE
 	renderTractorBeams = true
 	#DEFAULT=true. Specifies if a pulsating effect, mimicking endermen pulling the Wither Storm apart, should be rendered once its evolution is complete. Reload Type: NONE
@@ -24,7 +24,7 @@
 	#DEFAULT=true. The distant renderer allows for the Wither Storm to be rendered from much greater distances than what vanilla allows. Disable if you're facing issues with it. Reload Type: NONE
 	distantRenderer = true
 	#DEFAULT=true. Toggles the rendering of Block Clusters. Reload Type: NONE
-	blockClusterRendering = true
+	blockClusterRendering = false
 	#DEFAULT=true. Specifies if an overlay should be applied to entities that renders wither sickness. Reload Type: GAME
 	witherSicknessLayer = true
 	#DEFAULT=false. Toggles the Wither Storm boss theme. NONE: this theme is from MC:SM and is subject to copyright. Reload Type: NONE

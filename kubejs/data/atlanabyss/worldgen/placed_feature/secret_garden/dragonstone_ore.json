@@ -1,5 +1,5 @@
 {
-    "feature": "atlanabyss:major_fault/diorite_silver_ore",
+    "feature": "atlanabyss:secret_garden/dragonstone_ore",
     "placement": [
         {
             "type": "minecraft:count",
@@ -7,7 +7,7 @@
                 "type": "minecraft:uniform",
                 "value": {
                     "min_inclusive": 8,
-                    "max_inclusive": 45
+                    "max_inclusive": 16
                 }
             }
         },

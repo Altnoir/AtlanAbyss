@@ -31,6 +31,12 @@
   "spawners": {
     "monster": [
       {
+        "type": "minecraft:husk",
+        "weight": 10,
+        "minCount": 3,
+        "maxCount": 4
+      },
+      {
         "type": "minecraft:skeleton",
         "weight": 10,
         "minCount": 4,
