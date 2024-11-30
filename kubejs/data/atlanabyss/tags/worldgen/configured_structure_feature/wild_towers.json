@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "atlanabyss:tower/derelict_grass",
+    "atlanabyss:tower/derelict",
+    "atlanabyss:tower/ice",
+    "atlanabyss:tower/regular"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "atlanabyss:staging_base/stairs2",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "atlanabyss:staging_base/stairs2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "atlanabyss:staging_base/stairs3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "atlanabyss:staging_base/hallway2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "atlanabyss:staging_base/hallway3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "atlanabyss:staging_base/hallway4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "atlanabyss:staging_base/base2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

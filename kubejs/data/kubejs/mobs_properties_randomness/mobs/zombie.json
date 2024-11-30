@@ -16,7 +16,6 @@
             "operation": "addition",
             "world_whitelist": {
                 "dimensions": [
-                    "atlanabyss:under_forest",
                     "atlanabyss:major_fault",
                     "atlanabyss:secret_garden",
                     "atlanabyss:sinking_sea",
@@ -34,7 +33,6 @@
             "operation": "addition",
             "world_whitelist": {
                 "dimensions": [
-                    "atlanabyss:under_forest",
                     "atlanabyss:major_fault",
                     "atlanabyss:secret_garden",
                     "atlanabyss:sinking_sea",

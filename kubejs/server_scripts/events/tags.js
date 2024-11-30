@@ -6,6 +6,9 @@ const tagsToRemove = [
 	['forge:ice_cubes', 'kitchenkarrot:ice_cubes'],
 	//火药块
 	['forge:storage_blocks/gunpowder', 'thermal:gunpowder_block'],
+	//饰品tag
+	['artifacts:artifacts', 'artifacts:everlasting_beef'],
+	['artifacts:artifacts', 'artifacts:eternal_steak'],
 	//多余的巧克力棒
 	['forge:bars/chocolate', 'create:bar_of_chocolate'],
 	//奶桶
@@ -19,17 +22,6 @@ const tagsToRemove = [
 	['curios:back', 'thermal:potion_quiver'],
 	//下界合金粒
 	['forge:nuggets/netherite', 'tconstruct:netherite_nugget'],
-	//byd钢
-	['forge:ingots/steel', 'beyond_earth:steel_ingot'],
-	['forge:nuggets/steel', 'beyond_earth:steel_nugget'],
-	['forge:storage_blocks/steel', 'beyond_earth:steel_block'],
-	//byd铁
-	['forge:plates/iron', 'beyond_earth:iron_plate'],
-	['forge:rods/iron', 'beyond_earth:iron_stick'],
-	//byd戴斯
-	['forge:plates/desh', 'beyond_earth:desh_plate'],
-	//byd钻石矿
-	['forge:ores/diamond', 'beyond_earth:mars_diamond_ore'],
 	//粉
 	['forge:dusts/diamond', 'createaddition:diamond_grit'],
 	['forge:dusts', 'createaddition:diamond_grit'],
@@ -254,6 +246,7 @@ const tagToAdd = [
 	['forge:ingots/aluminum', 'kubejs:aluminum_ingot'],//锭
 	['forge:nuggets/aluminum', 'kubejs:aluminum_nugget'],//粒
 	['forge:plates/aluminum', 'kubejs:aluminum_sheet'],//板
+	['forge:plates', 'kubejs:aluminum_sheet'],//板
 	['forge:storage_blocks/aluminum', 'kubejs:aluminum_block'],//块
 	['forge:dusts/aluminum', 'kubejs:aluminum_dust'],//粉
 	//铋
@@ -263,10 +256,8 @@ const tagToAdd = [
 	['forge:storage_blocks/raw_bismuth', 'kubejs:raw_bismuth_block'],//粗矿块
 	['forge:ingots/bismuth', 'kubejs:bismuth_ingot'],//锭
 	//铀
-	['forge:ores', 'kubejs:mars_uranium_ore'],//矿石
-	['forge:ores', 'kubejs:mercury_uranium_ore'],
-	['forge:ores/uranium', 'kubejs:mars_uranium_ore'],
-	['forge:ores/uranium', 'kubejs:mercury_uranium_ore'],
+	['forge:ores', 'kubejs:vortex_uranium_ore'],//矿石
+	['forge:ores/uranium', 'kubejs:vortex_uranium_ore'],
 	['forge:raw_materials/uranium', 'kubejs:raw_uranium'],//粗矿
 	['forge:storage_blocks/raw_uranium', 'kubejs:raw_uranium_block'],//粗矿块
 	['forge:nuggets/uranium', 'kubejs:uranium_nugget'],//粒
@@ -283,15 +274,13 @@ const tagToAdd = [
 	['forge:ingots/osmium', 'kubejs:osmium_ingot'],//锭
 	['forge:ingots', 'kubejs:osmium_ingot'],//锭
 	['forge:plates/osmium', 'kubejs:osmium_sheet'],//板
-	['forge:ores', 'kubejs:moon_osmium_ore'],//矿石
-	['forge:ores/osmium', 'kubejs:moon_osmium_ore'],
+	['forge:ores', 'kubejs:vortex_osmium_ore'],//矿石
+	['forge:ores/osmium', 'kubejs:vortex_osmium_ore'],
 	['forge:raw_materials/osmium', 'kubejs:raw_osmium'],//粗
 	['forge:storage_blocks/raw_osmium', 'kubejs:raw_osmium_block'],
 	['forge:dusts/osmium', 'kubejs:osmium_dust'],//粉
 	//银
-	['forge:ores', 'kubejs:mercury_silver_ore'],//矿石
-	['forge:ores/silver', 'kubejs:mercury_silver_ore'],
-	['forge:ores/silver', 'kubejs:diorite_silver_ore'],
+	['forge:ores/silver', 'kubejs:diorite_silver_ore'],//矿石
 	//氟
 	['forge:ores/fluorite', 'kubejs:permafrost_fluorite_ore'],
 	//镍
@@ -335,6 +324,24 @@ onEvent('tags.items', event => {
 
 	//无尽锭
 	event.add('forge:ingots/infinity', 'kubejs:infinity_ingot')
+	//圣遗物
+	event.add('atlanabyss:reliquary', [
+		'reliquary:mercy_cross', 'reliquary:angelheart_vial',
+		'reliquary:angelic_feather', 'reliquary:emperor_chalice',
+		'reliquary:ender_staff', 'reliquary:fortune_coin',
+		'reliquary:hero_medallion', 'reliquary:glowing_water',
+		'reliquary:magicbane', 'reliquary:harvest_rod',
+		'reliquary:sojourner_staff', 'reliquary:rending_gale',
+		'reliquary:ice_magus_rod', 'reliquary:pyromancer_staff',
+		'reliquary:serpent_staff', 'reliquary:void_tear',
+		'reliquary:rod_of_lyssa', 'reliquary:interdiction_torch',
+		'reliquary:lantern_of_paranoia', 'reliquary:alkahestry_altar',
+		'reliquary:wraith_node', 'reliquary:infernal_claws',
+		'reliquary:kraken_shell', 'reliquary:shears_of_winter',
+		'reliquary:fertile_lily_pad', 'reliquary:witherless_rose',
+		'reliquary:salamander_eye', 'reliquary:twilight_cloak',
+		'reliquary:infernal_tear', 'reliquary:destruction_catalyst'
+	]);
 	//火成
 	event.add('atlanabyss:substrate_igneous', [
 		'kubejs:substrate_andesite', 'kubejs:substrate_diorite',
@@ -394,11 +401,16 @@ onEvent('tags.items', event => {
 		'kubejs:album_adp9', 'kubejs:album_mameyudoufu',
 	]);
 
+	//烈焰人燃烧室材料标签
+	event.add('atlanabyss:blaze_burner', [
+		'botania:scorched_grass', 'minecraft:red_wool',
+		'botania:livingwood_log', 'botania:stripped_livingwood_log',
+		'botania:livingwood', 'botania:stripped_livingwood'
+	])
 	//石头标签
 	event.add('quark:stone_tool_materials', [
 		'botania:metamorphic_fungal_cobblestone'
 	])
-
 	//原木标签
 	event.add('atlanabyss:unstripped_wood', [
 		'minecraft:oak_log', 'minecraft:oak_wood',
@@ -422,6 +434,7 @@ onEvent('tags.items', event => {
 		'atmospheric:rosewood_sapling', 'atmospheric:morado_sapling',
 		'atmospheric:yucca_sapling', 'atmospheric:aspen_sapling'
 	]);
+
 	//刷怪蛋
 	event.add('atlanabyss:spawn_eggs', [
 		/.*spawn_egg$/
@@ -470,13 +483,20 @@ onEvent('tags.blocks', event => {
 		event.remove('minecraft:beacon_base_blocks', name)
 	}
 	removeBeaconBase('thermal:rose_gold_block')
-	removeBeaconBase('beyond_earth:steel_block')
 
 	//泥土
 	event.add('minecraft:dirt', [
 		'botania:enchanted_soil',
 		'atmospheric:crustose',
 		'tconstruct:blood_ichor_slime_grass'
+	])
+	//石头
+	event.add('forge:stone', [
+		'kubejs:vortex_stone'
+	])
+	//树叶
+	event.add('minecraft:leaves', [
+		'tconstruct:blood_slime_leaves'
 	])
 
 	//机械动力扳手标签

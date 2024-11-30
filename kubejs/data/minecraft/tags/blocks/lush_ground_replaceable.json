@@ -3,6 +3,7 @@
   "values": [
     "minecraft:polished_diorite",
     "botania:enchanted_soil",
-    "atmospheric:red_arid_sand"
+    "atmospheric:red_arid_sand",
+    "kubejs:vortex_stone"
   ]
 }

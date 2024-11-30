@@ -129,6 +129,8 @@ onEvent('recipes', event => {
     remove('biggerreactors:compat/mekanism/crushing/crusher_cyanite_ingot')
     remove('biggerreactors:compat/mekanism/crushing/crusher_blutonium_ingot')
     remove('biggerreactors:compat/mekanism/crushing/crusher_ludicrite_ingot')
+    //音符盒修复
+    remove('mekanism:sawing/jukebox')
 
     const { create, thermal, mekanism } = event.recipes;
 
@@ -155,14 +157,10 @@ onEvent('recipes', event => {
 
 
     //融合机兼容
-    mekanism.combining('kubejs:moon_osmium_ore', '8x kubejs:raw_osmium', 'beyond_earth:moon_stone').id('atlanabyss:combining_moon_osmium_ore')
     mekanism.combining('thermal:tin_ore', '8x thermal:raw_tin', 'minecraft:cobblestone').id('atlanabyss:combining_tin_ore')
     mekanism.combining('thermal:deepslate_tin_ore', '8x thermal:raw_tin', 'minecraft:cobbled_deepslate').id('atlanabyss:combining_deepslate_tin_ore')
     mekanism.combining('thermal:lead_ore', '8x thermal:raw_lead', 'minecraft:cobblestone').id('atlanabyss:combining_lead_ore')
     mekanism.combining('thermal:deepslate_lead_ore', '8x thermal:raw_lead', 'minecraft:cobbled_deepslate').id('atlanabyss:combining_deepslate_lead_ore')
-    mekanism.combining('kubejs:mars_uranium_ore', '8x kubejs:raw_uranium', 'beyond_earth:mars_stone').id('atlanabyss:combining_mars_uranium_ore')
-    mekanism.combining('kubejs:mercury_uranium_ore', '8x kubejs:raw_uranium', 'beyond_earth:mercury_stone').id('atlanabyss:combining_mercury_uranium_ore')
-    mekanism.combining('kubejs:mercury_silver_ore', '8x thermal:raw_silver', 'beyond_earth:mercury_stone').id('atlanabyss:combining_mercury_silver_ore')
 
 
     remove('tconstruct:smeltery/melting/metal/osmium/raw')
@@ -179,11 +177,11 @@ onEvent('recipes', event => {
 
     //锇碎片
     const ro = 'create:crushed_raw_osmium';
-    create.sequenced_assembly([
-        'kubejs:osmium_scrap'
-    ], 'create:crushed_raw_osmium', [
-        create.pressing(ro, ro)
-    ]).transitionalItem(ro).loops(5).id('atlanabyss:sequenced_assembly_osmium_scrap')
+    create.pressing([
+        '2x kubejs:osmium_scrap',
+        Item.of('kubejs:osmium_scrap').withChance(0.5)
+    ], 'create:crushed_raw_osmium',
+    ).id('atlanabyss:pressing_osmium_scrap')//钢板
 
     //锇！
     create.mixing(Fluid.of('tconstruct:molten_osmium', 90), [
@@ -191,6 +189,10 @@ onEvent('recipes', event => {
         '8x ae2:certus_quartz_dust',
         Fluid.of('minecraft:lava', 50)
     ]).superheated().id('atlanabyss:mixing_osmium_ingot')
+    thermal.smelter('kubejs:osmium_ingot', [
+        'kubejs:osmium_scrap',
+        '8x ae2:certus_quartz_dust'
+    ]).energy(24000).id('atlanabyss:smelter_osmium_ingot')
     //锇2
     create.mixing(Fluid.of('tconstruct:molten_osmium', 810), [
         'kubejs:osmium_scrap',
@@ -276,23 +278,77 @@ onEvent('recipes', event => {
         'thermal:sulfur_dust'
     ]).energy(20000).id('atlanabyss:smelter_dirty_dust_uranium')
 
-    //核废料升华
+    //核废料转换
     event.custom({
         type: 'mekanism:oxidizing',
         input: {
             ingredient: { item: 'biggerreactors:cyanite_ingot' }
         },
-        output: { gas: 'mekanism:nuclear_waste', amount: 1000 }
+        output: { gas: 'mekanism:nuclear_waste', amount: 100 }
     }).id('atlanabyss:oxidizing_nuclear_waste')
+    event.custom({
+        type: 'mekanism:crystallizing',
+        chemicalType: 'gas',
+        input: {
+            amount: 100,
+            gas: 'mekanism:nuclear_waste'
+        },
+        output: {
+            item: 'biggerreactors:cyanite_ingot'
+        }
+    }).id('atlanabyss:crystallizing_nuclear_waste')
+
     //钚蒸发
     remove('mekanism:processing/lategame/plutonium')
     event.custom({
-        type: 'mekanism:rotary',
-        fluidInput: { fluid: 'kubejs:molten_plutonium', amount: 1 },
-        gasOutput: { gas: 'mekanism:plutonium', amount: 1 },
-        gasInput: { gas: 'mekanism:plutonium', amount: 1 },
-        fluidOutput: { fluid: 'kubejs:molten_plutonium', amount: 1 }
-    }).id('atlanabyss:rotary_plutonium')
+        "type": "mekanism:centrifuging",
+        "input": {
+            "amount": 50,
+            "gas": "mekanism:nuclear_waste"
+        },
+        "output": {
+            "gas": "mekanism:plutonium",
+            "amount": 1
+        }
+    }).id('atlanabyss:centrifuging_plutonium')
+    // event.custom({
+    //     "type": "mekanism:rotary",
+    //     "fluidInput": {
+    //         "amount": 1,
+    //         "tag": "forge:molten_plutonium"
+    //     },
+    //     "gasOutput": {
+    //         "gas": "mekanism:plutonium",
+    //         "amount": 1
+    //     },
+    //     "gasInput": {
+    //         "amount": 1,
+    //         "gas": "mekanism:plutonium"
+    //     },
+    //     "fluidOutput": {
+    //         "fluid": "kubejs:molten_plutonium",
+    //         "amount": 1
+    //     }
+    // }).id('atlanabyss:rotary_plutonium')
+    //钚升华
+    event.custom({
+        type: 'mekanism:oxidizing',
+        input: {
+            ingredient: { item: 'kubejs:plutonium_nugget' }
+        },
+        output: { gas: 'mekanism:plutonium', amount: 10 }
+    }).id('atlanabyss:oxidizing_plutonium_nugget')
+    event.custom({
+        type: 'mekanism:crystallizing',
+        chemicalType: 'gas',
+        input: {
+            amount: 10,
+            gas: 'mekanism:plutonium'
+        },
+        output: {
+            item: 'kubejs:plutonium_nugget'
+        }
+    }).id('atlanabyss:crystallizing_plutonium_nugget')
 
     //粉兼容
     mekanism.crushing('thermal:iron_dust', 'minecraft:iron_ingot').id('atlanabyss:crushing_iron_ingot')
@@ -330,6 +386,10 @@ onEvent('recipes', event => {
     mekanism.crushing('thermal:steel_dust', 'thermal:steel_ingot').id('atlanabyss:crushing_steel_ingot')
     mekanism.metallurgic_infusing('thermal:steel_dust', 'mekanism:enriched_iron', 'mekanism:carbon', 10).id('atlanabyss:metallurgic_infusing_steel_dust')
 
+    //磨制石英
+    mekanism.enriching('kubejs:polished_candy_crystal', 'kubejs:candy_crystal').id('atlanabyss:enriching_candy_crystal')
+    mekanism.enriching('kubejs:polished_sulfur', 'thermal:sulfur').id('atlanabyss:enriching_sulfur')
+    mekanism.enriching('kubejs:polished_charged_certus_quartz', 'ae2:charged_certus_quartz_crystal').id('atlanabyss:enriching_charged_certus_quartz_crystal')
     //赛特斯石英粉
     remove('mekanism:compat/ae2/certus_ore_to_dust')
     mekanism.crushing('5x ae2:certus_quartz_dust', 'ae2:deepslate_quartz_ore').id('atlanabyss:deepslate_quartz_ore')
@@ -830,6 +890,19 @@ onEvent('recipes', event => {
         B: 'mekanism:pellet_antimatter'
     }).id('atlanabyss:cardboard_box')
 
+    //超临界移相器端口
+    remove('mekanism:sps_port')
+    event.shaped('mekanism:sps_port', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'mekanism:sps_casing',
+        B: 'kubejs:computation_matrix'
+    }).id('atlanabyss:sps_port')
+
+
+
     //电路兼容
     remove('mekanism:control_circuit/basic')
     remove('mekanism:control_circuit/advanced')
@@ -986,6 +1059,27 @@ onEvent('recipes', event => {
         D: 'kubejs:osmium_sheet',
         E: 'ae2:cell_component_256k'
     }).id('atlanabyss:ae_chemical_storage_cell_256k');
+
+    //液体燃料
+    event.custom({
+        type: 'createaddition:liquid_burning',
+        input: {
+            fluid: 'mekanism:hydrogen',
+            amount: 1000
+        },
+        burnTime: 24000,
+        superheated: true,
+    }).id('atlanabyss:liquid_burning_hydrogen')
+    event.custom({
+        type: 'createaddition:liquid_burning',
+        input: {
+            fluid: 'mekanism:ethene',
+            amount: 1000
+        },
+        burnTime: 48000,
+        superheated: true,
+    }).id('atlanabyss:liquid_burning_ethene')
+
 
 
 

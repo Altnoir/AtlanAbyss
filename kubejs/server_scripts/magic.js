@@ -90,6 +90,15 @@ onEvent('recipes', event => {
         '#botania:petals/light_gray'
     ])
         .id('atlanabyss:petal_apothecary_gourmaryllis')
+    //便宜的贪食花
+    remove('botania:petal_apothecary/kekimurus')
+    botania.petal_apothecary('botania:kekimurus', [
+        '#botania:petals/white',
+        '#botania:petals/white',
+        '#botania:petals/orange',
+        '#botania:petals/brown'
+    ])
+        .id('atlanabyss:petal_apothecary_kekimurus')
 
     //自然水晶
     remove('botania:natura_pylon')
@@ -204,35 +213,26 @@ onEvent('recipes', event => {
     botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
         150).id('atlanabyss:orechid_deepslate_zinc_ore')
 
-    //月球铁矿
-    botania.orechid('beyond_earth:moon_iron_ore', 'beyond_earth:moon_stone',
-        600).id('atlanabyss:orechid_moon_iron_ore')
-    //月球戴斯
-    botania.orechid('beyond_earth:moon_desh_ore', 'beyond_earth:moon_stone',
-        300).id('atlanabyss:orechid_moon_desh_ore')
-    //月球锇矿
-    botania.orechid('kubejs:moon_osmium_ore', 'beyond_earth:moon_stone',
-        100).id('atlanabyss:orechid_moon_osmium_ore')
+    //漩涡锇矿
+    botania.orechid('kubejs:vortex_osmium_ore', 'kubejs:vortex_stone',
+        600).id('atlanabyss:orechid_vortex_osmium_ore')
+    //漩涡铀矿
+    botania.orechid('kubejs:vortex_uranium_ore', 'kubejs:vortex_stone',
+        400).id('atlanabyss:orechid_vortex_uranium_ore')
 
-    //火星铁矿
-    botania.orechid('beyond_earth:mars_iron_ore', 'beyond_earth:mars_stone',
-        500).id('atlanabyss:orechid_mars_iron_ore')
-    //火星紫金
-    botania.orechid('beyond_earth:mars_ostrum_ore', 'beyond_earth:mars_stone',
-        420).id('atlanabyss:orechid_mars_ostrum_ore')
-    //火星铀矿
-    botania.orechid('kubejs:mars_uranium_ore', 'beyond_earth:mars_stone',
-        80).id('atlanabyss:orechid_mars_uranium_ore')
+    //安山朱砂
+    botania.orechid('kubejs:diorite_cinnabar_ore', 'minecraft:diorite',
+        200).id('atlanabyss:orechid_diorite_cinnabar_ore')
+    //安山锡矿
+    botania.orechid('kubejs:diorite_tin_ore', 'minecraft:diorite',
+        400).id('atlanabyss:orechid_diorite_tin_ore')
+    //安山镍矿
+    botania.orechid('kubejs:diorite_nickel_ore', 'minecraft:diorite',
+        300).id('atlanabyss:orechid_diorite_nickel_ore')
+    //安山银矿
+    botania.orechid('kubejs:diorite_silver_ore', 'minecraft:diorite',
+        100).id('atlanabyss:orechid_diorite_silver_ore')
 
-    //水星铁矿
-    botania.orechid_ignem('beyond_earth:mercury_iron_ore', 'beyond_earth:mercury_stone',
-        800).id('atlanabyss:orechid_mercury_iron_ore')
-    //水星铀矿
-    botania.orechid_ignem('kubejs:mercury_uranium_ore', 'beyond_earth:mercury_stone',
-        120).id('atlanabyss:orechid_mercury_uranium_ore')
-    //水星银矿
-    botania.orechid_ignem('kubejs:mercury_silver_ore', 'beyond_earth:mercury_stone',
-        80).id('atlanabyss:orechid_mercury_silver_ore')
 
     //闪长合金
     event.shaped('kubejs:diorite_alloy', [
@@ -320,6 +320,68 @@ onEvent('recipes', event => {
     petal('green')
     petal('red')
 
+    //圣遗物
+    //霜冻核心
+    remove('reliquary:uncrafting/packed_ice')
+    remove('reliquary:uncrafting/snowball')
+    //熔火之心
+    remove('reliquary:uncrafting/magma_cream')
+    remove('reliquary:uncrafting/blaze_rod')
+
+    remove('reliquary:mercy_cross')
+    remove('reliquary:angelheart_vial')
+    remove('reliquary:angelic_feather')
+    remove('reliquary:destruction_catalyst')
+    remove('reliquary:ender_staff')
+    remove('reliquary:fortune_coin')
+    remove('reliquary:glowing_water')
+    remove('reliquary:harvest_rod')
+    remove('reliquary:hero_medallion')
+    remove('reliquary:ice_magus_rod')
+    remove('reliquary:infernal_claws')
+    remove('reliquary:infernal_tear')
+    remove('reliquary:kraken_shell')
+    remove('reliquary:pyromancer_staff')
+    remove('reliquary:rending_gale')
+    remove('reliquary:rod_of_lyssa')
+    remove('reliquary:sojourner_staff')
+    remove('reliquary:void_tear')
+    remove('reliquary:witherless_rose')
+    remove('reliquary:lantern_of_paranoia')
+    remove('reliquary:magicbane')
+    remove('reliquary:salamander_eye')
+    remove('reliquary:serpent_staff')
+    remove('reliquary:shears_of_winter')
+    remove('reliquary:twilight_cloak')
+    remove('reliquary:alkahestry_altar')
+    remove('reliquary:fertile_lily_pad')
+    remove('reliquary:wraith_node')
+    remove('reliquary:interdiction_torch')
+
+    remove('reliquary:glacial_staff')
+    event.shapeless('reliquary:glacial_staff', [
+        'reliquary:ice_magus_rod',
+        'reliquary:shears_of_winter',
+        'reliquary:void_tear'
+    ]).id('atlanabyss:glacial_staff')
+    remove('reliquary:infernal_chalice')
+    event.shapeless('reliquary:infernal_chalice', [
+        'reliquary:emperor_chalice',
+        'reliquary:infernal_claws',
+        'reliquary:infernal_tear'
+    ]).id('atlanabyss:infernal_chalice')
+    remove('reliquary:holy_hand_grenade')
+    event.shapeless('4x reliquary:holy_hand_grenade', [
+        'reliquary:glowing_water',
+        'thermal:glowstone_grenade'
+    ]).id('atlanabyss:holy_hand_grenade')
+    remove('reliquary:midas_touchstone')
+    event.shapeless('reliquary:midas_touchstone', [
+        'minecraft:gold_block',
+        'minecraft:gold_block',
+        'minecraft:gold_block',
+        'reliquary:void_tear'
+    ]).id('atlanabyss:midas_touchstone')
 
     //创造书
     event.custom({

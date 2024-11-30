@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": "atlanabyss:final_vortex/amethyst_geode_earth",
+                "placement": []
+            },
+            {
+                "feature": "atlanabyss:final_vortex/amethyst_geode_ender",
+                "placement": []
+            },
+            {
+                "feature": "atlanabyss:final_vortex/amethyst_geode_ichor",
+                "placement": []
+            },
+            {
+                "feature": "atlanabyss:final_vortex/amethyst_geode_sky",
+                "placement": []
+            }
+        ]
+    }
+}

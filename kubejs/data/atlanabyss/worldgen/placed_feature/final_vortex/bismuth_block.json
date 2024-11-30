@@ -1,0 +1,31 @@
+{
+    "feature": "atlanabyss:final_vortex/bismuth_block",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 1
+        },
+        {
+            "type": "minecraft:count",
+            "count": 3
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:trapezoid",
+                "min_inclusive": {
+                    "above_bottom": 50
+                },
+                "max_inclusive": {
+                    "absolute": 172
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "artifacts:artifacts",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8.0,
+                "max": 12.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:ender_eye"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2.0,
+        "max": 4.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 16.0,
+                "max": 32.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "kubejs:elemental_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:end_crystal"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{mana:500000}"
+            }
+          ],
+          "name": "botania:mana_tablet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:totem_of_undying"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "mythicbotany:alfsteel_sword"
+        }
+      ]
+    }
+  ]
+}

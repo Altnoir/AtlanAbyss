@@ -81,7 +81,7 @@
 		}
 		{
 			x: 2.0d
-			y: -2.5d
+			y: -3.0d
 			description: ["用于魔力的传输。"]
 			dependencies: ["3A2A0B2CFDDB343F"]
 			hide: true
@@ -711,8 +711,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -3.5d
+			x: 3.0d
+			y: -3.0d
 			description: ["前期可做的性价比极高的产魔花。"]
 			dependencies: ["404B700E4ABCA47D"]
 			id: "38C41EE94A8890C1"
@@ -723,6 +723,23 @@
 			}]
 			rewards: [{
 				id: "18A9103325FC3D35"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			description: ["如果你有蛋糕流水线，推荐你使用该产魔花。"]
+			dependencies: ["404B700E4ABCA47D"]
+			id: "7A186A8E01D683EA"
+			tasks: [{
+				id: "621B18EEB7E1BAFA"
+				type: "item"
+				item: "botania:kekimurus"
+			}]
+			rewards: [{
+				id: "7F88AAC2FF429174"
 				type: "xp"
 				xp: 10
 			}]

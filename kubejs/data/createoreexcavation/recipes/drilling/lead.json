@@ -6,7 +6,7 @@
   "name": "{\"translate\":\"ore.kubejs.lead\"}",
   "weight": 20,
   "ticks": 20,
-  "biomeWhitelist": "kubejs:is_inversia",
+  "biomeWhitelist": "atlanabyss:is_paradise",
   "stress": 16,
   "amountMin": 10.0,
   "amountMax": 40.0,

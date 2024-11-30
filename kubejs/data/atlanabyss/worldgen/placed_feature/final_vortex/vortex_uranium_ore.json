@@ -1,0 +1,33 @@
+{
+    "feature": "atlanabyss:final_vortex/vortex_uranium_ore",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": {
+                "type": "minecraft:uniform",
+                "value": {
+                    "min_inclusive": 12,
+                    "max_inclusive": 24
+                }
+            }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:trapezoid",
+                "min_inclusive": {
+                    "above_bottom": 0
+                },
+                "max_inclusive": {
+                    "below_top": 0
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

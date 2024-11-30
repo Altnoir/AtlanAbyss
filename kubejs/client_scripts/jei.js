@@ -318,6 +318,7 @@ onEvent('jei.information', event => {
 })
 
 onEvent('jei.add.items', event => {
+	event.add('create:chromatic_compound');
 	event.add('thermal:nuke_tnt');
 	event.add('thermal:nuke_grenade');
 	event.add('thermal:phyto_tnt');

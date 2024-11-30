@@ -1,0 +1,8 @@
+{
+    "name": "mkix.gun.mkix.name",
+    "display": "mkix:mkix_display",
+    "data": "mkix:mkix_data",
+    "type": "rpg",
+    "item_type": "modern_kinetic",
+    "sort": 10
+}

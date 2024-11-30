@@ -1,0 +1,27 @@
+{
+    "feature": "atlanabyss:tempt_forest/twisting_vines",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 24
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+                "type": "minecraft:would_survive",
+                "state": {
+                    "Name": "minecraft:oak_sapling",
+                    "Properties": {
+                        "stage": "0"
+                    }
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

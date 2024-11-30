@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:bastion_remnant",
+  "biomes": "#forge:is_end",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "atlanabyss:menger_sponge/core",
+    "size": 7
+  }
+}

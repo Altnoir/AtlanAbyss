@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 27
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "mkix:mkix"
+  }
+}

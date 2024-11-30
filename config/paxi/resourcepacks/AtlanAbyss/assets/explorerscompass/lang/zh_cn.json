@@ -69,5 +69,13 @@
     "structure.minecraft.village_snowy": "雪原村庄",
     "structure.minecraft.village_taiga": "针叶林村庄",
 
-    "structure.integrated_stronghold.stronghold": "要塞"
+    "structure.atlanabyss.tower": "荒野之塔",
+    "structure.atlanabyss.flower_ship": "深渊遗迹沉船",
+    "structure.atlanabyss.gun_ship": "深渊军火沉船",
+    "structure.atlanabyss.tnt_ship": "深渊火药沉船",
+    "structure.atlanabyss.staging_base": "前进基地",
+    "structure.atlanabyss.wither_house": "凋零小屋",
+    "structure.atlanabyss.primordial_cradle": "血肉温床",
+    "structure.atlanabyss.menger_sponge": "门格海绵",
+    "structure.integrated_stronghold.stronghold": "通往末地的要塞"
 }

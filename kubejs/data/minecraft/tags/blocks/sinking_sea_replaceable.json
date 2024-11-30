@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:bone_block",
+    "minecraft:snow_block",
     "quark:permafrost"
   ]
 }

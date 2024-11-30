@@ -6,7 +6,7 @@
   "name": "{\"translate\":\"ore.kubejs.zinc\"}",
   "weight": 20,
   "ticks": 10,
-  "biomeWhitelist": "forge:is_overworld",
+  "biomeWhitelist": "atlanabyss:is_tempt_forest",
   "stress": 16,
   "amountMin": 8.0,
   "amountMax": 24.0,

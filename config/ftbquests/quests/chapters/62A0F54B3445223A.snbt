@@ -1017,6 +1017,46 @@
 				}
 			}]
 		}
+		{
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["50058FCFA1FB06A1"]
+			id: "7C547CEEB3CB4106"
+			tasks: [{
+				id: "7D848AF421E7F07B"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						HasBulletInBarrel: 1b
+						GunFireMode: "SEMI"
+						GunId: "tacz:hk_g3"
+						GunCurrentAmmoCount: 20
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.0d
+			dependencies: ["62C6B7129CAE1322"]
+			id: "26F0C677E8861823"
+			tasks: [{
+				id: "04CA0661A1F11A7F"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						HasBulletInBarrel: 1b
+						GunFireMode: "SEMI"
+						GunId: "mkix:mkix"
+						GunCurrentAmmoCount: 1
+					}
+				}
+			}]
+		}
 	]
 	quest_links: [ ]
 }

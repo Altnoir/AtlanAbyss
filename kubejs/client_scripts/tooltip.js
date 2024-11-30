@@ -26,6 +26,9 @@ onEvent('item.tooltip', tooltip => {
     tooltip.addAdvanced('kubejs:permafrost_fluorite_ore', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.sinking_sea'));
     });
+    tooltip.addAdvanced('kubejs:antiquity_debris', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.sinking_sea'));
+    });
     tooltip.addAdvanced('thermal:deepslate_lead_ore', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.paradise'));
     });
@@ -37,9 +40,6 @@ onEvent('item.tooltip', tooltip => {
     });
     tooltip.addAdvanced('thermal:deepslate_nickel_ore', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.paradise'));
-    });
-    tooltip.addAdvanced('kubejs:antiquity_debris', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.inversiadim'));
     });
     tooltip.addAdvanced('kubejs:nether_sulfur_ore', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.the_nether'));
@@ -62,17 +62,11 @@ onEvent('item.tooltip', tooltip => {
     tooltip.addAdvanced('ae2:deepslate_quartz_ore', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.the_end'));
     });
-    tooltip.addAdvanced('kubejs:moon_osmium_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.the_moon'));
+    tooltip.addAdvanced('kubejs:vortex_osmium_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.final_vortex'));
     });
-    tooltip.addAdvanced('kubejs:mercury_silver_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.the_mercury'));
-    });
-    tooltip.addAdvanced('kubejs:mercury_uranium_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.the_mercury'));
-    });
-    tooltip.addAdvanced('kubejs:mars_uranium_ore', (item, advanced, text) => {
-        text.add(1, Text.translate('tooltip.kubejs.the_mars'));
+    tooltip.addAdvanced('kubejs:vortex_uranium_ore', (item, advanced, text) => {
+        text.add(1, Text.translate('tooltip.kubejs.final_vortex'));
     });
 
     tooltip.addAdvanced('industrialforegoing:infinity_nuke', (item, advanced, text) => {

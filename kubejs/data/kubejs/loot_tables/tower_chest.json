@@ -12,71 +12,173 @@
       ]
     },
     {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "atlanabyss:reliquary",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§eWhite Canvas\",time:289,trans_name:\"白色帆布\",url:\"https://music.163.com/song/media/outer/url?id=1490109043.mp3\",vip:0b}}"
+            }
+          ],
+          "name": "netmusic:music_cd",
+          "expand": true
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"Famishin\",\"榊原ゆい\"],name:\"§e愛しさと感謝の気持ち\",read_only:0b,time:342,trans_name:\"献予你的爱意与谢意\",url:\"https://music.163.com/song/media/outer/url?id=473403183.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd",
+          "expand": true
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"桐谷華\"],name:\"§eレイル・ロマネスク ハチロクver\",read_only:0b,time:264,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459691556.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd",
+          "expand": true
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"中恵光城\"],name:\"§eレイル・ロマネスク\",read_only:0b,time:262,trans_name:\"铁路浪漫谭\",url:\"https://music.163.com/song/media/outer/url?id=1459692474.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd",
+          "expand": true
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{NetMusicSongInfo:{artists:[\"藍月なくる\"],name:\"§eこれくらいで\",read_only:0b,time:214,trans_name:\"就这样\",url:\"https://music.163.com/song/media/outer/url?id=1350447904.mp3\"}}"
+            }
+          ],
+          "name": "netmusic:music_cd",
+          "expand": true
+        }
+      ]
+    },
+    {
       "rolls": {
-        "min": 4.0,
-        "max": 8.0,
+        "min": 2.0,
+        "max": 6.0,
         "type": "minecraft:uniform"
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 8.0,
-                "max": 24.0,
+                "min": 16.0,
+                "max": 32.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "beyond_earth:ice_shard"
+          "name": "create:brass_ingot"
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 6.0,
-                "max": 24.0,
+                "min": 16.0,
+                "max": 32.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "beyond_earth:raw_desh_block"
+          "name": "kubejs:aluminum_ingot"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 16.0,
+                "min": 0.0,
+                "max": 2.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "beyond_earth:raw_ostrum_block"
+          "name": "ars_nouveau:starbuncle_shards"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 8.0,
+                "min": 0.0,
+                "max": 2.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "beyond_earth:raw_calorite_block"
+          "name": "ars_nouveau:wixie_shards"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "ars_nouveau:whirlisprig_shards"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "ars_nouveau:drygmy_shard"
         }
       ]
     }

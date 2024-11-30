@@ -446,26 +446,6 @@
 			}]
 		}
 		{
-			title: "“地狱”"
-			x: -2.0d
-			y: 10.5d
-			description: ["从第七层直接往下跳便可直达下界上层。\\n注：在下界中的敌对生物，生命值会随着距离出生点越远越高（但是掉落物也会随之变多）。"]
-			dependencies: ["7DE7DA29AEE73C26"]
-			id: "137563E84BDBF0CC"
-			tasks: [{
-				id: "2B5DEA529A5A582C"
-				type: "dimension"
-				title: "“我们需要更深入一些”"
-				dimension: "minecraft:the_nether"
-			}]
-			rewards: [{
-				id: "52F6808675871D03"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
 			x: 4.0d
 			y: 0.0d
 			shape: "octagon"
@@ -486,78 +466,6 @@
 				id: "084B6230318BCE3C"
 				type: "xp"
 				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			title: "“终末地”"
-			disable_toast: true
-			x: -2.0d
-			y: 12.0d
-			description: [
-				"要塞只会生成在下界，推荐使用结构罗盘寻找“要塞”，或使用末影之眼寻找。"
-				"注：第一个末影之眼在第六层的小屋内（坐标X、Z都为0）。"
-			]
-			dependencies: ["137563E84BDBF0CC"]
-			id: "31C9BD74CDB26F64"
-			tasks: [{
-				id: "02A8F47BE70987F9"
-				type: "dimension"
-				title: "结束了？"
-				icon: "minecraft:end_portal_frame"
-				dimension: "minecraft:the_end"
-			}]
-			rewards: [{
-				id: "6136C2559A9D4D6B"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			title: "“颠倒之域”"
-			x: -2.0d
-			y: 9.0d
-			description: [
-				"地下七层-颠倒之域"
-				"进入方法：\\n1.在地下六层使用深层传送门。"
-			]
-			dependencies: ["629CFB2AC95A381C"]
-			id: "7DE7DA29AEE73C26"
-			tasks: [{
-				id: "1A5C2BBC58D64D5F"
-				type: "dimension"
-				title: "颠倒之域"
-				icon: "minecraft:amethyst_block"
-				dimension: "inversia:inversiadim"
-			}]
-			rewards: [{
-				id: "45723380B323ADEA"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: -3.0d
-			y: 9.0d
-			shape: "hexagon"
-			description: [
-				"恩赐之石：颠倒之域的特产品。"
-				"使用带时运的稿子挖掘深板岩可便有概率获得。"
-			]
-			dependencies: ["7DE7DA29AEE73C26"]
-			hide: true
-			id: "7C08BB663A3B8249"
-			tasks: [{
-				id: "5204DC608219AC5E"
-				type: "item"
-				item: "kubejs:divine_ore"
-			}]
-			rewards: [{
-				id: "3200D1DFA7F4410E"
-				type: "xp"
 				xp: 10
 			}]
 		}
@@ -677,7 +585,7 @@
 			shape: "hexagon"
 			description: [
 				"可寻找自然结构。"
-				"注：寻找要塞直接输入“要塞”即可，原版要塞已禁用。"
+				"注：寻找末地传送门要塞直接输入“要塞”即可，原版要塞已禁用。"
 			]
 			dependencies: ["51118EFF5866B6D3"]
 			hide: true
@@ -767,71 +675,6 @@
 			rewards: [{
 				id: "36CB57058450F578"
 				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			title: "铋"
-			icon: "kubejs:end_bismuth_ore"
-			x: -1.0d
-			y: 12.0d
-			description: [
-				"只出现在末地的矿石，极其稀少并且深埋地下，但是"
-				"随着时间的推移，铋矿石会往周围的末地石生长。"
-			]
-			dependencies: ["31C9BD74CDB26F64"]
-			hide: true
-			id: "1371ABE055E0D70F"
-			tasks: [{
-				id: "21EDA9917C91B04F"
-				type: "item"
-				item: "kubejs:raw_bismuth"
-			}]
-			rewards: [{
-				id: "010A6419F1CEC6B8"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			title: "赛特斯石英"
-			icon: "ae2:deepslate_quartz_ore"
-			x: -3.0d
-			y: 12.0d
-			description: ["一种只出现在末地的矿石，并且不会暴露在表面。"]
-			dependencies: ["31C9BD74CDB26F64"]
-			hide: true
-			id: "4CE70B356739CDA2"
-			tasks: [{
-				id: "35302A300907D826"
-				type: "item"
-				item: "ae2:certus_quartz_dust"
-			}]
-			rewards: [{
-				id: "0D7139956CAA07A2"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 0.0d
-			y: 12.0d
-			shape: "rsquare"
-			description: ["开启建筑之路。"]
-			dependencies: ["1371ABE055E0D70F"]
-			id: "3C90F024AAB8DABB"
-			tasks: [{
-				id: "2746CB877A15B39B"
-				type: "item"
-				item: "kubejs:bismuth_ingot"
-			}]
-			rewards: [{
-				id: "0599C5B5258609AD"
-				type: "xp"
-				auto: "enabled"
 				xp: 10
 			}]
 		}
@@ -942,52 +785,6 @@
 			}]
 		}
 		{
-			title: "“沉沦之海”"
-			icon: "kubejs:abyss_portal"
-			x: -2.0d
-			y: 6.0d
-			description: [
-				"第六层已无法使用水晶传送门进行传送了，你需要在第五层寻找到深渊传送门遗迹，位于下层基岩层附近（多数情况都埋在地里）。"
-				"深渊传送门无需框架，直接就可进行传送（小提示：这是单行道，从第六层开始变无法回头）。"
-			]
-			dependencies: ["7B3BD20CA1DED2F8"]
-			id: "71F9AA949923BAB9"
-			tasks: [{
-				id: "3F7BE586472DDA1A"
-				type: "dimension"
-				title: "来自深渊"
-				icon: "kubejs:abyss_portal"
-				dimension: "atlanabyss:sinking_sea"
-			}]
-			rewards: [{
-				id: "15D94905395AC641"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			title: "“天堂”"
-			x: -2.0d
-			y: 7.5d
-			description: ["通往第七层需使用深层传送门。\\n搭建方式和水晶传送门类似。"]
-			dependencies: ["71F9AA949923BAB9"]
-			id: "629CFB2AC95A381C"
-			tasks: [{
-				id: "592AA3C93ED07E0F"
-				type: "dimension"
-				title: "不归之都"
-				icon: "kubejs:deep_portal"
-				dimension: "atlanabyss:paradise"
-			}]
-			rewards: [{
-				id: "5E15B820188BB0FA"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
 			x: 3.0d
 			y: 2.5d
 			shape: "hexagon"
@@ -1004,49 +801,6 @@
 			}]
 			rewards: [{
 				id: "5B9F5977FA209708"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			title: "“诱惑之森”"
-			x: -2.0d
-			y: 1.5d
-			description: ["通往地下第二层至第五层的传送门！\\n搭建方式呈躺着放的十字形，把传送门放在中间，然后黑曜石放四边，需要注意的是，传送门只能放在基岩层！"]
-			dependencies: [
-				"43F7CFD129A732E5"
-				"36943F6B7F336DF2"
-			]
-			hide: true
-			id: "668F9E6D1E5EAD90"
-			tasks: [{
-				id: "60981D2403E48051"
-				type: "item"
-				item: "kubejs:amethyst_portal"
-			}]
-			rewards: [{
-				id: "697284F83B9ABBED"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: -3.0d
-			y: 4.5d
-			shape: "hexagon"
-			description: ["在第四层使用可†升天†"]
-			dependencies: ["7B3BD20CA1DED2F8"]
-			hide: true
-			id: "6E293843C5F14C70"
-			tasks: [{
-				id: "126D660953AEA819"
-				type: "item"
-				item: "neapolitan:mint_candies"
-			}]
-			rewards: [{
-				id: "4F75DCB607ABDC1A"
 				type: "xp"
 				xp: 10
 			}]
@@ -1071,59 +825,52 @@
 			}]
 		}
 		{
-			title: "“大断层”"
-			x: -2.0d
-			y: 3.0d
-			description: [
-				"地下三层-大断层\\n进入方法和第二层一样。"
-				"这里可直接往下跳前往第四层。"
-			]
-			dependencies: ["668F9E6D1E5EAD90"]
-			id: "3F27B137C093E691"
+			disable_toast: true
+			x: -4.0d
+			y: 1.5d
+			shape: "hexagon"
+			description: ["在第四层使用可†升天†"]
+			dependencies: ["7B3BD20CA1DED2F8"]
+			hide: true
+			id: "6E293843C5F14C70"
 			tasks: [{
-				id: "4618B860A67ADC6B"
-				type: "dimension"
-				title: "别摔死了"
-				icon: "minecraft:diorite"
-				dimension: "atlanabyss:major_fault"
+				id: "126D660953AEA819"
+				type: "item"
+				item: "neapolitan:mint_candies"
 			}]
 			rewards: [{
-				id: "18BAD6AF0CDE3655"
+				id: "4F75DCB607ABDC1A"
 				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
-		}
-		{
-			title: "“不屈花园”"
-			icon: "botania:enchanted_soil"
-			x: -2.0d
-			y: 4.5d
-			description: [
-				"地下四层-不屈花园"
-				"如需返回第三层，可以在当地收集一些薄荷和糖，合成薄荷糖不断地吃掉即可。"
-				"在这里使用第二层的方法可以进入第五层。"
-			]
-			dependencies: ["3F27B137C093E691"]
-			id: "7B3BD20CA1DED2F8"
-			tasks: [{
-				id: "24D4168A3E792CAC"
-				type: "dimension"
-				title: "安全区"
-				icon: "botania:enchanted_soil"
-				dimension: "atlanabyss:secret_garden"
-			}]
-			rewards: [{
-				id: "57CE562AF5873149"
-				type: "xp"
-				auto: "enabled"
 				xp: 10
 			}]
 		}
 		{
 			disable_toast: true
-			x: -3.0d
-			y: 10.5d
+			x: -4.0d
+			y: 3.0d
+			shape: "hexagon"
+			description: [
+				"恩赐之石：颠倒之域的特产品。"
+				"使用带时运的稿子挖掘深板岩可便有概率获得。"
+			]
+			dependencies: ["7DE7DA29AEE73C26"]
+			hide: true
+			id: "7C08BB663A3B8249"
+			tasks: [{
+				id: "5204DC608219AC5E"
+				type: "item"
+				item: "kubejs:divine_ore"
+			}]
+			rewards: [{
+				id: "3200D1DFA7F4410E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -4.0d
+			y: 4.5d
 			shape: "hexagon"
 			description: ["地狱和光环搭配更佳！"]
 			dependencies: ["137563E84BDBF0CC"]
@@ -1137,6 +884,26 @@
 			rewards: [{
 				id: "5456FFDC555FBB4C"
 				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: 4.5d
+			shape: "rsquare"
+			description: ["开启建筑之路。"]
+			dependencies: ["1371ABE055E0D70F"]
+			id: "3C90F024AAB8DABB"
+			tasks: [{
+				id: "2746CB877A15B39B"
+				type: "item"
+				item: "kubejs:bismuth_ingot"
+			}]
+			rewards: [{
+				id: "0599C5B5258609AD"
+				type: "xp"
+				auto: "enabled"
 				xp: 10
 			}]
 		}

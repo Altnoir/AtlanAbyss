@@ -45,3 +45,10 @@
 			#Set page visibility
 			visible = true
 
+	[multiblocks.better_fusion_reactor]
+
+		#JEI 'Building [Better Fusion Reactor]' page configuration
+		[multiblocks.better_fusion_reactor.better_fusion_reactor]
+			#Set page visibility
+			visible = true
+

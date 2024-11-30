@@ -1,0 +1,26 @@
+{
+    "structures": [
+        {
+            "structure": "atlanabyss:tower/derelict_grass",
+            "weight": 1
+        },
+        {
+            "structure": "atlanabyss:tower/derelict",
+            "weight": 1
+        },
+        {
+            "structure": "atlanabyss:tower/regular",
+            "weight": 1
+        },
+        {
+            "structure": "atlanabyss:tower/ice",
+            "weight": 2
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 36,
+        "separation": 12,
+        "salt": 30721145
+    }
+}

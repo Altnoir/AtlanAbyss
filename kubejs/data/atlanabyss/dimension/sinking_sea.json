@@ -8,28 +8,31 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "atlanabyss:sinking_sea/dead_sea",
+          "biome": "atlanabyss:sinking_sea/dead_sea_ice",
           "parameters": {
-            "temperature": [
-              0.55,
-              1
-            ],
-            "humidity": [
-              -1,
-              1
-            ],
+            "temperature": -1,
+            "humidity": 0,
             "continentalness": [
               -1.05,
               -0.455
             ],
-            "erosion": [
-              -1,
-              1
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "atlanabyss:sinking_sea/dead_sea_ice",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -1.05,
+              -0.455
             ],
-            "weirdness": [
-              -1,
-              1
-            ],
+            "erosion": 0,
+            "weirdness": -0.3,
             "depth": 0,
             "offset": 0
           }
@@ -37,81 +40,15 @@
         {
           "biome": "atlanabyss:sinking_sea/dead_sea",
           "parameters": {
-            "temperature": [
-              0.55,
-              1
-            ],
-            "humidity": [
-              -1,
-              1
-            ],
+            "temperature": 0,
+            "humidity": 0,
             "continentalness": [
               -1.05,
               -0.455
             ],
-            "erosion": [
-              -1,
-              1
-            ],
-            "weirdness": [
-              -1,
-              1
-            ],
-            "depth": 1,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "atlanabyss:sinking_sea/dead_sea",
-          "parameters": {
-            "temperature": [
-              0.55,
-              1
-            ],
-            "humidity": [
-              -1,
-              1
-            ],
-            "continentalness": [
-              -0.455,
-              -0.19
-            ],
-            "erosion": [
-              -1,
-              1
-            ],
-            "weirdness": [
-              -1,
-              1
-            ],
+            "erosion": 0,
+            "weirdness": 0,
             "depth": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "atlanabyss:sinking_sea/dead_sea",
-          "parameters": {
-            "temperature": [
-              0.55,
-              1
-            ],
-            "humidity": [
-              -1,
-              1
-            ],
-            "continentalness": [
-              -0.455,
-              -0.19
-            ],
-            "erosion": [
-              -1,
-              1
-            ],
-            "weirdness": [
-              -1,
-              1
-            ],
-            "depth": 1,
             "offset": 0
           }
         }

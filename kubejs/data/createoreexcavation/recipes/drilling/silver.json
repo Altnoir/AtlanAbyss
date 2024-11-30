@@ -6,7 +6,7 @@
   "name": "{\"translate\":\"ore.kubejs.silver\"}",
   "weight": 14,
   "ticks": 20,
-  "biomeWhitelist": "kubejs:is_mercury",
+  "biomeWhitelist": "atlanabyss:is_secret_garden",
   "stress": 16,
   "amountMin": 8.0,
   "amountMax": 24.0,

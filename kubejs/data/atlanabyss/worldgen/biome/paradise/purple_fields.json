@@ -60,6 +60,7 @@
     ],
     [
       "minecraft:large_dripstone",
+      "atlanabyss:paradise/end_rod",
       "atlanabyss:paradise/amethyst_geode",
       "atlanabyss:paradise/mushroom_stem"
     ],
@@ -69,7 +70,6 @@
     [],
     [],
     [
-      "minecraft:spring_water",
       "minecraft:spring_lava"
     ],
     [

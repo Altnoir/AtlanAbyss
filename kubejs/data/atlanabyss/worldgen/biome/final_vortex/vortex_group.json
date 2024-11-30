@@ -1,0 +1,74 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.0,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "the_end",
+  "effects": {
+    "sky_color": 16777215,
+    "fog_color": 1448222,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "music": {
+      "sound": "minecraft:music.end",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 99,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:wither",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "atlanabyss:cave",
+      "atlanabyss:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "atlanabyss:final_vortex/amethyst_geode"
+    ],
+    [],
+    [],
+    [],
+    [
+      "atlanabyss:final_vortex/vortex_osmium_ore",
+      "atlanabyss:final_vortex/vortex_uranium_ore"
+    ],
+    [],
+    [],
+    [
+      "atlanabyss:final_vortex/quartz_glass",
+      "atlanabyss:final_vortex/bismuth_block",
+      "atlanabyss:final_vortex/bismuth_tree",
+      "atlanabyss:final_vortex/tungsten_path"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

@@ -6,6 +6,8 @@ onEvent('recipes', event => {
   //铜 
   remove('tconstruct:common/materials/copper_ingot_from_nuggets')
   remove('tconstruct:common/materials/copper_nugget_from_ingot')
+  //唱片机
+  remove('tconstruct:smeltery/melting/diamond/jukebox')
   //金齿轮
   remove('tconstruct:smeltery/casts/gold_casts/gears')
   remove('tconstruct:smeltery/casts/red_sand_casts/gears')

@@ -2,21 +2,9 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:ingots/gold"
+        "tag": "atlanabyss:materials/rare"
       },
-      "count": 9
-    },
-    {
-      "item": {
-        "tag": "forge:ingots/iron"
-      },
-      "count": 72
-    },
-    {
-      "item": {
-        "tag": "forge:gems/quartz"
-      },
-      "count": 5
+      "count": 6
     }
   ],
   "result": {

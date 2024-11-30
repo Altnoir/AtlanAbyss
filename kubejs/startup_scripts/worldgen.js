@@ -2,9 +2,7 @@ onEvent('worldgen.remove', event => {
   event.removeOres(props => {
     props.worldgenLayer = 'underground_ores'
     props.blocks = [
-      'ae2:quartz_ore',
-      'beyond_earth:moon_cheese_ore',
-      'beyond_earth:mars_diamond_ore'
+      'ae2:quartz_ore'
     ]
   })
 })
@@ -51,112 +49,46 @@ onEvent('worldgen.add', event => {
 
   const { anchors } = event;
 
-  event.addOre(ore => {
-    ore.id = 'kubejs:moon_desh_ore'
-    ore.biomes = { id: 'beyond_earth:moon_desert' }
+  // event.addOre(ore => {
+  //   ore.id = 'kubejs:moon_desh_ore'
+  //   ore.biomes = { id: 'beyond_earth:moon_desert' }
 
-    ore.addTarget('beyond_earth:moon_stone', 'beyond_earth:moon_desh_ore') //月球戴斯
+  //   ore.addTarget('beyond_earth:moon_stone', 'beyond_earth:moon_desh_ore') //月球戴斯
 
-    ore.count([6, 12]).squared().triangleHeight(anchors.aboveBottom(5), anchors.absolute(70))
+  //   ore.count([6, 12]).squared().triangleHeight(anchors.aboveBottom(5), anchors.absolute(70))
 
-    ore.size = 21
-    ore.worldgenLayer = 'underground_ores'
-  });
+  //   ore.size = 21
+  //   ore.worldgenLayer = 'underground_ores'
+  // });
 
-  event.addOre(ore => {
-    ore.id = 'kubejs:mars_ostrum_ore'
-    ore.biomes = {
-      id: 'beyond_earth:mars_desert',
-      id: 'beyond_earth:mars_ice_spikes',
-      id: 'beyond_earth:mars_rocky_plains'
-    }
-    ore.addTarget('beyond_earth:mars_stone', 'beyond_earth:mars_ostrum_ore') //火星紫金
+  // event.addOre(ore => {
+  //   ore.id = 'kubejs:mars_ostrum_ore'
+  //   ore.biomes = {
+  //     id: 'beyond_earth:mars_desert',
+  //     id: 'beyond_earth:mars_ice_spikes',
+  //     id: 'beyond_earth:mars_rocky_plains'
+  //   }
+  //   ore.addTarget('beyond_earth:mars_stone', 'beyond_earth:mars_ostrum_ore') //火星紫金
 
-    ore.count([5, 11]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(10))
+  //   ore.count([5, 11]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(10))
 
-    ore.size = 21
-    ore.worldgenLayer = 'underground_ores'
-  });
+  //   ore.size = 21
+  //   ore.worldgenLayer = 'underground_ores'
+  // });
 
-  event.addOre(ore => {
-    ore.id = 'kubejs:venus_calorite_ore'
-    ore.biomes = {
-      id: 'beyond_earth:venus_desert',
-      id: 'beyond_earth:infernal_venus_barrens'
-    }
-    ore.addTarget('beyond_earth:venus_stone', 'beyond_earth:venus_calorite_ore') //金星耐热金属
+  // event.addOre(ore => {
+  //   ore.id = 'kubejs:venus_calorite_ore'
+  //   ore.biomes = {
+  //     id: 'beyond_earth:venus_desert',
+  //     id: 'beyond_earth:infernal_venus_barrens'
+  //   }
+  //   ore.addTarget('beyond_earth:venus_stone', 'beyond_earth:venus_calorite_ore') //金星耐热金属
 
-    ore.count([4, 10]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(-32))
+  //   ore.count([4, 10]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(-32))
 
-    ore.size = 21
-    ore.worldgenLayer = 'underground_ores'
-  });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:venus_gold_ore'
-    ore.biomes = {
-      id: 'beyond_earth:venus_desert',
-      id: 'beyond_earth:infernal_venus_barrens'
-    }
-    ore.addTarget('beyond_earth:venus_stone', 'beyond_earth:venus_gold_ore') //金星金矿
-
-    ore.count([24, 42]).squared().triangleHeight(anchors.aboveBottom(-32), anchors.absolute(90))
-
-    ore.size = 26
-    ore.worldgenLayer = 'underground_ores'
-  });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:moon_osmium_ore'
-    ore.biomes = { id: 'beyond_earth:moon_desert' }
-
-    ore.addTarget('beyond_earth:moon_stone', 'kubejs:moon_osmium_ore') //月球锇矿
-
-    ore.count([16, 48]).squared().triangleHeight(anchors.aboveBottom(9), anchors.absolute(90))
-
-    ore.size = 11
-    ore.worldgenLayer = 'underground_ores'
-  });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:mercury_silver_ore'
-    ore.biomes = { id: 'beyond_earth:mercury' }
-
-    ore.addTarget('beyond_earth:mercury_stone', 'kubejs:mercury_silver_ore') //水星银矿
-
-    ore.count([24, 42]).squared().triangleHeight(anchors.aboveBottom(-32), anchors.absolute(70))
-
-    ore.size = 13
-    ore.worldgenLayer = 'underground_ores'
-  });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:mars_uranium_ore'
-    ore.biomes = {
-      id: 'beyond_earth:mars_desert',
-      id: 'beyond_earth:mars_ice_spikes',
-      id: 'beyond_earth:mars_rocky_plains'
-    }
-
-    ore.addTarget('beyond_earth:mars_stone', 'kubejs:mars_uranium_ore')//火星铀矿
-
-    ore.count([9, 18]).squared().triangleHeight(anchors.aboveBottom(-16), anchors.absolute(70))
-
-    ore.size = 15
-    ore.worldgenLayer = 'underground_ores'
-  });
-
-  event.addOre(ore => {
-    ore.id = 'kubejs:mercury_uranium_ore'
-    ore.biomes = { id: 'beyond_earth:mercury' }
-
-    ore.addTarget('beyond_earth:mercury_stone', 'kubejs:mercury_uranium_ore')//水星铀矿
-
-    ore.count([27, 36]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(16))
-
-    ore.size = 24
-    ore.worldgenLayer = 'underground_ores'
-  });
+  //   ore.size = 21
+  //   ore.worldgenLayer = 'underground_ores'
+  // });
 
   event.addOre(ore => {
     ore.id = 'kubejs:nether_sulfur_ore'
@@ -188,7 +120,7 @@ onEvent('worldgen.add', event => {
 
     ore.addTarget('minecraft:deepslate', 'kubejs:antiquity_debris')//颠倒淵古残骸
 
-    ore.count([1, 8]).squared().triangleHeight(anchors.aboveBottom(180), anchors.absolute(250))
+    ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(180), anchors.absolute(250))
 
     ore.size = 4
     ore.noSurface = 1

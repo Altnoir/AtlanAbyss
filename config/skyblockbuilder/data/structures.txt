@@ -26,14 +26,6 @@ integrated_api:advanced_distance_jigsaw_structure
 integrated_api:iceandfire_structure
 mythicbotany:andwari_cave
 integrated_stronghold:stronghold
-beyond_earth:alien_village
-beyond_earth:meteor
-beyond_earth:oil_well
-beyond_earth:pygro_tower
-beyond_earth:pygro_village
-beyond_earth:venus_bullet
-witherstormmod:storm_spawn_platform
-witherstormmod:bowels
 supplementaries:way_sign
 tconstruct:earth_slime_island
 tconstruct:sky_slime_island

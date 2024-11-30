@@ -138,52 +138,28 @@ onEvent('block.registry', event => {
         .tagBlock('forge:ores_in_ground/end')
         .requiresTool(true)
         .displayName('End Bismuth Pre');
-    //月球锇矿
-    event.create('moon_osmium_ore')
-        .material('stone')
-        .hardness(8.0)
+    //漩涡锇矿
+    event.create('vortex_osmium_ore')
+        .material('deepslate')
+        .hardness(10.0)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .tagBlock('forge:ores')
         .tagBlock('forge:ores/osmium')
-        .tagBlock('forge:ores_in_ground/moon')
+        .tagBlock('forge:ores_in_ground/vortex')
         .requiresTool(true)
-        .displayName('Moon Osmium Ore');
-    //水星银矿
-    event.create('mercury_silver_ore')
-        .material('stone')
-        .hardness(5.0)
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_iron_tool')
-        .tagBlock('forge:ores')
-        .tagBlock('forge:ores/silver')
-        .tagBlock('forge:ores_in_ground/mercury')
-        .requiresTool(true)
-        .displayName('Mercury Silver Ore');
-    //火星铀矿
-    event.create('mars_uranium_ore')
+        .displayName('Vortex Osmium Ore');
+    //漩涡铀矿
+    event.create('vortex_uranium_ore')
         .material('deepslate')
-        .hardness(6.0)
-        .lightLevel(5)
+        .hardness(8.0)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .tagBlock('forge:ores')
         .tagBlock('forge:ores/uranium')
-        .tagBlock('forge:ores_in_ground/mars')
+        .tagBlock('forge:ores_in_ground/vortex')
         .requiresTool(true)
-        .displayName('Mars Uranium Pre');
-    //水星铀矿
-    event.create('mercury_uranium_ore')
-        .material('deepslate')
-        .hardness(6.0)
-        .lightLevel(5)
-        .tagBlock('minecraft:mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .tagBlock('forge:ores')
-        .tagBlock('forge:ores/uranium')
-        .tagBlock('forge:ores_in_ground/mercury')
-        .requiresTool(true)
-        .displayName('Mercury Uranium Pre');
+        .displayName('Vortex Uranium Pre');
     //渊古残骸
     event.create('antiquity_debris')
         .material('ancient_debris')
@@ -376,13 +352,13 @@ onEvent('block.registry', event => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
         .displayName('Abyss Portal');
-    //可破坏基岩
-    event.create('bedrock')
-        .material('stone')
-        .hardness(10)
+    //漩涡石
+    event.create('vortex_stone')
+        .material('deepslate')
+        .hardness(6)
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_diamond_tool')
-        .displayName('Bedrock');
+        .displayName('Vortex Stone');
 
     //机器
     // let registerMachine = (name, layer) => {

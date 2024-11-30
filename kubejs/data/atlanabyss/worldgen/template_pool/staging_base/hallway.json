@@ -1,0 +1,15 @@
+{
+  "name": "atlanabyss:staging_base/hallway",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "atlanabyss:staging_base/hallway",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                        "to_place": {
+                            "type": "minecraft:weighted_state_provider",
+                            "entries": [
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "farmersdelight:roast_chicken_block",
+                                        "Properties": {
+                                            "servings": "4"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "farmersdelight:stuffed_pumpkin_block",
+                                        "Properties": {
+                                            "servings": "4"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "farmersdelight:honey_glazed_ham_block",
+                                        "Properties": {
+                                            "servings": "4"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "farmersdelight:shepherds_pie_block",
+                                        "Properties": {
+                                            "servings": "4"
+                                        }
+                                    }
+                                },
+                                {
+                                    "weight": 1,
+                                    "data": {
+                                        "Name": "farmersdelight:rice_roll_medley_block",
+                                        "Properties": {
+                                            "servings": "8"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "placement": []
+            }
+        ]
+    }
+}

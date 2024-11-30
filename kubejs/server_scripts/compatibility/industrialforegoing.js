@@ -149,56 +149,56 @@ onEvent('recipes', event => {
     //钢框架
     remove('industrialforegoing:machine_frame_pity')
     dissolution_chamber([
-        'beyond_earth:compressed_steel',
+        'kubejs:meteosteel_sheet',
         'tconstruct:amethyst_bronze_block',
-        'beyond_earth:compressed_steel',
-        'beyond_earth:compressed_steel',
-        'beyond_earth:compressed_steel',
-        'beyond_earth:compressed_steel',
+        'kubejs:meteosteel_sheet',
+        'kubejs:meteosteel_sheet',
+        'kubejs:meteosteel_sheet',
+        'kubejs:meteosteel_sheet',
         'thermal:iron_gear',
-        'beyond_earth:compressed_steel'
+        'kubejs:meteosteel_sheet'
     ], 'kubejs:steel_machine_frame', 1,
         'industrialforegoing:latex', 250,
         200)
     //戴斯框架
     remove('industrialforegoing:dissolution_chamber/simple_machine_frame')
     dissolution_chamber([
-        'beyond_earth:compressed_desh',
+        'thermal:constantan_plate',
         'kubejs:steel_machine_frame',
-        'beyond_earth:compressed_desh',
-        'beyond_earth:compressed_desh',
-        'beyond_earth:compressed_desh',
-        'beyond_earth:compressed_desh',
+        'thermal:constantan_plate',
+        'thermal:constantan_plate',
+        'thermal:constantan_plate',
+        'thermal:constantan_plate',
         'kubejs:brass_gear',
-        'beyond_earth:compressed_desh'
+        'thermal:constantan_plate',
     ], 'kubejs:desh_machine_frame', 1,
         'industrialforegoing:pink_slime', 500,
         300)
     //紫金框架
     remove('industrialforegoing:dissolution_chamber/advanced_machine_frame')
     dissolution_chamber([
-        'beyond_earth:compressed_ostrum',
+        'kubejs:bismuth_sheet',
         'kubejs:desh_machine_frame',
-        'beyond_earth:compressed_ostrum',
-        'beyond_earth:compressed_ostrum',
-        'beyond_earth:compressed_ostrum',
-        'beyond_earth:compressed_ostrum',
+        'kubejs:bismuth_sheet',
+        'kubejs:bismuth_sheet',
+        'kubejs:bismuth_sheet',
+        'kubejs:bismuth_sheet',
         'thermal:enderium_gear',
-        'beyond_earth:compressed_ostrum'
+        'kubejs:bismuth_sheet',
     ], 'kubejs:ostrum_machine_frame', 1,
         'industrialforegoing:ether_gas', 100,
         400)
     //耐热框架
     remove('industrialforegoing:dissolution_chamber/supreme_machine_frame')
     dissolution_chamber([
-        'beyond_earth:compressed_calorite',
+        'thermal:signalum_plate',
         'kubejs:ostrum_machine_frame',
-        'beyond_earth:compressed_calorite',
-        'beyond_earth:compressed_calorite',
-        'beyond_earth:compressed_calorite',
-        'beyond_earth:compressed_calorite',
+        'thermal:signalum_plate',
+        'thermal:signalum_plate',
+        'thermal:signalum_plate',
+        'thermal:signalum_plate',
         'thermal:enderium_gear',
-        'beyond_earth:compressed_calorite'
+        'thermal:signalum_plate',
     ], 'kubejs:calorite_machine_frame', 1,
         'minecraft:lava', 2000,
         500)

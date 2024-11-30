@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:village",
+    "biomes": "#atlanabyss:is_wither_house",
+    "adapt_noise": true,
+    "spawn_overrides": {},
+    "config": {
+        "start_pool": "atlanabyss:wither_house",
+        "size": 1
+    }
+}

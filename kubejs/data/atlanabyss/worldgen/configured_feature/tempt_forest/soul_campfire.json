@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "minecraft:soul_campfire",
+                "Properties": {
+                    "lit": "true",
+                    "signal_fire": "false",
+                    "waterlogged": "false"
+                }
+            }
+        }
+    }
+}

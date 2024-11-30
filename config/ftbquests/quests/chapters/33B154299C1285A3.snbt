@@ -498,7 +498,7 @@
 			x: 0.0d
 			y: -4.0d
 			shape: "octagon"
-			description: ["开启太空时代！"]
+			description: ["暂时只能做纠缠方块。"]
 			dependencies: [
 				"679863D04FCA1B0B"
 				"1C4C37304A41EA29"
@@ -556,7 +556,7 @@
 			disable_toast: true
 			x: 3.5d
 			y: -1.0d
-			description: ["太空时代重要的合金。"]
+			description: ["下一时代最重要的合金。"]
 			dependencies: ["0995E7B507258131"]
 			hide: true
 			id: "5366B3798112EA39"

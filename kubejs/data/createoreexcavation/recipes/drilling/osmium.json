@@ -4,9 +4,9 @@
     "tag": "createoreexcavation:drills"
   },
   "name": "{\"translate\":\"ore.kubejs.osmium\"}",
-  "weight": 20,
+  "weight": 1,
   "ticks": 60,
-  "biomeWhitelist": "kubejs:is_moon",
+  "biomeWhitelist": "atlanabyss:is_final_vortex",
   "stress": 16,
   "amountMin": 10.0,
   "amountMax": 30.0,

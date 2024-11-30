@@ -5,12 +5,18 @@
             "type": "minecraft:weighted_state_provider",
             "entries": [
                 {
-                    "weight": 100,
+                    "weight": 90,
                     "data": {
                         "Name": "minecraft:wheat",
                         "Properties": {
                             "age": "7"
                         }
+                    }
+                },
+                {
+                    "weight": 10,
+                    "data": {
+                        "Name": "minecraft:glowstone"
                     }
                 }
             ]

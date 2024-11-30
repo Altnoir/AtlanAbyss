@@ -24,11 +24,7 @@
 		{
 			x: 0.0d
 			y: -3.5d
-			dependencies: [
-				"2B31D68965002FDB"
-				"1BC58DF02E2FD4E6"
-				"4DBB32929C867C59"
-			]
+			dependencies: ["4DBB32929C867C59"]
 			id: "2EF2921EC3F1C90D"
 			tasks: [{
 				id: "01999C954B7E8FE6"
@@ -158,57 +154,6 @@
 					tag: {
 						slot: "souls"
 					}
-				}
-			}]
-		}
-		{
-			x: 0.0d
-			y: -8.5d
-			shape: "pentagon"
-			description: ["在凋零风暴的第五阶段会召唤出凋零共生体，击杀掉落指令附魔书，用于合成命令之镐，可破坏基岩。"]
-			dependencies: ["49F4AC8A78C1AAE2"]
-			hide: true
-			id: "31422B22F46507AB"
-			tasks: [{
-				id: "460548B0A54FE6F8"
-				type: "item"
-				item: {
-					id: "witherstormmod:command_block_pickaxe"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: 0.0d
-			y: -6.0d
-			shape: "square"
-			description: ["只有命令之镐能破坏它！"]
-			dependencies: ["31422B22F46507AB"]
-			size: 2.0d
-			id: "1BC58DF02E2FD4E6"
-			tasks: [{
-				id: "4E4D299FBD5D121D"
-				type: "item"
-				item: {
-					id: "minecraft:bedrock"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: 0.0d
-			y: -2.5d
-			dependencies: ["49F4AC8A78C1AAE2"]
-			id: "2B31D68965002FDB"
-			tasks: [{
-				id: "70FCD881DE668B91"
-				type: "item"
-				item: {
-					id: "witherstormmod:withered_nether_star"
-					Count: 1b
-					tag: { }
 				}
 			}]
 		}

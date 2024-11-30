@@ -6,7 +6,7 @@
   "name": "{\"translate\":\"ore.kubejs.tin\"}",
   "weight": 18,
   "ticks": 10,
-  "biomeWhitelist": "forge:is_overworld",
+  "biomeWhitelist": "atlanabyss:is_major_fault",
   "stress": 16,
   "amountMin": 8.0,
   "amountMax": 24.0,

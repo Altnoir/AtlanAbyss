@@ -170,7 +170,10 @@
 			disable_toast: true
 			x: 0.0d
 			y: -3.5d
-			description: ["使用特斯拉线圈对赛特斯石英水晶充能即可获得。"]
+			description: [
+				"使用特斯拉线圈对赛特斯石英水晶充能即可获得。"
+				"深渊五层有石英柱！"
+			]
 			dependencies: ["61CDC9A969C09267"]
 			id: "77AACF5ABE3BB465"
 			tasks: [{
@@ -767,7 +770,7 @@
 		{
 			x: 0.0d
 			y: -15.0d
-			description: ["开启太空时代！"]
+			description: ["你打算要纯手搓制作吗？确定不做自动化吗？真的真的吗？"]
 			dependencies: [
 				"2BECAF8C2ED996B0"
 				"5E35FA8C5C6F940D"
@@ -786,9 +789,9 @@
 				item: "kubejs:computation_matrix"
 			}]
 			rewards: [{
-				id: "23A4A1E25F2FA575"
+				id: "7C993E292A0C1264"
 				type: "xp"
-				xp: 10
+				xp: 3
 			}]
 		}
 		{

@@ -533,19 +533,47 @@ onEvent('recipes', event => {
       Item.of('tconstruct:rose_gold_ingot', 4).toResultJson()
     ],
     energy: 3200
-  }).id("atlanabyss:rose_gold_ingot")
-  //下界合金！
+  }).id("atlanabyss:smelter_rose_gold_ingot")
+  //琥珀金锭
   event.custom({
     type: 'thermal:smelter',
     ingredients: [
-      Item.of('kubejs:eviltwisting_ingot', 2).toResultJson(),
-      Ingredient.of('thermal:basalz_rod').toJson()
+      {
+        value: [
+          Ingredient.of('kubejs:polished_sulfur').toJson()
+        ],
+        count: 1
+      },
+      {
+        value: [
+          Ingredient.of('#forge:ingots/gold').toJson(),
+          Ingredient.of('#forge:dusts/gold').toJson()
+        ],
+        count: 3
+      }
     ],
     result: [
-      Item.of('minecraft:netherite_ingot').toResultJson()
+      Item.of('thermal:electrum_ingot', 4).toResultJson()
     ],
-    energy: 12000
-  }).id("atlanabyss:smelter_netherite_ingot")
+    energy: 3200
+  }).id("atlanabyss:smelter_electrum_ingot")
+  //铂锭
+  thermal.smelter('4x kubejs:platinum_ingot', [
+    'kubejs:polished_charged_certus_quartz',
+    '3x minecraft:calcite'
+  ]).energy(12000).id("atlanabyss:smelter_platinum_ingot")
+  //HACHIMI
+  thermal.smelter('4x umapyoi:hachimi_mid', [
+    'kubejs:polished_candy_crystal',
+    '3x minecraft:sugar'
+  ]).energy(12000).id("atlanabyss:smelter_hachimi_mid")
+
+  //下界合金！
+  thermal.smelter('minecraft:netherite_ingot', [
+    '2x kubejs:eviltwisting_ingot',
+    'thermal:basalz_rod'
+  ]).energy(12000).id("atlanabyss:smelter_netherite_ingot")
+
   //木炭杂酚油
   create.compacting([
     'minecraft:charcoal',
@@ -817,6 +845,8 @@ onEvent('recipes', event => {
     { log: 'minecraft:acacia_log', leaves: 'minecraft:acacia_leaves', fluid: 'thermal:latex', amo: 25, id: 'acacia' },//金合欢
     { log: 'minecraft:spruce_log', leaves: 'minecraft:spruce_leaves', fluid: 'thermal:latex', amo: 25, id: 'spruce' },//云杉木
     { log: 'minecraft:dark_oak_log', leaves: 'minecraft:dark_oak_leaves', fluid: 'thermal:latex', amo: 50, id: 'dark_oak' },//深色橡木
+    { log: 'quark:blossom_log', leaves: 'quark:red_blossom_leaves', fluid: 'tconstruct:blood', amo: 20, id: 'red_blossom' },//火热花
+    { log: 'ars_nouveau:red_archwood_log', leaves: 'ars_nouveau:red_archwood_leaves', fluid: 'tconstruct:blood', amo: 20, id: 'red_archwood' }//烈焰至高
   ];
   for (const te of treeExtractor) {
     event.custom({
@@ -1192,16 +1222,6 @@ onEvent('recipes', event => {
   //   "flag": "mod_create"
   // }
 
-  //恐怖炸弹
-  remove('witherstormmod:formidibomb')
-  event.shaped('witherstormmod:formidibomb', [
-    'BBB',
-    'BAB',
-    'BBB'
-  ], {
-    A: 'witherstormmod:super_tnt',
-    B: 'thermal:nuke_tnt'
-  }).id("atlanabyss:formidibomb")
 
   //核弹	
   event.shaped('thermal:nuke_tnt', [

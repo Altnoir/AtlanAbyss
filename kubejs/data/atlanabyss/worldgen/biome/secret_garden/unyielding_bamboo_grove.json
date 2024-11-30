@@ -5,7 +5,7 @@
   "category": "jungle",
   "effects": {
     "sky_color": 5205851,
-    "fog_color": 1448222,
+    "fog_color": 3165784,
     "water_color": 4159204,
     "water_fog_color": 329011,
     "ambient_sound": "minecraft:block.roots.step",

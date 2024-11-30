@@ -662,7 +662,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 10
+                "Amount": 20
               }
             ]
           }
@@ -1120,7 +1120,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 20
+                "Amount": 32
               }
             ]
           }
@@ -1135,7 +1135,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 30
+                "Amount": 45
               }
             ]
           }
@@ -1150,7 +1150,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 20
+                "Amount": 32
               }
             ]
           }
@@ -1165,7 +1165,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 30
+                "Amount": 45
               }
             ]
           }
@@ -1180,7 +1180,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 20
+                "Amount": 32
               }
             ]
           }
@@ -1195,7 +1195,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 30
+                "Amount": 45
               }
             ]
           }
@@ -1210,7 +1210,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 20
+                "Amount": 32
               }
             ]
           }
@@ -1225,7 +1225,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 25
+                "Amount": 36
               }
             ]
           }
@@ -1240,7 +1240,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 35
+                "Amount": 50
               }
             ]
           }
@@ -1255,7 +1255,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 30
+                "Amount": 45
               }
             ]
           }
@@ -1270,7 +1270,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 30
+                "Amount": 45
               }
             ]
           }
@@ -1285,7 +1285,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 35
+                "Amount": 50
               }
             ]
           }
@@ -1299,8 +1299,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 32
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
               }
             ]
           }
@@ -1315,7 +1315,37 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 3
+                "Amount": 5
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "neapolitan:mint_candies",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 40
+              }
+            ]
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "peculiars:aloe_jelly_slice",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
               }
             ]
           }
@@ -1329,8 +1359,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_iron",
-                "Amount": 42
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
               }
             ]
           }
@@ -1345,7 +1375,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 3
               }
             ]
           }
@@ -1360,7 +1390,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 5
               }
             ]
           }
@@ -1375,7 +1405,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1390,7 +1420,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1405,7 +1435,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 5
               }
             ]
           }
@@ -1420,7 +1450,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1435,7 +1465,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1450,7 +1480,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1465,7 +1495,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1480,7 +1510,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 4
               }
             ]
           }
@@ -1495,7 +1525,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 1
+                "Amount": 3
               }
             ]
           }

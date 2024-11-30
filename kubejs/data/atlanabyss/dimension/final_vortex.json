@@ -1,0 +1,25 @@
+{
+    "type": "atlanabyss:final_vortex",
+    "generator": {
+        "type": "minecraft:noise",
+        "seed": 72107210721,
+        "settings": "atlanabyss:final_vortex",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "biomes": [
+                {
+                    "biome": "atlanabyss:final_vortex/vortex_group",
+                    "parameters": {
+                        "temperature": 0,
+                        "humidity": 0,
+                        "continentalness": 0,
+                        "erosion": 0,
+                        "weirdness": 0,
+                        "depth": 0,
+                        "offset": 0
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -4,8 +4,8 @@
   "precipitation": "snow",
   "category": "taiga",
   "effects": {
-    "sky_color": 13158600,
-    "fog_color": 1448222,
+    "sky_color": 5205851,
+    "fog_color": 12506838,
     "water_color": 4159204,
     "water_fog_color": 329011,
     "ambient_sound": "minecraft:block.roots.step",

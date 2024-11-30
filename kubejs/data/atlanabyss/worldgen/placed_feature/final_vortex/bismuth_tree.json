@@ -1,0 +1,32 @@
+{
+  "feature": "atlanabyss:final_vortex/bismuth_tree",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 5
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:sea_pickle",
+          "Properties": {
+            "pickles": "1",
+            "waterlogged": "false"
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "config": {
+        "surface": "ceiling",
+        "depth": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 1,
+                "max_inclusive": 2
+            }
+        },
+        "vertical_range": 5,
+        "extra_bottom_block_chance": 0,
+        "extra_edge_column_chance": 0.3,
+        "vegetation_chance": 0.08,
+        "xz_radius": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 4,
+                "max_inclusive": 7
+            }
+        },
+        "replaceable": "#minecraft:moss_replaceable",
+        "ground_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "minecraft:brown_mushroom_block",
+                "Properties": {
+                    "down": "true",
+                    "east": "true",
+                    "south": "true",
+                    "north": "true",
+                    "up": "true",
+                    "west": "true"
+                }
+            }
+        },
+        "vegetation_feature": {
+            "feature": "atlanabyss:tempt_forest/weeping_vines",
+            "placement": []
+        }
+    }
+}

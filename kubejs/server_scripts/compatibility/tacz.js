@@ -358,7 +358,7 @@ onEvent('recipes', (event) => {
 	)
 	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
 		'emxarms:1045x103ice', 5,
-		'tconstruct:efln_ball', 'beyond_earth:ice_shard'
+		'tconstruct:efln_ball', 'thermal:ice_charge'
 	)
 	//霰弹
 	ammo('kubejs:shell_shotgun', 'create:brass_sheet',

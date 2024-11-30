@@ -1,7 +1,7 @@
 {
 	id: "2D1F8068A7AEABF6"
 	group: "62B0CA2D682AC9D6"
-	order_index: 5
+	order_index: 4
 	filename: "2D1F8068A7AEABF6"
 	title: "电力时代Ⅱ"
 	icon: "kubejs:steel_machine_frame"
@@ -12,7 +12,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 0.0d
-			description: ["第一个压缩钢板需要用辊压机制作。"]
+			description: ["外星科技？"]
 			dependencies: ["4F36B2977E7F356A"]
 			hide: true
 			size: 1.5d
@@ -30,11 +30,8 @@
 		}
 		{
 			x: 0.0d
-			y: -4.5d
-			dependencies: [
-				"691ED93BB8E75B1D"
-				"0D0A33A915B6FC00"
-			]
+			y: -3.0d
+			dependencies: ["0D0A33A915B6FC00"]
 			size: 1.5d
 			id: "2EFFA5A31201BC0C"
 			tasks: [{
@@ -50,11 +47,8 @@
 		}
 		{
 			x: 0.0d
-			y: -8.5d
-			dependencies: [
-				"2EFFA5A31201BC0C"
-				"5067EC4F84F6C012"
-			]
+			y: -6.5d
+			dependencies: ["2EFFA5A31201BC0C"]
 			size: 1.5d
 			id: "0C540488330AE15C"
 			tasks: [{
@@ -70,11 +64,8 @@
 		}
 		{
 			x: 0.0d
-			y: -12.75d
-			dependencies: [
-				"0C540488330AE15C"
-				"0FEC61FF33F981A8"
-			]
+			y: -9.75d
+			dependencies: ["0C540488330AE15C"]
 			size: 1.5d
 			id: "3095B5E1979BF8FF"
 			tasks: [{
@@ -334,7 +325,7 @@
 		}
 		{
 			x: -1.0d
-			y: -3.5d
+			y: -2.0d
 			shape: "hexagon"
 			dependencies: ["2EFFA5A31201BC0C"]
 			id: "6D7B2B27E32436BE"
@@ -351,7 +342,7 @@
 		}
 		{
 			x: 1.5d
-			y: -4.5d
+			y: -3.0d
 			shape: "hexagon"
 			description: ["作物需种植在机器上方，消耗水可加速作物生长，下界作物则需要消耗岩浆，自动收获需要消耗以太气体。"]
 			dependencies: ["2EFFA5A31201BC0C"]
@@ -369,7 +360,7 @@
 		}
 		{
 			x: 1.0d
-			y: -3.5d
+			y: -2.0d
 			shape: "hexagon"
 			dependencies: ["2EFFA5A31201BC0C"]
 			id: "6021EFC8341D6559"
@@ -386,7 +377,7 @@
 		}
 		{
 			x: -1.0d
-			y: -5.5d
+			y: -4.0d
 			shape: "hexagon"
 			description: ["实体版的侦测器。"]
 			dependencies: ["2EFFA5A31201BC0C"]
@@ -404,7 +395,7 @@
 		}
 		{
 			x: -0.5d
-			y: -7.0d
+			y: -5.0d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "0F7892B32C7FEB85"
@@ -421,7 +412,7 @@
 		}
 		{
 			x: 1.5d
-			y: -7.5d
+			y: -5.5d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "5428E12A0BA8C206"
@@ -438,7 +429,7 @@
 		}
 		{
 			x: -1.5d
-			y: -7.5d
+			y: -5.5d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "1D8687F301104B7D"
@@ -455,7 +446,7 @@
 		}
 		{
 			x: -0.5d
-			y: -10.0d
+			y: -8.0d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "597A432B51B2EC89"
@@ -472,7 +463,7 @@
 		}
 		{
 			x: 0.5d
-			y: -10.0d
+			y: -8.0d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "7CF010826AF0B80C"
@@ -489,7 +480,7 @@
 		}
 		{
 			x: 2.0d
-			y: -8.5d
+			y: -6.5d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "7839D1E5BF248EEC"
@@ -506,7 +497,7 @@
 		}
 		{
 			x: 1.5d
-			y: -9.5d
+			y: -7.5d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "0049624E69818905"
@@ -523,7 +514,7 @@
 		}
 		{
 			x: -1.5d
-			y: -4.5d
+			y: -3.0d
 			shape: "hexagon"
 			description: ["以太气体的来源。"]
 			dependencies: ["2EFFA5A31201BC0C"]
@@ -541,7 +532,7 @@
 		}
 		{
 			x: -2.0d
-			y: -8.5d
+			y: -6.5d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "1D301B53BA40D96C"
@@ -558,7 +549,7 @@
 		}
 		{
 			x: -1.5d
-			y: -9.5d
+			y: -7.5d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "2E8341483C8042AE"
@@ -575,7 +566,7 @@
 		}
 		{
 			x: 0.5d
-			y: -7.0d
+			y: -5.0d
 			shape: "hexagon"
 			dependencies: ["0C540488330AE15C"]
 			id: "4746013D2E1FBCCB"
@@ -592,7 +583,7 @@
 		}
 		{
 			x: 0.0d
-			y: -14.5d
+			y: -11.5d
 			shape: "hexagon"
 			dependencies: ["3095B5E1979BF8FF"]
 			id: "147069ED28FD256C"
@@ -726,7 +717,7 @@
 		}
 		{
 			x: 1.0d
-			y: -5.5d
+			y: -4.0d
 			shape: "hexagon"
 			dependencies: ["2EFFA5A31201BC0C"]
 			id: "41E310CE9BADD31F"
@@ -737,153 +728,6 @@
 			}]
 			rewards: [{
 				id: "40E72BA50C94BC92"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -0.5d
-			y: -2.0d
-			description: ["用于制作火箭专用的燃油。"]
-			dependencies: ["0D0A33A915B6FC00"]
-			id: "16247F80FEFE8051"
-			tasks: [{
-				id: "5334AB63715CA973"
-				type: "item"
-				item: "beyond_earth:fuel_refinery"
-			}]
-			rewards: [{
-				id: "77F31B8E7986C03A"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 0.5d
-			y: -2.0d
-			dependencies: ["0D0A33A915B6FC00"]
-			id: "6EFEE58B4AF4971E"
-			tasks: [{
-				id: "0E6D813D5A9FBB61"
-				type: "item"
-				item: "beyond_earth:oxygen_loader"
-			}]
-			rewards: [{
-				id: "382A976C5646BCDE"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 1.5d
-			y: -2.0d
-			dependencies: ["0D0A33A915B6FC00"]
-			id: "397C18FB399F2B8C"
-			tasks: [{
-				id: "6FD8A8003F989D32"
-				type: "item"
-				item: "beyond_earth:oxygen_bubble_distributor"
-			}]
-			rewards: [{
-				id: "2F2884B80A824820"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -1.5d
-			y: -2.0d
-			description: ["建议优先做这个。"]
-			dependencies: ["0D0A33A915B6FC00"]
-			id: "4D0F676776C83036"
-			tasks: [{
-				id: "7DE9DCE734BBF7D2"
-				type: "item"
-				item: "beyond_earth:compressor"
-			}]
-			rewards: [{
-				id: "749FAB9A3EFD61BE"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 0.0d
-			y: 5.0d
-			dependencies: [
-				"3CA12DEEE216DB0B"
-				"30A0CDCD1B7CE208"
-			]
-			dependency_requirement: "one_completed"
-			size: 1.5d
-			id: "32235EE0E58F5696"
-			tasks: [{
-				id: "175EE94326A11F30"
-				type: "item"
-				item: "beyond_earth:nasa_workbench"
-			}]
-			rewards: [{
-				id: "4C614D56697FF994"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 0.0d
-			y: -3.0d
-			dependencies: ["32235EE0E58F5696"]
-			id: "691ED93BB8E75B1D"
-			tasks: [{
-				id: "45B57221D102C861"
-				type: "item"
-				item: {
-					id: "beyond_earth:rocket_t1"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "783EFFC32F40D56C"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 0.0d
-			y: -6.0d
-			dependencies: ["32235EE0E58F5696"]
-			id: "5067EC4F84F6C012"
-			tasks: [{
-				id: "0984C15015B749D8"
-				type: "item"
-				item: {
-					id: "beyond_earth:rocket_t2"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "315462F4B61F239F"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: 0.0d
-			y: -11.0d
-			dependencies: ["32235EE0E58F5696"]
-			id: "0FEC61FF33F981A8"
-			tasks: [{
-				id: "1B4C8016EF6D1165"
-				type: "item"
-				item: {
-					id: "beyond_earth:rocket_t3"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "1A0AEE073C040884"
 				type: "xp"
 				xp: 10
 			}]

@@ -382,7 +382,7 @@
 			x: -2.0d
 			y: 1.5d
 			shape: "rsquare"
-			description: ["开启赛马娘篇章。"]
+			description: ["开启赛马娘篇章（可大幅提升身体素质）。"]
 			dependencies: ["3F1BC198BA9B6A45"]
 			hide: true
 			id: "75BA5E928395B13B"

@@ -564,7 +564,7 @@
 
 		[world.spiral_spires.dimensions]
 			"Is Blacklist" = false
-			Dimensions = ["minecraft:the_end"]
+			Dimensions = ["minecraft:the_end", "atlanabyss:final_vortex"]
 
 		[world.spiral_spires.biomes]
 
@@ -578,7 +578,7 @@
 				"Is Blacklist" = true
 
 			[world.spiral_spires.biomes.biomes]
-				Biomes = ["minecraft:end_highlands"]
+				Biomes = ["minecraft:end_highlands", "atlanabyss:final_vortex"]
 				"Is Blacklist" = false
 
 	[world.permafrost]

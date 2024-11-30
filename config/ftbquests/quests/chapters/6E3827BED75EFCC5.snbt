@@ -407,16 +407,16 @@
 			}]
 			rewards: [
 				{
-					id: "1C34BA75E5C980D2"
-					type: "item"
-					item: "lightmanscurrency:coin_netherite"
-					count: 128
-				}
-				{
 					id: "36E9CD95E2A70A2C"
 					type: "item"
 					item: "umapyoi:sweet_cupcake"
 					count: 64
+				}
+				{
+					id: "3681465917D303FD"
+					type: "item"
+					item: "lightmanscurrency:coin_diamond"
+					count: 128
 				}
 			]
 		}
@@ -905,6 +905,7 @@
 			x: 0.0d
 			y: -7.5d
 			shape: "hexagon"
+			description: ["特色功能：吸取附近所有的掉落物！"]
 			dependencies: ["06A7D610877A75D5"]
 			hide: true
 			id: "0A3D65003559CFD8"

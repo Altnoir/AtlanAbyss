@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:bastion_remnant",
+  "biomes": "#atlanabyss:is_sinking_sea",
+  "adapt_noise": false,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "atlanabyss:staging_base",
+    "size": 7
+  }
+}

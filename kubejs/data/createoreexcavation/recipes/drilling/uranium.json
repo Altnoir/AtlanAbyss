@@ -4,12 +4,12 @@
     "tag": "createoreexcavation:drills"
   },
   "name": "{\"translate\":\"ore.kubejs.uranium\"}",
-  "weight": 20,
+  "weight": 3,
   "ticks": 60,
-  "biomeWhitelist": "kubejs:is_uranium",
+  "biomeWhitelist": "atlanabyss:is_final_vortex",
   "stress": 16,
   "amountMin": 10.0,
-  "amountMax": 30.0,
+  "amountMax": 20.0,
   "output": [
     {
       "item": "kubejs:raw_uranium"

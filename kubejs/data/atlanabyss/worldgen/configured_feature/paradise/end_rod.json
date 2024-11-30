@@ -1,0 +1,141 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
+                            ]
+                        },
+                        "prioritize_tip": true,
+                        "layers": [
+                            {
+                                "height": {
+                                    "type": "minecraft:weighted_list",
+                                    "distribution": [
+                                        {
+                                            "weight": 1,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 0,
+                                                    "max_inclusive": 8
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 3,
+                                                    "max_inclusive": 10
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 4,
+                                                    "max_inclusive": 12
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "minecraft:end_rod",
+                                        "Properties": {
+                                            "facing": "up"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            },
+            {
+                "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                        "direction": "up",
+                        "allowed_placement": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
+                            ]
+                        },
+                        "prioritize_tip": true,
+                        "layers": [
+                            {
+                                "height": {
+                                    "type": "minecraft:weighted_list",
+                                    "distribution": [
+                                        {
+                                            "weight": 1,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 0,
+                                                    "max_inclusive": 8
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 2,
+                                                    "max_inclusive": 10
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "weight": 1,
+                                            "data": {
+                                                "type": "minecraft:uniform",
+                                                "value": {
+                                                    "min_inclusive": 4,
+                                                    "max_inclusive": 12
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                        "Name": "botania:elf_glass_pane",
+                                        "Properties": {
+                                            "east": "false",
+                                            "north": "false",
+                                            "south": "false",
+                                            "waterlogged": "false",
+                                            "west": "false"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "placement": []
+            }
+        ]
+    }
+}

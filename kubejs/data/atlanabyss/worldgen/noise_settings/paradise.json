@@ -490,7 +490,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "atlanabyss:paradise/paradise"
+                        "atlanabyss:paradise/ore_paradise"
                     ]
                 },
                 "then_run": {
@@ -520,7 +520,7 @@
                 "if_true": {
                     "type": "minecraft:biome",
                     "biome_is": [
-                        "atlanabyss:paradise/paradise"
+                        "atlanabyss:paradise/ore_paradise"
                     ]
                 },
                 "then_run": {

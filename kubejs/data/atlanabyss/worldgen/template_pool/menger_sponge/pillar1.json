@@ -1,0 +1,15 @@
+{
+    "name": "atlanabyss:menger_sponge/pillar1",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "location": "atlanabyss:menger_sponge/pillar1",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 {
 	id: "58ECFDDB6C91842B"
 	group: "62B0CA2D682AC9D6"
-	order_index: 4
+	order_index: 5
 	filename: "58ECFDDB6C91842B"
 	title: "原子核能"
 	icon: "kubejs:osmium_casing"
@@ -266,10 +266,7 @@
 			x: 0.0d
 			y: 0.0d
 			description: ["类似于原子时代的机壳。"]
-			dependencies: [
-				"135D5EDEC30846CA"
-				"6D869C10046E3B8D"
-			]
+			dependencies: ["135D5EDEC30846CA"]
 			hide: true
 			id: "3411A6B26CA383EA"
 			tasks: [{
@@ -495,7 +492,7 @@
 		{
 			x: 3.0d
 			y: 0.0d
-			dependencies: ["46F542BD92D44635"]
+			dependencies: ["3411A6B26CA383EA"]
 			id: "6D869C10046E3B8D"
 			tasks: [{
 				id: "1B3DB6923E28CE12"

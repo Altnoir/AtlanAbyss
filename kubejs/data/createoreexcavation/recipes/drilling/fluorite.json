@@ -1,0 +1,23 @@
+{
+  "type": "createoreexcavation:drilling",
+  "drill": {
+    "tag": "createoreexcavation:drills"
+  },
+  "name": "{\"translate\":\"ore.kubejs.fluorite_gem\"}",
+  "weight": 3,
+  "ticks": 60,
+  "biomeWhitelist": "atlanabyss:is_sinking_sea",
+  "stress": 16,
+  "amountMin": 1.0,
+  "amountMax": 4.0,
+  "output": [
+    {
+      "item": "mekanism:fluorite_gem"
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water",
+    "nbt": {},
+    "amount": 100
+  }
+}

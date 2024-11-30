@@ -14,6 +14,7 @@
 			x: 0.0d
 			y: 0.0d
 			description: [
+				"第一层：主世界"
 				"这是个综合性的深度魔改整合包，虽然主线为科技线，但实际上是个慢节奏的建筑养老包，本包提供了大量的建筑方块（科技模组会辅助玩家获得大量材料），除此之外，本包还包括有枪械，赛马娘，女仆，网络音乐机等生活向的小模组，当然您也可以完全无视掉入门手册，因为这并不是必须完成的，因此完成任务并不会有什么奖励。"
 				"如果你是空岛开局（更多世界选项-Skyblock），则开局送AE大礼包、小商店和微型压缩空间。"
 			]
@@ -31,249 +32,324 @@
 		}
 		{
 			title: "愛するあなたと世界の果てまで行きましょう！"
+			icon: "kubejs:vortex_stone"
 			x: 0.0d
-			y: 6.0d
-			description: ["与心爱的你走向世界尽头！"]
-			dependencies: ["22A51008EEC6EA3F"]
+			y: 13.5d
+			description: [
+				"第?层：最终之涡"
+				"与心爱的你走向世界尽头！（1格距离=主世界256格）"
+			]
+			dependencies: ["31C9BD74CDB26F64"]
 			hide: true
 			id: "28670C1E02245523"
 			tasks: [{
-				id: "2A68778D3CEFF75A"
+				id: "47748CC6F0EB6A07"
 				type: "dimension"
-				title: "前往霜原星"
-				icon: "beyond_earth:permafrost"
-				dimension: "beyond_earth:glacio"
-			}]
-			rewards: [
-				{
-					id: "0DE74D7551518443"
-					type: "item"
-					item: "beyond_earth:glacio_globe"
-				}
-				{
-					id: "7153575F5BB5DDE8"
-					type: "item"
-					item: "lightmanscurrency:coin_netherite"
-					count: 16
-				}
-			]
-		}
-		{
-			title: "太空时代！"
-			x: 0.0d
-			y: -4.0d
-			description: ["为了超级地球！"]
-			dependencies: [
-				"55645B086F62FED6"
-				"32235EE0E58F5696"
-			]
-			hide: true
-			id: "07B81B403E4B0D1A"
-			tasks: [{
-				id: "205A6EC1C563BDD6"
-				type: "item"
-				item: "beyond_earth:nasa_workbench"
-			}]
-			rewards: [
-				{
-					id: "1026F3994489C6CF"
-					type: "item"
-					item: "beyond_earth:earth_globe"
-				}
-				{
-					id: "20A426026D8B1165"
-					type: "item"
-					item: "lightmanscurrency:coin_emerald"
-					count: 4
-				}
-			]
-		}
-		{
-			title: "登上月球"
-			icon: "beyond_earth:moon_stone"
-			disable_toast: true
-			x: 4.0d
-			y: 0.0d
-			dependencies: ["07B81B403E4B0D1A"]
-			hide: true
-			id: "616E289D48FA5E59"
-			tasks: [{
-				id: "484231C754E25BFA"
-				type: "dimension"
-				title: "登上月球"
-				icon: "beyond_earth:moon_stone"
-				dimension: "beyond_earth:moon"
-			}]
-			rewards: [
-				{
-					id: "6EF951431E2A6E67"
-					type: "item"
-					item: "beyond_earth:moon_globe"
-				}
-				{
-					id: "4C77312430774907"
-					type: "item"
-					item: "lightmanscurrency:coin_emerald"
-					count: 16
-				}
-			]
-		}
-		{
-			title: "抵达火星"
-			icon: "beyond_earth:mars_stone"
-			disable_toast: true
-			x: 0.0d
-			y: 4.0d
-			dependencies: ["616E289D48FA5E59"]
-			hide: true
-			id: "2E5A338D1CB13F1C"
-			tasks: [{
-				id: "3DD2C056D65BF518"
-				type: "dimension"
-				title: "抵达火星"
-				icon: "beyond_earth:mars_stone"
-				dimension: "beyond_earth:mars"
-			}]
-			rewards: [
-				{
-					id: "1832B30A83DA5CC8"
-					type: "item"
-					item: "beyond_earth:mars_globe"
-				}
-				{
-					id: "34D383B5DC6ACE66"
-					type: "item"
-					item: "lightmanscurrency:coin_diamond"
-					count: 4
-				}
-			]
-		}
-		{
-			title: "飞往水星"
-			icon: "beyond_earth:mercury_stone"
-			disable_toast: true
-			x: -4.0d
-			y: 0.0d
-			dependencies: ["2E5A338D1CB13F1C"]
-			hide: true
-			id: "0E10C2F87B227A9B"
-			tasks: [{
-				id: "75A1F53D81AFE270"
-				type: "dimension"
-				title: "飞往水星"
-				icon: "beyond_earth:mercury_stone"
-				dimension: "beyond_earth:mercury"
-			}]
-			rewards: [
-				{
-					id: "36705004D5421320"
-					type: "item"
-					item: "beyond_earth:mercury_globe"
-				}
-				{
-					id: "157B2678DCA56018"
-					type: "item"
-					item: "lightmanscurrency:coin_diamond"
-					count: 16
-				}
-			]
-		}
-		{
-			title: "着陆金星"
-			icon: "beyond_earth:venus_stone"
-			disable_toast: true
-			x: 0.0d
-			y: -5.0d
-			dependencies: ["0E10C2F87B227A9B"]
-			hide: true
-			id: "22A51008EEC6EA3F"
-			tasks: [{
-				id: "26D2D23B2921E150"
-				type: "dimension"
-				title: "着陆金星"
-				icon: "beyond_earth:venus_stone"
-				dimension: "beyond_earth:venus"
-			}]
-			rewards: [
-				{
-					id: "05B02DAE3C7CD3ED"
-					type: "item"
-					item: "beyond_earth:venus_globe"
-				}
-				{
-					id: "626A89DC8081EEE5"
-					type: "item"
-					item: "lightmanscurrency:coin_netherite"
-					count: 4
-				}
-			]
-		}
-		{
-			title: "应力时代！"
-			x: 3.0d
-			y: 0.0d
-			description: ["解放生产力！"]
-			dependencies: [
-				"44572D4F990F380B"
-				"07835D33A0BA9FD1"
-			]
-			hide: true
-			id: "2E033A75E93E8F02"
-			tasks: [{
-				id: "430079995A59D09B"
-				type: "item"
-				item: "create:andesite_casing"
+				title: "结束了..."
+				icon: "kubejs:vortex_stone"
+				dimension: "atlanabyss:final_vortex"
 			}]
 			rewards: [{
-				id: "00E49FDA6716E899"
+				id: "2001EA65F581EF0E"
+				type: "item"
+				item: "lightmanscurrency:coin_netherite"
+			}]
+		}
+		{
+			title: "“诱惑之森”"
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"第二层：诱惑之森 （1格距离=主世界2格）"
+				"注：下往第二层需要搭建特殊传送门，搭建方式呈躺着放的十字形，把水晶传送门放在中间，然后黑曜石放在传送门方块的四个边即可，需要注意的是传送门只能放在基岩层！"
+			]
+			dependencies: ["44572D4F990F380B"]
+			hide: true
+			id: "668F9E6D1E5EAD90"
+			tasks: [{
+				id: "60981D2403E48051"
+				type: "item"
+				item: "kubejs:amethyst_portal"
+			}]
+			rewards: [{
+				id: "38D05A398B34B980"
 				type: "item"
 				item: "lightmanscurrency:coin_gold"
 				count: 2
 			}]
 		}
 		{
-			title: "电力时代！"
+			title: "“大断层”"
 			x: 0.0d
 			y: 3.0d
-			description: ["电力时代！"]
-			dependencies: [
-				"2E033A75E93E8F02"
-				"2896AD9C74EA52FF"
+			description: [
+				"第三层：大断层（1格距离=主世界4格）"
+				"下往第三层的方法和进入第二层一样。"
+				"在这里往下跳可前往第四层(无需传送门)。"
 			]
-			id: "59974DE38BB77A44"
+			dependencies: ["668F9E6D1E5EAD90"]
+			id: "3F27B137C093E691"
 			tasks: [{
-				id: "7A27C55292C4F85C"
-				type: "item"
-				item: "thermal:machine_frame"
+				id: "4618B860A67ADC6B"
+				type: "dimension"
+				title: "别摔死了"
+				icon: "minecraft:diorite"
+				dimension: "atlanabyss:major_fault"
 			}]
 			rewards: [{
-				id: "51720E0F106CC736"
+				id: "5C6CDC5AE9C12831"
 				type: "item"
 				item: "lightmanscurrency:coin_gold"
 				count: 4
 			}]
 		}
 		{
-			title: "算力时代！"
-			x: -3.0d
-			y: 0.0d
-			description: ["自动化！"]
-			dependencies: [
-				"59974DE38BB77A44"
-				"0995E7B507258131"
+			title: "“不屈花园”"
+			icon: "botania:enchanted_soil"
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"第四层：不屈花园（1格距离=主世界8格）"
+				"从第三层往下跳可到达这里(无需传送门)。"
+				"如需返回第三层，可以在当地收集一些薄荷和糖，合成薄荷糖不断地吃掉即可。"
 			]
-			hide: true
-			id: "55645B086F62FED6"
+			dependencies: ["3F27B137C093E691"]
+			id: "7B3BD20CA1DED2F8"
 			tasks: [{
-				id: "4BE8578259AF0D41"
-				type: "item"
-				item: "ae2:controller"
+				id: "24D4168A3E792CAC"
+				type: "dimension"
+				title: "安全区"
+				icon: "botania:enchanted_soil"
+				dimension: "atlanabyss:secret_garden"
 			}]
 			rewards: [{
-				id: "2A5A1430192A9B53"
+				id: "4CCBDFC95521D6CB"
+				type: "item"
+				item: "lightmanscurrency:coin_gold"
+				count: 8
+			}]
+		}
+		{
+			title: "“沉沦之海”"
+			icon: "kubejs:abyss_portal"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"第五层：沉沦之海（1格距离=主世界16格）"
+				"下往第五层的方法和进入第二层一样。"
+			]
+			dependencies: ["7B3BD20CA1DED2F8"]
+			id: "71F9AA949923BAB9"
+			tasks: [{
+				id: "3F7BE586472DDA1A"
+				type: "dimension"
+				title: "来自深渊"
+				icon: "kubejs:abyss_portal"
+				dimension: "atlanabyss:sinking_sea"
+			}]
+			rewards: [{
+				id: "5BC925E3D65CAFBA"
 				type: "item"
 				item: "lightmanscurrency:coin_gold"
 				count: 16
+			}]
+		}
+		{
+			title: "“天堂”"
+			x: 0.0d
+			y: 7.5d
+			description: [
+				"第六层：天堂（1格距离=主世界32格）"
+				"下往第六层已无法使用水晶传送门进行传送了，你需要在第五层寻找到深渊传送门遗迹，位于下层基岩层附近（多数情况下结构埋在方块里），也许你需要许多牛奶。"
+				"深渊传送门无需框架，直接就可进行传送（小提示：此传送门为单行道，从第六层开始变无法回头）。"
+			]
+			dependencies: ["71F9AA949923BAB9"]
+			id: "629CFB2AC95A381C"
+			tasks: [{
+				id: "592AA3C93ED07E0F"
+				type: "dimension"
+				title: "不归之都"
+				icon: "kubejs:deep_portal"
+				dimension: "atlanabyss:paradise"
+			}]
+			rewards: [{
+				id: "011355B6B27AF06E"
+				type: "item"
+				item: "lightmanscurrency:coin_gold"
+				count: 32
+			}]
+		}
+		{
+			title: "“颠倒之域”"
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"第七层：颠倒之域（1格距离=主世界64格）"
+				"下往第七层需使用深层传送门。\\n搭建方式和水晶传送门一样。"
+			]
+			dependencies: ["629CFB2AC95A381C"]
+			id: "7DE7DA29AEE73C26"
+			tasks: [{
+				id: "1A5C2BBC58D64D5F"
+				type: "dimension"
+				title: "颠倒之域"
+				icon: "minecraft:amethyst_block"
+				dimension: "inversia:inversiadim"
+			}]
+			rewards: [{
+				id: "465496F098D741E1"
+				type: "item"
+				item: "lightmanscurrency:coin_emerald"
+			}]
+		}
+		{
+			title: "“地狱”"
+			x: 0.0d
+			y: 10.5d
+			description: [
+				"第八层：地狱（1格距离=主世界128格）"
+				"从第七层直接往下跳便可直达下界上层。\\n注：在下界中的敌对生物，生命值会随着距离出生点越远越高（但是掉落物也会随之变多）。"
+			]
+			dependencies: ["7DE7DA29AEE73C26"]
+			id: "137563E84BDBF0CC"
+			tasks: [{
+				id: "2B5DEA529A5A582C"
+				type: "dimension"
+				title: "“我们需要更深入一些”"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "6C9B415DA2656B3D"
+				type: "item"
+				item: "lightmanscurrency:coin_emerald"
+				count: 2
+			}]
+		}
+		{
+			title: "赛特斯石英"
+			icon: "ae2:deepslate_quartz_ore"
+			x: -1.0d
+			y: 12.0d
+			description: ["一种只出现在末地的矿石，并且不会暴露在表面。"]
+			dependencies: ["31C9BD74CDB26F64"]
+			hide: true
+			id: "4CE70B356739CDA2"
+			tasks: [{
+				id: "35302A300907D826"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+			rewards: [{
+				id: "0D7139956CAA07A2"
+				type: "xp"
+				auto: "enabled"
+				xp: 10
+			}]
+		}
+		{
+			title: "“终末地”"
+			disable_toast: true
+			x: 0.0d
+			y: 12.0d
+			description: [
+				"最终层：终末地"
+				"要塞只会生成在下界，推荐使用结构罗盘寻找“要塞”，或使用末影之眼寻找。"
+				"注：第一个末影之眼在第六层的小屋内（随机生成在地表）。"
+			]
+			dependencies: ["137563E84BDBF0CC"]
+			id: "31C9BD74CDB26F64"
+			tasks: [{
+				id: "02A8F47BE70987F9"
+				type: "dimension"
+				title: "结束了？"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "41BE2A1DE53847C1"
+				type: "item"
+				item: "lightmanscurrency:coin_diamond"
+			}]
+		}
+		{
+			title: "铋"
+			icon: "kubejs:end_bismuth_ore"
+			x: 1.0d
+			y: 12.0d
+			description: [
+				"只出现在末地的矿石，极其稀少并且深埋地下，但是"
+				"随着时间的推移，铋矿石会往周围的末地石生长。"
+			]
+			dependencies: ["31C9BD74CDB26F64"]
+			hide: true
+			id: "1371ABE055E0D70F"
+			tasks: [{
+				id: "21EDA9917C91B04F"
+				type: "item"
+				item: "kubejs:raw_bismuth"
+			}]
+			rewards: [{
+				id: "010A6419F1CEC6B8"
+				type: "xp"
+				auto: "enabled"
+				xp: 10
+			}]
+		}
+		{
+			title: "锇"
+			icon: "kubejs:vortex_osmium_ore"
+			disable_toast: true
+			x: -1.0d
+			y: 13.5d
+			dependencies: ["28670C1E02245523"]
+			id: "4A3550E5839AD4BC"
+			tasks: [{
+				id: "626130126F122861"
+				type: "item"
+				item: "kubejs:raw_osmium"
+			}]
+			rewards: [{
+				id: "4A1A6261553876C4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "铀"
+			icon: "kubejs:vortex_uranium_ore"
+			disable_toast: true
+			x: 1.0d
+			y: 13.5d
+			dependencies: ["28670C1E02245523"]
+			id: "2A9E463AE4F154F3"
+			tasks: [{
+				id: "722D243685F388A8"
+				type: "item"
+				item: "kubejs:raw_uranium"
+			}]
+			rewards: [{
+				id: "464C271AC9AE1610"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "结束了！！！"
+			icon: "minecraft:bedrock"
+			disable_toast: true
+			x: 0.0d
+			y: -13.5d
+			dependencies: ["2EF2921EC3F1C90D"]
+			hide: true
+			id: "0847B4976156669D"
+			tasks: [{
+				id: "0A617E9FD4A859FE"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "5444213988BD199A"
+				type: "item"
+				item: "create:creative_crate"
 			}]
 		}
 	]

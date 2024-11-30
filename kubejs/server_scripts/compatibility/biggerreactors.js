@@ -139,7 +139,7 @@ onEvent('recipes', (event) => {
         type: 'industrialforegoing:dissolution_chamber',
         input: [
             { item: 'biggerreactors:cyanite_ingot' },
-            { item: 'kubejs:plutonium_ingot' },
+            { item: 'biggerreactors:cyanite_ingot' },
             { item: 'biggerreactors:cyanite_ingot' },
             { item: 'biggerreactors:cyanite_ingot' },
             { item: 'biggerreactors:cyanite_ingot' },
@@ -147,6 +147,7 @@ onEvent('recipes', (event) => {
             { item: 'biggerreactors:cyanite_ingot' },
             { item: 'biggerreactors:cyanite_ingot' }
         ],
+        inputFluid: '{FluidName:\"kubejs:molten_plutonium\",Amount:90}',
         output: {
             item: 'kubejs:lutetium_ingot',
             count: 1
@@ -156,16 +157,12 @@ onEvent('recipes', (event) => {
     event.custom({
         type: 'industrialforegoing:dissolution_chamber',
         input: [
-            { item: 'biggerreactors:cyanite_ingot' },
-            { item: 'beyond_earth:ice_shard' },
-            { item: 'biggerreactors:cyanite_ingot' },
-            { item: 'beyond_earth:ice_shard' },
-            { item: 'beyond_earth:ice_shard' },
-            { item: 'biggerreactors:cyanite_ingot' },
-            { item: 'beyond_earth:ice_shard' },
+            { item: 'minecraft:netherite_scrap' },
+            { item: 'minecraft:netherite_scrap' },
+            { item: 'minecraft:netherite_scrap' },
             { item: 'biggerreactors:cyanite_ingot' }
         ],
-        inputFluid: '{FluidName:\"industrialforegoing:ether_gas\",Amount:1000}',
+        inputFluid: '{FluidName:\"industrialforegoing:ether_gas\",Amount:10}',
         output: {
             item: 'kubejs:lutetium_ingot',
             count: 1

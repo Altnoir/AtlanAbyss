@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 5.0,
+        "type": "minecraft:uniform"
+      },
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "atlanabyss:reliquary",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:music_discs",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0.0,
+        "max": 2.0,
+        "type": "minecraft:uniform"
+      },
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "kubejs:substrates",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 3.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "kubejs:steel_machine_frame"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "industrialforegoing:mycelial_frosty"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_water_breathing\"}"
+            }
+          ],
+          "name": "minecraft:potion"
+        }
+      ]
+    }
+  ]
+}

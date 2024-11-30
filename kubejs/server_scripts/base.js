@@ -20,14 +20,7 @@ onEvent('recipes', event => {
 	remove('pipez:ultimate_upgrade')
 	remove('pipez:wrench')
 	remove('pipez:filter_destination_tool')
-	//beyond_earth
-	remove('beyond_earth:steel_ingot_from_nugget')
-	remove('beyond_earth:steel_ingot')
-	remove('beyond_earth:steel_nugget_from_ingot')
-	remove('beyond_earth:steel_block')
-	remove('beyond_earth:steel_ingot_blasting')
-	remove('beyond_earth:iron_plate')
-	remove('beyond_earth:iron_stick')
+
 	//花肥
 	remove('botania:fertilizer_dye')
 	//多余的牛奶瓶
@@ -361,16 +354,6 @@ onEvent('recipes', event => {
 	remove('minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore')
 	remove('minecraft:quartz_from_blasting')
 	remove('minecraft:quartz')
-	//byd ore
-	remove('beyond_earth:smelting/diamond_gem_from_venus_ore')
-	remove('beyond_earth:smelting/diamond_gem_from_mars_ore')
-	remove('beyond_earth:blasting/diamond_gem_from_venus_ore')
-	remove('beyond_earth:blasting/diamond_gem_from_mars_ore')
-
-	remove('beyond_earth:smelting/coal_from_venus_ore')
-	remove('beyond_earth:smelting/coal_from_glacio_ore')
-	remove('beyond_earth:blasting/coal_from_venus_ore')
-	remove('beyond_earth:blasting/coal_from_glacio_ore')
 
 	remove('thermal:storage/copper_nugget_from_ingot')
 
@@ -466,6 +449,16 @@ onEvent('recipes', event => {
 		'quark:glowberry_sack'
 	]).id("atlanabyss:glow_berries_from_quark_glowberry_sack")
 
+	//烈焰人燃烧室
+	remove('create:crafting/kinetics/empty_blaze_burner')
+	event.shaped('create:empty_blaze_burner', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: 'create:iron_sheet',
+		B: '#atlanabyss:blaze_burner'
+	}).id('atlanabyss:empty_blaze_burner');
 	//安山合金
 	remove('create:crafting/materials/andesite_alloy_from_zinc')
 	remove('create:crafting/materials/andesite_alloy')
@@ -1681,7 +1674,18 @@ onEvent('recipes', event => {
 		Item.of('create:crushed_raw_aluminum').withChance(0.40),
 		Item.of('kubejs:aluminum_nugget').withChance(0.40)
 	], 'minecraft:basalt').id("atlanabyss:crushing_basalt")
-
+	//粉碎页岩
+	create.milling([
+		Item.of('create:crushed_raw_silver').withChance(0.45)
+	], 'quark:shale').id("atlanabyss:milling_shale")
+	create.crushing([
+		Item.of('create:crushed_raw_silver').withChance(0.45),
+		Item.of('kubejs:osmium_nugget').withChance(0.45)
+	], 'quark:shale').id("atlanabyss:crushing_shale")
+	//粉碎永冻石
+	create.milling([
+		'kubejs:deep_scrap'
+	], 'quark:permafrost').id("atlanabyss:milling_permafrost")
 	//压板
 	create.pressing(
 		'thermal:steel_plate',
@@ -1758,6 +1762,9 @@ onEvent('recipes', event => {
 	create.haunting('ars_nouveau:wilden_wing', 'minecraft:rotten_flesh').id('atlanabyss:haunting_wilden_wing')
 	create.haunting('ars_nouveau:green_archwood_sapling', '#atlanabyss:vanilla_saplings').id('atlanabyss:haunting_green_archwood_sapling')//新生魔艺绿树
 	create.haunting('create:polished_rose_quartz', 'tconstruct:rose_gold_ingot').id('atlanabyss:haunting_rose_gold_quartz')//玫瑰石英
+	create.haunting('kubejs:polished_candy_crystal', 'umapyoi:hachimi_mid').id('atlanabyss:haunting_hachimi_crystal')//蜂蜜水晶
+	create.haunting('kubejs:polished_sulfur', 'thermal:electrum_ingot').id('atlanabyss:haunting_electrum_sulfur')//琥珀硫磺
+	create.haunting('kubejs:polished_charged_certus_quartz', 'kubejs:platinum_ingot').id('atlanabyss:haunting_platinum_certus_quartz')//铂制石英
 	create.haunting('botania:fertilizer', 'minecraft:bone_meal',).id('atlanabyss:haunting_fertilizer')//花肥
 	create.haunting('thermal:lightning_charge', 'thermal:blitz_powder').id('atlanabyss:haunting_lightning_charge')//鸣雷弹
 	create.haunting('thermal:ice_charge', 'thermal:blizz_powder').id('atlanabyss:haunting_ice_charge')//瀑冰弹
@@ -2220,7 +2227,7 @@ onEvent('recipes', event => {
 		[
 			create.deploying(o, [o, 'minecraft:coal']),
 			create.pressing(o, o)
-		]).transitionalItem(o).loops(42).id("atlanabyss:compressed_coal_block")
+		]).transitionalItem(o).loops(7).id("atlanabyss:compressed_coal_block")
 
 	//恩赐之石
 	create.crushing([
@@ -2300,10 +2307,6 @@ onEvent('recipes', event => {
 	//铝
 	event.smelting('kubejs:aluminum_ingot', 'kubejs:aluminum_compound').xp(.8).id("atlanabyss:aluminum_ingot_from_smelting")
 	event.blasting('kubejs:aluminum_ingot', 'kubejs:aluminum_compound').xp(.8).id("atlanabyss:aluminum_ingot_from_blasting")
-
-	//水星银
-	event.smelting('thermal:silver_ingot', 'kubejs:mercury_silver_ore').xp(1).id("atlanabyss:mercury_silver_ingot_from_smelting")
-	event.blasting('thermal:silver_ingot', 'kubejs:mercury_silver_ore').xp(1).id("atlanabyss:mercury_silver_ingot_from_blasting")
 
 	//粗沙
 	create.emptying([
@@ -2738,7 +2741,7 @@ onEvent('recipes', event => {
 		item_in: {
 			item: 'air'
 		},
-		block_in: 'compactmachines:wall',
+		block_in: 'minecraft:bedrock',
 		post: [
 			{
 				type: 'random',

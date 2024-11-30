@@ -36,70 +36,75 @@ onEvent('recipes', event => {
     //压缩空间小型
     remove('compactmachines:machine_small')
     event.shaped('compactmachines:machine_small', [
-        'AAA',
+        'CAC',
         'ABA',
-        'AAA'
+        'CAC'
     ], {
         A: 'minecraft:iron_block',
-        B: 'compactmachines:machine_tiny'
+        B: 'compactmachines:machine_tiny',
+        C: 'compactmachines:wall'
     }).id('atlanabyss:machine_small')
     //压缩空间普通
     remove('compactmachines:machine_normal')
     event.shaped('compactmachines:machine_normal', [
-        'AAA',
+        'CAC',
         'ABA',
-        'AAA'
+        'CAC'
     ], {
         A: 'thermal:tin_block',
-        B: 'compactmachines:machine_small'
+        B: 'compactmachines:machine_small',
+        C: 'compactmachines:wall'
     }).id('atlanabyss:machine_normal')
     //压缩空间大型
     remove('compactmachines:machine_large')
     event.shaped('compactmachines:machine_large', [
-        'AAA',
+        'CAC',
         'ABA',
-        'AAA'
+        'CAC'
     ], {
         A: 'tconstruct:amethyst_bronze_block',
-        B: 'compactmachines:machine_normal'
+        B: 'compactmachines:machine_normal',
+        C: 'compactmachines:wall'
     }).id('atlanabyss:machine_large')
     //压缩空间巨型
     remove('compactmachines:machine_giant')
     event.shaped('compactmachines:machine_giant', [
-        'AAA',
+        'CAC',
         'ABA',
-        'AAA'
+        'CAC'
     ], {
         A: 'thermal:electrum_block',
-        B: 'compactmachines:machine_large'
+        B: 'compactmachines:machine_large',
+        C: 'compactmachines:wall'
     }).id('atlanabyss:machine_giant')
     //压缩空间最大型
     remove('compactmachines:machine_maximum')
     event.shaped('compactmachines:machine_maximum', [
-        'AAA',
+        'CAC',
         'ABA',
-        'AAA'
+        'CAC'
     ], {
         A: 'thermal:signalum_block',
-        B: 'compactmachines:machine_giant'
+        B: 'compactmachines:machine_giant',
+        C: 'compactmachines:wall'
     }).id('atlanabyss:machine_maximum')
 
     //物品隧道
     remove('compactmachines:tunnels/item')
     event.shapeless(Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:item"}}'), [
-        'compactmachines:machine_tiny',
+        'compactmachines:wall',
         'create:chute'
     ]).id('atlanabyss:machine_tunnel_item')
     //液体隧道
     remove('compactmachines:tunnels/fluid')
     event.shapeless(Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:fluid"}}'), [
-        'compactmachines:machine_tiny',
+        'compactmachines:wall',
         'create:fluid_pipe'
     ]).id('atlanabyss:machine_tunnel_fluid')
     //能量隧道
     remove('compactmachines:tunnels/energy')
     event.shapeless(Item.of('compactmachines:tunnel', '{definition:{id:"compactmachines:energy"}}'), [
-        'compactmachines:machine_tiny',
+        'compactmachines:wall',
         'createaddition:copper_spool'
     ]).id('atlanabyss:machine_tunnel_energy')
     //缩小器
@@ -112,7 +117,7 @@ onEvent('recipes', event => {
     ]).id('atlanabyss:machine_from_personal_shrinking_device')
 
     //区块加载升级
-    event.shaped('compactmachines:chunkloader_upgrade', [
+    event.shaped(Item.of('compactmachines:chunkloader_upgrade', '{upgrade_info:{key:"compactmachines:chunkloader"}}'), [
         'AAA',
         'ABA',
         'AAA'

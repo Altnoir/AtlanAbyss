@@ -1,10 +1,10 @@
 {
     "replace": false,
     "values": [
-        "atlanabyss:paradise/golden_township",
+        "atlanabyss:paradise/golden_city",
+        "atlanabyss:paradise/ore_paradise",
         "atlanabyss:paradise/purple_fields",
-        "atlanabyss:paradise/paradise",
-        "atlanabyss:paradise/deathbed",
-        "atlanabyss:paradise/cherry_blossom_jungle"
+        "atlanabyss:paradise/cherry_blossom_jungle",
+        "atlanabyss:paradise/deathbed"
     ]
 }

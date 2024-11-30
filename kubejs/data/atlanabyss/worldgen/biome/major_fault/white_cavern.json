@@ -96,12 +96,9 @@
     ],
     [
       "atlanabyss:major_fault/amethyst_crystal_spike",
-      "atlanabyss:major_fault/amethyst_crystal_ground_spike",
-      "atlanabyss:major_fault/smooth_basalt_blob"
+      "atlanabyss:major_fault/amethyst_crystal_ground_spike"
     ],
-    [
-      "atlanabyss:major_fault/smooth_basalt_calcite_blob"
-    ],
+    [],
     [
       "minecraft:patch_tall_grass_2",
       "minecraft:trees_plains",

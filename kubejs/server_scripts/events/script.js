@@ -11,7 +11,6 @@ onEvent("lootjs", event => {
     .replaceLoot('create:dough', 'farmersdelight:wheat_dough');
   //删
   const removeLoot = [
-    'beyond_earth:steel_ingot',
     'ars_nouveau:wilden_spike',
     'ars_nouveau:wilden_wing',
     'ars_nouveau:wilden_horn',
@@ -614,6 +613,11 @@ onEvent('item.food_eaten', event => {
   }
 
 
+  //人形垃圾桶！
+  if (item.id == 'kubejs:purin') {
+    server.runCommandSilent(`execute at ${player} run tp @e[type=item] ${player}`);
+  }
+
 
   if (item.id == 'kubejs:thorn_rose_tea' && !player.creativeMode) {
     //当玩家生命值低于4，那他吃下大概率就死了
@@ -737,13 +741,3 @@ onEvent('item.food_eaten', event => {
 //   'minecraft:spider',
 //   'minecraft:strider'
 // ];
-
-onEvent('block.left_click', (event) => {
-  const { block, player } = event;
-
-  if (player.mainHandItem != 'witherstormmod:command_block_pickaxe') return;
-
-  if (block.id == 'minecraft:bedrock') {
-    block.set('kubejs:bedrock')
-  }
-})

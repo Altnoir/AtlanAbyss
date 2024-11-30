@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "kubejs:vortex_stone",
+    "kubejs:vortex_osmium_ore",
+    "kubejs:vortex_uranium_ore"
+  ]
+}

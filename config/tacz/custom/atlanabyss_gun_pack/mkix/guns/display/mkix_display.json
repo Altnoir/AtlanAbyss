@@ -1,0 +1,49 @@
+{
+  "model": "mkix:gun/mkix_geo",
+  "texture": "mkix:gun/uv/mkix",
+  "hud": "mkix:gun/hud/mkix",
+  "slot": "mkix:gun/slot/mkix",
+  "animation": "mkix:mkix",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "player_animator_3rd": "tacz:rifle_default.player_animation",
+  "transform": {
+    "scale": {
+      "thirdperson": [1, 1, 1],
+      "ground": [1, 1, 1],
+      "fixed": [1.5, 1.5, 1.5]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 5
+  },
+  "iron_zoom": 1.2,
+  "sounds": {
+    "shoot": "mkix:mkix/fire",
+    "shoot_3p": "mkix:mkix/fire",
+    "reload_empty": "mkix:mkix/load",
+    "draw": "mkix:mkix/draw",
+    "put_away": "mkix:mkix/draw1",
+    "dry_fire": "tacz:dry_fire",
+    "inspect": "mkix:mkix/inspect",
+    "inspect_empty": "mkix:mkix/inspect",
+    "fire_select": "tacz:fire_select",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
+    "melee_stock": "mkix:mkix/melee"
+  },
+  "offhand_show": {
+    "pos": [-2, 25, 5],
+    "rotate": [0, 0, -60],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-2, 25, 5],
+      "rotate": [0, 0, -60],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

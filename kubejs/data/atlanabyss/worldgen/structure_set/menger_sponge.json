@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "atlanabyss:menger_sponge",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 29,
+    "separation": 19,
+    "salt": 735560721
+  }
+}

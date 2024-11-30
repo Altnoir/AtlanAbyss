@@ -72,11 +72,10 @@ onEvent('recipes', event => {
     //框架
     event.shaped('extendedcrafting:frame', [
         'ACA',
-        'CBC',
+        'C C',
         'ACA'
     ], {
-        A: 'beyond_earth:compressed_ostrum',
-        B: 'kubejs:thermal_mechanism',
+        A: 'kubejs:gravitation_mechanism',
         C: 'thermal:obsidian_glass'
     }).id('atlanabyss:extendedcrafting_frame')
     //压缩机
@@ -96,7 +95,6 @@ onEvent('recipes', event => {
     ]).id('atlanabyss:crystal_matrix_ingot')
     //无尽之锭
     create.mechanical_crafting('kubejs:infinity_ingot', [
-        'PPPPPPP',
         'ABCDEFG',
         'PPPPPPP'
     ], {
@@ -123,7 +121,7 @@ onEvent('recipes', event => {
 
         thermal.insolator([
             Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${output}"}`),
-            Item.of(input).withChance(0.15)
+            Item.of(input).withChance(1.5)
         ], [
             Item.of('extendedcrafting:singularity', `{Id:"extendedcrafting:${output}"}`)
         ]).energy(300000).id('atlanabyss:insolator_' + output);
@@ -145,24 +143,87 @@ onEvent('recipes', event => {
 
 
 
+    //加速火把
+    remove('torcherino:torcherino')
+    event.shaped('torcherino:torcherino', [
+        'A',
+        'B'
+    ], {
+        A: 'tiab:time_in_a_bottle',
+        B: 'minecraft:stick'
+    }).id('atlanabyss:tor_torcherino')
+    //加速南瓜
+    remove('torcherino:lanterino')
+    event.shaped('torcherino:lanterino', [
+        'A',
+        'B'
+    ], {
+        A: 'minecraft:carved_pumpkin',
+        B: 'torcherino:torcherino'
+    }).id('atlanabyss:tor_lanterino')
+    remove('torcherino:compressed_lanterino')
+    event.shaped('torcherino:compressed_lanterino', [
+        'A',
+        'B'
+    ], {
+        A: 'minecraft:carved_pumpkin',
+        B: 'torcherino:compressed_torcherino'
+    }).id('atlanabyss:tor_compressed_lanterino')
+    remove('torcherino:double_compressed_lanterino')
+    event.shaped('torcherino:double_compressed_lanterino', [
+        'A',
+        'B'
+    ], {
+        A: 'minecraft:carved_pumpkin',
+        B: 'torcherino:double_compressed_torcherino'
+    }).id('atlanabyss:tor_double_compressed_lanterino')
+    //加速灯笼
+    remove('torcherino:lantern')
+    event.shaped('torcherino:lantern', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'minecraft:iron_nugget',
+        B: 'torcherino:torcherino'
+    }).id('atlanabyss:tor_lantern')
+    remove('torcherino:compressed_lantern')
+    event.shaped('torcherino:compressed_lantern', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'minecraft:iron_nugget',
+        B: 'torcherino:compressed_torcherino'
+    }).id('atlanabyss:tor_compressed_lantern')
+    remove('torcherino:double_compressed_lantern')
+    event.shaped('torcherino:double_compressed_lantern', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'minecraft:iron_nugget',
+        B: 'torcherino:double_compressed_torcherino'
+    }).id('atlanabyss:tor_double_compressed_lantern')
+
     //创造箱子
     create.mechanical_crafting('create:creative_crate', [
-        'CCCCC',
-        'CBBBC',
-        'CBABC',
-        'CBBBC',
-        'CCCCC'
+        'CCCCCCC',
+        'C     C',
+        'C     C',
+        'C     C',
+        'C     C',
+        'C     C',
+        'CCCCCCC'
     ], {
-        A: 'witherstormmod:withered_nether_star',
-        B: 'kubejs:infinity_ingot',
-        C: 'minecraft:bedrock'
+        C: 'kubejs:infinity_ingot'
     }).id('atlanabyss:creative_crate')
 
     //创造储罐
     event.custom({
         type: 'extendedcrafting:compressor',
         powerCost: 7210000,
-        inputCount: 1000,
+        inputCount: 2233,
         ingredient: { item: 'create:fluid_tank' },
         catalyst: { item: 'kubejs:infinity_ingot' },
         result: { item: 'create:creative_fluid_tank' }
