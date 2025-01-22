@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:grip_eazy"
+  }
+}

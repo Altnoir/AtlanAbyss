@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "applied_armorer:etched_quartz_bullet",
+    "count": 5
+  }
+}

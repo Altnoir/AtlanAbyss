@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:gems/amethyst"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "minecraft:netherite_scrap"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_hyper_propellant"
+  }
+}

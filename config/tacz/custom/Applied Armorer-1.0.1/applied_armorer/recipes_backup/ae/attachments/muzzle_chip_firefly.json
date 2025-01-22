@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "ae2:printed_silicon"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "minecraft:fire_charge"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_firefly"
+  }
+}

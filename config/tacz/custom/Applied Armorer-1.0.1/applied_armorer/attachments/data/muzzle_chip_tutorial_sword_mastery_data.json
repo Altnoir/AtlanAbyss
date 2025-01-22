@@ -1,0 +1,11 @@
+{
+  "weight": 0,
+  "melee": {
+    "distance": 1,
+    "range_angle": 60,
+    "cooldown": -0.18,
+    "damage": 24,
+    "knockback": 0.1,
+    "prep": 0.17
+  }
+}

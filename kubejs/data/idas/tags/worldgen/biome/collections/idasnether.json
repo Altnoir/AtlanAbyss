@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#atlanabyss:is_tempt_forest",
+    "#minecraft:is_nether",
+    {
+      "id": "forge:nether",
+      "required": false
+    },
+    {
+      "id": "c:nether",
+      "required": false
+    },
+    {
+      "id": "c:in_nether",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/rare"
+      },
+      "count": 7
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "bf1:ef46",
+    "nbt": {
+      "DummyAmmo": 0,
+      "HideFlags": 16
+    },
+    "ammo_count": 80
+  }
+}

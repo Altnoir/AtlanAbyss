@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#atlanabyss:is_sinking_sea",
+    "minecraft:ice_spikes",
+    "minecraft:frozen_peaks",
+    {
+      "id": "byg:shattered_glacier",
+      "required": false
+    }
+  ]
+}

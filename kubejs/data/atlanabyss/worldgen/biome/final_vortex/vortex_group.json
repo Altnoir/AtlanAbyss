@@ -20,13 +20,13 @@
     "monster": [
       {
         "type": "minecraft:wither_skeleton",
-        "weight": 99,
+        "weight": 95,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:wither",
-        "weight": 1,
+        "weight": 5,
         "minCount": 1,
         "maxCount": 1
       }
@@ -48,7 +48,9 @@
   },
   "features": [
     [],
-    [],
+    [
+      "atlanabyss:final_vortex/lake"
+    ],
     [
       "atlanabyss:final_vortex/amethyst_geode"
     ],

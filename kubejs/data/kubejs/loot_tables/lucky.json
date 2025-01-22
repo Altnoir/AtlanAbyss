@@ -67,7 +67,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 2,
+                    "weight": 1,
                     "name": "kubejs:lucky/power"
                 },
                 {

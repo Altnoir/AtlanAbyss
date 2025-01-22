@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#atlanabyss:is_tempt_forest",
+    "minecraft:nether_wastes"
+    ]
+}

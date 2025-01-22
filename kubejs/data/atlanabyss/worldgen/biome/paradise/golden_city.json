@@ -41,30 +41,6 @@
         "weight": 10,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "biomancy:hungry_flesh_blob",
-        "weight": 70,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "biomancy:legacy_flesh_blob",
-        "weight": 50,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "biomancy:primordial_flesh_blob",
-        "weight": 30,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "biomancy:primordial_hungry_flesh_blob",
-        "weight": 20,
-        "minCount": 1,
-        "maxCount": 1
       }
     ],
     "creature": [],
@@ -73,9 +49,9 @@
     "underground_water_creature": [
       {
         "type": "minecraft:tropical_fish",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 8
+        "weight": 10,
+        "minCount": 2,
+        "maxCount": 4
       }
     ],
     "water_creature": [],
@@ -108,9 +84,7 @@
     [],
     [],
     [],
-    [
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",

@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/ultimate"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_mg_emg_prototype"
+  }
+}

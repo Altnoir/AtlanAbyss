@@ -1,0 +1,9 @@
+{
+
+  "name": "bf1.ammo.303.name",
+
+  "display": "bf1:303_display",
+
+  "stack_size": 50,
+  "sort": 10
+}

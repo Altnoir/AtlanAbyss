@@ -270,7 +270,10 @@ onEvent('entity.spawned', event => {
       let health = entity.getMaxHealth();
 
       if (level.dimension === 'minecraft:the_nether') {
-        monsterSpawn(health, 0.025, 16);
+        monsterSpawn(health, 0.025, 32);
+      }
+      if (level.dimension === 'atlanabyss:final_vortex') {
+        monsterSpawn(health, 0.05, 16);
       }
     })
   }

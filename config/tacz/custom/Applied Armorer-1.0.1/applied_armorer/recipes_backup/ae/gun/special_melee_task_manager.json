@@ -1,0 +1,32 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "ae2:quantum_entangled_singularity"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "item": "ae2:annihilation_core"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:special_melee_task_manager"
+  }
+}

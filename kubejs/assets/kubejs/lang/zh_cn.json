@@ -1,6 +1,9 @@
 {
     "item.kubejs.granite_alloy": "花岗合金",
     "item.kubejs.diorite_alloy": "闪长合金",
+    "item.kubejs.metanova_alloy": "辉恒星合金",
+    "item.kubejs.astral_ingot": "炫星锭",
+    "item.kubejs.star_dust": "星尘",
 
     "item.kubejs.aluminium_chip": "铝碎块",
     "item.kubejs.aluminum_compound": "铝化合物",

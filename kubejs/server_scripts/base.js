@@ -96,10 +96,10 @@ onEvent('recipes', event => {
 		type: 'tconstruct:casting_table',
 		cast: { item: 'kubejs:mass_scrap' },
 		cast_consumed: true,
-		fluid: { tag: 'minecraft:lava', amount: 4000 },
+		fluid: { tag: 'minecraft:lava', amount: 1000 },
 		result: 'kubejs:misery_scrap',
 		cooling_time: 40
-	})
+	}).id("atlanabyss:misery_scrap")
 	//虚空碎片
 	event.shapeless('kubejs:void_scrap', [
 		'kubejs:misery_scrap',
@@ -1116,6 +1116,16 @@ onEvent('recipes', event => {
 	// event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_rg', 'minecraft:horn_coral']).id("atlanabyss:mixed_herb_yrg_from_rg")//黄+红+绿
 	// event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_yg', 'minecraft:crimson_roots']).id("atlanabyss:mixed_herb_yrg_from_yg")//黄+红+绿
 	// event.shapeless('kubejs:mixed_herb_yrg', ['kubejs:mixed_herb_yr', 'minecraft:fern']).id("atlanabyss:mixed_herb_yrg_from_yr")//黄+红+绿
+	//区块载入器
+	remove('createchunkloading:crafting/chunk_loader')
+	event.shaped('createchunkloading:chunk_loader', [
+		'eee',
+		'eve',
+		'eee'
+	], {
+		e: 'minecraft:glass',
+		v: 'kubejs:vibration_mechanism'
+	}).id("atlanabyss:chunk_loader")
 	//钻石粉
 	create.crushing(['thermal:diamond_dust'], 'minecraft:diamond').id("atlanabyss:crushing_diamond")
 	//锯末
@@ -1867,7 +1877,54 @@ onEvent('recipes', event => {
 				amount: 25
 			}
 		]
-	}).id("atlanabyss:distillation_crude_oil")
+	}).id("atlanabyss:distillation_crude_oil_4")
+	// event.custom({
+	// 	type: 'createdieselgenerators:distillation',
+	// 	ingredients: [
+	// 		{
+	// 			fluidTag: 'forge:crude_oil',
+	// 			amount: 100
+	// 		}
+	// 	],
+	// 	heatRequirement: 'heated',
+	// 	processingTime: 100,
+	// 	results: [
+	// 		{
+	// 			fluid: 'thermal:heavy_oil',
+	// 			amount: 33
+	// 		},
+	// 		{
+	// 			fluid: 'createdieselgenerators:diesel',
+	// 			amount: 33
+	// 		},
+	// 		{
+	// 			fluid: 'thermal:light_oil',
+	// 			amount: 33
+	// 		}
+	// 	]
+	// }).id("atlanabyss:distillation_crude_oil_3")
+	// event.custom({
+	// 	type: 'createdieselgenerators:distillation',
+	// 	ingredients: [
+	// 		{
+	// 			fluidTag: 'forge:crude_oil',
+	// 			amount: 100
+	// 		}
+	// 	],
+	// 	heatRequirement: 'heated',
+	// 	processingTime: 100,
+	// 	results: [
+	// 		{
+	// 			fluid: 'thermal:heavy_oil',
+	// 			amount: 50
+	// 		},
+	// 		{
+	// 			fluid: 'createdieselgenerators:diesel',
+	// 			amount: 50
+	// 		}
+
+	// 	]
+	// }).id("atlanabyss:distillation_crude_oil_2")
 
 	//汽油处理
 	create.mixing(['thermal:bitumen', Fluid.of('createdieselgenerators:gasoline', 250)], [
@@ -1934,6 +1991,18 @@ onEvent('recipes', event => {
 		C: 'createaddition:capacitor',
 		D: 'createaddition:brass_rod'
 	}).id("atlanabyss:mechanical_crafting_integrated_circuit")
+	//PCB2
+	event.shaped('16x kubejs:integrated_circuit', [
+		' A ',
+		'BCB',
+		'DED'
+	], {
+		A: 'kubejs:empty_pcb',
+		B: 'minecraft:redstone',
+		C: 'createaddition:capacitor',
+		D: 'cataclysm:monstrous_horn',
+		E: 'cataclysm:ignitium_ingot'
+	}).id("atlanabyss:integrated_circuit_2")
 
 
 	//奇点
@@ -2437,6 +2506,62 @@ onEvent('recipes', event => {
 	event.shapeless('9x kubejs:tungsten_ingot', [
 		'kubejs:tungsten_block'
 	]).id("atlanabyss:tungsten_ingot_from_block")
+
+	//炫星锭
+	create.mixing('kubejs:astral_ingot', [
+		'10x kubejs:star_dust',
+		'kubejs:bismuth_block',
+		'kubejs:tungsten_nugget'
+	]).heated().id("atlanabyss:mixing_astral_ingot")
+	thermal.smelter('kubejs:astral_ingot', [
+		'10x kubejs:star_dust',
+		'kubejs:bismuth_block',
+		'kubejs:tungsten_nugget'
+	]).energy(12000).id("atlanabyss:smelter_astral_ingot")
+	//辉恒星合金
+	create.mixing('2x kubejs:metanova_alloy', [
+		'kubejs:astral_ingot',
+		'kubejs:charged_soulsteel_ingot',
+		'create:chromatic_compound'
+	]).heated().id("atlanabyss:mixing_metanova_alloy")
+	thermal.smelter('2x kubejs:metanova_alloy', [
+		'kubejs:astral_ingot',
+		'kubejs:charged_soulsteel_ingot',
+		'create:chromatic_compound'
+	]).energy(24000).id("atlanabyss:smelter_metanova_alloy")
+
+	//人造焰魔锭
+	create.item_application('cataclysm:ignitium_ingot', [
+		'botania:blaze_block',
+		'kubejs:metanova_alloy'
+	]).id("atlanabyss:item_application_ignitium_ingot")
+	//人造恶魔犄角
+	create.deploying('cataclysm:monstrous_horn', [
+		'minecraft:netherite_ingot',
+		'kubejs:metanova_alloy'
+	]).id('atlanabyss:deploying_monstrous_horn')
+	//无铀核废料
+	create.item_application('biggerreactors:cyanite_ingot', [
+		'kubejs:bismuth_block',
+		'kubejs:metanova_alloy'
+	]).id("atlanabyss:item_application_cyanite_ingot")
+	//简单非物质
+	create.mixing('mekanism:pellet_antimatter', [
+		'10x biggerreactors:cyanite_ingot',
+		'kubejs:metanova_alloy'
+	]).id("atlanabyss:mixing_pellet_antimatter")
+	//幸运智能矩阵
+	create.item_application('kubejs:computation_matrix', [
+		'kubejs:lucky_block',
+		'kubejs:metanova_alloy'
+	]).id("atlanabyss:item_application_computation_matrix")
+	//
+	Ingredient.of('#forge:ingots').itemIds.forEach((ingot) => {
+		create.deploying(ingot, [
+			'kubejs:metanova_alloy',
+			ingot
+		]).keepHeldItem().id('atlanabyss:deploying_copy_' + ingot.replace(':', '_'))
+	})
 
 
 

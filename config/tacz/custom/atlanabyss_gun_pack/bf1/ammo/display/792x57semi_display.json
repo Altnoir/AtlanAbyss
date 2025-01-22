@@ -1,0 +1,28 @@
+{
+  "slot": "bf1:ammo/slot/792x57semi",
+  "tracer_color": "#FF9999",
+  "shell": {
+    "model": "tacz:shell/308_shell",
+    "texture": "tacz:shell/308_shell"
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "ground": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "fixed": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    }
+  }
+}
+    

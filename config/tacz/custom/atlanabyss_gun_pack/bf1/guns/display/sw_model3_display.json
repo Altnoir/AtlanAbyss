@@ -1,0 +1,58 @@
+{
+  "model": "bf1:gun/sw_model3_geo",
+  "texture": "bf1:gun/uv/sw_model3",
+  "lod": {
+    "model": "bf1:gun/lod/sw_model3",
+    "texture": "bf1:gun/lod/sw_model3"
+  },
+  "hud": "bf1:gun/hud/sw_model3",
+  "hud_empty": "bf1:gun/hud/sw_model3_empty",
+  "slot": "bf1:gun/slot/sw_model3",
+  "animation": "bf1:sw_model3",
+  "use_default_animation": "pistol",
+  "player_animator_3rd": "tacz:pistol_default.player_animation",
+  "show_crosshair": false,
+  "transform": {
+    "scale": {
+      "thirdperson": [ 0.6, 0.6, 0.6 ],
+      "ground": [ 0.6, 0.6, 0.6 ],
+      "fixed": [ 1.2, 1.2, 1.2 ]
+    }
+  },
+  "shell": {
+    "initial_velocity": [ 5.0, 3.0, 1 ],
+    "random_velocity": [ 2.5, 2, 0.25 ],
+    "acceleration": [ 0.0, -20, 0.0 ],
+    "angular_velocity": [ 360, -960, 90 ],
+    "living_time": 1.0
+  },
+  "muzzle_flash": {
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 1.5
+  },
+  "sounds": {
+    "shoot": "bf1:sw_model3/shoot",
+    "shoot_3p": "bf1:sw_model3/shoot",
+    //    "silence": "tacz:p320/p320_silence",
+    //    "silence_3p": "tacz:p320/p320_silence_3p",
+    //"reload_empty": "tacz:p320/p320_reload_empty",
+    //"reload_tactical": "tacz:p320/p320_reload_tactical",
+    "inspect": "bf1:vo/throw_medkit",
+    "inspect_empty": "bf1:vo/melee_swing",
+    "draw": "bf1:sw_model3/draw",
+    "put_away": "bf1:martini/grab",
+    "melee_push": "tacz:melee_stock/melee_stock_01"
+  },
+  "offhand_show": {
+    "pos": [ 4, 13, -1 ],
+    "rotate": [ -90, -35, 90 ],
+    "scale": [ 0.5, 0.5, 0.5 ]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [ -5, 13, -1 ],
+      "rotate": [ -90, -35, 90 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    }
+  }
+}

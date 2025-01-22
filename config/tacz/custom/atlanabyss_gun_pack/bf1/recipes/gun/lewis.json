@@ -1,0 +1,23 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/rare"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/uncommon"
+      },
+      "count": 15
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "bf1:lewis",
+    "attachments": {
+      "stock": "tacz:oem_stock_heavy"
+    }
+  }
+}

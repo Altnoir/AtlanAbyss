@@ -1,0 +1,20 @@
+{
+    "config": {
+        "fluid": {
+            "state": {
+                "Properties": {
+                    "level": "0"
+                },
+                "Name": "industrialforegoing:ether_gas"
+            },
+            "type": "minecraft:simple_state_provider"
+        },
+        "barrier": {
+            "state": {
+                "Name": "ae2:sky_stone_block"
+            },
+            "type": "minecraft:simple_state_provider"
+        }
+    },
+    "type": "minecraft:lake"
+}

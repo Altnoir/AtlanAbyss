@@ -2,9 +2,9 @@
   "materials": [
     {
       "item": {
-        "tag": "atlanabyss:materials/rare"
+        "tag": "atlanabyss:materials/epic"
       },
-      "count": 6
+      "count": 5
     }
   ],
   "result": {

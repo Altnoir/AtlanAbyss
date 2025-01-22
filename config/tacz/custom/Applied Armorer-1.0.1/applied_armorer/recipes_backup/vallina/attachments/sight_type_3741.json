@@ -1,0 +1,32 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:glass_panes"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:sight_type_3741"
+  }
+}

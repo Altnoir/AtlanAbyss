@@ -215,7 +215,7 @@ onEvent('item.food_eaten', (e) => {
 
     // 恰薄荷糖飞天
     if (dim == dim4 && item.id == 'neapolitan:mint_candies') {
-        if (player.y >= 255) {
+        if (player.y >= 155) {
             server.runCommandSilent(`execute in ${dim3} as ${player} run tp ${xback} -514 ${zback}`)
             player.potionEffects.add('minecraft:levitation', 600, 4);
         } else if (levitation == null) {

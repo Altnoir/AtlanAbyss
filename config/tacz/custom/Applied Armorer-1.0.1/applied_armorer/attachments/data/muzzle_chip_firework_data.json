@@ -1,0 +1,25 @@
+{
+  "weight": 0,
+  "explosion": {
+    "explode": true,
+    "radius": {
+      "addend": 1
+    },
+    "damage": {
+      "addend": 50
+    },
+    "knockback": true,
+    "destroy_block": false
+  },
+  "knockback": {
+    "addend": 0.3
+  },
+  "rpm": {
+    "percent": -0.5
+  },
+  "recoil": {
+    "pitch": {
+      "multiplier": 2
+    }
+  }
+}

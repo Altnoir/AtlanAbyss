@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "ae2:all_certus_quartz"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_pistol_semi_union"
+  }
+}

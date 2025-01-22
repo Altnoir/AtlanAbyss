@@ -1,0 +1,6 @@
+{
+  "name": "bf1.attachment.sniper_scope.name",
+  "display": "bf1:sniper_scope_display",
+  "data": "bf1:sniper_scope_data",
+  "type": "scope"
+}

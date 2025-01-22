@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 14
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_classic"
+  }
+}

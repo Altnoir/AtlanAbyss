@@ -1,0 +1,17 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/rare"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "bf1:f_faust",
+    "nbt": {
+      "HideFlags": 16
+    }
+  }
+}

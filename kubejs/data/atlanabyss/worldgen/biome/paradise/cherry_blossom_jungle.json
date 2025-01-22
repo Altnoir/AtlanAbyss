@@ -43,18 +43,6 @@
         "weight": 10,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "biomancy:flesh_blob",
-        "weight": 100,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "biomancy:hungry_flesh_blob",
-        "weight": 70,
-        "minCount": 1,
-        "maxCount": 1
       }
     ],
     "creature": [
@@ -119,9 +107,7 @@
     [],
     [],
     [],
-    [
-      "minecraft:spring_lava"
-    ],
+    [],
     [
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",

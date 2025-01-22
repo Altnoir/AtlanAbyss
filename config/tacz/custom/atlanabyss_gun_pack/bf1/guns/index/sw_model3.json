@@ -1,0 +1,8 @@
+{
+  "name": "bf1.gun.sw_model3.name",
+  "display": "bf1:sw_model3_display",
+  "data": "bf1:sw_model3_data",
+  "tooltip": "bf1.gun.sw_model3.desc",
+  "type": "pistol",
+  "sort": 4
+}

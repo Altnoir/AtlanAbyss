@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:extended_mag_aa_3"
+  }
+}

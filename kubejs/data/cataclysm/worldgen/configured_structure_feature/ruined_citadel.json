@@ -1,0 +1,20 @@
+{
+  "type": "cataclysm:ruined_citadel",
+  "config": {
+  },
+  "biomes": "#cataclysm:has_structure/ruined_citadel_biomes",
+  "adapt_noise": false,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "cataclysm:endermaptera",
+          "weight": 3,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  }
+}

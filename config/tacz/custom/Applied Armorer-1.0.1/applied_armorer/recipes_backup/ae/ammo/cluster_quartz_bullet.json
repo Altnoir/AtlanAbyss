@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "applied_armorer:cluster_quartz_bullet",
+    "count": 24
+  }
+}

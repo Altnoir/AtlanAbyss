@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 14
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:extended_battery_aa_2"
+  }
+}

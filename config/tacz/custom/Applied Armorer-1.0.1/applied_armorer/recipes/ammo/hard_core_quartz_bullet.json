@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/brass"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 15
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "applied_armorer:hard_core_quartz_bullet",
+    "count": 5
+  }
+}

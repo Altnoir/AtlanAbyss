@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "kubejs:meteosteel_ingot"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/fluix"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "applied_armorer:fluix_battery",
+    "count": 5
+  }
+}

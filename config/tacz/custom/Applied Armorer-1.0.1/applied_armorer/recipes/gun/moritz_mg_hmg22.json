@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 16
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_mg_hmg22"
+  }
+}

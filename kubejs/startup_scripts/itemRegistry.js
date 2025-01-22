@@ -12,6 +12,7 @@ onEvent('item.registry', event => {
 
 	event.create('granite_alloy').displayName('Granite Alloy');
 	event.create('diorite_alloy').displayName('Diorite Alloy');
+	event.create('metanova_alloy').displayName('Metanova Alloy');
 	event.create('platinum_ingot').displayName('Platinum Ingot');
 	event.create('tungsten_ingot').displayName('tungsten Ingot');
 	event.create('aluminum_ingot').displayName('Aluminum Ingot');
@@ -35,6 +36,7 @@ onEvent('item.registry', event => {
 	event.create('calamity_ingot').displayName('Calamity Ingot');
 	event.create('end_ingot').displayName('End Ingot');
 	event.create('elemental_ingot').displayName('Elemental Ingot');
+	event.create('astral_ingot').displayName('Astral Ingot');
 	event.create('virgin_ingot').displayName('Virgin Ingot');
 
 	event.create('aluminum_nugget').displayName('Aluminum Nugget');
@@ -47,6 +49,7 @@ onEvent('item.registry', event => {
 
 	event.create('aluminum_dust').displayName('Aluminum Dust');
 	event.create('osmium_dust').displayName('Osmium Dust');
+	event.create('star_dust').displayName('Star Dust');
 
 	event.create('rose_quartz_sheet').displayName('Rose Quartz Sheet');
 	event.create('aluminum_sheet').displayName('Aluminum Sheet');

@@ -1,0 +1,24 @@
+{
+  "materials": [
+    {
+      "item": {
+        "type": "forge:partial_nbt",
+        "item": "tacz:attachment",
+        "nbt": {
+          "AttachmentId": "applied_armorer:muzzle_chip_toxic_sword"
+        }
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "minecraft:wither_skeleton_skull"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_wither_sword"
+  }
+}

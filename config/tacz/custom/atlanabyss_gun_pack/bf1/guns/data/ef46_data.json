@@ -1,0 +1,118 @@
+{
+  "ammo": "bf1:fuel",
+  "rpm": 666,
+  "bullet": {
+    "life": 0.5,
+    "bullet_amount": 5,
+    "damage": 3,
+    // 曳光弹间隔数量，没有此字段则不发射曳光弹
+    // 设置为 0 则是每发都是曳光弹
+    //"tracer_count_interval": 0,
+    "extra_damage": {
+      "armor_ignore": 0.5,
+      "head_shot_multiplier": 1.25,
+      "damage_adjust": [
+        {
+          "distance": 10,
+          "damage": 3
+        },
+
+        {
+          "distance": "infinite",
+          "damage": 2.5
+        }
+      ]
+    },
+    "speed": 80,
+    "gravity": 0,
+    "knockback": 0,
+    "friction": 0.33,
+    "ignite": {
+      // 点燃实体
+      "entity": true,
+      // 点燃方块
+      "block": true
+    },
+    // 点燃时间，默认为 2 秒，仅用于实体
+    "ignite_entity_time": 4,
+    "pierce": 2
+  },
+  "ammo_amount": 80,
+  "extended_mag_ammo_amount": [
+    0,
+    0,
+    0
+  ],
+  "bolt": "open_bolt",
+  "reload": {
+    "type": "fuel",
+    "feed": {
+      "empty": 0.1,
+      "tactical": 0.1
+    },
+    "cooldown": {
+      "empty": 0.2,
+      "tactical": 0.2
+    }
+  },
+  "draw_time": 0.5,
+  "put_away_time": 0.4,
+  "aim_time": 0.1,
+  "sprint_time": 0.21,
+  // 额外移速修正，多种情况同时满足时，仅计算最后一个修正
+  // 对于其中的每个情况，最终的修正值是枪械和所有配件该情况下修正值的和
+  // 调整的属性将作为“最终乘算”类型(MULTIPLY_TOTAL)的属性修饰器添加至实体上
+  "movement_speed": {
+    // 默认修正
+    "base": 0,
+    // 瞄准时
+    "aim": -0.1,
+    // 换弹时
+    "reload": 0
+  },
+
+  "fire_mode": [
+    "auto"
+  ],
+  "allow_attachment_types": [
+    //"extended_mag"
+  ],
+  "recoil": {
+    "pitch": [
+      {
+        "time": 0,
+        "value": [ 0, 0 ]
+      },
+      {
+        "time": 0.5,
+        "value": [ 0, 0 ]
+      }
+    ],
+    "yaw": [
+      {
+        "time": 0,
+        "value": [ -0.5, 0.5 ]
+      },
+      {
+        "time": 0.3,
+        "value": [ -0.5, 0.5 ]
+      },
+      {
+        "time": 0.5,
+        "value": [ 0.15, 0.15 ]
+      },
+      {
+        "time": 0.6,
+        "value": [ 0, 0 ]
+      }
+    ]
+  },
+  "inaccuracy": {
+    "stand": 6.66,
+    "move": 6.66,
+    "sneak": 6.66,
+    "lie": 6.66,
+    "aim": 6.66
+  }
+
+}

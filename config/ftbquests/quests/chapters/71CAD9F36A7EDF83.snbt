@@ -884,7 +884,10 @@
 			disable_toast: true
 			x: -6.0d
 			y: 3.0d
-			description: ["石油，炼起来。"]
+			description: [
+				"石油化工！"
+				"注意，蒸馏塔最少需要搭五层！"
+			]
 			dependencies: ["79DE813508ECE200"]
 			id: "4556B9E8057C5F44"
 			tasks: [{

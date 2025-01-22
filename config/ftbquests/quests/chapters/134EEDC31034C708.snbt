@@ -907,6 +907,32 @@
 				xp: 10
 			}]
 		}
+		{
+			title: "注意事项"
+			icon: "yuushya:ctm_alert_0"
+			disable_toast: true
+			x: -2.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"小概率情况下，你会看不见实体，包括玩家自己的实体，这种情况下只需要重启游戏就行了。"
+				"你也许会因为某些特殊原因显示模组冲突/崩溃等症状，这些情况也是重启一下就好了。"
+				"光影问题需特别注意，如在开启光影过程中遇见渲染BUG，甚至是客户端崩溃，请关掉光影，这一般是光影与某些模组冲突导致的。"
+			]
+			dependencies: ["36943F6B7F336DF2"]
+			hide: true
+			id: "0D9412BC723744D1"
+			tasks: [{
+				id: "5F996E3C4BA98E17"
+				type: "checkmark"
+				title: "确认"
+			}]
+			rewards: [{
+				id: "30FF42D9DC3C2177"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }

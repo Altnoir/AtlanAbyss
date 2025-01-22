@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "ae2:printed_silicon"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/glowstone"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "item": "minecraft:blaze_powder"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_tutorial_sword_mastery"
+  }
+}

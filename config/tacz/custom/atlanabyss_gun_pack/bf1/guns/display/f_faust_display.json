@@ -1,0 +1,74 @@
+{
+  "model": "bf1:gun/f_faust_geo",
+  "texture": "bf1:gun/uv/f_faust",
+  "hud": "bf1:gun/hud/f_faust",
+  "slot": "bf1:gun/slot/f_faust",
+  "animation": "bf1:f_faust",
+  "use_default_animation": "rifle",
+  "lod": {
+    "model": "bf1:gun/lod/f_faust",
+    "texture": "bf1:gun/lod/f_faust"
+  },
+  "transform": {
+    "scale": {
+      "thirdperson": [ 0.6, 0.6, 0.6 ],
+      "ground": [ 0.6, 0.6, 0.6 ],
+      "fixed": [ 1.2, 1.2, 1.2 ]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "bf1:flash/spark",
+    "scale": 5
+  },
+  "ammo": {
+    "entity": {
+      // 模型
+      "model": "no",
+      // 材质
+      "texture": "no"
+    },
+    // 曳光弹颜色，没有则为 #FFFFFF，没有此字段时，会调用 ammo 的相关字段
+    // 严格遵循 RGB 颜色代码
+    "tracer_color": "#FF8888",
+    // 粒子效果，部分参数和原版指令完全一致，具体可参考 wiki：https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4/particle
+    // 没有此字段时，会调用 ammo 的相关字段
+    "particle": {
+      // 名称，具体可选粒子可参考 wiki：https://minecraft.fandom.com/zh/wiki/%E7%B2%92%E5%AD%90
+      "name": "cloud",
+      // 生成的区域，默认为 0 0 0
+      "delta": [
+        0,
+        0,
+        0
+      ],
+      // 速度，默认为0，必须至少为 0
+      "speed": 0.005,
+      // 粒子存在时间，单位 tick，默认为 20 tick
+      "life_time": 15,
+      // 粒子数量，当子弹速度过快时，可以增大此数量，能够填满子弹路径的空隙
+      "count": 10
+    }
+  },
+  "sounds": {
+    "reload_tactical": "bf1:f_faust/bringdown",
+    "reload_empty": "bf1:f_faust/bringdown",
+    "inspect": "tacz:rpg7/rpg7_inspect",
+    "inspect_empty": "bf1:vo/request_ammo_2",
+    "draw": "bf1:f_faust/bringdown",
+    "put_away": "tacz:rpg7/rpg7_put_away",
+    "shoot": "bf1:f_faust/shoot",
+    "shoot_3p": "bf1:f_faust/shoot"
+  },
+  "offhand_show": {
+    "pos": [ 0, 20, 5 ],
+    "rotate": [ -20, 0, 30 ],
+    "scale": [ 0.5, 0.5, 0.5 ]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [ -4, 24, 4 ],
+      "rotate": [ -90, -5, -90 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    }
+  }
+}

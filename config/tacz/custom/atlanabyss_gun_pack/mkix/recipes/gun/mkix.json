@@ -2,9 +2,9 @@
   "materials": [
     {
       "item": {
-        "tag": "atlanabyss:materials/legendary"
+        "tag": "atlanabyss:materials/ultimate"
       },
-      "count": 27
+      "count": 20
     }
   ],
   "result": {

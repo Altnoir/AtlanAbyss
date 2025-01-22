@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "applied_armorer:fluix_infused_grenade",
+    "count": 12
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "weight": 0,
+  "ads": {
+    "addend": 0.03
+  },
+  "recoil": {
+    "yaw": {
+      "multiplier": 0.95
+    },
+    "pitch": {
+      "multiplier": 0.97
+    }
+  },
+  "extended_mag_level": 2
+}

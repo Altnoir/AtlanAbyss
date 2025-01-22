@@ -1,0 +1,59 @@
+{
+  "model": "bf1:gun/ef46_geo",
+  "texture": "bf1:gun/uv/ef46",
+  "lod": {
+    "model": "bf1:gun/lod/ef46",
+    "texture": "bf1:gun/lod/ef46"
+  },
+  "hud": "bf1:gun/hud/ef46",
+  "slot": "bf1:gun/slot/ef46",
+  "animation": "bf1:ef46",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  // 弹药计量样式，可选值：”normal“(显示实际值)、”percent“(显示百分比)，默认为”normal“
+  "ammo_count_style": "percent",
+  "show_crosshair": true,
+  "transform": {
+    "scale": {
+      "thirdperson": [ 0.6, 0.6, 0.6 ],
+      "ground": [ 0.6, 0.6, 0.6 ],
+      "fixed": [ 1.2, 1.2, 1.2 ]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "bf1:flash/flame",
+    "scale": 3
+  },
+  /*  "shell": {
+    "initial_velocity": [5, 2, 1],
+    "random_velocity": [1, 1, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },*/
+  // 机瞄的放大倍数，默认 1.2
+  "iron_zoom": 1.1,
+  "sounds": {
+    "shoot": "bf1:ef46/flame",
+    "shoot_3p": "bf1:ef46/flame",
+    "dry_fire": "bf1:ef46/dry_fire",
+    //"reload_empty": "tacz:fire_select",
+    //"reload_tactical": "tacz:fire_select",
+    "inspect": "bf1:ef46/dry_fire",
+    "inspect_empty": "bf1:vo/request_ammo_2",
+    "draw": "tacz:ump45/ump45_draw",
+    "put_away": "tacz:ump45/ump45_put_away"
+  },
+  "offhand_show": {
+    "pos": [ 1, 19, 4 ],
+    "rotate": [ 0, 0, 50 ],
+    "scale": [ 0.5, 0.5, 0.5 ]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [ -1, 19, 3 ],
+      "rotate": [ -180, 0, 130 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    }
+  }
+}

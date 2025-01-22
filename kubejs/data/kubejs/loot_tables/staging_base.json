@@ -66,6 +66,21 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5.0,
+                "max": 9.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "thermal:machine_frame"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 2,
           "name": "industrialforegoing:mycelial_frosty"
         },

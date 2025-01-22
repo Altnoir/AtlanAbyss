@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/legendary"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 24
+    },
+    {
+      "item": {
+        "tag": "forge:silicon"
+      },
+      "count": 16
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_sniper_semi_k30"
+  }
+}

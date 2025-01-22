@@ -188,6 +188,24 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "tacz:ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoId:\"bf1:fuel\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
                     "weight": 1,
                     "name": "tacz:ammo",
                     "functions": [

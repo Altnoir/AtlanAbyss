@@ -1,0 +1,33 @@
+{
+    "name": "atlanabyss:primordial_cradle/blob",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 4,
+            "element": {
+                "location": "atlanabyss:primordial_cradle/blob1",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "location": "atlanabyss:primordial_cradle/blob2",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "location": "atlanabyss:primordial_cradle/blob3",
+                "processors": "minecraft:empty",
+                "projection": "rigid",
+                "element_type": "minecraft:legacy_single_pool_element"
+            }
+        }
+    ]
+}

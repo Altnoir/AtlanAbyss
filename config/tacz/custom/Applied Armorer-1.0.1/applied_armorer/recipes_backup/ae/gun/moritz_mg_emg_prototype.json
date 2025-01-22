@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "ae2:quantum_entangled_singularity"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 56
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_mg_emg_prototype"
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "mob_id": "minecraft:ender_dragon",
+    "attributes": [
+        {
+            "id": "minecraft:generic.attack_damage",
+            "modifier_name": "attack_damage for End Dragon",
+            "amount": {
+                "min": 15,
+                "difficulty_modifier": {
+                    "operation": "add",
+                    "easy": -5,
+                    "normal": 0,
+                    "hard": 5
+                }
+            },
+            "operation": "addition"
+        },
+        {
+            "id": "minecraft:generic.armor",
+            "modifier_name": "Base armor for End Dragon",
+            "amount": 20,
+            "operation": "addition"
+        },
+        {
+            "id": "minecraft:generic.max_health",
+            "modifier_name": "max_health for End Dragon",
+            "amount": 3800,
+            "operation": "addition"
+        }
+    ]
+}

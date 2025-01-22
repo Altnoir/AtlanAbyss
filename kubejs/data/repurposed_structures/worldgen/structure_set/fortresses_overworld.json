@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "repurposed_structures:fortress_jungle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1694767080,
+    "spacing": 16,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

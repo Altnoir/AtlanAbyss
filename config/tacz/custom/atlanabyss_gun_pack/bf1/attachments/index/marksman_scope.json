@@ -1,0 +1,6 @@
+{
+  "name": "bf1.attachment.marksman_scope.name",
+  "display": "bf1:marksman_scope_display",
+  "data": "bf1:marksman_scope_data",
+  "type": "scope"
+}

@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/uncommon"
+      },
+      "count": 3
+    }
+    /*   {
+      "item": {
+        "tag": "minecraft:swords"
+      }
+    }
+  */
+  ],
+  "result": {
+    "type": "gun",
+    "id": "bf1:sw_model3"
+  }
+}

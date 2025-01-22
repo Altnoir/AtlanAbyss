@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 24
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_pistol_semi_pride"
+  }
+}

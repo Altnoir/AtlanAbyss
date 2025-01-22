@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 12
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_pistol_semi_union"
+  }
+}

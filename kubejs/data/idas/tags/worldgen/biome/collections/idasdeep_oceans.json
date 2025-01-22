@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#atlanabyss:is_sinking_sea",
+    "#minecraft:is_deep_ocean"
+  ]
+}

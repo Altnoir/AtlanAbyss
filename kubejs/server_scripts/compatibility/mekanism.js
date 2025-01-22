@@ -279,24 +279,24 @@ onEvent('recipes', event => {
     ]).energy(20000).id('atlanabyss:smelter_dirty_dust_uranium')
 
     //核废料转换
-    event.custom({
-        type: 'mekanism:oxidizing',
-        input: {
-            ingredient: { item: 'biggerreactors:cyanite_ingot' }
-        },
-        output: { gas: 'mekanism:nuclear_waste', amount: 100 }
-    }).id('atlanabyss:oxidizing_nuclear_waste')
-    event.custom({
-        type: 'mekanism:crystallizing',
-        chemicalType: 'gas',
-        input: {
-            amount: 100,
-            gas: 'mekanism:nuclear_waste'
-        },
-        output: {
-            item: 'biggerreactors:cyanite_ingot'
-        }
-    }).id('atlanabyss:crystallizing_nuclear_waste')
+    // event.custom({
+    //     type: 'mekanism:oxidizing',
+    //     input: {
+    //         ingredient: { item: 'biggerreactors:cyanite_ingot' }
+    //     },
+    //     output: { gas: 'mekanism:nuclear_waste', amount: 100 }
+    // }).id('atlanabyss:oxidizing_nuclear_waste')
+    // event.custom({
+    //     type: 'mekanism:crystallizing',
+    //     chemicalType: 'gas',
+    //     input: {
+    //         amount: 100,
+    //         gas: 'mekanism:nuclear_waste'
+    //     },
+    //     output: {
+    //         item: 'biggerreactors:cyanite_ingot'
+    //     }
+    // }).id('atlanabyss:crystallizing_nuclear_waste')
 
     //钚蒸发
     remove('mekanism:processing/lategame/plutonium')

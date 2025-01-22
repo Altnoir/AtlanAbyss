@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "minecraft:soul_fire_base_blocks"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:heads"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:gems/amethyst"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:si_zako_2403"
+  }
+}

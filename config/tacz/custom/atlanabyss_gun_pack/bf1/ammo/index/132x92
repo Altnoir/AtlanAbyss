@@ -1,0 +1,9 @@
+{
+
+  "name": "bf1.ammo.132x92.name",
+
+  "display": "bf1:132x92_display",
+
+  "stack_size": 20,
+  "sort": 10
+}

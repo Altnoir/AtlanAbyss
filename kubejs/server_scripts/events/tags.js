@@ -226,6 +226,19 @@ const tagToAdd = [
 	['forge:circuits/advanced', 'kubejs:integrated_circuit_advanced'],
 	['forge:circuits/elite', 'kubejs:integrated_circuit_elite'],
 	['forge:circuits/ultimate', 'kubejs:integrated_circuit_ultimate'],
+	//锭tag
+	['forge:ingots', 'kubejs:aluminium_alloy_ingot'],//铝合金锭
+	['forge:ingots', 'kubejs:meteosteel_ingot'],//陨钢锭
+	['forge:ingots','kubejs:magbismuth_ingot'],//神铋锭
+	['forge:ingots','kubejs:plutonium_ingot'],//钚锭
+	['forge:ingots','kubejs:zirconium_alloy_ingot'],//锆合金锭
+	['forge:ingots','kubejs:lutetium_ingot'],//镥锭
+	['forge:ingots','kubejs:eviltwisting_ingot'],//恶魔缠怨锭
+	['forge:ingots','kubejs:chlorophyll_ingot'],//叶绿锭
+	['forge:ingots','kubejs:abyss_ingot'],//深渊锭
+	['forge:ingots','kubejs:planetary_ingot'],//行星锭
+	['forge:ingots','kubejs:calamity_ingot'],//灾厄锭
+	['forge:ingots','kubejs:end_ingot'],//终末锭
 	// //九头蛇肉
 	// ['kubejs:hydra_meat', 'kubejs:hydra_piece'],
 	// ['kubejs:hydra_meat', 'twilightforest:hydra_chop'],
@@ -243,6 +256,7 @@ const tagToAdd = [
 	['forge:ores/aluminum', 'kubejs:nether_aluminum_ore'],
 	['forge:raw_materials/aluminum', 'kubejs:raw_aluminum'],//粗矿
 	['forge:storage_blocks/raw_aluminum', 'kubejs:raw_aluminum_block'],//粗矿块
+	['forge:ingots', 'kubejs:aluminum_ingot'],//锭
 	['forge:ingots/aluminum', 'kubejs:aluminum_ingot'],//锭
 	['forge:nuggets/aluminum', 'kubejs:aluminum_nugget'],//粒
 	['forge:plates/aluminum', 'kubejs:aluminum_sheet'],//板
@@ -254,6 +268,7 @@ const tagToAdd = [
 	['forge:ores/bismuth', 'kubejs:end_bismuth_ore'],
 	['forge:raw_materials/bismuth', 'kubejs:raw_bismuth'],//粗矿
 	['forge:storage_blocks/raw_bismuth', 'kubejs:raw_bismuth_block'],//粗矿块
+	['forge:ingots','kubejs:bismuth_ingot'],//锭
 	['forge:ingots/bismuth', 'kubejs:bismuth_ingot'],//锭
 	//铀
 	['forge:ores', 'kubejs:vortex_uranium_ore'],//矿石

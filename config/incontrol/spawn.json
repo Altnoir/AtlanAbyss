@@ -21,11 +21,6 @@
         "result": "deny"
     },
     {
-        "dimension": "atlanabyss:paradise",
-        "mincount": 20,
-        "result": "deny"
-    },
-    {
         "hostile": true,
         "dimension": "inversia:inversiadim",
         "result": "deny"

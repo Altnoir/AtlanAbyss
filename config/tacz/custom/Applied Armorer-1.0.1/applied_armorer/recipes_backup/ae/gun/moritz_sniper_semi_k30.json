@@ -1,0 +1,32 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 100
+    },
+    {
+      "item": {
+        "tag": "forge:gems/certus_quartz"
+      },
+      "count": 24
+    },
+    {
+      "item": {
+        "tag": "forge:silicon"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_sniper_semi_k30"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "additionalstructures:end_wall_ruin_2",
+    "size": 1
+  },
+  "biomes": "#additionalstructures:has_strucrture/and_midlands",
+  "adapt_noise": true,
+  "spawn_overrides": {}
+}

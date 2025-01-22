@@ -1,0 +1,24 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/rare"
+      },
+      "count": 3
+    },
+    {
+      "item": {
+        "tag": "atlanabyss:materials/uncommon"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "bf1:vg15"
+    //    "nbt": {
+    //      "DummyAmmo": 0
+    //    },
+    //    "ammo_count": 30
+  }
+}

@@ -135,9 +135,7 @@
       "atlanabyss:secret_garden/dragonstone_ore"
     ],
     [],
-    [
-      "minecraft:spring_water"
-    ],
+    [],
     [
       "minecraft:lush_caves_ceiling_vegetation",
       "minecraft:patch_grass_badlands",
@@ -149,6 +147,7 @@
       "atlanabyss:secret_garden/asurine_pool",
       "atlanabyss:secret_garden/flower_flower",
       "atlanabyss:secret_garden/flower_forest",
+      "atlanabyss:secret_garden/coral_tree",
       "atlanabyss:secret_garden/white_tree_1",
       "atlanabyss:secret_garden/flower_cave_2",
       "atlanabyss:secret_garden/sugar_cube_pile"

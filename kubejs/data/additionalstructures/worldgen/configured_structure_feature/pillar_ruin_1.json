@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "additionalstructures:pillar_ruin_1",
+    "size": 1
+  },
+  "biomes": "#atlanabyss:is_paradise",
+  "spawn_overrides": {}
+}

@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 44
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 28
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 12
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_smg_freedom"
+  }
+}

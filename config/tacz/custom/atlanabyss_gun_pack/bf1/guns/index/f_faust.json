@@ -1,0 +1,8 @@
+{
+  "name": "bf1.gun.f_faust.name",
+  "display": "bf1:f_faust_display",
+  "data": "bf1:f_faust_data",
+  "tooltip": "bf1.gun.f_faust.desc",
+  "type": "rpg",
+  "sort": 4
+}

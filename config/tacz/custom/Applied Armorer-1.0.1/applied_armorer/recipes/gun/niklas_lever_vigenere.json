@@ -1,0 +1,20 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "atlanabyss:materials/epic"
+      },
+      "count": 24
+    },
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 32
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:niklas_lever_vigenere"
+  }
+}

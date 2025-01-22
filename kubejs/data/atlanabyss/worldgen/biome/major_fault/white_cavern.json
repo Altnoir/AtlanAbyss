@@ -86,7 +86,6 @@
   "features": [
     [],
     [
-      "minecraft:lake_lava_surface",
       "minecraft:lake_lava_underground"
     ],
     [
@@ -119,10 +118,9 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
       "minecraft:rooted_azalea_tree",
       "minecraft:classic_vines_cave_feature",
+      "atlanabyss:major_fault/lush_caves_ceiling_vegetation",
       "atlanabyss:major_fault/amethyst_void_crystals",
       "atlanabyss:major_fault/amethyst_void_ceiling_crystals"
     ],

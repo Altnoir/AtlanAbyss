@@ -379,6 +379,33 @@ onEvent('recipes', (event) => {
 		'thermal:gunpowder_block', 'thermal:constantan_nugget'
 	)
 
+	//AE子弹
+	ammo('kubejs:shell_pistol', 'create:copper_sheet',
+		'applied_armorer:etched_quartz_bullet', 30,
+		'minecraft:gunpowder', '#forge:gems/certus_quartz'
+	)
+	ammo('kubejs:shell_sniper', 'create:brass_sheet',
+		'applied_armorer:hard_core_quartz_bullet', 10,
+		'minecraft:gunpowder', '#forge:gems/certus_quartz'
+	)
+	ammo('kubejs:shell_shotgun', 'create:brass_sheet',
+		'applied_armorer:cluster_quartz_bullet', 5,
+		'minecraft:gunpowder', '#forge:gems/certus_quartz'
+	)
+	ammo('kubejs:meteosteel_sheet', 'kubejs:meteosteel_sheet',
+		'applied_armorer:fluix_battery', 5,
+		'#forge:dusts/redstone', '#forge:dusts/fluix'
+	)
+	//AE榴弹
+	event.shaped(Item.of('tacz:ammo', 6, '{AmmoId:"applied_armorer:fluix_infused_grenade"}'), [
+		'BBB',
+		'BAB',
+		'BBB'
+	], {
+		A: 'ae2:tiny_tnt',
+		B: 'kubejs:meteosteel_sheet'
+	}).id('atlanabyss:applied_armorer_fluix_infused_grenade')
+
 
 
 	// let sa = ('kubejs:shotgun_shell')
@@ -449,6 +476,12 @@ onEvent('recipes', (event) => {
 		A: 'ae2:tiny_tnt',
 		B: 'createaddition:iron_rod'
 	}).id('atlanabyss:tacz_4rpg_rocket')
+
+	//汽油
+	create.filling(Item.of('tacz:ammo', 10, '{AmmoId:"bf1:fuel"}'), [
+		'industrialforegoing:plastic',
+		Fluid.of('createdieselgenerators:gasoline', 500)
+	]).id('atlanabyss:filling_fuel')
 
 	//榴弹
 	event.shaped(Item.of('tacz:ammo', 6, '{AmmoId:"tacz:40mm"}'), [

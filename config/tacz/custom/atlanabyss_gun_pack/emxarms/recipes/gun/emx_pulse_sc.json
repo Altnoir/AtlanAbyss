@@ -2,9 +2,9 @@
     "materials": [
         {
             "item": {
-                "tag": "atlanabyss:materials/epic"
+                "tag": "atlanabyss:materials/legendary"
             },
-            "count": 3
+            "count": 1
         },
         {
             "item": {

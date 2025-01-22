@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    {
+      "id": "terralith:brushland",
+      "required": false
+    },
+    {
+      "id": "projectvibrantjourneys:prairie",
+      "required": false
+    },
+    {
+      "id": "#forge:is_plains",
+      "required": false
+    },
+    {
+      "id": "#c:plains",
+      "required": false
+    }
+  ]
+}

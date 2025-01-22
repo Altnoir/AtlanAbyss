@@ -1,0 +1,22 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/copper"
+      },
+      "count": 28
+    },
+
+    {
+      "item": {
+        "tag": "forge:gunpowder"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "bf1:792x57",
+    "count": 30
+  }
+}

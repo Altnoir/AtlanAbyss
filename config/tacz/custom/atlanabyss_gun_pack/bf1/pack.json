@@ -1,11 +1,11 @@
 {
-  "version": "1.0a",
-  "name": "Amethy's Battlefield Gun Pack",
-  "desc": "对应TacZ版本:1.0.2",
+  "version": "1.0.3-D",
+  "name": "pack.apocalypse.name",
+  "desc": "pack.apocalypse.desc",
   "license": "CC BY-NC-ND 4.0",
   "authors": [
-    "Amethy"
+    "Amethy, Rebel-D"
   ],
-  "date": "2024-09-05",
+  "date": "2024-12-01",
   "url": "https://space.bilibili.com/5041875/dynamic"
 }

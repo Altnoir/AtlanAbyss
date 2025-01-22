@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:tree",
+    "config": {
+        "ignore_vines": false,
+        "force_dirt": false,
+        "minimum_size": {
+            "type": "minecraft:two_layers_feature_size",
+            "limit": 1,
+            "lower_size": 0,
+            "upper_size": 1
+        },
+        "dirt_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "botania:enchanted_soil"
+            }
+        },
+        "trunk_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "atmospheric:yucca_bundle",
+                "Properties": {
+                    "axis": "y"
+                }
+            }
+        },
+        "foliage_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+                "Name": "atmospheric:passion_vine_bundle"
+            }
+        },
+        "trunk_placer": {
+            "type": "minecraft:straight_trunk_placer",
+            "base_height": 17,
+            "height_rand_a": 2,
+            "height_rand_b": 1
+        },
+        "foliage_placer": {
+            "type": "minecraft:acacia_foliage_placer",
+            "radius": 5,
+            "offset": 0
+        },
+        "decorators": []
+    }
+}

@@ -55,8 +55,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 5.0d
+			x: 0.0d
+			y: 4.5d
 			dependencies: ["682C5AFA3A74DB11"]
 			id: "538FE978E5065BDD"
 			tasks: [{
@@ -123,8 +123,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 5.5d
+			x: 1.5d
+			y: 5.0d
 			dependencies: ["6AFA65E50DDB0DB8"]
 			id: "6E6DF34C898A09B3"
 			tasks: [{
@@ -630,7 +630,7 @@
 		}
 		{
 			x: -2.0d
-			y: -5.0d
+			y: -4.0d
 			dependencies: ["6ED5F5A1BCA73EDF"]
 			id: "3807FA176E1998EC"
 			tasks: [{
@@ -681,7 +681,7 @@
 		}
 		{
 			x: -2.0d
-			y: -6.0d
+			y: -5.0d
 			dependencies: ["6ED5F5A1BCA73EDF"]
 			id: "5DC4FAC3646F9F30"
 			tasks: [{
@@ -833,9 +833,9 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -4.0d
-			dependencies: ["6ED5F5A1BCA73EDF"]
+			x: -7.5d
+			y: -1.0d
+			dependencies: ["62C6B7129CAE1322"]
 			id: "72FE40B0E1E649E9"
 			tasks: [{
 				id: "6AE5698A74834DD7"
@@ -1018,9 +1018,9 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: -1.0d
-			dependencies: ["50058FCFA1FB06A1"]
+			x: -2.0d
+			y: -6.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
 			id: "7C547CEEB3CB4106"
 			tasks: [{
 				id: "7D848AF421E7F07B"
@@ -1029,18 +1029,15 @@
 					id: "tacz:modern_kinetic_gun"
 					Count: 1b
 					tag: {
-						HasBulletInBarrel: 1b
-						GunFireMode: "SEMI"
 						GunId: "tacz:hk_g3"
-						GunCurrentAmmoCount: 20
 					}
 				}
 			}]
 		}
 		{
-			x: -7.5d
-			y: -1.0d
-			dependencies: ["62C6B7129CAE1322"]
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["27F4F9D3C2393701"]
 			id: "26F0C677E8861823"
 			tasks: [{
 				id: "04CA0661A1F11A7F"
@@ -1049,10 +1046,296 @@
 					id: "tacz:modern_kinetic_gun"
 					Count: 1b
 					tag: {
-						HasBulletInBarrel: 1b
-						GunFireMode: "SEMI"
 						GunId: "mkix:mkix"
-						GunCurrentAmmoCount: 1
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["6AFA65E50DDB0DB8"]
+			id: "26F236555BF706CA"
+			tasks: [{
+				id: "1EAA24A87BFD5D38"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "bf1:sw_model3"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["50058FCFA1FB06A1"]
+			id: "6EE0286DD9E2B8A5"
+			tasks: [{
+				id: "73B55EBCF9B57715"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "bf1:lewis"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			dependencies: ["50058FCFA1FB06A1"]
+			id: "44AB141B55B8CB89"
+			tasks: [{
+				id: "367FFF781FB2D8D4"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "bf1:ef46"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			dependencies: ["50058FCFA1FB06A1"]
+			id: "4C1B8ECEC812845E"
+			tasks: [{
+				id: "74E739E3AF1BF31C"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "bf1:f_faust"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			dependencies: ["6AFA65E50DDB0DB8"]
+			id: "0C670F643A258004"
+			tasks: [{
+				id: "53D096DE261F05DF"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "bf1:vg15"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "06BF62E64F25073A"
+			tasks: [{
+				id: "402197C34F676F1D"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:niklas_pistol_semi_union"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "0DB5A0050FA69E7F"
+			tasks: [{
+				id: "414E2F3B490252B0"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:niklas_pistol_semi_right"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "48279FF15CC8BCE8"
+			tasks: [{
+				id: "4F56CC0526E55664"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:niklas_pistol_semi_pride"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: 0.0d
+			dependencies: ["62C6B7129CAE1322"]
+			id: "5C0F1220950974C3"
+			tasks: [{
+				id: "14BE9B600FC7066B"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:moritz_sniper_semi_k30"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "4AC9EF7120F093BA"
+			tasks: [{
+				id: "568E1DD835BD8E7E"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:niklas_lever_vigenere"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "22BD478C56B42745"
+			tasks: [{
+				id: "0CEFF07F25C8E085"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:moritz_rifle_ar77"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "18F29A6996F7FA2A"
+			tasks: [{
+				id: "706453A7124B66C8"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:moritz_shotgun_sg914"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "146BD655575676D9"
+			tasks: [{
+				id: "1F45CA423492C53A"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:niklas_smg_freedom"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -9.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "011F04732D2F7D6A"
+			tasks: [{
+				id: "7B29B2F2AC76ECE9"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:special_melee_task_manager"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 1.0d
+			dependencies: ["62C6B7129CAE1322"]
+			id: "28DDC15990DD1DD1"
+			tasks: [{
+				id: "5C036F1A3FF94890"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:moritz_gernade_gl3"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.0d
+			dependencies: ["6ED5F5A1BCA73EDF"]
+			id: "658931211F7A04D1"
+			tasks: [{
+				id: "0467232B75332703"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:moritz_mg_hmg22"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["27F4F9D3C2393701"]
+			id: "528FC6A82060B418"
+			tasks: [{
+				id: "1EC9697C3092D569"
+				type: "item"
+				item: {
+					id: "tacz:modern_kinetic_gun"
+					Count: 1b
+					tag: {
+						GunId: "applied_armorer:moritz_mg_emg_prototype"
 					}
 				}
 			}]

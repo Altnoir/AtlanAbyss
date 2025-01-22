@@ -92,6 +92,21 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 8.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:sugar_cane"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 3,
           "functions": [
             {
@@ -179,6 +194,21 @@
             }
           ],
           "name": "ars_nouveau:drygmy_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "touhou_little_maid:gomoku"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "touhou_little_maid:cchess"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "touhou_little_maid:wchess"
         }
       ]
     }

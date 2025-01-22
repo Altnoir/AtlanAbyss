@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "biomes": "#atlanabyss:is_final_vortex",
+  "adapt_noise": true,
+  "spawn_overrides": {},
+  "config": {
+    "start_pool": "atlanabyss:menger_sponge2/core",
+    "size": 7
+  }
+}

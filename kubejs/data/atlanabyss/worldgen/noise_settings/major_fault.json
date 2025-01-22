@@ -268,28 +268,6 @@
                         "type": "minecraft:condition",
                         "if_true": {
                             "type": "minecraft:vertical_gradient",
-                            "random_name": "minecraft:limestone",
-                            "true_at_and_below": {
-                                "absolute": -384
-                            },
-                            "false_at_and_above": {
-                                "absolute": -320
-                            }
-                        },
-                        "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                                "Name": "botania:livingrock",
-                                "Properties": {
-                                    "axis": "y"
-                                }
-                            }
-                        }
-                    },
-                    {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                            "type": "minecraft:vertical_gradient",
                             "random_name": "minecraft:calcite",
                             "true_at_and_below": {
                                 "absolute": -320

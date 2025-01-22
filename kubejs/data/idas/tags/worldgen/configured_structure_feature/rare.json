@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "idas:labyrinth",
+    "idas:pillager_fortress",
+    "idas:ancient_mines",
+    "idas:bazaar",
+    "idas:tinkers_workshop",
+    "idas:nexus"
+  ]
+}

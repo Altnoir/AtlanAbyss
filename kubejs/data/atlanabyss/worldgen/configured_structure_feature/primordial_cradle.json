@@ -5,6 +5,6 @@
   "spawn_overrides": {},
   "config": {
     "start_pool": "atlanabyss:primordial_cradle",
-    "size": 1
+    "size": 5
   }
 }

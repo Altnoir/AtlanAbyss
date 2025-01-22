@@ -163,12 +163,12 @@ onEvent('recipes', event => {
         'kubejs:planetary_ingot',
         'kubejs:calamity_ingot',
         'kubejs:end_ingot'
-    ], 2500000).id('atlanabyss:terra_plate_elemental_ingot')
+    ], 1000000).id('atlanabyss:terra_plate_elemental_ingot')
     event.custom({
         type: 'mythicbotany:infusion',
         group: 'infuser',
         output: { item: 'kubejs:elemental_ingot', count: 1 },
-        mana: 2500000,
+        mana: 1000000,
         ingredients: [
             { item: 'kubejs:chlorophyll_ingot' },
             { item: 'kubejs:abyss_ingot' },

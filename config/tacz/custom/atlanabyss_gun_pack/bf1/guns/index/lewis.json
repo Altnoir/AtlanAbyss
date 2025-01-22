@@ -1,0 +1,9 @@
+{
+  "name": "bf1.gun.lewis.name",
+  "display": "bf1:lewis_display",
+  "data": "bf1:lewis_data",
+  "tooltip": "bf1.gun.lewis.desc",
+  "type": "mg",
+  "item_type": "modern_kinetic",
+  "sort": 4
+}

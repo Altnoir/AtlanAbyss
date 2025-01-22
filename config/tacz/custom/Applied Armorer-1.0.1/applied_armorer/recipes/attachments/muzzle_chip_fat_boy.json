@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:gems/fluix"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "ae2:quantum_entangled_singularity"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_fat_boy"
+  }
+}

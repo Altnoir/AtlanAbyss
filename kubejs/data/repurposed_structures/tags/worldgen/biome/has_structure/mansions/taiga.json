@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "atlanabyss:secret_garden/unyielding_garden",
+    "atlanabyss:secret_garden/unyielding_bamboo_grove",
+    "atlanabyss:secret_garden/unyielding_plain",
+    "#repurposed_structures:collections/taigas"
+  ]
+}

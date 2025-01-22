@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 72
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "applied_armorer:moritz_gernade_gl3"
+  }
+}

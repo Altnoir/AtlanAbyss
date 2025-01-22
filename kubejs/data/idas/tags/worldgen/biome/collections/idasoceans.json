@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "#atlanabyss:is_sinking_sea",
+    "#minecraft:is_ocean",
+    "#minecraft:is_deep_ocean",
+    {
+      "id": "forge:ocean",
+      "required": false
+    },
+    {
+      "id": "c:ocean",
+      "required": false
+    }
+  ]
+}

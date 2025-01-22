@@ -1,0 +1,30 @@
+{
+  "materials": [
+    {
+      "item": {
+        "type": "forge:partial_nbt",
+        "item": "tacz:attachment",
+        "nbt": {
+          "AttachmentId": "applied_armorer:muzzle_chip_firefly"
+        }
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "minecraft:tnt"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:fire_charge"
+      },
+      "count": 3
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "applied_armorer:muzzle_chip_firework"
+  }
+}

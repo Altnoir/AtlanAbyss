@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "additionalstructures:end_tower_3",
+    "size": 1
+  },
+  "biomes": "#additionalstructures:has_strucrture/and_highlands",
+  "adapt_noise": true,
+  "spawn_overrides": {}
+}
