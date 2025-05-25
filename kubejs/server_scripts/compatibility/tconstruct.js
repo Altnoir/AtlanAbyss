@@ -2,7 +2,7 @@ onEvent('recipes', event => {
   let remove = (name) => {
     event.remove({ id: name })
   }
-  let { create, thermal } = event.recipes;
+  let { create } = event.recipes;
   //铜 
   remove('tconstruct:common/materials/copper_ingot_from_nuggets')
   remove('tconstruct:common/materials/copper_nugget_from_ingot')
@@ -74,30 +74,6 @@ onEvent('recipes', event => {
     time: 61
   }).id('atlanabyss:tc_melting_uranium_ingot');
 
-  remove('tconstruct:tools/modifiers/slotless/embellishment_uranium')
-  event.custom({
-    type: 'tconstruct:swappable_modifier',
-    inputs: [
-      {
-        item: 'kubejs:uranium_ingot'
-      },
-      {
-        item: 'kubejs:uranium_ingot'
-      },
-      {
-        item: 'kubejs:uranium_ingot'
-      }
-    ],
-    tools: {
-      tag: 'tconstruct:modifiable/embellishment/metal'
-    },
-    allow_crystal: false,
-    result: {
-      name: 'tconstruct:embellishment',
-      value: 'tconstruct:uranium'
-    }
-  }).id('atlanabyss:tc_embellishment_uranium');
-
   remove('tconstruct:smeltery/casting/metal/uranium/ingot_gold_cast')
   remove('tconstruct:smeltery/casting/metal/uranium/ingot_sand_cast')
   event.custom({
@@ -164,11 +140,6 @@ onEvent('recipes', event => {
     },
     temperature: 1200
   }).id('atlanabyss:ore_molten_steelsoul');
-
-  //熔融末影→谐振末影
-  event.recipes.create.mixing(Fluid.of('thermal:ender', 250),
-    Fluid.of('tconstruct:molten_ender', 250)
-  ).heated().id('atlanabyss:superheated_tc_molten_ender')
 
   //粉碎矿熔炼
   function oreMelting(ingredient, result, ra, dt, t, byproducts, ba, id) {
@@ -308,14 +279,6 @@ onEvent('recipes', event => {
     'kubejs:abyss_ingot'
   ]).id('atlanabyss:mixing_granite_alloy_x');
 
-  thermal.smelter('kubejs:granite_alloy', [
-    'minecraft:dried_kelp',
-    'minecraft:granite'
-  ]).energy(3200).id('atlanabyss:smelter_granite_alloy');
-  thermal.smelter('16x kubejs:granite_alloy', [
-    'kubejs:abyss_ingot',
-    'minecraft:granite'
-  ]).energy(3200).id('atlanabyss:smelter_granite_alloy_x');
   //焦黑砖
   event.smelting('tconstruct:seared_brick', 'kubejs:granite_alloy').xp(.3).id('atlanabyss:smelting_seared_brick')
 
@@ -354,21 +317,6 @@ onEvent('recipes', event => {
   event.shapeless('9x tconstruct:soulsteel_nugget', [
     'tconstruct:soulsteel_ingot'
   ]).id('atlanabyss:soulsteel_nugget_from_ingot')
-
-  //紫水晶黄铜
-  remove('createaddition:compat/tconstruct/amethyst_bronze')
-  create.mixing('4x tconstruct:amethyst_bronze_ingot', [
-    '3x minecraft:copper_ingot',
-    'thermal:tin_ingot',
-    'minecraft:amethyst_shard'
-  ]).heated().id('atlanabyss:mixing_amethyst_bronze_ingot');
-
-  remove('thermal:compat/tconstruct/smelter_alloy_tconstruct_amethyst_bronze_ingot')
-  thermal.smelter('4x tconstruct:amethyst_bronze_ingot', [
-    '3x minecraft:copper_ingot',
-    'thermal:tin_ingot',
-    'minecraft:amethyst_shard'
-  ]).energy(4000).id('atlanabyss:smelter_amethyst_bronze_ingot');
 
   remove('tconstruct:smeltery/alloys/molten_amethyst_bronze')
   event.custom({
@@ -497,23 +445,6 @@ onEvent('recipes', event => {
   casting_table('tconstruct:pick_head')
   casting_table('tconstruct:repair_kit')
 
-  remove('thermal:chiller_ball_cast')
-  event.custom({
-    type: 'tconstruct:casting_table',
-    cast: { item: 'minecraft:slime_ball' },
-    cast_consumed: true,
-    switch_slots: true,
-    fluid: { tag: 'forge:molten_brass', amount: 810 },
-    result: 'thermal:chiller_ball_cast',
-    cooling_time: 120
-  }).id('atlanabyss:casting_table_chiller_ball_cast')
-  event.custom({
-    type: 'tconstruct:casting_table',
-    cast: { item: 'thermal:chiller_ball_cast' },
-    fluid: { tag: 'forge:lucky_fluid', amount: 1000 },
-    result: 'kubejs:halo_gashapon',
-    cooling_time: 1200
-  }).id('atlanabyss:casting_table_halo_gashapon')
   event.custom({
     type: 'tconstruct:casting_table',
     cast: { tag: 'forge:wires' },

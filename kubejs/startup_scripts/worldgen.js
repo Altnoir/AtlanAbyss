@@ -49,46 +49,6 @@ onEvent('worldgen.add', event => {
 
   const { anchors } = event;
 
-  // event.addOre(ore => {
-  //   ore.id = 'kubejs:moon_desh_ore'
-  //   ore.biomes = { id: 'beyond_earth:moon_desert' }
-
-  //   ore.addTarget('beyond_earth:moon_stone', 'beyond_earth:moon_desh_ore') //月球戴斯
-
-  //   ore.count([6, 12]).squared().triangleHeight(anchors.aboveBottom(5), anchors.absolute(70))
-
-  //   ore.size = 21
-  //   ore.worldgenLayer = 'underground_ores'
-  // });
-
-  // event.addOre(ore => {
-  //   ore.id = 'kubejs:mars_ostrum_ore'
-  //   ore.biomes = {
-  //     id: 'beyond_earth:mars_desert',
-  //     id: 'beyond_earth:mars_ice_spikes',
-  //     id: 'beyond_earth:mars_rocky_plains'
-  //   }
-  //   ore.addTarget('beyond_earth:mars_stone', 'beyond_earth:mars_ostrum_ore') //火星紫金
-
-  //   ore.count([5, 11]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(10))
-
-  //   ore.size = 21
-  //   ore.worldgenLayer = 'underground_ores'
-  // });
-
-  // event.addOre(ore => {
-  //   ore.id = 'kubejs:venus_calorite_ore'
-  //   ore.biomes = {
-  //     id: 'beyond_earth:venus_desert',
-  //     id: 'beyond_earth:infernal_venus_barrens'
-  //   }
-  //   ore.addTarget('beyond_earth:venus_stone', 'beyond_earth:venus_calorite_ore') //金星耐热金属
-
-  //   ore.count([4, 10]).squared().triangleHeight(anchors.aboveBottom(-59), anchors.absolute(-32))
-
-  //   ore.size = 21
-  //   ore.worldgenLayer = 'underground_ores'
-  // });
 
   event.addOre(ore => {
     ore.id = 'kubejs:nether_sulfur_ore'
@@ -127,17 +87,6 @@ onEvent('worldgen.add', event => {
     ore.worldgenLayer = 'underground_ores'
   });
 
-  event.addOre(ore => {
-    ore.id = 'kubejs:inversia_lead_ore'
-    ore.biomes = /^inversia:*/
-
-    ore.addTarget('minecraft:deepslate', 'thermal:deepslate_lead_ore')//颠倒铅矿
-
-    ore.count([8, 12]).squared().triangleHeight(anchors.aboveBottom(180), anchors.absolute(255))
-
-    ore.size = 11
-    ore.worldgenLayer = 'underground_ores'
-  });
 
   event.addOre(ore => {
     ore.id = 'kubejs:inversia_diamond_ore'

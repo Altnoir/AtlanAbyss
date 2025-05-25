@@ -378,25 +378,6 @@
 				xp: 10
 			}]
 		}
-		{
-			x: -2.0d
-			y: 1.5d
-			shape: "rsquare"
-			description: ["开启赛马娘篇章（可大幅提升身体素质）。"]
-			dependencies: ["3F1BC198BA9B6A45"]
-			hide: true
-			id: "75BA5E928395B13B"
-			tasks: [{
-				id: "0DBE32A16EA11841"
-				type: "item"
-				item: "umapyoi:jewel"
-			}]
-			rewards: [{
-				id: "6928F79E52C62464"
-				type: "xp"
-				xp: 10
-			}]
-		}
 	]
 	quest_links: [ ]
 }

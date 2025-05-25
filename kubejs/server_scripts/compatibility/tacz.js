@@ -262,8 +262,8 @@ onEvent('recipes', (event) => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'thermal:cured_rubber',
-		B: 'thermal:steel_plate',
+		A: 'minecraft:lapis_lazuli',
+		B: '#forge:plates/iron',
 		C: 'kubejs:uncommon_material'
 	}).id('atlanabyss:rare_material')
 	//紫材料
@@ -272,7 +272,7 @@ onEvent('recipes', (event) => {
 		'BCB',
 		'ABA'
 	], {
-		A: 'industrialforegoing:plastic',
+		A: 'minecraft:amethyst_shard',
 		B: 'create:sturdy_sheet',
 		C: 'kubejs:rare_material'
 	}).id('atlanabyss:epic_material')
@@ -300,7 +300,7 @@ onEvent('recipes', (event) => {
 	//空弹壳
 	event.stonecutting('kubejs:shell_pistol', 'create:copper_sheet').id('atlanabyss:cutting_shell_pistol');
 	event.stonecutting('kubejs:shell_shotgun', 'create:copper_sheet').id('atlanabyss:cutting_shell_shotgun');
-	event.stonecutting('kubejs:shell_rifle', 'thermal:steel_plate').id('atlanabyss:cutting_shell_rifle');
+	event.stonecutting('kubejs:shell_rifle', 'create:iron_sheet').id('atlanabyss:cutting_shell_rifle');
 	event.stonecutting('kubejs:shell_sniper', 'create:brass_sheet').id('atlanabyss:cutting_shell_sniper');
 	event.stonecutting('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet').id('atlanabyss:cutting_shell_magnum');
 
@@ -327,7 +327,7 @@ onEvent('recipes', (event) => {
 		'tacz:308', 10,
 		'minecraft:gunpowder', 'create:brass_nugget'
 	)
-	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+	ammo('kubejs:shell_rifle', 'create:iron_sheet',
 		'tacz:762x39', 10,
 		'minecraft:gunpowder', 'create:brass_nugget'
 	)
@@ -337,14 +337,14 @@ onEvent('recipes', (event) => {
 	)
 	ammo('kubejs:shell_sniper', 'create:brass_sheet',
 		'bf1:792x57', 50,
-		'thermal:gunpowder_block', 'create:brass_nugget'
+		'minecraft:gunpowder', 'create:brass_nugget'
 	)
-	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+	ammo('kubejs:shell_rifle', 'create:iron_sheet',
 		'emxarms:339x57x', 10,
 		'minecraft:gunpowder', 'ae2:tiny_tnt'
 	)
 	//狙击步枪弹
-	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+	ammo('kubejs:shell_rifle', 'create:iron_sheet',
 		'tacz:50bmg', 5,
 		'tconstruct:efln_ball', 'create:brass_nugget'
 	)
@@ -356,27 +356,27 @@ onEvent('recipes', (event) => {
 		'bf1:132x92', 5,
 		'tconstruct:efln_ball', 'create:brass_nugget'
 	)
-	ammo('kubejs:shell_rifle', 'thermal:steel_plate',
+	ammo('kubejs:shell_rifle', 'create:iron_sheet',
 		'emxarms:1045x103ice', 5,
-		'tconstruct:efln_ball', 'thermal:ice_charge'
+		'tconstruct:efln_ball', 'minecraft:gunpowder'
 	)
 	//霰弹
 	ammo('kubejs:shell_shotgun', 'create:brass_sheet',
 		'tacz:12g', 5,
 		'minecraft:gunpowder', 'minecraft:iron_nugget'
 	)
-	ammo('kubejs:shell_shotgun', 'thermal:steel_plate',
+	ammo('kubejs:shell_shotgun', 'create:iron_sheet',
 		'emxarms:12slug', 5,
 		'minecraft:gunpowder', 'ae2:matter_ball'
 	)
 	//马格南
 	ammo('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet',
 		'tacz:357mag', 10,
-		'thermal:gunpowder_block', 'thermal:silver_nugget'
+		'minecraft:gunpowder', 'create:iron_sheet'
 	)
 	ammo('kubejs:shell_magnum', 'kubejs:charged_constantan_sheet',
 		'tacz:50ae', 10,
-		'thermal:gunpowder_block', 'thermal:constantan_nugget'
+		'minecraft:gunpowder', 'create:iron_sheet'
 	)
 
 	//AE子弹
@@ -408,55 +408,6 @@ onEvent('recipes', (event) => {
 
 
 
-	// let sa = ('kubejs:shotgun_shell')
-	// create.sequenced_assembly([
-	// 	'2x kubejs:shotgun_ammo'
-	// ], 'create:brass_sheet', [
-	// 	create.cutting(sa, sa),
-	// 	create.deploying(sa, [sa, 'minecraft:gunpowder']),
-	// 	create.deploying(sa, [sa, 'minecraft:gunpowder']),
-	// 	create.deploying(sa, [sa, 'thermal:steel_nugget']),
-	// 	create.pressing(sa, sa),
-	// ]).transitionalItem(sa).loops(2).id('atlanabyss:shotgun_ammo')//霰弹枪子弹
-
-	// let ra = ('kubejs:rifle_shell')
-	// create.sequenced_assembly([
-	// 	'10x kubejs:rifle_ammo'
-	// ], 'thermal:constantan_plate', [
-	// 	create.cutting(ra, ra),
-	// 	create.deploying(ra, [ra, 'minecraft:gunpowder']),
-	// 	create.pressing(ra, ra),
-	// ]).transitionalItem(ra).loops(3).id('atlanabyss:rifle_ammo')//步枪子弹
-
-	// let smg = ('kubejs:smg_shell')
-	// create.sequenced_assembly([
-	// 	'10x kubejs:smg_ammo'
-	// ], 'thermal:nickel_plate', [
-	// 	create.cutting(smg, smg,),
-	// 	create.deploying(smg, [smg, 'minecraft:gunpowder']),
-	// 	create.pressing(smg, smg),
-	// ]).transitionalItem(smg).loops(1).id('atlanabyss:smg_ammo')//冲锋枪子弹
-
-	// let sna = ('kubejs:sniper_shell')
-	// create.sequenced_assembly([
-	// 	'10x kubejs:sniper_ammo'
-	// ], 'thermal:steel_plate', [
-	// 	create.cutting(sna, sna,),
-	// 	create.deploying(sna, [sna, 'tconstruct:efln_ball']),
-	// 	create.pressing(sna, sna),
-	// ]).transitionalItem(sna).loops(3).id('atlanabyss:sniper_ammo')//大口径步枪子弹
-
-	// let ma = ('kubejs:magnum_shell')
-	// create.sequenced_assembly([
-	// 	'kubejs:magnum_ammo'
-	// ], 'kubejs:charged_constantan_sheet', [
-	// 	create.filling(ma, [ma, Fluid.of('thermal:glowstone', 1000)]),
-	// 	create.deploying(ma, [ma, 'tconstruct:efln_ball']),
-	// 	create.deploying(ma, [ma, 'biggerreactors:uranium_dust']),
-	// 	create.pressing(ma, ma),
-	// 	create.pressing(ma, ma),
-	// ]).transitionalItem(ma).loops(5).id('atlanabyss:magnum_ammo')//马格南子弹
-
 
 
 	//火箭弹
@@ -479,8 +430,8 @@ onEvent('recipes', (event) => {
 
 	//汽油
 	create.filling(Item.of('tacz:ammo', 10, '{AmmoId:"bf1:fuel"}'), [
-		'industrialforegoing:plastic',
-		Fluid.of('createdieselgenerators:gasoline', 500)
+		'#minecraft:coals',
+		Fluid.of('createaddition:seed_oil', 500)
 	]).id('atlanabyss:filling_fuel')
 
 	//榴弹

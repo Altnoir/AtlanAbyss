@@ -2,6 +2,5 @@
 	chapter_groups: [
 		{ id: "62B0CA2D682AC9D6", title: "入门手册" }
 		{ id: "03B4E601CC5A5BFE", title: "自然与魔法" }
-		{ id: "1484B34C54EAE280", title: "能力试验" }
 	]
 }

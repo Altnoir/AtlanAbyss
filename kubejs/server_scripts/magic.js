@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-    const { create, botania, thermal } = event.recipes;
+    const { create, botania } = event.recipes;
 
     let remove = (name) => {
         event.remove({ id: name })
@@ -36,18 +36,6 @@ onEvent('recipes', event => {
         'botania:alchemy_catalyst'
     ).id("atlanabyss:touhou_power_point")
 
-    //萝卜宝石
-    remove('umapyoi:jewel')
-    event.custom({
-        type: 'ars_nouveau:imbuement',
-        input: { item: 'minecraft:golden_carrot' },
-        output: 'umapyoi:jewel',
-        count: 1,
-        source: 100,
-        pedestalItems: []
-    }).id('atlanabyss:imbuement_jewel')
-
-    remove('thermal:gunpowder_4')
     //魔法火药
     event.custom({
         type: 'ars_nouveau:imbuement',
@@ -151,7 +139,7 @@ onEvent('recipes', event => {
         'minecraft:clock',
         'kubejs:virgin_ingot',
         'kubejs:virgin_ingot',
-        'create_enchantment_industry:hyper_experience_bottle',
+        'minecraft:dragon_breath',
         'kubejs:virgin_ingot',
         'kubejs:virgin_ingot'
     ], 100000).id('atlanabyss:runic_altar_time_bottle')
@@ -164,23 +152,8 @@ onEvent('recipes', event => {
         'kubejs:calamity_ingot',
         'kubejs:end_ingot'
     ], 1000000).id('atlanabyss:terra_plate_elemental_ingot')
-    event.custom({
-        type: 'mythicbotany:infusion',
-        group: 'infuser',
-        output: { item: 'kubejs:elemental_ingot', count: 1 },
-        mana: 1000000,
-        ingredients: [
-            { item: 'kubejs:chlorophyll_ingot' },
-            { item: 'kubejs:abyss_ingot' },
-            { item: 'kubejs:planetary_ingot' },
-            { item: 'kubejs:calamity_ingot' },
-            { item: 'kubejs:end_ingot' }
-        ],
-        fromColor: 8388352,
-        toColor: 16740039
-    }).id('atlanabyss:infusion_elemental_ingot')
 
-    //铝矿
+    //钴矿
     botania.orechid_ignem('tconstruct:cobalt_ore', 'minecraft:netherrack',
         4000).id('atlanabyss:orechid_ignem_cobalt_ore')
     //铝矿
@@ -189,26 +162,10 @@ onEvent('recipes', event => {
     //硫矿
     botania.orechid_ignem('kubejs:nether_sulfur_ore', 'minecraft:netherrack',
         12050).id('atlanabyss:orechid_ignem_nether_sulfur_ore')
-
-    //锡矿
-    botania.orechid('thermal:tin_ore', 'minecraft:stone',
-        8686).id('atlanabyss:orechid_tin_ore')
-    //镍矿
-    botania.orechid('thermal:nickel_ore', 'minecraft:stone',
-        18072).id('atlanabyss:orechid_nickel_ore')
     //锌矿
     botania.orechid('create:zinc_ore', 'minecraft:stone',
         23242).id('atlanabyss:orechid_zinc_ore')
 
-    //深层锡矿
-    botania.orechid('thermal:deepslate_tin_ore', 'minecraft:deepslate',
-        210).id('atlanabyss:orechid_deepslate_tin_ore')
-    //深层镍矿
-    botania.orechid('thermal:deepslate_nickel_ore', 'minecraft:deepslate',
-        100).id('atlanabyss:orechid_deepslate_nickel_ore')
-    //深层铅矿
-    botania.orechid('thermal:deepslate_lead_ore', 'minecraft:deepslate',
-        50).id('atlanabyss:orechid_deepslate_lead_ore')
     //深层锌矿
     botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate',
         150).id('atlanabyss:orechid_deepslate_zinc_ore')
@@ -258,15 +215,6 @@ onEvent('recipes', event => {
         'minecraft:diorite',
         'kubejs:planetary_ingot'
     ]).id('atlanabyss:mixing_diorite_alloy_x');
-
-    thermal.smelter('kubejs:diorite_alloy', [
-        'ars_nouveau:source_berry',
-        'minecraft:diorite'
-    ]).energy(3200).id('atlanabyss:smelter_diorite_alloy');
-    thermal.smelter('16x kubejs:diorite_alloy', [
-        'kubejs:planetary_ingot',
-        'minecraft:diorite'
-    ]).energy(3200).id('atlanabyss:smelter_diorite_alloy_x');
 
     //活石
     create.item_application('botania:livingrock', [
@@ -373,7 +321,7 @@ onEvent('recipes', event => {
     remove('reliquary:holy_hand_grenade')
     event.shapeless('4x reliquary:holy_hand_grenade', [
         'reliquary:glowing_water',
-        'thermal:glowstone_grenade'
+        '#forge:dusts/glowstone'
     ]).id('atlanabyss:holy_hand_grenade')
     remove('reliquary:midas_touchstone')
     event.shapeless('reliquary:midas_touchstone', [

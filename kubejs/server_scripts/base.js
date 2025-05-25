@@ -6,7 +6,7 @@ onEvent('recipes', event => {
 		event.remove({ id: name })
 	}
 
-	const { create, botania, thermal } = event.recipes;
+	const { create, botania } = event.recipes;
 
 	//管道
 	remove('pipez:universal_pipe')
@@ -31,7 +31,6 @@ onEvent('recipes', event => {
 	//重复配方
 	remove('neapolitan:cake')
 	remove('minecraft:cake')
-	remove('create_enchantment_industry:compat/sophisticatedcore/mixing/experience_conversion')
 	//矿石开凿
 	remove('createoreexcavation:cutting/diamond_cutting')
 	remove('createoreexcavation:cutting/emerald_cutting')
@@ -51,7 +50,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:vibration_mechanism',
 		B: 'minecraft:ender_eye',
-		C: 'thermal:flux_magnet',
+		C: 'minecraft:redstone_block',
 		D: 'minecraft:stick'
 	}).id("atlanabyss:vein_finder")
 
@@ -146,12 +145,6 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:void_scrap'
 	}).id("atlanabyss:end_ingot")
-
-	//粉碎深渊锭
-	create.milling([
-		'16x thermal:blizz_rod',
-		Item.of('16x thermal:blizz_rod').withChance(0.5)
-	], 'kubejs:abyss_ingot').id("atlanabyss:milling_abyss_ingot")
 
 	//晶核
 	event.shaped('kubejs:crystal_nucleus', [
@@ -355,8 +348,6 @@ onEvent('recipes', event => {
 	remove('minecraft:quartz_from_blasting')
 	remove('minecraft:quartz')
 
-	remove('thermal:storage/copper_nugget_from_ingot')
-
 	//面团
 	remove('create:crafting/appliances/dough')
 	remove('farmersdelight:wheat_dough_from_water')
@@ -413,7 +404,7 @@ onEvent('recipes', event => {
 		'BAB',
 		'BBB'
 	], {
-		A: 'thermal:sulfur_block',
+		A: 'minecraft:redstone_block',
 		B: 'minecraft:netherite_block'
 	}).id("atlanabyss:deep_portal")
 
@@ -486,14 +477,6 @@ onEvent('recipes', event => {
 		'minecraft:andesite', 'kubejs:chlorophyll_ingot'
 	]).id('atlanabyss:mixing_andesite_alloy_x');
 
-	remove('thermal:compat/create/smelter_create_alloy_andesite_alloy')
-	thermal.smelter('create:andesite_alloy', [
-		'minecraft:moss_block', 'minecraft:andesite'
-	]).energy(3200).id('atlanabyss:smelter_andesite_alloy');
-	thermal.smelter('16x create:andesite_alloy', [
-		'kubejs:chlorophyll_ingot', 'minecraft:andesite'
-	]).energy(3200).id('atlanabyss:smelter_andesite_alloy_x');
-
 	remove('tconstruct:compat/create/andesite_alloy_iron');
 	remove('tconstruct:compat/create/andesite_alloy_zinc');
 
@@ -508,8 +491,6 @@ onEvent('recipes', event => {
 			energy: energy,
 		}).id('atlanabyss:' + id)
 	}
-	teslaCharging('minecraft:basalt', 'thermal:basalz_rod', 10000, 'basalz_rod')
-
 	//水之精华→黑曜石
 	remove('ars_nouveau:water_essence_to_obsidian')
 	event.blasting('minecraft:obsidian', 'ars_nouveau:water_essence').id("atlanabyss:obsidian_from_water_essence")
@@ -793,12 +774,6 @@ onEvent('recipes', event => {
 	// 	create.deploying(bc, [bc, 'create:electron_tube']),
 	// 	create.deploying(bc, [bc, 'create:precision_mechanism'])
 	// ]).transitionalItem(bc).loops(1).id("atlanabyss:sequenced_assembly_brass_machine")
-
-	//玫瑰石英
-	create.filling('create:rose_quartz', [
-		Fluid.of('thermal:redstone', 300),
-		'minecraft:quartz'
-	]).id("atlanabyss:filling_rose_quartz")
 	//糖果石英
 	event.shapeless('kubejs:candy_crystal', ['ars_nouveau:source_gem', '8x minecraft:sugar']).id("atlanabyss:candy_crystal")
 	create.filling('kubejs:candy_crystal', [
@@ -814,15 +789,13 @@ onEvent('recipes', event => {
 		}).id("atlanabyss:" + id)
 	}
 	polishing('kubejs:candy_crystal', 'kubejs:polished_candy_crystal', 'polishing_candy_crystal')
-	polishing('thermal:sulfur', 'kubejs:polished_sulfur', 'polishing_sulfur')
 	polishing('ae2:charged_certus_quartz_crystal', 'kubejs:polished_charged_certus_quartz', 'polishing_certus_quartz')
 	//更多电子管
 	function electronTube(output, a, b, id) {
 		event.shaped(output, ['A', 'B'], { A: a, B: b }).id('atlanabyss:' + id)
 	}
 	electronTube('kubejs:candy_electron_tube', 'kubejs:polished_candy_crystal', 'kubejs:osmium_sheet', 'candy_electron_tube')
-	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'thermal:steel_plate', 'sulfur_electron_tube')
-	electronTube('kubejs:charged_electron_tube', 'kubejs:polished_charged_certus_quartz', 'thermal:silver_plate', 'charged_certus_electron_tube')
+	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'create:iron_sheet', 'sulfur_electron_tube')
 	//电子管额外配方
 	create.deploying(Item.of('create:electron_tube').withChance(0.9), [
 		'create:polished_rose_quartz',
@@ -832,14 +805,6 @@ onEvent('recipes', event => {
 		'kubejs:polished_candy_crystal',
 		'kubejs:osmium_nugget'
 	]).id('atlanabyss:deploying_candy_electron_tube')
-	create.deploying(Item.of('kubejs:sulfur_electron_tube').withChance(0.9), [
-		'kubejs:polished_sulfur',
-		'thermal:steel_nugget'
-	]).id('atlanabyss:deploying_sulfur_electron_tube')
-	create.deploying(Item.of('kubejs:charged_electron_tube').withChance(0.9), [
-		'kubejs:polished_charged_certus_quartz',
-		'thermal:silver_nugget'
-	]).id('atlanabyss:deploying_charged_certus_electron_tube')
 
 	//方块小镇自动化
 	remove('yuushya:stone/yellow_worn_concrete')
@@ -868,13 +833,6 @@ onEvent('recipes', event => {
 	yuFilling('wore_stone', 'yuushya:wore_lime_wall')
 	yuFilling('top_reinforced_concrete', 'yuushya:reinforced_concrete')
 
-	//肥皂
-	remove('supplementaries:soap')
-	create.compacting('2x supplementaries:soap', [
-		'minecraft:porkchop',
-		'4x supplementaries:ash',
-		Fluid.of('thermal:creosote', 250)
-	]).id("atlanabyss:pyrolyzer_soap")
 
 	remove('supplementaries:soap/carpet')
 	event.shapeless('minecraft:white_carpet', [
@@ -889,7 +847,7 @@ onEvent('recipes', event => {
 		'B',
 		'C'
 	], {
-		A: 'thermal:sulfur_dust',
+		A: 'minecraft:glowstone_dust',
 		B: 'minecraft:coal_block',
 		C: '#minecraft:logs'
 	}).id("atlanabyss:megatorch")
@@ -980,7 +938,7 @@ onEvent('recipes', event => {
 	//传送粉
 	remove('waystones:warp_dust')
 	event.shapeless('2x waystones:warp_dust', [
-		'thermal:ender_pearl_dust',
+		'minecraft:ender_pearl',
 		'botania:mana_powder'
 	]).id("atlanabyss:waystone_warp_dust")
 	//传送石
@@ -999,7 +957,7 @@ onEvent('recipes', event => {
 	remove('waystones:bound_scroll')
 	event.shapeless('3x waystones:bound_scroll', [
 		'ars_nouveau:blank_parchment',
-		'thermal:ender_pearl_dust'
+		'minecraft:ender_pearl'
 	]).id("atlanabyss:waystone_bound_scroll")
 	//传送卷轴
 	remove('waystones:warp_scroll')
@@ -1028,7 +986,7 @@ onEvent('recipes', event => {
 	event.smelting('kubejs:osmium_scrap', 'kubejs:antiquity_debris').xp(5.0).id('atlanabyss:smelting_antiquity_debris')
 	event.blasting('kubejs:osmium_scrap', 'kubejs:antiquity_debris').xp(5.0).id('atlanabyss:blasting_antiquity_debris')
 	//灰烬
-	event.smoking('supplementaries:ash', 'thermal:sawdust').xp(1.35).id("atlanabyss:smoking_ash")
+	event.smoking('supplementaries:ash', 'minecraft:gunpowder').xp(1.35).id("atlanabyss:smoking_ash")
 	//箱装烤马铃薯
 	event.shaped('kubejs:baked_potato_crate', [
 		'PPP',
@@ -1126,35 +1084,7 @@ onEvent('recipes', event => {
 		e: 'minecraft:glass',
 		v: 'kubejs:vibration_mechanism'
 	}).id("atlanabyss:chunk_loader")
-	//钻石粉
-	create.crushing(['thermal:diamond_dust'], 'minecraft:diamond').id("atlanabyss:crushing_diamond")
-	//锯末
-	create.milling([
-		'farmersdelight:tree_bark',
-		'16x minecraft:stick',
-		Item.of('thermal:sawdust').withChance(0.25)
-	], '#atlanabyss:unstripped_wood').id("atlanabyss:milling_wood")
-	create.milling([
-		'16x minecraft:stick',
-		Item.of('thermal:sawdust').withChance(0.25)
-	], '#forge:stripped_logs').id("atlanabyss:milling_stripped_wood")
-	create.milling([
-		'4x minecraft:stick',
-		Item.of('thermal:sawdust').withChance(0.25)
-	], '#minecraft:planks').id("atlanabyss:milling_planks")
-	create.milling([
-		'6x minecraft:stick',
-		Item.of('thermal:sawdust').withChance(0.38)
-	], '#minecraft:wooden_stairs').id("atlanabyss:milling_wooden_stairs")
-	create.milling([
-		'2x minecraft:stick',
-		Item.of('thermal:sawdust').withChance(0.13)
-	], '#minecraft:wooden_slabs').id("atlanabyss:milling_wooden_slabs")
-	//竹子锯末
-	create.milling([
-		'minecraft:stick',
-		Item.of('thermal:sawdust').withChance(0.5)
-	], 'minecraft:bamboo').id("atlanabyss:milling_bamboo")
+
 	//造纸
 	remove('quark:tweaks/crafting/utility/bent/paper')
 	create.filling('2x minecraft:paper', [
@@ -1178,11 +1108,6 @@ onEvent('recipes', event => {
 		'minecraft:warped_fungus'
 	]).id("atlanabyss:item_application_warped_nylium")
 
-	//粉末
-	create.milling('thermal:apatite_dust', 'thermal:apatite').id("atlanabyss:milling_apatite")
-	create.milling('thermal:cinnabar_dust', 'thermal:cinnabar').id("atlanabyss:milling_cinnabar")
-	create.milling('thermal:niter_dust', 'thermal:niter').id("atlanabyss:milling_niter")
-	create.milling('thermal:sulfur_dust', 'thermal:sulfur').id("atlanabyss:milling_sulfur")
 
 	//唱片
 	remove('netmusic:music_cd')
@@ -1191,7 +1116,7 @@ onEvent('recipes', event => {
 		'ABA',
 		' A '
 	], {
-		A: 'thermal:cured_rubber',
+		A: '#minecraft:coals',
 		B: '#forge:dyes/pink'
 	}).id("atlanabyss:music_cd")
 
@@ -1586,18 +1511,7 @@ onEvent('recipes', event => {
 		A: 'minecraft:big_dripleaf',
 		S: 'minecraft:redstone'
 	}).id("atlanabyss:sculk_sensor")
-	//末影箱子
-	remove('enderstorage:ender_chest')
-	remove('enderstorage:recolour_ender_chest')
-	event.stonecutting('2x enderstorage:ender_chest',
-		'thermal:enderium_block'
-	).id('atlanabyss:stonecutting_ender_chest');
-	//末影蓄水箱
-	remove('enderstorage:ender_tank')
-	remove('enderstorage:recolour_ender_tank')
-	event.stonecutting('2x enderstorage:ender_tank',
-		'thermal:enderium_block'
-	).id('atlanabyss:ender_tank');
+
 	//收纳袋
 	event.shaped('minecraft:bundle', [
 		'A',
@@ -1652,7 +1566,6 @@ onEvent('recipes', event => {
 	create.crushing([
 		Item.of('create:crushed_raw_nickel').withChance(0.40),
 		Item.of('create:crushed_raw_gold').withChance(0.20),
-		Item.of('thermal:nickel_nugget').withChance(0.40),
 		Item.of('minecraft:gold_nugget').withChance(0.20)
 	], '#create:stone_types/ochrum').id("atlanabyss:crushing_ochrum")
 	//粉碎石灰岩
@@ -1660,22 +1573,14 @@ onEvent('recipes', event => {
 		Item.of('create:crushed_raw_tin').withChance(0.80)
 	], '#create:stone_types/limestone').id("atlanabyss:milling_limestone")
 	create.crushing([
-		Item.of('create:crushed_raw_tin').withChance(0.80),
-		Item.of('thermal:tin_nugget').withChance(0.80)
+		Item.of('create:crushed_raw_tin').withChance(0.80)
 	], '#create:stone_types/limestone').id("atlanabyss:crushing_limestone")
 	//洗涤石灰岩
 	create.splashing([
 		'minecraft:quartz',
-		Item.of('thermal:niter').withChance(0.5),
-		Item.of('thermal:apatite').withChance(0.5),
 		Item.of('minecraft:lapis_lazuli').withChance(0.25),
-		Item.of('thermal:cinnabar').withChance(0.1),
 		Item.of('minecraft:emerald').withChance(0.05)
 	], '#create:stone_types/limestone').id("atlanabyss:splashing_limestone")
-	//粉碎岩浆块
-	create.milling([
-		Item.of('thermal:sulfur').withChance(0.50)
-	], 'minecraft:magma_block').id("atlanabyss:milling_magma_block")
 	//粉碎玄武岩
 	create.milling([
 		Item.of('create:crushed_raw_aluminum').withChance(0.40)
@@ -1696,55 +1601,7 @@ onEvent('recipes', event => {
 	create.milling([
 		'kubejs:deep_scrap'
 	], 'quark:permafrost').id("atlanabyss:milling_permafrost")
-	//压板
-	create.pressing(
-		'thermal:steel_plate',
-		'thermal:steel_ingot'
-	).id('atlanabyss:pressing_steel_sheet')//钢板
-	create.pressing(
-		'kubejs:meteosteel_sheet',
-		'kubejs:meteosteel_ingot'
-	).id('atlanabyss:pressing_meteosteel_sheet')//陨钢板
-	create.pressing(
-		'thermal:tin_plate',
-		'thermal:tin_ingot'
-	).id('atlanabyss:pressing_tin_sheet')//锡板
-	create.pressing(
-		'thermal:lead_plate',
-		'thermal:lead_ingot'
-	).id('atlanabyss:pressing_lead_sheet')//铅板
-	create.pressing(
-		'thermal:silver_plate',
-		'thermal:silver_ingot'
-	).id('atlanabyss:pressing_silver_sheet')//银板
-	create.pressing(
-		'thermal:nickel_plate',
-		'thermal:nickel_ingot'
-	).id('atlanabyss:pressing_nickel_sheet')//镍板
-	create.pressing(
-		'thermal:electrum_plate',
-		'thermal:electrum_ingot'
-	).id('atlanabyss:pressing_electrum_sheet')//琥珀金板
-	create.pressing(
-		'thermal:invar_plate',
-		'thermal:invar_ingot'
-	).id('atlanabyss:pressing_invar_sheet')//殷钢板
-	create.pressing(
-		'thermal:constantan_plate',
-		'thermal:constantan_ingot'
-	).id('atlanabyss:pressing_constantan_sheet')//康铜板
-	create.pressing(
-		'thermal:signalum_plate',
-		'thermal:signalum_ingot'
-	).id('atlanabyss:pressing_signalum_shee')//信素板
-	create.pressing(
-		'thermal:lumium_plate',
-		'thermal:lumium_ingot'
-	).id('atlanabyss:pressing_lumium_sheet')//流明板
-	create.pressing(
-		'thermal:enderium_plate',
-		'thermal:enderium_ingot'
-	).id('atlanabyss:pressing_enderium_sheet')//末影板
+	
 	create.pressing(
 		'kubejs:aluminum_sheet',
 		'kubejs:aluminum_ingot'
@@ -1772,13 +1629,8 @@ onEvent('recipes', event => {
 	create.haunting('ars_nouveau:wilden_wing', 'minecraft:rotten_flesh').id('atlanabyss:haunting_wilden_wing')
 	create.haunting('ars_nouveau:green_archwood_sapling', '#atlanabyss:vanilla_saplings').id('atlanabyss:haunting_green_archwood_sapling')//新生魔艺绿树
 	create.haunting('create:polished_rose_quartz', 'tconstruct:rose_gold_ingot').id('atlanabyss:haunting_rose_gold_quartz')//玫瑰石英
-	create.haunting('kubejs:polished_candy_crystal', 'umapyoi:hachimi_mid').id('atlanabyss:haunting_hachimi_crystal')//蜂蜜水晶
-	create.haunting('kubejs:polished_sulfur', 'thermal:electrum_ingot').id('atlanabyss:haunting_electrum_sulfur')//琥珀硫磺
 	create.haunting('kubejs:polished_charged_certus_quartz', 'kubejs:platinum_ingot').id('atlanabyss:haunting_platinum_certus_quartz')//铂制石英
 	create.haunting('botania:fertilizer', 'minecraft:bone_meal',).id('atlanabyss:haunting_fertilizer')//花肥
-	create.haunting('thermal:lightning_charge', 'thermal:blitz_powder').id('atlanabyss:haunting_lightning_charge')//鸣雷弹
-	create.haunting('thermal:ice_charge', 'thermal:blizz_powder').id('atlanabyss:haunting_ice_charge')//瀑冰弹
-	create.haunting('thermal:earth_charge', 'thermal:basalz_powder').id('atlanabyss:haunting_earth_charge')//裂岩弹
 	create.haunting('minecraft:fire_charge', 'minecraft:blaze_powder').id('atlanabyss:haunting_fire_charge')//火焰弹
 	create.haunting('minecraft:twisting_vines', 'minecraft:vine').id('atlanabyss:haunting_vine')//缠怨藤
 	create.haunting('minecraft:turtle_egg', 'minecraft:egg').id('atlanabyss:haunting_egg')//海龟蛋
@@ -1792,7 +1644,7 @@ onEvent('recipes', event => {
 		'ABA',
 		'AAA'
 	], {
-		A: 'thermal:nickel_nugget',
+		A: 'minecraft:iron_nugget',
 		B: 'kubejs:empty_pcb'
 	}).id('atlanabyss:deploying_basic_upgrade')
 	//进阶管道升级
@@ -1801,7 +1653,7 @@ onEvent('recipes', event => {
 		'ABA',
 		'AAA'
 	], {
-		A: 'thermal:steel_nugget',
+		A: 'minecraft:iron_nugget',
 		B: 'pipez:basic_upgrade',
 	}).id('atlanabyss:deploying_improved_upgrade')
 	//高级管道升级
@@ -1810,7 +1662,7 @@ onEvent('recipes', event => {
 		'ABA',
 		'AAA'
 	], {
-		A: 'thermal:electrum_nugget',
+		A: 'minecraft:iron_nugget',
 		B: 'pipez:improved_upgrade'
 	}).id('atlanabyss:deploying_advanced_upgrade')
 	//终极管道升级
@@ -1819,7 +1671,7 @@ onEvent('recipes', event => {
 		'ABA',
 		'AAA'
 	], {
-		A: 'thermal:signalum_nugget',
+		A: 'minecraft:iron_nugget',
 		B: 'pipez:advanced_upgrade'
 	}).id('atlanabyss:deploying_ultimate_upgrade')
 
@@ -1831,9 +1683,7 @@ onEvent('recipes', event => {
 		R: 'minecraft:redstone_torch',
 		S: 'create:sturdy_sheet'
 	}).id("atlanabyss:filter_destination_tool")
-	//额外海晶碎片配方
-	remove('thermal:earth_charge/prismarine_shard_from_prismarine_bricks')
-	remove('thermal:earth_charge/prismarine_shard_from_prismarine')
+
 	create.crushing([
 		'9x minecraft:prismarine_shard'
 	], 'minecraft:prismarine_bricks').id("atlanabyss:crushing_prismarine_bricks")
@@ -1847,96 +1697,6 @@ onEvent('recipes', event => {
 		'4x minecraft:prismarine_shard'
 	], 'minecraft:prismarine').id("atlanabyss:milling_prismarine")
 
-	//炼油
-	remove('createdieselgenerators:distillation/crude_oil')
-	event.custom({
-		type: 'createdieselgenerators:distillation',
-		ingredients: [
-			{
-				fluidTag: 'forge:crude_oil',
-				amount: 100
-			}
-		],
-		heatRequirement: 'heated',
-		processingTime: 100,
-		results: [
-			{
-				fluid: 'thermal:heavy_oil',
-				amount: 25
-			},
-			{
-				fluid: 'createdieselgenerators:diesel',
-				amount: 25
-			},
-			{
-				fluid: 'thermal:light_oil',
-				amount: 25
-			},
-			{
-				fluid: 'createdieselgenerators:gasoline',
-				amount: 25
-			}
-		]
-	}).id("atlanabyss:distillation_crude_oil_4")
-	// event.custom({
-	// 	type: 'createdieselgenerators:distillation',
-	// 	ingredients: [
-	// 		{
-	// 			fluidTag: 'forge:crude_oil',
-	// 			amount: 100
-	// 		}
-	// 	],
-	// 	heatRequirement: 'heated',
-	// 	processingTime: 100,
-	// 	results: [
-	// 		{
-	// 			fluid: 'thermal:heavy_oil',
-	// 			amount: 33
-	// 		},
-	// 		{
-	// 			fluid: 'createdieselgenerators:diesel',
-	// 			amount: 33
-	// 		},
-	// 		{
-	// 			fluid: 'thermal:light_oil',
-	// 			amount: 33
-	// 		}
-	// 	]
-	// }).id("atlanabyss:distillation_crude_oil_3")
-	// event.custom({
-	// 	type: 'createdieselgenerators:distillation',
-	// 	ingredients: [
-	// 		{
-	// 			fluidTag: 'forge:crude_oil',
-	// 			amount: 100
-	// 		}
-	// 	],
-	// 	heatRequirement: 'heated',
-	// 	processingTime: 100,
-	// 	results: [
-	// 		{
-	// 			fluid: 'thermal:heavy_oil',
-	// 			amount: 50
-	// 		},
-	// 		{
-	// 			fluid: 'createdieselgenerators:diesel',
-	// 			amount: 50
-	// 		}
-
-	// 	]
-	// }).id("atlanabyss:distillation_crude_oil_2")
-
-	//汽油处理
-	create.mixing(['thermal:bitumen', Fluid.of('createdieselgenerators:gasoline', 250)], [
-		Fluid.of('thermal:redstone', 180),
-		Fluid.of('thermal:heavy_oil', 250)
-	]).heated().id('atlanabyss:mixing_heated_heavy_oil');
-
-	//干塑胶
-	create.mixing('industrialforegoing:tinydryrubber', [
-		'thermal:lightning_charge',
-		Fluid.of('createdieselgenerators:gasoline', 100)
-	]).heated().id('atlanabyss:mixing_heated_gasoline');
 
 	//轧制微调
 	remove('createaddition:rolling/iron_ingot')
@@ -1970,67 +1730,12 @@ onEvent('recipes', event => {
 		result: { item: 'createaddition:brass_rod', count: 1 }
 	}).id('atlanabyss:rolling_brass_ingot')
 
-	const epcb = 'industrialforegoing:plastic';
-	//空PCB
-	create.sequenced_assembly([
-		'3x kubejs:empty_pcb'
-	], epcb, [
-		create.filling(epcb, [epcb, Fluid.of('tconstruct:molten_gold', 500)]),
-		create.filling(epcb, [epcb, Fluid.of('tconstruct:molten_copper', 500)]),
-		create.cutting(epcb, epcb)
-	]).transitionalItem(epcb).loops(1).id("atlanabyss:empty_pcb_3")
-
-	//PCB
-	create.mechanical_crafting('kubejs:integrated_circuit', [
-		'  A  ',
-		'BBCBB',
-		' DDD '
-	], {
-		A: 'kubejs:empty_pcb',
-		B: 'minecraft:redstone',
-		C: 'createaddition:capacitor',
-		D: 'createaddition:brass_rod'
-	}).id("atlanabyss:mechanical_crafting_integrated_circuit")
-	//PCB2
-	event.shaped('16x kubejs:integrated_circuit', [
-		' A ',
-		'BCB',
-		'DED'
-	], {
-		A: 'kubejs:empty_pcb',
-		B: 'minecraft:redstone',
-		C: 'createaddition:capacitor',
-		D: 'cataclysm:monstrous_horn',
-		E: 'cataclysm:ignitium_ingot'
-	}).id("atlanabyss:integrated_circuit_2")
-
-
-	//奇点
-	event.custom({
-		type: 'createdieselgenerators:basin_fermenting',
-		ingredients: [
-			{ item: 'create:crushing_wheel' }
-		],
-		processingTime: 200,
-		results: [
-			{ item: 'ae2:singularity' }
-		]
-	}).id("atlanabyss:basin_fermenting_crushing_wheel")
 
 	//幸运方块流体
-	event.custom({
-		type: 'createdieselgenerators:basin_fermenting',
-		ingredients: [
-			{ item: 'kubejs:lucky_block' }
-		],
-		processingTime: 200,
-		results: [{
-			fluid: 'kubejs:lucky_fluid',
-			amount: 10
-		}],
-		heatRequirement: 'superheated'
-	}).id("atlanabyss:basin_fermenting_lucky_block")
-
+	create.compacting(Fluid.of('kubejs:lucky_fluid', 10), 
+		'kubejs:lucky_block'
+	).id("atlanabyss:basin_fermenting_lucky_block")
+	
 	//幸运物质
 	create.compacting('minecraft:iron_block', [
 		'minecraft:iron_ingot',
@@ -2067,25 +1772,6 @@ onEvent('recipes', event => {
 		Fluid.of('kubejs:lucky_fluid', 80)]
 	).id("atlanabyss:compacting_zinc_from_lucky")
 
-	create.compacting('thermal:tin_block', [
-		'thermal:tin_ingot',
-		Fluid.of('kubejs:lucky_fluid', 100)]
-	).id("atlanabyss:compacting_tin_from_lucky")
-
-	create.compacting('thermal:lead_block', [
-		'thermal:lead_ingot',
-		Fluid.of('kubejs:lucky_fluid', 250)]
-	).id("atlanabyss:compacting_lead_from_lucky")
-
-	create.compacting('thermal:silver_block', [
-		'thermal:silver_ingot',
-		Fluid.of('kubejs:lucky_fluid', 180)]
-	).id("atlanabyss:compacting_silver_from_lucky")
-
-	create.compacting('thermal:nickel_block', [
-		'thermal:nickel_ingot',
-		Fluid.of('kubejs:lucky_fluid', 100)]
-	).id("atlanabyss:compacting_nickel_from_lucky")
 
 	create.compacting('kubejs:aluminum_block', [
 		'kubejs:aluminum_ingot',
@@ -2107,10 +1793,6 @@ onEvent('recipes', event => {
 		Fluid.of('kubejs:lucky_fluid', 800)]
 	).id("atlanabyss:compacting_bismuth_from_lucky")
 
-	create.compacting('biggerreactors:uranium_block', [
-		'kubejs:uranium_ingot',
-		Fluid.of('kubejs:lucky_fluid', 1000)]
-	).id("atlanabyss:compacting_uranium_from_lucky")
 
 	//幸运刷怪蛋
 	event.shaped('minecraft:sheep_spawn_egg', [
@@ -2210,57 +1892,6 @@ onEvent('recipes', event => {
 		B: 'kubejs:lucky_block'
 	}).id('atlanabyss:villager_spawn_egg')
 
-	//压力部件
-	const pm = ('kubejs:incomplete_pressure_mechanism')
-	create.sequenced_assembly([
-		Item.of('kubejs:pressure_mechanism').withChance(0.9),
-		Item.of('create:powdered_obsidian').withChance(0.07),
-		Item.of('createdieselgenerators:asphalt_block').withChance(0.03)
-	],
-		'thermal:steel_plate', [
-		create.deploying(pm, [pm, 'createdieselgenerators:asphalt_block']),
-		create.deploying(pm, [pm, 'create:electron_tube']),
-		create.deploying(pm, [pm, 'create:powdered_obsidian'])
-	]).transitionalItem(pm).loops(5).id("atlanabyss:pressure_mechanism")
-	//电力部件
-	const tm = ('kubejs:incomplete_thermal_mechanism')
-	create.sequenced_assembly([
-		'kubejs:thermal_mechanism'
-	],
-		'kubejs:aluminum_sheet', [
-		create.deploying(tm, [tm, 'industrialforegoing:plastic']),
-		create.deploying(tm, [tm, 'kubejs:sulfur_electron_tube']),
-		create.filling(tm, [tm, Fluid.of('thermal:creosote', 500)])
-	]).transitionalItem(tm).loops(3).id("atlanabyss:thermal_mechanism")
-	//算力构件
-	const cm = ('kubejs:incomplete_computer_mechanism')
-	create.sequenced_assembly([
-		'kubejs:computer_mechanism'
-	],
-		'kubejs:meteosteel_sheet', [
-		create.deploying(cm, [cm, 'kubejs:integrated_circuit']),
-		create.deploying(cm, [cm, 'kubejs:charged_electron_tube']),
-		create.deploying(tm, [tm, 'ae2:singularity'])
-	]).transitionalItem(cm).loops(1).id("atlanabyss:computer_mechanism")
-	//引力构件
-	const gm = ('kubejs:incomplete_gravitation_mechanism')
-	create.sequenced_assembly([
-		'kubejs:gravitation_mechanism'
-	],
-		'kubejs:magbismuth_sheet', [
-		create.deploying(gm, [gm, 'ae2:cell_component_16k']),
-		create.deploying(gm, [gm, 'kubejs:candy_electron_tube']),
-		create.filling(gm, [gm, Fluid.of('tconstruct:ender_slime', 250)]),
-		create.deploying(gm, [gm, 'minecraft:honeycomb_block']).keepHeldItem(true)
-	]).transitionalItem(gm).loops(6).id("atlanabyss:gravitation_mechanism")
-
-	//陨钢锭
-	thermal.smelter('2x kubejs:meteosteel_ingot', [
-		'3x thermal:steel_ingot',
-		'5x ae2:sky_dust',
-		'8x #forge:ingots/lead'
-	]).energy(20000).id("atlanabyss:smelter_meteosteel_ingot")
-
 	//陨钢粒
 	event.shaped('kubejs:meteosteel_ingot', [
 		'AAA',
@@ -2273,12 +1904,6 @@ onEvent('recipes', event => {
 		'kubejs:meteosteel_ingot'
 	]).id("atlanabyss:meteosteel_nugget_from_ingot")
 
-	//神铋锭
-	thermal.smelter('kubejs:magbismuth_ingot', [
-		'3x kubejs:bismuth_ingot',
-		['kubejs:aluminum_ingot', 'kubejs:aluminum_dust'],
-		'5x botania:pixie_dust'
-	]).id("atlanabyss:smelter_magbismuth_ingot")
 	//神铋板
 	create.pressing(
 		'kubejs:magbismuth_sheet',
@@ -2348,30 +1973,6 @@ onEvent('recipes', event => {
 	]
 	).heated().id("atlanabyss:coal_aluminium_chip")
 
-	create.mixing(
-		'8x kubejs:aluminium_chip',
-		[
-			'thermal:tar',
-			Fluid.of('kubejs:alumina_solution', 100)
-		]
-	).heated().id("atlanabyss:tar_coal_aluminium_chip")
-
-	//石英粉
-	remove('thermal:earth_charge/quartz_from_quartz_block')
-	remove('thermal:earth_charge/quartz_dust_from_quartz')
-
-	create.milling(Item.of('thermal:quartz_dust').withChance(0.75),
-		'minecraft:quartz'
-	).id("atlanabyss:milling_quartz")
-
-	create.milling(['3x thermal:quartz_dust', Item.of('thermal:quartz_dust').withChance(0.75)
-	], '#forge:storage_blocks/quartz').id("atlanabyss:milling_quartz_blocks")
-
-	//铝化合物
-	event.shapeless('kubejs:aluminum_compound', [
-		'kubejs:aluminium_chip',
-		'thermal:quartz_dust'
-	]).id("atlanabyss:aluminium_compound")
 
 	//铝
 	event.smelting('kubejs:aluminum_ingot', 'kubejs:aluminum_compound').xp(.8).id("atlanabyss:aluminum_ingot_from_smelting")
@@ -2386,11 +1987,6 @@ onEvent('recipes', event => {
 	create.compacting('kubejs:sand_ball', [
 		'8x kubejs:rough_sand'
 	]).id("atlanabyss:sand_ball")
-	//含硅化合物
-	thermal.smelter('kubejs:silicon_compound', [
-		'kubejs:sand_ball',
-		'thermal:ice_charge'
-	]).energy(4800).id("atlanabyss:silicon_compound")
 
 	//硅
 	remove('ae2:smelting/silicon_from_certus_quartz_dust')
@@ -2402,10 +1998,6 @@ onEvent('recipes', event => {
 		'ae2:silicon',
 		'2x kubejs:aluminum_ingot'
 	]).heated().id("atlanabyss:aluminium_alloy_ingot")
-	thermal.smelter('2x kubejs:aluminium_alloy_ingot', [
-		'2x kubejs:aluminum_ingot',
-		'ae2:silicon',
-	]).energy(4000).id("atlanabyss:smelter_aluminium_alloy_ingot")
 
 	//铋锭
 	create.mixing('kubejs:bismuth_ingot', [
@@ -2413,11 +2005,6 @@ onEvent('recipes', event => {
 		'minecraft:chorus_fruit',
 		'create:powdered_obsidian'
 	]).heated().id("atlanabyss:mixing_bismuth_ingot")
-	thermal.smelter('kubejs:bismuth_ingot', [
-		'kubejs:raw_bismuth',
-		'minecraft:chorus_fruit',
-		'create:powdered_obsidian'
-	]).energy(8000).id("atlanabyss:smelter_bismuth_ingot")
 
 	event.shapeless('9x kubejs:bismuth_ingot', ['kubejs:bismuth_block']).id("atlanabyss:bismuth_ingot_from_block")
 	//铋块
@@ -2428,84 +2015,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:bismuth_ingot'
 	}).id("atlanabyss:bismuth_block")
-	//铂锭
-	event.shaped('kubejs:platinum_ingot', [
-		'BA',
-		'AB'
-	], {
-		A: 'minecraft:calcite',
-		B: 'thermal:silver_nugget'
-	}).id("atlanabyss:platinum_ingot")
-	create.mixing('kubejs:platinum_ingot', [
-		'minecraft:calcite',
-		'thermal:silver_nugget'
-	]).id("atlanabyss:mixing_platinum_ingot")
-	thermal.smelter('kubejs:platinum_ingot', [
-		'thermal:silver_nugget',
-		'minecraft:calcite'
-	]).energy(6400).id("atlanabyss:smelter_platinum_ingot")
-
-	//铂粒
-	event.shaped('kubejs:platinum_ingot', [
-		'AAA',
-		'AAA',
-		'AAA'
-	], {
-		A: 'kubejs:platinum_nugget'
-	}).id("atlanabyss:platinum_ingot_from_nugget")
-	event.shapeless('9x kubejs:platinum_nugget', [
-		'kubejs:platinum_ingot'
-	]).id("atlanabyss:platinum_nugget_from_ingot")
-	//铂块
-	event.shaped('kubejs:platinum_block', [
-		'AAA',
-		'AAA',
-		'AAA'
-	], {
-		A: 'kubejs:platinum_ingot'
-	}).id("atlanabyss:platinum_block_from_ingot")
-	event.shapeless('9x kubejs:platinum_ingot', [
-		'kubejs:platinum_block'
-	]).id("atlanabyss:platinum_ingot_from_block")
-	//钨锭
-	event.shaped('kubejs:tungsten_ingot', [
-		'BA',
-		'AB'
-	], {
-		A: 'minecraft:blackstone',
-		B: 'thermal:netherite_nugget'
-	}).id("atlanabyss:tungsten_ingot")
-	create.mixing('kubejs:tungsten_ingot', [
-		'minecraft:blackstone',
-		'thermal:netherite_nugget'
-	]).id("atlanabyss:mixing_tungsten_ingot")
-	thermal.smelter('kubejs:tungsten_ingot', [
-		'thermal:netherite_nugget',
-		'minecraft:blackstone'
-	]).energy(6400).id("atlanabyss:smelter_tungsten_ingot")
-
-	//钨粒
-	event.shaped('kubejs:tungsten_ingot', [
-		'AAA',
-		'AAA',
-		'AAA'
-	], {
-		A: 'kubejs:tungsten_nugget'
-	}).id("atlanabyss:tungsten_ingot_from_nugget")
-	event.shapeless('9x kubejs:tungsten_nugget', [
-		'kubejs:tungsten_ingot'
-	]).id("atlanabyss:tungsten_nugget_from_ingot")
-	//钨块
-	event.shaped('kubejs:tungsten_block', [
-		'AAA',
-		'AAA',
-		'AAA'
-	], {
-		A: 'kubejs:tungsten_ingot'
-	}).id("atlanabyss:tungsten_block_from_ingot")
-	event.shapeless('9x kubejs:tungsten_ingot', [
-		'kubejs:tungsten_block'
-	]).id("atlanabyss:tungsten_ingot_from_block")
+	
 
 	//炫星锭
 	create.mixing('kubejs:astral_ingot', [
@@ -2513,22 +2023,11 @@ onEvent('recipes', event => {
 		'kubejs:bismuth_block',
 		'kubejs:tungsten_nugget'
 	]).heated().id("atlanabyss:mixing_astral_ingot")
-	thermal.smelter('kubejs:astral_ingot', [
-		'10x kubejs:star_dust',
-		'kubejs:bismuth_block',
-		'kubejs:tungsten_nugget'
-	]).energy(12000).id("atlanabyss:smelter_astral_ingot")
 	//辉恒星合金
 	create.mixing('2x kubejs:metanova_alloy', [
 		'kubejs:astral_ingot',
-		'kubejs:charged_soulsteel_ingot',
 		'create:chromatic_compound'
 	]).heated().id("atlanabyss:mixing_metanova_alloy")
-	thermal.smelter('2x kubejs:metanova_alloy', [
-		'kubejs:astral_ingot',
-		'kubejs:charged_soulsteel_ingot',
-		'create:chromatic_compound'
-	]).energy(24000).id("atlanabyss:smelter_metanova_alloy")
 
 	//人造焰魔锭
 	create.item_application('cataclysm:ignitium_ingot', [
@@ -2540,21 +2039,8 @@ onEvent('recipes', event => {
 		'minecraft:netherite_ingot',
 		'kubejs:metanova_alloy'
 	]).id('atlanabyss:deploying_monstrous_horn')
-	//无铀核废料
-	create.item_application('biggerreactors:cyanite_ingot', [
-		'kubejs:bismuth_block',
-		'kubejs:metanova_alloy'
-	]).id("atlanabyss:item_application_cyanite_ingot")
-	//简单非物质
-	create.mixing('mekanism:pellet_antimatter', [
-		'10x biggerreactors:cyanite_ingot',
-		'kubejs:metanova_alloy'
-	]).id("atlanabyss:mixing_pellet_antimatter")
-	//幸运智能矩阵
-	create.item_application('kubejs:computation_matrix', [
-		'kubejs:lucky_block',
-		'kubejs:metanova_alloy'
-	]).id("atlanabyss:item_application_computation_matrix")
+
+	
 	//
 	Ingredient.of('#forge:ingots').itemIds.forEach((ingot) => {
 		create.deploying(ingot, [
@@ -2584,7 +2070,7 @@ onEvent('recipes', event => {
 		'ABCBA',
 		' ADA '
 	], {
-		A: 'thermal:steel_plate',
+		A: 'create:iron_sheet',
 		B: 'createaddition:copper_spool',
 		C: 'create:shaft',
 		D: 'createaddition:capacitor'
@@ -2647,133 +2133,11 @@ onEvent('recipes', event => {
 		'kubejs:raw_uranium_block',
 	]).id("atlanabyss:raw_uranium_from_block")
 
-	//锆合金
-	create.mixing('3x kubejs:zirconium_alloy_ingot', [
-		'ae2:silicon',
-		'3x thermal:lead_ingot'
-	]).superheated().id("atlanabyss:zirconium_alloy_ingot")
-	thermal.smelter('3x kubejs:zirconium_alloy_ingot', [
-		'3x #forge:ingots/lead',
-		'ae2:sky_dust'
-	]).energy(18000).id("atlanabyss:smelter_zirconium_alloy_ingot")
 
 	//充能魂钢锭
 	teslaCharging('tconstruct:soulsteel_ingot', 'kubejs:charged_soulsteel_ingot', 150000, 'charged_soulsteel_ingot')
-	//充能康铜锭
-	teslaCharging('thermal:constantan_ingot', 'kubejs:charged_constantan_ingot', 64000, 'charged_constantan_ingot')
-
-
-
-	let types = ["three", "eight", "plus", "minus", "multiply", "divide"]
-	types.forEach(e => {
-		event.stonecutting('kubejs:' + e + '_cast', 'thermal:nickel_plate').id('atlanabyss:' + e + '_cast')
-		event.custom({
-			"type": "tconstruct:casting_table",
-			"cast": {
-				"item": 'kubejs:' + e + '_cast'
-			},
-			"fluid": {
-				"name": "kubejs:raw_logic",
-				"amount": 10
-			},
-			"result": Item.of('kubejs:' + e).toResultJson(),
-			"cooling_time": 10
-		}).id('atlanabyss:' + e)
-	})
-
-	let meltOrCrucible = (ingredient, out, outAmount, id) => {
-		event.custom({
-			"type": "tconstruct:melting",
-			"ingredient": { "item": ingredient },
-			"result": {
-				"fluid": out,
-				"amount": outAmount
-			},
-			"temperature": 200,
-			"time": 20
-		}).id('atlanabyss:' + id)
-	}
-
-	let alloyAmount = 10
-	let outAmount = 100
-	event.custom({
-		type: 'tconstruct:alloy',
-		inputs: [
-			{ name: 'kubejs:number_0', amount: alloyAmount },
-			{ name: 'kubejs:number_1', amount: alloyAmount },
-			{ name: 'kubejs:number_2', amount: alloyAmount },
-			{ name: 'kubejs:number_3', amount: alloyAmount },
-			{ name: 'kubejs:number_4', amount: alloyAmount },
-			{ name: 'kubejs:number_5', amount: alloyAmount },
-			{ name: 'kubejs:number_6', amount: alloyAmount },
-			{ name: 'kubejs:number_7', amount: alloyAmount },
-			{ name: 'kubejs:number_8', amount: alloyAmount },
-			{ name: 'kubejs:number_9', amount: alloyAmount }
-		],
-		result: {
-			fluid: 'kubejs:matrix',
-			amount: outAmount
-		},
-		"temperature": 200
-	}).id("atlanabyss:matrix")
-
-	meltOrCrucible('kubejs:computer_mechanism', 'kubejs:raw_logic', 90, 'raw_logic')
-	meltOrCrucible('kubejs:zero', 'kubejs:number_0', 10, 'number_0')
-	meltOrCrucible('kubejs:one', 'kubejs:number_1', 10, 'number_1')
-	meltOrCrucible('kubejs:two', 'kubejs:number_2', 10, 'number_2')
-	meltOrCrucible('kubejs:three', 'kubejs:number_3', 10, 'number_3')
-	meltOrCrucible('kubejs:four', 'kubejs:number_4', 10, 'number_4')
-	meltOrCrucible('kubejs:five', 'kubejs:number_5', 10, 'number_5')
-	meltOrCrucible('kubejs:six', 'kubejs:number_6', 10, 'number_6')
-	meltOrCrucible('kubejs:seven', 'kubejs:number_7', 10, 'number_7')
-	meltOrCrucible('kubejs:eight', 'kubejs:number_8', 10, 'number_8')
-	meltOrCrucible('kubejs:nine', 'kubejs:number_9', 10, 'number_9')
-
-	event.custom({
-		type: 'tconstruct:casting_basin',
-		fluid: {
-			name: 'kubejs:matrix',
-			amount: 1000
-		},
-		result: Item.of('kubejs:computation_matrix').toResultJson(),
-		cooling_time: 20
-	}).id("atlanabyss:computation_matrix")
-
-	let nums = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-	let ops = [(a, b) => a + b, (a, b) => a - b, (a, b) => a * b, (a, b) => b == 0 ? 'error' : a / b]
-	let opNames = ['plus', 'minus', 'multiply', 'divide']
-
-	for (var a = 0; a < 10; a++) {
-		for (var b = 0; b < 10; b++) {
-			for (var op = 0; op < ops.length; op++) {
-
-				let result = ops[op](a, b)
-				var output;
-
-				if (result == 'error')
-					output = 'kubejs:missingno'
-				else if (result < 0)
-					continue
-				else if (result > 9)
-					continue
-				else if (result % 1 != 0)
-					continue
-				else
-					output = 'kubejs:' + nums[result]
-
-				create.mechanical_crafting(output, [
-					'AOB',
-				], {
-					A: 'kubejs:' + nums[a],
-					O: 'kubejs:' + opNames[op],
-					B: 'kubejs:' + nums[b]
-				}).id('atlanabyss:' + nums[a] + '_' + opNames[op] + '_' + nums[b])
-			}
-		}
-	}
 
 	//异彩化合物
-	remove('thermal:compat/create/smelter_create_alloy_chromatic_compound')
 	create.mixing('2x create:chromatic_compound', [
 		'create:polished_rose_quartz',
 		'kubejs:polished_candy_crystal',
@@ -2823,42 +2187,6 @@ onEvent('recipes', event => {
 	event.shapeless('yuushya:bismuth_crystal', [
 		'yuushya:pictor'
 	]).id("atlanabyss:bismuth_crystal_by_pictor")
-	//炼
-	//金
-	//混
-	//合
-	//物
-	create.splashing('kubejs:alchemy_1',
-		'#atlanabyss:alchemy_substrate'
-	).id("atlanabyss:alchemy_1")
-	create.haunting('kubejs:alchemy_2', [
-		'kubejs:alchemy_1'
-	]).id("atlanabyss:alchemy_2");
-	teslaCharging('kubejs:alchemy_2',
-		'kubejs:alchemy_3',
-		1000,
-		'alchemy_3')
-	event.custom({
-		type: 'botania:elven_trade',
-		ingredients: [{ item: 'kubejs:alchemy_3' }],
-		output: [{ item: 'kubejs:alchemy_4' }]
-	}).id("atlanabyss:alchemy_4")
-	event.custom({
-		type: 'ars_nouveau:imbuement',
-		input: { item: 'kubejs:alchemy_4' },
-		output: 'kubejs:alchemy_5',
-		count: 1,
-		source: 1000,
-		pedestalItems: []
-	}).id("atlanabyss:alchemy_5")
-	create.deploying([
-		Item.of('kubejs:treasure_box').withChance(1 / 1000),
-		Item.of('kubejs:alchemy_0').withChance(3 / 4)
-		//Item.of('minecraft:barrel', "{BlockEntityTag:{LootTable:\"kubejs:lucky\"},display:{Name:'{\"text\":\"耐心之桶\"}'}}").enchant('minecraft:looting', 2).withChance(1 / 2)
-	], [
-		'kubejs:alchemy_5',
-		'kubejs:tungsten_nugget'
-	]).id("atlanabyss:treasure_box")
 
 	//扣墙
 	event.custom({

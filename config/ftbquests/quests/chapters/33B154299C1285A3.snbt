@@ -1,7 +1,7 @@
 {
 	id: "33B154299C1285A3"
 	group: "62B0CA2D682AC9D6"
-	order_index: 3
+	order_index: 2
 	filename: "33B154299C1285A3"
 	title: "数据算力"
 	icon: "ae2:controller"
@@ -12,7 +12,6 @@
 			x: 0.0d
 			y: 0.0d
 			description: ["类似于算力时代的机壳。"]
-			dependencies: ["0995E7B507258131"]
 			id: "147EA282B12BBF98"
 			tasks: [{
 				id: "1AC1F47FA587D83B"
@@ -557,7 +556,6 @@
 			x: 3.5d
 			y: -1.0d
 			description: ["下一时代最重要的合金。"]
-			dependencies: ["0995E7B507258131"]
 			hide: true
 			id: "5366B3798112EA39"
 			tasks: [{
@@ -882,7 +880,6 @@
 			x: 0.0d
 			y: -7.0d
 			description: ["魔源宝石与糖合成获得。"]
-			dependencies: ["0995E7B507258131"]
 			hide: true
 			id: "2A4E28366BBDD94D"
 			tasks: [{

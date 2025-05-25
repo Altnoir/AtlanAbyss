@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-  let { create, thermal } = event.recipes;
+  let { create } = event.recipes;
 
   let remove = (name) => {
     event.remove({ id: name })
@@ -20,17 +20,6 @@ onEvent('recipes', event => {
   //末影粉
   remove('create:milling/compat/ae2/ender_pearl')
   remove('ae2:inscriber/ender_dust')
-  remove('thermal:earth_charge/ender_pearl_dust_from_ender_pearl')
-  remove('thermal:machines/pulverizer/pulverizer_ender_pearl')
-  create.milling(['2x thermal:ender_pearl_dust'], 'minecraft:ender_pearl').id("atlanabyss:milling_ender_pearl")
-  thermal.pulverizer(['2x thermal:ender_pearl_dust'], 'minecraft:ender_pearl').experience(0.4).id("atlanabyss:pulverizer_ender_pearl")
-
-  event.custom({
-    type: 'thermal:crystallizer',
-    ingredients: [{ item: 'thermal:ender_pearl_dust' }, { fluid: 'minecraft:water', amount: 100 }],
-    result: [{ item: 'minecraft:ender_pearl' }],
-    energy: 200
-  }).id("atlanabyss:crystallizer_ender_pearl")
 
   create.crushing([
     'ae2:certus_quartz_crystal',
@@ -108,19 +97,6 @@ onEvent('recipes', event => {
   event.shapeless('ae2:memory_card', [
     '#ae2:memory_cards', 'supplementaries:soap'
   ]).id('atlanabyss:splash_memory_card')
-
-  //石英纤维
-  remove('ae2:network/parts/quartz_fiber_part')
-  event.recipes.thermal.smelter('ae2:quartz_fiber', [
-    'tconstruct:clear_glass',
-    'thermal:quartz_dust'
-  ]).energy(1200).id("atlanabyss:smelter_quartz_fiber")
-  //石英玻璃
-  remove('ae2:decorative/quartz_glass')
-  event.recipes.thermal.smelter('2x ae2:quartz_glass', [
-    '#forge:sand',
-    '2x thermal:quartz_dust'
-  ]).energy(3600).id("atlanabyss:smelter_quartz_glass")
 
   //电路废料额外
   create.milling([
@@ -351,23 +327,6 @@ onEvent('recipes', event => {
     'ae2:logic_processor_press'
   ]).keepHeldItem(true).id('atlanabyss:deploying_printed_logic_processor')
 
-  //运算处理器
-  remove('ae2:inscriber/calculation_processor')
-  processor('ae2:printed_calculation_processor', 'ae2:calculation_processor', 'calculation_processor')
-  //工程处理器
-  remove('ae2:inscriber/engineering_processor')
-  processor('ae2:printed_engineering_processor', 'ae2:engineering_processor', 'engineering_processor')
-  //逻辑处理器
-  remove('ae2:inscriber/logic_processor')
-  processor('ae2:printed_logic_processor', 'ae2:logic_processor', 'logic_processor')
-
-  function processor(inp, out, id) {
-    create.sequenced_assembly(out, inp, [
-      create.filling(inp, [inp, Fluid.of('thermal:ender', 500)]),
-      create.filling(inp, [inp, Fluid.of('thermal:redstone', 200)]),
-      create.deploying(inp, [inp, 'ae2:printed_silicon'])
-    ]).transitionalItem(inp).loops(1).id('atlanabyss:sequenced_assembly_' + id)
-  }
 
   //福鲁伊克斯珍珠
   remove('ae2:misc/fluixpearl')
@@ -393,7 +352,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:invar_plate'
+    D: 'createaddition:zinc_sheet'
   }).id('atlanabyss:ae_item_cell_housing');
   //物品1k
   remove('ae2:network/cells/item_storage_cell_1k')
@@ -405,7 +364,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:invar_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_1k'
   }).id('atlanabyss:ae_item_storage_cell_1k');
   //物品4k
@@ -418,7 +377,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:invar_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_4k'
   }).id('atlanabyss:ae_item_storage_cell_4k');
   //物品16k
@@ -431,7 +390,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:invar_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_16k'
   }).id('atlanabyss:ae_item_storage_cell_16k');
   //物品64k
@@ -444,7 +403,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:invar_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_64k'
   }).id('atlanabyss:ae_item_storage_cell_64k');
   //物品256k
@@ -457,7 +416,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:invar_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_256k'
   }).id('atlanabyss:ae_item_storage_cell_256k');
 
@@ -471,7 +430,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:nickel_plate'
+    D: 'createaddition:zinc_sheet'
   }).id('atlanabyss:ae_fluid_cell_housing');
   //流体1k
   remove('ae2:network/cells/fluid_storage_cell_1k')
@@ -483,7 +442,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:nickel_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_1k'
   }).id('atlanabyss:ae_fluid_storage_cell_1k');
   //流体4k
@@ -496,7 +455,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:nickel_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_4k'
   }).id('atlanabyss:ae_fluid_storage_cell_4k');
   //流体16k
@@ -509,7 +468,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:nickel_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_16k'
   }).id('atlanabyss:ae_fluid_storage_cell_16k');
   //流体64k
@@ -522,7 +481,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:nickel_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_64k'
   }).id('atlanabyss:ae_fluid_storage_cell_64k');
   //流体256k
@@ -535,7 +494,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:nickel_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_256k'
   }).id('atlanabyss:ae_fluid_storage_cell_256k');
 
@@ -549,7 +508,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:lead_plate'
+    D: 'createaddition:zinc_sheet'
   }).id('atlanabyss:ae_disk_housing');
   //磁盘1k
   remove('ae2things:cells/disk_drive_1k')
@@ -561,7 +520,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:lead_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_1k'
   }).id('atlanabyss:ae_disk_drive_1k');
   //磁盘4k
@@ -574,7 +533,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:lead_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_4k'
   }).id('atlanabyss:ae_disk_drive_4k');
   //磁盘16k
@@ -587,7 +546,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:lead_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_16k'
   }).id('atlanabyss:ae_disk_drive_16k');
   //磁盘64k
@@ -600,7 +559,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:lead_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_64k'
   }).id('atlanabyss:ae_disk_drive_64k');
   //磁盘256k
@@ -613,44 +572,7 @@ onEvent('recipes', event => {
     A: 'ae2:quartz_glass',
     B: 'minecraft:redstone_block',
     C: 'kubejs:integrated_circuit',
-    D: 'thermal:lead_plate',
+    D: 'createaddition:zinc_sheet',
     E: 'ae2:cell_component_256k'
   }).id('atlanabyss:ae_disk_drive_256k');
-
-
-
-  let dissolution_chamber = (inputs, outputItem, outputCount, fluid, fluidAmount, time) => {
-    let inputList = []
-
-    inputs.forEach(list => {
-      let input = { item: list }
-      inputList.push(input)
-    })
-    event.custom({
-      type: 'industrialforegoing:dissolution_chamber',
-      input: inputList,
-      inputFluid: `{FluidName:\"${fluid}\",Amount:${fluidAmount}}`,
-      output: {
-        item: outputItem,
-        count: outputCount
-      },
-      processingTime: time
-    }).id('atlanabyss:dissolution_chamber_' + outputItem.replace(':', '_'))
-  }
-
-  //空白样板
-  remove('ae2:network/crafting/patterns_blank')
-  dissolution_chamber([
-    'ae2:quartz_glass',
-    'ae2:quartz_glass',
-    'thermal:cured_rubber',
-    'thermal:cured_rubber',
-    'kubejs:integrated_circuit_elite',
-    'kubejs:aluminum_sheet',
-    'kubejs:aluminum_sheet',
-    'kubejs:aluminum_sheet'
-  ],
-    'ae2:blank_pattern', 1,
-    'minecraft:milk', 1000,
-    50)
 })

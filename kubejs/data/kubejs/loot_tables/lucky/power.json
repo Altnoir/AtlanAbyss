@@ -9,10 +9,6 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "thermal:dynamo_magmatic"
-                },
-                {
-                    "type": "minecraft:item",
                     "name": "createaddition:tesla_coil"
                 },
                 {

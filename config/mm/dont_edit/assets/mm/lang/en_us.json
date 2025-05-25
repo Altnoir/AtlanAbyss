@@ -1,9 +1,0 @@
-{
-  "block.mm.compact_machine_controller": "block.mm.compact_machine_controller",
-  "block.mm.create_1_port": "block.mm.create_1 Input Port",
-  "block.mm.item_input_slot1_port": "block.mm.item_input_slot1 Input Port",
-  "block.mm.item_output_slot1_port": "block.mm.item_output_slot1 Output Port",
-  "container.masterfulmachinery.mm:compact_machine_controller_controller.name": "block.mm.compact_machine_controller",
-  "item.mm.blueprint": "Blueprint",
-  "item.mm.structure_wand": "Structure Wand"
-}

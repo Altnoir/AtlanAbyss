@@ -3,12 +3,12 @@ chestLootEnabled = false
 #Determines wheter Reliquary mob drops have crafting recipes
 dropCraftingRecipesEnabled = false
 #Whether mobs drop the Reliquary mob drops. This won't remove mob drop items from registry and replace them with something else, but allows to turn off the additional drops when mobs are killed by player. If this is turned off the mob drop crafting recipes turned on by the other setting can be used.
-mobDropsEnabled = false
+mobDropsEnabled = true
 
 #Disable sections of the mod
 [disable]
 	#Disable Alkahestry tome and its recipes
-	alkahestryTome = true
+	alkahestryTome = false
 	#Disable the HANDGUN, bullets, magazines, and gun parts
 	handgun = true
 	#Disable the POTION system including mortar, altar, potions, tipped arrows, and powder
@@ -18,7 +18,7 @@ mobDropsEnabled = false
 	#Disable all display-only pedestals
 	passivePedestal = true
 	#Disable recipes to craft spawn eggs from fragments
-	disableSpawnEggRecipes = true
+	disableSpawnEggRecipes = false
 
 #Potions related settings
 [potions]

@@ -118,23 +118,6 @@
                         }
                     ],
                     "name": "minecraft:light_gray_shulker_box"
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.1
-                        }
-                    ],
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{BlockEntityTag:{LootTable:\"kubejs:umapyoi\"},display:{Name:'{\"text\":\"马娘宝箱\"}'}}"
-                        }
-                    ],
-                    "name": "minecraft:green_shulker_box"
                 }
             ]
         }

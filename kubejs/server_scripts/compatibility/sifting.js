@@ -16,8 +16,6 @@ onEvent('recipes', event => {
     createsifter.sifting([
         Item.of('minecraft:iron_nugget').withChance(0.10),
         Item.of('create:copper_nugget').withChance(0.08),
-        Item.of('thermal:tin_nugget').withChance(0.05),
-        Item.of('thermal:nickel_nugget').withChance(0.04),
         Item.of('minecraft:gunpowder').withChance(0.20)
     ], [
         'minecraft:gravel',
@@ -28,8 +26,6 @@ onEvent('recipes', event => {
     createsifter.sifting([
         Item.of('minecraft:iron_nugget').withChance(0.15),
         Item.of('create:copper_nugget').withChance(0.12),
-        Item.of('thermal:tin_nugget').withChance(0.10),
-        Item.of('thermal:nickel_nugget').withChance(0.08),
         Item.of('create:zinc_nugget').withChance(0.05),
         Item.of('minecraft:gunpowder').withChance(0.30)
     ], [
@@ -41,11 +37,8 @@ onEvent('recipes', event => {
     createsifter.sifting([
         Item.of('minecraft:iron_nugget').withChance(0.24),
         Item.of('create:copper_nugget').withChance(0.18),
-        Item.of('thermal:tin_nugget').withChance(0.15),
-        Item.of('thermal:nickel_nugget').withChance(0.12),
         Item.of('create:zinc_nugget').withChance(0.10),
         Item.of('minecraft:gold_nugget').withChance(0.05),
-        Item.of('thermal:silver_nugget').withChance(0.03),
         Item.of('minecraft:gunpowder').withChance(0.50)
     ], [
         'minecraft:gravel',
@@ -54,8 +47,7 @@ onEvent('recipes', event => {
 
     //筛灵魂沙
     createsifter.sifting([
-        Item.of('minecraft:quartz').withChance(0.05),
-        Item.of('thermal:sulfur').withChance(0.03),
+        Item.of('minecraft:quartz').withChance(0.05)
     ], [
         'minecraft:soul_sand',
         'createsifter:string_mesh'
@@ -64,7 +56,6 @@ onEvent('recipes', event => {
     remove('createsifter:sifting/gravel_andesite_mesh')
     createsifter.sifting([
         Item.of('minecraft:quartz').withChance(0.10),
-        Item.of('thermal:sulfur').withChance(0.05),
         Item.of('kubejs:aluminum_nugget').withChance(0.02),
         Item.of('create:experience_nugget').withChance(0.1)
     ], [
@@ -75,7 +66,6 @@ onEvent('recipes', event => {
     remove('createsifter:sifting/gravel_zinc_mesh')
     createsifter.sifting([
         Item.of('minecraft:quartz').withChance(0.15),
-        Item.of('thermal:sulfur').withChance(0.1),
         Item.of('kubejs:aluminum_nugget').withChance(0.05),
         Item.of('minecraft:gold_nugget').withChance(0.02),
         Item.of('create:experience_nugget').withChance(0.1)
@@ -87,7 +77,6 @@ onEvent('recipes', event => {
     remove('createsifter:sifting/gravel_brass_mesh')
     createsifter.sifting([
         Item.of('minecraft:quartz').withChance(0.25),
-        Item.of('thermal:sulfur').withChance(0.15),
         Item.of('kubejs:aluminum_nugget').withChance(0.1),
         Item.of('minecraft:gold_nugget').withChance(0.05),
         Item.of('tconstruct:cobalt_nugget').withChance(0.02),

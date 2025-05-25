@@ -4,20 +4,6 @@
     {
       "type": "goblintraders:basic",
       "offer_item": {
-        "item": "compactmachines:machine_tiny",
-        "count": 1
-      },
-      "payment_item": {
-        "item": "lightmanscurrency:coin_emerald",
-        "count": 1
-      },
-      "price_multiplier": 0.0,
-      "max_trades": 1,
-      "experience": 42
-    },
-    {
-      "type": "goblintraders:basic",
-      "offer_item": {
         "item": "yuushya:bismuth_crystal",
         "count": 8
       },

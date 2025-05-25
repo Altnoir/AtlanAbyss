@@ -17,6 +17,20 @@ sendMessages = true
 maxDiskSize = "25 GB"
 #Used to define the output path.
 outputPath = "simplebackups"
+#If set false, no backups are being made.
+enabled = true
+#How often should a full backup be created if only modified files should be saved? This creates a full backup when x minutes are over and the next backup needs to be done. Once a year is default.
+#Range: 1 ~ 5259600
+fullBackupTimer = 525960
+#Compression level:
+#  0  = no compression (low CPU usage, larger files)
+#  9  = maximum compression (high CPU usage, smaller files)
+#  -1 = default; balances speed and compression (recommended)
+#Range: -1 ~ 9
+compressionLevel = -1
+#Should sub-directories be generated for each world?
+#Keep in mind that all configs above, including backupsToKeep and maxDiskSize, will be calculated for each sub directory.
+createSubDirs = false
 
 [mod_compat]
 	#Should backup notifications be sent to Discord by using mc2discord? (needs to be installed)

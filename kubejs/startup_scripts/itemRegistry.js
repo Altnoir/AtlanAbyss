@@ -80,20 +80,20 @@ onEvent('item.registry', event => {
 	event.create('crystal_nucleus').displayName('Crystal Nucleus');
 
 	event.create('incomplete_core_container', 'create:sequenced_assembly').displayName('Incomplete Core Container');
-	event.create('uranium_core').displayName('Uranium Core');
-	event.create('plutonium_core').displayName('Plutonium Core');
-	event.create('depleted_uranium').displayName('Depleted Uranium');
-	event.create('graphite_rod').displayName('Graphite Rod');
-	event.create('enderium_rod').displayName('Enderium Rod');
-	event.create('brass_gear').displayName('Brass Gear');
+	// event.create('uranium_core').displayName('Uranium Core');
+	// event.create('plutonium_core').displayName('Plutonium Core');
+	// event.create('depleted_uranium').displayName('Depleted Uranium');
+	// event.create('graphite_rod').displayName('Graphite Rod');
+	// event.create('enderium_rod').displayName('Enderium Rod');
+	// event.create('brass_gear').displayName('Brass Gear');
 
 	//空电路板
 	event.create('empty_pcb').displayName('Empty Pcb');
 	//集成电路
 	event.create('integrated_circuit').displayName('Integrated Circuit').rarity(RARITY_COMMON);
-	event.create('integrated_circuit_advanced').displayName('Advanced Integrated Circuit').rarity(RARITY_COMMON);
-	event.create('integrated_circuit_elite').displayName('Elite Integrated Circuit').rarity(RARITY_COMMON);
-	event.create('integrated_circuit_ultimate').displayName('Ultimate Integrated Circuit').rarity(RARITY_COMMON);
+	// event.create('integrated_circuit_advanced').displayName('Advanced Integrated Circuit').rarity(RARITY_COMMON);
+	// event.create('integrated_circuit_elite').displayName('Elite Integrated Circuit').rarity(RARITY_COMMON);
+	// event.create('integrated_circuit_ultimate').displayName('Ultimate Integrated Circuit').rarity(RARITY_COMMON);
 	event.create('circuit_scrap').displayName('Circuit Scrap');
 	event.create('candy_electron_tube').displayName('Candy Electron Tube');
 	event.create('sulfur_electron_tube').displayName('Sulfur Electron Tube');
@@ -590,33 +590,33 @@ onEvent('item.registry', event => {
 	// }).displayName('Tear Drink');//盈泪之饮
 
 
-	let number = (name) => {
-		let id = name.toLowerCase()
-		event.create(id).glow(true).displayName(name)
-	}
-	number('Zero')
-	number('One')
-	number('Two')
-	number('Three')
-	number('Four')
-	number('Five')
-	number('Six')
-	number('Seven')
-	number('Eight')
-	number('Nine')
-	number('Plus')
-	number('Minus')
-	number('Multiply')
-	number('Divide')
+	// let number = (name) => {
+	// 	let id = name.toLowerCase()
+	// 	event.create(id).glow(true).displayName(name)
+	// }
+	// number('Zero')
+	// number('One')
+	// number('Two')
+	// number('Three')
+	// number('Four')
+	// number('Five')
+	// number('Six')
+	// number('Seven')
+	// number('Eight')
+	// number('Nine')
+	// number('Plus')
+	// number('Minus')
+	// number('Multiply')
+	// number('Divide')
 
-	event.create('three_cast').displayName('Integer Cast (3)').unstackable()
-	event.create('eight_cast').displayName('Integer Cast (8)').unstackable()
-	event.create('plus_cast').displayName('Operator Cast (+)').unstackable()
-	event.create('minus_cast').displayName('Operator Cast (-)').unstackable()
-	event.create('multiply_cast').displayName('Operator Cast (x)').unstackable()
-	event.create('divide_cast').displayName('Operator Cast (/)').unstackable()
-	event.create('missingno').displayName('error')
-	event.create('computation_matrix').parentModel('kubejs:item/computation_matrix').displayName('Computation Matrix').rarity(RARITY_UNCOMMON).unstackable()
+	// event.create('three_cast').displayName('Integer Cast (3)').unstackable()
+	// event.create('eight_cast').displayName('Integer Cast (8)').unstackable()
+	// event.create('plus_cast').displayName('Operator Cast (+)').unstackable()
+	// event.create('minus_cast').displayName('Operator Cast (-)').unstackable()
+	// event.create('multiply_cast').displayName('Operator Cast (x)').unstackable()
+	// event.create('divide_cast').displayName('Operator Cast (/)').unstackable()
+	// event.create('missingno').displayName('error')
+	// event.create('computation_matrix').parentModel('kubejs:item/computation_matrix').displayName('Computation Matrix').rarity(RARITY_UNCOMMON).unstackable()
 
 	event.create('sponge_gemmule').displayName('Sponge Gemmule')
 	event.create('cotton').displayName('Cotton')

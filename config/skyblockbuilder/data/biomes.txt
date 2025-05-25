@@ -59,11 +59,6 @@ minecraft:end_highlands
 minecraft:end_midlands
 minecraft:small_end_islands
 minecraft:end_barrens
-mythicbotany:alfheim_plains
-mythicbotany:alfheim_hills
-mythicbotany:dreamwood_forest
-mythicbotany:golden_fields
-mythicbotany:alfheim_lakes
 blueprint:original_source_marker
 ae2:spatial_storage
 atmospheric:rainforest

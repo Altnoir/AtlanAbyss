@@ -1,7 +1,0 @@
-{
-  "type": "mm:fixed",
-  "id": "compact_machine",
-  "name": {
-    "translation": "block.mm.compact_machine_controller"
-  }
-}

@@ -13,7 +13,7 @@ realmsNotifications:false
 reducedDebugInfo:false
 showSubtitles:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -47,7 +47,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -168,12 +168,12 @@ key_key.modernfix.config:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
-key_key.corpse.death_history:key.keyboard.unknown
 key_key.forgeautofish.autofish:key.keyboard.unknown
 key_key.forgeautofish.rodprotect:key.keyboard.unknown
 key_key.forgeautofish.autoreplace:key.keyboard.unknown
 key_key.forgeautofish.settings:key.keyboard.unknown
 key_key.forgeautofish.itemfilter:key.keyboard.unknown
+key_key.corpse.death_history:key.keyboard.unknown
 key_key.yes_steve_model.player_model.desc:key.keyboard.y:ALT
 key_key.yes_steve_model.animation_roulette.desc:key.keyboard.n
 key_key.yes_steve_model.debug_animation.desc:key.keyboard.b:ALT
@@ -209,8 +209,8 @@ key_key.ars_nouveau.qc8:key.keyboard.unknown
 key_key.ars_nouveau.qc9:key.keyboard.unknown
 key_key.ars_nouveau.qc10:key.keyboard.unknown
 key_key.ftbultimine:key.keyboard.grave.accent
-key_key.biomancy.item_default:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.j
+key_key.biomancy.item_default:key.keyboard.unknown
 key_key.observable.profile:key.keyboard.apostrophe
 key_gui.xaero_open_map:key.keyboard.m
 key_gui.xaero_open_settings:key.keyboard.right.bracket
@@ -236,8 +236,8 @@ key_key.waila.narrate:key.keyboard.unknown
 key_key.waila.show_details:key.keyboard.left.shift
 key_key.waila.show_recipes:key.keyboard.keypad.3
 key_key.waila.show_uses:key.keyboard.unknown
-key_quark.keybind.transfer_insert:key.keyboard.unknown
 key_key.presencefootsteps.settings:key.keyboard.f10
+key_quark.keybind.transfer_insert:key.keyboard.unknown
 key_quark.keybind.transfer_extract:key.keyboard.unknown
 key_quark.keybind.shift_lock:key.keyboard.unknown
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown
@@ -262,6 +262,11 @@ key_gui.xaero_toggle_tracked_players_on_map:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_in_world:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_gui.xaero_minimap_settings:key.keyboard.y
+key_quark.keybind.change_hotbar:key.keyboard.unknown
+key_quark.keybind.sort_player:key.keyboard.unknown
+key_quark.keybind.sort_container:key.keyboard.unknown
+key_quark.keybind.camera_mode:key.keyboard.f12
+key_quark.keybind.lock_rotation:key.keyboard.l
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -280,11 +285,6 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
-key_quark.keybind.sort_player:key.keyboard.unknown
-key_quark.keybind.sort_container:key.keyboard.unknown
-key_quark.keybind.lock_rotation:key.keyboard.l
-key_quark.keybind.camera_mode:key.keyboard.f12
-key_quark.keybind.change_hotbar:key.keyboard.unknown
 key_quark.keybind.back:key.mouse.4
 key_key.freecam.toggle:key.keyboard.f4
 key_key.freecam.playerControl:key.keyboard.unknown

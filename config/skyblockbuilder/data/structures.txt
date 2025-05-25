@@ -41,7 +41,6 @@ integrated_api:end_jigsaw_structure
 integrated_api:advanced_jigsaw_structure
 integrated_api:advanced_distance_jigsaw_structure
 integrated_api:iceandfire_structure
-mythicbotany:andwari_cave
 integrated_stronghold:stronghold
 cataclysm:soul_black_smith
 cataclysm:ruined_citadel

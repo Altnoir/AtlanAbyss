@@ -152,7 +152,7 @@
 			#Configure Darkness Mode
 			#Each config changes what is considered 'true darkness'
 			#Allowed Values: TOTAL_DARKNESS, PITCH_BLACK, DARK, DIM, OFF
-			mode = "DARK"
+			mode = "OFF"
 			#Toggles if moon phases affects darkness in the overworld
 			affectedByMoonPhase = true
 			#List of all dimensions to use True Darkness
