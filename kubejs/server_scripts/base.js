@@ -1885,6 +1885,8 @@ onEvent('recipes', event => {
 
 	//充能魂钢锭
 	teslaCharging('tconstruct:soulsteel_ingot', 'kubejs:charged_soulsteel_ingot', 150000, 'charged_soulsteel_ingot')
+	//充能铜锭
+	teslaCharging('minecraft:copper_ingot', 'kubejs:charged_constantan_ingot', 150000, 'charged_constantan_ingot')
 
 	//异彩化合物
 	create.mixing('2x create:chromatic_compound', [

@@ -1,11 +1,11 @@
 minecraft:overworld
-atlanabyss:major_fault
-atlanabyss:final_vortex
 atlanabyss:sinking_sea
-atlanabyss:tempt_forest
-minecraft:the_nether
-atlanabyss:secret_garden
+atlanabyss:major_fault
 ae2:spatial_storage
+atlanabyss:secret_garden
+minecraft:the_nether
 atlanabyss:paradise
 inversia:inversiadim
+atlanabyss:final_vortex
+atlanabyss:tempt_forest
 minecraft:the_end

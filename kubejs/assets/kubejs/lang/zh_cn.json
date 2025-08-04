@@ -138,8 +138,8 @@
     "item.kubejs.zirconium_alloy_ingot": "§2锆合金锭",
     "item.kubejs.lutetium_ingot": "§5镥锭",
     "item.kubejs.charged_soulsteel_ingot": "充能魂钢锭",
-    "item.kubejs.charged_constantan_ingot": "充能康铜锭",
-    "item.kubejs.charged_constantan_sheet": "充能康铜板",
+    "item.kubejs.charged_constantan_ingot": "充能铜锭",
+    "item.kubejs.charged_constantan_sheet": "充能铜板",
     "item.kubejs.crystal_matrix_ingot": "§e水晶矩阵锭",
     "item.kubejs.infinity_ingot": "§4§k无尽之锭",
 
