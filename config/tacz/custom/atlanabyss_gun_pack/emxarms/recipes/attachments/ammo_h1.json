@@ -2,7 +2,7 @@
   "materials": [
     {
       "item": {
-        "item": "thermal:steel_plate"
+        "item": "kubejs:meteosteel_ingot"
       },
       "count": 25
     },

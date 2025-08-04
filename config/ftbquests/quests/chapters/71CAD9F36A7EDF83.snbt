@@ -354,59 +354,8 @@
 			}]
 		}
 		{
-			disable_toast: true
-			x: -2.0d
-			y: 6.0d
-			shape: "hexagon"
-			description: [
-				"催化剂需通过序列组装概率获得。"
-				"催化剂可以用于元素炼金。"
-				"副产物可以用抽宝藏箱。"
-			]
-			dependencies: ["4786752F32FF31C0"]
-			id: "5BD88AB862216AA1"
-			tasks: [
-				{
-					id: "5FA1AA5FE91C38F8"
-					type: "item"
-					item: "kubejs:substrate_igneous"
-				}
-				{
-					id: "38E60F0E2A51CDCD"
-					type: "item"
-					item: "kubejs:substrate_herbal"
-				}
-				{
-					id: "452738BA1A04020C"
-					type: "item"
-					item: "kubejs:substrate_volatile"
-				}
-				{
-					id: "667D652F424FEC88"
-					type: "item"
-					item: "kubejs:substrate_crystal"
-				}
-				{
-					id: "6B305E0FCC696BEB"
-					type: "item"
-					item: "kubejs:substrate_metal"
-				}
-				{
-					id: "2EA2B01D8E0579F5"
-					type: "item"
-					item: "kubejs:substrate_gem"
-				}
-			]
-			rewards: [{
-				id: "4ED18D8B2CA8E52C"
-				type: "item"
-				title: "副产物"
-				item: "kubejs:alchemy_0"
-			}]
-		}
-		{
-			x: -1.0d
-			y: 6.0d
+			x: -1.5d
+			y: 3.0d
 			shape: "hexagon"
 			description: ["可用于合成钻石。"]
 			dependencies: ["4786752F32FF31C0"]
@@ -436,25 +385,6 @@
 			}]
 			rewards: [{
 				id: "18C2A26A94EF64C1"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: -7.0d
-			y: -1.0d
-			shape: "hexagon"
-			description: ["附魔也能全自动！"]
-			dependencies: ["0EA2F9720106F822"]
-			id: "513EF3E112260A3F"
-			tasks: [{
-				id: "1C7B4853231CA59E"
-				type: "item"
-				item: "create_enchantment_industry:printer"
-			}]
-			rewards: [{
-				id: "56A67802022CC8C0"
 				type: "xp"
 				xp: 10
 			}]
@@ -524,8 +454,8 @@
 		}
 		{
 			disable_toast: true
-			x: -5.0d
-			y: 1.0d
+			x: -7.0d
+			y: -1.0d
 			shape: "hexagon"
 			description: ["有些配方会需要它。"]
 			dependencies: ["0EA2F9720106F822"]
@@ -845,7 +775,7 @@
 			disable_toast: true
 			x: -7.0d
 			y: 2.0d
-			description: ["可在下界挖到，或通过粉碎玄武岩获得。"]
+			description: ["可在第三层或下界挖到，或通过粉碎玄武岩获得。"]
 			dependencies: ["07835D33A0BA9FD1"]
 			hide: true
 			id: "0F39A47561B38A32"
@@ -911,32 +841,6 @@
 			}]
 			rewards: [{
 				id: "5E4CD46C1052C9D3"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
-			x: 1.0d
-			y: 6.0d
-			shape: "hexagon"
-			description: ["虚空挖矿！"]
-			dependencies: ["529FFF3330B1F7EC"]
-			id: "2A2AAA1D018C93E6"
-			tasks: [
-				{
-					id: "6C028225B48F4BA9"
-					type: "item"
-					item: "createoreexcavation:drilling_machine"
-				}
-				{
-					id: "0316BFDB2B686105"
-					type: "item"
-					item: "createoreexcavation:vein_finder"
-				}
-			]
-			rewards: [{
-				id: "52ED9AA5965D7574"
 				type: "xp"
 				xp: 10
 			}]

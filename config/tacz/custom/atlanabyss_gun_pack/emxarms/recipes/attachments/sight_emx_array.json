@@ -2,7 +2,7 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:ingots/silver"
+        "item": "kubejs:aluminum_ingot"
       },
       "count": 20
     },

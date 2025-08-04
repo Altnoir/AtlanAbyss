@@ -29,52 +29,6 @@
 			}]
 		}
 		{
-			disable_toast: true
-			x: 4.0d
-			y: -3.5d
-			shape: "hexagon"
-			description: ["一把会飞的扫帚！不觉得很酷吗？"]
-			dependencies: ["381E536079E75588"]
-			hide: true
-			id: "15BE2DDEA1BB9D43"
-			tasks: [{
-				id: "4FE3CFAD4F5434D7"
-				type: "item"
-				item: "ars_nouveau:magebloom_fiber"
-				count: 12L
-				consume_items: true
-			}]
-			rewards: [
-				{
-					id: "352E754CDAC37DBF"
-					type: "item"
-					item: {
-						id: "majobroom:majo_hat"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "50A6A0429DBE192E"
-					type: "item"
-					item: {
-						id: "majobroom:majo_cloth"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "312BA649C7C49139"
-					type: "item"
-					item: "majobroom:broom_item"
-				}
-			]
-		}
-		{
 			x: 2.0d
 			y: -3.5d
 			shape: "hexagon"

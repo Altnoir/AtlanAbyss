@@ -31,46 +31,6 @@ onEvent('recipes', event => {
 	//重复配方
 	remove('neapolitan:cake')
 	remove('minecraft:cake')
-	//矿石开凿
-	remove('createoreexcavation:cutting/diamond_cutting')
-	remove('createoreexcavation:cutting/emerald_cutting')
-	remove('createoreexcavation:milling/redstone_milling')
-	remove('createoreexcavation:crushing/redstone_crushing')
-	remove('createoreexcavation:extractor/water')
-	remove('createoreexcavation:drilling/hardened_diamond')
-	remove('createoreexcavation:vein_finder')
-
-
-
-	//探矿杖
-	event.shaped('createoreexcavation:vein_finder', [
-		' AB',
-		' DC',
-		'D  '
-	], {
-		A: 'kubejs:vibration_mechanism',
-		B: 'minecraft:ender_eye',
-		C: 'minecraft:redstone_block',
-		D: 'minecraft:stick'
-	}).id("atlanabyss:vein_finder")
-
-	//矿物钻井
-	remove('createoreexcavation:drilling_machine')
-	create.mechanical_crafting('createoreexcavation:drilling_machine', [
-		'BEADB',
-		'BFCFB',
-		'BFFFB',
-		'B   B',
-	], {
-		A: 'create:brass_casing',
-		B: 'create:metal_girder',
-		C: 'create:shaft',
-		D: 'create:fluid_pipe',
-		E: 'create:brass_tunnel',
-		F: 'kubejs:pressure_mechanism'
-	}).id("atlanabyss:mechanical_crafting_drilling_machine")
-	//流体钻井
-	remove('createoreexcavation:extractor')
 
 	//有机碎片
 	create.mixing('kubejs:organic_scrap', [
@@ -499,281 +459,6 @@ onEvent('recipes', event => {
 	remove('yuushya:stone/steel_structure')
 	event.stonecutting('yuushya:steel_structure', 'minecraft:iron_ingot').id('atlanabyss:steel_structure_from_ingot');
 
-	//魔女扫帚
-	remove('majobroom:majo_broom')
-	remove('majobroom:majo_hat')
-	remove('majobroom:majo_cloth')
-	event.custom({
-		"type": "ars_nouveau:enchanting_apparatus",
-		"reagent": [
-			{ "item": "minecraft:stick" }
-		],
-		"pedestalItems": [
-			{ "item": { "item": "farmersdelight:straw_bale" } },
-			{ "item": { "tag": "forge:gems/source" } },
-		],
-		"output": {
-			"item": "majobroom:broom_item"
-		},
-		"sourceCost": 0,
-		"keepNbtOfReagent": false
-	}).id('atlanabyss:broom_item');
-
-	event.shaped('majobroom:majo_hat', [
-		' AB',
-		'AAA'
-	], {
-		A: 'ars_nouveau:magebloom_fiber',
-		B: 'botania:mana_pearl'
-	}).id('atlanabyss:majo_hat');
-
-	event.shaped('majobroom:majo_cloth', [
-		'A A',
-		'ABA',
-		'AAA'
-	], {
-		A: 'ars_nouveau:magebloom_fiber',
-		B: 'botania:mana_pearl'
-	}).id('atlanabyss:majo_cloth');
-
-
-	// //飞艇
-	// remove('immersive_aircraft:airship')
-	// create.mechanical_crafting('immersive_aircraft:airship', [
-	// 	'SSSSS',
-	// 	' A A ',
-	// 	' HBEP',
-	// 	' HHH '
-	// ], {
-	// 	H: 'immersive_aircraft:hull',
-	// 	E: 'immersive_aircraft:engine',
-	// 	P: 'create:propeller',
-	// 	S: 'immersive_aircraft:sail',
-	// 	A: 'minecraft:string',
-	// 	B: '#create:seats'
-	// }).id('atlanabyss:mechanical_crafting_airship')
-	// //双翼机
-	// remove('immersive_aircraft:biplane')
-	// create.mechanical_crafting('immersive_aircraft:biplane', [
-	// 	'   S ',
-	// 	'S  S ',
-	// 	'HHBEP',
-	// 	'S  S ',
-	// 	'   S '
-	// ], {
-	// 	H: 'immersive_aircraft:hull',
-	// 	E: 'immersive_aircraft:engine',
-	// 	P: 'immersive_aircraft:propeller',
-	// 	S: 'immersive_aircraft:sail',
-	// 	B: '#create:seats'
-	// }).id('atlanabyss:mechanical_crafting_biplane')
-	// //机身
-	// remove('immersive_aircraft:hull')
-	// event.shaped('immersive_aircraft:hull', [
-	// 	'LIL',
-	// 	'LIL'
-	// ], {
-	// 	L: 'create:andesite_casing',
-	// 	I: 'minecraft:iron_ingot'
-	// }).id("atlanabyss:aircraft_hull")
-	// //高级引擎
-	// remove('immersive_aircraft:engine')
-	// event.shaped('immersive_aircraft:engine', [
-	// 	'BPB',
-	// 	'SES'
-	// ], {
-	// 	P: 'create:precision_mechanism',
-	// 	E: 'immersive_aircraft:boiler',
-	// 	B: 'create:brass_sheet',
-	// 	S: 'create:sturdy_sheet'
-	// }).id("atlanabyss:aircraft_engine")
-	// //大矾
-	// remove('immersive_aircraft:sail')
-	// event.shaped('immersive_aircraft:sail', [
-	// 	'SSS',
-	// 	'SSS'
-	// ], {
-	// 	S: 'create:white_sail'
-	// }).id("atlanabyss:aircraft_sail")
-	// //大螺旋桨
-	// remove('immersive_aircraft:propeller')
-	// event.shaped('immersive_aircraft:propeller', [
-	// 	' I ',
-	// 	'IPI',
-	// 	' I '
-	// ], {
-	// 	I: 'create:iron_sheet',
-	// 	P: 'create:propeller'
-	// }).id("atlanabyss:aircraft_propeller")
-	// //基础引擎
-	// remove('immersive_aircraft:boiler')
-	// event.shaped('immersive_aircraft:boiler', [
-	// 	'S',
-	// 	'N',
-	// 	'I'
-	// ], {
-	// 	I: 'create:blaze_burner',
-	// 	S: 'create:steam_engine',
-	// 	N: 'create:fluid_tank'
-	// }).id("atlanabyss:aircraft_boiler")
-	// //固定翼旋翼机
-	// remove('immersive_aircraft:gyrodyne')
-	// event.shaped('immersive_aircraft:gyrodyne', [
-	// 	' P ',
-	// 	'SES',
-	// 	'HBH'
-	// ], {
-	// 	S: 'immersive_aircraft:sail',
-	// 	H: 'immersive_aircraft:hull',
-	// 	P: 'immersive_aircraft:propeller',
-	// 	E: 'create:precision_mechanism',
-	// 	B: '#create:seats'
-	// }).id("atlanabyss:aircraft_gyrodyne")
-	// //四轴飞行器
-	// remove('immersive_aircraft:quadrocopter')
-	// event.shaped('immersive_aircraft:quadrocopter', [
-	// 	'PAP',
-	// 	' S ',
-	// 	'PEP'
-	// ], {
-	// 	E: 'immersive_aircraft:boiler',
-	// 	A: 'create:andesite_casing',
-	// 	S: 'minecraft:string',
-	// 	P: 'create:propeller'
-	// }).id("atlanabyss:aircraft_quadrocopter")
-	// //黄铜螺旋桨
-	// remove('immersive_aircraft:enhanced_propeller')
-	// event.shaped('immersive_aircraft:enhanced_propeller', [
-	// 	' B ',
-	// 	'BPB',
-	// 	' B '
-	// ], {
-	// 	B: 'create:brass_sheet',
-	// 	P: 'create:propeller'
-	// }).id("atlanabyss:aircraft_enhanced_propeller")
-	// //液压引擎
-	// remove('immersive_aircraft:eco_engine')
-	// event.shaped('immersive_aircraft:eco_engine', [
-	// 	'IWI',
-	// 	'CEC'
-	// ], {
-	// 	C: 'create:copper_sheet',
-	// 	W: 'minecraft:water_bucket',
-	// 	I: 'create:iron_sheet',
-	// 	E: 'immersive_aircraft:boiler'
-	// }).id("atlanabyss:aircraft_eco_engine")
-	// //燃烧引擎
-	// remove('immersive_aircraft:nether_engine')
-	// event.shaped('immersive_aircraft:nether_engine', [
-	// 	'ILI',
-	// 	'SES'
-	// ], {
-	// 	S: 'create:sturdy_sheet',
-	// 	L: 'minecraft:lava_bucket',
-	// 	I: 'create:iron_sheet',
-	// 	E: 'immersive_aircraft:boiler'
-	// }).id("atlanabyss:aircraft_nether_engine")
-	// //铁制锅炉
-	// remove('immersive_aircraft:steel_boiler')
-	// event.shaped('immersive_aircraft:steel_boiler', [
-	// 	'IFI'
-	// ], {
-	// 	I: 'create:iron_sheet',
-	// 	F: 'create:fluid_tank'
-	// }).id("atlanabyss:aircraft_steel_boiler")
-	// //工业齿轮
-	// remove('immersive_aircraft:industrial_gears')
-	// event.shaped('immersive_aircraft:industrial_gears', [
-	// 	'ICI'
-	// ], {
-	// 	C: 'create:cogwheel',
-	// 	I: 'create:iron_sheet'
-	// }).id("atlanabyss:aircraft_industrial_gears")
-	// //加固管道
-	// remove('immersive_aircraft:sturdy_pipes')
-	// event.shaped('immersive_aircraft:sturdy_pipes', [
-	// 	'IPI'
-	// ], {
-	// 	I: 'create:iron_sheet',
-	// 	P: 'create:fluid_pipe'
-	// }).id("atlanabyss:aircraft_sturdy_pipes")
-	// //陀螺仪
-	// remove('immersive_aircraft:gyroscope')
-	// event.shaped('immersive_aircraft:gyroscope', [
-	// 	'E',
-	// 	'C'
-	// ], {
-	// 	E: 'create:electron_tube',
-	// 	C: 'minecraft:compass'
-	// }).id("atlanabyss:aircraft_gyroscope")
-	// //加固船体
-	// remove('immersive_aircraft:hull_reinforcement')
-	// event.shaped('immersive_aircraft:hull_reinforcement', [
-	// 	'IHI'
-	// ], {
-	// 	H: 'immersive_aircraft:hull',
-	// 	I: 'create:iron_sheet'
-	// }).id("atlanabyss:aircraft_hull_reinforcement")
-	// //改良型起落架
-	// remove('immersive_aircraft:improved_landing_gear')
-	// event.shaped('immersive_aircraft:improved_landing_gear', [
-	// 	'SI',
-	// 	'B '
-	// ], {
-	// 	B: 'create:belt_connector',
-	// 	I: 'minecraft:iron_ingot',
-	// 	S: 'create:iron_sheet'
-	// }).id("atlanabyss:aircraft_improved_landing_gear")
-
-
-
-
-
-	// //安山机器
-	// event.shaped('kubejs:andesite_machine', [
-	// 	'ABA',
-	// 	'BCB',
-	// 	'DDD'
-	// ], {
-	// 	A: 'create:shaft',
-	// 	B: 'create:cogwheel',
-	// 	C: 'create:andesite_casing',
-	// 	D: '#minecraft:wooden_slabs'
-	// }).id("atlanabyss:andesite_machine")
-	// //黄铜机器
-	// event.shaped('kubejs:brass_machine', [
-	// 	'ABA',
-	// 	'CDC',
-	// 	'EEE'
-	// ], {
-	// 	A: 'create:shaft',
-	// 	B: 'create:precision_mechanism',
-	// 	C: 'create:electron_tube',
-	// 	D: 'create:brass_casing',
-	// 	E: '#minecraft:wooden_slabs'
-	// }).id("atlanabyss:brass_machine")
-	// //铜机器
-	// create.item_application('kubejs:copper_machine', [
-	// 	'kubejs:andesite_machine',
-	// 	'create:copper_sheet'
-	// ]).id("atlanabyss:copper_machine")
-
-	// //安山机器附
-	// let ac = 'create:andesite_casing';
-	// create.sequenced_assembly('kubejs:andesite_machine',
-	// 	'create:andesite_casing', [
-	// 	create.deploying(ac, [ac, 'minecraft:iron_nugget']),
-	// 	create.deploying(ac, [ac, 'create:cogwheel']),
-	// 	create.deploying(ac, [ac, 'create:shaft'])
-	// ]).transitionalItem(ac).loops(2).id("atlanabyss:sequenced_assembly_andesite_machine")
-	// //黄铜机器附
-	// let bc = 'create:brass_casing';
-	// create.sequenced_assembly('kubejs:brass_machine',
-	// 	'create:brass_casing', [
-	// 	create.deploying(bc, [bc, 'create:brass_sheet']),
-	// 	create.deploying(bc, [bc, 'create:electron_tube']),
-	// 	create.deploying(bc, [bc, 'create:precision_mechanism'])
-	// ]).transitionalItem(bc).loops(1).id("atlanabyss:sequenced_assembly_brass_machine")
 	//糖果石英
 	event.shapeless('kubejs:candy_crystal', ['ars_nouveau:source_gem', '8x minecraft:sugar']).id("atlanabyss:candy_crystal")
 	create.filling('kubejs:candy_crystal', [
@@ -788,6 +473,7 @@ onEvent('recipes', event => {
 			results: [{ item: output }]
 		}).id("atlanabyss:" + id)
 	}
+	//polishing('kubejs:candy_crystal', 'kubejs:polished_candy_crystal', 'polishing_candy_crystal')
 	polishing('kubejs:candy_crystal', 'kubejs:polished_candy_crystal', 'polishing_candy_crystal')
 	polishing('ae2:charged_certus_quartz_crystal', 'kubejs:polished_charged_certus_quartz', 'polishing_certus_quartz')
 	//更多电子管
@@ -795,7 +481,7 @@ onEvent('recipes', event => {
 		event.shaped(output, ['A', 'B'], { A: a, B: b }).id('atlanabyss:' + id)
 	}
 	electronTube('kubejs:candy_electron_tube', 'kubejs:polished_candy_crystal', 'kubejs:osmium_sheet', 'candy_electron_tube')
-	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'create:iron_sheet', 'sulfur_electron_tube')
+	electronTube('kubejs:sulfur_electron_tube', 'kubejs:polished_sulfur', 'kubejs:meteosteel_sheet', 'sulfur_electron_tube')
 	//电子管额外配方
 	create.deploying(Item.of('create:electron_tube').withChance(0.9), [
 		'create:polished_rose_quartz',
@@ -932,6 +618,35 @@ onEvent('recipes', event => {
 			create.deploying(vm, [vm, 'minecraft:redstone'])
 		]).transitionalItem(vm).loops(5).id("atlanabyss:vibration_mechanism")
 
+	// 电力部件
+	const tm = ('kubejs:incomplete_thermal_mechanism')
+	create.sequenced_assembly(['kubejs:thermal_mechanism',],
+		'kubejs:aluminum_sheet',
+		[
+			create.deploying(vm, [vm, 'createaddition:zinc_sheet']),
+			create.deploying(vm, [vm, '#forge:wires']),
+			create.deploying(vm, [vm, 'kubejs:sulfur_electron_tube'])
+		]).transitionalItem(vm).loops(5).id("atlanabyss:thermal_mechanism")
+
+	// 引力部件
+	const gm = ('kubejs:incomplete_gravitation_mechanism')
+	create.sequenced_assembly(['kubejs:gravitation_mechanism',],
+		'kubejs:magbismuth_sheet',
+		[
+			create.deploying(vm, [vm, 'ae2:cell_component_16k']),
+			create.deploying(vm, [vm, 'ae2:cell_component_16k']),
+			create.deploying(vm, [vm, 'kubejs:candy_electron_tube'])
+		]).transitionalItem(vm).loops(5).id("atlanabyss:gravitation_mechanism")
+
+	//纠缠方块
+	remove('entangled:block')
+	event.shaped('entangled:block', [
+		'PPP',
+		'P P',
+		'PPP'
+	], {
+		P: 'kubejs:gravitation_mechanism'
+	}).id("atlanabyss:entangled_block")
 
 
 	//传送石碑
@@ -970,7 +685,7 @@ onEvent('recipes', event => {
 	//基础
 	remove('itemcollectors:basic_collector')
 	event.shapeless('itemcollectors:basic_collector', [
-		'kubejs:pressure_mechanism',
+		'kubejs:vibration_mechanism',
 		'create:chute'
 	]).id("atlanabyss:basic_collector")
 	//高级
@@ -1601,7 +1316,7 @@ onEvent('recipes', event => {
 	create.milling([
 		'kubejs:deep_scrap'
 	], 'quark:permafrost').id("atlanabyss:milling_permafrost")
-	
+
 	create.pressing(
 		'kubejs:aluminum_sheet',
 		'kubejs:aluminum_ingot'
@@ -1615,6 +1330,10 @@ onEvent('recipes', event => {
 		'kubejs:charged_constantan_ingot'
 	).id('atlanabyss:pressing_charged_constantan_sheet')//充能康铜板
 	create.pressing(
+		'kubejs:meteosteel_sheet',
+		'kubejs:meteosteel_ingot'
+	).id('atlanabyss:pressing_meteosteel_sheet')//陨钢板
+	create.pressing(
 		'kubejs:bismuth_sheet',
 		'kubejs:bismuth_ingot'
 	).id('atlanabyss:pressing_bismuth_sheet')//铋板
@@ -1622,6 +1341,10 @@ onEvent('recipes', event => {
 		'kubejs:osmium_sheet',
 		'kubejs:osmium_ingot'
 	).id('atlanabyss:pressing_osmium_sheet')//锇板
+	create.pressing(
+		'kubejs:empty_pcb',
+		'minecraft:slime_ball'
+	).id('atlanabyss:pressing_empty_pcb')//空电路板
 
 	//缠魂
 	create.haunting('ars_nouveau:wilden_spike', 'minecraft:prismarine_shard').id('atlanabyss:haunting_wilden_spike');//新生魔艺掉落物
@@ -1732,10 +1455,10 @@ onEvent('recipes', event => {
 
 
 	//幸运方块流体
-	create.compacting(Fluid.of('kubejs:lucky_fluid', 10), 
+	create.compacting(Fluid.of('kubejs:lucky_fluid', 10),
 		'kubejs:lucky_block'
 	).id("atlanabyss:basin_fermenting_lucky_block")
-	
+
 	//幸运物质
 	create.compacting('minecraft:iron_block', [
 		'minecraft:iron_ingot',
@@ -1910,6 +1633,23 @@ onEvent('recipes', event => {
 		'kubejs:magbismuth_ingot'
 	).id("atlanabyss:pressing_magbismuth_sheet")
 
+	create.mixing(
+		'kubejs:meteosteel_ingot',
+		[
+			'6x ae2:sky_dust',
+			'minecraft:iron_ingot',
+			'minecraft:coal'
+		]
+	).heated().id("atlanabyss:mixing_meteosteel_ingot")
+
+	create.mixing(
+		'2x kubejs:magbismuth_ingot',
+		[
+			'kubejs:bismuth_ingot',
+			'kubejs:aluminium_alloy_ingot'
+		]
+	).heated().id("atlanabyss:mixing_magbismuth_ingot")
+
 
 
 	//压缩煤块
@@ -1922,6 +1662,12 @@ onEvent('recipes', event => {
 			create.deploying(o, [o, 'minecraft:coal']),
 			create.pressing(o, o)
 		]).transitionalItem(o).loops(7).id("atlanabyss:compressed_coal_block")
+
+	create.crushing([
+		'minecraft:diamond',
+		Item.of(('minecraft:diamond'), 1).withChance(.05),
+
+	], 'kubejs:compressed_coal_block').id("atlanabyss:crushing_compressed_coal_block")
 
 	//恩赐之石
 	create.crushing([
@@ -1973,6 +1719,10 @@ onEvent('recipes', event => {
 	]
 	).heated().id("atlanabyss:coal_aluminium_chip")
 
+	event.shapeless('kubejs:aluminum_compound', [
+		'kubejs:aluminium_chip',
+		'ae2:certus_quartz_dust'
+	]).id("atlanabyss:aluminum_compound")
 
 	//铝
 	event.smelting('kubejs:aluminum_ingot', 'kubejs:aluminum_compound').xp(.8).id("atlanabyss:aluminum_ingot_from_smelting")
@@ -2015,7 +1765,7 @@ onEvent('recipes', event => {
 	], {
 		A: 'kubejs:bismuth_ingot'
 	}).id("atlanabyss:bismuth_block")
-	
+
 
 	//炫星锭
 	create.mixing('kubejs:astral_ingot', [
@@ -2029,18 +1779,6 @@ onEvent('recipes', event => {
 		'create:chromatic_compound'
 	]).heated().id("atlanabyss:mixing_metanova_alloy")
 
-	//人造焰魔锭
-	create.item_application('cataclysm:ignitium_ingot', [
-		'botania:blaze_block',
-		'kubejs:metanova_alloy'
-	]).id("atlanabyss:item_application_ignitium_ingot")
-	//人造恶魔犄角
-	create.deploying('cataclysm:monstrous_horn', [
-		'minecraft:netherite_ingot',
-		'kubejs:metanova_alloy'
-	]).id('atlanabyss:deploying_monstrous_horn')
-
-	
 	//
 	Ingredient.of('#forge:ingots').itemIds.forEach((ingot) => {
 		create.deploying(ingot, [
@@ -2075,6 +1813,17 @@ onEvent('recipes', event => {
 		C: 'create:shaft',
 		D: 'createaddition:capacitor'
 	}).id("atlanabyss:alternator")
+	//创造发电机
+	remove('createaddition:mechanical_crafting/alternator')
+	event.shaped('createaddition:creative_energy', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'createaddition:modular_accumulator',
+		B: 'createaddition:alternator',
+	}).id("atlanabyss:creative_energy")
+	
 	//特斯拉
 	remove('createaddition:mechanical_crafting/tesla_coil')
 	create.mechanical_crafting('createaddition:tesla_coil', [
@@ -2187,45 +1936,6 @@ onEvent('recipes', event => {
 	event.shapeless('yuushya:bismuth_crystal', [
 		'yuushya:pictor'
 	]).id("atlanabyss:bismuth_crystal_by_pictor")
-
-	//扣墙
-	event.custom({
-		type: 'lychee:block_clicking',
-		item_in: {
-			item: 'air'
-		},
-		block_in: 'minecraft:bedrock',
-		post: [
-			{
-				type: 'random',
-				rolls: {
-					min: 1,
-					max: 5
-				},
-				entries: [
-					{
-						weight: 50,
-						type: 'prevent_default'
-					},
-					{
-						weight: 15,
-						type: 'drop_item',
-						item: 'kubejs:fragment_dirt'
-					},
-					{
-						weight: 35,
-						type: 'drop_item',
-						item: 'kubejs:fragment_stone'
-					}
-				]
-			},
-			{
-				type: 'hurt',
-				source: 'fall',
-				damage: 1
-			}
-		]
-	}).id("atlanabyss:block_clicking_wall")
 
 	event.shaped('minecraft:dirt', [
 		'AA',

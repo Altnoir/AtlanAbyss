@@ -467,6 +467,6 @@ onEvent('recipes', (event) => {
 		'A A',
 		'AAA',
 	], {
-		A: 'kubejs:infinity_ingot'
+		A: 'kubejs:virgin_ingot'
 	}).id('atlanabyss:creative_ammo_box')
 })

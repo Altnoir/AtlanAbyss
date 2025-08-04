@@ -12,13 +12,13 @@
     },
     {
       "item": {
-        "item": "thermal:steel_plate"
+        "item": "kubejs:meteosteel_ingot"
       },
       "count": 64
     },
     {
       "item": {
-        "item": "mekanism:pellet_polonium"
+        "item": "createaddition:modular_accumulator"
       },
       "count": 2
     }

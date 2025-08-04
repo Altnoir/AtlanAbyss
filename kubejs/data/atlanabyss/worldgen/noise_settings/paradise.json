@@ -604,40 +604,6 @@
                             "if_true": {
                                 "type": "minecraft:y_above",
                                 "anchor": {
-                                    "above_bottom": 208
-                                },
-                                "surface_depth_multiplier": 0,
-                                "add_stone_depth": false
-                            },
-                            "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                    "Name": "thermal:deepslate_nickel_ore"
-                                }
-                            }
-                        },
-                        {
-                            "type": "minecraft:condition",
-                            "if_true": {
-                                "type": "minecraft:y_above",
-                                "anchor": {
-                                    "above_bottom": 176
-                                },
-                                "surface_depth_multiplier": 0,
-                                "add_stone_depth": false
-                            },
-                            "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                    "Name": "thermal:deepslate_tin_ore"
-                                }
-                            }
-                        },
-                        {
-                            "type": "minecraft:condition",
-                            "if_true": {
-                                "type": "minecraft:y_above",
-                                "anchor": {
                                     "above_bottom": 144
                                 },
                                 "surface_depth_multiplier": 0,
@@ -647,23 +613,6 @@
                                 "type": "minecraft:block",
                                 "result_state": {
                                     "Name": "create:deepslate_zinc_ore"
-                                }
-                            }
-                        },
-                        {
-                            "type": "minecraft:condition",
-                            "if_true": {
-                                "type": "minecraft:y_above",
-                                "anchor": {
-                                    "above_bottom": 136
-                                },
-                                "surface_depth_multiplier": 0,
-                                "add_stone_depth": false
-                            },
-                            "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                    "Name": "thermal:deepslate_lead_ore"
                                 }
                             }
                         },
@@ -773,7 +722,7 @@
                             "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                    "Name": "thermal:deepslate_silver_ore"
+                                    "Name": "minecraft:deepslate_emerald_ore"
                                 }
                             }
                         }

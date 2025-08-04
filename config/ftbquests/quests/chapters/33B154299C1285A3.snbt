@@ -12,6 +12,7 @@
 			x: 0.0d
 			y: 0.0d
 			description: ["类似于算力时代的机壳。"]
+			dependencies: ["07835D33A0BA9FD1"]
 			id: "147EA282B12BBF98"
 			tasks: [{
 				id: "1AC1F47FA587D83B"
@@ -518,44 +519,10 @@
 		}
 		{
 			disable_toast: true
-			x: 0.0d
-			y: -2.5d
-			shape: "hexagon"
-			description: ["无限制版的末影箱子。"]
-			dependencies: ["30A0CDCD1B7CE208"]
-			hide: true
-			id: "780E7334812E5863"
-			tasks: [
-				{
-					id: "13A3AC882A74B6EF"
-					type: "item"
-					item: {
-						id: "entangled:block"
-						Count: 1b
-						tag: { }
-					}
-				}
-				{
-					id: "69EE843240BAAA5A"
-					type: "item"
-					item: {
-						id: "entangled:item"
-						Count: 1b
-						tag: { }
-					}
-				}
-			]
-			rewards: [{
-				id: "5400574C98A4605D"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			disable_toast: true
 			x: 3.5d
 			y: -1.0d
 			description: ["下一时代最重要的合金。"]
+			dependencies: ["07835D33A0BA9FD1"]
 			hide: true
 			id: "5366B3798112EA39"
 			tasks: [{
@@ -858,7 +825,6 @@
 			x: 0.0d
 			y: -10.5d
 			shape: "rsquare"
-			description: ["开启最终试炼篇章。"]
 			dependencies: [
 				"4A1CFC8966CA0784"
 				"5054A94D72277F83"
@@ -880,6 +846,7 @@
 			x: 0.0d
 			y: -7.0d
 			description: ["魔源宝石与糖合成获得。"]
+			dependencies: ["07835D33A0BA9FD1"]
 			hide: true
 			id: "2A4E28366BBDD94D"
 			tasks: [{

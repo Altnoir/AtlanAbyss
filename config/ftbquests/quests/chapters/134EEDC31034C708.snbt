@@ -312,26 +312,31 @@
 			x: 1.0d
 			y: 1.0d
 			shape: "hexagon"
-			description: ["您可以考虑制作一个背包！"]
+			description: ["移动仓库！"]
 			dependencies: ["5BC3A59AAD6CEDBE"]
 			hide: true
 			id: "13627E6F08A8CB2D"
 			tasks: [{
-				id: "0E698BBBD9A6ADAA"
-				type: "item"
-				title: "任意背包"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "curios:back"
-					}
-				}
+				id: "28015BBF312A0E87"
+				type: "checkmark"
 			}]
 			rewards: [{
-				id: "41B399335485DFBA"
-				type: "xp"
-				xp: 10
+				id: "2D0B4FFCB9395502"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:netherite_backpack"
+					Count: 1b
+					tag: {
+						inventorySlots: 120
+						upgradeSlots: 7
+						contentsUuid: [I;
+							1660371184
+							651314483
+							-2130340475
+							-1311814759
+						]
+					}
+				}
 			}]
 		}
 		{
@@ -462,12 +467,49 @@
 				type: "item"
 				item: "create:andesite_alloy"
 			}]
-			rewards: [{
-				id: "084B6230318BCE3C"
-				type: "xp"
-				auto: "enabled"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "084B6230318BCE3C"
+					type: "xp"
+					auto: "enabled"
+					xp: 10
+				}
+				{
+					id: "5024EDC7BC9F5241"
+					type: "item"
+					item: "createaddition:creative_energy"
+				}
+				{
+					id: "37D0367EA05A55E1"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "1DB25DEC8AEFD9FC"
+					type: "item"
+					item: "ae2:crafting_terminal"
+				}
+				{
+					id: "4B501C48CD7CE89A"
+					type: "item"
+					item: {
+						id: "ae2_mega_things:item_disk_drive_256m"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "441D6E48B6AA34D0"
+					type: "item"
+					item: "ae2:fluix_smart_cable"
+					count: 64
+				}
+				{
+					id: "13711339089BDA68"
+					type: "item"
+					item: "ae2:controller"
+				}
+			]
 		}
 		{
 			disable_toast: true
@@ -479,7 +521,7 @@
 			hide: true
 			id: "55E15B669198B728"
 			tasks: [{
-				id: "40F74C29A6ED59D7"
+				id: "33E8B6F96A2E995E"
 				type: "item"
 				item: "tconstruct:seared_brick"
 			}]

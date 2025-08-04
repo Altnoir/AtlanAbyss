@@ -331,39 +331,4 @@ onEvent('recipes', event => {
         'reliquary:void_tear'
     ]).id('atlanabyss:midas_touchstone')
 
-    //创造书
-    event.custom({
-        type: 'ars_nouveau:imbuement',
-        input: {
-            item: 'ars_nouveau:archmage_spell_book'
-        },
-        output: 'ars_nouveau:creative_spell_book',
-        count: 1,
-        source: 5000,
-        pedestalItems: [
-            { item: { item: 'kubejs:infinity_ingot' } },
-            { item: { item: 'kubejs:infinity_ingot' } }
-        ]
-    }).id('atlanabyss:imbuement_creative_spell_book')
-    //创造罐
-    event.custom({
-        type: 'ars_nouveau:enchanting_apparatus',
-        reagent: [{ item: 'ars_nouveau:source_jar' }],
-        pedestalItems: [
-            { item: { item: 'kubejs:infinity_ingot' } },
-            { item: { item: 'kubejs:infinity_ingot' } },
-            { item: { item: 'kubejs:infinity_ingot' } },
-            { item: { item: 'kubejs:infinity_ingot' } }
-        ],
-        output: { item: 'ars_nouveau:creative_source_jar' },
-        sourceCost: 0,
-        keepNbtOfReagent: false
-    }).id('atlanabyss:enchanting_apparatus_creative_source_jar')
-    //创造池
-    botania.runic_altar('botania:creative_pool', [
-        'kubejs:infinity_ingot',
-        'kubejs:infinity_ingot',
-        'kubejs:infinity_ingot',
-        'kubejs:infinity_ingot'
-    ], 200000).id('atlanabyss:runic_altar_creative_pool')
 })

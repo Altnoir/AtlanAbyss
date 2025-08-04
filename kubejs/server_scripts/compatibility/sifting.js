@@ -27,6 +27,7 @@ onEvent('recipes', event => {
         Item.of('minecraft:iron_nugget').withChance(0.15),
         Item.of('create:copper_nugget').withChance(0.12),
         Item.of('create:zinc_nugget').withChance(0.05),
+        Item.of('ae2:certus_quartz_dust').withChance(0.20),
         Item.of('minecraft:gunpowder').withChance(0.30)
     ], [
         'minecraft:gravel',
@@ -39,6 +40,7 @@ onEvent('recipes', event => {
         Item.of('create:copper_nugget').withChance(0.18),
         Item.of('create:zinc_nugget').withChance(0.10),
         Item.of('minecraft:gold_nugget').withChance(0.05),
+        Item.of('ae2:certus_quartz_dust').withChance(0.35),
         Item.of('minecraft:gunpowder').withChance(0.50)
     ], [
         'minecraft:gravel',

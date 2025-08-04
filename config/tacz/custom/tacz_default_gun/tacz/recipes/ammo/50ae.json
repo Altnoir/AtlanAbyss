@@ -14,7 +14,7 @@
     },
     {
       "item": {
-        "tag": "forge:nuggets/constantan"
+        "item": "kubejs:charged_constantan_sheet"
       },
       "count": 25
     }

@@ -23,7 +23,7 @@
             "middle_layer_provider": {
                 "type": "minecraft:simple_state_provider",
                 "state": {
-                    "Name": "kubejs:raw_uranium_block"
+                    "Name": "minecraft:emerald_block"
                 }
             },
             "outer_layer_provider": {

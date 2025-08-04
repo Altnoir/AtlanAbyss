@@ -2,15 +2,9 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:ingots/silver"
-      },
-      "count": 6
-    },
-    {
-      "item": {
         "tag": "forge:ingots/aluminum"
       },
-      "count": 6
+      "count": 12
     },
     {
       "item": {

@@ -2,13 +2,7 @@
   "materials": [
     {
       "item": {
-        "item": "mekanism:upgrade_speed"
-      },
-      "count": 8
-    },
-    {
-      "item": {
-        "item": "mekanism:upgrade_energy"
+        "item": "kubejs:virgin_ingot"
       },
       "count": 8
     }

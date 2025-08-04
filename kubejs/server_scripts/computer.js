@@ -117,6 +117,15 @@ onEvent('recipes', event => {
     }
   }).id("atlanabyss:inscriber_logic_processor_print")
 
+  //集成电路
+  event.shaped('kubejs:integrated_circuit', [
+    ' A ',
+    'BBB'
+  ], {
+    A: 'kubejs:empty_pcb',
+    B: 'create:brass_nugget'
+  }).id("atlanabyss:integrated_circuit")
+
   //ME控制器
   remove('ae2:network/blocks/controller')
   event.shaped('ae2:controller', [
@@ -124,7 +133,7 @@ onEvent('recipes', event => {
     'ABA',
     'AAA'
   ], {
-    A: 'kubejs:computer_mechanism',
+    A: 'kubejs:thermal_mechanism',
     B: 'ae2:fluix_block'
   }).id('atlanabyss:ae_controller');
   event.shaped('16x ae2:controller', [
@@ -132,7 +141,7 @@ onEvent('recipes', event => {
     'ABA',
     'AAA'
   ], {
-    A: 'kubejs:computer_mechanism',
+    A: 'kubejs:thermal_mechanism',
     B: 'kubejs:end_ingot'
   }).id('atlanabyss:ae_controller_16');
 

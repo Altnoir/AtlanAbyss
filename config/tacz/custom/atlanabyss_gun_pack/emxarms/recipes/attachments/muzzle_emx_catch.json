@@ -2,19 +2,13 @@
   "materials": [
     {
       "item": {
-        "item": "mekanism:module_base"
+        "item": "kubejs:virgin_ingot"
       },
-      "count": 1
+      "count": 8
     },
     {
       "item": {
-        "item": "mekanism:alloy_reinforced"
-      },
-      "count": 20
-    },
-    {
-      "item": {
-        "item": "mekanism:pellet_polonium"
+        "item": "createaddition:modular_accumulator"
       },
       "count": 2
     }

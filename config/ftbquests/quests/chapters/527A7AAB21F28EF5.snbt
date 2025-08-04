@@ -451,7 +451,7 @@
 			x: 4.5d
 			y: -2.5d
 			shape: "rsquare"
-			description: ["本整合包虽然移除了妖精女仆的生成，但你可以通过魔力池转换经验瓶以获得相应的P点。"]
+			description: ["本整合包的妖精女仆的不会生成，但你可以通过魔力池转换经验瓶以获得相应的P点。"]
 			dependencies: ["0FFF68D8B91B8A70"]
 			id: "6CC3920A8B0C1B39"
 			tasks: [{

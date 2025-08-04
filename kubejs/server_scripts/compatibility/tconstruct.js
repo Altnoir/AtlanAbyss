@@ -490,22 +490,4 @@ onEvent('recipes', event => {
     result: 'tconstruct:ingot_cast',
     cooling_time: 60
   }).id('atlanabyss:casting_table_ingot_cast')
-
-  //创造升级
-  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"abilities"}'), [
-    'kubejs:infinity_ingot',
-    'kubejs:polished_candy_crystal'
-  ]).id('atlanabyss:creative_slot_abilities')
-  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"defense"}'), [
-    'kubejs:infinity_ingot',
-    'kubejs:polished_sulfur'
-  ]).id('atlanabyss:creative_slot_defense')
-  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"upgrades"}'), [
-    'kubejs:infinity_ingot',
-    'create:polished_rose_quartz'
-  ]).id('atlanabyss:creative_slot_upgrades')
-  event.shapeless(Item.of('tconstruct:creative_slot', '{slot:"souls"}'), [
-    'kubejs:infinity_ingot',
-    'kubejs:polished_charged_certus_quartz'
-  ]).id('atlanabyss:creative_slot_souls')
 })

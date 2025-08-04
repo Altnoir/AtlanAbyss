@@ -2,8 +2,6 @@
 const tagsToRemove = [
 	//信标激活物品移除
 	['minecraft:beacon_payment_items', 'ars_nouveau:source_gem'],
-	//冰块
-	['forge:ice_cubes', 'kitchenkarrot:ice_cubes'],
 	//饰品tag
 	['artifacts:artifacts', 'artifacts:everlasting_beef'],
 	['artifacts:artifacts', 'artifacts:eternal_steak'],
@@ -208,7 +206,7 @@ onEvent('tags.items', event => {
 	for (const [tag, item] of tagToAdd) { event.add(tag, item) }
 
 	//无尽锭
-	event.add('forge:ingots/infinity', 'kubejs:infinity_ingot')
+	event.add('forge:ingots/infinity', 'kubejs:virgin_ingot')
 	//圣遗物
 	event.add('atlanabyss:reliquary', [
 		'reliquary:mercy_cross', 'reliquary:angelheart_vial',

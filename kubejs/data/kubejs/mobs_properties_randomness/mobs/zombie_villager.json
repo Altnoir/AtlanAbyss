@@ -28,8 +28,8 @@
             "id": "minecraft:generic.movement_speed",
             "modifier_name": "Speed for ZombieVillagers",
             "amount": {
-                "min": -0.1,
-                "max": 0.3
+                "min": -0.3,
+                "max": -0.1
             },
             "operation": "addition",
             "world_whitelist": {
