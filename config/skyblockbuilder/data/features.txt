@@ -311,6 +311,7 @@ quark:deferred_feature_underground_decoration
 quark:deferred_feature_fluid_springs
 quark:deferred_feature_vegetal_decoration
 quark:deferred_feature_top_layer_modification
+alexsmobs:leafcutter_anthill
 neapolitan:patch_strawberry_bush
 neapolitan:patch_vanilla_vine
 neapolitan:patch_adzuki_sprouts
@@ -322,4 +323,3 @@ ars_nouveau:flourishing_feature
 ars_nouveau:vexing_feature
 ars_nouveau:patch_berry
 ars_nouveau:random_cascade
-alexsmobs:leafcutter_anthill

@@ -7802,7 +7802,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\assets\\kubejs\\lang\\zh_cn_20250121194120.json",
+        "path": ".history\\kubejs\\assets\\kubejs\\lang\\zh_cn_20250805013850.json",
         "isSelected": false
       },
       {
@@ -25458,39 +25458,15 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250517114825.js",
+        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250804223458.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250517115246.js",
+        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250804223601.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250517130853.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250517130914.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250517130952.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250517131039.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tacz_20250525185210.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250517124250.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250525185056.js",
+        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250804223429.js",
         "isSelected": false
       },
       {
@@ -25618,43 +25594,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250517113611.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250517114617.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250517115019.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250517132156.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250525171329.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250525174431.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250525174555.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250525182924.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250525183002.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250531184159.js",
+        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250804223743.js",
         "isSelected": false
       },
       {
@@ -25810,6 +25750,10 @@
         "isSelected": false
       },
       {
+        "path": ".history\\kubejs\\server_scripts\\base_20250805013851.js",
+        "isSelected": false
+      },
+      {
         "path": ".history\\kubejs\\server_scripts\\computer_20250719182627.js",
         "isSelected": false
       },
@@ -25862,27 +25806,11 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\magic_20250517122003.js",
+        "path": ".history\\kubejs\\server_scripts\\magic_20250804223439.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\magic_20250517122024.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\magic_20250525164227.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\magic_20250525164934.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\magic_20250525184753.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\magic_20250525184837.js",
+        "path": ".history\\kubejs\\server_scripts\\magic_20250804223450.js",
         "isSelected": false
       },
       {
@@ -90222,7 +90150,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\hasResource\\keepcuriosinventory1.18.2-0.0.2-keepcuriosinventory-1.18.2-0.0.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\hasResource\\keepcuriosinventory1.18.2-1.0.0-keepcuriosinventory-1.18.2-1.0.0.ser",
         "isSelected": false
       },
       {
@@ -90990,7 +90918,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\namespaces\\keepcuriosinventory1.18.2-0.0.2-keepcuriosinventory-1.18.2-0.0.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\namespaces\\keepcuriosinventory1.18.2-1.0.0-keepcuriosinventory-1.18.2-1.0.0.ser",
         "isSelected": false
       },
       {
@@ -91339,66 +91267,6 @@
       },
       {
         "path": "logs\\kubejs\\startup.txt",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-05-31-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-05-31-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-05-31-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-18-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-19-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-19-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-19-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-19-4.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-19-5.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-19-6.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-20-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-20-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-21-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-27-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-07-30-1.log.gz",
         "isSelected": false
       },
       {
@@ -98530,7 +98398,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\keepcuriosinventory-1.18.2-0.0.2.jar",
+        "path": "mods\\keepcuriosinventory-1.18.2-1.0.0.jar",
         "isSelected": true
       },
       {
@@ -98951,6 +98819,10 @@
       },
       {
         "path": "saves\\新的世界\\data\\simplebackups.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\data\\sophisticatedbackpacks.dat",
         "isSelected": false
       },
       {
@@ -99562,19 +99434,19 @@
         "isSelected": false
       },
       {
-        "path": "simplebackups\\新的世界_2025-07-21_07-36-30.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\新的世界_2025-07-21_07-48-43.zip",
-        "isSelected": false
-      },
-      {
         "path": "simplebackups\\新的世界_2025-07-27_17-56-19.zip",
         "isSelected": false
       },
       {
         "path": "simplebackups\\新的世界_2025-07-30_18-59-05.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\新的世界_2025-08-04_22-33-37.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\新的世界_2025-08-05_00-51-06.zip",
         "isSelected": false
       },
       {
