@@ -1741,7 +1741,7 @@ onEvent('recipes', event => {
 	//硅
 	remove('ae2:smelting/silicon_from_certus_quartz_dust')
 	remove('ae2:blasting/silicon_from_certus_quartz_dust')
-	teslaCharging('kubejs:silicon_compound', 'ae2:silicon', 32000, 'silicon')
+	teslaCharging('kubejs:sand_ball', 'ae2:silicon', 32000, 'silicon')
 
 	//铝合金锭
 	create.mixing('2x kubejs:aluminium_alloy_ingot', [
