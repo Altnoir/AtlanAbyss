@@ -10,7 +10,7 @@
                     "tag": "minecraft:sinking_sea_replaceable"
                 },
                 "state": {
-                    "Name": "kubejs:permafrost_fluorite_ore"
+                    "Name": "ae2:quartz_block"
                 }
             }
         ]

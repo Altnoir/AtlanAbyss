@@ -205,6 +205,7 @@ onEvent('tags.items', event => {
 	for (const [tag, item] of tagsToRemove) { event.remove(tag, item) }
 	for (const [tag, item] of tagToAdd) { event.add(tag, item) }
 
+	event.add('forge:sulfur', [	'kubejs:sulfur']);
 	//无尽锭
 	event.add('forge:ingots/infinity', 'kubejs:virgin_ingot')
 	//圣遗物

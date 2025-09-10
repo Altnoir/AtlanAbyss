@@ -61,6 +61,7 @@ onEvent('item.registry', event => {
 
 	event.create('aluminium_chip').displayName('Aluminium Chip');
 	event.create('aluminum_compound').displayName('Aluminum Compound');
+	event.create('sulfur').displayName('Sulfur');
 	event.create('acid').displayName('Acid');
 	event.create('rough_sand').displayName('Rough Sand');
 	event.create('sand_ball').displayName('Sand Ball');

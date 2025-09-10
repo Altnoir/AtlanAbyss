@@ -42,6 +42,7 @@ onEvent('recipes', event => {
     Item.of('create:experience_nugget').withChance(0.75),
     Item.of('minecraft:end_stone').withChance(0.12)
   ], 'kubejs:end_bismuth_ore').id("atlanabyss:crushing_bismuth_ore")
+
   //陨石粉
   remove('ae2:inscriber/sky_stone_dust')
   create.crushing([

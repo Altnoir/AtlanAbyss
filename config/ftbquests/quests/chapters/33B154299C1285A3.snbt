@@ -539,7 +539,7 @@
 		{
 			x: 0.0d
 			y: -5.5d
-			description: ["关于锇的获取，具体请看原子篇章！"]
+			description: ["关于锇的获取，请继续探索深渊！"]
 			dependencies: ["2A4E28366BBDD94D"]
 			id: "679863D04FCA1B0B"
 			tasks: [{

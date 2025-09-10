@@ -172,6 +172,7 @@ onEvent('recipes', event => {
   oreMelting('create:crushed_raw_tin', 'tconstruct:molten_tin', 90, 225, 59, 'tconstruct:molten_silver', 90, 'crushed_tin')
   oreMelting('create:crushed_raw_lead', 'tconstruct:molten_lead', 90, 330, 65, 'tconstruct:molten_tungsten', 90, 'crushed_lead')
   oreMelting('create:crushed_raw_nickel', 'tconstruct:molten_nickel', 90, 950, 97, 'tconstruct:molten_iron', 90, 'crushed_nickel')
+  oreMelting('create:crushed_raw_osmium', 'tconstruct:molten_osmium', 90, 975, 98, 'tconstruct:molten_netherite', 90, 'crushed_raw_osmium')
 
   //粘液种子
   event.shapeless('tconstruct:earth_slime_grass_seeds', [

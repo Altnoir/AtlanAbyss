@@ -465,6 +465,12 @@ onEvent('recipes', event => {
 		Fluid.of('create:honey', 250),
 		'ars_nouveau:source_gem'
 	]).id("atlanabyss:filling_candy_crystal")
+
+	create.crushing([
+		'5x kubejs:sulfur',
+		Item.of('3x kubejs:sulfur').withChance(0.5),
+		Item.of('create:experience_nugget').withChance(0.75)
+	], 'kubejs:nether_sulfur_ore').id("atlanabyss:crushing_nether_sulfur_ore")
 	//打磨
 	function polishing(input, output, id) {
 		event.custom({
@@ -475,6 +481,7 @@ onEvent('recipes', event => {
 	}
 	//polishing('kubejs:candy_crystal', 'kubejs:polished_candy_crystal', 'polishing_candy_crystal')
 	polishing('kubejs:candy_crystal', 'kubejs:polished_candy_crystal', 'polishing_candy_crystal')
+	polishing('kubejs:sulfur', 'kubejs:polished_sulfur', 'polished_sulfur')
 	polishing('ae2:charged_certus_quartz_crystal', 'kubejs:polished_charged_certus_quartz', 'polishing_certus_quartz')
 	//更多电子管
 	function electronTube(output, a, b, id) {
@@ -1823,7 +1830,7 @@ onEvent('recipes', event => {
 		A: 'createaddition:modular_accumulator',
 		B: 'createaddition:alternator',
 	}).id("atlanabyss:creative_energy")
-	
+
 	//特斯拉
 	remove('createaddition:mechanical_crafting/tesla_coil')
 	create.mechanical_crafting('createaddition:tesla_coil', [

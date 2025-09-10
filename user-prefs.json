@@ -7694,7 +7694,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\assets\\kubejs\\lang\\zh_cn_20250805013850.json",
+        "path": ".history\\kubejs\\assets\\kubejs\\lang\\zh_cn_20250910094812.json",
         "isSelected": false
       },
       {
@@ -11034,79 +11034,11 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241127201802.json",
+        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20250910100451.json",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241127202843.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241127203535.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241127233824.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241127234101.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241128160519.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241128161652.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241128190848.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_20241129184944.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241127201801.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241127203528.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241127233820.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241127234104.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241128160515.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241128161645.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241128164603.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241128190845.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241129184938.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20241129193754.json",
+        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\biome\\sinking_sea\\dead_sea_ice_20250910100448.json",
         "isSelected": false
       },
       {
@@ -14062,15 +13994,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\fluorite_ore_20241003082941.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\fluorite_ore_20241003083554.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\fluorite_ore_20241004090850.json",
+        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\fluorite_ore_20250910100407.json",
         "isSelected": false
       },
       {
@@ -17646,23 +17570,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore_20241003083021.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore_20241003083100.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore_20241003083108.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore_20241004074922.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore_20241004083020.json",
+        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore_20250910100435.json",
         "isSelected": false
       },
       {
@@ -19426,15 +19334,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\processor_list\\fossil_fluorite_20241004075656.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\processor_list\\fossil_fluorite_20241004075746.json",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\processor_list\\fossil_fluorite_20241004090833.json",
+        "path": ".history\\kubejs\\data\\atlanabyss\\worldgen\\processor_list\\fossil_fluorite_20250910101609.json",
         "isSelected": false
       },
       {
@@ -22075,6 +21975,14 @@
       },
       {
         "path": ".history\\kubejs\\data\\kubejs\\loot_tables\\blocks\\nether_aluminum_ore_20240813115726.json",
+        "isSelected": false
+      },
+      {
+        "path": ".history\\kubejs\\data\\kubejs\\loot_tables\\blocks\\nether_sulfur_ore_20240411160827.json",
+        "isSelected": false
+      },
+      {
+        "path": ".history\\kubejs\\data\\kubejs\\loot_tables\\blocks\\nether_sulfur_ore_20250910095642.json",
         "isSelected": false
       },
       {
@@ -25358,7 +25266,15 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250804223429.js",
+        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250910102849.js",
+        "isSelected": false
+      },
+      {
+        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250910102922.js",
+        "isSelected": false
+      },
+      {
+        "path": ".history\\kubejs\\server_scripts\\compatibility\\tconstruct_20250910102959.js",
         "isSelected": false
       },
       {
@@ -25486,175 +25402,31 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250804223743.js",
+        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250910095043.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184135.js",
+        "path": ".history\\kubejs\\server_scripts\\events\\tags_20250910095049.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184539.js",
+        "path": ".history\\kubejs\\server_scripts\\base_20250910044548.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184548.js",
+        "path": ".history\\kubejs\\server_scripts\\base_20250910095611.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184551.js",
+        "path": ".history\\kubejs\\server_scripts\\base_20250910100210.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184608.js",
+        "path": ".history\\kubejs\\server_scripts\\computer_20250910100159.js",
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184639.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184648.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184657.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184730.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184820.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184825.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719184903.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185009.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185303.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185322.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185331.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185432.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185436.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185446.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185454.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719185618.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719194039.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719194505.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195023.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195037.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195232.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195238.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195311.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195609.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719195614.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250719200223.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250720052646.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250720052654.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250720062818.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250720062853.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250720064000.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250720064312.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250730190036.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\base_20250805013851.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\computer_20250719182627.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\computer_20250720063753.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\server_scripts\\computer_20250720063810.js",
+        "path": ".history\\kubejs\\server_scripts\\computer_20250910100212.js",
         "isSelected": false
       },
       {
@@ -25714,23 +25486,7 @@
         "isSelected": false
       },
       {
-        "path": ".history\\kubejs\\startup_scripts\\itemRegistry_20250525174629.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\startup_scripts\\itemRegistry_20250525180125.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\startup_scripts\\itemRegistry_20250525180128.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\startup_scripts\\itemRegistry_20250525182840.js",
-        "isSelected": false
-      },
-      {
-        "path": ".history\\kubejs\\startup_scripts\\itemRegistry_20250525182953.js",
+        "path": ".history\\kubejs\\startup_scripts\\itemRegistry_20250910094739.js",
         "isSelected": false
       },
       {
@@ -27326,6 +27082,18 @@
         "isSelected": true
       },
       {
+        "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\chiseled_quartz_block_bottom.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\chiseled_quartz_block_side.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\chiseled_quartz_block_top.png",
+        "isSelected": true
+      },
+      {
         "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\deepslate_quartz_ore_0.png",
         "isSelected": true
       },
@@ -27339,6 +27107,18 @@
       },
       {
         "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\deepslate_quartz_ore_3.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\quartz_pillar_bottom.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\quartz_pillar_side.png",
+        "isSelected": true
+      },
+      {
+        "path": "config\\paxi\\resourcepacks\\AtlanAbyss\\assets\\ae2\\textures\\block\\quartz_pillar_top.png",
         "isSelected": true
       },
       {
@@ -72962,6 +72742,26 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\ae2",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ae2\\textures",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ae2\\textures\\block",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ae2\\textures\\block\\quartz_block.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\ae2\\textures\\block\\quartz_block_e.png",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\assets\\kubejs",
         "isSelected": true
       },
@@ -74620,6 +74420,10 @@
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\star_dust.png",
         "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\sulfur.png",
+        "isSelected": false
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\sulfur_electron_tube.png",
@@ -85722,6 +85526,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\ae2quartz_block.json",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\antiquity_debris.json",
         "isSelected": true
       },
@@ -85739,10 +85547,6 @@
       },
       {
         "path": "kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\dead_pool_patch_2.json",
-        "isSelected": true
-      },
-      {
-        "path": "kubejs\\data\\atlanabyss\\worldgen\\configured_feature\\sinking_sea\\fluorite_ore.json",
         "isSelected": true
       },
       {
@@ -86290,15 +86094,15 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\ae2quartz_block.json",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\dead_pool_patch_1.json",
         "isSelected": true
       },
       {
         "path": "kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\dead_pool_patch_2.json",
-        "isSelected": true
-      },
-      {
-        "path": "kubejs\\data\\atlanabyss\\worldgen\\placed_feature\\sinking_sea\\fluorite_ore.json",
         "isSelected": true
       },
       {
@@ -89575,11 +89379,11 @@
       },
       {
         "path": "kubejs\\jsconfig.json",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "kubejs\\README.txt",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "lightspeed-cache",
@@ -89810,7 +89614,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\hasResource\\deimos2.2-deimos-1.18.2-forge-2.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\hasResource\\deimos2.3-deimos-1.18.2-forge-2.3.ser",
         "isSelected": false
       },
       {
@@ -89882,7 +89686,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\hasResource\\fancymenu3.6.4-fancymenuforge3.6.4MC1.18.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\hasResource\\fancymenu3.7.0-fancymenuforge3.7.0MC1.18.2.ser",
         "isSelected": false
       },
       {
@@ -90242,7 +90046,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\hasResource\\skinlayers3d1.8.2-skinlayers3d-forge-1.8.2-mc1.18.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\hasResource\\skinlayers3d1.9.0-skinlayers3d-forge-1.9.0-mc1.18.2.ser",
         "isSelected": false
       },
       {
@@ -90318,11 +90122,11 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\hasResource\\transition1.0.3-.ser",
+        "path": "lightspeed-cache\\1.18.2\\hasResource\\transition1.0.4-.ser",
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\hasResource\\trender1.0.5-.ser",
+        "path": "lightspeed-cache\\1.18.2\\hasResource\\trender1.0.6-.ser",
         "isSelected": false
       },
       {
@@ -90586,7 +90390,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\namespaces\\deimos2.2-deimos-1.18.2-forge-2.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\namespaces\\deimos2.3-deimos-1.18.2-forge-2.3.ser",
         "isSelected": false
       },
       {
@@ -90658,7 +90462,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\namespaces\\fancymenu3.6.4-fancymenuforge3.6.4MC1.18.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\namespaces\\fancymenu3.7.0-fancymenuforge3.7.0MC1.18.2.ser",
         "isSelected": false
       },
       {
@@ -91010,7 +90814,7 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\namespaces\\skinlayers3d1.8.2-skinlayers3d-forge-1.8.2-mc1.18.2.ser",
+        "path": "lightspeed-cache\\1.18.2\\namespaces\\skinlayers3d1.9.0-skinlayers3d-forge-1.9.0-mc1.18.2.ser",
         "isSelected": false
       },
       {
@@ -91086,11 +90890,11 @@
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\namespaces\\transition1.0.3-.ser",
+        "path": "lightspeed-cache\\1.18.2\\namespaces\\transition1.0.4-.ser",
         "isSelected": false
       },
       {
-        "path": "lightspeed-cache\\1.18.2\\namespaces\\trender1.0.5-.ser",
+        "path": "lightspeed-cache\\1.18.2\\namespaces\\trender1.0.6-.ser",
         "isSelected": false
       },
       {
@@ -91163,6 +90967,22 @@
       },
       {
         "path": "logs\\2025-08-05-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-08-06-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-09-10-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-09-10-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-09-10-3.log.gz",
         "isSelected": false
       },
       {
@@ -94874,6 +94694,10 @@
         "isSelected": false
       },
       {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_pyramids_badlands_pit_a6fe5c40ce.nbt",
+        "isSelected": false
+      },
+      {
         "path": "modernfix\\structureCacheV1\\repurposed_structures_pyramids_dark_forest_body_cdb09a5825.nbt",
         "isSelected": false
       },
@@ -94995,6 +94819,58 @@
       },
       {
         "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_cold_small_brick_8_209bd03fff.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_big_sandstone_1_53e79e18bb.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_big_sandstone_2_c3166a8c48.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_big_sandstone_3_b331b2a473.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_big_sandstone_4_5f24a66cdc.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_connector_050e91b3d5.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_1_4c1e10de48.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_2_3115783ef4.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_3_9ebbc296ae.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_4_f66f5d061d.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_5_8b03139b22.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_6_6f33a78c21.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_7_e1f014fa8f.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "modernfix\\structureCacheV1\\repurposed_structures_ruins_land_hot_small_sandstone_8_771657f7cc.nbt",
         "isSelected": false
       },
       {
@@ -98086,7 +97962,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\deimos-1.18.2-forge-2.2.jar",
+        "path": "mods\\deimos-1.18.2-forge-2.3.jar",
         "isSelected": true
       },
       {
@@ -98154,7 +98030,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\fancymenu_forge_3.6.4_MC_1.18.2.jar",
+        "path": "mods\\fancymenu_forge_3.7.0_MC_1.18.2.jar",
         "isSelected": true
       },
       {
@@ -98494,7 +98370,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\skinlayers3d-forge-1.8.2-mc1.18.2.jar",
+        "path": "mods\\skinlayers3d-forge-1.9.0-mc1.18.2.jar",
         "isSelected": true
       },
       {
@@ -98627,11 +98503,11 @@
       },
       {
         "path": "resourcepacks\\Glass Panes CTM Fix v1.0-1.18.zip",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "resourcepacks\\MC Connected CTM v1.2.3-1.18.2.zip",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "resourcepacks\\Quark Programmer Art.zip",
@@ -98718,15 +98594,7 @@
         "isSelected": false
       },
       {
-        "path": "saves\\新的世界\\data\\sophisticatedbackpacks.dat",
-        "isSelected": false
-      },
-      {
         "path": "saves\\新的世界\\data\\TitaniumReward.dat",
-        "isSelected": false
-      },
-      {
-        "path": "saves\\新的世界\\data\\touhou_little_maid_world_data.dat",
         "isSelected": false
       },
       {
@@ -98902,7 +98770,123 @@
         "isSelected": false
       },
       {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\entities",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\entities\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\entities\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\entities\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\entities\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
         "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\idas",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi\\r.-1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi\\r.-1.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\poi\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-1.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-2.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.-2.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.0.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.0.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.1.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\dimensions\\atlanabyss\\sinking_sea\\region\\r.1.1.mca",
         "isSelected": false
       },
       {
@@ -99047,6 +99031,10 @@
       },
       {
         "path": "saves\\新的世界\\poi\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\新的世界\\poi\\r.-1.2.mca",
         "isSelected": false
       },
       {
@@ -99326,23 +99314,23 @@
         "isSelected": false
       },
       {
-        "path": "simplebackups\\新的世界 (1)_2025-07-30_18-54-12.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\新的世界_2025-07-30_18-59-05.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\新的世界_2025-08-04_22-33-37.zip",
-        "isSelected": false
-      },
-      {
         "path": "simplebackups\\新的世界_2025-08-05_00-51-06.zip",
         "isSelected": false
       },
       {
         "path": "simplebackups\\新的世界_2025-08-06_21-27-48.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\新的世界_2025-09-10_04-42-12.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\新的世界_2025-09-10_09-38-01.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\新的世界_2025-09-10_10-11-37.zip",
         "isSelected": false
       },
       {
@@ -99598,7 +99586,19 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\1\\cache_1",
         "isSelected": false
       },
       {
@@ -99606,7 +99606,19 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\10\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\10\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\11",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\11\\cache_1",
         "isSelected": false
       },
       {
@@ -99614,7 +99626,15 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\12\\cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\13",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\13\\cache_1",
         "isSelected": false
       },
       {
@@ -99622,7 +99642,23 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\14\\cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\15",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\15\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\2",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\2\\cache_1",
         "isSelected": false
       },
       {
@@ -99630,7 +99666,15 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\3\\cache_1",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\4",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\4\\cache_1",
         "isSelected": false
       },
       {
@@ -99638,7 +99682,47 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\5\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\5\\cache_1\\-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\5\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\5\\cache_1\\0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\5\\cache_1\\0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\6",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\6\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\6\\cache_1\\-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\6\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\6\\cache_1\\0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\6\\cache_1\\0_0.xwmc.outdated",
         "isSelected": false
       },
       {
@@ -99646,11 +99730,71 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\7\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\7\\cache_1\\-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\7\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\7\\cache_1\\0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\7\\cache_1\\0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\8",
         "isSelected": false
       },
       {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\8\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\8\\cache_1\\-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\8\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\8\\cache_1\\0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\8\\cache_1\\0_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\9",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\9\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\9\\cache_1\\-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\9\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\9\\cache_1\\0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\atlanabyss$sinking_sea\\caves\\9\\cache_1\\0_0.xwmc.outdated",
         "isSelected": false
       },
       {
@@ -99795,6 +99939,30 @@
       },
       {
         "path": "xaero\\world-map\\新的世界\\null\\caves\\11\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\null\\caves\\3",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\null\\caves\\3\\cache_1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\null\\caves\\3\\cache_1\\-1_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\null\\caves\\3\\cache_1\\-1_0.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\null\\caves\\3\\cache_1\\0_-1.xwmc.outdated",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\world-map\\新的世界\\null\\caves\\3\\cache_1\\0_0.xwmc.outdated",
         "isSelected": false
       },
       {

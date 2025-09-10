@@ -16,7 +16,7 @@
               "block": "minecraft:coal_ore"
             },
             "output_state": {
-              "Name": "kubejs:permafrost_fluorite_ore"
+              "Name": "ae2:quartz_block"
             }
           }
         ]
