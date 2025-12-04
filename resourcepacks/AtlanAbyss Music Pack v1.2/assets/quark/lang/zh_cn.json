@@ -1,0 +1,20 @@
+{
+	"item.quark.music_disc_endermosh": "音乐唱片§e(Game Music)",
+	"item.quark.music_disc_endermosh.desc": "長谷川育美 - Coincidence",
+	"item.quark.music_disc_drips": "环境唱片",
+	"item.quark.music_disc_drips.desc": "Water Droplets",
+	"item.quark.music_disc_ocean": "环境唱片",
+	"item.quark.music_disc_ocean.desc": "Ocean Waves",
+	"item.quark.music_disc_rain": "环境唱片",
+	"item.quark.music_disc_rain.desc": "Rainy Mood",
+	"item.quark.music_disc_wind": "环境唱片",
+	"item.quark.music_disc_wind.desc": "Heavy Wind",
+	"item.quark.music_disc_fire": "环境唱片",
+	"item.quark.music_disc_fire.desc": "Soothing Cinders",
+	"item.quark.music_disc_clock": "环境唱片",
+	"item.quark.music_disc_clock.desc": "Tick-Tock",
+	"item.quark.music_disc_crickets": "环境唱片",
+	"item.quark.music_disc_crickets.desc": "Cricket Song",
+	"item.quark.music_disc_chatter": "环境唱片",
+	"item.quark.music_disc_chatter.desc": "Packed Venue"
+}
