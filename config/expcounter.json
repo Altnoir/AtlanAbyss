@@ -1,0 +1,10 @@
+{
+  "show_next_level": true,
+  "show_total": true,
+  "color_next_level": 16776960,
+  "color_total": 16776960,
+  "position_off_centre_next_level": -50,
+  "position_y_next_level": 30,
+  "position_off_centre_total": 50,
+  "position_y_total": 30
+}
