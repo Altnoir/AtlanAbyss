@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "mixers": {
+    "master": 0.5,
+    "inventory": 1.0,
+    "action": 1.0,
+    "chat": 1.0,
+    "effects": 1.0,
+    "hotbar": 1.0,
+    "typing": 1.0,
+    "item_drop": 1.0,
+    "empty_hotbar": 1.0,
+    "enabled_footstep": 1.0,
+    "enabled_effects": 0.0,
+    "enabled_poof": 0.0
+  },
+  "sounds": {
+    "chat": true,
+    "inventory_open": true,
+    "inventory_close": true,
+    "inventory_scroll": true,
+    "item_pick": true,
+    "item_pick_all": true,
+    "item_drop": true,
+    "item_clone": true,
+    "item_delete": true,
+    "item_drag": true,
+    "hotbar_scroll": true,
+    "keyboard_type": true,
+    "keyboard_move": true,
+    "keyboard_erase": true,
+    "keyboard_cut": true,
+    "keyboard_paste": true,
+    "effect_add_positive": true,
+    "effect_add_negative": true,
+    "effect_remove_positive": true,
+    "effect_remove_negative": true,
+    "bow_pull": true,
+    "repeater_add": true,
+    "repeater_reset": true,
+    "entity_poof": true
+  }
+}

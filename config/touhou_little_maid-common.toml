@@ -64,6 +64,23 @@
 	#Recognition distance of a maid under the gun task, Suitable for pistols and shotguns
 	#Range: 0 ~ 512
 	MaidGunNearDistance = 32
+	#This is a global config that applies to all maids: how often maids speak
+	#Range: 0 ~ 100
+	GlobalMaidSoundFrequency = 100
+	#This is a global config that applies to all maids: Whether or not to display chat bubbles
+	GlobalMaidShowChatBubble = true
+	#The max range of maid's bow attack
+	#Range: 8 ~ 192
+	BowRange = 48
+	#The max range of maid's crossbow attack
+	#Range: 8 ~ 192
+	CrossbowRange = 64
+	#The max range of maid's danmaku attack
+	#Range: 8 ~ 192
+	DanmakuRange = 64
+	#The max range of maid's trident attack
+	#Range: 8 ~ 192
+	TridentRange = 48
 
 [chair]
 	#Chair can switch models freely
@@ -115,4 +132,40 @@
 	ReplaceTotemTexture = false
 	#Whether to replace the vanilla bottle of xp texture with the point items.
 	ReplaceXPBottleTexture = false
+
+[render]
+	EnableCompassTip = true
+	EnableGoldenAppleTip = true
+	EnablePotionTip = true
+	EnableMilkBucketTip = true
+	EnableScriptBookTip = true
+	EnableGlassBottleTip = true
+	EnableNameTagTip = true
+	EnableLeadTip = true
+	EnableSaddleTip = true
+	EnableShearsTip = true
+	EnableYsmRouletteTip = true
+	EnableAIChatTip = true
+
+[ai]
+	#Whether or not to enable the AI Chat feature
+	ChatEnabled = true
+	#Chat temperature, the higher this value, the more random the output will be
+	#Range: 0.0 ~ 2.0
+	ChatTemperature = 0.5
+	#Chat AI Proxy Address, such as 127.0.0.1:1080, empty is no proxy, SOCKS proxies are not supported
+	ChatProxyAddress = ""
+	#Whether or not to enable the TTS feature
+	TTSEnabled = true
+	#The TTS language you intend to use
+	TTSLanguage = "en_us"
+	#TTS Proxy Address, such as 127.0.0.1:1080, empty is no proxy, SOCKS proxies are not supported
+	TTSProxyAddress = ""
+	#STT Url address, currently only the player2 app is supported
+	STTUrl = "http://127.0.0.1:4315/v1/stt"
+	#STT Proxy Address, such as 127.0.0.1:1080, empty is no proxy, SOCKS proxies are not supported
+	STTProxyAddress = ""
+	#The maximum historical conversation length cached by the maid
+	#Range: 1 ~ 128
+	MaidMaxHistoryChatSize = 16
 

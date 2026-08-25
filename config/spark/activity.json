@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "ALTNOIR",
+      "uniqueId": "8e44f057-31ff-4131-8d54-897a8a0d886c"
+    },
+    "time": 1787644520017,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/tZ8TqZZ1en"
+    }
+  }
+]

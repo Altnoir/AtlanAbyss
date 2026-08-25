@@ -1,6 +1,6 @@
 {
   "type": "minecraft:bastion_remnant",
-  "biomes": "#forge:is_end",
+  "biomes": "#atlanabyss:is_paradise",
   "adapt_noise": false,
   "spawn_overrides": {},
   "config": {

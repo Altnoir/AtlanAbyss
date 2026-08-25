@@ -1,0 +1,11 @@
+{
+  "recast_delay": 20,
+  "reel_in_delay": 0,
+  "throw_delay": 10,
+  "check_interval": 200,
+  "auto_fish": true,
+  "rod_protect": true,
+  "auto_replace": true,
+  "all_filters": true,
+  "filter": []
+}

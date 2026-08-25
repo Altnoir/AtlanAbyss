@@ -1,0 +1,18 @@
+{
+  "immersiveEngineeringSpecialRevolvers": true,
+  "quarkContributorCheck": false,
+  "ipnUpdateCheckAndUserTracking": false,
+  "xaeroMapPatreonCheck": false,
+  "xaeroMapVersionCheck": false,
+  "alexModsContributorCheck": false,
+  "botaniaContributorCheck": false,
+  "bagusLibSupportersCheck": false,
+  "enigmaticLegacyUpdateCheck": false,
+  "enigmaticLegacyFetchDevotedBelievers": false,
+  "irisUpdateCheck": false,
+  "titaniumReward": false,
+  "projecteUUIDCheck": false,
+  "voidscapeDonator": false,
+  "tenshilibPatreon": false,
+  "quarkCelebration": "HideLGBTQIA"
+}

@@ -1,0 +1,126 @@
+
+[leakFixes]
+
+	[leakFixes.sophisticatedCore]
+
+		[leakFixes.sophisticatedCore.itemStackKeyCache]
+			#Leak fix: clear SophisticatedCore ItemStackKey cache periodically on the client to prevent unbounded growth.
+			#SophisticatedCore already clears this cache every server tick; clearing it on the client is the primary mitigation.
+			enabled = true
+
+			[leakFixes.sophisticatedCore.itemStackKeyCache.client]
+				#How often to clear SophisticatedCore ItemStackKey cache on the CLIENT (in ticks).
+				#Set to 1 to clear every tick (most aggressive, may cause UI lag).
+				#Range: 1 ~ 20000
+				clearEveryTicks = 20
+				#Only clear the SophisticatedCore ItemStackKey cache if it has at least this many entries.
+				#Range: 0 ~ 5000000
+				minSizeBeforeClear = 10000
+
+			[leakFixes.sophisticatedCore.itemStackKeyCache.server]
+				#Also clear SophisticatedCore ItemStackKey cache on the SERVER tick end.
+				#Not usually needed (SophisticatedCore already clears it every server tick).
+				#Enable only for debugging or if SophisticatedCore changes behavior.
+				clearOnTickEnd = false
+
+	[leakFixes.minecraft]
+
+		[leakFixes.minecraft.modelManager]
+
+			[leakFixes.minecraft.modelManager.blockStateToIdMap]
+				#Mitigation: when leaving a client world (back to menu), attempt to clear the ModelManager BlockState->int cache if detected.
+				#This is an opt-in, best-effort reflection-based cleanup. It should be safe, but may be ineffective if the MAT suspects are not caused by this cache.
+				clearOnClientWorldLeave = false
+
+			[leakFixes.minecraft.modelManager.bakedModelMaps]
+				#MemoryLeakFix-derived mitigation: when leaving a client world, attempt to clear large ModelManager baked-model maps.
+				#This targets stale client-side model caches that may retain many entries across world transitions.
+				clearOnClientWorldLeave = true
+
+				[leakFixes.minecraft.modelManager.bakedModelMaps.client]
+					#Only clear ModelManager baked-model maps that have at least this many entries.
+					#Range: 0 ~ 5000000
+					minSizeBeforeClear = 10000
+
+	[leakFixes.mods]
+
+		[leakFixes.mods.emi]
+			#EMI: clear the recipe-view history on respawn/dimension change so it stops retaining referenced item stacks.
+			clearHistoryOnRespawn = true
+
+		[leakFixes.mods.jade]
+			#Jade: clear the ObjectDataCenter accessor and the hideModName cache when the client level changes or you respawn.
+			clearCachesOnWorldChange = true
+
+		[leakFixes.mods.iceberg]
+			#Iceberg: on client world unload, clear the EntityCollector wrapped-level and entity caches and drop the
+			#CustomItemRenderer's cached wolf/horse/armor-stand/entity, which otherwise pin the old level.
+			clearCachesOnWorldUnload = true
+
+		[leakFixes.mods.jei]
+			#JEI: on world unload and respawn, clear the RecipeTransferManager's unsupported-container set and drop
+			#the cached Grindstone menu.
+			clearCachesOnWorldChange = true
+
+		[leakFixes.mods.supplementaries]
+			#Supplementaries: run its item/map/structure cache-clearing methods when the integrated server stops.
+			clearCachesOnServerStop = true
+
+		[leakFixes.mods.sophisticatedCore]
+			#SophisticatedCore: on client world unload, invalidate the StorageWrapperRepository caches. They expire
+			#10 minutes after access, but Guava only evicts on a later cache operation, so leaving a world strands
+			#every storage wrapper (and its backing inventory) until you load another world.
+			clearStorageWrappersOnWorldUnload = true
+
+		[leakFixes.mods.entityTextureFeatures]
+			#Entity Texture Features: release the player-texture state held across a respawn/dimension change.
+			#On ETF 7+ the cached texture is re-pointed at the new player; on older ETF the map is cleared.
+			clearPlayerTextureMapOnRespawn = true
+			#Entity Texture Features: after each living-entity render, drop the entity and player texture the
+			#renderer still holds. Runs per entity per frame; disable if you suspect a rendering conflict.
+			clearRendererStateOnRenderEnd = true
+
+		[leakFixes.mods.entityModelFeatures]
+			#Entity Model Features: after each living-entity render, drop the animation iteration context the
+			#renderer still holds. No effect on EMF 3.0.6+, which no longer keeps it on the renderer.
+			clearRenderContextOnRenderEnd = true
+
+[leakTools]
+
+	[leakTools.commands]
+		#Enable /papi leak commands for quick memory/leak diagnostics.
+		enabled = true
+
+		[leakTools.commands.heapDump]
+			#Enable /papi leak dumpHeap (writes a .hprof). Disabled by default because it can freeze the game and produce huge files.
+			enabled = false
+
+[compatibility]
+
+	[compatibility.layer]
+		#Enable Put A Plug In it's compatibility layer for interoperability with other optimization mods.
+		enabled = true
+		#Log detected compatibility targets (ImmediatelyFast) at startup.
+		logDetectedMods = true
+
+	[compatibility.immediatelyFast]
+		#If ImmediatelyFast is installed on the client, automatically patch compatibility-safe config values in immediatelyfast.json.
+		#This only changes keys that are explicitly controlled by the options below.
+		autoPatchConfig = true
+		#Global override: force ImmediatelyFast 'experimental_screen_batching' off.
+		#Leave disabled unless you want this applied on all GPUs regardless of vendor.
+		disableScreenBatching = false
+		#If an Intel GPU is detected (UHD / Iris / Arc), force ImmediatelyFast 'experimental_screen_batching' off to mitigate known screen-freeze behavior.
+		disableScreenBatchingOnIntelUhd = true
+		#If an Intel GPU is detected (UHD / Iris / Arc), force ImmediatelyFast 'avoid_redundant_framebuffer_switching' off.
+		#Targets Intel OpenGL driver instability reported with aggressive FBO optimization paths.
+		disableAvoidRedundantFramebufferSwitchingOnIntelGpu = true
+		#Optional stricter mode: also force ImmediatelyFast 'hud_batching' off.
+		#Leave disabled unless you still see compatibility issues after disabling screen batching.
+		disableHudBatching = false
+
+	[compatibility.memoryLeakFix]
+		#If MemoryLeakFix and ImmediatelyFast are both installed, force ImmediatelyFast 'experimental_screen_batching' off.
+		#This preserves the compatibility safeguard implemented by Put A Plug In it without bundling MemoryLeakFix code.
+		disableImmediatelyFastScreenBatching = true
+
