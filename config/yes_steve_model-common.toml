@@ -18,6 +18,9 @@
 	DefaultModelTexture = "default"
 	#If rendering errors occur, try turning on this.
 	UseCompatibilityRenderer = false
+	#The amount of volume when the animation is played.
+	#Range: 0.0 ~ 100.0
+	SoundVolume = 100.0
 
 [extra_player_render]
 	#Whether to display player
@@ -34,18 +37,4 @@
 	#Player yaw offset in screen
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	PlayerYawOffset = 5.0
-
-#Only available on dedicated servers.
-[server_scheduler]
-	#Concurrent level for processing models. Value 0 means AUTO.
-	#Range: 0 ~ 15
-	ThreadCount = 0
-	#Bandwidth limitation during distributing models to players.(In Mbps)
-	#Range: 1 ~ 999
-	BandwidthLimit = 5
-	#Timeout for players to respond to synchronization. Value not greater than 10 means AUTO.(In seconds)
-	#Range: 0 ~ 120
-	PlayerSyncTimeout = 0
-	#Whether or not players are allowed to switch models
-	CanSwitchModel = true
 

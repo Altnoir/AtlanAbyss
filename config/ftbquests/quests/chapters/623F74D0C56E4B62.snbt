@@ -15,6 +15,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "召唤一个新女仆"
 			disable_toast: true
 			x: 1.0d
 			y: 1.0d
@@ -23,15 +24,10 @@
 			hide: true
 			id: "4013EDE7973973A4"
 			tasks: [{
-				id: "164A7858036581B8"
-				type: "item"
-				item: {
-					id: "touhou_little_maid:entity_placeholder"
-					Count: 1b
-					tag: {
-						RecipeId: "touhou_little_maid:altar/spawn_box"
-					}
-				}
+				id: "2CD6EBC75C56B444"
+				type: "advancement"
+				advancement: "touhou_little_maid:base/spawn_maid"
+				criterion: ""
 			}]
 			rewards: [{
 				id: "69886B76F21488EB"

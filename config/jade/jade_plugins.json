@@ -60,5 +60,8 @@
     "item_mod_name": false,
     "mod_name": false,
     "entity_hp": true
+  },
+  "lootr": {
+    "info": true
   }
 }

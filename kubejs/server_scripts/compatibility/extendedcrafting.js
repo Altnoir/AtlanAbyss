@@ -142,7 +142,6 @@ onEvent('recipes', event => {
     compressor('elemental', 'kubejs:elemental_ingot', 7210, 721000)
 
 
-
     //加速火把
     remove('torcherino:torcherino')
     event.shaped('torcherino:torcherino', [

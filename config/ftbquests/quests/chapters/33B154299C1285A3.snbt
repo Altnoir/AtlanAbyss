@@ -498,7 +498,7 @@
 			x: 0.0d
 			y: -4.0d
 			shape: "octagon"
-			description: ["暂时只能做纠缠方块。"]
+			description: ["能做纠缠方块和黑铁框架。"]
 			dependencies: [
 				"679863D04FCA1B0B"
 				"1C4C37304A41EA29"
